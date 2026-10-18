@@ -141,3 +141,86 @@ body[data-language]:not([data-language=""]) .language-banner { border: 1px solid
 /* El foco se dirige al contenido al navegar sin dibujar un marco alrededor de toda la página. */
 main:focus { outline: none; }
 @media(max-width: 360px) { .hero-art .orbit-one { width: 290px; height: 290px; } .hero-art .orbit-two { width: 230px; height: 230px; } }
+
+/* Actividades con imágenes propias y juegos sin emojis. */
+.topic-icon svg, .welcome-icon svg { width: 36px; height: 36px; }
+.welcome-icon { display: flex; align-items: center; }
+.welcome-icon svg { width: 58px; height: 58px; }
+.topic-photo { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+.activity-image { display: block; width: min(210px,100%); height: 175px; object-fit: contain; border-radius: 12px; background: #fff; }
+.mode-card h3 { margin-top: 22px; }
+.feedback { clear: both; }
+.reveal-solution, .flip-card { display: inline-block; border: 1px solid var(--line); color: var(--ink); background: var(--world-soft,var(--paper)); border-radius: 7px; padding: 9px 13px; font-size: 12px; cursor: pointer; margin: 10px 12px; }
+.solution { display: block; padding: 12px 0; font-size: 14px; color: var(--ink); }
+.solution[hidden], .flash-answer[hidden] { display: none; }
+.flashcard { clear: both; display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin-bottom: 15px; padding: 10px; background: var(--world-soft); border-radius: 10px; }
+.flashcard .flip-card { margin: 0; }
+.flash-answer { font-size: 20px; font-weight: 600; }
+.puzzle-panel { border: 1px solid var(--line); border-radius: 16px; padding: 30px; background: var(--paper); }
+.puzzle-panel p { line-height: 1.8; }
+.memory-grid { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 12px; }
+.memory-card { min-height: 110px; padding: 12px; border: 1px solid var(--world-dark); border-radius: 12px; background: var(--world); color: var(--ink); font: inherit; font-size: 13px; cursor: pointer; line-height: 1.5; overflow-wrap: anywhere; }
+.memory-card:not(.flipped) { background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #ffffff30 10px, #ffffff30 12px); font-size: 27px; }
+.memory-card.flipped { background: white; }
+.memory-card.matched { background: var(--world-soft); border-style: dashed; opacity: .85; cursor: default; }
+.memory-note { font-size: 13px; color: var(--muted); }
+.puzzle-clues { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 12px; margin-bottom: 24px; }
+.puzzle-clue { border: 1px solid var(--line); border-radius: 10px; padding: 12px; background: var(--world-soft); font-size: 12px; line-height: 1.7; }
+.puzzle-clue .activity-image { width: 100%; height: 100px; }
+.found-label { display: block; font-weight: bold; margin-top: 6px; }
+.puzzle-instruction { font-size: 12px; color: var(--muted); }
+.grid-scroll { overflow-x: auto; padding: 4px; }
+.letter-grid { display: grid; grid-template-columns: repeat(var(--grid-size),minmax(22px,1fr)); gap: 3px; width: min(100%,520px); min-width: calc(var(--grid-size) * 25px); margin: auto; }
+.letter-grid button { aspect-ratio: 1; border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 5px; padding: 2px; font: inherit; font-size: clamp(12px,2vw,18px); cursor: pointer; font-weight: 600; }
+.letter-grid button.selected { outline: 3px solid var(--world-dark); outline-offset: -2px; background: var(--world); }
+.letter-grid button.found { background: var(--world); border-color: var(--world-dark); }
+.crossword-grid { display: grid; grid-template-columns: repeat(var(--grid-size),32px); width: max-content; margin: auto; gap: 2px; }
+.crossword-cell { position: relative; width: 32px; height: 36px; background: #fff; border: 1px solid var(--world-dark); }
+.crossword-cell > span { position: absolute; font-size: 8px; top: 1px; left: 2px; pointer-events: none; }
+.crossword-cell input { width: 100%; height: 100%; border: 0; padding: 8px 2px 1px; background: transparent; font-size: 19px; text-align: center; text-transform: uppercase; color: var(--ink); }
+.crossword-clues { margin-top: 24px; padding-left: 24px; }
+.crossword-clues li { padding: 10px 0; line-height: 1.7; font-size: 14px; }
+.crossword-clues small { color: var(--muted); }
+.feedback-invite { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 32px 0; }
+.feedback-invite h2 { font-size: 25px; }
+.feedback-invite p:last-child { margin: 12px 0 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.purchase-notice { padding: 22px; border-radius: 12px; background: var(--world); margin-bottom: 30px; }
+.purchase-notice p { margin: 8px 0 0; font-size: 13px; line-height: 1.8; }
+.book-card { display: flex; flex-direction: column; align-items: stretch; padding: 22px; }
+.book-card.recommended { outline: 2px solid var(--world-dark); }
+.book-cover { width: 100%; height: 280px; object-fit: contain; background: var(--world-soft); border-radius: 8px; margin-bottom: 20px; }
+.typographic-cover { display: flex; flex-direction: column; justify-content: space-between; padding: 25px; background: linear-gradient(135deg,var(--world-soft),var(--world)); border-left: 8px solid var(--world); text-align: left; }
+.typographic-cover > span { font-size: 10px; letter-spacing: 1px; }
+.typographic-cover strong { font-family: Georgia,serif; font-weight: 400; font-size: 29px; line-height: 1.25; overflow-wrap: anywhere; }
+.book-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.book-meta span, .book-audience { font-size: 11px; background: var(--world-soft); padding: 7px 10px; border-radius: 7px; color: var(--ink); line-height: 1.8; }
+.book-card .book-audience { font-size: 12px; color: var(--ink); }
+.book-card .button { margin-top: auto; }
+.book-card .litres-button-note { font-size: 11px; margin: 10px 0 0; line-height: 1.7; }
+.related-book { display: grid; grid-template-columns: 150px minmax(0,1fr); gap: 25px; background: var(--world); padding: 25px; border-radius: 14px; margin: 28px 0; }
+.related-book .book-cover { height: 200px; margin-bottom: 0; background: var(--paper); }
+.related-book .typographic-cover { padding: 14px; }
+.related-book .typographic-cover strong { font-size: 19px; }
+.related-book h3 { font-size: 21px; line-height: 1.5; }
+.related-book section > p:not(.eyebrow) { font-size: 13px; line-height: 1.8; }
+@media(max-width:760px) {
+  .puzzle-panel { padding: 18px 12px; }
+  .memory-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 7px; }
+  .memory-card { min-height: 105px; font-size: 11px; padding: 8px; }
+  .puzzle-clues { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+  .puzzle-clue { padding: 10px; }
+  .letter-grid { gap: 2px; min-width: calc(var(--grid-size) * 24px); }
+  .letter-grid button { font-size: 13px; }
+  .related-book { grid-template-columns: minmax(0,1fr); padding: 20px; }
+  .related-book > div { max-width: 160px; }
+  .feedback-invite h2 { font-size: 23px; }
+  .book-card { align-items: stretch; }
+  .reveal-solution { margin-left: 0; }
+}
+.related-book.no-book { display: block; }
+.related-book.no-book p { font-size: 14px; line-height: 1.8; }
+.related-book.no-book a { font-size: 13px; font-weight: 600; }
+.memory-card .activity-image { height: 85px; width: 100%; background: transparent; }
+.banner-star svg { width: 90px; height: 90px; display: block; }
+.art-star svg { width: 64px; height: 64px; display: block; }
+@media(max-width:760px) { .banner-star svg { width: 60px; height: 60px; } }

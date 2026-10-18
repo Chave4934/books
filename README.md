@@ -1,6 +1,6 @@
 # chavebooks
 
-Web estática para estudiar español, inglés y ruso. Incluye diez temas por idioma, cinco actividades por tema (150 en total) y cinco preguntas por actividad. Las actividades permiten elegir respuestas, escribir, completar textos, ordenar frases, corregir errores, identificar ilustraciones y relacionar vocabulario. Cada idioma conserva su propio color pastel. El pie de todas las páginas enlaza a Instagram: @chave_books.
+Web estática para estudiar español, inglés y ruso. Incluye diez temas por idioma, cinco actividades por tema (150 en total) y retos y juegos de distintas duraciones. Las actividades permiten elegir respuestas, escribir, completar textos, ordenar frases, corregir errores, identificar ilustraciones y relacionar vocabulario. Cada idioma conserva su propio color pastel. El pie de todas las páginas enlaza a Instagram: @chave_books.
 
 ## Ver la web en tu ordenador
 
@@ -24,7 +24,11 @@ La configuración está en `netlify.toml`: se publica la raíz del repositorio, 
 ```js
 window.LIBROS = [
   {
+    id: 'IDENTIFICADOR_LITRES',
     language: 'ingles',
+    audience: 'hispanohablantes',
+    age: 'Infantil',
+    level: 'Primeros pasos',
     title: 'El título real de tu libro',
     description: 'Para quién es y qué aprenderá la persona que lo lea.',
     url: 'https://www.litres.ru/REEMPLAZAR-POR-LA-RUTA-REAL-DEL-LIBRO/'
@@ -49,10 +53,41 @@ La clasificación sigue el idioma que se aprende, aunque el título o las instru
 
 ## Temas y actividades
 
-El contenido está en `activities.js` y la presentación y corrección en `app.js`. Cada idioma tiene cinco temas de gramática y cinco de vocabulario. En español, el presente regular e irregular se agrupa en un solo tema para incluir también indefinido, perfecto, imperfecto, futuro y las cinco áreas de vocabulario solicitadas. Inglés y ruso tienen sus propios temas gramaticales.
+El contenido está en `activities.js`, el motor de actividades en `learning.js` y la navegación general en `app.js`. Cada idioma tiene diez temas y cincuenta actividades. Cada actividad de gramática tiene cinco frases propias, sin repetir las de otras actividades del mismo tema. En español se mantienen los cinco temas de gramática y los cinco de vocabulario solicitados.
 
-Cada tema tiene cinco modalidades con los mismos cinco ejemplos, para repasarlos desde distintas perspectivas. Las ilustraciones de vocabulario usan pictogramas emoji del dispositivo, con descripciones accesibles y pistas. No necesitan servicios externos ni generación de imágenes.
+Los temas tienen formatos diferentes: sopa de letras con selección de extremos, crucigrama conectado, memory de veinte tarjetas, tarjetas que se voltean, verdadero/falso, horarios, escritura, relaciones y frases ordenadas. Las actividades de gramática incluyen solo la palabra base entre paréntesis, sin repetir la persona. En el detective se escribe solo el fragmento corregido. Los errores se marcan sin mostrar la solución hasta pulsar «Ver solución».
 
-Las rutas son `#/ingles/actividades`, `#/ingles/actividades/ropa` y `#/ingles/actividades/ropa/1`, por ejemplo. Cada actividad tiene corrección, reinicio y enlaces para cambiar de actividad o tema. Las respuestas escritas toleran mayúsculas, espacios repetidos y puntuación final; en ruso se aceptan е y ё. En español se mantienen las tildes. Algunas palabras de vocabulario admiten variantes regionales explícitas.
+Las ilustraciones, portadas y miniaturas propias se configuran en `media.js`. Consulta [la guía de imágenes](assets/README.md). No quedan emojis de objetos o acciones. Mientras faltan las imágenes, los retos usan descripciones de texto; las tarjetas de libros usan un diseño tipográfico. No se afirma que las actividades sean páginas de muestra de los libros mientras no se hayan verificado su contenido e ilustraciones.
 
-Una actividad se marca como completada al obtener cinco respuestas correctas. Ese progreso se guarda solo en el almacenamiento local del navegador; no hay cuentas ni sincronización entre dispositivos. El bloqueo del almacenamiento no impide hacer las actividades.
+Las respuestas admiten mayúsculas, espacios repetidos y puntuación final. En ruso se aceptan е y ё. Las tildes se mantienen en los ejercicios de escritura en español; los juegos de letras omiten tildes, espacios y guiones y lo explican en sus instrucciones. Las variantes regionales y ciertos órdenes alternativos correctos se declaran expresamente en el contenido, sin coincidencias aproximadas que pudieran dar por válida una respuesta incorrecta.
+
+El progreso se guarda en el navegador al completar una actividad. No es un contador global ni una cuenta personal. Las personas que compartan navegador comparten contador. No se envían respuestas ni progreso a un servidor; bloquear el almacenamiento no impide practicar.
+
+Después de completar una actividad, aparece un libro relacionado con su tema o un libro del idioma correspondiente. Ruso muestra que todavía no hay libros. La recomendación abre el catálogo con el libro recomendado en primer lugar. Las fichas incluyen público, descripción, nivel, espacio para la portada y aviso de traducción de LitRes junto al botón. Las etiquetas no inventan rangos de edad concretos.
+
+## Comentarios
+
+El bloque de comentarios y dudas enlaza a `https://www.instagram.com/chave_books/`. No hay un tablón público ni un formulario que recoja mensajes en esta web.
+
+## Analítica opcional
+
+La analítica está desactivada en `analytics.js`. La web no incluye estadísticas inventadas ni carga Plausible mientras `enabled` sea `false`.
+
+Para usar Plausible, primero crea una cuenta y registra el dominio público. Verifica su código de integración actual con el proveedor, configura el dominio y activa `enabled`. La integración preparada emite `Activity Started`, `Activity Completed` y `LitRes Click` con identificadores de idioma, tema, formato o libro. No incluye nombres, respuestas del alumno ni datos escritos. Crea esos objetivos en el panel de Plausible y verifica que se reciben antes de confiar en los informes. Puede requerir una suscripción.
+
+Como alternativa, puedes activar Netlify Analytics en el panel de Netlify; la disponibilidad y coste dependen del plan. Sus estadísticas de solicitudes no sustituyen por sí solas los eventos de clic o de actividades de esta aplicación con rutas `#`.
+
+## Vista previa en redes
+
+El favicon está en `favicon.svg`. Las etiquetas Open Graph y Twitter están en `index.html`, con la imagen de `assets/social/chavebooks.png`. Si cambias de dominio, actualiza el enlace canónico, `og:url`, las URL de imagen y el dominio de analítica. Las redes comparten la portada general porque las subpáginas usan fragmentos `#`.
+
+## Comprobación en navegador
+
+Inicia el servidor local como se indica arriba. Con Node y Chromium instalados, instala Playwright fuera del repositorio y ejecuta:
+
+```sh
+npm install --prefix /tmp/chavebooks-check --cache /tmp/chavebooks-npm-cache --no-package-lock playwright
+NODE_PATH=/tmp/chavebooks-check/node_modules node tests/browser.cjs
+```
+
+`CHROMIUM_PATH` permite cambiar la ubicación de Chromium (por defecto `/usr/bin/chromium`); `TEST_BASE_URL` permite cambiar el servidor. La comprobación recorre las 150 actividades, las soluciones opcionales, el catálogo y las pantallas móviles.
