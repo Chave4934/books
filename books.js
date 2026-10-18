@@ -2,7 +2,7 @@
 // Para añadir otro libro, consulta README.md. No incluyas credenciales.
 window.LIBROS = [
   {
-    "language": "ruso",
+    "language": "ingles",
     "title": "Плуто осенью",
     "url": "https://www.litres.ru/74613814/"
   },
@@ -12,7 +12,7 @@ window.LIBROS = [
     "url": "https://www.litres.ru/74602999/"
   },
   {
-    "language": "espanol",
+    "language": "ingles",
     "title": "Pluto va a la playa",
     "url": "https://www.litres.ru/74595107/"
   },
