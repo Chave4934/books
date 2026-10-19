@@ -103,7 +103,7 @@ window.LIBROS = [
     "level": "Primeros pasos",
     "age": "Infantil",
     "titleEs": "Español para niños",
-    "cover": null
+    "cover": "assets/portadas/73864719.webp"
   },
   {
     "language": "ingles",
