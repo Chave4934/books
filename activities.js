@@ -2333,95 +2333,559 @@ window.CURRICULUM = {
     },
     {
       "id": "rutina",
-      "title": "La rutina diaria",
+      "title": "Acciones habituales",
       "kind": "vocabulary",
       "icon": "rutina",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "revision": "acciones-v2",
+      "tip": "Doce acciones para contar lo que haces cada día.",
+      "formats": [
+        "identify",
+        "actionstory",
+        "memory",
+        "order",
+        "crossword"
+      ],
       "items": [
         {
-          "clue": "Abrir los ojos y dejar de dormir.",
-          "answer": "despertarse",
-          "prompt": "Al terminar la noche, lo primero es ___ y abrir los ojos.",
+          "key": "comer",
+          "asset": "acciones/comer",
+          "answer": "comer",
           "aliases": [
-            "despertar"
+            "comerse"
           ],
-          "memoryClue": "Ya no estás dormido.",
-          "asset": "rutina/1"
+          "clue": "Un niño come un bocadillo.",
+          "memoryClue": "Un niño come un bocadillo.",
+          "flashClue": "Un niño come un bocadillo.",
+          "searchClue": "Un niño come un bocadillo."
         },
         {
-          "clue": "Lavarse con el agua de la ducha.",
-          "answer": "ducharse",
-          "prompt": "Con jabón y agua de la ducha, voy a ___.",
-          "aliases": [
-            "tomar una ducha"
-          ],
-          "memoryClue": "Agua, jabón y ducha.",
-          "asset": "rutina/2"
-        },
-        {
-          "clue": "Tomar la primera comida de la mañana.",
-          "answer": "desayunar",
-          "prompt": "A las ocho tomo la primera comida: voy a ___.",
-          "aliases": [
-            "tomar el desayuno"
-          ],
-          "memoryClue": "La primera comida del día.",
-          "asset": "rutina/3"
-        },
-        {
-          "clue": "Aprender y practicar una materia.",
-          "answer": "estudiar",
-          "prompt": "Abro el libro para aprender: voy a ___.",
+          "key": "beber",
+          "asset": "acciones/beber",
+          "answer": "beber",
           "aliases": [],
-          "memoryClue": "Aprender con tus libros.",
-          "asset": "rutina/4"
+          "clue": "Un niño bebe de un vaso.",
+          "memoryClue": "Un niño bebe de un vaso.",
+          "flashClue": "Un niño bebe de un vaso.",
+          "searchClue": "Un niño bebe de un vaso."
         },
         {
-          "clue": "Descansar con los ojos cerrados durante la noche.",
+          "key": "dormir",
+          "asset": "acciones/dormir",
           "answer": "dormir",
-          "prompt": "Apago la luz por la noche para ___ ocho horas.",
           "aliases": [],
-          "memoryClue": "Pasar la noche dormido.",
-          "asset": "rutina/5"
+          "clue": "Un niño duerme en una cama.",
+          "memoryClue": "Un niño duerme en una cama.",
+          "flashClue": "Un niño duerme en una cama.",
+          "searchClue": "Un niño duerme en una cama."
+        },
+        {
+          "key": "correr",
+          "asset": "acciones/correr",
+          "answer": "correr",
+          "aliases": [],
+          "clue": "Un niño corre al aire libre.",
+          "memoryClue": "Un niño corre al aire libre.",
+          "flashClue": "Un niño corre al aire libre.",
+          "searchClue": "Un niño corre al aire libre."
+        },
+        {
+          "key": "dibujar",
+          "asset": "acciones/dibujar",
+          "answer": "dibujar",
+          "aliases": [],
+          "clue": "Un niño dibuja con colores.",
+          "memoryClue": "Un niño dibuja con colores.",
+          "flashClue": "Un niño dibuja con colores.",
+          "searchClue": "Un niño dibuja con colores."
+        },
+        {
+          "key": "caminar",
+          "asset": "acciones/caminar",
+          "answer": "caminar",
+          "aliases": [
+            "andar",
+            "pasear"
+          ],
+          "clue": "Un niño camina al aire libre.",
+          "memoryClue": "Un niño camina al aire libre.",
+          "flashClue": "Un niño camina al aire libre.",
+          "searchClue": "Un niño camina al aire libre."
+        },
+        {
+          "key": "leer",
+          "asset": "acciones/leer",
+          "answer": "leer",
+          "aliases": [],
+          "clue": "Un niño lee un libro.",
+          "memoryClue": "Un niño lee un libro.",
+          "flashClue": "Un niño lee un libro.",
+          "searchClue": "Un niño lee un libro."
+        },
+        {
+          "key": "escribir",
+          "asset": "acciones/escribir",
+          "answer": "escribir",
+          "aliases": [],
+          "clue": "Un niño escribe en un cuaderno.",
+          "memoryClue": "Un niño escribe en un cuaderno.",
+          "flashClue": "Un niño escribe en un cuaderno.",
+          "searchClue": "Un niño escribe en un cuaderno."
+        },
+        {
+          "key": "jugar",
+          "asset": "acciones/jugar",
+          "answer": "jugar",
+          "aliases": [
+            "jugar a la pelota"
+          ],
+          "clue": "Un niño juega con una pelota.",
+          "memoryClue": "Un niño juega con una pelota.",
+          "flashClue": "Un niño juega con una pelota.",
+          "searchClue": "Un niño juega con una pelota."
+        },
+        {
+          "key": "abrir",
+          "asset": "acciones/abrir",
+          "answer": "abrir",
+          "aliases": [],
+          "clue": "Un niño abre una ventana; la flecha sube.",
+          "memoryClue": "Un niño abre una ventana; la flecha sube.",
+          "flashClue": "Un niño abre una ventana; la flecha sube.",
+          "searchClue": "Un niño abre una ventana; la flecha sube."
+        },
+        {
+          "key": "cerrar",
+          "asset": "acciones/cerrar",
+          "answer": "cerrar",
+          "aliases": [],
+          "clue": "Un niño cierra una ventana; la flecha baja.",
+          "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+          "flashClue": "Un niño cierra una ventana; la flecha baja.",
+          "searchClue": "Un niño cierra una ventana; la flecha baja."
+        },
+        {
+          "key": "escuchar",
+          "asset": "acciones/escuchar",
+          "answer": "escuchar",
+          "aliases": [
+            "escuchar música"
+          ],
+          "clue": "Un niño escucha música con auriculares.",
+          "memoryClue": "Un niño escucha música con auriculares.",
+          "flashClue": "Un niño escucha música con auriculares.",
+          "searchClue": "Un niño escucha música con auriculares."
         }
       ],
-      "formats": [
-        "flashcards",
-        "match",
-        "sequence",
-        "context",
-        "truefalse"
-      ],
-      "matchClues": [
-        "Salir del sueño por la mañana.",
-        "Lavarse el cuerpo en la ducha.",
-        "Comer por primera vez en el día.",
-        "Dedicar un rato al aprendizaje.",
-        "Descansar dormido por la noche."
-      ],
-      "facts": [
-        [
-          "Lo haces cuando dejas de dormir.",
-          true
+      "variants": {
+        "1": [
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "comer",
+            "aliases": [
+              "comerse"
+            ],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "beber",
+            "aliases": [],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso."
+          },
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "correr",
+            "aliases": [],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre."
+          },
+          {
+            "key": "caminar",
+            "asset": "acciones/caminar",
+            "answer": "caminar",
+            "aliases": [
+              "andar",
+              "pasear"
+            ],
+            "clue": "Un niño camina al aire libre.",
+            "memoryClue": "Un niño camina al aire libre.",
+            "flashClue": "Un niño camina al aire libre.",
+            "searchClue": "Un niño camina al aire libre."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "escribir",
+            "aliases": [],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "escuchar",
+            "aliases": [
+              "escuchar música"
+            ],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares."
+          }
         ],
-        [
-          "Significa peinarse el pelo.",
-          false
+        "3": [
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "comer",
+            "aliases": [
+              "comerse"
+            ],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "beber",
+            "aliases": [],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso."
+          },
+          {
+            "key": "dormir",
+            "asset": "acciones/dormir",
+            "answer": "dormir",
+            "aliases": [],
+            "clue": "Un niño duerme en una cama.",
+            "memoryClue": "Un niño duerme en una cama.",
+            "flashClue": "Un niño duerme en una cama.",
+            "searchClue": "Un niño duerme en una cama."
+          },
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "correr",
+            "aliases": [],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre."
+          },
+          {
+            "key": "dibujar",
+            "asset": "acciones/dibujar",
+            "answer": "dibujar",
+            "aliases": [],
+            "clue": "Un niño dibuja con colores.",
+            "memoryClue": "Un niño dibuja con colores.",
+            "flashClue": "Un niño dibuja con colores.",
+            "searchClue": "Un niño dibuja con colores."
+          },
+          {
+            "key": "caminar",
+            "asset": "acciones/caminar",
+            "answer": "caminar",
+            "aliases": [
+              "andar",
+              "pasear"
+            ],
+            "clue": "Un niño camina al aire libre.",
+            "memoryClue": "Un niño camina al aire libre.",
+            "flashClue": "Un niño camina al aire libre.",
+            "searchClue": "Un niño camina al aire libre."
+          },
+          {
+            "key": "leer",
+            "asset": "acciones/leer",
+            "answer": "leer",
+            "aliases": [],
+            "clue": "Un niño lee un libro.",
+            "memoryClue": "Un niño lee un libro.",
+            "flashClue": "Un niño lee un libro.",
+            "searchClue": "Un niño lee un libro."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "escribir",
+            "aliases": [],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno."
+          },
+          {
+            "key": "jugar",
+            "asset": "acciones/jugar",
+            "answer": "jugar",
+            "aliases": [
+              "jugar a la pelota"
+            ],
+            "clue": "Un niño juega con una pelota.",
+            "memoryClue": "Un niño juega con una pelota.",
+            "flashClue": "Un niño juega con una pelota.",
+            "searchClue": "Un niño juega con una pelota."
+          },
+          {
+            "key": "abrir",
+            "asset": "acciones/abrir",
+            "answer": "abrir",
+            "aliases": [],
+            "clue": "Un niño abre una ventana; la flecha sube.",
+            "memoryClue": "Un niño abre una ventana; la flecha sube.",
+            "flashClue": "Un niño abre una ventana; la flecha sube.",
+            "searchClue": "Un niño abre una ventana; la flecha sube."
+          },
+          {
+            "key": "cerrar",
+            "asset": "acciones/cerrar",
+            "answer": "cerrar",
+            "aliases": [],
+            "clue": "Un niño cierra una ventana; la flecha baja.",
+            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+            "flashClue": "Un niño cierra una ventana; la flecha baja.",
+            "searchClue": "Un niño cierra una ventana; la flecha baja."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "escuchar",
+            "aliases": [
+              "escuchar música"
+            ],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares."
+          }
         ],
-        [
-          "Es tomar la primera comida del día.",
-          true
+        "5": [
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "comer",
+            "aliases": [
+              "comerse"
+            ],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo.",
+            "crosswordClue": "Tomar un bocadillo como alimento."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "beber",
+            "aliases": [],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso.",
+            "crosswordClue": "Tomar agua de un vaso."
+          },
+          {
+            "key": "dormir",
+            "asset": "acciones/dormir",
+            "answer": "dormir",
+            "aliases": [],
+            "clue": "Un niño duerme en una cama.",
+            "memoryClue": "Un niño duerme en una cama.",
+            "flashClue": "Un niño duerme en una cama.",
+            "searchClue": "Un niño duerme en una cama.",
+            "crosswordClue": "Descansar en la cama con los ojos cerrados."
+          },
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "correr",
+            "aliases": [],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre.",
+            "crosswordClue": "Avanzar deprisa, a mayor velocidad que al caminar."
+          },
+          {
+            "key": "dibujar",
+            "asset": "acciones/dibujar",
+            "answer": "dibujar",
+            "aliases": [],
+            "clue": "Un niño dibuja con colores.",
+            "memoryClue": "Un niño dibuja con colores.",
+            "flashClue": "Un niño dibuja con colores.",
+            "searchClue": "Un niño dibuja con colores.",
+            "crosswordClue": "Crear una imagen con lápices de colores."
+          },
+          {
+            "key": "leer",
+            "asset": "acciones/leer",
+            "answer": "leer",
+            "aliases": [],
+            "clue": "Un niño lee un libro.",
+            "memoryClue": "Un niño lee un libro.",
+            "flashClue": "Un niño lee un libro.",
+            "searchClue": "Un niño lee un libro.",
+            "crosswordClue": "Seguir las palabras de un libro para entender su historia."
+          }
         ],
-        [
-          "Significa cerrar los ojos para dormir.",
-          false
+        "2": [
+          {
+            "key": "abrir",
+            "asset": "acciones/abrir",
+            "answer": "abro",
+            "aliases": [],
+            "clue": "Un niño abre una ventana; la flecha sube.",
+            "memoryClue": "Un niño abre una ventana; la flecha sube.",
+            "flashClue": "Un niño abre una ventana; la flecha sube.",
+            "searchClue": "Un niño abre una ventana; la flecha sube.",
+            "prompt": "Al empezar el día, yo ___ la ventana de mi habitación."
+          },
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "como",
+            "aliases": [],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo.",
+            "prompt": "Después, yo ___ un bocadillo para desayunar."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "bebo",
+            "aliases": [],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso.",
+            "prompt": "Con el desayuno, yo ___ un vaso de agua."
+          },
+          {
+            "key": "dibujar",
+            "asset": "acciones/dibujar",
+            "answer": "dibujo",
+            "aliases": [],
+            "clue": "Un niño dibuja con colores.",
+            "memoryClue": "Un niño dibuja con colores.",
+            "flashClue": "Un niño dibuja con colores.",
+            "searchClue": "Un niño dibuja con colores.",
+            "prompt": "Por la tarde, yo ___ un paisaje con mis colores."
+          },
+          {
+            "key": "leer",
+            "asset": "acciones/leer",
+            "answer": "leo",
+            "aliases": [],
+            "clue": "Un niño lee un libro.",
+            "memoryClue": "Un niño lee un libro.",
+            "flashClue": "Un niño lee un libro.",
+            "searchClue": "Un niño lee un libro.",
+            "prompt": "Antes de acostarme, yo ___ un libro de aventuras."
+          },
+          {
+            "key": "dormir",
+            "asset": "acciones/dormir",
+            "answer": "duermo",
+            "aliases": [],
+            "clue": "Un niño duerme en una cama.",
+            "memoryClue": "Un niño duerme en una cama.",
+            "flashClue": "Un niño duerme en una cama.",
+            "searchClue": "Un niño duerme en una cama.",
+            "prompt": "Por la noche, yo ___ en mi cama hasta la mañana."
+          }
         ],
-        [
-          "Lo haces para descansar por la noche.",
-          true
+        "4": [
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "corro",
+            "aliases": [],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre.",
+            "prompt": "Yo ___ por el parque."
+          },
+          {
+            "key": "caminar",
+            "asset": "acciones/caminar",
+            "answer": "caminamos",
+            "aliases": [],
+            "clue": "Un niño camina al aire libre.",
+            "memoryClue": "Un niño camina al aire libre.",
+            "flashClue": "Un niño camina al aire libre.",
+            "searchClue": "Un niño camina al aire libre.",
+            "prompt": "Nosotros ___ hasta la escuela."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "escribe",
+            "aliases": [],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno.",
+            "prompt": "Ana ___ una carta."
+          },
+          {
+            "key": "jugar",
+            "asset": "acciones/jugar",
+            "answer": "juegan",
+            "aliases": [],
+            "clue": "Un niño juega con una pelota.",
+            "memoryClue": "Un niño juega con una pelota.",
+            "flashClue": "Un niño juega con una pelota.",
+            "searchClue": "Un niño juega con una pelota.",
+            "prompt": "Los niños ___ con la pelota."
+          },
+          {
+            "key": "cerrar",
+            "asset": "acciones/cerrar",
+            "answer": "cierras",
+            "aliases": [],
+            "clue": "Un niño cierra una ventana; la flecha baja.",
+            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+            "flashClue": "Un niño cierra una ventana; la flecha baja.",
+            "searchClue": "Un niño cierra una ventana; la flecha baja.",
+            "prompt": "Tú ___ la ventana."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "escucho",
+            "aliases": [],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares.",
+            "prompt": "Yo ___ música en casa."
+          }
         ]
-      ]
+      },
+      "memoryExtra": []
     },
     {
       "id": "frutas",
@@ -5243,95 +5707,604 @@ window.CURRICULUM = {
     },
     {
       "id": "rutina",
-      "title": "La rutina diaria",
+      "title": "Acciones habituales",
       "kind": "vocabulary",
       "icon": "rutina",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "revision": "acciones-v2",
+      "tip": "Doce acciones para contar lo que haces cada día.",
+      "formats": [
+        "identify",
+        "actionstory",
+        "memory",
+        "order",
+        "crossword"
+      ],
       "items": [
         {
-          "clue": "Abrir los ojos y dejar de dormir.",
-          "answer": "wake up",
-          "prompt": "When the night ends, I open my eyes and ___.",
-          "aliases": [],
-          "memoryClue": "Ya no estás dormido.",
-          "asset": "rutina/1"
-        },
-        {
-          "clue": "Lavarse con el agua de la ducha.",
-          "answer": "take a shower",
-          "prompt": "I use soap and running water when I ___.",
+          "key": "comer",
+          "asset": "acciones/comer",
+          "answer": "eat",
           "aliases": [
-            "shower"
+            "to eat"
           ],
-          "memoryClue": "Agua, jabón y ducha.",
-          "asset": "rutina/2"
+          "clue": "Un niño come un bocadillo.",
+          "memoryClue": "Un niño come un bocadillo.",
+          "flashClue": "Un niño come un bocadillo.",
+          "searchClue": "Un niño come un bocadillo."
         },
         {
-          "clue": "Tomar la primera comida de la mañana.",
-          "answer": "have breakfast",
-          "prompt": "For my first meal of the day, I ___.",
+          "key": "beber",
+          "asset": "acciones/beber",
+          "answer": "drink",
           "aliases": [
-            "eat breakfast"
+            "to drink"
           ],
-          "memoryClue": "La primera comida del día.",
-          "asset": "rutina/3"
+          "clue": "Un niño bebe de un vaso.",
+          "memoryClue": "Un niño bebe de un vaso.",
+          "flashClue": "Un niño bebe de un vaso.",
+          "searchClue": "Un niño bebe de un vaso."
         },
         {
-          "clue": "Aprender y practicar una materia.",
-          "answer": "study",
-          "prompt": "I open my textbook to learn: it is time to ___.",
-          "aliases": [
-            "learn"
-          ],
-          "memoryClue": "Aprender con tus libros.",
-          "asset": "rutina/4"
-        },
-        {
-          "clue": "Descansar con los ojos cerrados durante la noche.",
+          "key": "dormir",
+          "asset": "acciones/dormir",
           "answer": "sleep",
-          "prompt": "At night I close my eyes and ___ for eight hours.",
-          "aliases": [],
-          "memoryClue": "Pasar la noche dormido.",
-          "asset": "rutina/5"
+          "aliases": [
+            "to sleep"
+          ],
+          "clue": "Un niño duerme en una cama.",
+          "memoryClue": "Un niño duerme en una cama.",
+          "flashClue": "Un niño duerme en una cama.",
+          "searchClue": "Un niño duerme en una cama."
+        },
+        {
+          "key": "correr",
+          "asset": "acciones/correr",
+          "answer": "run",
+          "aliases": [
+            "to run"
+          ],
+          "clue": "Un niño corre al aire libre.",
+          "memoryClue": "Un niño corre al aire libre.",
+          "flashClue": "Un niño corre al aire libre.",
+          "searchClue": "Un niño corre al aire libre."
+        },
+        {
+          "key": "dibujar",
+          "asset": "acciones/dibujar",
+          "answer": "draw",
+          "aliases": [
+            "to draw"
+          ],
+          "clue": "Un niño dibuja con colores.",
+          "memoryClue": "Un niño dibuja con colores.",
+          "flashClue": "Un niño dibuja con colores.",
+          "searchClue": "Un niño dibuja con colores."
+        },
+        {
+          "key": "caminar",
+          "asset": "acciones/caminar",
+          "answer": "walk",
+          "aliases": [
+            "to walk"
+          ],
+          "clue": "Un niño camina al aire libre.",
+          "memoryClue": "Un niño camina al aire libre.",
+          "flashClue": "Un niño camina al aire libre.",
+          "searchClue": "Un niño camina al aire libre."
+        },
+        {
+          "key": "leer",
+          "asset": "acciones/leer",
+          "answer": "read",
+          "aliases": [
+            "to read"
+          ],
+          "clue": "Un niño lee un libro.",
+          "memoryClue": "Un niño lee un libro.",
+          "flashClue": "Un niño lee un libro.",
+          "searchClue": "Un niño lee un libro."
+        },
+        {
+          "key": "escribir",
+          "asset": "acciones/escribir",
+          "answer": "write",
+          "aliases": [
+            "to write"
+          ],
+          "clue": "Un niño escribe en un cuaderno.",
+          "memoryClue": "Un niño escribe en un cuaderno.",
+          "flashClue": "Un niño escribe en un cuaderno.",
+          "searchClue": "Un niño escribe en un cuaderno."
+        },
+        {
+          "key": "jugar",
+          "asset": "acciones/jugar",
+          "answer": "play",
+          "aliases": [
+            "to play"
+          ],
+          "clue": "Un niño juega con una pelota.",
+          "memoryClue": "Un niño juega con una pelota.",
+          "flashClue": "Un niño juega con una pelota.",
+          "searchClue": "Un niño juega con una pelota."
+        },
+        {
+          "key": "abrir",
+          "asset": "acciones/abrir",
+          "answer": "open",
+          "aliases": [
+            "to open"
+          ],
+          "clue": "Un niño abre una ventana; la flecha sube.",
+          "memoryClue": "Un niño abre una ventana; la flecha sube.",
+          "flashClue": "Un niño abre una ventana; la flecha sube.",
+          "searchClue": "Un niño abre una ventana; la flecha sube."
+        },
+        {
+          "key": "cerrar",
+          "asset": "acciones/cerrar",
+          "answer": "close",
+          "aliases": [
+            "to close"
+          ],
+          "clue": "Un niño cierra una ventana; la flecha baja.",
+          "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+          "flashClue": "Un niño cierra una ventana; la flecha baja.",
+          "searchClue": "Un niño cierra una ventana; la flecha baja."
+        },
+        {
+          "key": "escuchar",
+          "asset": "acciones/escuchar",
+          "answer": "listen",
+          "aliases": [
+            "to listen"
+          ],
+          "clue": "Un niño escucha música con auriculares.",
+          "memoryClue": "Un niño escucha música con auriculares.",
+          "flashClue": "Un niño escucha música con auriculares.",
+          "searchClue": "Un niño escucha música con auriculares."
         }
       ],
-      "formats": [
-        "flashcards",
-        "match",
-        "sequence",
-        "context",
-        "truefalse"
-      ],
-      "matchClues": [
-        "Salir del sueño por la mañana.",
-        "Lavarse el cuerpo en la ducha.",
-        "Comer por primera vez en el día.",
-        "Dedicar un rato al aprendizaje.",
-        "Descansar dormido por la noche."
-      ],
-      "facts": [
-        [
-          "Lo haces cuando dejas de dormir.",
-          true
+      "variants": {
+        "1": [
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "eat",
+            "aliases": [
+              "to eat"
+            ],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "drink",
+            "aliases": [
+              "to drink"
+            ],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso."
+          },
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "run",
+            "aliases": [
+              "to run"
+            ],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre."
+          },
+          {
+            "key": "caminar",
+            "asset": "acciones/caminar",
+            "answer": "walk",
+            "aliases": [
+              "to walk"
+            ],
+            "clue": "Un niño camina al aire libre.",
+            "memoryClue": "Un niño camina al aire libre.",
+            "flashClue": "Un niño camina al aire libre.",
+            "searchClue": "Un niño camina al aire libre."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "write",
+            "aliases": [
+              "to write"
+            ],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "listen",
+            "aliases": [
+              "to listen"
+            ],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares."
+          }
         ],
-        [
-          "Significa peinarse el pelo.",
-          false
+        "3": [
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "eat",
+            "aliases": [
+              "to eat"
+            ],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "drink",
+            "aliases": [
+              "to drink"
+            ],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso."
+          },
+          {
+            "key": "dormir",
+            "asset": "acciones/dormir",
+            "answer": "sleep",
+            "aliases": [
+              "to sleep"
+            ],
+            "clue": "Un niño duerme en una cama.",
+            "memoryClue": "Un niño duerme en una cama.",
+            "flashClue": "Un niño duerme en una cama.",
+            "searchClue": "Un niño duerme en una cama."
+          },
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "run",
+            "aliases": [
+              "to run"
+            ],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre."
+          },
+          {
+            "key": "dibujar",
+            "asset": "acciones/dibujar",
+            "answer": "draw",
+            "aliases": [
+              "to draw"
+            ],
+            "clue": "Un niño dibuja con colores.",
+            "memoryClue": "Un niño dibuja con colores.",
+            "flashClue": "Un niño dibuja con colores.",
+            "searchClue": "Un niño dibuja con colores."
+          },
+          {
+            "key": "caminar",
+            "asset": "acciones/caminar",
+            "answer": "walk",
+            "aliases": [
+              "to walk"
+            ],
+            "clue": "Un niño camina al aire libre.",
+            "memoryClue": "Un niño camina al aire libre.",
+            "flashClue": "Un niño camina al aire libre.",
+            "searchClue": "Un niño camina al aire libre."
+          },
+          {
+            "key": "leer",
+            "asset": "acciones/leer",
+            "answer": "read",
+            "aliases": [
+              "to read"
+            ],
+            "clue": "Un niño lee un libro.",
+            "memoryClue": "Un niño lee un libro.",
+            "flashClue": "Un niño lee un libro.",
+            "searchClue": "Un niño lee un libro."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "write",
+            "aliases": [
+              "to write"
+            ],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno."
+          },
+          {
+            "key": "jugar",
+            "asset": "acciones/jugar",
+            "answer": "play",
+            "aliases": [
+              "to play"
+            ],
+            "clue": "Un niño juega con una pelota.",
+            "memoryClue": "Un niño juega con una pelota.",
+            "flashClue": "Un niño juega con una pelota.",
+            "searchClue": "Un niño juega con una pelota."
+          },
+          {
+            "key": "abrir",
+            "asset": "acciones/abrir",
+            "answer": "open",
+            "aliases": [
+              "to open"
+            ],
+            "clue": "Un niño abre una ventana; la flecha sube.",
+            "memoryClue": "Un niño abre una ventana; la flecha sube.",
+            "flashClue": "Un niño abre una ventana; la flecha sube.",
+            "searchClue": "Un niño abre una ventana; la flecha sube."
+          },
+          {
+            "key": "cerrar",
+            "asset": "acciones/cerrar",
+            "answer": "close",
+            "aliases": [
+              "to close"
+            ],
+            "clue": "Un niño cierra una ventana; la flecha baja.",
+            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+            "flashClue": "Un niño cierra una ventana; la flecha baja.",
+            "searchClue": "Un niño cierra una ventana; la flecha baja."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "listen",
+            "aliases": [
+              "to listen"
+            ],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares."
+          }
         ],
-        [
-          "Es tomar la primera comida del día.",
-          true
+        "5": [
+          {
+            "key": "cerrar",
+            "asset": "acciones/cerrar",
+            "answer": "close",
+            "aliases": [
+              "to close"
+            ],
+            "clue": "Un niño cierra una ventana; la flecha baja.",
+            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+            "flashClue": "Un niño cierra una ventana; la flecha baja.",
+            "searchClue": "Un niño cierra una ventana; la flecha baja.",
+            "crosswordClue": "Mover la ventana para que no pase el aire."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "listen",
+            "aliases": [
+              "to listen"
+            ],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares.",
+            "crosswordClue": "Prestar atención a la música que suena."
+          },
+          {
+            "key": "dormir",
+            "asset": "acciones/dormir",
+            "answer": "sleep",
+            "aliases": [
+              "to sleep"
+            ],
+            "clue": "Un niño duerme en una cama.",
+            "memoryClue": "Un niño duerme en una cama.",
+            "flashClue": "Un niño duerme en una cama.",
+            "searchClue": "Un niño duerme en una cama.",
+            "crosswordClue": "Descansar en la cama con los ojos cerrados."
+          },
+          {
+            "key": "leer",
+            "asset": "acciones/leer",
+            "answer": "read",
+            "aliases": [
+              "to read"
+            ],
+            "clue": "Un niño lee un libro.",
+            "memoryClue": "Un niño lee un libro.",
+            "flashClue": "Un niño lee un libro.",
+            "searchClue": "Un niño lee un libro.",
+            "crosswordClue": "Seguir las palabras de un libro para entender su historia."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "write",
+            "aliases": [
+              "to write"
+            ],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno.",
+            "crosswordClue": "Formar palabras en un cuaderno con un lápiz."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "drink",
+            "aliases": [
+              "to drink"
+            ],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso.",
+            "crosswordClue": "Tomar agua de un vaso."
+          }
         ],
-        [
-          "Significa cerrar los ojos para dormir.",
-          false
+        "2": [
+          {
+            "key": "abrir",
+            "asset": "acciones/abrir",
+            "answer": "open",
+            "aliases": [],
+            "clue": "Un niño abre una ventana; la flecha sube.",
+            "memoryClue": "Un niño abre una ventana; la flecha sube.",
+            "flashClue": "Un niño abre una ventana; la flecha sube.",
+            "searchClue": "Un niño abre una ventana; la flecha sube.",
+            "prompt": "In the morning, I ___ my bedroom window."
+          },
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "eat",
+            "aliases": [],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo.",
+            "prompt": "Then I ___ a sandwich for breakfast."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "drink",
+            "aliases": [],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso.",
+            "prompt": "With breakfast, I ___ a glass of water."
+          },
+          {
+            "key": "dibujar",
+            "asset": "acciones/dibujar",
+            "answer": "draw",
+            "aliases": [],
+            "clue": "Un niño dibuja con colores.",
+            "memoryClue": "Un niño dibuja con colores.",
+            "flashClue": "Un niño dibuja con colores.",
+            "searchClue": "Un niño dibuja con colores.",
+            "prompt": "In the afternoon, I ___ a picture with my coloured pencils."
+          },
+          {
+            "key": "leer",
+            "asset": "acciones/leer",
+            "answer": "read",
+            "aliases": [],
+            "clue": "Un niño lee un libro.",
+            "memoryClue": "Un niño lee un libro.",
+            "flashClue": "Un niño lee un libro.",
+            "searchClue": "Un niño lee un libro.",
+            "prompt": "Before bedtime, I ___ an adventure book."
+          },
+          {
+            "key": "dormir",
+            "asset": "acciones/dormir",
+            "answer": "sleep",
+            "aliases": [],
+            "clue": "Un niño duerme en una cama.",
+            "memoryClue": "Un niño duerme en una cama.",
+            "flashClue": "Un niño duerme en una cama.",
+            "searchClue": "Un niño duerme en una cama.",
+            "prompt": "At night, I ___ in my bed until morning."
+          }
         ],
-        [
-          "Lo haces para descansar por la noche.",
-          true
+        "4": [
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "run",
+            "aliases": [],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre.",
+            "prompt": "I ___ in the park."
+          },
+          {
+            "key": "caminar",
+            "asset": "acciones/caminar",
+            "answer": "walk",
+            "aliases": [],
+            "clue": "Un niño camina al aire libre.",
+            "memoryClue": "Un niño camina al aire libre.",
+            "flashClue": "Un niño camina al aire libre.",
+            "searchClue": "Un niño camina al aire libre.",
+            "prompt": "We ___ to school."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "writes",
+            "aliases": [],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno.",
+            "prompt": "Anna ___ a letter."
+          },
+          {
+            "key": "jugar",
+            "asset": "acciones/jugar",
+            "answer": "play",
+            "aliases": [],
+            "clue": "Un niño juega con una pelota.",
+            "memoryClue": "Un niño juega con una pelota.",
+            "flashClue": "Un niño juega con una pelota.",
+            "searchClue": "Un niño juega con una pelota.",
+            "prompt": "The children ___ with a ball."
+          },
+          {
+            "key": "cerrar",
+            "asset": "acciones/cerrar",
+            "answer": "close",
+            "aliases": [],
+            "clue": "Un niño cierra una ventana; la flecha baja.",
+            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+            "flashClue": "Un niño cierra una ventana; la flecha baja.",
+            "searchClue": "Un niño cierra una ventana; la flecha baja.",
+            "prompt": "You ___ the window."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "listen",
+            "aliases": [],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares.",
+            "prompt": "I ___ to music at home."
+          }
         ]
-      ]
+      },
+      "memoryExtra": []
     },
     {
       "id": "frutas",
@@ -8076,97 +9049,571 @@ window.CURRICULUM = {
     },
     {
       "id": "rutina",
-      "title": "La rutina diaria",
+      "title": "Acciones habituales",
       "kind": "vocabulary",
       "icon": "rutina",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "revision": "acciones-v2",
+      "tip": "Doce acciones para contar lo que haces cada día.",
+      "formats": [
+        "identify",
+        "actionstory",
+        "memory",
+        "order",
+        "crossword"
+      ],
       "items": [
         {
-          "clue": "Abrir los ojos y dejar de dormir.",
-          "answer": "просыпаться",
-          "prompt": "Утром пора открыть глаза и ___.",
+          "key": "comer",
+          "asset": "acciones/comer",
+          "answer": "есть",
           "aliases": [
-            "проснуться"
+            "кушать"
           ],
-          "memoryClue": "Ya no estás dormido.",
-          "asset": "rutina/1"
+          "clue": "Un niño come un bocadillo.",
+          "memoryClue": "Un niño come un bocadillo.",
+          "flashClue": "Un niño come un bocadillo.",
+          "searchClue": "Un niño come un bocadillo."
         },
         {
-          "clue": "Lavarse con el agua de la ducha.",
-          "answer": "принимать душ",
-          "prompt": "В ванной я использую мыло, чтобы ___.",
-          "aliases": [
-            "принять душ"
-          ],
-          "memoryClue": "Agua, jabón y ducha.",
-          "asset": "rutina/2"
-        },
-        {
-          "clue": "Tomar la primera comida de la mañana.",
-          "answer": "завтракать",
-          "prompt": "Утром пора есть первый раз за день: пора ___.",
-          "aliases": [
-            "позавтракать"
-          ],
-          "memoryClue": "La primera comida del día.",
-          "asset": "rutina/3"
-        },
-        {
-          "clue": "Aprender y practicar una materia.",
-          "answer": "учиться",
-          "prompt": "Я открываю учебник, чтобы ___.",
-          "aliases": [
-            "заниматься"
-          ],
-          "memoryClue": "Aprender con tus libros.",
-          "asset": "rutina/4"
-        },
-        {
-          "clue": "Descansar con los ojos cerrados durante la noche.",
-          "answer": "спать",
-          "prompt": "Ночью я закрываю глаза: пора ___.",
+          "key": "beber",
+          "asset": "acciones/beber",
+          "answer": "пить",
           "aliases": [],
-          "memoryClue": "Pasar la noche dormido.",
-          "asset": "rutina/5"
+          "clue": "Un niño bebe de un vaso.",
+          "memoryClue": "Un niño bebe de un vaso.",
+          "flashClue": "Un niño bebe de un vaso.",
+          "searchClue": "Un niño bebe de un vaso."
+        },
+        {
+          "key": "dormir",
+          "asset": "acciones/dormir",
+          "answer": "спать",
+          "aliases": [],
+          "clue": "Un niño duerme en una cama.",
+          "memoryClue": "Un niño duerme en una cama.",
+          "flashClue": "Un niño duerme en una cama.",
+          "searchClue": "Un niño duerme en una cama."
+        },
+        {
+          "key": "correr",
+          "asset": "acciones/correr",
+          "answer": "бегать",
+          "aliases": [
+            "бежать"
+          ],
+          "clue": "Un niño corre al aire libre.",
+          "memoryClue": "Un niño corre al aire libre.",
+          "flashClue": "Un niño corre al aire libre.",
+          "searchClue": "Un niño corre al aire libre."
+        },
+        {
+          "key": "dibujar",
+          "asset": "acciones/dibujar",
+          "answer": "рисовать",
+          "aliases": [
+            "нарисовать"
+          ],
+          "clue": "Un niño dibuja con colores.",
+          "memoryClue": "Un niño dibuja con colores.",
+          "flashClue": "Un niño dibuja con colores.",
+          "searchClue": "Un niño dibuja con colores."
+        },
+        {
+          "key": "caminar",
+          "asset": "acciones/caminar",
+          "answer": "ходить",
+          "aliases": [
+            "идти",
+            "гулять"
+          ],
+          "clue": "Un niño camina al aire libre.",
+          "memoryClue": "Un niño camina al aire libre.",
+          "flashClue": "Un niño camina al aire libre.",
+          "searchClue": "Un niño camina al aire libre."
+        },
+        {
+          "key": "leer",
+          "asset": "acciones/leer",
+          "answer": "читать",
+          "aliases": [],
+          "clue": "Un niño lee un libro.",
+          "memoryClue": "Un niño lee un libro.",
+          "flashClue": "Un niño lee un libro.",
+          "searchClue": "Un niño lee un libro."
+        },
+        {
+          "key": "escribir",
+          "asset": "acciones/escribir",
+          "answer": "писать",
+          "aliases": [],
+          "clue": "Un niño escribe en un cuaderno.",
+          "memoryClue": "Un niño escribe en un cuaderno.",
+          "flashClue": "Un niño escribe en un cuaderno.",
+          "searchClue": "Un niño escribe en un cuaderno."
+        },
+        {
+          "key": "jugar",
+          "asset": "acciones/jugar",
+          "answer": "играть",
+          "aliases": [],
+          "clue": "Un niño juega con una pelota.",
+          "memoryClue": "Un niño juega con una pelota.",
+          "flashClue": "Un niño juega con una pelota.",
+          "searchClue": "Un niño juega con una pelota."
+        },
+        {
+          "key": "abrir",
+          "asset": "acciones/abrir",
+          "answer": "открывать",
+          "aliases": [
+            "открыть"
+          ],
+          "clue": "Un niño abre una ventana; la flecha sube.",
+          "memoryClue": "Un niño abre una ventana; la flecha sube.",
+          "flashClue": "Un niño abre una ventana; la flecha sube.",
+          "searchClue": "Un niño abre una ventana; la flecha sube."
+        },
+        {
+          "key": "cerrar",
+          "asset": "acciones/cerrar",
+          "answer": "закрывать",
+          "aliases": [
+            "закрыть"
+          ],
+          "clue": "Un niño cierra una ventana; la flecha baja.",
+          "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+          "flashClue": "Un niño cierra una ventana; la flecha baja.",
+          "searchClue": "Un niño cierra una ventana; la flecha baja."
+        },
+        {
+          "key": "escuchar",
+          "asset": "acciones/escuchar",
+          "answer": "слушать",
+          "aliases": [],
+          "clue": "Un niño escucha música con auriculares.",
+          "memoryClue": "Un niño escucha música con auriculares.",
+          "flashClue": "Un niño escucha música con auriculares.",
+          "searchClue": "Un niño escucha música con auriculares."
         }
       ],
-      "formats": [
-        "flashcards",
-        "match",
-        "sequence",
-        "context",
-        "truefalse"
-      ],
-      "matchClues": [
-        "Salir del sueño por la mañana.",
-        "Lavarse el cuerpo en la ducha.",
-        "Comer por primera vez en el día.",
-        "Dedicar un rato al aprendizaje.",
-        "Descansar dormido por la noche."
-      ],
-      "facts": [
-        [
-          "Lo haces cuando dejas de dormir.",
-          true
+      "variants": {
+        "1": [
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "есть",
+            "aliases": [
+              "кушать"
+            ],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "пить",
+            "aliases": [],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso."
+          },
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "бегать",
+            "aliases": [
+              "бежать"
+            ],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre."
+          },
+          {
+            "key": "caminar",
+            "asset": "acciones/caminar",
+            "answer": "ходить",
+            "aliases": [
+              "идти",
+              "гулять"
+            ],
+            "clue": "Un niño camina al aire libre.",
+            "memoryClue": "Un niño camina al aire libre.",
+            "flashClue": "Un niño camina al aire libre.",
+            "searchClue": "Un niño camina al aire libre."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "писать",
+            "aliases": [],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "слушать",
+            "aliases": [],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares."
+          }
         ],
-        [
-          "Significa peinarse el pelo.",
-          false
+        "3": [
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "есть",
+            "aliases": [
+              "кушать"
+            ],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "пить",
+            "aliases": [],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso."
+          },
+          {
+            "key": "dormir",
+            "asset": "acciones/dormir",
+            "answer": "спать",
+            "aliases": [],
+            "clue": "Un niño duerme en una cama.",
+            "memoryClue": "Un niño duerme en una cama.",
+            "flashClue": "Un niño duerme en una cama.",
+            "searchClue": "Un niño duerme en una cama."
+          },
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "бегать",
+            "aliases": [
+              "бежать"
+            ],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre."
+          },
+          {
+            "key": "dibujar",
+            "asset": "acciones/dibujar",
+            "answer": "рисовать",
+            "aliases": [
+              "нарисовать"
+            ],
+            "clue": "Un niño dibuja con colores.",
+            "memoryClue": "Un niño dibuja con colores.",
+            "flashClue": "Un niño dibuja con colores.",
+            "searchClue": "Un niño dibuja con colores."
+          },
+          {
+            "key": "caminar",
+            "asset": "acciones/caminar",
+            "answer": "ходить",
+            "aliases": [
+              "идти",
+              "гулять"
+            ],
+            "clue": "Un niño camina al aire libre.",
+            "memoryClue": "Un niño camina al aire libre.",
+            "flashClue": "Un niño camina al aire libre.",
+            "searchClue": "Un niño camina al aire libre."
+          },
+          {
+            "key": "leer",
+            "asset": "acciones/leer",
+            "answer": "читать",
+            "aliases": [],
+            "clue": "Un niño lee un libro.",
+            "memoryClue": "Un niño lee un libro.",
+            "flashClue": "Un niño lee un libro.",
+            "searchClue": "Un niño lee un libro."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "писать",
+            "aliases": [],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno."
+          },
+          {
+            "key": "jugar",
+            "asset": "acciones/jugar",
+            "answer": "играть",
+            "aliases": [],
+            "clue": "Un niño juega con una pelota.",
+            "memoryClue": "Un niño juega con una pelota.",
+            "flashClue": "Un niño juega con una pelota.",
+            "searchClue": "Un niño juega con una pelota."
+          },
+          {
+            "key": "abrir",
+            "asset": "acciones/abrir",
+            "answer": "открывать",
+            "aliases": [
+              "открыть"
+            ],
+            "clue": "Un niño abre una ventana; la flecha sube.",
+            "memoryClue": "Un niño abre una ventana; la flecha sube.",
+            "flashClue": "Un niño abre una ventana; la flecha sube.",
+            "searchClue": "Un niño abre una ventana; la flecha sube."
+          },
+          {
+            "key": "cerrar",
+            "asset": "acciones/cerrar",
+            "answer": "закрывать",
+            "aliases": [
+              "закрыть"
+            ],
+            "clue": "Un niño cierra una ventana; la flecha baja.",
+            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+            "flashClue": "Un niño cierra una ventana; la flecha baja.",
+            "searchClue": "Un niño cierra una ventana; la flecha baja."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "слушать",
+            "aliases": [],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares."
+          }
         ],
-        [
-          "Es tomar la primera comida del día.",
-          true
+        "5": [
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "есть",
+            "aliases": [
+              "кушать"
+            ],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo.",
+            "crosswordClue": "Tomar un bocadillo como alimento."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "пить",
+            "aliases": [],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso.",
+            "crosswordClue": "Tomar agua de un vaso."
+          },
+          {
+            "key": "dormir",
+            "asset": "acciones/dormir",
+            "answer": "спать",
+            "aliases": [],
+            "clue": "Un niño duerme en una cama.",
+            "memoryClue": "Un niño duerme en una cama.",
+            "flashClue": "Un niño duerme en una cama.",
+            "searchClue": "Un niño duerme en una cama.",
+            "crosswordClue": "Descansar en la cama con los ojos cerrados."
+          },
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "бегать",
+            "aliases": [
+              "бежать"
+            ],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre.",
+            "crosswordClue": "Avanzar deprisa, a mayor velocidad que al caminar."
+          },
+          {
+            "key": "dibujar",
+            "asset": "acciones/dibujar",
+            "answer": "рисовать",
+            "aliases": [
+              "нарисовать"
+            ],
+            "clue": "Un niño dibuja con colores.",
+            "memoryClue": "Un niño dibuja con colores.",
+            "flashClue": "Un niño dibuja con colores.",
+            "searchClue": "Un niño dibuja con colores.",
+            "crosswordClue": "Crear una imagen con lápices de colores."
+          },
+          {
+            "key": "leer",
+            "asset": "acciones/leer",
+            "answer": "читать",
+            "aliases": [],
+            "clue": "Un niño lee un libro.",
+            "memoryClue": "Un niño lee un libro.",
+            "flashClue": "Un niño lee un libro.",
+            "searchClue": "Un niño lee un libro.",
+            "crosswordClue": "Seguir las palabras de un libro para entender su historia."
+          }
         ],
-        [
-          "Significa cerrar los ojos para dormir.",
-          false
+        "2": [
+          {
+            "key": "abrir",
+            "asset": "acciones/abrir",
+            "answer": "открываю",
+            "aliases": [],
+            "clue": "Un niño abre una ventana; la flecha sube.",
+            "memoryClue": "Un niño abre una ventana; la flecha sube.",
+            "flashClue": "Un niño abre una ventana; la flecha sube.",
+            "searchClue": "Un niño abre una ventana; la flecha sube.",
+            "prompt": "Утром я ___ окно в своей комнате."
+          },
+          {
+            "key": "comer",
+            "asset": "acciones/comer",
+            "answer": "ем",
+            "aliases": [],
+            "clue": "Un niño come un bocadillo.",
+            "memoryClue": "Un niño come un bocadillo.",
+            "flashClue": "Un niño come un bocadillo.",
+            "searchClue": "Un niño come un bocadillo.",
+            "prompt": "Потом я ___ бутерброд на завтрак."
+          },
+          {
+            "key": "beber",
+            "asset": "acciones/beber",
+            "answer": "пью",
+            "aliases": [],
+            "clue": "Un niño bebe de un vaso.",
+            "memoryClue": "Un niño bebe de un vaso.",
+            "flashClue": "Un niño bebe de un vaso.",
+            "searchClue": "Un niño bebe de un vaso.",
+            "prompt": "За завтраком я ___ стакан воды."
+          },
+          {
+            "key": "dibujar",
+            "asset": "acciones/dibujar",
+            "answer": "рисую",
+            "aliases": [],
+            "clue": "Un niño dibuja con colores.",
+            "memoryClue": "Un niño dibuja con colores.",
+            "flashClue": "Un niño dibuja con colores.",
+            "searchClue": "Un niño dibuja con colores.",
+            "prompt": "Днём я ___ пейзаж цветными карандашами."
+          },
+          {
+            "key": "leer",
+            "asset": "acciones/leer",
+            "answer": "читаю",
+            "aliases": [],
+            "clue": "Un niño lee un libro.",
+            "memoryClue": "Un niño lee un libro.",
+            "flashClue": "Un niño lee un libro.",
+            "searchClue": "Un niño lee un libro.",
+            "prompt": "Перед сном я ___ книгу о приключениях."
+          },
+          {
+            "key": "dormir",
+            "asset": "acciones/dormir",
+            "answer": "сплю",
+            "aliases": [],
+            "clue": "Un niño duerme en una cama.",
+            "memoryClue": "Un niño duerme en una cama.",
+            "flashClue": "Un niño duerme en una cama.",
+            "searchClue": "Un niño duerme en una cama.",
+            "prompt": "Ночью я ___ в своей кровати до утра."
+          }
         ],
-        [
-          "Lo haces para descansar por la noche.",
-          true
+        "4": [
+          {
+            "key": "correr",
+            "asset": "acciones/correr",
+            "answer": "бегаю",
+            "aliases": [],
+            "clue": "Un niño corre al aire libre.",
+            "memoryClue": "Un niño corre al aire libre.",
+            "flashClue": "Un niño corre al aire libre.",
+            "searchClue": "Un niño corre al aire libre.",
+            "prompt": "Я ___ в парке."
+          },
+          {
+            "key": "caminar",
+            "asset": "acciones/caminar",
+            "answer": "ходим",
+            "aliases": [],
+            "clue": "Un niño camina al aire libre.",
+            "memoryClue": "Un niño camina al aire libre.",
+            "flashClue": "Un niño camina al aire libre.",
+            "searchClue": "Un niño camina al aire libre.",
+            "prompt": "Мы ___ в школу пешком."
+          },
+          {
+            "key": "escribir",
+            "asset": "acciones/escribir",
+            "answer": "пишет",
+            "aliases": [],
+            "clue": "Un niño escribe en un cuaderno.",
+            "memoryClue": "Un niño escribe en un cuaderno.",
+            "flashClue": "Un niño escribe en un cuaderno.",
+            "searchClue": "Un niño escribe en un cuaderno.",
+            "prompt": "Анна ___ письмо."
+          },
+          {
+            "key": "jugar",
+            "asset": "acciones/jugar",
+            "answer": "играют",
+            "aliases": [],
+            "clue": "Un niño juega con una pelota.",
+            "memoryClue": "Un niño juega con una pelota.",
+            "flashClue": "Un niño juega con una pelota.",
+            "searchClue": "Un niño juega con una pelota.",
+            "prompt": "Дети ___ с мячом."
+          },
+          {
+            "key": "cerrar",
+            "asset": "acciones/cerrar",
+            "answer": "закрываешь",
+            "aliases": [],
+            "clue": "Un niño cierra una ventana; la flecha baja.",
+            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
+            "flashClue": "Un niño cierra una ventana; la flecha baja.",
+            "searchClue": "Un niño cierra una ventana; la flecha baja.",
+            "prompt": "Ты ___ окно."
+          },
+          {
+            "key": "escuchar",
+            "asset": "acciones/escuchar",
+            "answer": "слушаю",
+            "aliases": [],
+            "clue": "Un niño escucha música con auriculares.",
+            "memoryClue": "Un niño escucha música con auriculares.",
+            "flashClue": "Un niño escucha música con auriculares.",
+            "searchClue": "Un niño escucha música con auriculares.",
+            "prompt": "Я ___ музыку дома."
+          }
         ]
-      ]
+      },
+      "memoryExtra": []
     },
     {
       "id": "frutas",

@@ -1,4 +1,5 @@
 const FORMAT_INFO = {
+  actionstory: ['Un día en imágenes', 'Completa esta historia en presente. Cada dibujo sustituye a la pista del verbo: escribe solo la forma que falta y fíjate en quién realiza la acción.'],
   picturechoice: ['Elige el nombre', 'Mira la ilustración y elige su nombre entre las tres opciones.'],
   fruitletters: ['Completa las letras', 'Mira la fruta, completa mentalmente las letras que faltan y escribe el nombre entero.'],
   basket: ['Prepara la cesta', 'Elige una tarjeta y pulsa el pedido con la misma fruta, o arrastra la tarjeta hasta él. Coloca cada fruta en su sitio.'],
@@ -46,7 +47,9 @@ function mediaPath(group,key) {
 function imageFor(item) { const path=mediaPath('vocabulary',item.asset);return path?`<img class="activity-image" src="${escapeHTML(path)}" alt="${escapeHTML(item.clue||item.memoryClue)}" loading="lazy">`:''; }
 function formatInfo(topic,mode) {
   const format=activityFormat(topic,mode);
+  if(format==='identify'&&topic.id==='rutina')return ['¿Qué está haciendo?','Mira cada ilustración y escribe la acción en infinitivo en el idioma que estudias; por ejemplo, saltar, jump o прыгать. En inglés puedes escribir el verbo con o sin «to».'];
   if(format==='identify'&&activityItems(topic,mode).every(item=>mediaPath('vocabulary',item.asset)))return ['Mira y escribe','Mira cada ilustración y escribe la palabra. Puedes abrir una pista si la necesitas.'];
+  if(format==='order'&&topic.id==='rutina')return ['Construye las frases','Mira la acción y pulsa todas las palabras para construir una frase. Empieza por la palabra con mayúscula y termina con la que lleva punto.'];
   if(format==='truefalse'&&topic.kind==='grammar')return ['¿Está bien escrito?','Decide si la frase es gramaticalmente correcta.'];
   if(format==='memory'){const count=activityItems(topic,mode).length+(topic.memoryExtra||[]).length;return [`Memory: ${count*2} tarjetas`,`Encuentra ${count} parejas: una palabra y su imagen o significado. Pulsa dos tarjetas para descubrirlas.`];}
   if(format==='wordsearch')return ['Sopa de letras',`Busca ${activityItems(topic,mode).length} palabras. Pulsa la primera letra y después la última. Pueden ir en horizontal, vertical o diagonal.`];
@@ -94,7 +97,7 @@ function feedbackFor(element,correct,answers) {
   const text=document.createElement('span');text.textContent=correct?'✓ ¡Correcto!':'Revisa tu respuesta. Puedes intentarlo otra vez.';element.append(text);
   if(!correct){const button=document.createElement('button');button.type='button';button.className='reveal-solution';button.textContent='Ver solución';button.setAttribute('aria-expanded','false');const solution=document.createElement('span');solution.className='solution';solution.hidden=true;button.addEventListener('click',()=>{solution.hidden=!solution.hidden;solution.textContent=solution.hidden?'':`Solución: ${answers[0]}`;button.textContent=solution.hidden?'Ver solución':'Ocultar solución';button.setAttribute('aria-expanded',String(!solution.hidden));});element.append(button,solution);}
 }
-function expectedAnswers(topic,mode,item) {return topic.kind==='grammar'&&activityFormat(topic,mode)==='order'?[fullSentence(item),...(item.orders||[])]:[item.answer,...(item.aliases||[])];}
+function expectedAnswers(topic,mode,item) {return activityFormat(topic,mode)==='order'?[fullSentence(item),...(item.orders||[])]:[item.answer,...(item.aliases||[])];}
 function renderStandard(id,topic,mode) {
   const format=activityFormat(topic,mode),items=activityItems(topic,mode),vocabulary=topic.kind==='vocabulary',lang=languages[id].htmlLang;
   const sequenceHours=['07:00','07:15','07:45','09:00','22:00'];
@@ -127,12 +130,18 @@ function renderStandard(id,topic,mode) {
     }else if(format==='match'||format==='sequence')control+=`<select id="answer-${i}" name="q${i}" required aria-labelledby="question-${i}" lang="${lang}"><option value="">Elige una opción</option>${shuffled(items.map(x=>x.answer),i+mode).map(a=>`<option value="${escapeHTML(a)}">${escapeHTML(a)}</option>`).join('')}</select>`;
     else if(format==='order'){
       prompt='Construye una frase con todas las palabras.';
+      if(topic.id==='rutina')control=imageFor(item)+control;
       control+=`<div class="word-slots" id="slots-${i}" aria-label="Tu frase" lang="${lang}"></div><div class="word-bank" data-question="${i}" lang="${lang}">${shuffled(fullSentence(item).split(' '),i+9).map((word,j)=>`<button type="button" class="word-token" data-token="${j}" data-word="${escapeHTML(word)}" aria-label="Añadir ${escapeHTML(word)}">${escapeHTML(word)}</button>`).join('')}</div><input type="hidden" name="q${i}" id="answer-${i}">`;
-    }else if(format!=='basket')control+=`<input class="written-answer" id="answer-${i}" name="q${i}" type="text" required autocomplete="off" autocapitalize="off" spellcheck="false" lang="${lang}" aria-labelledby="question-${i}" placeholder="${format==='detective'?'Solo la parte corregida':'Escribe tu respuesta'}">`;
+    }else if(format==='actionstory'){
+      prompt=`Parte ${i+1} de la historia`;
+      const parts=item.prompt.split('___');
+      control=`<div class="action-story-line" lang="${lang}"><span>${escapeHTML(parts[0])}</span><span class="action-story-gap">${imageFor(item)}<input class="written-answer" id="answer-${i}" name="q${i}" type="text" required autocomplete="off" autocapitalize="off" spellcheck="false" lang="${lang}" aria-label="Verbo que falta en la parte ${i+1}" aria-describedby="story-${i}" placeholder="Verbo"></span><span>${escapeHTML(parts[1])}</span><span class="visually-hidden" id="story-${i}">${escapeHTML(item.prompt.replace('___','[hueco]'))}</span></div>`;
+    }
+    else if(format!=='basket')control+=`<input class="written-answer" id="answer-${i}" name="q${i}" type="text" required autocomplete="off" autocapitalize="off" spellcheck="false" lang="${lang}" aria-labelledby="question-${i}" placeholder="${format==='detective'?'Solo la parte corregida':'Escribe tu respuesta'}">`;
     return {html:`<fieldset class="question"><legend id="question-${i}"><span class="question-number">0${i+1}</span> ${prompt}</legend>${control}<div class="feedback" id="feedback-${i}" aria-live="polite"></div></fieldset>`,answers};
   });
   const basketBank=format==='basket'?`<section class="basket-bank" aria-label="Tarjetas de frutas"><p>Elige una fruta y después su pedido. También puedes arrastrar.</p><div class="fruit-cards">${shuffled(items,8).map(item=>`<button type="button" class="fruit-card" draggable="true" data-fruit="${escapeHTML(item.key)}" aria-pressed="false">${imageFor(item)}<span lang="${lang}">${escapeHTML(item.answer)}</span></button>`).join('')}</div><p id="basket-selection" role="status" aria-live="polite">Ninguna tarjeta seleccionada.</p></section>`:'';
-  document.querySelector('#exercise-stage').innerHTML=`${basketBank}${format==='context'?`<div class="vocabulary-bank"><strong>Banco de palabras</strong><p lang="${lang}">${shuffled(items.map(x=>x.answer),4).map(w=>`<span>${escapeHTML(w)}</span>`).join('')}</p></div>`:''}<form id="exercise"><div class="exercise-meta"><span>${format==='text'?'Una historia con cinco huecos':`${questions.length} retos para practicar`}</span><span>${topic.level} · Sin prisas</span></div><div class="${format==='text'?'story-sheet':''}">${questions.map(q=>q.html).join('')}</div><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
+  document.querySelector('#exercise-stage').innerHTML=`${basketBank}${format==='context'?`<div class="vocabulary-bank"><strong>Banco de palabras</strong><p lang="${lang}">${shuffled(items.map(x=>x.answer),4).map(w=>`<span>${escapeHTML(w)}</span>`).join('')}</p></div>`:''}<form id="exercise"><div class="exercise-meta"><span>${format==='text'?'Una historia con cinco huecos':`${questions.length} retos para practicar`}</span><span>${topic.level} · Sin prisas</span></div><div class="${['text','actionstory'].includes(format)?'story-sheet':''}">${questions.map(q=>q.html).join('')}</div><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
   const form=document.querySelector('#exercise');
   const clear=()=>{form.querySelectorAll('.feedback').forEach(el=>{el.replaceChildren();el.className='feedback';});document.querySelector('#result').textContent='';document.querySelector('#book-recommendation').replaceChildren();};
   if(format==='basket') {

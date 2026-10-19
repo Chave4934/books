@@ -249,3 +249,15 @@ main:focus { outline: none; }
 .activity-image[src*="assets/ropa/"] { width: min(160px,100%); height: 155px; margin-bottom: 14px; }
 .memory-card .activity-image[src*="assets/ropa/"] { width: 100%; height: 85px; margin: 0; }
 .puzzle-clue .activity-image[src*="assets/ropa/"] { width: 100%; height: 100px; margin: 0; }
+
+/* Las acciones conservan las ilustraciones originales a un tamaño moderado. */
+.activity-image[src*="assets/acciones/"] { width: min(145px,100%); height: 145px; margin-bottom: 12px; }
+.memory-card .activity-image[src*="assets/acciones/"] { width: 100%; height: 85px; margin: 0; }
+.crossword-clues .activity-image[src*="assets/acciones/"] { width: 100%; height: 95px; }
+.action-story-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; line-height: 1.9; font-size: 17px; }
+.action-story-gap { display: inline-flex; flex-direction: column; align-items: center; max-width: 100%; width: 160px; padding: 10px; background: var(--world-soft); border-radius: 12px; }
+.action-story-gap .activity-image[src*="assets/acciones/"] { width: 110px; height: 110px; margin: 0 0 8px; }
+.action-story-gap .written-answer { width: 100%; min-width: 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.action-story-line { clear: both; width: 100%; }
+.action-story-line > span { min-width: 0; overflow-wrap: anywhere; }

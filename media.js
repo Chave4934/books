@@ -6,11 +6,6 @@ window.MEDIA = {
     "casa/3": null,
     "casa/4": null,
     "casa/5": null,
-    "rutina/1": null,
-    "rutina/2": null,
-    "rutina/3": null,
-    "rutina/4": null,
-    "rutina/5": null,
     "animales/perro": "assets/animales/mejoradas/perro.webp",
     "animales/vaca": "assets/animales/mejoradas/vaca.webp",
     "animales/caballo": "assets/animales/mejoradas/caballo.webp",
@@ -46,7 +41,19 @@ window.MEDIA = {
     "ropa/pijama": "assets/ropa/pijama.png",
     "ropa/sombrero": "assets/ropa/sombrero.png",
     "ropa/vestido": "assets/ropa/vestido.png",
-    "ropa/zapatos": "assets/ropa/zapatos.png"
+    "ropa/zapatos": "assets/ropa/zapatos.png",
+    "acciones/comer": "assets/acciones/comer.png",
+    "acciones/beber": "assets/acciones/beber.png",
+    "acciones/dormir": "assets/acciones/dormir.png",
+    "acciones/correr": "assets/acciones/correr.png",
+    "acciones/dibujar": "assets/acciones/dibujar.png",
+    "acciones/caminar": "assets/acciones/caminar.png",
+    "acciones/leer": "assets/acciones/leer.png",
+    "acciones/escribir": "assets/acciones/escribir.png",
+    "acciones/jugar": "assets/acciones/jugar.png",
+    "acciones/abrir": "assets/acciones/abrir.png",
+    "acciones/cerrar": "assets/acciones/cerrar.png",
+    "acciones/escuchar": "assets/acciones/escuchar.png"
   },
   "topics": {
     "presente": null,
@@ -57,7 +64,7 @@ window.MEDIA = {
     "animales": "assets/animales/mejoradas/perro.webp",
     "casa": null,
     "ropa": "assets/ropa/vestido.png",
-    "rutina": null,
+    "rutina": "assets/acciones/leer.png",
     "frutas": "assets/frutas/manzana.png"
   },
   "covers": {
