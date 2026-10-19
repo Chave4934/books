@@ -14,7 +14,7 @@ Se reutiliza cada ilustración en los tres idiomas. Los textos alternativos y la
 
 | Carpeta / clave | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |
-| animales | gato | perro | conejo | elefante | caballo |
+| animales | Ver colección de doce animales en `animales/README.md` | — | — | — | — |
 | casa | dormitorio completo | cocina | baño | salón | jardín |
 | ropa | vestido | pantalones | camiseta | zapatillas | abrigo |
 | rutina | persona despertándose | persona duchándose | persona desayunando | persona estudiando | persona durmiendo |
@@ -22,9 +22,8 @@ Se reutiliza cada ilustración en los tres idiomas. Los textos alternativos y la
 
 Las escenas de casa deben mostrar habitaciones completas, no una cama aislada para representar un dormitorio. Las de rutina deben mostrar una persona realizando la acción; un despertador o un bol por sí solos no la explican.
 
-El memory tiene otras cinco palabras por tema. Sus claves 6–10 corresponden a:
+En ropa y comida, el memory tiene otras cinco palabras por tema. El de animales usa los doce originales recibidos. Sus claves 6–10 corresponden a:
 
-- animales: vaca, león, pato, cerdo, oveja;
 - ropa: falda, sombrero, calcetines, bufanda, guantes;
 - comida: plátano, arroz, huevo, pescado, agua.
 
@@ -47,3 +46,5 @@ Los identificadores, títulos, público y descripciones están en `books.js`. Ha
 ## Compartir en redes
 
 `social/chavebooks.png` es la imagen general de vista previa, de 1200 × 630 píxeles. Su fuente editable es `social/chavebooks.svg`. No contiene portadas ni imágenes de los libros. Al actualizarla, puede que las redes sociales mantengan temporalmente una copia anterior en su caché.
+
+La colección de animales usa claves semánticas (`animales/perro`, `animales/leon`, etc.), no las claves numéricas antiguas. Consulta [su inventario y distribución](animales/README.md). Los doce originales de animales ya están guardados y asignados en la web. Las otras categorías y las portadas conservan sus rutas sin asignar hasta recibir sus archivos.

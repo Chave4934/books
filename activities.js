@@ -937,60 +937,146 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "animales",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Conoce los animales, escribe sus nombres y practica con juegos. Cada actividad incluye un grupo diferente; el memory reúne toda la colección.",
       "items": [
         {
-          "clue": "Tiene bigotes, patas suaves y hace «miau».",
-          "answer": "gato",
-          "prompt": "Mi ___ hace «miau» para pedir comida.",
-          "aliases": [
-            "gata"
-          ],
-          "memoryClue": "Dice «miau».",
-          "asset": "animales/1",
-          "searchClue": "Animal que ronronea."
-        },
-        {
-          "clue": "Cuida la casa y hace «guau».",
+          "key": "perro",
+          "asset": "animales/perro",
           "answer": "perro",
-          "prompt": "El ___ mueve la cola y ladra: «¡guau!».",
           "aliases": [
-            "perra"
+            "perra",
+            "cachorro"
           ],
-          "memoryClue": "Dice «guau».",
-          "asset": "animales/2",
-          "searchClue": "Animal que ladra."
+          "clue": "Un animal doméstico que ladra.",
+          "memoryClue": "Hace «guau» y mueve la cola.",
+          "searchClue": "El compañero que sale a pasear con correa.",
+          "prompt": "Mi ___ ladra para avisar: «¡Guau!»."
         },
         {
-          "clue": "Tiene orejas muy largas y salta.",
-          "answer": "conejo",
-          "prompt": "El ___ salta y mueve sus largas orejas.",
-          "aliases": [
-            "coneja"
-          ],
-          "memoryClue": "Salta y tiene orejas largas.",
-          "asset": "animales/3",
-          "searchClue": "Animal de orejas largas que da saltos."
-        },
-        {
-          "clue": "Es enorme y tiene una trompa larga.",
-          "answer": "elefante",
-          "prompt": "El ___ usa la trompa para beber agua.",
+          "key": "vaca",
+          "asset": "animales/vaca",
+          "answer": "vaca",
           "aliases": [],
-          "memoryClue": "Tiene una trompa.",
-          "asset": "animales/4",
-          "searchClue": "El animal de la trompa."
+          "clue": "Un animal de granja que hace «muu» y da leche.",
+          "memoryClue": "Nos da leche y puede tener manchas negras.",
+          "searchClue": "Animal de granja del que obtenemos leche.",
+          "prompt": "La ___ hace «muu» mientras la ordeñan."
         },
         {
-          "clue": "Lleva una silla de montar y relincha.",
+          "key": "caballo",
+          "asset": "animales/caballo",
           "answer": "caballo",
-          "prompt": "Monto a mi ___, que relincha junto al establo.",
           "aliases": [
             "yegua"
           ],
-          "memoryClue": "Relincha.",
-          "asset": "animales/5",
-          "searchClue": "Animal que relincha y se puede montar."
+          "clue": "Un animal con crin que relincha.",
+          "memoryClue": "Se le puede poner una silla para montar.",
+          "searchClue": "Animal de crin larga en el que se puede montar.",
+          "prompt": "El ___ relincha mientras le ponen la silla de montar."
+        },
+        {
+          "key": "cerdo",
+          "asset": "animales/cerdo",
+          "answer": "cerdo",
+          "aliases": [
+            "puerco",
+            "cochino",
+            "chancho"
+          ],
+          "clue": "Un animal de granja de hocico redondo que hace «oink».",
+          "memoryClue": "Tiene hocico redondo y una cola rizada.",
+          "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+          "prompt": "El ___ gruñe «oink» y mueve su cola rizada."
+        },
+        {
+          "key": "conejo",
+          "asset": "animales/conejo",
+          "answer": "conejo",
+          "aliases": [
+            "coneja"
+          ],
+          "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+          "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+          "searchClue": "Animal pequeño de orejas largas y cola corta.",
+          "prompt": "El ___ da un salto y mueve sus orejas muy largas."
+        },
+        {
+          "key": "elefante",
+          "asset": "animales/elefante",
+          "answer": "elefante",
+          "aliases": [],
+          "clue": "Un animal grande con trompa y grandes orejas.",
+          "memoryClue": "Usa una trompa larga para beber agua.",
+          "searchClue": "El animal más grande de este grupo, con trompa.",
+          "prompt": "El ___ bebe usando su larga trompa."
+        },
+        {
+          "key": "gato",
+          "asset": "animales/gato",
+          "answer": "gato",
+          "aliases": [
+            "gata"
+          ],
+          "clue": "Un animal doméstico de bigotes que hace «miau».",
+          "memoryClue": "Ronronea y se limpia con la lengua.",
+          "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+          "prompt": "Mi ___ hace «miau» y luego ronronea."
+        },
+        {
+          "key": "mono",
+          "asset": "animales/mono",
+          "answer": "mono",
+          "aliases": [
+            "mona"
+          ],
+          "clue": "Un animal de manos hábiles que trepa por los árboles.",
+          "memoryClue": "Puede agarrar ramas con las manos.",
+          "searchClue": "Animal de cola larga y manos que agarran ramas.",
+          "prompt": "El ___ agarra una rama con sus manos y trepa."
+        },
+        {
+          "key": "oso",
+          "asset": "animales/oso",
+          "answer": "oso",
+          "aliases": [
+            "osa"
+          ],
+          "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+          "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+          "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+          "prompt": "El ___ es un gran animal salvaje de orejas redondas que puede hibernar en invierno."
+        },
+        {
+          "key": "oveja",
+          "asset": "animales/oveja",
+          "answer": "oveja",
+          "aliases": [],
+          "clue": "Un animal de granja cubierto de lana que hace «bee».",
+          "memoryClue": "Su cuerpo está cubierto de lana.",
+          "searchClue": "Animal de granja del que obtenemos lana.",
+          "prompt": "La ___ hace «bee» y nos da lana."
+        },
+        {
+          "key": "leon",
+          "asset": "animales/leon",
+          "answer": "león",
+          "aliases": [],
+          "clue": "Un gran felino salvaje que ruge y tiene melena.",
+          "memoryClue": "El gran felino de la melena.",
+          "searchClue": "Felino de gran melena y fuerte rugido.",
+          "prompt": "El ___ ruge y sacude la gran melena que rodea su cabeza."
+        },
+        {
+          "key": "pato",
+          "asset": "animales/pato",
+          "answer": "pato",
+          "aliases": [
+            "patito"
+          ],
+          "clue": "Un ave de pico ancho que nada y hace «cuac».",
+          "memoryClue": "Nada en el estanque y hace «cuac».",
+          "searchClue": "Ave de pico ancho que nada en el agua.",
+          "prompt": "El ___ nada en el estanque y hace «cuac, cuac»."
         }
       ],
       "formats": [
@@ -1000,55 +1086,466 @@ window.CURRICULUM = {
         "context",
         "wordsearch"
       ],
-      "memoryExtra": [
-        {
-          "answer": "vaca",
-          "memoryClue": "Da leche y hace «muu».",
-          "asset": "animales/6"
-        },
-        {
-          "answer": "león",
-          "memoryClue": "Un gran felino con melena.",
-          "asset": "animales/7"
-        },
-        {
-          "answer": "pato",
-          "memoryClue": "Un ave que hace «cuac».",
-          "asset": "animales/8"
-        },
-        {
-          "answer": "cerdo",
-          "memoryClue": "Un animal de granja que hace «oink».",
-          "asset": "animales/9"
-        },
-        {
-          "answer": "oveja",
-          "memoryClue": "Un animal de granja que nos da lana.",
-          "asset": "animales/10"
-        }
-      ],
+      "memoryExtra": [],
       "facts": [
         [
-          "Este animal maúlla.",
+          "Puede agarrar ramas con las manos.",
           true
         ],
         [
-          "Este animal tiene trompa.",
+          "Tiene una trompa larga.",
           false
         ],
         [
-          "Este animal tiene orejas largas y salta.",
+          "Tiene crin y relincha.",
           true
         ],
         [
-          "Este animal es pequeño como un ratón.",
+          "Su cuerpo está cubierto de lana.",
           false
         ],
         [
-          "Este animal relincha.",
+          "El macho adulto tiene una gran melena.",
           true
+        ],
+        [
+          "Es un mamífero de cuatro patas.",
+          false
         ]
-      ]
+      ],
+      "variants": {
+        "1": [
+          {
+            "key": "perro",
+            "asset": "animales/perro",
+            "answer": "perro",
+            "aliases": [
+              "perra",
+              "cachorro"
+            ],
+            "clue": "Un animal doméstico que ladra.",
+            "memoryClue": "Hace «guau» y mueve la cola.",
+            "searchClue": "El compañero que sale a pasear con correa.",
+            "prompt": "Mi ___ ladra para avisar: «¡Guau!»."
+          },
+          {
+            "key": "gato",
+            "asset": "animales/gato",
+            "answer": "gato",
+            "aliases": [
+              "gata"
+            ],
+            "clue": "Un animal doméstico de bigotes que hace «miau».",
+            "memoryClue": "Ronronea y se limpia con la lengua.",
+            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "prompt": "Mi ___ hace «miau» y luego ronronea."
+          },
+          {
+            "key": "vaca",
+            "asset": "animales/vaca",
+            "answer": "vaca",
+            "aliases": [],
+            "clue": "Un animal de granja que hace «muu» y da leche.",
+            "memoryClue": "Nos da leche y puede tener manchas negras.",
+            "searchClue": "Animal de granja del que obtenemos leche.",
+            "prompt": "La ___ hace «muu» mientras la ordeñan."
+          },
+          {
+            "key": "cerdo",
+            "asset": "animales/cerdo",
+            "answer": "cerdo",
+            "aliases": [
+              "puerco",
+              "cochino",
+              "chancho"
+            ],
+            "clue": "Un animal de granja de hocico redondo que hace «oink».",
+            "memoryClue": "Tiene hocico redondo y una cola rizada.",
+            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "prompt": "El ___ gruñe «oink» y mueve su cola rizada."
+          },
+          {
+            "key": "conejo",
+            "asset": "animales/conejo",
+            "answer": "conejo",
+            "aliases": [
+              "coneja"
+            ],
+            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "prompt": "El ___ da un salto y mueve sus orejas muy largas."
+          },
+          {
+            "key": "oveja",
+            "asset": "animales/oveja",
+            "answer": "oveja",
+            "aliases": [],
+            "clue": "Un animal de granja cubierto de lana que hace «bee».",
+            "memoryClue": "Su cuerpo está cubierto de lana.",
+            "searchClue": "Animal de granja del que obtenemos lana.",
+            "prompt": "La ___ hace «bee» y nos da lana."
+          }
+        ],
+        "2": [
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "mono",
+            "aliases": [
+              "mona"
+            ],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "El ___ agarra una rama con sus manos y trepa."
+          },
+          {
+            "key": "oso",
+            "asset": "animales/oso",
+            "answer": "oso",
+            "aliases": [
+              "osa"
+            ],
+            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "prompt": "El ___ es un gran animal salvaje de orejas redondas que puede hibernar en invierno."
+          },
+          {
+            "key": "caballo",
+            "asset": "animales/caballo",
+            "answer": "caballo",
+            "aliases": [
+              "yegua"
+            ],
+            "clue": "Un animal con crin que relincha.",
+            "memoryClue": "Se le puede poner una silla para montar.",
+            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "prompt": "El ___ relincha mientras le ponen la silla de montar."
+          },
+          {
+            "key": "elefante",
+            "asset": "animales/elefante",
+            "answer": "elefante",
+            "aliases": [],
+            "clue": "Un animal grande con trompa y grandes orejas.",
+            "memoryClue": "Usa una trompa larga para beber agua.",
+            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "prompt": "El ___ bebe usando su larga trompa."
+          },
+          {
+            "key": "leon",
+            "asset": "animales/leon",
+            "answer": "león",
+            "aliases": [],
+            "clue": "Un gran felino salvaje que ruge y tiene melena.",
+            "memoryClue": "El gran felino de la melena.",
+            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "prompt": "El ___ ruge y sacude la gran melena que rodea su cabeza."
+          },
+          {
+            "key": "pato",
+            "asset": "animales/pato",
+            "answer": "pato",
+            "aliases": [
+              "patito"
+            ],
+            "clue": "Un ave de pico ancho que nada y hace «cuac».",
+            "memoryClue": "Nada en el estanque y hace «cuac».",
+            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "prompt": "El ___ nada en el estanque y hace «cuac, cuac»."
+          }
+        ],
+        "3": [
+          {
+            "key": "perro",
+            "asset": "animales/perro",
+            "answer": "perro",
+            "aliases": [
+              "perra",
+              "cachorro"
+            ],
+            "clue": "Un animal doméstico que ladra.",
+            "memoryClue": "Hace «guau» y mueve la cola.",
+            "searchClue": "El compañero que sale a pasear con correa.",
+            "prompt": "Mi ___ ladra para avisar: «¡Guau!»."
+          },
+          {
+            "key": "vaca",
+            "asset": "animales/vaca",
+            "answer": "vaca",
+            "aliases": [],
+            "clue": "Un animal de granja que hace «muu» y da leche.",
+            "memoryClue": "Nos da leche y puede tener manchas negras.",
+            "searchClue": "Animal de granja del que obtenemos leche.",
+            "prompt": "La ___ hace «muu» mientras la ordeñan."
+          },
+          {
+            "key": "caballo",
+            "asset": "animales/caballo",
+            "answer": "caballo",
+            "aliases": [
+              "yegua"
+            ],
+            "clue": "Un animal con crin que relincha.",
+            "memoryClue": "Se le puede poner una silla para montar.",
+            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "prompt": "El ___ relincha mientras le ponen la silla de montar."
+          },
+          {
+            "key": "cerdo",
+            "asset": "animales/cerdo",
+            "answer": "cerdo",
+            "aliases": [
+              "puerco",
+              "cochino",
+              "chancho"
+            ],
+            "clue": "Un animal de granja de hocico redondo que hace «oink».",
+            "memoryClue": "Tiene hocico redondo y una cola rizada.",
+            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "prompt": "El ___ gruñe «oink» y mueve su cola rizada."
+          },
+          {
+            "key": "conejo",
+            "asset": "animales/conejo",
+            "answer": "conejo",
+            "aliases": [
+              "coneja"
+            ],
+            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "prompt": "El ___ da un salto y mueve sus orejas muy largas."
+          },
+          {
+            "key": "elefante",
+            "asset": "animales/elefante",
+            "answer": "elefante",
+            "aliases": [],
+            "clue": "Un animal grande con trompa y grandes orejas.",
+            "memoryClue": "Usa una trompa larga para beber agua.",
+            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "prompt": "El ___ bebe usando su larga trompa."
+          },
+          {
+            "key": "gato",
+            "asset": "animales/gato",
+            "answer": "gato",
+            "aliases": [
+              "gata"
+            ],
+            "clue": "Un animal doméstico de bigotes que hace «miau».",
+            "memoryClue": "Ronronea y se limpia con la lengua.",
+            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "prompt": "Mi ___ hace «miau» y luego ronronea."
+          },
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "mono",
+            "aliases": [
+              "mona"
+            ],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "El ___ agarra una rama con sus manos y trepa."
+          },
+          {
+            "key": "oso",
+            "asset": "animales/oso",
+            "answer": "oso",
+            "aliases": [
+              "osa"
+            ],
+            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "prompt": "El ___ es un gran animal salvaje de orejas redondas que puede hibernar en invierno."
+          },
+          {
+            "key": "oveja",
+            "asset": "animales/oveja",
+            "answer": "oveja",
+            "aliases": [],
+            "clue": "Un animal de granja cubierto de lana que hace «bee».",
+            "memoryClue": "Su cuerpo está cubierto de lana.",
+            "searchClue": "Animal de granja del que obtenemos lana.",
+            "prompt": "La ___ hace «bee» y nos da lana."
+          },
+          {
+            "key": "leon",
+            "asset": "animales/leon",
+            "answer": "león",
+            "aliases": [],
+            "clue": "Un gran felino salvaje que ruge y tiene melena.",
+            "memoryClue": "El gran felino de la melena.",
+            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "prompt": "El ___ ruge y sacude la gran melena que rodea su cabeza."
+          },
+          {
+            "key": "pato",
+            "asset": "animales/pato",
+            "answer": "pato",
+            "aliases": [
+              "patito"
+            ],
+            "clue": "Un ave de pico ancho que nada y hace «cuac».",
+            "memoryClue": "Nada en el estanque y hace «cuac».",
+            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "prompt": "El ___ nada en el estanque y hace «cuac, cuac»."
+          }
+        ],
+        "4": [
+          {
+            "key": "pato",
+            "asset": "animales/pato",
+            "answer": "pato",
+            "aliases": [
+              "patito"
+            ],
+            "clue": "Un ave de pico ancho que nada y hace «cuac».",
+            "memoryClue": "Nada en el estanque y hace «cuac».",
+            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "prompt": "El ___ nada en el estanque y hace «cuac, cuac»."
+          },
+          {
+            "key": "leon",
+            "asset": "animales/leon",
+            "answer": "león",
+            "aliases": [],
+            "clue": "Un gran felino salvaje que ruge y tiene melena.",
+            "memoryClue": "El gran felino de la melena.",
+            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "prompt": "El ___ ruge y sacude la gran melena que rodea su cabeza."
+          },
+          {
+            "key": "vaca",
+            "asset": "animales/vaca",
+            "answer": "vaca",
+            "aliases": [],
+            "clue": "Un animal de granja que hace «muu» y da leche.",
+            "memoryClue": "Nos da leche y puede tener manchas negras.",
+            "searchClue": "Animal de granja del que obtenemos leche.",
+            "prompt": "La ___ hace «muu» mientras la ordeñan."
+          },
+          {
+            "key": "gato",
+            "asset": "animales/gato",
+            "answer": "gato",
+            "aliases": [
+              "gata"
+            ],
+            "clue": "Un animal doméstico de bigotes que hace «miau».",
+            "memoryClue": "Ronronea y se limpia con la lengua.",
+            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "prompt": "Mi ___ hace «miau» y luego ronronea."
+          },
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "mono",
+            "aliases": [
+              "mona"
+            ],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "El ___ agarra una rama con sus manos y trepa."
+          },
+          {
+            "key": "oso",
+            "asset": "animales/oso",
+            "answer": "oso",
+            "aliases": [
+              "osa"
+            ],
+            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "prompt": "El ___ es un gran animal salvaje de orejas redondas que puede hibernar en invierno."
+          }
+        ],
+        "5": [
+          {
+            "key": "elefante",
+            "asset": "animales/elefante",
+            "answer": "elefante",
+            "aliases": [],
+            "clue": "Un animal grande con trompa y grandes orejas.",
+            "memoryClue": "Usa una trompa larga para beber agua.",
+            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "prompt": "El ___ bebe usando su larga trompa."
+          },
+          {
+            "key": "conejo",
+            "asset": "animales/conejo",
+            "answer": "conejo",
+            "aliases": [
+              "coneja"
+            ],
+            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "prompt": "El ___ da un salto y mueve sus orejas muy largas."
+          },
+          {
+            "key": "cerdo",
+            "asset": "animales/cerdo",
+            "answer": "cerdo",
+            "aliases": [
+              "puerco",
+              "cochino",
+              "chancho"
+            ],
+            "clue": "Un animal de granja de hocico redondo que hace «oink».",
+            "memoryClue": "Tiene hocico redondo y una cola rizada.",
+            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "prompt": "El ___ gruñe «oink» y mueve su cola rizada."
+          },
+          {
+            "key": "caballo",
+            "asset": "animales/caballo",
+            "answer": "caballo",
+            "aliases": [
+              "yegua"
+            ],
+            "clue": "Un animal con crin que relincha.",
+            "memoryClue": "Se le puede poner una silla para montar.",
+            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "prompt": "El ___ relincha mientras le ponen la silla de montar."
+          },
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "mono",
+            "aliases": [
+              "mona"
+            ],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "El ___ agarra una rama con sus manos y trepa."
+          },
+          {
+            "key": "oveja",
+            "asset": "animales/oveja",
+            "answer": "oveja",
+            "aliases": [],
+            "clue": "Un animal de granja cubierto de lana que hace «bee».",
+            "memoryClue": "Su cuerpo está cubierto de lana.",
+            "searchClue": "Animal de granja del que obtenemos lana.",
+            "prompt": "La ___ hace «bee» y nos da lana."
+          }
+        ]
+      },
+      "collectionStatus": {
+        "distinctAnimals": 12,
+        "requestedAnimals": 12,
+        "imagesAvailable": true
+      }
     },
     {
       "id": "casa",
@@ -2357,54 +2854,137 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "animales",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Conoce los animales, escribe sus nombres y practica con juegos. Cada actividad incluye un grupo diferente; el memory reúne toda la colección.",
       "items": [
         {
-          "clue": "Tiene bigotes, patas suaves y hace «miau».",
+          "key": "perro",
+          "asset": "animales/perro",
+          "answer": "dog",
+          "aliases": [
+            "puppy"
+          ],
+          "clue": "Un animal doméstico que ladra.",
+          "memoryClue": "Hace «guau» y mueve la cola.",
+          "searchClue": "El compañero que sale a pasear con correa.",
+          "prompt": "The ___ barks: 'Woof!'"
+        },
+        {
+          "key": "vaca",
+          "asset": "animales/vaca",
+          "answer": "cow",
+          "aliases": [],
+          "clue": "Un animal de granja que hace «muu» y da leche.",
+          "memoryClue": "Nos da leche y puede tener manchas negras.",
+          "searchClue": "Animal de granja del que obtenemos leche.",
+          "prompt": "The farmer milks the ___."
+        },
+        {
+          "key": "caballo",
+          "asset": "animales/caballo",
+          "answer": "horse",
+          "aliases": [],
+          "clue": "Un animal con crin que relincha.",
+          "memoryClue": "Se le puede poner una silla para montar.",
+          "searchClue": "Animal de crin larga en el que se puede montar.",
+          "prompt": "I put a saddle on the ___ before riding."
+        },
+        {
+          "key": "cerdo",
+          "asset": "animales/cerdo",
+          "answer": "pig",
+          "aliases": [
+            "hog"
+          ],
+          "clue": "Un animal de granja de hocico redondo que hace «oink».",
+          "memoryClue": "Tiene hocico redondo y una cola rizada.",
+          "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+          "prompt": "The ___ says 'oink' and has a curly tail."
+        },
+        {
+          "key": "conejo",
+          "asset": "animales/conejo",
+          "answer": "rabbit",
+          "aliases": [
+            "bunny"
+          ],
+          "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+          "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+          "searchClue": "Animal pequeño de orejas largas y cola corta.",
+          "prompt": "The ___ hops and moves its very long ears."
+        },
+        {
+          "key": "elefante",
+          "asset": "animales/elefante",
+          "answer": "elephant",
+          "aliases": [],
+          "clue": "Un animal grande con trompa y grandes orejas.",
+          "memoryClue": "Usa una trompa larga para beber agua.",
+          "searchClue": "El animal más grande de este grupo, con trompa.",
+          "prompt": "The ___ drinks water with its long trunk."
+        },
+        {
+          "key": "gato",
+          "asset": "animales/gato",
           "answer": "cat",
-          "prompt": "My ___ says 'meow' when it is hungry.",
           "aliases": [
             "kitty"
           ],
-          "memoryClue": "Dice «miau».",
-          "asset": "animales/1",
-          "searchClue": "Animal que ronronea."
+          "clue": "Un animal doméstico de bigotes que hace «miau».",
+          "memoryClue": "Ronronea y se limpia con la lengua.",
+          "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+          "prompt": "The ___ says 'meow' and then purrs."
         },
         {
-          "clue": "Cuida la casa y hace «guau».",
-          "answer": "dog",
-          "prompt": "Our ___ barks and wags its tail.",
+          "key": "mono",
+          "asset": "animales/mono",
+          "answer": "monkey",
           "aliases": [],
-          "memoryClue": "Dice «guau».",
-          "asset": "animales/2",
-          "searchClue": "Animal que ladra."
+          "clue": "Un animal de manos hábiles que trepa por los árboles.",
+          "memoryClue": "Puede agarrar ramas con las manos.",
+          "searchClue": "Animal de cola larga y manos que agarran ramas.",
+          "prompt": "The ___ grabs a branch with its hands and climbs."
         },
         {
-          "clue": "Tiene orejas muy largas y salta.",
-          "answer": "rabbit",
-          "prompt": "The ___ has long ears and hops across the grass.",
+          "key": "oso",
+          "asset": "animales/oso",
+          "answer": "bear",
           "aliases": [],
-          "memoryClue": "Salta y tiene orejas largas.",
-          "asset": "animales/3",
-          "searchClue": "Animal de orejas largas que da saltos."
+          "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+          "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+          "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+          "prompt": "The ___ is a large wild animal with round ears that can hibernate in winter."
         },
         {
-          "clue": "Es enorme y tiene una trompa larga.",
-          "answer": "elephant",
-          "prompt": "The ___ drinks water with its trunk.",
+          "key": "oveja",
+          "asset": "animales/oveja",
+          "answer": "sheep",
           "aliases": [],
-          "memoryClue": "Tiene una trompa.",
-          "asset": "animales/4",
-          "searchClue": "El animal de la trompa."
+          "clue": "Un animal de granja cubierto de lana que hace «bee».",
+          "memoryClue": "Su cuerpo está cubierto de lana.",
+          "searchClue": "Animal de granja del que obtenemos lana.",
+          "prompt": "The farmer cuts wool from the ___."
         },
         {
-          "clue": "Lleva una silla de montar y relincha.",
-          "answer": "horse",
-          "prompt": "I ride my ___ with a saddle.",
+          "key": "leon",
+          "asset": "animales/leon",
+          "answer": "lion",
           "aliases": [],
-          "memoryClue": "Relincha.",
-          "asset": "animales/5",
-          "searchClue": "Animal que relincha y se puede montar."
+          "clue": "Un gran felino salvaje que ruge y tiene melena.",
+          "memoryClue": "El gran felino de la melena.",
+          "searchClue": "Felino de gran melena y fuerte rugido.",
+          "prompt": "The ___ roars and shakes the mane around its head."
+        },
+        {
+          "key": "pato",
+          "asset": "animales/pato",
+          "answer": "duck",
+          "aliases": [
+            "duckling"
+          ],
+          "clue": "Un ave de pico ancho que nada y hace «cuac».",
+          "memoryClue": "Nada en el estanque y hace «cuac».",
+          "searchClue": "Ave de pico ancho que nada en el agua.",
+          "prompt": "The ___ swims in the pond and says 'quack'."
         }
       ],
       "formats": [
@@ -2414,55 +2994,438 @@ window.CURRICULUM = {
         "context",
         "wordsearch"
       ],
-      "memoryExtra": [
-        {
-          "answer": "cow",
-          "memoryClue": "Da leche y hace «muu».",
-          "asset": "animales/6"
-        },
-        {
-          "answer": "lion",
-          "memoryClue": "Un gran felino con melena.",
-          "asset": "animales/7"
-        },
-        {
-          "answer": "duck",
-          "memoryClue": "Un ave que hace «cuac».",
-          "asset": "animales/8"
-        },
-        {
-          "answer": "pig",
-          "memoryClue": "Un animal de granja que hace «oink».",
-          "asset": "animales/9"
-        },
-        {
-          "answer": "sheep",
-          "memoryClue": "Un animal de granja que nos da lana.",
-          "asset": "animales/10"
-        }
-      ],
+      "memoryExtra": [],
       "facts": [
         [
-          "Este animal maúlla.",
+          "Puede agarrar ramas con las manos.",
           true
         ],
         [
-          "Este animal tiene trompa.",
+          "Tiene una trompa larga.",
           false
         ],
         [
-          "Este animal tiene orejas largas y salta.",
+          "Tiene crin y relincha.",
           true
         ],
         [
-          "Este animal es pequeño como un ratón.",
+          "Su cuerpo está cubierto de lana.",
           false
         ],
         [
-          "Este animal relincha.",
+          "El macho adulto tiene una gran melena.",
           true
+        ],
+        [
+          "Es un mamífero de cuatro patas.",
+          false
         ]
-      ]
+      ],
+      "variants": {
+        "1": [
+          {
+            "key": "perro",
+            "asset": "animales/perro",
+            "answer": "dog",
+            "aliases": [
+              "puppy"
+            ],
+            "clue": "Un animal doméstico que ladra.",
+            "memoryClue": "Hace «guau» y mueve la cola.",
+            "searchClue": "El compañero que sale a pasear con correa.",
+            "prompt": "The ___ barks: 'Woof!'"
+          },
+          {
+            "key": "gato",
+            "asset": "animales/gato",
+            "answer": "cat",
+            "aliases": [
+              "kitty"
+            ],
+            "clue": "Un animal doméstico de bigotes que hace «miau».",
+            "memoryClue": "Ronronea y se limpia con la lengua.",
+            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "prompt": "The ___ says 'meow' and then purrs."
+          },
+          {
+            "key": "vaca",
+            "asset": "animales/vaca",
+            "answer": "cow",
+            "aliases": [],
+            "clue": "Un animal de granja que hace «muu» y da leche.",
+            "memoryClue": "Nos da leche y puede tener manchas negras.",
+            "searchClue": "Animal de granja del que obtenemos leche.",
+            "prompt": "The farmer milks the ___."
+          },
+          {
+            "key": "cerdo",
+            "asset": "animales/cerdo",
+            "answer": "pig",
+            "aliases": [
+              "hog"
+            ],
+            "clue": "Un animal de granja de hocico redondo que hace «oink».",
+            "memoryClue": "Tiene hocico redondo y una cola rizada.",
+            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "prompt": "The ___ says 'oink' and has a curly tail."
+          },
+          {
+            "key": "conejo",
+            "asset": "animales/conejo",
+            "answer": "rabbit",
+            "aliases": [
+              "bunny"
+            ],
+            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "prompt": "The ___ hops and moves its very long ears."
+          },
+          {
+            "key": "oveja",
+            "asset": "animales/oveja",
+            "answer": "sheep",
+            "aliases": [],
+            "clue": "Un animal de granja cubierto de lana que hace «bee».",
+            "memoryClue": "Su cuerpo está cubierto de lana.",
+            "searchClue": "Animal de granja del que obtenemos lana.",
+            "prompt": "The farmer cuts wool from the ___."
+          }
+        ],
+        "2": [
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "monkey",
+            "aliases": [],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "The ___ grabs a branch with its hands and climbs."
+          },
+          {
+            "key": "oso",
+            "asset": "animales/oso",
+            "answer": "bear",
+            "aliases": [],
+            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "prompt": "The ___ is a large wild animal with round ears that can hibernate in winter."
+          },
+          {
+            "key": "caballo",
+            "asset": "animales/caballo",
+            "answer": "horse",
+            "aliases": [],
+            "clue": "Un animal con crin que relincha.",
+            "memoryClue": "Se le puede poner una silla para montar.",
+            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "prompt": "I put a saddle on the ___ before riding."
+          },
+          {
+            "key": "elefante",
+            "asset": "animales/elefante",
+            "answer": "elephant",
+            "aliases": [],
+            "clue": "Un animal grande con trompa y grandes orejas.",
+            "memoryClue": "Usa una trompa larga para beber agua.",
+            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "prompt": "The ___ drinks water with its long trunk."
+          },
+          {
+            "key": "leon",
+            "asset": "animales/leon",
+            "answer": "lion",
+            "aliases": [],
+            "clue": "Un gran felino salvaje que ruge y tiene melena.",
+            "memoryClue": "El gran felino de la melena.",
+            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "prompt": "The ___ roars and shakes the mane around its head."
+          },
+          {
+            "key": "pato",
+            "asset": "animales/pato",
+            "answer": "duck",
+            "aliases": [
+              "duckling"
+            ],
+            "clue": "Un ave de pico ancho que nada y hace «cuac».",
+            "memoryClue": "Nada en el estanque y hace «cuac».",
+            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "prompt": "The ___ swims in the pond and says 'quack'."
+          }
+        ],
+        "3": [
+          {
+            "key": "perro",
+            "asset": "animales/perro",
+            "answer": "dog",
+            "aliases": [
+              "puppy"
+            ],
+            "clue": "Un animal doméstico que ladra.",
+            "memoryClue": "Hace «guau» y mueve la cola.",
+            "searchClue": "El compañero que sale a pasear con correa.",
+            "prompt": "The ___ barks: 'Woof!'"
+          },
+          {
+            "key": "vaca",
+            "asset": "animales/vaca",
+            "answer": "cow",
+            "aliases": [],
+            "clue": "Un animal de granja que hace «muu» y da leche.",
+            "memoryClue": "Nos da leche y puede tener manchas negras.",
+            "searchClue": "Animal de granja del que obtenemos leche.",
+            "prompt": "The farmer milks the ___."
+          },
+          {
+            "key": "caballo",
+            "asset": "animales/caballo",
+            "answer": "horse",
+            "aliases": [],
+            "clue": "Un animal con crin que relincha.",
+            "memoryClue": "Se le puede poner una silla para montar.",
+            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "prompt": "I put a saddle on the ___ before riding."
+          },
+          {
+            "key": "cerdo",
+            "asset": "animales/cerdo",
+            "answer": "pig",
+            "aliases": [
+              "hog"
+            ],
+            "clue": "Un animal de granja de hocico redondo que hace «oink».",
+            "memoryClue": "Tiene hocico redondo y una cola rizada.",
+            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "prompt": "The ___ says 'oink' and has a curly tail."
+          },
+          {
+            "key": "conejo",
+            "asset": "animales/conejo",
+            "answer": "rabbit",
+            "aliases": [
+              "bunny"
+            ],
+            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "prompt": "The ___ hops and moves its very long ears."
+          },
+          {
+            "key": "elefante",
+            "asset": "animales/elefante",
+            "answer": "elephant",
+            "aliases": [],
+            "clue": "Un animal grande con trompa y grandes orejas.",
+            "memoryClue": "Usa una trompa larga para beber agua.",
+            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "prompt": "The ___ drinks water with its long trunk."
+          },
+          {
+            "key": "gato",
+            "asset": "animales/gato",
+            "answer": "cat",
+            "aliases": [
+              "kitty"
+            ],
+            "clue": "Un animal doméstico de bigotes que hace «miau».",
+            "memoryClue": "Ronronea y se limpia con la lengua.",
+            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "prompt": "The ___ says 'meow' and then purrs."
+          },
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "monkey",
+            "aliases": [],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "The ___ grabs a branch with its hands and climbs."
+          },
+          {
+            "key": "oso",
+            "asset": "animales/oso",
+            "answer": "bear",
+            "aliases": [],
+            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "prompt": "The ___ is a large wild animal with round ears that can hibernate in winter."
+          },
+          {
+            "key": "oveja",
+            "asset": "animales/oveja",
+            "answer": "sheep",
+            "aliases": [],
+            "clue": "Un animal de granja cubierto de lana que hace «bee».",
+            "memoryClue": "Su cuerpo está cubierto de lana.",
+            "searchClue": "Animal de granja del que obtenemos lana.",
+            "prompt": "The farmer cuts wool from the ___."
+          },
+          {
+            "key": "leon",
+            "asset": "animales/leon",
+            "answer": "lion",
+            "aliases": [],
+            "clue": "Un gran felino salvaje que ruge y tiene melena.",
+            "memoryClue": "El gran felino de la melena.",
+            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "prompt": "The ___ roars and shakes the mane around its head."
+          },
+          {
+            "key": "pato",
+            "asset": "animales/pato",
+            "answer": "duck",
+            "aliases": [
+              "duckling"
+            ],
+            "clue": "Un ave de pico ancho que nada y hace «cuac».",
+            "memoryClue": "Nada en el estanque y hace «cuac».",
+            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "prompt": "The ___ swims in the pond and says 'quack'."
+          }
+        ],
+        "4": [
+          {
+            "key": "pato",
+            "asset": "animales/pato",
+            "answer": "duck",
+            "aliases": [
+              "duckling"
+            ],
+            "clue": "Un ave de pico ancho que nada y hace «cuac».",
+            "memoryClue": "Nada en el estanque y hace «cuac».",
+            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "prompt": "The ___ swims in the pond and says 'quack'."
+          },
+          {
+            "key": "leon",
+            "asset": "animales/leon",
+            "answer": "lion",
+            "aliases": [],
+            "clue": "Un gran felino salvaje que ruge y tiene melena.",
+            "memoryClue": "El gran felino de la melena.",
+            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "prompt": "The ___ roars and shakes the mane around its head."
+          },
+          {
+            "key": "vaca",
+            "asset": "animales/vaca",
+            "answer": "cow",
+            "aliases": [],
+            "clue": "Un animal de granja que hace «muu» y da leche.",
+            "memoryClue": "Nos da leche y puede tener manchas negras.",
+            "searchClue": "Animal de granja del que obtenemos leche.",
+            "prompt": "The farmer milks the ___."
+          },
+          {
+            "key": "gato",
+            "asset": "animales/gato",
+            "answer": "cat",
+            "aliases": [
+              "kitty"
+            ],
+            "clue": "Un animal doméstico de bigotes que hace «miau».",
+            "memoryClue": "Ronronea y se limpia con la lengua.",
+            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "prompt": "The ___ says 'meow' and then purrs."
+          },
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "monkey",
+            "aliases": [],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "The ___ grabs a branch with its hands and climbs."
+          },
+          {
+            "key": "oso",
+            "asset": "animales/oso",
+            "answer": "bear",
+            "aliases": [],
+            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "prompt": "The ___ is a large wild animal with round ears that can hibernate in winter."
+          }
+        ],
+        "5": [
+          {
+            "key": "elefante",
+            "asset": "animales/elefante",
+            "answer": "elephant",
+            "aliases": [],
+            "clue": "Un animal grande con trompa y grandes orejas.",
+            "memoryClue": "Usa una trompa larga para beber agua.",
+            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "prompt": "The ___ drinks water with its long trunk."
+          },
+          {
+            "key": "conejo",
+            "asset": "animales/conejo",
+            "answer": "rabbit",
+            "aliases": [
+              "bunny"
+            ],
+            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "prompt": "The ___ hops and moves its very long ears."
+          },
+          {
+            "key": "cerdo",
+            "asset": "animales/cerdo",
+            "answer": "pig",
+            "aliases": [
+              "hog"
+            ],
+            "clue": "Un animal de granja de hocico redondo que hace «oink».",
+            "memoryClue": "Tiene hocico redondo y una cola rizada.",
+            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "prompt": "The ___ says 'oink' and has a curly tail."
+          },
+          {
+            "key": "caballo",
+            "asset": "animales/caballo",
+            "answer": "horse",
+            "aliases": [],
+            "clue": "Un animal con crin que relincha.",
+            "memoryClue": "Se le puede poner una silla para montar.",
+            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "prompt": "I put a saddle on the ___ before riding."
+          },
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "monkey",
+            "aliases": [],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "The ___ grabs a branch with its hands and climbs."
+          },
+          {
+            "key": "oveja",
+            "asset": "animales/oveja",
+            "answer": "sheep",
+            "aliases": [],
+            "clue": "Un animal de granja cubierto de lana que hace «bee».",
+            "memoryClue": "Su cuerpo está cubierto de lana.",
+            "searchClue": "Animal de granja del que obtenemos lana.",
+            "prompt": "The farmer cuts wool from the ___."
+          }
+        ]
+      },
+      "collectionStatus": {
+        "distinctAnimals": 12,
+        "requestedAnimals": 12,
+        "imagesAvailable": true
+      }
     },
     {
       "id": "casa",
@@ -3783,56 +4746,142 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "animales",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Conoce los animales, escribe sus nombres y practica con juegos. Cada actividad incluye un grupo diferente; el memory reúne toda la colección.",
       "items": [
         {
-          "clue": "Tiene bigotes, patas suaves y hace «miau».",
-          "answer": "кот",
-          "prompt": "Это ___: «Мяу!».",
-          "aliases": [
-            "кошка"
-          ],
-          "memoryClue": "Dice «miau».",
-          "asset": "animales/1",
-          "searchClue": "Animal que ronronea."
-        },
-        {
-          "clue": "Cuida la casa y hace «guau».",
+          "key": "perro",
+          "asset": "animales/perro",
           "answer": "собака",
-          "prompt": "Это ___. Она лает: «Гав!».",
-          "aliases": [],
-          "memoryClue": "Dice «guau».",
-          "asset": "animales/2",
-          "searchClue": "Animal que ladra."
+          "aliases": [
+            "пёс",
+            "пес",
+            "щенок"
+          ],
+          "clue": "Un animal doméstico que ladra.",
+          "memoryClue": "Hace «guau» y mueve la cola.",
+          "searchClue": "El compañero que sale a pasear con correa.",
+          "prompt": "Это ___. Это животное лает: «Гав!». "
         },
         {
-          "clue": "Tiene orejas muy largas y salta.",
-          "answer": "кролик",
-          "prompt": "Это ___. У него длинные уши, и он прыгает.",
+          "key": "vaca",
+          "asset": "animales/vaca",
+          "answer": "корова",
           "aliases": [],
-          "memoryClue": "Salta y tiene orejas largas.",
-          "asset": "animales/3",
-          "searchClue": "Animal de orejas largas que da saltos."
+          "clue": "Un animal de granja que hace «muu» y da leche.",
+          "memoryClue": "Nos da leche y puede tener manchas negras.",
+          "searchClue": "Animal de granja del que obtenemos leche.",
+          "prompt": "Это ___. Она мычит, и её доят."
         },
         {
-          "clue": "Es enorme y tiene una trompa larga.",
-          "answer": "слон",
-          "prompt": "Это ___. Он пьёт воду хоботом.",
-          "aliases": [],
-          "memoryClue": "Tiene una trompa.",
-          "asset": "animales/4",
-          "searchClue": "El animal de la trompa."
-        },
-        {
-          "clue": "Lleva una silla de montar y relincha.",
+          "key": "caballo",
+          "asset": "animales/caballo",
           "answer": "лошадь",
-          "prompt": "Это ___. Люди ездят на этом животном верхом.",
           "aliases": [
             "конь"
           ],
-          "memoryClue": "Relincha.",
-          "asset": "animales/5",
-          "searchClue": "Animal que relincha y se puede montar."
+          "clue": "Un animal con crin que relincha.",
+          "memoryClue": "Se le puede poner una silla para montar.",
+          "searchClue": "Animal de crin larga en el que se puede montar.",
+          "prompt": "Это ___. На это животное надевают седло, чтобы ездить верхом."
+        },
+        {
+          "key": "cerdo",
+          "asset": "animales/cerdo",
+          "answer": "свинья",
+          "aliases": [],
+          "clue": "Un animal de granja de hocico redondo que hace «oink».",
+          "memoryClue": "Tiene hocico redondo y una cola rizada.",
+          "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+          "prompt": "Это ___. У неё круглый пятачок и хвост колечком."
+        },
+        {
+          "key": "conejo",
+          "asset": "animales/conejo",
+          "answer": "кролик",
+          "aliases": [],
+          "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+          "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+          "searchClue": "Animal pequeño de orejas largas y cola corta.",
+          "prompt": "Это ___. У него очень длинные уши, и он прыгает."
+        },
+        {
+          "key": "elefante",
+          "asset": "animales/elefante",
+          "answer": "слон",
+          "aliases": [],
+          "clue": "Un animal grande con trompa y grandes orejas.",
+          "memoryClue": "Usa una trompa larga para beber agua.",
+          "searchClue": "El animal más grande de este grupo, con trompa.",
+          "prompt": "Это ___. Он пьёт воду длинным хоботом."
+        },
+        {
+          "key": "gato",
+          "asset": "animales/gato",
+          "answer": "кошка",
+          "aliases": [
+            "кот"
+          ],
+          "clue": "Un animal doméstico de bigotes que hace «miau».",
+          "memoryClue": "Ronronea y se limpia con la lengua.",
+          "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+          "prompt": "Это ___. Это животное мяукает и мурлычет."
+        },
+        {
+          "key": "mono",
+          "asset": "animales/mono",
+          "answer": "обезьяна",
+          "aliases": [
+            "обезьянка"
+          ],
+          "clue": "Un animal de manos hábiles que trepa por los árboles.",
+          "memoryClue": "Puede agarrar ramas con las manos.",
+          "searchClue": "Animal de cola larga y manos que agarran ramas.",
+          "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
+        },
+        {
+          "key": "oso",
+          "asset": "animales/oso",
+          "answer": "медведь",
+          "aliases": [],
+          "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+          "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+          "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+          "prompt": "Это ___. Это крупное дикое животное с круглыми ушами может спать всю зиму."
+        },
+        {
+          "key": "oveja",
+          "asset": "animales/oveja",
+          "answer": "овца",
+          "aliases": [
+            "овечка"
+          ],
+          "clue": "Un animal de granja cubierto de lana que hace «bee».",
+          "memoryClue": "Su cuerpo está cubierto de lana.",
+          "searchClue": "Animal de granja del que obtenemos lana.",
+          "prompt": "Это ___. Она даёт шерсть и блеет."
+        },
+        {
+          "key": "leon",
+          "asset": "animales/leon",
+          "answer": "лев",
+          "aliases": [],
+          "clue": "Un gran felino salvaje que ruge y tiene melena.",
+          "memoryClue": "El gran felino de la melena.",
+          "searchClue": "Felino de gran melena y fuerte rugido.",
+          "prompt": "Это ___. У него большая грива, и он рычит."
+        },
+        {
+          "key": "pato",
+          "asset": "animales/pato",
+          "answer": "утка",
+          "aliases": [
+            "утёнок",
+            "утенок"
+          ],
+          "clue": "Un ave de pico ancho que nada y hace «cuac».",
+          "memoryClue": "Nada en el estanque y hace «cuac».",
+          "searchClue": "Ave de pico ancho que nada en el agua.",
+          "prompt": "Это ___. Эта птица плавает в пруду и крякает."
         }
       ],
       "formats": [
@@ -3842,55 +4891,453 @@ window.CURRICULUM = {
         "context",
         "wordsearch"
       ],
-      "memoryExtra": [
-        {
-          "answer": "корова",
-          "memoryClue": "Da leche y hace «muu».",
-          "asset": "animales/6"
-        },
-        {
-          "answer": "лев",
-          "memoryClue": "Un gran felino con melena.",
-          "asset": "animales/7"
-        },
-        {
-          "answer": "утка",
-          "memoryClue": "Un ave que hace «cuac».",
-          "asset": "animales/8"
-        },
-        {
-          "answer": "свинья",
-          "memoryClue": "Un animal de granja que hace «oink».",
-          "asset": "animales/9"
-        },
-        {
-          "answer": "овца",
-          "memoryClue": "Un animal de granja que nos da lana.",
-          "asset": "animales/10"
-        }
-      ],
+      "memoryExtra": [],
       "facts": [
         [
-          "Este animal maúlla.",
+          "Puede agarrar ramas con las manos.",
           true
         ],
         [
-          "Este animal tiene trompa.",
+          "Tiene una trompa larga.",
           false
         ],
         [
-          "Este animal tiene orejas largas y salta.",
+          "Tiene crin y relincha.",
           true
         ],
         [
-          "Este animal es pequeño como un ratón.",
+          "Su cuerpo está cubierto de lana.",
           false
         ],
         [
-          "Este animal relincha.",
+          "El macho adulto tiene una gran melena.",
           true
+        ],
+        [
+          "Es un mamífero de cuatro patas.",
+          false
         ]
-      ]
+      ],
+      "variants": {
+        "1": [
+          {
+            "key": "perro",
+            "asset": "animales/perro",
+            "answer": "собака",
+            "aliases": [
+              "пёс",
+              "пес",
+              "щенок"
+            ],
+            "clue": "Un animal doméstico que ladra.",
+            "memoryClue": "Hace «guau» y mueve la cola.",
+            "searchClue": "El compañero que sale a pasear con correa.",
+            "prompt": "Это ___. Это животное лает: «Гав!». "
+          },
+          {
+            "key": "gato",
+            "asset": "animales/gato",
+            "answer": "кошка",
+            "aliases": [
+              "кот"
+            ],
+            "clue": "Un animal doméstico de bigotes que hace «miau».",
+            "memoryClue": "Ronronea y se limpia con la lengua.",
+            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "prompt": "Это ___. Это животное мяукает и мурлычет."
+          },
+          {
+            "key": "vaca",
+            "asset": "animales/vaca",
+            "answer": "корова",
+            "aliases": [],
+            "clue": "Un animal de granja que hace «muu» y da leche.",
+            "memoryClue": "Nos da leche y puede tener manchas negras.",
+            "searchClue": "Animal de granja del que obtenemos leche.",
+            "prompt": "Это ___. Она мычит, и её доят."
+          },
+          {
+            "key": "cerdo",
+            "asset": "animales/cerdo",
+            "answer": "свинья",
+            "aliases": [],
+            "clue": "Un animal de granja de hocico redondo que hace «oink».",
+            "memoryClue": "Tiene hocico redondo y una cola rizada.",
+            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "prompt": "Это ___. У неё круглый пятачок и хвост колечком."
+          },
+          {
+            "key": "conejo",
+            "asset": "animales/conejo",
+            "answer": "кролик",
+            "aliases": [],
+            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "prompt": "Это ___. У него очень длинные уши, и он прыгает."
+          },
+          {
+            "key": "oveja",
+            "asset": "animales/oveja",
+            "answer": "овца",
+            "aliases": [
+              "овечка"
+            ],
+            "clue": "Un animal de granja cubierto de lana que hace «bee».",
+            "memoryClue": "Su cuerpo está cubierto de lana.",
+            "searchClue": "Animal de granja del que obtenemos lana.",
+            "prompt": "Это ___. Она даёт шерсть и блеет."
+          }
+        ],
+        "2": [
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "обезьяна",
+            "aliases": [
+              "обезьянка"
+            ],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
+          },
+          {
+            "key": "oso",
+            "asset": "animales/oso",
+            "answer": "медведь",
+            "aliases": [],
+            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "prompt": "Это ___. Это крупное дикое животное с круглыми ушами может спать всю зиму."
+          },
+          {
+            "key": "caballo",
+            "asset": "animales/caballo",
+            "answer": "лошадь",
+            "aliases": [
+              "конь"
+            ],
+            "clue": "Un animal con crin que relincha.",
+            "memoryClue": "Se le puede poner una silla para montar.",
+            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "prompt": "Это ___. На это животное надевают седло, чтобы ездить верхом."
+          },
+          {
+            "key": "elefante",
+            "asset": "animales/elefante",
+            "answer": "слон",
+            "aliases": [],
+            "clue": "Un animal grande con trompa y grandes orejas.",
+            "memoryClue": "Usa una trompa larga para beber agua.",
+            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "prompt": "Это ___. Он пьёт воду длинным хоботом."
+          },
+          {
+            "key": "leon",
+            "asset": "animales/leon",
+            "answer": "лев",
+            "aliases": [],
+            "clue": "Un gran felino salvaje que ruge y tiene melena.",
+            "memoryClue": "El gran felino de la melena.",
+            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "prompt": "Это ___. У него большая грива, и он рычит."
+          },
+          {
+            "key": "pato",
+            "asset": "animales/pato",
+            "answer": "утка",
+            "aliases": [
+              "утёнок",
+              "утенок"
+            ],
+            "clue": "Un ave de pico ancho que nada y hace «cuac».",
+            "memoryClue": "Nada en el estanque y hace «cuac».",
+            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "prompt": "Это ___. Эта птица плавает в пруду и крякает."
+          }
+        ],
+        "3": [
+          {
+            "key": "perro",
+            "asset": "animales/perro",
+            "answer": "собака",
+            "aliases": [
+              "пёс",
+              "пес",
+              "щенок"
+            ],
+            "clue": "Un animal doméstico que ladra.",
+            "memoryClue": "Hace «guau» y mueve la cola.",
+            "searchClue": "El compañero que sale a pasear con correa.",
+            "prompt": "Это ___. Это животное лает: «Гав!». "
+          },
+          {
+            "key": "vaca",
+            "asset": "animales/vaca",
+            "answer": "корова",
+            "aliases": [],
+            "clue": "Un animal de granja que hace «muu» y da leche.",
+            "memoryClue": "Nos da leche y puede tener manchas negras.",
+            "searchClue": "Animal de granja del que obtenemos leche.",
+            "prompt": "Это ___. Она мычит, и её доят."
+          },
+          {
+            "key": "caballo",
+            "asset": "animales/caballo",
+            "answer": "лошадь",
+            "aliases": [
+              "конь"
+            ],
+            "clue": "Un animal con crin que relincha.",
+            "memoryClue": "Se le puede poner una silla para montar.",
+            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "prompt": "Это ___. На это животное надевают седло, чтобы ездить верхом."
+          },
+          {
+            "key": "cerdo",
+            "asset": "animales/cerdo",
+            "answer": "свинья",
+            "aliases": [],
+            "clue": "Un animal de granja de hocico redondo que hace «oink».",
+            "memoryClue": "Tiene hocico redondo y una cola rizada.",
+            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "prompt": "Это ___. У неё круглый пятачок и хвост колечком."
+          },
+          {
+            "key": "conejo",
+            "asset": "animales/conejo",
+            "answer": "кролик",
+            "aliases": [],
+            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "prompt": "Это ___. У него очень длинные уши, и он прыгает."
+          },
+          {
+            "key": "elefante",
+            "asset": "animales/elefante",
+            "answer": "слон",
+            "aliases": [],
+            "clue": "Un animal grande con trompa y grandes orejas.",
+            "memoryClue": "Usa una trompa larga para beber agua.",
+            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "prompt": "Это ___. Он пьёт воду длинным хоботом."
+          },
+          {
+            "key": "gato",
+            "asset": "animales/gato",
+            "answer": "кошка",
+            "aliases": [
+              "кот"
+            ],
+            "clue": "Un animal doméstico de bigotes que hace «miau».",
+            "memoryClue": "Ronronea y se limpia con la lengua.",
+            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "prompt": "Это ___. Это животное мяукает и мурлычет."
+          },
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "обезьяна",
+            "aliases": [
+              "обезьянка"
+            ],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
+          },
+          {
+            "key": "oso",
+            "asset": "animales/oso",
+            "answer": "медведь",
+            "aliases": [],
+            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "prompt": "Это ___. Это крупное дикое животное с круглыми ушами может спать всю зиму."
+          },
+          {
+            "key": "oveja",
+            "asset": "animales/oveja",
+            "answer": "овца",
+            "aliases": [
+              "овечка"
+            ],
+            "clue": "Un animal de granja cubierto de lana que hace «bee».",
+            "memoryClue": "Su cuerpo está cubierto de lana.",
+            "searchClue": "Animal de granja del que obtenemos lana.",
+            "prompt": "Это ___. Она даёт шерсть и блеет."
+          },
+          {
+            "key": "leon",
+            "asset": "animales/leon",
+            "answer": "лев",
+            "aliases": [],
+            "clue": "Un gran felino salvaje que ruge y tiene melena.",
+            "memoryClue": "El gran felino de la melena.",
+            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "prompt": "Это ___. У него большая грива, и он рычит."
+          },
+          {
+            "key": "pato",
+            "asset": "animales/pato",
+            "answer": "утка",
+            "aliases": [
+              "утёнок",
+              "утенок"
+            ],
+            "clue": "Un ave de pico ancho que nada y hace «cuac».",
+            "memoryClue": "Nada en el estanque y hace «cuac».",
+            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "prompt": "Это ___. Эта птица плавает в пруду и крякает."
+          }
+        ],
+        "4": [
+          {
+            "key": "pato",
+            "asset": "animales/pato",
+            "answer": "утка",
+            "aliases": [
+              "утёнок",
+              "утенок"
+            ],
+            "clue": "Un ave de pico ancho que nada y hace «cuac».",
+            "memoryClue": "Nada en el estanque y hace «cuac».",
+            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "prompt": "Это ___. Эта птица плавает в пруду и крякает."
+          },
+          {
+            "key": "leon",
+            "asset": "animales/leon",
+            "answer": "лев",
+            "aliases": [],
+            "clue": "Un gran felino salvaje que ruge y tiene melena.",
+            "memoryClue": "El gran felino de la melena.",
+            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "prompt": "Это ___. У него большая грива, и он рычит."
+          },
+          {
+            "key": "vaca",
+            "asset": "animales/vaca",
+            "answer": "корова",
+            "aliases": [],
+            "clue": "Un animal de granja que hace «muu» y da leche.",
+            "memoryClue": "Nos da leche y puede tener manchas negras.",
+            "searchClue": "Animal de granja del que obtenemos leche.",
+            "prompt": "Это ___. Она мычит, и её доят."
+          },
+          {
+            "key": "gato",
+            "asset": "animales/gato",
+            "answer": "кошка",
+            "aliases": [
+              "кот"
+            ],
+            "clue": "Un animal doméstico de bigotes que hace «miau».",
+            "memoryClue": "Ronronea y se limpia con la lengua.",
+            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "prompt": "Это ___. Это животное мяукает и мурлычет."
+          },
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "обезьяна",
+            "aliases": [
+              "обезьянка"
+            ],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
+          },
+          {
+            "key": "oso",
+            "asset": "animales/oso",
+            "answer": "медведь",
+            "aliases": [],
+            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
+            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
+            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "prompt": "Это ___. Это крупное дикое животное с круглыми ушами может спать всю зиму."
+          }
+        ],
+        "5": [
+          {
+            "key": "elefante",
+            "asset": "animales/elefante",
+            "answer": "слон",
+            "aliases": [],
+            "clue": "Un animal grande con trompa y grandes orejas.",
+            "memoryClue": "Usa una trompa larga para beber agua.",
+            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "prompt": "Это ___. Он пьёт воду длинным хоботом."
+          },
+          {
+            "key": "conejo",
+            "asset": "animales/conejo",
+            "answer": "кролик",
+            "aliases": [],
+            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
+            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
+            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "prompt": "Это ___. У него очень длинные уши, и он прыгает."
+          },
+          {
+            "key": "cerdo",
+            "asset": "animales/cerdo",
+            "answer": "свинья",
+            "aliases": [],
+            "clue": "Un animal de granja de hocico redondo que hace «oink».",
+            "memoryClue": "Tiene hocico redondo y una cola rizada.",
+            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "prompt": "Это ___. У неё круглый пятачок и хвост колечком."
+          },
+          {
+            "key": "caballo",
+            "asset": "animales/caballo",
+            "answer": "лошадь",
+            "aliases": [
+              "конь"
+            ],
+            "clue": "Un animal con crin que relincha.",
+            "memoryClue": "Se le puede poner una silla para montar.",
+            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "prompt": "Это ___. На это животное надевают седло, чтобы ездить верхом."
+          },
+          {
+            "key": "mono",
+            "asset": "animales/mono",
+            "answer": "обезьяна",
+            "aliases": [
+              "обезьянка"
+            ],
+            "clue": "Un animal de manos hábiles que trepa por los árboles.",
+            "memoryClue": "Puede agarrar ramas con las manos.",
+            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
+          },
+          {
+            "key": "oveja",
+            "asset": "animales/oveja",
+            "answer": "овца",
+            "aliases": [
+              "овечка"
+            ],
+            "clue": "Un animal de granja cubierto de lana que hace «bee».",
+            "memoryClue": "Su cuerpo está cubierto de lana.",
+            "searchClue": "Animal de granja del que obtenemos lana.",
+            "prompt": "Это ___. Она даёт шерсть и блеет."
+          }
+        ]
+      },
+      "collectionStatus": {
+        "distinctAnimals": 12,
+        "requestedAnimals": 12,
+        "imagesAvailable": true
+      }
     },
     {
       "id": "casa",

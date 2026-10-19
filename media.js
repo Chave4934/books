@@ -1,17 +1,6 @@
-// Sustituye null por la ruta de cada imagen propia, por ejemplo: assets/animales/gato.webp
-// Las rutas son públicas y relativas a la raíz de la web. Consulta assets/README.md.
+// Ilustraciones originales de la autora. Consulta assets/README.md.
 window.MEDIA = {
   "vocabulary": {
-    "animales/1": null,
-    "animales/2": null,
-    "animales/3": null,
-    "animales/4": null,
-    "animales/5": null,
-    "animales/6": null,
-    "animales/7": null,
-    "animales/8": null,
-    "animales/9": null,
-    "animales/10": null,
     "casa/1": null,
     "casa/2": null,
     "casa/3": null,
@@ -41,7 +30,19 @@ window.MEDIA = {
     "comida/7": null,
     "comida/8": null,
     "comida/9": null,
-    "comida/10": null
+    "comida/10": null,
+    "animales/perro": "assets/animales/perro.png",
+    "animales/vaca": "assets/animales/vaca.png",
+    "animales/caballo": "assets/animales/caballo.png",
+    "animales/cerdo": "assets/animales/cerdo.png",
+    "animales/conejo": "assets/animales/conejo.png",
+    "animales/elefante": "assets/animales/elefante.png",
+    "animales/gato": "assets/animales/gato.png",
+    "animales/mono": "assets/animales/mono.png",
+    "animales/oso": "assets/animales/oso.png",
+    "animales/oveja": "assets/animales/oveja.png",
+    "animales/leon": "assets/animales/leon.png",
+    "animales/pato": "assets/animales/pato.png"
   },
   "topics": {
     "presente": null,
@@ -49,7 +50,7 @@ window.MEDIA = {
     "perfecto": null,
     "imperfecto": null,
     "futuro": null,
-    "animales": null,
+    "animales": "assets/animales/perro.png",
     "casa": null,
     "ropa": null,
     "rutina": null,

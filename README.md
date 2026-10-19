@@ -91,3 +91,13 @@ NODE_PATH=/tmp/chavebooks-check/node_modules node tests/browser.cjs
 ```
 
 `CHROMIUM_PATH` permite cambiar la ubicación de Chromium (por defecto `/usr/bin/chromium`); `TEST_BASE_URL` permite cambiar el servidor. La comprobación recorre las 150 actividades, las soluciones opcionales, el catálogo y las pantallas móviles.
+
+## Colección de animales
+
+El contenido del tema de animales está adaptado a los doce animales identificados en las ilustraciones de la autora. Cada idioma tiene cinco actividades con grupos variados, y un memory de doce parejas (24 tarjetas) que los reúne a todos. Los doce originales recibidos en un RAR están guardados y asignados en `media.js`, sin alterar sus píxeles. El inventario y la distribución por ejercicio se documentan en `assets/animales/README.md`. Las imágenes de otras categorías y las portadas siguen pendientes.
+
+Para comprobar la colección original de animales, los sinónimos aceptados, las 24 tarjetas del memory y los quince ejercicios en móvil:
+
+```sh
+NODE_PATH=/tmp/chavebooks-check/node_modules node tests/animals.cjs
+```

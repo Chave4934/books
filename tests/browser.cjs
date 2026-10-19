@@ -17,7 +17,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
     for (const [id, topics] of Object.entries(curriculum)) {
       assert.equal(topics.length, 10);
       for (const topic of topics) {
-        if (topic.variants) {
+        if (topic.kind === 'grammar' && topic.variants) {
           const prompts = Object.values(topic.variants).flat().map(q => q.prompt);
           assert.equal(new Set(prompts).size, 25, `Repeated grammar prompt in ${id}/${topic.id}`);
         }
@@ -39,8 +39,8 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
               }));
               document.querySelector('#crossword-form').requestSubmit();
             } else if (format === 'memory') {
-              const deck = shuffled([...items, ...topic.memoryExtra].flatMap((item, i) => [{ pair: i, side: 'word', text: item.answer }, { pair: i, side: 'meaning', text: item.memoryClue }]), 7);
-              for (let pair = 0; pair < 10; pair++) deck.forEach((card, index) => { if (card.pair === pair) document.querySelector(`[data-card="${index}"]`).click(); });
+              const deck = shuffled([...items, ...(topic.memoryExtra || [])].flatMap((item, i) => [{ pair: i, side: 'word', text: item.answer }, { pair: i, side: 'meaning', text: item.memoryClue }]), 7);
+              for (let pair = 0; pair < (items.length + (topic.memoryExtra || []).length); pair++) deck.forEach((card, index) => { if (card.pair === pair) document.querySelector(`[data-card="${index}"]`).click(); });
             } else {
               items.forEach((item, i) => {
                 let correct = item.answer;
@@ -120,6 +120,6 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
     }
     assert.equal(count, 150);
     assert.deepEqual(errors, []);
-    console.log('PASS: 150 activities; 375 distinct grammar prompts; word search, connected crosswords, 20-card memory; opt-in solutions, books, progress, own-image integration and mobile layout.');
+    console.log('PASS: 150 activities; 375 distinct grammar prompts; word search, connected crosswords, variable-size memory; opt-in solutions, books, progress, own-image integration and mobile layout.');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });
