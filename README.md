@@ -103,3 +103,15 @@ NODE_PATH=/tmp/chavebooks-check/node_modules node tests/animals.cjs
 ```
 
 Las ilustraciones de animales mostradas en la web usan ahora las versiones de mayor resolución de `assets/animales/mejoradas/`, con fondo blanco y bordes reconstruidos. El león mejorado ya no contiene la marca oscura del borde. Los doce originales se conservan sin cambios; el proceso de mejora puede variar pequeños detalles.
+
+## Las frutas, en lugar de La comida
+
+Los doce originales de `Frutas.rar` están en `assets/frutas/`. Este tema reemplaza comida en español, inglés y ruso, manteniendo diez temas y cincuenta actividades por idioma. Incluye letras que faltan, tarjetas que se voltean, un crucigrama de seis palabras con imágenes, una cesta que funciona con arrastrar y soltar, pulsaciones, teclado o selectores, y frases para completar.
+
+Cada ejercicio usa su propio grupo de frutas. El inventario, los nombres en los tres idiomas y la distribución están en `assets/frutas/README.md`. Los enlaces antiguos de comida llevan a frutas. Sus actividades se guardan con una clave nueva para no dar por completados ejercicios que el alumno no ha hecho.
+
+Las pruebas específicas verifican también las variantes regionales, la carga de las doce imágenes, el reinicio de la cesta, las soluciones opcionales y la vista móvil:
+
+```sh
+NODE_PATH=/tmp/chavebooks-check/node_modules node tests/fruits.cjs
+```

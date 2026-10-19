@@ -224,3 +224,23 @@ main:focus { outline: none; }
 .banner-star svg { width: 90px; height: 90px; display: block; }
 .art-star svg { width: 64px; height: 64px; display: block; }
 @media(max-width:760px) { .banner-star svg { width: 60px; height: 60px; } }
+
+/* Las frutas conservan su tamaño de dibujo, sin estirar los originales pequeños. */
+.activity-image[src*="assets/frutas/"] { width: min(160px,100%); height: 155px; }
+.fruit-cards { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+.fruit-card { border: 1px solid var(--line); background: white; color: var(--ink); padding: 12px; border-radius: 12px; cursor: grab; font: inherit; font-size: 14px; min-width: 0; }
+.fruit-card[aria-pressed="true"] { outline: 3px solid var(--world-dark); background: var(--world-soft); }
+.fruit-card .activity-image[src*="assets/frutas/"] { width: 100%; height: 95px; margin: 0 auto 8px; }
+.basket-bank { background: var(--world-soft); padding: 20px; border: 1px solid var(--line); border-radius: 14px; }
+.basket-bank > p { font-size: 13px; line-height: 1.8; }
+#basket-selection { color: var(--world-dark); font-weight: 600; margin-bottom: 0; }
+.basket-order { clear: both; display: grid; gap: 12px; }
+.basket-target { min-height: 65px; border: 2px dashed var(--world-dark); border-radius: 12px; padding: 15px; background: var(--world-soft); color: var(--ink); font: inherit; font-size: 14px; cursor: pointer; }
+.basket-target.filled { border-style: solid; background: var(--world); font-weight: 600; }
+.basket-select-label { font-size: 12px; color: var(--muted); }
+.crossword-clues .activity-image[src*="assets/frutas/"] { width: 95px; height: 85px; margin: 0 0 10px; }
+@media(min-width:1000px) {
+  #exercise-stage:has(.basket-bank) { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: 25px; align-items: start; }
+  .basket-bank { position: sticky; top: 20px; }
+}
+@media(max-width:999px) { .basket-bank { margin-bottom: 20px; } }

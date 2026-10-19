@@ -18,14 +18,13 @@ Se reutiliza cada ilustración en los tres idiomas. Los textos alternativos y la
 | casa | dormitorio completo | cocina | baño | salón | jardín |
 | ropa | vestido | pantalones | camiseta | zapatillas | abrigo |
 | rutina | persona despertándose | persona duchándose | persona desayunando | persona estudiando | persona durmiendo |
-| comida | manzana | pan | queso | zanahoria | leche |
+| frutas | Ver colección de doce frutas en `frutas/README.md` | — | — | — | — |
 
 Las escenas de casa deben mostrar habitaciones completas, no una cama aislada para representar un dormitorio. Las de rutina deben mostrar una persona realizando la acción; un despertador o un bol por sí solos no la explican.
 
-En ropa y comida, el memory tiene otras cinco palabras por tema. El de animales usa los doce originales recibidos. Sus claves 6–10 corresponden a:
+En ropa, el memory tiene otras cinco palabras. El de animales usa los doce originales recibidos. Sus claves 6–10 corresponden a:
 
 - ropa: falda, sombrero, calcetines, bufanda, guantes;
-- comida: plátano, arroz, huevo, pescado, agua.
 
 Antes de adaptar el contenido a un libro, confirma la lista de animales, objetos o acciones que contiene esa edición. La lista actual es material independiente; no debe anunciarse como una muestra literal del libro hasta usar sus mismos elementos e ilustraciones.
 
@@ -47,4 +46,4 @@ Los identificadores, títulos, público y descripciones están en `books.js`. Ha
 
 `social/chavebooks.png` es la imagen general de vista previa, de 1200 × 630 píxeles. Su fuente editable es `social/chavebooks.svg`. No contiene portadas ni imágenes de los libros. Al actualizarla, puede que las redes sociales mantengan temporalmente una copia anterior en su caché.
 
-La colección de animales usa claves semánticas (`animales/perro`, `animales/leon`, etc.), no las claves numéricas antiguas. Consulta [su inventario y distribución](animales/README.md). Los doce originales de animales ya están guardados y asignados en la web. Las otras categorías y las portadas conservan sus rutas sin asignar hasta recibir sus archivos.
+La colección de animales usa claves semánticas (`animales/perro`, `animales/leon`, etc.), no las claves numéricas antiguas. Consulta [su inventario y distribución](animales/README.md). Los doce originales de animales ya están guardados y asignados en la web. La colección de frutas también tiene sus doce originales asignados; consulta `frutas/README.md`. Casa, ropa, rutina y portadas conservan sus rutas sin asignar hasta recibir sus archivos.

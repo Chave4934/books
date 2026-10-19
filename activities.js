@@ -1838,98 +1838,578 @@ window.CURRICULUM = {
       ]
     },
     {
-      "id": "comida",
-      "title": "La comida",
+      "id": "frutas",
+      "title": "Las frutas",
       "kind": "vocabulary",
-      "icon": "comida",
+      "icon": "frutas",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Doce frutas y cinco maneras de aprender. Observa las imágenes y prueba un reto diferente cada día.",
+      "formats": [
+        "fruitletters",
+        "flashcards",
+        "crossword",
+        "basket",
+        "context"
+      ],
       "items": [
         {
-          "clue": "Fruta redonda que puede ser roja o verde.",
+          "key": "cerezas",
+          "asset": "frutas/cerezas",
+          "answer": "cerezas",
+          "aliases": [
+            "cereza",
+            "guindas",
+            "guinda"
+          ],
+          "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+          "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "prompt": "Frutas pequeñas y rojas con tallos largos y un hueso dentro: ___."
+        },
+        {
+          "key": "fresa",
+          "asset": "frutas/fresa",
+          "answer": "fresa",
+          "aliases": [
+            "frutilla"
+          ],
+          "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
+          "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "prompt": "Fruta roja con semillas en la parte de fuera: ___."
+        },
+        {
+          "key": "limon",
+          "asset": "frutas/limon",
+          "answer": "limón",
+          "aliases": [],
+          "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+          "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "prompt": "Cítrico amarillo y ácido que corto para añadir al agua: ___."
+        },
+        {
+          "key": "mango",
+          "asset": "frutas/mango",
+          "answer": "mango",
+          "aliases": [],
+          "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+          "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "prompt": ""
+        },
+        {
+          "key": "manzana",
+          "asset": "frutas/manzana",
           "answer": "manzana",
-          "prompt": "La fruta roja que crece en el manzano es una ___.",
           "aliases": [],
-          "memoryClue": "La fruta del manzano.",
-          "asset": "comida/1",
-          "searchClue": "Fruta que se recoge de un manzano.",
-          "crosswordClue": "Fruta redonda, roja o verde, con semillas en el centro."
+          "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+          "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "prompt": ""
         },
         {
-          "clue": "Se hace con harina y se hornea en la panadería.",
-          "answer": "pan",
-          "prompt": "En la panadería compro una barra de ___.",
-          "aliases": [],
-          "memoryClue": "Una barra de la panadería.",
-          "asset": "comida/2",
-          "searchClue": "Alimento de harina que se vende en barras.",
-          "crosswordClue": "Se prepara con una masa de harina y levadura."
+          "key": "melocoton",
+          "asset": "frutas/melocoton",
+          "answer": "melocotón",
+          "aliases": [
+            "durazno"
+          ],
+          "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
+          "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "prompt": ""
         },
         {
-          "clue": "Se elabora con leche y puede venir en lonchas.",
-          "answer": "queso",
-          "prompt": "La leche se puede transformar en ___ para un bocadillo.",
+          "key": "naranja",
+          "asset": "frutas/naranja",
+          "answer": "naranja",
           "aliases": [],
-          "memoryClue": "Puede ir en lonchas en un bocadillo.",
-          "asset": "comida/3",
-          "searchClue": "Alimento lácteo que se puede rallar.",
-          "crosswordClue": "Producto de leche usado en muchas pizzas."
+          "clue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
+          "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "prompt": ""
         },
         {
-          "clue": "Verdura naranja, larga y crujiente.",
-          "answer": "zanahoria",
-          "prompt": "La verdura naranja que corto para la ensalada es una ___.",
+          "key": "pera",
+          "asset": "frutas/pera",
+          "answer": "pera",
           "aliases": [],
-          "memoryClue": "Una verdura naranja.",
-          "asset": "comida/4",
-          "searchClue": "Raíz comestible de color naranja.",
-          "crosswordClue": "Verdura alargada que suele comer el conejo en los cuentos."
+          "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
+          "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "prompt": ""
         },
         {
-          "clue": "Bebida blanca que se sirve en un vaso.",
-          "answer": "leche",
-          "prompt": "La vaca nos da ___ para beber.",
+          "key": "pina",
+          "asset": "frutas/pina",
+          "answer": "piña",
+          "aliases": [
+            "ananá",
+            "ananás"
+          ],
+          "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+          "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "prompt": "Fruta tropical con una corona de hojas puntiagudas: ___."
+        },
+        {
+          "key": "platanos",
+          "asset": "frutas/platanos",
+          "answer": "plátanos",
+          "aliases": [
+            "plátano",
+            "banana",
+            "bananas",
+            "banano",
+            "bananos",
+            "guineo",
+            "guineos",
+            "cambur",
+            "cambures"
+          ],
+          "clue": "Frutas amarillas, largas y curvas que se pelan.",
+          "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
+          "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
+          "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+          "prompt": ""
+        },
+        {
+          "key": "sandia",
+          "asset": "frutas/sandia",
+          "answer": "sandía",
           "aliases": [],
-          "memoryClue": "Una bebida blanca.",
-          "asset": "comida/5",
-          "searchClue": "Bebida blanca que se obtiene de la vaca.",
-          "crosswordClue": "La bebida blanca con la que se hace el yogur."
+          "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+          "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "prompt": "Rodaja roja con semillas negras y corteza verde: ___."
+        },
+        {
+          "key": "uvas",
+          "asset": "frutas/uvas",
+          "answer": "uvas",
+          "aliases": [
+            "uva"
+          ],
+          "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
+          "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "prompt": "Frutas pequeñas que crecen juntas en un racimo: ___."
         }
       ],
-      "formats": [
-        "identify",
-        "wordsearch",
-        "crossword",
-        "context",
-        "memory"
-      ],
-      "memoryExtra": [
-        {
-          "answer": "plátano",
-          "memoryClue": "Una fruta amarilla, larga y curva.",
-          "asset": "comida/6"
-        },
-        {
-          "answer": "arroz",
-          "memoryClue": "Granos pequeños blancos que se cuecen en agua.",
-          "asset": "comida/7"
-        },
-        {
-          "answer": "huevo",
-          "memoryClue": "Lo pone una gallina y tiene cáscara.",
-          "asset": "comida/8"
-        },
-        {
-          "answer": "pescado",
-          "memoryClue": "Un alimento que viene de un animal que nada.",
-          "asset": "comida/9"
-        },
-        {
-          "answer": "agua",
-          "memoryClue": "La bebida transparente que sale del grifo.",
-          "asset": "comida/10"
-        }
-      ]
+      "variants": {
+        "1": [
+          {
+            "key": "manzana",
+            "asset": "frutas/manzana",
+            "answer": "manzana",
+            "aliases": [],
+            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "prompt": ""
+          },
+          {
+            "key": "pera",
+            "asset": "frutas/pera",
+            "answer": "pera",
+            "aliases": [],
+            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
+            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "prompt": ""
+          },
+          {
+            "key": "platanos",
+            "asset": "frutas/platanos",
+            "answer": "plátanos",
+            "aliases": [
+              "plátano",
+              "banana",
+              "bananas",
+              "banano",
+              "bananos",
+              "guineo",
+              "guineos",
+              "cambur",
+              "cambures"
+            ],
+            "clue": "Frutas amarillas, largas y curvas que se pelan.",
+            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
+            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "prompt": ""
+          },
+          {
+            "key": "limon",
+            "asset": "frutas/limon",
+            "answer": "limón",
+            "aliases": [],
+            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "prompt": "Cítrico amarillo y ácido que corto para añadir al agua: ___."
+          },
+          {
+            "key": "naranja",
+            "asset": "frutas/naranja",
+            "answer": "naranja",
+            "aliases": [],
+            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
+            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "prompt": ""
+          },
+          {
+            "key": "fresa",
+            "asset": "frutas/fresa",
+            "answer": "fresa",
+            "aliases": [
+              "frutilla"
+            ],
+            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
+            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "prompt": "Fruta roja con semillas en la parte de fuera: ___."
+          }
+        ],
+        "2": [
+          {
+            "key": "cerezas",
+            "asset": "frutas/cerezas",
+            "answer": "cerezas",
+            "aliases": [
+              "cereza",
+              "guindas",
+              "guinda"
+            ],
+            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "flashClue": "Pequeñas y rojas: dos piezas con tallos largos.",
+            "prompt": "Frutas pequeñas y rojas con tallos largos y un hueso dentro: ___."
+          },
+          {
+            "key": "mango",
+            "asset": "frutas/mango",
+            "answer": "mango",
+            "aliases": [],
+            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "flashClue": "Una fruta tropical de cinco letras, amarilla y roja por fuera.",
+            "prompt": ""
+          },
+          {
+            "key": "melocoton",
+            "asset": "frutas/melocoton",
+            "answer": "melocotón",
+            "aliases": [
+              "durazno"
+            ],
+            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
+            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "flashClue": "La fruta de piel suave y un hueso en el centro.",
+            "prompt": ""
+          },
+          {
+            "key": "pina",
+            "asset": "frutas/pina",
+            "answer": "piña",
+            "aliases": [
+              "ananá",
+              "ananás"
+            ],
+            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "flashClue": "La fruta de la corona de hojas.",
+            "prompt": "Fruta tropical con una corona de hojas puntiagudas: ___."
+          },
+          {
+            "key": "sandia",
+            "asset": "frutas/sandia",
+            "answer": "sandía",
+            "aliases": [],
+            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "flashClue": "La rodaja de corteza verde y centro rojo.",
+            "prompt": "Rodaja roja con semillas negras y corteza verde: ___."
+          },
+          {
+            "key": "uvas",
+            "asset": "frutas/uvas",
+            "answer": "uvas",
+            "aliases": [
+              "uva"
+            ],
+            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
+            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "flashClue": "Muchas piezas redondas y moradas en un mismo racimo.",
+            "prompt": "Frutas pequeñas que crecen juntas en un racimo: ___."
+          }
+        ],
+        "3": [
+          {
+            "key": "manzana",
+            "asset": "frutas/manzana",
+            "answer": "manzana",
+            "aliases": [],
+            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "prompt": ""
+          },
+          {
+            "key": "pera",
+            "asset": "frutas/pera",
+            "answer": "pera",
+            "aliases": [],
+            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
+            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "prompt": ""
+          },
+          {
+            "key": "limon",
+            "asset": "frutas/limon",
+            "answer": "limón",
+            "aliases": [],
+            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "prompt": "Cítrico amarillo y ácido que corto para añadir al agua: ___."
+          },
+          {
+            "key": "mango",
+            "asset": "frutas/mango",
+            "answer": "mango",
+            "aliases": [],
+            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "prompt": ""
+          },
+          {
+            "key": "pina",
+            "asset": "frutas/pina",
+            "answer": "piña",
+            "aliases": [
+              "ananá",
+              "ananás"
+            ],
+            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "prompt": "Fruta tropical con una corona de hojas puntiagudas: ___."
+          },
+          {
+            "key": "cerezas",
+            "asset": "frutas/cerezas",
+            "answer": "cerezas",
+            "aliases": [
+              "cereza",
+              "guindas",
+              "guinda"
+            ],
+            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "prompt": "Frutas pequeñas y rojas con tallos largos y un hueso dentro: ___."
+          }
+        ],
+        "4": [
+          {
+            "key": "mango",
+            "asset": "frutas/mango",
+            "answer": "mango",
+            "aliases": [],
+            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "prompt": "",
+            "orderLabel": "Para el desayuno"
+          },
+          {
+            "key": "melocoton",
+            "asset": "frutas/melocoton",
+            "answer": "melocotón",
+            "aliases": [
+              "durazno"
+            ],
+            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
+            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "prompt": "",
+            "orderLabel": "Para compartir"
+          },
+          {
+            "key": "naranja",
+            "asset": "frutas/naranja",
+            "answer": "naranja",
+            "aliases": [],
+            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
+            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "prompt": "",
+            "orderLabel": "Para el zumo"
+          },
+          {
+            "key": "sandia",
+            "asset": "frutas/sandia",
+            "answer": "sandía",
+            "aliases": [],
+            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "prompt": "Rodaja roja con semillas negras y corteza verde: ___.",
+            "orderLabel": "Para la merienda"
+          },
+          {
+            "key": "platanos",
+            "asset": "frutas/platanos",
+            "answer": "plátanos",
+            "aliases": [
+              "plátano",
+              "banana",
+              "bananas",
+              "banano",
+              "bananos",
+              "guineo",
+              "guineos",
+              "cambur",
+              "cambures"
+            ],
+            "clue": "Frutas amarillas, largas y curvas que se pelan.",
+            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
+            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "prompt": "",
+            "orderLabel": "Para llevar"
+          },
+          {
+            "key": "manzana",
+            "asset": "frutas/manzana",
+            "answer": "manzana",
+            "aliases": [],
+            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "prompt": "",
+            "orderLabel": "Para el postre"
+          }
+        ],
+        "5": [
+          {
+            "key": "fresa",
+            "asset": "frutas/fresa",
+            "answer": "fresa",
+            "aliases": [
+              "frutilla"
+            ],
+            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
+            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "prompt": "Fruta roja con semillas en la parte de fuera: ___."
+          },
+          {
+            "key": "limon",
+            "asset": "frutas/limon",
+            "answer": "limón",
+            "aliases": [],
+            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "prompt": "Cítrico amarillo y ácido que corto para añadir al agua: ___."
+          },
+          {
+            "key": "pina",
+            "asset": "frutas/pina",
+            "answer": "piña",
+            "aliases": [
+              "ananá",
+              "ananás"
+            ],
+            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "prompt": "Fruta tropical con una corona de hojas puntiagudas: ___."
+          },
+          {
+            "key": "sandia",
+            "asset": "frutas/sandia",
+            "answer": "sandía",
+            "aliases": [],
+            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "prompt": "Rodaja roja con semillas negras y corteza verde: ___."
+          },
+          {
+            "key": "cerezas",
+            "asset": "frutas/cerezas",
+            "answer": "cerezas",
+            "aliases": [
+              "cereza",
+              "guindas",
+              "guinda"
+            ],
+            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "prompt": "Frutas pequeñas y rojas con tallos largos y un hueso dentro: ___."
+          },
+          {
+            "key": "uvas",
+            "asset": "frutas/uvas",
+            "answer": "uvas",
+            "aliases": [
+              "uva"
+            ],
+            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
+            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "prompt": "Frutas pequeñas que crecen juntas en un racimo: ___."
+          }
+        ]
+      },
+      "memoryExtra": []
     }
   ],
   "ingles": [
@@ -3715,98 +4195,522 @@ window.CURRICULUM = {
       ]
     },
     {
-      "id": "comida",
-      "title": "La comida",
+      "id": "frutas",
+      "title": "Las frutas",
       "kind": "vocabulary",
-      "icon": "comida",
+      "icon": "frutas",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Doce frutas y cinco maneras de aprender. Observa las imágenes y prueba un reto diferente cada día.",
+      "formats": [
+        "fruitletters",
+        "flashcards",
+        "crossword",
+        "basket",
+        "context"
+      ],
       "items": [
         {
-          "clue": "Fruta redonda que puede ser roja o verde.",
+          "key": "cerezas",
+          "asset": "frutas/cerezas",
+          "answer": "cherries",
+          "aliases": [
+            "cherry"
+          ],
+          "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+          "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "prompt": "These small red fruits have long stems and a stone inside: ___."
+        },
+        {
+          "key": "fresa",
+          "asset": "frutas/fresa",
+          "answer": "strawberry",
+          "aliases": [],
+          "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
+          "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "prompt": "This red fruit has seeds on the outside: ___."
+        },
+        {
+          "key": "limon",
+          "asset": "frutas/limon",
+          "answer": "lemon",
+          "aliases": [],
+          "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+          "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "prompt": "This yellow citrus fruit tastes sour: ___."
+        },
+        {
+          "key": "mango",
+          "asset": "frutas/mango",
+          "answer": "mango",
+          "aliases": [],
+          "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+          "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "prompt": ""
+        },
+        {
+          "key": "manzana",
+          "asset": "frutas/manzana",
           "answer": "apple",
-          "prompt": "The red fruit from the apple tree is an ___.",
           "aliases": [],
-          "memoryClue": "La fruta del manzano.",
-          "asset": "comida/1",
-          "searchClue": "Fruta que se recoge de un manzano.",
-          "crosswordClue": "Fruta redonda, roja o verde, con semillas en el centro."
+          "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+          "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "prompt": ""
         },
         {
-          "clue": "Se hace con harina y se hornea en la panadería.",
-          "answer": "bread",
-          "prompt": "At the bakery I buy a loaf of ___.",
+          "key": "melocoton",
+          "asset": "frutas/melocoton",
+          "answer": "peach",
           "aliases": [],
-          "memoryClue": "Una barra de la panadería.",
-          "asset": "comida/2",
-          "searchClue": "Alimento de harina que se vende en barras.",
-          "crosswordClue": "Se prepara con una masa de harina y levadura."
+          "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
+          "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "prompt": ""
         },
         {
-          "clue": "Se elabora con leche y puede venir en lonchas.",
-          "answer": "cheese",
-          "prompt": "Milk can be made into ___ for a sandwich.",
+          "key": "naranja",
+          "asset": "frutas/naranja",
+          "answer": "orange",
           "aliases": [],
-          "memoryClue": "Puede ir en lonchas en un bocadillo.",
-          "asset": "comida/3",
-          "searchClue": "Alimento lácteo que se puede rallar.",
-          "crosswordClue": "Producto de leche usado en muchas pizzas."
+          "clue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
+          "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "prompt": ""
         },
         {
-          "clue": "Verdura naranja, larga y crujiente.",
-          "answer": "carrot",
-          "prompt": "The long orange vegetable in my salad is a ___.",
+          "key": "pera",
+          "asset": "frutas/pera",
+          "answer": "pear",
           "aliases": [],
-          "memoryClue": "Una verdura naranja.",
-          "asset": "comida/4",
-          "searchClue": "Raíz comestible de color naranja.",
-          "crosswordClue": "Verdura alargada que suele comer el conejo en los cuentos."
+          "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
+          "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "prompt": ""
         },
         {
-          "clue": "Bebida blanca que se sirve en un vaso.",
-          "answer": "milk",
-          "prompt": "Cows give us ___ to drink.",
+          "key": "pina",
+          "asset": "frutas/pina",
+          "answer": "pineapple",
           "aliases": [],
-          "memoryClue": "Una bebida blanca.",
-          "asset": "comida/5",
-          "searchClue": "Bebida blanca que se obtiene de la vaca.",
-          "crosswordClue": "La bebida blanca con la que se hace el yogur."
+          "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+          "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "prompt": "This tropical fruit has a crown of spiky leaves: ___."
+        },
+        {
+          "key": "platanos",
+          "asset": "frutas/platanos",
+          "answer": "bananas",
+          "aliases": [
+            "banana"
+          ],
+          "clue": "Frutas amarillas, largas y curvas que se pelan.",
+          "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
+          "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
+          "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+          "prompt": ""
+        },
+        {
+          "key": "sandia",
+          "asset": "frutas/sandia",
+          "answer": "watermelon",
+          "aliases": [],
+          "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+          "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "prompt": "This large fruit has green skin, red flesh and black seeds: ___."
+        },
+        {
+          "key": "uvas",
+          "asset": "frutas/uvas",
+          "answer": "grapes",
+          "aliases": [
+            "grape"
+          ],
+          "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
+          "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "prompt": "These small round fruits grow in a bunch: ___."
         }
       ],
-      "formats": [
-        "identify",
-        "wordsearch",
-        "crossword",
-        "context",
-        "memory"
-      ],
-      "memoryExtra": [
-        {
-          "answer": "banana",
-          "memoryClue": "Una fruta amarilla, larga y curva.",
-          "asset": "comida/6"
-        },
-        {
-          "answer": "rice",
-          "memoryClue": "Granos pequeños blancos que se cuecen en agua.",
-          "asset": "comida/7"
-        },
-        {
-          "answer": "egg",
-          "memoryClue": "Lo pone una gallina y tiene cáscara.",
-          "asset": "comida/8"
-        },
-        {
-          "answer": "fish",
-          "memoryClue": "Un alimento que viene de un animal que nada.",
-          "asset": "comida/9"
-        },
-        {
-          "answer": "water",
-          "memoryClue": "La bebida transparente que sale del grifo.",
-          "asset": "comida/10"
-        }
-      ]
+      "variants": {
+        "1": [
+          {
+            "key": "manzana",
+            "asset": "frutas/manzana",
+            "answer": "apple",
+            "aliases": [],
+            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "prompt": ""
+          },
+          {
+            "key": "pera",
+            "asset": "frutas/pera",
+            "answer": "pear",
+            "aliases": [],
+            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
+            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "prompt": ""
+          },
+          {
+            "key": "platanos",
+            "asset": "frutas/platanos",
+            "answer": "bananas",
+            "aliases": [
+              "banana"
+            ],
+            "clue": "Frutas amarillas, largas y curvas que se pelan.",
+            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
+            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "prompt": ""
+          },
+          {
+            "key": "limon",
+            "asset": "frutas/limon",
+            "answer": "lemon",
+            "aliases": [],
+            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "prompt": "This yellow citrus fruit tastes sour: ___."
+          },
+          {
+            "key": "naranja",
+            "asset": "frutas/naranja",
+            "answer": "orange",
+            "aliases": [],
+            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
+            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "prompt": ""
+          },
+          {
+            "key": "fresa",
+            "asset": "frutas/fresa",
+            "answer": "strawberry",
+            "aliases": [],
+            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
+            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "prompt": "This red fruit has seeds on the outside: ___."
+          }
+        ],
+        "2": [
+          {
+            "key": "cerezas",
+            "asset": "frutas/cerezas",
+            "answer": "cherries",
+            "aliases": [
+              "cherry"
+            ],
+            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "flashClue": "Pequeñas y rojas: dos piezas con tallos largos.",
+            "prompt": "These small red fruits have long stems and a stone inside: ___."
+          },
+          {
+            "key": "mango",
+            "asset": "frutas/mango",
+            "answer": "mango",
+            "aliases": [],
+            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "flashClue": "Una fruta tropical de cinco letras, amarilla y roja por fuera.",
+            "prompt": ""
+          },
+          {
+            "key": "melocoton",
+            "asset": "frutas/melocoton",
+            "answer": "peach",
+            "aliases": [],
+            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
+            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "flashClue": "La fruta de piel suave y un hueso en el centro.",
+            "prompt": ""
+          },
+          {
+            "key": "pina",
+            "asset": "frutas/pina",
+            "answer": "pineapple",
+            "aliases": [],
+            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "flashClue": "La fruta de la corona de hojas.",
+            "prompt": "This tropical fruit has a crown of spiky leaves: ___."
+          },
+          {
+            "key": "sandia",
+            "asset": "frutas/sandia",
+            "answer": "watermelon",
+            "aliases": [],
+            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "flashClue": "La rodaja de corteza verde y centro rojo.",
+            "prompt": "This large fruit has green skin, red flesh and black seeds: ___."
+          },
+          {
+            "key": "uvas",
+            "asset": "frutas/uvas",
+            "answer": "grapes",
+            "aliases": [
+              "grape"
+            ],
+            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
+            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "flashClue": "Muchas piezas redondas y moradas en un mismo racimo.",
+            "prompt": "These small round fruits grow in a bunch: ___."
+          }
+        ],
+        "3": [
+          {
+            "key": "manzana",
+            "asset": "frutas/manzana",
+            "answer": "apple",
+            "aliases": [],
+            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "prompt": ""
+          },
+          {
+            "key": "pera",
+            "asset": "frutas/pera",
+            "answer": "pear",
+            "aliases": [],
+            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
+            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "prompt": ""
+          },
+          {
+            "key": "limon",
+            "asset": "frutas/limon",
+            "answer": "lemon",
+            "aliases": [],
+            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "prompt": "This yellow citrus fruit tastes sour: ___."
+          },
+          {
+            "key": "mango",
+            "asset": "frutas/mango",
+            "answer": "mango",
+            "aliases": [],
+            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "prompt": ""
+          },
+          {
+            "key": "pina",
+            "asset": "frutas/pina",
+            "answer": "pineapple",
+            "aliases": [],
+            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "prompt": "This tropical fruit has a crown of spiky leaves: ___."
+          },
+          {
+            "key": "cerezas",
+            "asset": "frutas/cerezas",
+            "answer": "cherries",
+            "aliases": [
+              "cherry"
+            ],
+            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "prompt": "These small red fruits have long stems and a stone inside: ___."
+          }
+        ],
+        "4": [
+          {
+            "key": "mango",
+            "asset": "frutas/mango",
+            "answer": "mango",
+            "aliases": [],
+            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "prompt": "",
+            "orderLabel": "Para el desayuno"
+          },
+          {
+            "key": "melocoton",
+            "asset": "frutas/melocoton",
+            "answer": "peach",
+            "aliases": [],
+            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
+            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "prompt": "",
+            "orderLabel": "Para compartir"
+          },
+          {
+            "key": "naranja",
+            "asset": "frutas/naranja",
+            "answer": "orange",
+            "aliases": [],
+            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
+            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "prompt": "",
+            "orderLabel": "Para el zumo"
+          },
+          {
+            "key": "sandia",
+            "asset": "frutas/sandia",
+            "answer": "watermelon",
+            "aliases": [],
+            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "prompt": "This large fruit has green skin, red flesh and black seeds: ___.",
+            "orderLabel": "Para la merienda"
+          },
+          {
+            "key": "platanos",
+            "asset": "frutas/platanos",
+            "answer": "bananas",
+            "aliases": [
+              "banana"
+            ],
+            "clue": "Frutas amarillas, largas y curvas que se pelan.",
+            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
+            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "prompt": "",
+            "orderLabel": "Para llevar"
+          },
+          {
+            "key": "manzana",
+            "asset": "frutas/manzana",
+            "answer": "apple",
+            "aliases": [],
+            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "prompt": "",
+            "orderLabel": "Para el postre"
+          }
+        ],
+        "5": [
+          {
+            "key": "fresa",
+            "asset": "frutas/fresa",
+            "answer": "strawberry",
+            "aliases": [],
+            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
+            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "prompt": "This red fruit has seeds on the outside: ___."
+          },
+          {
+            "key": "limon",
+            "asset": "frutas/limon",
+            "answer": "lemon",
+            "aliases": [],
+            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "prompt": "This yellow citrus fruit tastes sour: ___."
+          },
+          {
+            "key": "pina",
+            "asset": "frutas/pina",
+            "answer": "pineapple",
+            "aliases": [],
+            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "prompt": "This tropical fruit has a crown of spiky leaves: ___."
+          },
+          {
+            "key": "sandia",
+            "asset": "frutas/sandia",
+            "answer": "watermelon",
+            "aliases": [],
+            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "prompt": "This large fruit has green skin, red flesh and black seeds: ___."
+          },
+          {
+            "key": "cerezas",
+            "asset": "frutas/cerezas",
+            "answer": "cherries",
+            "aliases": [
+              "cherry"
+            ],
+            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "prompt": "These small red fruits have long stems and a stone inside: ___."
+          },
+          {
+            "key": "uvas",
+            "asset": "frutas/uvas",
+            "answer": "grapes",
+            "aliases": [
+              "grape"
+            ],
+            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
+            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "prompt": "These small round fruits grow in a bunch: ___."
+          }
+        ]
+      },
+      "memoryExtra": []
     }
   ],
   "ruso": [
@@ -5625,98 +6529,520 @@ window.CURRICULUM = {
       ]
     },
     {
-      "id": "comida",
-      "title": "La comida",
+      "id": "frutas",
+      "title": "Las frutas",
       "kind": "vocabulary",
-      "icon": "comida",
+      "icon": "frutas",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Doce frutas y cinco maneras de aprender. Observa las imágenes y prueba un reto diferente cada día.",
+      "formats": [
+        "fruitletters",
+        "flashcards",
+        "crossword",
+        "basket",
+        "context"
+      ],
       "items": [
         {
-          "clue": "Fruta redonda que puede ser roja o verde.",
+          "key": "cerezas",
+          "asset": "frutas/cerezas",
+          "answer": "вишня",
+          "aliases": [
+            "вишни",
+            "черешня"
+          ],
+          "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+          "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "prompt": "Маленькие красные ягоды с длинными плодоножками и косточкой внутри — это ___."
+        },
+        {
+          "key": "fresa",
+          "asset": "frutas/fresa",
+          "answer": "клубника",
+          "aliases": [],
+          "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
+          "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "prompt": "Красная ягода с семечками снаружи — это ___."
+        },
+        {
+          "key": "limon",
+          "asset": "frutas/limon",
+          "answer": "лимон",
+          "aliases": [],
+          "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+          "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "prompt": "Жёлтый кислый цитрусовый фрукт — это ___."
+        },
+        {
+          "key": "mango",
+          "asset": "frutas/mango",
+          "answer": "манго",
+          "aliases": [],
+          "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+          "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "prompt": ""
+        },
+        {
+          "key": "manzana",
+          "asset": "frutas/manzana",
           "answer": "яблоко",
-          "prompt": "Красный фрукт, который растёт на яблоне, — это ___.",
           "aliases": [],
-          "memoryClue": "La fruta del manzano.",
-          "asset": "comida/1",
-          "searchClue": "Fruta que se recoge de un manzano.",
-          "crosswordClue": "Fruta redonda, roja o verde, con semillas en el centro."
+          "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+          "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "prompt": ""
         },
         {
-          "clue": "Se hace con harina y se hornea en la panadería.",
-          "answer": "хлеб",
-          "prompt": "В пекарне из муки пекут ___.",
+          "key": "melocoton",
+          "asset": "frutas/melocoton",
+          "answer": "персик",
           "aliases": [],
-          "memoryClue": "Una barra de la panadería.",
-          "asset": "comida/2",
-          "searchClue": "Alimento de harina que se vende en barras.",
-          "crosswordClue": "Se prepara con una masa de harina y levadura."
+          "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
+          "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "prompt": ""
         },
         {
-          "clue": "Se elabora con leche y puede venir en lonchas.",
-          "answer": "сыр",
-          "prompt": "Из молока делают ___ для бутерброда.",
+          "key": "naranja",
+          "asset": "frutas/naranja",
+          "answer": "апельсин",
           "aliases": [],
-          "memoryClue": "Puede ir en lonchas en un bocadillo.",
-          "asset": "comida/3",
-          "searchClue": "Alimento lácteo que se puede rallar.",
-          "crosswordClue": "Producto de leche usado en muchas pizzas."
+          "clue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
+          "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "prompt": ""
         },
         {
-          "clue": "Verdura naranja, larga y crujiente.",
-          "answer": "морковь",
-          "prompt": "Длинный оранжевый овощ — это ___.",
+          "key": "pera",
+          "asset": "frutas/pera",
+          "answer": "груша",
           "aliases": [],
-          "memoryClue": "Una verdura naranja.",
-          "asset": "comida/4",
-          "searchClue": "Raíz comestible de color naranja.",
-          "crosswordClue": "Verdura alargada que suele comer el conejo en los cuentos."
+          "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
+          "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "prompt": ""
         },
         {
-          "clue": "Bebida blanca que se sirve en un vaso.",
-          "answer": "молоко",
-          "prompt": "Корова даёт нам ___ для питья.",
+          "key": "pina",
+          "asset": "frutas/pina",
+          "answer": "ананас",
           "aliases": [],
-          "memoryClue": "Una bebida blanca.",
-          "asset": "comida/5",
-          "searchClue": "Bebida blanca que se obtiene de la vaca.",
-          "crosswordClue": "La bebida blanca con la que se hace el yogur."
+          "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+          "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "prompt": "Тропический фрукт с короной из острых листьев — это ___."
+        },
+        {
+          "key": "platanos",
+          "asset": "frutas/platanos",
+          "answer": "бананы",
+          "aliases": [
+            "банан"
+          ],
+          "clue": "Frutas amarillas, largas y curvas que se pelan.",
+          "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
+          "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
+          "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+          "prompt": ""
+        },
+        {
+          "key": "sandia",
+          "asset": "frutas/sandia",
+          "answer": "арбуз",
+          "aliases": [],
+          "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+          "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "prompt": "Большой плод с зелёной кожурой, красной мякотью и чёрными семечками — это ___."
+        },
+        {
+          "key": "uvas",
+          "asset": "frutas/uvas",
+          "answer": "виноград",
+          "aliases": [],
+          "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
+          "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "prompt": "Маленькие круглые ягоды растут гроздью — это ___."
         }
       ],
-      "formats": [
-        "identify",
-        "wordsearch",
-        "crossword",
-        "context",
-        "memory"
-      ],
-      "memoryExtra": [
-        {
-          "answer": "банан",
-          "memoryClue": "Una fruta amarilla, larga y curva.",
-          "asset": "comida/6"
-        },
-        {
-          "answer": "рис",
-          "memoryClue": "Granos pequeños blancos que se cuecen en agua.",
-          "asset": "comida/7"
-        },
-        {
-          "answer": "яйцо",
-          "memoryClue": "Lo pone una gallina y tiene cáscara.",
-          "asset": "comida/8"
-        },
-        {
-          "answer": "рыба",
-          "memoryClue": "Un alimento que viene de un animal que nada.",
-          "asset": "comida/9"
-        },
-        {
-          "answer": "вода",
-          "memoryClue": "La bebida transparente que sale del grifo.",
-          "asset": "comida/10"
-        }
-      ]
+      "variants": {
+        "1": [
+          {
+            "key": "manzana",
+            "asset": "frutas/manzana",
+            "answer": "яблоко",
+            "aliases": [],
+            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "prompt": ""
+          },
+          {
+            "key": "pera",
+            "asset": "frutas/pera",
+            "answer": "груша",
+            "aliases": [],
+            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
+            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "prompt": ""
+          },
+          {
+            "key": "platanos",
+            "asset": "frutas/platanos",
+            "answer": "бананы",
+            "aliases": [
+              "банан"
+            ],
+            "clue": "Frutas amarillas, largas y curvas que se pelan.",
+            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
+            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "prompt": ""
+          },
+          {
+            "key": "limon",
+            "asset": "frutas/limon",
+            "answer": "лимон",
+            "aliases": [],
+            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "prompt": "Жёлтый кислый цитрусовый фрукт — это ___."
+          },
+          {
+            "key": "naranja",
+            "asset": "frutas/naranja",
+            "answer": "апельсин",
+            "aliases": [],
+            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
+            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "prompt": ""
+          },
+          {
+            "key": "fresa",
+            "asset": "frutas/fresa",
+            "answer": "клубника",
+            "aliases": [],
+            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
+            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "prompt": "Красная ягода с семечками снаружи — это ___."
+          }
+        ],
+        "2": [
+          {
+            "key": "cerezas",
+            "asset": "frutas/cerezas",
+            "answer": "вишня",
+            "aliases": [
+              "вишни",
+              "черешня"
+            ],
+            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "flashClue": "Pequeñas y rojas: dos piezas con tallos largos.",
+            "prompt": "Маленькие красные ягоды с длинными плодоножками и косточкой внутри — это ___."
+          },
+          {
+            "key": "mango",
+            "asset": "frutas/mango",
+            "answer": "манго",
+            "aliases": [],
+            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "flashClue": "Una fruta tropical de cinco letras, amarilla y roja por fuera.",
+            "prompt": ""
+          },
+          {
+            "key": "melocoton",
+            "asset": "frutas/melocoton",
+            "answer": "персик",
+            "aliases": [],
+            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
+            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "flashClue": "La fruta de piel suave y un hueso en el centro.",
+            "prompt": ""
+          },
+          {
+            "key": "pina",
+            "asset": "frutas/pina",
+            "answer": "ананас",
+            "aliases": [],
+            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "flashClue": "La fruta de la corona de hojas.",
+            "prompt": "Тропический фрукт с короной из острых листьев — это ___."
+          },
+          {
+            "key": "sandia",
+            "asset": "frutas/sandia",
+            "answer": "арбуз",
+            "aliases": [],
+            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "flashClue": "La rodaja de corteza verde y centro rojo.",
+            "prompt": "Большой плод с зелёной кожурой, красной мякотью и чёрными семечками — это ___."
+          },
+          {
+            "key": "uvas",
+            "asset": "frutas/uvas",
+            "answer": "виноград",
+            "aliases": [],
+            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
+            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "flashClue": "Muchas piezas redondas y moradas en un mismo racimo.",
+            "prompt": "Маленькие круглые ягоды растут гроздью — это ___."
+          }
+        ],
+        "3": [
+          {
+            "key": "manzana",
+            "asset": "frutas/manzana",
+            "answer": "яблоко",
+            "aliases": [],
+            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "prompt": ""
+          },
+          {
+            "key": "pera",
+            "asset": "frutas/pera",
+            "answer": "груша",
+            "aliases": [],
+            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
+            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "prompt": ""
+          },
+          {
+            "key": "limon",
+            "asset": "frutas/limon",
+            "answer": "лимон",
+            "aliases": [],
+            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "prompt": "Жёлтый кислый цитрусовый фрукт — это ___."
+          },
+          {
+            "key": "mango",
+            "asset": "frutas/mango",
+            "answer": "манго",
+            "aliases": [],
+            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "prompt": ""
+          },
+          {
+            "key": "pina",
+            "asset": "frutas/pina",
+            "answer": "ананас",
+            "aliases": [],
+            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "prompt": "Тропический фрукт с короной из острых листьев — это ___."
+          },
+          {
+            "key": "cerezas",
+            "asset": "frutas/cerezas",
+            "answer": "вишня",
+            "aliases": [
+              "вишни",
+              "черешня"
+            ],
+            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "prompt": "Маленькие красные ягоды с длинными плодоножками и косточкой внутри — это ___."
+          }
+        ],
+        "4": [
+          {
+            "key": "mango",
+            "asset": "frutas/mango",
+            "answer": "манго",
+            "aliases": [],
+            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "prompt": "",
+            "orderLabel": "Para el desayuno"
+          },
+          {
+            "key": "melocoton",
+            "asset": "frutas/melocoton",
+            "answer": "персик",
+            "aliases": [],
+            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
+            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "prompt": "",
+            "orderLabel": "Para compartir"
+          },
+          {
+            "key": "naranja",
+            "asset": "frutas/naranja",
+            "answer": "апельсин",
+            "aliases": [],
+            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
+            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "prompt": "",
+            "orderLabel": "Para el zumo"
+          },
+          {
+            "key": "sandia",
+            "asset": "frutas/sandia",
+            "answer": "арбуз",
+            "aliases": [],
+            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "prompt": "Большой плод с зелёной кожурой, красной мякотью и чёрными семечками — это ___.",
+            "orderLabel": "Para la merienda"
+          },
+          {
+            "key": "platanos",
+            "asset": "frutas/platanos",
+            "answer": "бананы",
+            "aliases": [
+              "банан"
+            ],
+            "clue": "Frutas amarillas, largas y curvas que se pelan.",
+            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
+            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "prompt": "",
+            "orderLabel": "Para llevar"
+          },
+          {
+            "key": "manzana",
+            "asset": "frutas/manzana",
+            "answer": "яблоко",
+            "aliases": [],
+            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
+            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "prompt": "",
+            "orderLabel": "Para el postre"
+          }
+        ],
+        "5": [
+          {
+            "key": "fresa",
+            "asset": "frutas/fresa",
+            "answer": "клубника",
+            "aliases": [],
+            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
+            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "prompt": "Красная ягода с семечками снаружи — это ___."
+          },
+          {
+            "key": "limon",
+            "asset": "frutas/limon",
+            "answer": "лимон",
+            "aliases": [],
+            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
+            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "prompt": "Жёлтый кислый цитрусовый фрукт — это ___."
+          },
+          {
+            "key": "pina",
+            "asset": "frutas/pina",
+            "answer": "ананас",
+            "aliases": [],
+            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
+            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "prompt": "Тропический фрукт с короной из острых листьев — это ___."
+          },
+          {
+            "key": "sandia",
+            "asset": "frutas/sandia",
+            "answer": "арбуз",
+            "aliases": [],
+            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
+            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "prompt": "Большой плод с зелёной кожурой, красной мякотью и чёрными семечками — это ___."
+          },
+          {
+            "key": "cerezas",
+            "asset": "frutas/cerezas",
+            "answer": "вишня",
+            "aliases": [
+              "вишни",
+              "черешня"
+            ],
+            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
+            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "prompt": "Маленькие красные ягоды с длинными плодоножками и косточкой внутри — это ___."
+          },
+          {
+            "key": "uvas",
+            "asset": "frutas/uvas",
+            "answer": "виноград",
+            "aliases": [],
+            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
+            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "prompt": "Маленькие круглые ягоды растут гроздью — это ___."
+          }
+        ]
+      },
+      "memoryExtra": []
     }
   ]
 };

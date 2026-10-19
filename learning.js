@@ -1,4 +1,6 @@
 const FORMAT_INFO = {
+  fruitletters: ['Completa las letras', 'Mira la fruta, completa mentalmente las letras que faltan y escribe el nombre entero.'],
+  basket: ['Prepara la cesta', 'Elige una tarjeta y pulsa el pedido con la misma fruta, o arrastra la tarjeta hasta él. Coloca cada fruta en su sitio.'],
   choice: ['Elige la forma correcta', 'Elige la opción que completa cada frase.'],
   write: ['Completa las frases', 'Escribe solo la forma que falta. Entre paréntesis encontrarás el verbo o la palabra base.'],
   text: ['Un pequeño texto', 'Completa los huecos de esta historia. Usa la palabra base entre paréntesis.'],
@@ -11,7 +13,7 @@ const FORMAT_INFO = {
   truefalse: ['Verdadero o falso', 'Lee cada afirmación y decide si es verdadera o falsa.'],
   memory: ['Memory: veinte tarjetas', 'Encuentra diez parejas: una palabra y su significado. Pulsa dos tarjetas para descubrirlas.'],
   wordsearch: ['Sopa de letras', 'Busca las cinco palabras. Pulsa la primera letra y después la última. Pueden ir en horizontal, vertical o diagonal.'],
-  crossword: ['Un pequeño crucigrama', 'Lee las pistas y completa las casillas. Algunas palabras comparten letras. Escribe sin tildes en este juego.'],
+  crossword: ['Un pequeño crucigrama', 'Lee las pistas y completa las casillas. Algunas palabras comparten letras. Escribe sin tildes en las vocales; conserva la ñ y la й.'],
   flashcards: ['Tarjetas para aprender', 'Piensa en la palabra, escríbela y comprueba tu respuesta. Si la necesitas, puedes voltear la tarjeta.'],
   sequence: ['Un día en orden', 'Lee el horario de este día y relaciona cada hora con la acción adecuada.']
 };
@@ -23,12 +25,12 @@ function topicDone(id,topic) { return [1,2,3,4,5].filter(m=>isDone(id,topic,m)).
 function topicPath(id,topic) { return `#/${id}/actividades/${topic}`; }
 function shuffled(values,seed=0) { const out=[...values];let state=seed+163;for(let i=out.length-1;i>0;i--){state=(Math.imul(state,1664525)+1013904223)>>>0;const j=state%(i+1);[out[i],out[j]]=[out[j],out[i]];}return out; }
 function normalizeAnswer(value) { return String(value).normalize('NFC').toLocaleLowerCase().replace(/ё/g,'е').replace(/[.,!?¡¿;:«»“”"]/g,'').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim(); }
-function puzzleWord(value) { return normalizeAnswer(value).normalize('NFD').replace(/\p{M}/gu,'').replace(/[^\p{L}]/gu,'').toUpperCase(); }
+function puzzleWord(value) { return normalizeAnswer(value).replace(/[áàäâ]/g,'a').replace(/[éèëê]/g,'e').replace(/[íìïî]/g,'i').replace(/[óòöô]/g,'o').replace(/[úùüû]/g,'u').replace(/[^\p{L}]/gu,'').toUpperCase(); }
 function fullSentence(item) { return item.prompt.replace('___',item.answer); }
 function activityItems(topic,mode) { return topic.variants ? topic.variants[String(mode)] : topic.items; }
 function activityFormat(topic,mode) { return topic.formats[mode-1]; }
 function topicIcon(topic) {
-  const paths={grammar:'M5 18 16 7l3 3L8 21H5v-3ZM14 9l3 3M5 4h8M5 8h5',animales:'M8 14c-3 3-2 6 1 6 2 0 2-1 3-1s2 1 3 1c4 0 4-3 1-6-2-2-6-2-8 0ZM6 8v2M10 4v3M15 4v3M19 8v2',casa:'m3 11 9-8 9 8M5 10v11h14V10M10 21v-7h4v7',ropa:'m8 4-5 3 3 5 2-1v10h8V11l2 1 3-5-5-3c0 4-8 4-8 0Z',rutina:'M12 7v5l3 2M7 2 3 6M17 2l4 4M5 20l-1 2M19 20l1 2',comida:'M5 3v6c0 4 5 4 5 0V3M7.5 3v19M18 3v19M18 3c-5 4-5 10 0 10'};
+  const paths={grammar:'M5 18 16 7l3 3L8 21H5v-3ZM14 9l3 3M5 4h8M5 8h5',animales:'M8 14c-3 3-2 6 1 6 2 0 2-1 3-1s2 1 3 1c4 0 4-3 1-6-2-2-6-2-8 0ZM6 8v2M10 4v3M15 4v3M19 8v2',casa:'m3 11 9-8 9 8M5 10v11h14V10M10 21v-7h4v7',ropa:'m8 4-5 3 3 5 2-1v10h8V11l2 1 3-5-5-3c0 4-8 4-8 0Z',rutina:'M12 7v5l3 2M7 2 3 6M17 2l4 4M5 20l-1 2M19 20l1 2',frutas:'M12 7c-7-6-12 1-8 10 2 5 5 4 8 3 3 1 6 2 8-3 4-9-1-16-8-10ZM12 7c0-4 2-5 5-5M12 7c-2-3-4-3-6-3'};
   const cover=mediaPath('topics',topic.id);
   return cover?`<img class="topic-photo" src="${escapeHTML(cover)}" alt="" loading="lazy">`:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${topic.id==='rutina'?'<circle cx="12" cy="13" r="8"/>':''}<path d="${paths[topic.kind==='grammar'?'grammar':topic.id]}"/></svg>`;
 }
@@ -81,7 +83,7 @@ function finishActivity(id,topic,mode) {
 }
 function recommendBook(id,topic) {
   const target=document.querySelector('#book-recommendation');
-  const related={animales:'74565343',casa:'74019993',ropa:'74565262',rutina:'74019993',comida:'74565262'};
+  const related={animales:'74565343',casa:'74019993',ropa:'74565262',rutina:'74019993',frutas:'74565262'};
   const book=(window.LIBROS||[]).find(b=>b.language===id&&b.id===related[topic.id])||(window.LIBROS||[]).find(b=>b.language===id);
   if(!book){target.innerHTML=`<aside class="related-book no-book"><h3>¡Un paso más en tu aprendizaje!</h3><p>Los libros de ruso estarán disponibles próximamente. Mientras tanto, cuéntame qué actividad te gustaría practicar.</p><a href="https://www.instagram.com/chave_books/" target="_blank" rel="noopener noreferrer">Escríbeme en Instagram →</a></aside>`;return;}
   target.innerHTML=`<aside class="related-book"><div>${bookCover(book)}</div><section><p class="eyebrow">SIGUE APRENDIENDO</p><h3>¿Te gustó? Sigue con <em>${escapeHTML(book.title)}</em>.</h3><p>${escapeHTML(book.description)}</p><p class="book-audience">Para ${escapeHTML(book.audience)} que quieren aprender ${languages[id].name.toLowerCase()}.</p><a class="button dark" href="#/${id}/libros/${book.id}">Descubrir este libro →</a></section></aside>`;
@@ -97,7 +99,13 @@ function renderStandard(id,topic,mode) {
   const sequenceHours=['07:00','07:15','07:45','09:00','22:00'];
   const questions=items.map((source,i)=>{
     const item={...source};let prompt=item.prompt,control='',answers=expectedAnswers(topic,mode,item);
-    if(format==='identify'){
+    if(format==='fruitletters'){
+      prompt='Escribe el nombre completo de esta fruta.';
+      control=`${imageFor(item)}<p class="scrambled" lang="${lang}" aria-label="Nombre con letras que faltan">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'_'))}</p>`;
+    }else if(format==='basket'){
+      prompt=escapeHTML(item.orderLabel);
+      control=`<div class="basket-order">${imageFor(item)}<button type="button" class="basket-target" data-question="${i}" aria-label="Colocar fruta en el pedido ${i+1}"><span>Coloca aquí tu elección</span></button><label class="basket-select-label" for="basket-select-${i}">También puedes elegir aquí</label><select class="basket-select" id="basket-select-${i}" data-question="${i}"><option value="">Elige una fruta</option>${shuffled(items,i+2).map(fruit=>`<option value="${escapeHTML(fruit.key)}">${escapeHTML(fruit.answer)}</option>`).join('')}</select><input type="hidden" name="q${i}" id="answer-${i}"></div>`;
+    }else if(format==='identify'){
       const image=imageFor(item);prompt=image?`Imagen ${i+1}`:item.clue;
       control=image?`<div class="picture-card">${image}<details><summary>Una pista</summary><p>${escapeHTML(item.clue)}</p></details></div>`:'';
     }else if(format==='match')prompt=topic.matchClues[i];
@@ -116,12 +124,23 @@ function renderStandard(id,topic,mode) {
     else if(format==='order'){
       prompt='Construye una frase con todas las palabras.';
       control+=`<div class="word-slots" id="slots-${i}" aria-label="Tu frase" lang="${lang}"></div><div class="word-bank" data-question="${i}" lang="${lang}">${shuffled(fullSentence(item).split(' '),i+9).map((word,j)=>`<button type="button" class="word-token" data-token="${j}" data-word="${escapeHTML(word)}" aria-label="Añadir ${escapeHTML(word)}">${escapeHTML(word)}</button>`).join('')}</div><input type="hidden" name="q${i}" id="answer-${i}">`;
-    }else control+=`<input class="written-answer" id="answer-${i}" name="q${i}" type="text" required autocomplete="off" autocapitalize="off" spellcheck="false" lang="${lang}" aria-labelledby="question-${i}" placeholder="${format==='detective'?'Solo la parte corregida':'Escribe tu respuesta'}">`;
+    }else if(format!=='basket')control+=`<input class="written-answer" id="answer-${i}" name="q${i}" type="text" required autocomplete="off" autocapitalize="off" spellcheck="false" lang="${lang}" aria-labelledby="question-${i}" placeholder="${format==='detective'?'Solo la parte corregida':'Escribe tu respuesta'}">`;
     return {html:`<fieldset class="question"><legend id="question-${i}"><span class="question-number">0${i+1}</span> ${prompt}</legend>${control}<div class="feedback" id="feedback-${i}" aria-live="polite"></div></fieldset>`,answers};
   });
-  document.querySelector('#exercise-stage').innerHTML=`${format==='context'?`<div class="vocabulary-bank"><strong>Banco de palabras</strong><p lang="${lang}">${shuffled(items.map(x=>x.answer),4).map(w=>`<span>${escapeHTML(w)}</span>`).join('')}</p></div>`:''}<form id="exercise"><div class="exercise-meta"><span>${format==='text'?'Una historia con cinco huecos':`${questions.length} retos para practicar`}</span><span>${topic.level} · Sin prisas</span></div><div class="${format==='text'?'story-sheet':''}">${questions.map(q=>q.html).join('')}</div><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
+  const basketBank=format==='basket'?`<section class="basket-bank" aria-label="Tarjetas de frutas"><p>Elige una fruta y después su pedido. También puedes arrastrar.</p><div class="fruit-cards">${shuffled(items,8).map(item=>`<button type="button" class="fruit-card" draggable="true" data-fruit="${escapeHTML(item.key)}" aria-pressed="false">${imageFor(item)}<span lang="${lang}">${escapeHTML(item.answer)}</span></button>`).join('')}</div><p id="basket-selection" role="status" aria-live="polite">Ninguna tarjeta seleccionada.</p></section>`:'';
+  document.querySelector('#exercise-stage').innerHTML=`${basketBank}${format==='context'?`<div class="vocabulary-bank"><strong>Banco de palabras</strong><p lang="${lang}">${shuffled(items.map(x=>x.answer),4).map(w=>`<span>${escapeHTML(w)}</span>`).join('')}</p></div>`:''}<form id="exercise"><div class="exercise-meta"><span>${format==='text'?'Una historia con cinco huecos':`${questions.length} retos para practicar`}</span><span>${topic.level} · Sin prisas</span></div><div class="${format==='text'?'story-sheet':''}">${questions.map(q=>q.html).join('')}</div><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
   const form=document.querySelector('#exercise');
   const clear=()=>{form.querySelectorAll('.feedback').forEach(el=>{el.replaceChildren();el.className='feedback';});document.querySelector('#result').textContent='';document.querySelector('#book-recommendation').replaceChildren();};
+  if(format==='basket') {
+    let selected=null;
+    const cards=[...document.querySelectorAll('.fruit-card')];
+    const choose=key=>{selected=items.find(item=>item.key===key)||null;cards.forEach(card=>card.setAttribute('aria-pressed',String(card.dataset.fruit===key)));document.querySelector('#basket-selection').textContent=selected?`Has elegido: ${selected.answer}. Ahora elige su pedido.`:'Ninguna tarjeta seleccionada.';};
+    const place=target=>{if(!selected){document.querySelector('#result').textContent='Elige primero una tarjeta de fruta.';return;}clear();document.querySelector(`#answer-${target.dataset.question}`).value=selected.answer;target.querySelector('span').textContent=selected.answer;target.classList.add('filled');document.querySelector(`#basket-select-${target.dataset.question}`).value=selected.key;choose(null);};
+    cards.forEach(card=>{card.addEventListener('click',()=>choose(card.dataset.fruit));card.addEventListener('dragstart',event=>{choose(card.dataset.fruit);event.dataTransfer.setData('text/plain',card.dataset.fruit);event.dataTransfer.effectAllowed='copy';});});
+    form.querySelectorAll('.basket-select').forEach(select=>select.addEventListener('change',()=>{if(select.value){choose(select.value);place(form.querySelector(`.basket-target[data-question="${select.dataset.question}"]`));}}));
+    form.querySelectorAll('.basket-target').forEach(target=>{target.addEventListener('click',()=>place(target));target.addEventListener('dragover',event=>event.preventDefault());target.addEventListener('drop',event=>{event.preventDefault();const key=event.dataTransfer.getData('text/plain');if(items.some(item=>item.key===key)){choose(key);place(target);}});});
+    form.addEventListener('reset',()=>{choose(null);form.querySelectorAll('.basket-target').forEach(target=>{target.classList.remove('filled');target.querySelector('span').textContent='Coloca aquí tu elección';});});
+  }
   form.querySelectorAll('.flip-card').forEach((button,i)=>button.addEventListener('click',()=>{const answer=button.nextElementSibling;answer.hidden=!answer.hidden;answer.textContent=answer.hidden?'':items[i].answer;button.textContent=answer.hidden?'Voltear tarjeta':'Ocultar palabra';button.setAttribute('aria-expanded',String(!answer.hidden));}));
   form.querySelectorAll('.word-bank').forEach(bank=>{
     const i=Number(bank.dataset.question),slots=document.querySelector(`#slots-${i}`),input=document.querySelector(`#answer-${i}`);
@@ -129,7 +148,7 @@ function renderStandard(id,topic,mode) {
     bank.addEventListener('click',event=>{const button=event.target.closest('button');if(!button||button.disabled)return;const chosen=button.cloneNode(true);chosen.setAttribute('aria-label',`Quitar ${button.dataset.word}`);button.disabled=true;slots.append(chosen);chosen.addEventListener('click',()=>{button.disabled=false;chosen.remove();sync();button.focus();});sync();});
   });
   form.addEventListener('input',clear);form.addEventListener('change',clear);
-  form.addEventListener('reset',()=>{clear();form.querySelectorAll('.word-slots').forEach(el=>el.replaceChildren());form.querySelectorAll('.word-bank button').forEach(b=>b.disabled=false);form.querySelectorAll('.flash-answer').forEach(el=>{el.hidden=true;el.textContent='';});form.querySelectorAll('.flip-card').forEach(b=>{b.textContent='Voltear tarjeta';b.setAttribute('aria-expanded','false');});});
+  form.addEventListener('reset',()=>{clear();form.querySelectorAll('input[type="hidden"]').forEach(input=>{input.value='';input.defaultValue='';});form.querySelectorAll('.word-slots').forEach(el=>el.replaceChildren());form.querySelectorAll('.word-bank button').forEach(b=>b.disabled=false);form.querySelectorAll('.flash-answer').forEach(el=>{el.hidden=true;el.textContent='';});form.querySelectorAll('.flip-card').forEach(b=>{b.textContent='Voltear tarjeta';b.setAttribute('aria-expanded','false');});});
   form.addEventListener('submit',event=>{
     event.preventDefault();const values=new FormData(form);if(questions.some((_,i)=>!String(values.get(`q${i}`)||'').trim())){document.querySelector('#result').textContent='Completa todas las respuestas antes de comprobar.';return;}
     let score=0;questions.forEach((q,i)=>{const response=values.get(`q${i}`);const correct=q.answers.some(a=>normalizeAnswer(a)===normalizeAnswer(response));if(correct)score++;const solutions=format==='truefalse'?[vocabulary?(q.answers[0]==='true'?'Verdadero':'Falso'):`${q.answers[0]==='true'?'La frase es correcta.':'La frase es incorrecta.'} Forma correcta: ${fullSentence(items[i])}`]:q.answers;feedbackFor(document.querySelector(`#feedback-${i}`),correct,solutions);});
@@ -219,9 +238,9 @@ function makeCrossword(items) {
   return {grid: grid.slice(minR,maxR+1).map(row=>row.slice(minC,maxC+1)),placements:placements.map(p=>({...p,r:p.r-minR,c:p.c-minC})).sort((a,b)=>a.index-b.index)};
 }
 function renderCrossword(id,topic,mode) {
-  const puzzle=makeCrossword(topic.items),numbers=new Map();puzzle.placements.forEach((p,i)=>numbers.set(`${p.r},${p.c}`,[numbers.get(`${p.r},${p.c}`),i+1].filter(Boolean).join(",")));
-  document.querySelector('#exercise-stage').innerHTML=`<form class="puzzle-panel" id="crossword-form"><div class="grid-scroll"><div class="crossword-grid" style="--grid-size:${puzzle.grid[0].length}" aria-label="Crucigrama">${puzzle.grid.flatMap((row,r)=>row.map((letter,c)=>letter?`<label class="crossword-cell"><span>${numbers.get(`${r},${c}`)||''}</span><input type="text" maxlength="1" autocomplete="off" spellcheck="false" data-r="${r}" data-c="${c}" aria-label="Fila ${r+1}, columna ${c+1}"></label>`:'<span class="crossword-empty"></span>')).join('')}</div></div><ol class="crossword-clues">${puzzle.placements.map((p,i)=>`<li>${escapeHTML(topic.items[i].crosswordClue)} <small>(${p.dr?'Vertical':'Horizontal'}, ${p.word.length} letras)</small><div class="feedback" id="feedback-${i}" aria-live="polite"></div></li>`).join('')}</ol><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
+  const items=activityItems(topic,mode),puzzle=makeCrossword(items),numbers=new Map();puzzle.placements.forEach((p,i)=>numbers.set(`${p.r},${p.c}`,[numbers.get(`${p.r},${p.c}`),i+1].filter(Boolean).join(",")));
+  document.querySelector('#exercise-stage').innerHTML=`<form class="puzzle-panel" id="crossword-form"><div class="grid-scroll"><div class="crossword-grid" style="--grid-size:${puzzle.grid[0].length}" aria-label="Crucigrama">${puzzle.grid.flatMap((row,r)=>row.map((letter,c)=>letter?`<label class="crossword-cell"><span>${numbers.get(`${r},${c}`)||''}</span><input type="text" maxlength="1" autocomplete="off" spellcheck="false" data-r="${r}" data-c="${c}" aria-label="Fila ${r+1}, columna ${c+1}"></label>`:'<span class="crossword-empty"></span>')).join('')}</div></div><ol class="crossword-clues">${puzzle.placements.map((p,i)=>`<li>${imageFor(items[i])}${escapeHTML(items[i].crosswordClue)} <small>(${p.dr?'Vertical':'Horizontal'}, ${p.word.length} letras)</small><div class="feedback" id="feedback-${i}" aria-live="polite"></div></li>`).join('')}</ol><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
   const form=document.querySelector('#crossword-form');const clear=()=>{form.querySelectorAll('.feedback').forEach(el=>el.replaceChildren());document.querySelector('#result').textContent='';document.querySelector('#book-recommendation').replaceChildren();};
   form.addEventListener('input',event=>{event.target.value=puzzleWord(event.target.value).slice(0,1);clear();});form.addEventListener('reset',clear);
-  form.addEventListener('submit',event=>{event.preventDefault();let score=0;puzzle.placements.forEach((p,i)=>{const text=Array.from(p.word,(_,k)=>form.querySelector(`[data-r="${p.r+p.dr*k}"][data-c="${p.c+p.dc*k}"]`).value).join('');const correct=puzzleWord(text)===p.word;if(correct)score++;feedbackFor(document.querySelector(`#feedback-${i}`),correct,[topic.items[i].answer]);});document.querySelector('#result').textContent=`${score} de 5 palabras correctas. ${score===5?'¡Actividad completada!':'Revisa las casillas o abre una solución si la necesitas.'}`;if(score===5)finishActivity(id,topic,mode);});
+  form.addEventListener('submit',event=>{event.preventDefault();let score=0;puzzle.placements.forEach((p,i)=>{const text=Array.from(p.word,(_,k)=>form.querySelector(`[data-r="${p.r+p.dr*k}"][data-c="${p.c+p.dc*k}"]`).value).join('');const correct=puzzleWord(text)===p.word;if(correct)score++;feedbackFor(document.querySelector(`#feedback-${i}`),correct,[items[i].answer]);});document.querySelector('#result').textContent=`${score} de ${items.length} palabras correctas. ${score===items.length?'¡Actividad completada!':'Revisa las casillas o abre una solución si la necesitas.'}`;if(score===items.length)finishActivity(id,topic,mode);});
 }

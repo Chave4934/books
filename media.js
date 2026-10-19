@@ -1,4 +1,4 @@
-// Versiones de mayor resolución para la web. Los originales se conservan en assets/animales/.
+// Imágenes de la autora; originales conservados en assets/.
 window.MEDIA = {
   "vocabulary": {
     "casa/1": null,
@@ -21,16 +21,6 @@ window.MEDIA = {
     "rutina/3": null,
     "rutina/4": null,
     "rutina/5": null,
-    "comida/1": null,
-    "comida/2": null,
-    "comida/3": null,
-    "comida/4": null,
-    "comida/5": null,
-    "comida/6": null,
-    "comida/7": null,
-    "comida/8": null,
-    "comida/9": null,
-    "comida/10": null,
     "animales/perro": "assets/animales/mejoradas/perro.webp",
     "animales/vaca": "assets/animales/mejoradas/vaca.webp",
     "animales/caballo": "assets/animales/mejoradas/caballo.webp",
@@ -42,7 +32,19 @@ window.MEDIA = {
     "animales/oso": "assets/animales/mejoradas/oso.webp",
     "animales/oveja": "assets/animales/mejoradas/oveja.webp",
     "animales/leon": "assets/animales/mejoradas/leon.webp",
-    "animales/pato": "assets/animales/mejoradas/pato.webp"
+    "animales/pato": "assets/animales/mejoradas/pato.webp",
+    "frutas/cerezas": "assets/frutas/cerezas.png",
+    "frutas/fresa": "assets/frutas/fresa.png",
+    "frutas/limon": "assets/frutas/limon.png",
+    "frutas/mango": "assets/frutas/mango.png",
+    "frutas/manzana": "assets/frutas/manzana.png",
+    "frutas/melocoton": "assets/frutas/melocoton.png",
+    "frutas/naranja": "assets/frutas/naranja.png",
+    "frutas/pera": "assets/frutas/pera.png",
+    "frutas/pina": "assets/frutas/pina.png",
+    "frutas/platanos": "assets/frutas/platanos.png",
+    "frutas/sandia": "assets/frutas/sandia.png",
+    "frutas/uvas": "assets/frutas/uvas.png"
   },
   "topics": {
     "presente": null,
@@ -54,7 +56,7 @@ window.MEDIA = {
     "casa": null,
     "ropa": null,
     "rutina": null,
-    "comida": null
+    "frutas": "assets/frutas/manzana.png"
   },
   "covers": {
     "74613814": null,
