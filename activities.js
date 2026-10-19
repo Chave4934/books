@@ -4198,7 +4198,7 @@ window.CURRICULUM = {
             "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
             "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
             "prompt": "",
-            "orderLabel": "Para la merienda, necesito mango ."
+            "orderLabel": "Para la merienda, necesito mango."
           },
           {
             "key": "melocoton",
@@ -4212,7 +4212,7 @@ window.CURRICULUM = {
             "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
             "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
             "prompt": "",
-            "orderLabel": "En mi cesta quiero melocotón ."
+            "orderLabel": "En mi cesta quiero melocotón."
           },
           {
             "key": "naranja",
@@ -4224,7 +4224,7 @@ window.CURRICULUM = {
             "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
             "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
             "prompt": "",
-            "orderLabel": "Para el zumo, elijo naranja ."
+            "orderLabel": "Para el zumo, elijo naranja."
           },
           {
             "key": "sandia",
@@ -4236,7 +4236,7 @@ window.CURRICULUM = {
             "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
             "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
             "prompt": "Rodaja roja con semillas negras y corteza verde: ___.",
-            "orderLabel": "Para compartir, llevo sandía ."
+            "orderLabel": "Para compartir, llevo sandía."
           },
           {
             "key": "platanos",
@@ -4258,7 +4258,7 @@ window.CURRICULUM = {
             "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
             "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
             "prompt": "",
-            "orderLabel": "Para desayunar, compro plátanos ."
+            "orderLabel": "Para desayunar, compro plátanos."
           },
           {
             "key": "manzana",
@@ -4270,7 +4270,7 @@ window.CURRICULUM = {
             "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
             "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
             "prompt": "",
-            "orderLabel": "Para la tarta, busco manzana ."
+            "orderLabel": "Para la tarta, busco manzana."
           }
         ],
         "5": [
@@ -12500,7 +12500,7 @@ window.CURRICULUM = {
             "memoryClue": "Тропический фрукт с жёлто-красной кожурой.",
             "flashClue": "Тропический фрукт с жёлто-красной кожурой.",
             "prompt": "",
-            "orderLabel": "Мой заказ: манго ."
+            "orderLabel": "Мой заказ: манго."
           },
           {
             "key": "melocoton",
@@ -12512,7 +12512,7 @@ window.CURRICULUM = {
             "memoryClue": "Круглый фрукт с оранжево-розовой кожицей.",
             "flashClue": "Круглый фрукт с оранжево-розовой кожицей.",
             "prompt": "",
-            "orderLabel": "В корзину: персик ."
+            "orderLabel": "В корзину: персик."
           },
           {
             "key": "naranja",
@@ -12524,7 +12524,7 @@ window.CURRICULUM = {
             "memoryClue": "Круглый оранжевый цитрус.",
             "flashClue": "Круглый оранжевый цитрус.",
             "prompt": "",
-            "orderLabel": "Для сока: апельсин ."
+            "orderLabel": "Для сока: апельсин."
           },
           {
             "key": "sandia",
@@ -12536,7 +12536,7 @@ window.CURRICULUM = {
             "memoryClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
             "flashClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
             "prompt": "Большой плод с зелёной кожурой, красной мякотью и чёрными семечками — это ___.",
-            "orderLabel": "Для друзей: арбуз ."
+            "orderLabel": "Для друзей: арбуз."
           },
           {
             "key": "platanos",
@@ -12550,7 +12550,7 @@ window.CURRICULUM = {
             "memoryClue": "Связка длинных изогнутых жёлтых плодов.",
             "flashClue": "Связка длинных изогнутых жёлтых плодов.",
             "prompt": "",
-            "orderLabel": "На завтрак: бананы ."
+            "orderLabel": "На завтрак: бананы."
           },
           {
             "key": "manzana",
@@ -12562,7 +12562,7 @@ window.CURRICULUM = {
             "memoryClue": "Круглый красный плод с черенком.",
             "flashClue": "Круглый красный плод с черенком.",
             "prompt": "",
-            "orderLabel": "Для пирога: яблоко ."
+            "orderLabel": "Для пирога: яблоко."
           }
         ],
         "5": [
