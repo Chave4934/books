@@ -1,4 +1,6 @@
 const FORMAT_INFO = {
+  colorcontext: ['Los colores de tus ilustraciones', 'Mira cada dibujo y completa la frase en el idioma que estudias. En la sandía escribe los dos colores pedidos; el orden no importa.'],
+  colorhunt: ['En busca del color', 'Lee el nombre del color y encuentra su mancha de pintura. Pulsa una imagen en cada reto.'],
   actionstory: ['Un día en imágenes', 'Completa esta historia en presente. Cada dibujo sustituye a la pista del verbo: escribe solo la forma que falta y fíjate en quién realiza la acción.'],
   picturechoice: ['Elige el nombre', 'Mira la ilustración y elige su nombre entre las tres opciones.'],
   fruitletters: ['Completa las letras', 'Mira la fruta, completa mentalmente las letras que faltan y escribe el nombre entero.'],
@@ -47,6 +49,7 @@ function mediaPath(group,key) {
 function imageFor(item) { const path=mediaPath('vocabulary',item.asset);return path?`<img class="activity-image" src="${escapeHTML(path)}" alt="${escapeHTML(item.clue||item.memoryClue)}" loading="lazy">`:''; }
 function formatInfo(topic,mode) {
   const format=activityFormat(topic,mode);
+  if(format==='flashcards'&&topic.id==='colores')return ['Tu caja de colores','Descubre los doce colores. Mira cada pintura, escribe su nombre y, si lo necesitas, voltea la tarjeta para aprenderlo.'];
   if(format==='identify'&&topic.id==='rutina')return ['¿Qué está haciendo?','Mira cada ilustración y escribe la acción en infinitivo en el idioma que estudias; por ejemplo, saltar, jump o прыгать. En inglés puedes escribir el verbo con o sin «to».'];
   if(format==='identify'&&activityItems(topic,mode).every(item=>mediaPath('vocabulary',item.asset)))return ['Mira y escribe','Mira cada ilustración y escribe la palabra. Puedes abrir una pista si la necesitas.'];
   if(format==='order'&&topic.id==='rutina')return ['Construye las frases','Mira la acción y pulsa todas las palabras para construir una frase. Empieza por la palabra con mayúscula y termina con la que lleva punto.'];
@@ -87,7 +90,7 @@ function finishActivity(id,topic,mode) {
 }
 function recommendBook(id,topic) {
   const target=document.querySelector('#book-recommendation');
-  const related={animales:'74565343',casa:'74019993',ropa:'74565262',rutina:'74019993',frutas:'74565262'};
+  const related={animales:'74565343',colores:'74565262',ropa:'74565262',rutina:'74019993',frutas:'74565262'};
   const book=(window.LIBROS||[]).find(b=>b.language===id&&b.id===related[topic.id])||(window.LIBROS||[]).find(b=>b.language===id);
   if(!book){target.innerHTML=`<aside class="related-book no-book"><h3>¡Un paso más en tu aprendizaje!</h3><p>Los libros de ruso estarán disponibles próximamente. Mientras tanto, cuéntame qué actividad te gustaría practicar.</p><a href="https://www.instagram.com/chave_books/" target="_blank" rel="noopener noreferrer">Escríbeme en Instagram →</a></aside>`;return;}
   target.innerHTML=`<aside class="related-book"><div>${bookCover(book)}</div><section><p class="eyebrow">SIGUE APRENDIENDO</p><h3>¿Te gustó? Sigue con <em>${escapeHTML(book.title)}</em>.</h3><p>${escapeHTML(book.description)}</p><p class="book-audience">Para ${escapeHTML(book.audience)} que quieren aprender ${languages[id].name.toLowerCase()}.</p><a class="button dark" href="#/${id}/libros/${book.id}">Descubrir este libro →</a></section></aside>`;
@@ -103,7 +106,11 @@ function renderStandard(id,topic,mode) {
   const sequenceHours=['07:00','07:15','07:45','09:00','22:00'];
   const questions=items.map((source,i)=>{
     const item={...source};let prompt=item.prompt,control='',answers=expectedAnswers(topic,mode,item);
-    if(format==='picturechoice'){
+    if(format==='colorcontext'){
+      prompt=escapeHTML(item.prompt);control=imageFor(item);
+    }else if(format==='colorhunt'){
+      prompt=`Encuentra: <strong lang="${lang}">${escapeHTML(item.answer)}</strong>`;
+    }else if(format==='picturechoice'){
       prompt='¿Qué ves en la imagen?';control=imageFor(item);
     }else if(format==='fruitletters'){
       prompt='Escribe el nombre completo de esta fruta.';
@@ -124,7 +131,9 @@ function renderStandard(id,topic,mode) {
     else if(['choice','write','text','letters'].includes(format))prompt=`${escapeHTML(item.prompt)} (${escapeHTML(item.hint)})`;
     if(format==='context'&&topic.id==='ropa')control=imageFor(item)+control;
     if(format==='letters')control+=`<p class="scrambled" lang="${lang}">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'_'))}</p>`;
-    if(format==='choice'||format==='truefalse'||format==='picturechoice'){
+    if(format==='colorhunt'){
+      control=`<div class="color-hunt-options">${shuffled(topic.items,i+11).map((color,j)=>`<label><input type="radio" name="q${i}" value="${escapeHTML(color.answer)}" required aria-label="${escapeHTML(color.clue)}"><span>${imageFor(color)}</span></label>`).join('')}</div>`;
+    }else if(format==='choice'||format==='truefalse'||format==='picturechoice'){
       const options=format==='truefalse'?[['true',vocabulary?'Verdadero':'Correcta'],['false',vocabulary?'Falso':'Incorrecta']]:format==='picturechoice'?shuffled([item.answer,...shuffled(topic.items.filter(other=>other.key!==item.key),i+31).slice(0,2).map(other=>other.answer)],i+mode).map(option=>[option,option]):shuffled([item.answer,item.wrong],i+mode).map(option=>[option,option]);
       control+=`<div class="answers">${options.map(([value,text])=>`<label><input type="radio" name="q${i}" value="${escapeHTML(value)}" required><span>${escapeHTML(text)}</span></label>`).join('')}</div>`;
     }else if(format==='match'||format==='sequence')control+=`<select id="answer-${i}" name="q${i}" required aria-labelledby="question-${i}" lang="${lang}"><option value="">Elige una opción</option>${shuffled(items.map(x=>x.answer),i+mode).map(a=>`<option value="${escapeHTML(a)}">${escapeHTML(a)}</option>`).join('')}</select>`;

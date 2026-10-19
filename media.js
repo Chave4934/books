@@ -1,11 +1,6 @@
 // Imágenes de la autora; originales conservados en assets/.
 window.MEDIA = {
   "vocabulary": {
-    "casa/1": null,
-    "casa/2": null,
-    "casa/3": null,
-    "casa/4": null,
-    "casa/5": null,
     "animales/perro": "assets/animales/mejoradas/perro.webp",
     "animales/vaca": "assets/animales/mejoradas/vaca.webp",
     "animales/caballo": "assets/animales/mejoradas/caballo.webp",
@@ -53,7 +48,19 @@ window.MEDIA = {
     "acciones/jugar": "assets/acciones/jugar.png",
     "acciones/abrir": "assets/acciones/abrir.png",
     "acciones/cerrar": "assets/acciones/cerrar.png",
-    "acciones/escuchar": "assets/acciones/escuchar.png"
+    "acciones/escuchar": "assets/acciones/escuchar.png",
+    "colores/rojo": "assets/colores/rojo.png",
+    "colores/amarillo": "assets/colores/amarillo.png",
+    "colores/azul": "assets/colores/azul.png",
+    "colores/verde": "assets/colores/verde.png",
+    "colores/naranja": "assets/colores/naranja.png",
+    "colores/morado": "assets/colores/morado.png",
+    "colores/rosa": "assets/colores/rosa.png",
+    "colores/marron": "assets/colores/marron.png",
+    "colores/negro": "assets/colores/negro.png",
+    "colores/blanco": "assets/colores/blanco.png",
+    "colores/gris": "assets/colores/gris.png",
+    "colores/celeste": "assets/colores/celeste.png"
   },
   "topics": {
     "presente": null,
@@ -62,10 +69,10 @@ window.MEDIA = {
     "imperfecto": null,
     "futuro": null,
     "animales": "assets/animales/mejoradas/perro.webp",
-    "casa": null,
     "ropa": "assets/ropa/vestido.png",
     "rutina": "assets/acciones/leer.png",
-    "frutas": "assets/frutas/manzana.png"
+    "frutas": "assets/frutas/manzana.png",
+    "colores": "assets/colores/rojo.png"
   },
   "covers": {
     "74613814": null,

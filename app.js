@@ -36,7 +36,7 @@ function renderBooks(id,selectedBook) {
 
 function route() {
   const parts=location.hash.replace(/^#\/?/,'').split('/');
-  if(languages[parts[0]]&&parts[1]==='actividades'&&parts[2]==='comida'){parts[2]='frutas';history.replaceState(null,'',`#/${parts.join('/')}`);}
+  if(languages[parts[0]]&&parts[1]==='actividades'&&['comida','casa'].includes(parts[2])){parts[2]=parts[2]==='casa'?'colores':'frutas';history.replaceState(null,'',`#/${parts.join('/')}`);}
   document.body.dataset.language = languages[parts[0]] ? parts[0] : '';
   if(languages[parts[0]]) languagePage(parts[0],parts[1]==='libros'?'libros':'actividades',parts[2],parts[3]); else home();
   if(location.hash==='#idiomas') requestAnimationFrame(()=>document.querySelector('#idiomas').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})); else window.scrollTo(0,0);

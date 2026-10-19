@@ -131,3 +131,7 @@ NODE_PATH=/tmp/chavebooks-check/node_modules node tests/clothes.cjs
 ### Acciones habituales
 
 El tema que antes era «La rutina diaria» mantiene la ruta `#/espanol/actividades/rutina` y ahora usa las doce ilustraciones de la autora en `assets/acciones/`. Sus cinco actividades por idioma combinan reconocimiento en infinitivo, una historia ilustrada en presente, memory de 24 tarjetas, frases para ordenar y crucigrama. Los temas gramaticales se conservan. Los archivos pequeños se muestran a tamaño moderado, sin interpolarlos ni modificar los originales. Verificación específica: `NODE_PATH=/tmp/chavebooks-check/node_modules node tests/actions.cjs`.
+
+### Colores
+
+«Colores» sustituye a «Partes de la casa» en los tres idiomas con doce pinturas de la autora, presentación con tarjetas, frases sobre ilustraciones, memory de 24 tarjetas, selección visual de pinturas y sopa de letras. `#/espanol/actividades/casa` redirige a `#/espanol/actividades/colores` sin aplicar el progreso antiguo al tema nuevo. Los colores de la sandía aceptan ambos órdenes y variantes equivalentes. Verificación específica: `NODE_PATH=/tmp/chavebooks-check/node_modules node tests/colors.cjs`.

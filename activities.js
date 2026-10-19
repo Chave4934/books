@@ -1548,101 +1548,665 @@ window.CURRICULUM = {
       }
     },
     {
-      "id": "casa",
-      "title": "Las partes de la casa",
+      "id": "colores",
+      "title": "Colores",
       "kind": "vocabulary",
-      "icon": "casa",
+      "icon": "colores",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Doce colores para descubrir un mundo lleno de vida.",
+      "revision": "colores-v1",
+      "formats": [
+        "flashcards",
+        "colorcontext",
+        "memory",
+        "colorhunt",
+        "wordsearch"
+      ],
       "items": [
         {
-          "clue": "Aquí está la cama y duermes por la noche.",
-          "answer": "dormitorio",
-          "prompt": "La cama y mi armario están en mi ___.",
+          "key": "rojo",
+          "asset": "colores/rojo",
+          "answer": "rojo",
           "aliases": [
-            "habitación",
-            "cuarto"
+            "roja"
           ],
-          "memoryClue": "Para dormir en una cama.",
-          "asset": "casa/1",
-          "searchClue": "Lugar para acostarse en la cama."
+          "clue": "Mancha de pintura de color rojo.",
+          "memoryClue": "Pintura rojo.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         },
         {
-          "clue": "Aquí preparas la comida y usas la nevera.",
-          "answer": "cocina",
-          "prompt": "Pongo la sartén en el fuego de la ___.",
-          "aliases": [],
-          "memoryClue": "Para cocinar.",
-          "asset": "casa/2",
-          "searchClue": "Lugar para usar el horno y cocinar."
-        },
-        {
-          "clue": "Aquí te duchas y te lavas los dientes.",
-          "answer": "baño",
-          "prompt": "La bañera está en el ___.",
-          "aliases": [],
-          "memoryClue": "Para ducharse.",
-          "asset": "casa/3",
-          "searchClue": "Lugar para lavarse en la bañera."
-        },
-        {
-          "clue": "Aquí están el sofá y la televisión.",
-          "answer": "salón",
-          "prompt": "Vemos la tele en el sofá del ___.",
+          "key": "amarillo",
+          "asset": "colores/amarillo",
+          "answer": "amarillo",
           "aliases": [
-            "sala",
-            "sala de estar"
+            "amarilla"
           ],
-          "memoryClue": "Para sentarse en el sofá.",
-          "asset": "casa/4",
-          "searchClue": "Lugar para ver la televisión desde el sofá."
+          "clue": "Mancha de pintura de color amarillo.",
+          "memoryClue": "Pintura amarillo.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         },
         {
-          "clue": "Está fuera de la casa y tiene flores.",
-          "answer": "jardín",
-          "prompt": "Plantamos flores al aire libre en el ___.",
+          "key": "azul",
+          "asset": "colores/azul",
+          "answer": "azul",
           "aliases": [],
-          "memoryClue": "Para plantar flores fuera.",
-          "asset": "casa/5",
-          "searchClue": "Lugar exterior para cultivar flores."
+          "clue": "Mancha de pintura de color azul.",
+          "memoryClue": "Pintura azul.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "verde",
+          "asset": "colores/verde",
+          "answer": "verde",
+          "aliases": [],
+          "clue": "Mancha de pintura de color verde.",
+          "memoryClue": "Pintura verde.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "naranja",
+          "asset": "colores/naranja",
+          "answer": "naranja",
+          "aliases": [],
+          "clue": "Mancha de pintura de color naranja.",
+          "memoryClue": "Pintura naranja.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "morado",
+          "asset": "colores/morado",
+          "answer": "morado",
+          "aliases": [
+            "morada",
+            "violeta",
+            "púrpura"
+          ],
+          "clue": "Mancha de pintura de color morado.",
+          "memoryClue": "Pintura morado.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "rosa",
+          "asset": "colores/rosa",
+          "answer": "rosa",
+          "aliases": [
+            "rosado",
+            "rosada"
+          ],
+          "clue": "Mancha de pintura de color rosa.",
+          "memoryClue": "Pintura rosa.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "marron",
+          "asset": "colores/marron",
+          "answer": "marrón",
+          "aliases": [
+            "café",
+            "castaño",
+            "castaña"
+          ],
+          "clue": "Mancha de pintura de color marrón.",
+          "memoryClue": "Pintura marrón.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "negro",
+          "asset": "colores/negro",
+          "answer": "negro",
+          "aliases": [
+            "negra"
+          ],
+          "clue": "Mancha de pintura de color negro.",
+          "memoryClue": "Pintura negro.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "blanco",
+          "asset": "colores/blanco",
+          "answer": "blanco",
+          "aliases": [
+            "blanca"
+          ],
+          "clue": "Mancha de pintura de color blanco.",
+          "memoryClue": "Pintura blanco.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "gris",
+          "asset": "colores/gris",
+          "answer": "gris",
+          "aliases": [],
+          "clue": "Mancha de pintura de color gris.",
+          "memoryClue": "Pintura gris.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "celeste",
+          "asset": "colores/celeste",
+          "answer": "celeste",
+          "aliases": [
+            "azul claro"
+          ],
+          "clue": "Mancha de pintura de color celeste.",
+          "memoryClue": "Pintura celeste.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         }
       ],
-      "formats": [
-        "identify",
-        "match",
-        "wordsearch",
-        "context",
-        "truefalse"
-      ],
-      "matchClues": [
-        "La habitación de la cama.",
-        "La habitación de la nevera y la cocina de gas.",
-        "El cuarto del inodoro y la ducha.",
-        "La habitación de la televisión y el sofá.",
-        "El espacio exterior con plantas."
-      ],
-      "facts": [
-        [
-          "Aquí suele estar la cama.",
-          true
+      "variants": {
+        "1": [
+          {
+            "key": "rojo",
+            "asset": "colores/rojo",
+            "answer": "rojo",
+            "aliases": [
+              "roja"
+            ],
+            "clue": "Mancha de pintura de color rojo.",
+            "memoryClue": "Pintura rojo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "amarillo",
+            "asset": "colores/amarillo",
+            "answer": "amarillo",
+            "aliases": [
+              "amarilla"
+            ],
+            "clue": "Mancha de pintura de color amarillo.",
+            "memoryClue": "Pintura amarillo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "azul",
+            "asset": "colores/azul",
+            "answer": "azul",
+            "aliases": [],
+            "clue": "Mancha de pintura de color azul.",
+            "memoryClue": "Pintura azul.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "verde",
+            "asset": "colores/verde",
+            "answer": "verde",
+            "aliases": [],
+            "clue": "Mancha de pintura de color verde.",
+            "memoryClue": "Pintura verde.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "naranja",
+            "asset": "colores/naranja",
+            "answer": "naranja",
+            "aliases": [],
+            "clue": "Mancha de pintura de color naranja.",
+            "memoryClue": "Pintura naranja.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "morado",
+            "asset": "colores/morado",
+            "answer": "morado",
+            "aliases": [
+              "morada",
+              "violeta",
+              "púrpura"
+            ],
+            "clue": "Mancha de pintura de color morado.",
+            "memoryClue": "Pintura morado.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "rosa",
+            "asset": "colores/rosa",
+            "answer": "rosa",
+            "aliases": [
+              "rosado",
+              "rosada"
+            ],
+            "clue": "Mancha de pintura de color rosa.",
+            "memoryClue": "Pintura rosa.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "marron",
+            "asset": "colores/marron",
+            "answer": "marrón",
+            "aliases": [
+              "café",
+              "castaño",
+              "castaña"
+            ],
+            "clue": "Mancha de pintura de color marrón.",
+            "memoryClue": "Pintura marrón.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "negro",
+            "asset": "colores/negro",
+            "answer": "negro",
+            "aliases": [
+              "negra"
+            ],
+            "clue": "Mancha de pintura de color negro.",
+            "memoryClue": "Pintura negro.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "blanco",
+            "asset": "colores/blanco",
+            "answer": "blanco",
+            "aliases": [
+              "blanca"
+            ],
+            "clue": "Mancha de pintura de color blanco.",
+            "memoryClue": "Pintura blanco.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "gris",
+            "asset": "colores/gris",
+            "answer": "gris",
+            "aliases": [],
+            "clue": "Mancha de pintura de color gris.",
+            "memoryClue": "Pintura gris.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "celeste",
+            "asset": "colores/celeste",
+            "answer": "celeste",
+            "aliases": [
+              "azul claro"
+            ],
+            "clue": "Mancha de pintura de color celeste.",
+            "memoryClue": "Pintura celeste.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ],
-        [
-          "Aquí se guarda el coche.",
-          false
+        "2": [
+          {
+            "key": "objeto-0",
+            "asset": "frutas/sandia",
+            "answer": "roja y verde",
+            "aliases": [
+              "rojo y verde",
+              "verde y roja",
+              "verde y rojo",
+              "roja verde",
+              "verde roja",
+              "rojo verde",
+              "verde rojo"
+            ],
+            "prompt": "En este dibujo, la sandía es ___: fíjate en la pulpa y la corteza. Escribe esos dos colores.",
+            "clue": "Una rodaja de sandía: pulpa roja y corteza verde."
+          },
+          {
+            "key": "objeto-1",
+            "asset": "frutas/limon",
+            "answer": "amarillo",
+            "aliases": [],
+            "prompt": "El limón es ___.",
+            "clue": "Un limón amarillo."
+          },
+          {
+            "key": "objeto-2",
+            "asset": "animales/cerdo",
+            "answer": "rosa",
+            "aliases": [
+              "rosado"
+            ],
+            "prompt": "El cerdo es ___.",
+            "clue": "Un cerdito rosa."
+          },
+          {
+            "key": "objeto-3",
+            "asset": "frutas/uvas",
+            "answer": "moradas",
+            "aliases": [
+              "violetas",
+              "púrpuras",
+              "lilas",
+              "rosas",
+              "rosadas"
+            ],
+            "prompt": "Las uvas de esta ilustración son ___.",
+            "clue": "Un racimo de uvas moradas."
+          },
+          {
+            "key": "objeto-4",
+            "asset": "frutas/naranja",
+            "answer": "naranja",
+            "aliases": [
+              "anaranjada"
+            ],
+            "prompt": "La naranja es ___.",
+            "clue": "Una naranja de color naranja."
+          },
+          {
+            "key": "objeto-5",
+            "asset": "animales/oveja",
+            "answer": "blanca",
+            "aliases": [],
+            "prompt": "La lana de la oveja es ___.",
+            "clue": "Una oveja de lana blanca."
+          }
         ],
-        [
-          "Aquí puede haber una bañera.",
-          true
+        "3": [
+          {
+            "key": "rojo",
+            "asset": "colores/rojo",
+            "answer": "rojo",
+            "aliases": [
+              "roja"
+            ],
+            "clue": "Mancha de pintura de color rojo.",
+            "memoryClue": "Pintura rojo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "amarillo",
+            "asset": "colores/amarillo",
+            "answer": "amarillo",
+            "aliases": [
+              "amarilla"
+            ],
+            "clue": "Mancha de pintura de color amarillo.",
+            "memoryClue": "Pintura amarillo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "azul",
+            "asset": "colores/azul",
+            "answer": "azul",
+            "aliases": [],
+            "clue": "Mancha de pintura de color azul.",
+            "memoryClue": "Pintura azul.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "verde",
+            "asset": "colores/verde",
+            "answer": "verde",
+            "aliases": [],
+            "clue": "Mancha de pintura de color verde.",
+            "memoryClue": "Pintura verde.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "naranja",
+            "asset": "colores/naranja",
+            "answer": "naranja",
+            "aliases": [],
+            "clue": "Mancha de pintura de color naranja.",
+            "memoryClue": "Pintura naranja.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "morado",
+            "asset": "colores/morado",
+            "answer": "morado",
+            "aliases": [
+              "morada",
+              "violeta",
+              "púrpura"
+            ],
+            "clue": "Mancha de pintura de color morado.",
+            "memoryClue": "Pintura morado.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "rosa",
+            "asset": "colores/rosa",
+            "answer": "rosa",
+            "aliases": [
+              "rosado",
+              "rosada"
+            ],
+            "clue": "Mancha de pintura de color rosa.",
+            "memoryClue": "Pintura rosa.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "marron",
+            "asset": "colores/marron",
+            "answer": "marrón",
+            "aliases": [
+              "café",
+              "castaño",
+              "castaña"
+            ],
+            "clue": "Mancha de pintura de color marrón.",
+            "memoryClue": "Pintura marrón.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "negro",
+            "asset": "colores/negro",
+            "answer": "negro",
+            "aliases": [
+              "negra"
+            ],
+            "clue": "Mancha de pintura de color negro.",
+            "memoryClue": "Pintura negro.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "blanco",
+            "asset": "colores/blanco",
+            "answer": "blanco",
+            "aliases": [
+              "blanca"
+            ],
+            "clue": "Mancha de pintura de color blanco.",
+            "memoryClue": "Pintura blanco.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "gris",
+            "asset": "colores/gris",
+            "answer": "gris",
+            "aliases": [],
+            "clue": "Mancha de pintura de color gris.",
+            "memoryClue": "Pintura gris.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "celeste",
+            "asset": "colores/celeste",
+            "answer": "celeste",
+            "aliases": [
+              "azul claro"
+            ],
+            "clue": "Mancha de pintura de color celeste.",
+            "memoryClue": "Pintura celeste.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ],
-        [
-          "Aquí plantamos árboles al aire libre.",
-          false
+        "4": [
+          {
+            "key": "azul",
+            "asset": "colores/azul",
+            "answer": "azul",
+            "aliases": [],
+            "clue": "Mancha de pintura de color azul.",
+            "memoryClue": "Pintura azul.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "celeste",
+            "asset": "colores/celeste",
+            "answer": "celeste",
+            "aliases": [
+              "azul claro"
+            ],
+            "clue": "Mancha de pintura de color celeste.",
+            "memoryClue": "Pintura celeste.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "rosa",
+            "asset": "colores/rosa",
+            "answer": "rosa",
+            "aliases": [
+              "rosado",
+              "rosada"
+            ],
+            "clue": "Mancha de pintura de color rosa.",
+            "memoryClue": "Pintura rosa.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "marron",
+            "asset": "colores/marron",
+            "answer": "marrón",
+            "aliases": [
+              "café",
+              "castaño",
+              "castaña"
+            ],
+            "clue": "Mancha de pintura de color marrón.",
+            "memoryClue": "Pintura marrón.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "negro",
+            "asset": "colores/negro",
+            "answer": "negro",
+            "aliases": [
+              "negra"
+            ],
+            "clue": "Mancha de pintura de color negro.",
+            "memoryClue": "Pintura negro.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "gris",
+            "asset": "colores/gris",
+            "answer": "gris",
+            "aliases": [],
+            "clue": "Mancha de pintura de color gris.",
+            "memoryClue": "Pintura gris.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ],
-        [
-          "Aquí crecen flores al aire libre.",
-          true
+        "5": [
+          {
+            "key": "rojo",
+            "asset": "colores/rojo",
+            "answer": "rojo",
+            "aliases": [
+              "roja"
+            ],
+            "clue": "Mancha de pintura de color rojo.",
+            "memoryClue": "Pintura rojo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "amarillo",
+            "asset": "colores/amarillo",
+            "answer": "amarillo",
+            "aliases": [
+              "amarilla"
+            ],
+            "clue": "Mancha de pintura de color amarillo.",
+            "memoryClue": "Pintura amarillo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "verde",
+            "asset": "colores/verde",
+            "answer": "verde",
+            "aliases": [],
+            "clue": "Mancha de pintura de color verde.",
+            "memoryClue": "Pintura verde.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "naranja",
+            "asset": "colores/naranja",
+            "answer": "naranja",
+            "aliases": [],
+            "clue": "Mancha de pintura de color naranja.",
+            "memoryClue": "Pintura naranja.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "morado",
+            "asset": "colores/morado",
+            "answer": "morado",
+            "aliases": [
+              "morada",
+              "violeta",
+              "púrpura"
+            ],
+            "clue": "Mancha de pintura de color morado.",
+            "memoryClue": "Pintura morado.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "blanco",
+            "asset": "colores/blanco",
+            "answer": "blanco",
+            "aliases": [
+              "blanca"
+            ],
+            "clue": "Mancha de pintura de color blanco.",
+            "memoryClue": "Pintura blanco.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ]
-      ]
+      },
+      "memoryExtra": []
     },
     {
       "id": "ropa",
@@ -4958,97 +5522,590 @@ window.CURRICULUM = {
       }
     },
     {
-      "id": "casa",
-      "title": "Las partes de la casa",
+      "id": "colores",
+      "title": "Colores",
       "kind": "vocabulary",
-      "icon": "casa",
+      "icon": "colores",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Doce colores para descubrir un mundo lleno de vida.",
+      "revision": "colores-v1",
+      "formats": [
+        "flashcards",
+        "colorcontext",
+        "memory",
+        "colorhunt",
+        "wordsearch"
+      ],
       "items": [
         {
-          "clue": "Aquí está la cama y duermes por la noche.",
-          "answer": "bedroom",
-          "prompt": "My bed is in my ___.",
+          "key": "rojo",
+          "asset": "colores/rojo",
+          "answer": "red",
           "aliases": [],
-          "memoryClue": "Para dormir en una cama.",
-          "asset": "casa/1",
-          "searchClue": "Lugar para acostarse en la cama."
+          "clue": "Mancha de pintura de color rojo.",
+          "memoryClue": "Pintura rojo.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         },
         {
-          "clue": "Aquí preparas la comida y usas la nevera.",
-          "answer": "kitchen",
-          "prompt": "I cook on the stove in the ___.",
+          "key": "amarillo",
+          "asset": "colores/amarillo",
+          "answer": "yellow",
           "aliases": [],
-          "memoryClue": "Para cocinar.",
-          "asset": "casa/2",
-          "searchClue": "Lugar para usar el horno y cocinar."
+          "clue": "Mancha de pintura de color amarillo.",
+          "memoryClue": "Pintura amarillo.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         },
         {
-          "clue": "Aquí te duchas y te lavas los dientes.",
-          "answer": "bathroom",
-          "prompt": "The bath and shower are in the ___.",
+          "key": "azul",
+          "asset": "colores/azul",
+          "answer": "blue",
           "aliases": [],
-          "memoryClue": "Para ducharse.",
-          "asset": "casa/3",
-          "searchClue": "Lugar para lavarse en la bañera."
+          "clue": "Mancha de pintura de color azul.",
+          "memoryClue": "Pintura azul.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         },
         {
-          "clue": "Aquí están el sofá y la televisión.",
-          "answer": "living room",
-          "prompt": "We watch television on the sofa in the ___.",
+          "key": "verde",
+          "asset": "colores/verde",
+          "answer": "green",
           "aliases": [],
-          "memoryClue": "Para sentarse en el sofá.",
-          "asset": "casa/4",
-          "searchClue": "Lugar para ver la televisión desde el sofá."
+          "clue": "Mancha de pintura de color verde.",
+          "memoryClue": "Pintura verde.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         },
         {
-          "clue": "Está fuera de la casa y tiene flores.",
-          "answer": "garden",
-          "prompt": "We grow flowers outside in the ___.",
+          "key": "naranja",
+          "asset": "colores/naranja",
+          "answer": "orange",
+          "aliases": [],
+          "clue": "Mancha de pintura de color naranja.",
+          "memoryClue": "Pintura naranja.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "morado",
+          "asset": "colores/morado",
+          "answer": "purple",
+          "aliases": [],
+          "clue": "Mancha de pintura de color morado.",
+          "memoryClue": "Pintura morado.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "rosa",
+          "asset": "colores/rosa",
+          "answer": "pink",
+          "aliases": [],
+          "clue": "Mancha de pintura de color rosa.",
+          "memoryClue": "Pintura rosa.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "marron",
+          "asset": "colores/marron",
+          "answer": "brown",
+          "aliases": [],
+          "clue": "Mancha de pintura de color marrón.",
+          "memoryClue": "Pintura marrón.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "negro",
+          "asset": "colores/negro",
+          "answer": "black",
+          "aliases": [],
+          "clue": "Mancha de pintura de color negro.",
+          "memoryClue": "Pintura negro.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "blanco",
+          "asset": "colores/blanco",
+          "answer": "white",
+          "aliases": [],
+          "clue": "Mancha de pintura de color blanco.",
+          "memoryClue": "Pintura blanco.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "gris",
+          "asset": "colores/gris",
+          "answer": "grey",
           "aliases": [
-            "yard"
+            "gray"
           ],
-          "memoryClue": "Para plantar flores fuera.",
-          "asset": "casa/5",
-          "searchClue": "Lugar exterior para cultivar flores."
+          "clue": "Mancha de pintura de color gris.",
+          "memoryClue": "Pintura gris.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "celeste",
+          "asset": "colores/celeste",
+          "answer": "light blue",
+          "aliases": [
+            "sky blue"
+          ],
+          "clue": "Mancha de pintura de color celeste.",
+          "memoryClue": "Pintura celeste.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         }
       ],
-      "formats": [
-        "identify",
-        "match",
-        "wordsearch",
-        "context",
-        "truefalse"
-      ],
-      "matchClues": [
-        "La habitación de la cama.",
-        "La habitación de la nevera y la cocina de gas.",
-        "El cuarto del inodoro y la ducha.",
-        "La habitación de la televisión y el sofá.",
-        "El espacio exterior con plantas."
-      ],
-      "facts": [
-        [
-          "Aquí suele estar la cama.",
-          true
+      "variants": {
+        "1": [
+          {
+            "key": "rojo",
+            "asset": "colores/rojo",
+            "answer": "red",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rojo.",
+            "memoryClue": "Pintura rojo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "amarillo",
+            "asset": "colores/amarillo",
+            "answer": "yellow",
+            "aliases": [],
+            "clue": "Mancha de pintura de color amarillo.",
+            "memoryClue": "Pintura amarillo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "azul",
+            "asset": "colores/azul",
+            "answer": "blue",
+            "aliases": [],
+            "clue": "Mancha de pintura de color azul.",
+            "memoryClue": "Pintura azul.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "verde",
+            "asset": "colores/verde",
+            "answer": "green",
+            "aliases": [],
+            "clue": "Mancha de pintura de color verde.",
+            "memoryClue": "Pintura verde.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "naranja",
+            "asset": "colores/naranja",
+            "answer": "orange",
+            "aliases": [],
+            "clue": "Mancha de pintura de color naranja.",
+            "memoryClue": "Pintura naranja.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "morado",
+            "asset": "colores/morado",
+            "answer": "purple",
+            "aliases": [],
+            "clue": "Mancha de pintura de color morado.",
+            "memoryClue": "Pintura morado.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "rosa",
+            "asset": "colores/rosa",
+            "answer": "pink",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rosa.",
+            "memoryClue": "Pintura rosa.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "marron",
+            "asset": "colores/marron",
+            "answer": "brown",
+            "aliases": [],
+            "clue": "Mancha de pintura de color marrón.",
+            "memoryClue": "Pintura marrón.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "negro",
+            "asset": "colores/negro",
+            "answer": "black",
+            "aliases": [],
+            "clue": "Mancha de pintura de color negro.",
+            "memoryClue": "Pintura negro.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "blanco",
+            "asset": "colores/blanco",
+            "answer": "white",
+            "aliases": [],
+            "clue": "Mancha de pintura de color blanco.",
+            "memoryClue": "Pintura blanco.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "gris",
+            "asset": "colores/gris",
+            "answer": "grey",
+            "aliases": [
+              "gray"
+            ],
+            "clue": "Mancha de pintura de color gris.",
+            "memoryClue": "Pintura gris.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "celeste",
+            "asset": "colores/celeste",
+            "answer": "light blue",
+            "aliases": [
+              "sky blue"
+            ],
+            "clue": "Mancha de pintura de color celeste.",
+            "memoryClue": "Pintura celeste.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ],
-        [
-          "Aquí se guarda el coche.",
-          false
+        "2": [
+          {
+            "key": "objeto-0",
+            "asset": "frutas/sandia",
+            "answer": "red and green",
+            "aliases": [
+              "green and red",
+              "red green",
+              "green red",
+              "red & green",
+              "green & red"
+            ],
+            "prompt": "In this picture, the watermelon flesh and rind are ___. Write both colours.",
+            "clue": "Una rodaja de sandía: pulpa roja y corteza verde."
+          },
+          {
+            "key": "objeto-1",
+            "asset": "frutas/limon",
+            "answer": "yellow",
+            "aliases": [],
+            "prompt": "The lemon is ___.",
+            "clue": "Un limón amarillo."
+          },
+          {
+            "key": "objeto-2",
+            "asset": "animales/cerdo",
+            "answer": "pink",
+            "aliases": [],
+            "prompt": "The pig is ___.",
+            "clue": "Un cerdito rosa."
+          },
+          {
+            "key": "objeto-3",
+            "asset": "frutas/uvas",
+            "answer": "purple",
+            "aliases": [
+              "violet",
+              "lilac",
+              "mauve",
+              "pink"
+            ],
+            "prompt": "The grapes in this picture are ___.",
+            "clue": "Un racimo de uvas moradas."
+          },
+          {
+            "key": "objeto-4",
+            "asset": "frutas/naranja",
+            "answer": "orange",
+            "aliases": [],
+            "prompt": "The orange is ___.",
+            "clue": "Una naranja de color naranja."
+          },
+          {
+            "key": "objeto-5",
+            "asset": "animales/oveja",
+            "answer": "white",
+            "aliases": [],
+            "prompt": "The sheep’s wool is ___.",
+            "clue": "Una oveja de lana blanca."
+          }
         ],
-        [
-          "Aquí puede haber una bañera.",
-          true
+        "3": [
+          {
+            "key": "rojo",
+            "asset": "colores/rojo",
+            "answer": "red",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rojo.",
+            "memoryClue": "Pintura rojo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "amarillo",
+            "asset": "colores/amarillo",
+            "answer": "yellow",
+            "aliases": [],
+            "clue": "Mancha de pintura de color amarillo.",
+            "memoryClue": "Pintura amarillo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "azul",
+            "asset": "colores/azul",
+            "answer": "blue",
+            "aliases": [],
+            "clue": "Mancha de pintura de color azul.",
+            "memoryClue": "Pintura azul.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "verde",
+            "asset": "colores/verde",
+            "answer": "green",
+            "aliases": [],
+            "clue": "Mancha de pintura de color verde.",
+            "memoryClue": "Pintura verde.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "naranja",
+            "asset": "colores/naranja",
+            "answer": "orange",
+            "aliases": [],
+            "clue": "Mancha de pintura de color naranja.",
+            "memoryClue": "Pintura naranja.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "morado",
+            "asset": "colores/morado",
+            "answer": "purple",
+            "aliases": [],
+            "clue": "Mancha de pintura de color morado.",
+            "memoryClue": "Pintura morado.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "rosa",
+            "asset": "colores/rosa",
+            "answer": "pink",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rosa.",
+            "memoryClue": "Pintura rosa.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "marron",
+            "asset": "colores/marron",
+            "answer": "brown",
+            "aliases": [],
+            "clue": "Mancha de pintura de color marrón.",
+            "memoryClue": "Pintura marrón.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "negro",
+            "asset": "colores/negro",
+            "answer": "black",
+            "aliases": [],
+            "clue": "Mancha de pintura de color negro.",
+            "memoryClue": "Pintura negro.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "blanco",
+            "asset": "colores/blanco",
+            "answer": "white",
+            "aliases": [],
+            "clue": "Mancha de pintura de color blanco.",
+            "memoryClue": "Pintura blanco.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "gris",
+            "asset": "colores/gris",
+            "answer": "grey",
+            "aliases": [
+              "gray"
+            ],
+            "clue": "Mancha de pintura de color gris.",
+            "memoryClue": "Pintura gris.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "celeste",
+            "asset": "colores/celeste",
+            "answer": "light blue",
+            "aliases": [
+              "sky blue"
+            ],
+            "clue": "Mancha de pintura de color celeste.",
+            "memoryClue": "Pintura celeste.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ],
-        [
-          "Aquí plantamos árboles al aire libre.",
-          false
+        "4": [
+          {
+            "key": "azul",
+            "asset": "colores/azul",
+            "answer": "blue",
+            "aliases": [],
+            "clue": "Mancha de pintura de color azul.",
+            "memoryClue": "Pintura azul.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "celeste",
+            "asset": "colores/celeste",
+            "answer": "light blue",
+            "aliases": [
+              "sky blue"
+            ],
+            "clue": "Mancha de pintura de color celeste.",
+            "memoryClue": "Pintura celeste.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "rosa",
+            "asset": "colores/rosa",
+            "answer": "pink",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rosa.",
+            "memoryClue": "Pintura rosa.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "marron",
+            "asset": "colores/marron",
+            "answer": "brown",
+            "aliases": [],
+            "clue": "Mancha de pintura de color marrón.",
+            "memoryClue": "Pintura marrón.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "negro",
+            "asset": "colores/negro",
+            "answer": "black",
+            "aliases": [],
+            "clue": "Mancha de pintura de color negro.",
+            "memoryClue": "Pintura negro.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "gris",
+            "asset": "colores/gris",
+            "answer": "grey",
+            "aliases": [
+              "gray"
+            ],
+            "clue": "Mancha de pintura de color gris.",
+            "memoryClue": "Pintura gris.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ],
-        [
-          "Aquí crecen flores al aire libre.",
-          true
+        "5": [
+          {
+            "key": "rojo",
+            "asset": "colores/rojo",
+            "answer": "red",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rojo.",
+            "memoryClue": "Pintura rojo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "amarillo",
+            "asset": "colores/amarillo",
+            "answer": "yellow",
+            "aliases": [],
+            "clue": "Mancha de pintura de color amarillo.",
+            "memoryClue": "Pintura amarillo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "verde",
+            "asset": "colores/verde",
+            "answer": "green",
+            "aliases": [],
+            "clue": "Mancha de pintura de color verde.",
+            "memoryClue": "Pintura verde.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "naranja",
+            "asset": "colores/naranja",
+            "answer": "orange",
+            "aliases": [],
+            "clue": "Mancha de pintura de color naranja.",
+            "memoryClue": "Pintura naranja.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "morado",
+            "asset": "colores/morado",
+            "answer": "purple",
+            "aliases": [],
+            "clue": "Mancha de pintura de color morado.",
+            "memoryClue": "Pintura morado.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "blanco",
+            "asset": "colores/blanco",
+            "answer": "white",
+            "aliases": [],
+            "clue": "Mancha de pintura de color blanco.",
+            "memoryClue": "Pintura blanco.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ]
-      ]
+      },
+      "memoryExtra": []
     },
     {
       "id": "ropa",
@@ -8356,101 +9413,571 @@ window.CURRICULUM = {
       }
     },
     {
-      "id": "casa",
-      "title": "Las partes de la casa",
+      "id": "colores",
+      "title": "Colores",
       "kind": "vocabulary",
-      "icon": "casa",
+      "icon": "colores",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Doce colores para descubrir un mundo lleno de vida.",
+      "revision": "colores-v1",
+      "formats": [
+        "flashcards",
+        "colorcontext",
+        "memory",
+        "colorhunt",
+        "wordsearch"
+      ],
       "items": [
         {
-          "clue": "Aquí está la cama y duermes por la noche.",
-          "answer": "спальня",
-          "prompt": "Комната с кроватью — это ___.",
-          "aliases": [
-            "спальная комната"
-          ],
-          "memoryClue": "Para dormir en una cama.",
-          "asset": "casa/1",
-          "searchClue": "Lugar para acostarse en la cama."
-        },
-        {
-          "clue": "Aquí preparas la comida y usas la nevera.",
-          "answer": "кухня",
-          "prompt": "Комната с плитой и холодильником — это ___.",
+          "key": "rojo",
+          "asset": "colores/rojo",
+          "answer": "красный",
           "aliases": [],
-          "memoryClue": "Para cocinar.",
-          "asset": "casa/2",
-          "searchClue": "Lugar para usar el horno y cocinar."
+          "clue": "Mancha de pintura de color rojo.",
+          "memoryClue": "Pintura rojo.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         },
         {
-          "clue": "Aquí te duchas y te lavas los dientes.",
-          "answer": "ванная",
-          "prompt": "Комната с душем и ванной — это ___.",
-          "aliases": [
-            "ванная комната"
-          ],
-          "memoryClue": "Para ducharse.",
-          "asset": "casa/3",
-          "searchClue": "Lugar para lavarse en la bañera."
-        },
-        {
-          "clue": "Aquí están el sofá y la televisión.",
-          "answer": "гостиная",
-          "prompt": "Комната с диваном и телевизором — это ___.",
-          "aliases": [
-            "зал"
-          ],
-          "memoryClue": "Para sentarse en el sofá.",
-          "asset": "casa/4",
-          "searchClue": "Lugar para ver la televisión desde el sofá."
-        },
-        {
-          "clue": "Está fuera de la casa y tiene flores.",
-          "answer": "сад",
-          "prompt": "Место на улице, где растут цветы, — это ___.",
+          "key": "amarillo",
+          "asset": "colores/amarillo",
+          "answer": "жёлтый",
           "aliases": [],
-          "memoryClue": "Para plantar flores fuera.",
-          "asset": "casa/5",
-          "searchClue": "Lugar exterior para cultivar flores."
+          "clue": "Mancha de pintura de color amarillo.",
+          "memoryClue": "Pintura amarillo.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "azul",
+          "asset": "colores/azul",
+          "answer": "синий",
+          "aliases": [],
+          "clue": "Mancha de pintura de color azul.",
+          "memoryClue": "Pintura azul.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "verde",
+          "asset": "colores/verde",
+          "answer": "зелёный",
+          "aliases": [],
+          "clue": "Mancha de pintura de color verde.",
+          "memoryClue": "Pintura verde.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "naranja",
+          "asset": "colores/naranja",
+          "answer": "оранжевый",
+          "aliases": [],
+          "clue": "Mancha de pintura de color naranja.",
+          "memoryClue": "Pintura naranja.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "morado",
+          "asset": "colores/morado",
+          "answer": "фиолетовый",
+          "aliases": [],
+          "clue": "Mancha de pintura de color morado.",
+          "memoryClue": "Pintura morado.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "rosa",
+          "asset": "colores/rosa",
+          "answer": "розовый",
+          "aliases": [],
+          "clue": "Mancha de pintura de color rosa.",
+          "memoryClue": "Pintura rosa.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "marron",
+          "asset": "colores/marron",
+          "answer": "коричневый",
+          "aliases": [],
+          "clue": "Mancha de pintura de color marrón.",
+          "memoryClue": "Pintura marrón.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "negro",
+          "asset": "colores/negro",
+          "answer": "чёрный",
+          "aliases": [],
+          "clue": "Mancha de pintura de color negro.",
+          "memoryClue": "Pintura negro.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "blanco",
+          "asset": "colores/blanco",
+          "answer": "белый",
+          "aliases": [],
+          "clue": "Mancha de pintura de color blanco.",
+          "memoryClue": "Pintura blanco.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "gris",
+          "asset": "colores/gris",
+          "answer": "серый",
+          "aliases": [],
+          "clue": "Mancha de pintura de color gris.",
+          "memoryClue": "Pintura gris.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
+        },
+        {
+          "key": "celeste",
+          "asset": "colores/celeste",
+          "answer": "голубой",
+          "aliases": [],
+          "clue": "Mancha de pintura de color celeste.",
+          "memoryClue": "Pintura celeste.",
+          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+          "searchClue": "Busca el nombre de esta pintura."
         }
       ],
-      "formats": [
-        "identify",
-        "match",
-        "wordsearch",
-        "context",
-        "truefalse"
-      ],
-      "matchClues": [
-        "La habitación de la cama.",
-        "La habitación de la nevera y la cocina de gas.",
-        "El cuarto del inodoro y la ducha.",
-        "La habitación de la televisión y el sofá.",
-        "El espacio exterior con plantas."
-      ],
-      "facts": [
-        [
-          "Aquí suele estar la cama.",
-          true
+      "variants": {
+        "1": [
+          {
+            "key": "rojo",
+            "asset": "colores/rojo",
+            "answer": "красный",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rojo.",
+            "memoryClue": "Pintura rojo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "amarillo",
+            "asset": "colores/amarillo",
+            "answer": "жёлтый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color amarillo.",
+            "memoryClue": "Pintura amarillo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "azul",
+            "asset": "colores/azul",
+            "answer": "синий",
+            "aliases": [],
+            "clue": "Mancha de pintura de color azul.",
+            "memoryClue": "Pintura azul.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "verde",
+            "asset": "colores/verde",
+            "answer": "зелёный",
+            "aliases": [],
+            "clue": "Mancha de pintura de color verde.",
+            "memoryClue": "Pintura verde.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "naranja",
+            "asset": "colores/naranja",
+            "answer": "оранжевый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color naranja.",
+            "memoryClue": "Pintura naranja.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "morado",
+            "asset": "colores/morado",
+            "answer": "фиолетовый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color morado.",
+            "memoryClue": "Pintura morado.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "rosa",
+            "asset": "colores/rosa",
+            "answer": "розовый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rosa.",
+            "memoryClue": "Pintura rosa.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "marron",
+            "asset": "colores/marron",
+            "answer": "коричневый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color marrón.",
+            "memoryClue": "Pintura marrón.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "negro",
+            "asset": "colores/negro",
+            "answer": "чёрный",
+            "aliases": [],
+            "clue": "Mancha de pintura de color negro.",
+            "memoryClue": "Pintura negro.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "blanco",
+            "asset": "colores/blanco",
+            "answer": "белый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color blanco.",
+            "memoryClue": "Pintura blanco.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "gris",
+            "asset": "colores/gris",
+            "answer": "серый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color gris.",
+            "memoryClue": "Pintura gris.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "celeste",
+            "asset": "colores/celeste",
+            "answer": "голубой",
+            "aliases": [],
+            "clue": "Mancha de pintura de color celeste.",
+            "memoryClue": "Pintura celeste.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ],
-        [
-          "Aquí se guarda el coche.",
-          false
+        "2": [
+          {
+            "key": "objeto-0",
+            "asset": "frutas/sandia",
+            "answer": "красный и зелёный",
+            "aliases": [
+              "зелёный и красный",
+              "красный зелёный",
+              "зелёный красный"
+            ],
+            "prompt": "На картинке арбуз ___: назови два цвета мякоти и кожуры.",
+            "clue": "Una rodaja de sandía: pulpa roja y corteza verde."
+          },
+          {
+            "key": "objeto-1",
+            "asset": "frutas/limon",
+            "answer": "жёлтый",
+            "aliases": [],
+            "prompt": "Лимон ___.",
+            "clue": "Un limón amarillo."
+          },
+          {
+            "key": "objeto-2",
+            "asset": "animales/cerdo",
+            "answer": "розовый",
+            "aliases": [],
+            "prompt": "Поросёнок ___.",
+            "clue": "Un cerdito rosa."
+          },
+          {
+            "key": "objeto-3",
+            "asset": "frutas/uvas",
+            "answer": "фиолетовый",
+            "aliases": [
+              "сиреневый",
+              "лиловый",
+              "розовый"
+            ],
+            "prompt": "Виноград на картинке ___.",
+            "clue": "Un racimo de uvas moradas."
+          },
+          {
+            "key": "objeto-4",
+            "asset": "frutas/naranja",
+            "answer": "оранжевый",
+            "aliases": [],
+            "prompt": "Апельсин ___.",
+            "clue": "Una naranja de color naranja."
+          },
+          {
+            "key": "objeto-5",
+            "asset": "animales/oveja",
+            "answer": "белая",
+            "aliases": [],
+            "prompt": "Шерсть овцы ___.",
+            "clue": "Una oveja de lana blanca."
+          }
         ],
-        [
-          "Aquí puede haber una bañera.",
-          true
+        "3": [
+          {
+            "key": "rojo",
+            "asset": "colores/rojo",
+            "answer": "красный",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rojo.",
+            "memoryClue": "Pintura rojo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "amarillo",
+            "asset": "colores/amarillo",
+            "answer": "жёлтый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color amarillo.",
+            "memoryClue": "Pintura amarillo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "azul",
+            "asset": "colores/azul",
+            "answer": "синий",
+            "aliases": [],
+            "clue": "Mancha de pintura de color azul.",
+            "memoryClue": "Pintura azul.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "verde",
+            "asset": "colores/verde",
+            "answer": "зелёный",
+            "aliases": [],
+            "clue": "Mancha de pintura de color verde.",
+            "memoryClue": "Pintura verde.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "naranja",
+            "asset": "colores/naranja",
+            "answer": "оранжевый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color naranja.",
+            "memoryClue": "Pintura naranja.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "morado",
+            "asset": "colores/morado",
+            "answer": "фиолетовый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color morado.",
+            "memoryClue": "Pintura morado.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "rosa",
+            "asset": "colores/rosa",
+            "answer": "розовый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rosa.",
+            "memoryClue": "Pintura rosa.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "marron",
+            "asset": "colores/marron",
+            "answer": "коричневый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color marrón.",
+            "memoryClue": "Pintura marrón.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "negro",
+            "asset": "colores/negro",
+            "answer": "чёрный",
+            "aliases": [],
+            "clue": "Mancha de pintura de color negro.",
+            "memoryClue": "Pintura negro.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "blanco",
+            "asset": "colores/blanco",
+            "answer": "белый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color blanco.",
+            "memoryClue": "Pintura blanco.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "gris",
+            "asset": "colores/gris",
+            "answer": "серый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color gris.",
+            "memoryClue": "Pintura gris.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "celeste",
+            "asset": "colores/celeste",
+            "answer": "голубой",
+            "aliases": [],
+            "clue": "Mancha de pintura de color celeste.",
+            "memoryClue": "Pintura celeste.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ],
-        [
-          "Aquí plantamos árboles al aire libre.",
-          false
+        "4": [
+          {
+            "key": "azul",
+            "asset": "colores/azul",
+            "answer": "синий",
+            "aliases": [],
+            "clue": "Mancha de pintura de color azul.",
+            "memoryClue": "Pintura azul.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "celeste",
+            "asset": "colores/celeste",
+            "answer": "голубой",
+            "aliases": [],
+            "clue": "Mancha de pintura de color celeste.",
+            "memoryClue": "Pintura celeste.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "rosa",
+            "asset": "colores/rosa",
+            "answer": "розовый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rosa.",
+            "memoryClue": "Pintura rosa.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "marron",
+            "asset": "colores/marron",
+            "answer": "коричневый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color marrón.",
+            "memoryClue": "Pintura marrón.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "negro",
+            "asset": "colores/negro",
+            "answer": "чёрный",
+            "aliases": [],
+            "clue": "Mancha de pintura de color negro.",
+            "memoryClue": "Pintura negro.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "gris",
+            "asset": "colores/gris",
+            "answer": "серый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color gris.",
+            "memoryClue": "Pintura gris.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ],
-        [
-          "Aquí crecen flores al aire libre.",
-          true
+        "5": [
+          {
+            "key": "rojo",
+            "asset": "colores/rojo",
+            "answer": "красный",
+            "aliases": [],
+            "clue": "Mancha de pintura de color rojo.",
+            "memoryClue": "Pintura rojo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "amarillo",
+            "asset": "colores/amarillo",
+            "answer": "жёлтый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color amarillo.",
+            "memoryClue": "Pintura amarillo.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "verde",
+            "asset": "colores/verde",
+            "answer": "зелёный",
+            "aliases": [],
+            "clue": "Mancha de pintura de color verde.",
+            "memoryClue": "Pintura verde.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "naranja",
+            "asset": "colores/naranja",
+            "answer": "оранжевый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color naranja.",
+            "memoryClue": "Pintura naranja.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "morado",
+            "asset": "colores/morado",
+            "answer": "фиолетовый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color morado.",
+            "memoryClue": "Pintura morado.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          },
+          {
+            "key": "blanco",
+            "asset": "colores/blanco",
+            "answer": "белый",
+            "aliases": [],
+            "clue": "Mancha de pintura de color blanco.",
+            "memoryClue": "Pintura blanco.",
+            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
+            "searchClue": "Busca el nombre de esta pintura."
+          }
         ]
-      ]
+      },
+      "memoryExtra": []
     },
     {
       "id": "ropa",
