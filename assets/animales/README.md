@@ -2,7 +2,7 @@
 
 Doce animales identificados: perro, vaca, caballo, cerdo, conejo, elefante, gato, mono, oso, oveja, león y pato. Una miniatura de conejo estaba repetida y se cuenta como un único animal.
 
-Los doce originales se recibieron en «Fotos para pagina web.rar» y se copiaron sin recortar, volver a generar ni alterar sus píxeles. Los archivos PNG conservan sus nombres y transparencia originales. Cada ruta está asignada a su clave semántica en `media.js`.
+Los doce originales se recibieron en «Fotos para pagina web.rar» y se copiaron sin recortar, volver a generar ni alterar sus píxeles. Los archivos PNG conservan sus nombres y fondo blanco originales. Las claves semánticas están en `media.js`. Tras la mejora de nitidez, la web usa las versiones de mayor resolución de `mejoradas/`; los originales de esta carpeta se conservan intactos.
 
 | Clave | Nombre sugerido |
 | --- | --- |
@@ -19,7 +19,7 @@ Los doce originales se recibieron en «Fotos para pagina web.rar» y se copiaron
 | animales/leon | assets/animales/leon.png |
 | animales/pato | assets/animales/pato.png |
 
-También se admiten JPG y WebP. No se ha cambiado el tamaño, eliminado el fondo ni vuelto a generar ninguna ilustración. Se conservan las proporciones con `object-fit: contain`.
+También se admiten JPG y WebP. Los archivos originales no se han alterado. Las versiones mejoradas para mostrar en la web se documentan en `mejoradas/README.md`. Se conservan las proporciones con `object-fit: contain`.
 
 ## Cinco actividades por idioma
 

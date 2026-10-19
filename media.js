@@ -1,4 +1,4 @@
-// Ilustraciones originales de la autora. Consulta assets/README.md.
+// Versiones de mayor resolución para la web. Los originales se conservan en assets/animales/.
 window.MEDIA = {
   "vocabulary": {
     "casa/1": null,
@@ -31,18 +31,18 @@ window.MEDIA = {
     "comida/8": null,
     "comida/9": null,
     "comida/10": null,
-    "animales/perro": "assets/animales/perro.png",
-    "animales/vaca": "assets/animales/vaca.png",
-    "animales/caballo": "assets/animales/caballo.png",
-    "animales/cerdo": "assets/animales/cerdo.png",
-    "animales/conejo": "assets/animales/conejo.png",
-    "animales/elefante": "assets/animales/elefante.png",
-    "animales/gato": "assets/animales/gato.png",
-    "animales/mono": "assets/animales/mono.png",
-    "animales/oso": "assets/animales/oso.png",
-    "animales/oveja": "assets/animales/oveja.png",
-    "animales/leon": "assets/animales/leon.png",
-    "animales/pato": "assets/animales/pato.png"
+    "animales/perro": "assets/animales/mejoradas/perro.webp",
+    "animales/vaca": "assets/animales/mejoradas/vaca.webp",
+    "animales/caballo": "assets/animales/mejoradas/caballo.webp",
+    "animales/cerdo": "assets/animales/mejoradas/cerdo.webp",
+    "animales/conejo": "assets/animales/mejoradas/conejo.webp",
+    "animales/elefante": "assets/animales/mejoradas/elefante.webp",
+    "animales/gato": "assets/animales/mejoradas/gato.webp",
+    "animales/mono": "assets/animales/mejoradas/mono.webp",
+    "animales/oso": "assets/animales/mejoradas/oso.webp",
+    "animales/oveja": "assets/animales/mejoradas/oveja.webp",
+    "animales/leon": "assets/animales/mejoradas/leon.webp",
+    "animales/pato": "assets/animales/mejoradas/pato.webp"
   },
   "topics": {
     "presente": null,
@@ -50,7 +50,7 @@ window.MEDIA = {
     "perfecto": null,
     "imperfecto": null,
     "futuro": null,
-    "animales": "assets/animales/perro.png",
+    "animales": "assets/animales/mejoradas/perro.webp",
     "casa": null,
     "ropa": null,
     "rutina": null,

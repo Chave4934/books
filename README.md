@@ -101,3 +101,5 @@ Para comprobar la colección original de animales, los sinónimos aceptados, las
 ```sh
 NODE_PATH=/tmp/chavebooks-check/node_modules node tests/animals.cjs
 ```
+
+Las ilustraciones de animales mostradas en la web usan ahora las versiones de mayor resolución de `assets/animales/mejoradas/`, con fondo blanco y bordes reconstruidos. El león mejorado ya no contiene la marca oscura del borde. Los doce originales se conservan sin cambios; el proceso de mejora puede variar pequeños detalles.

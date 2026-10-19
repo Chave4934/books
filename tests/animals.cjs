@@ -20,7 +20,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
         await page.locator('.activity-image').last().waitFor();
         assert.equal(await page.locator('#exercise-stage .activity-image').count(), 6);
         await page.evaluate(() => document.querySelectorAll('#exercise-stage img').forEach(img => img.loading='eager'));
-        await page.waitForFunction(() => [...document.querySelectorAll('#exercise-stage img')].every(img => img.complete && img.naturalWidth > 0));
+        await page.waitForFunction(() => [...document.querySelectorAll('#exercise-stage img')].every(img => img.complete && img.naturalWidth >= 1000));
       }
       await page.goto(`${base}/#/${lang}/actividades/animales/3`);
       await page.locator('.memory-card').last().waitFor();
@@ -31,7 +31,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
         for (let pair=0;pair<12;pair++) cards.forEach((card,index)=>{if(card.pair===pair)document.querySelector(`[data-card="${index}"]`).click();});
       }, topic);
       await page.evaluate(() => document.querySelectorAll('.memory-card img').forEach(img => img.loading='eager'));
-      await page.waitForFunction(() => [...document.querySelectorAll('.memory-card img')].every(img => img.complete && img.naturalWidth > 0));
+      await page.waitForFunction(() => [...document.querySelectorAll('.memory-card img')].every(img => img.complete && img.naturalWidth >= 1000));
       assert.equal(await page.locator('.memory-card img').count(), 12);
       assert.match(await page.locator('#result').textContent(), /12 de 12 parejas/);
       assert.match(await page.locator('#result').textContent(), /Actividad completada/);
@@ -40,6 +40,9 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
       const response = await page.request.get(`${base}/assets/animales/${animal}.png`);
       assert.equal(response.status(), 200, animal);
       assert.equal(response.headers()['content-type'], 'image/png');
+      const enhanced = await page.request.get(`${base}/assets/animales/mejoradas/${animal}.webp`);
+      assert.equal(enhanced.status(),200,`${animal} enhanced`);
+      assert.equal(enhanced.headers()['content-type'],'image/webp');
     }
     await page.goto(`${base}/#/ingles/actividades/animales/1`);
     await page.locator('#exercise').waitFor();
@@ -66,6 +69,6 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
     await page.locator('.activity-image').last().waitFor();
     await page.screenshot({path:'/tmp/chavebooks-animals-mobile.png',fullPage:true});
     assert.deepEqual(errors,[]);
-    console.log('PASS: 12 originals load, all animals covered in each language, 24-card memory, variants accepted, mistakes hide solutions, all 15 animal activities fit at 320/375px.');
+    console.log('PASS: 12 high-resolution images load, originals retained, all animals covered in each language, 24-card memory, variants accepted, mistakes hide solutions, all 15 animal activities fit at 320/375px.');
   } finally { await browser.close(); }
 })().catch(error=>{console.error(error);process.exitCode=1;});
