@@ -39,18 +39,21 @@ function topicIcon(topic) {
   return cover?`<img class="topic-photo" src="${escapeHTML(cover)}" alt="" loading="lazy">`:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${topic.id==='rutina'?'<circle cx="12" cy="13" r="8"/>':''}<path d="${paths[topic.kind==='grammar'?'grammar':topic.id]}"/></svg>`;
 }
 function mediaPath(group,key) {
-  const path=window.MEDIA?.[group]?.[key];
+  return safeImagePath(window.MEDIA?.[group]?.[key]);
+}
+function safeImagePath(path) {
   if(typeof path!=='string'||!path.trim())return null;
   // Own files on this site, or a public HTTPS image supplied by the author.
   if(/^https:\/\//.test(path))return path;
   if(/^(?:assets\/|\/assets\/)[\w\-./%]+$/i.test(path)&&!path.includes('..'))return path;
   return null;
 }
+let exerciseImageIndex=0;
 function imageFor(item,small=false) {
   let path=mediaPath('vocabulary',item.asset);
   // The original animal PNGs are already the right size for an 85px memory card.
   if(small&&/^animales\/[a-z]+$/.test(item.asset))path=`assets/animales/${item.asset.split('/')[1]}.png`;
-  return path?`<img class="activity-image" draggable="false" src="${escapeHTML(path)}" alt="${escapeHTML(item.clue||item.memoryClue||'')}" loading="${small?'eager':'lazy'}" decoding="async">`:'';
+  return path?`<img class="activity-image" draggable="false" src="${escapeHTML(path)}" alt="${escapeHTML(item.clue||item.memoryClue||'')}" width="160" height="155" loading="${small||exerciseImageIndex++<4?'eager':'lazy'}" decoding="async">`:'';
 }
 function formatInfo(topic,mode) {
   const format=activityFormat(topic,mode);
@@ -113,6 +116,7 @@ document.addEventListener('click',event=>{
  };
 });
 function renderExerciseShell(id,topic,mode) {
+ exerciseImageIndex=0;
  activeLesson={id,topic,mode};
  const [title,instruction]=formatInfo(topic,mode),code=languages[id].htmlLang;
  document.querySelector('#section-content').setAttribute('lang',code);
@@ -149,7 +153,8 @@ function recommendBook(id,topic) {
   const related={animales:'74565343',colores:'74565262',ropa:'74565262',rutina:'74019993',frutas:'74565262'};
   const book=(window.LIBROS||[]).find(b=>b.language===id&&b.id===related[topic.id])||(window.LIBROS||[]).find(b=>b.language===id);
   if(!book){target.innerHTML=`<aside class="related-book no-book"><h3>¡Un paso más en tu aprendizaje!</h3><p>Los libros de ruso estarán disponibles próximamente. Mientras tanto, cuéntame qué actividad te gustaría practicar.</p><a href="https://www.instagram.com/chave_books/" target="_blank" rel="noopener noreferrer">Escríbeme en Instagram →</a></aside>`;return;}
-  target.innerHTML=`<aside class="related-book"><div>${bookCover(book)}</div><section><p class="eyebrow">SIGUE APRENDIENDO</p><h3>¿Te gustó? Sigue con <em>${escapeHTML(book.title)}</em>.</h3>${bookSubtitle(book)}<p>${escapeHTML(book.description)}</p>${bookExtras(book)}<p class="book-audience">Para ${escapeHTML(book.audience)} que quieren aprender ${languages[id].name.toLowerCase()}.</p><a class="button dark" href="#/${id}/libros/${book.id}">Descubrir este libro →</a></section></aside>`;
+  const title=id==='espanol'?(book.titleEs||book.subtitle||book.title):book.title;
+  target.innerHTML=`<aside class="related-book"><div>${bookCover(book)}</div><section><p class="eyebrow">SIGUE APRENDIENDO</p><h3>¿Te gustó? Sigue con <em>${escapeHTML(title)}</em>.</h3>${title===book.title?bookSubtitle(book):''}<p>${escapeHTML(book.description)}</p>${bookExtras(book)}<p class="book-audience">Para ${escapeHTML(book.audience)} que quieren aprender ${languages[id].name.toLowerCase()}.</p><a class="button dark" href="#/${id}/libros/${book.id}">Descubrir este libro →</a></section></aside>`;
 }
 function feedbackFor(element,correct,answers) {
   element.replaceChildren();element.className=`feedback ${correct?'correct':'incorrect'}`;

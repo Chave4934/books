@@ -98,7 +98,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
     await page.goto(`${base}/#/ingles/libros/74602999`);
     await page.locator('.book-card').first().waitFor();
     assert.match(await page.locator('.book-card').first().textContent(), /Pluto in Autumn/);
-    assert.match(await page.locator('.book-card').first().textContent(), /hispanohablantes/);
+    assert.match(await page.locator('.book-group > h3').first().textContent(), /hispanohablantes/);
     await page.evaluate(() => { window.testEvents=[];window.trackLearningEvent=(name,props)=>window.testEvents.push({name,props});document.addEventListener('click',event=>{if(event.target.closest('a[href*="litres.ru"]'))event.preventDefault();},true); });
     await page.locator('.book-card .button').first().click();
     assert.equal(await page.evaluate(()=>window.testEvents[0].name),'LitRes Click');

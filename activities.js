@@ -4799,7 +4799,7 @@ window.CURRICULUM = {
             "wrong": "am watching"
           },
           {
-            "prompt": "For now, they ___ the door before leaving.",
+            "prompt": "At the moment, they ___ the door.",
             "answer": "are closing",
             "hint": "close",
             "wrong": "am closing"
@@ -5265,7 +5265,7 @@ window.CURRICULUM = {
         ],
         "5": [
           {
-            "prompt": "Today, I ___ for my bag twice.",
+            "prompt": "So far today, I ___ for my bag twice.",
             "answer": "have looked",
             "hint": "look",
             "wrong": "has looked"
@@ -5289,7 +5289,7 @@ window.CURRICULUM = {
             "wrong": "has watched"
           },
           {
-            "prompt": "This year, they ___ the door before leaving.",
+            "prompt": "Today, they ___ the door twice.",
             "answer": "have closed",
             "hint": "close",
             "wrong": "has closed"
@@ -11100,7 +11100,7 @@ window.CURRICULUM = {
           "answer": "ботинки",
           "aliases": [
             "ботинок",
-            "обувь"
+            "сапоги"
           ],
           "clue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
           "memoryClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
@@ -11176,7 +11176,7 @@ window.CURRICULUM = {
             "answer": "ботинки",
             "aliases": [
               "ботинок",
-              "обувь"
+              "сапоги"
             ],
             "clue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
             "memoryClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
@@ -11397,7 +11397,7 @@ window.CURRICULUM = {
             "answer": "ботинки",
             "aliases": [
               "ботинок",
-              "обувь"
+              "сапоги"
             ],
             "clue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
             "memoryClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
@@ -11540,7 +11540,7 @@ window.CURRICULUM = {
             "answer": "ботинки",
             "aliases": [
               "ботинок",
-              "обувь"
+              "сапоги"
             ],
             "clue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
             "memoryClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
@@ -12129,7 +12129,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "frutas",
       "level": "A1",
-      "tip": "Conserva las letras rusas: й no es lo mismo que и.",
+      "tip": "Бананы es plural; виноград se usa normalmente en singular para hablar de las uvas.",
       "formats": [
         "fruitletters",
         "flashcards",

@@ -10,7 +10,8 @@ window.LIBROS = [
     "level": "Primeros pasos",
     "age": "Infantil",
     "titleEs": "Pluto en otoño",
-    "series": "Pluto"
+    "series": "Pluto",
+    "cover": null
   },
   {
     "language": "ingles",
@@ -21,7 +22,8 @@ window.LIBROS = [
     "description": "Paseos otoñales, calabazas y Halloween con Pluto: palabras y actividades para empezar en inglés.",
     "level": "Primeros pasos",
     "age": "Infantil",
-    "series": "Pluto"
+    "series": "Pluto",
+    "cover": null
   },
   {
     "language": "ingles",
@@ -32,7 +34,8 @@ window.LIBROS = [
     "description": "Acompaña a Pluto a la playa y practica tus primeras palabras en inglés.",
     "level": "Primeros pasos",
     "age": "Infantil",
-    "series": "Pluto"
+    "series": "Pluto",
+    "cover": null
   },
   {
     "language": "ingles",
@@ -42,7 +45,8 @@ window.LIBROS = [
     "audience": "hispanohablantes",
     "description": "Colorea animales y descubre sus nombres en inglés.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "cover": null
   },
   {
     "language": "ingles",
@@ -62,7 +66,8 @@ window.LIBROS = [
       "Comida",
       "Colores",
       "Juguetes"
-    ]
+    ],
+    "cover": null
   },
   {
     "language": "ingles",
@@ -73,7 +78,8 @@ window.LIBROS = [
     "description": "Recorre la casa con Pluto: vocabulario, frases sencillas y juegos para aprender inglés.",
     "level": "Primeros pasos",
     "age": "Infantil",
-    "series": "Pluto"
+    "series": "Pluto",
+    "cover": null
   },
   {
     "language": "ingles",
@@ -84,7 +90,8 @@ window.LIBROS = [
     "description": "Descubre la playa con Pluto a través de vocabulario, juegos, laberintos y actividades de atención.",
     "level": "Primeros pasos",
     "age": "Infantil",
-    "series": "Pluto"
+    "series": "Pluto",
+    "cover": null
   },
   {
     "language": "espanol",
@@ -95,7 +102,8 @@ window.LIBROS = [
     "description": "Un primer acercamiento al español para niños de habla rusa.",
     "level": "Primeros pasos",
     "age": "Infantil",
-    "titleEs": "Español para niños (para rusohablantes)"
+    "titleEs": "Español para niños",
+    "cover": null
   },
   {
     "language": "ingles",
@@ -106,7 +114,8 @@ window.LIBROS = [
     "description": "Descubre nombres de animales en inglés mientras coloreas.",
     "level": "Primeros pasos",
     "age": "Infantil",
-    "titleEs": "Colorea animales. ¡Aprendemos inglés!"
+    "titleEs": "Colorea animales. ¡Aprendemos inglés!",
+    "cover": null
   },
   {
     "language": "ingles",
@@ -117,6 +126,7 @@ window.LIBROS = [
     "description": "Primeros pasos en inglés para niños de habla rusa.",
     "level": "Primeros pasos",
     "age": "Infantil",
-    "titleEs": "Inglés para niños"
+    "titleEs": "Inglés para niños",
+    "cover": null
   }
 ];

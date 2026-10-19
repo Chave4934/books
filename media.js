@@ -74,6 +74,8 @@ window.MEDIA = {
     "frutas": "assets/frutas/manzana.png",
     "colores": "assets/colores/rojo.png"
   },
+  // Añade aquí la ruta de la portada (assets/portadas/archivo.webp), o usa cover en books.js.
+  // Esta tabla tiene prioridad; null conserva el valor del libro o la portada provisional.
   "covers": {
     "74613814": null,
     "74602999": null,

@@ -16,10 +16,20 @@ function languagePage(id, tab, topicId, modeId) {
   main.innerHTML = `<div class="wrap detail"><a class="back" href="#idiomas">← Todos los idiomas</a><section class="language-banner ${l.tone}"><div><p class="eyebrow">TU ESPACIO PARA APRENDER · ${l.code}</p><h1>${l.name}<span class="banner-native" ${id==='ruso'?'lang="ru"':''}>${l.native}</span></h1><p>${l.description}</p></div><span class="banner-star"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" aria-hidden="true"><path d="M50 8v84M8 50h84M20 20l60 60M20 80l60-60"/></svg></span></section><nav class="tabs" aria-label="Secciones de ${l.name}"><a href="#/${id}/actividades" ${tab==='actividades'?'aria-current="page"':''}>Actividades <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a href="#/${id}/libros" ${tab==='libros'?'aria-current="page"':''}>Libros <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></nav><div id="section-content"></div></div>`;
   if(tab==='libros') renderBooks(id,topicId); else {document.querySelector('#section-content').lang=l.htmlLang;renderActivities(id, topicId, modeId);translateLesson();}
 }
-function bookCover(book) {
- const cover=mediaPath('covers',book.id);
- return cover?`<img class="book-cover" src="${escapeHTML(cover)}" alt="Portada de ${escapeHTML(book.title)}" loading="lazy">`:`<div class="book-cover typographic-cover" aria-hidden="true"><span>chavebooks</span><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 24c15-4 28-1 40 8 12-9 25-12 40-8v67c-15-4-28-1-40 8-12-9-25-12-40-8V24ZM60 32v67M30 42c8-1 15 1 21 5M30 56c8-1 15 1 21 5M70 47c6-4 13-6 21-5M70 61c6-4 13-6 21-5"/></svg></div>`;
+function provisionalCover() {
+ return `<div class="book-cover typographic-cover" aria-hidden="true"><span>chavebooks</span><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 24c15-4 28-1 40 8 12-9 25-12 40-8v67c-15-4-28-1-40 8-12-9-25-12-40-8V24ZM60 32v67M30 42c8-1 15 1 21 5M30 56c8-1 15 1 21 5M70 47c6-4 13-6 21-5M70 61c6-4 13-6 21-5"/></svg></div>`;
 }
+function bookCover(book) {
+ const cover=mediaPath('covers',book.id)||safeImagePath(book.cover);
+ return cover?`<img class="book-cover" src="${escapeHTML(cover)}" alt="Portada de ${escapeHTML(book.title)}" loading="lazy">`:provisionalCover();
+}
+// Una ruta sin imagen disponible conserva la misma portada provisional.
+document.addEventListener('error',event=>{
+ if(event.target.matches?.('img.book-cover')){
+  const fallback=document.createElement('template');fallback.innerHTML=provisionalCover();
+  event.target.replaceWith(fallback.content);
+ }
+},true);
 function bookSubtitle(book){const text=book.titleEs||book.subtitle;return text?`<p class="book-subtitle" lang="es">${escapeHTML(text)}</p>`:'';}
 function bookExtras(book){
  const tags=[book.format,Number.isInteger(book.pages)&&book.pages>0?`${book.pages} páginas`:null].filter(Boolean);
@@ -40,7 +50,7 @@ function renderBooks(id,selectedBook) {
    for(const book of group){
     const article=document.createElement('article');article.className=`book-card${book.id===selectedBook?' recommended':''}`;article.id=`book-${book.id}`;
     const tags=varying.map(field=>book[field]).filter(Boolean);
-    article.innerHTML=`${bookCover(book)}${book.series?`<p class="book-series">Serie ${escapeHTML(book.series)}</p>`:''}<h3${/[А-Яа-яЁё]/.test(book.title)?' lang="ru"':''}>${escapeHTML(book.title)}</h3>${bookSubtitle(book)}${tags.length?`<div class="book-meta">${tags.map(t=>`<span>${escapeHTML(t)}</span>`).join('')}</div>`:''}<p class="book-audience">Para ${escapeHTML(book.audience)} que quieren aprender ${languages[id].name.toLowerCase()}.</p><p>${escapeHTML(book.description)}</p>${bookExtras(book)}`;
+    article.innerHTML=`${bookCover(book)}${book.series?`<p class="book-series">Serie ${escapeHTML(book.series)}</p>`:''}<h3${/[А-Яа-яЁё]/.test(book.title)?' lang="ru"':''}>${escapeHTML(book.title)}</h3>${bookSubtitle(book)}${tags.length?`<div class="book-meta">${tags.map(t=>`<span>${escapeHTML(t)}</span>`).join('')}</div>`:''}<p>${escapeHTML(book.description)}</p>${bookExtras(book)}`;
     try{const url=new URL(book.url);if(url.protocol==='https:'&&/(^|\.)litres\.(ru|com)$/.test(url.hostname)){
      const link=document.createElement('a');link.className='button dark';link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Ver libro en LitRes →';link.setAttribute('aria-label',`Ver ${book.title} en LitRes (se abre en otra pestaña)`);link.addEventListener('click',()=>window.trackLearningEvent?.('LitRes Click',{book:book.id,language:id,source:'catalog'}));article.append(link);
     }}catch{}
@@ -59,6 +69,10 @@ function route() {
   document.body.dataset.language = languages[parts[0]] ? parts[0] : '';
   if(languages[parts[0]]) languagePage(parts[0],parts[1]==='libros'?'libros':'actividades',parts[2],parts[3]); else home();
   if(location.hash==='#idiomas') requestAnimationFrame(()=>document.querySelector('#idiomas').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})); else window.scrollTo({top:0,left:0,behavior:'instant'});
+  if(document.body.dataset.exercise==='true')for(const img of document.querySelectorAll('#exercise-stage img')){
+   const box=img.getBoundingClientRect();
+   if(box.top<innerHeight&&box.bottom>0&&box.left<innerWidth&&box.right>0)img.loading='eager';
+  }
 }
 window.addEventListener('hashchange',()=>{route();main.focus({preventScroll:true});});
 route();

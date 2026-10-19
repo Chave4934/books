@@ -399,3 +399,15 @@ body[data-language="ruso"] { --world: #dcc6f5; --world-soft: #f0e5fc; --line: #d
 .related-book .typographic-cover > span { font-size: 16px; }
 .error-page h1 { font-size: clamp(32px,6vw,48px); letter-spacing: -1.5px; overflow-wrap: anywhere; }
 small { font-size: 12px; }
+
+/* El marco se reserva antes de descargar la ilustración. */
+.activity-image { background: var(--world-soft, #f1f0e8); }
+body[data-exercise="true"] :is(button, select, input:not([type="radio"]):not([type="checkbox"]):not([type="hidden"]), summary, a) { min-height: 40px; }
+.crossword-cell { height: 40px; min-height: 40px; aspect-ratio: auto; }
+@media(max-width:760px) {
+ body[data-exercise="true"] :is(button, select, input:not([type="radio"]):not([type="checkbox"]):not([type="hidden"]), summary, a) { min-height: 44px; }
+ body[data-exercise="true"] summary { padding-top: 10px; padding-bottom: 10px; }
+ /* Más altura táctil sin ensanchar el crucigrama fuera de la pantalla. */
+ .crossword-cell { height: 44px; min-height: 44px; aspect-ratio: auto; }
+ .crossword-cell input { height: 100%; min-height: 44px; }
+}
