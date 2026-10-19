@@ -23,7 +23,7 @@ window.LIBROS = [
     "level": "Primeros pasos",
     "age": "Infantil",
     "series": "Pluto",
-    "cover": null
+    "cover": "assets/portadas/74602999.webp"
   },
   {
     "language": "ingles",
@@ -35,7 +35,7 @@ window.LIBROS = [
     "level": "Primeros pasos",
     "age": "Infantil",
     "series": "Pluto",
-    "cover": null
+    "cover": "assets/portadas/74595107.webp"
   },
   {
     "language": "ingles",
@@ -46,7 +46,7 @@ window.LIBROS = [
     "description": "Colorea animales y descubre sus nombres en inglés.",
     "level": "Primeros pasos",
     "age": "Infantil",
-    "cover": null
+    "cover": "assets/portadas/74565343.webp"
   },
   {
     "language": "ingles",
@@ -67,7 +67,7 @@ window.LIBROS = [
       "Colores",
       "Juguetes"
     ],
-    "cover": null
+    "cover": "assets/portadas/74565262.webp"
   },
   {
     "language": "ingles",
