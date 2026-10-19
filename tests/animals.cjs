@@ -20,7 +20,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
         await page.locator('.activity-image').last().waitFor();
         assert.equal(await page.locator('#exercise-stage .activity-image').count(), 6);
         await page.evaluate(() => document.querySelectorAll('#exercise-stage img').forEach(img => img.loading='eager'));
-        await page.waitForFunction(() => [...document.querySelectorAll('#exercise-stage img')].every(img => img.complete && img.naturalWidth >= 1000));
+        await page.waitForFunction(() => [...document.querySelectorAll('#exercise-stage img')].every(img => img.complete && Math.max(img.naturalWidth,img.naturalHeight) === 600));
       }
       await page.goto(`${base}/#/${lang}/actividades/animales/3`);
       await page.locator('#memory-board[aria-busy="false"]').waitFor();
@@ -40,7 +40,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
       const response = await page.request.get(`${base}/assets/animales/${animal}.png`);
       assert.equal(response.status(), 200, animal);
       assert.equal(response.headers()['content-type'], 'image/png');
-      const enhanced = await page.request.get(`${base}/assets/animales/mejoradas/${animal}.webp`);
+      const enhanced = await page.request.get(`${base}/assets/animales/optimizadas/${animal}.webp`);
       assert.equal(enhanced.status(),200,`${animal} enhanced`);
       assert.equal(enhanced.headers()['content-type'],'image/webp');
     }
@@ -69,6 +69,6 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
     await page.locator('.activity-image').last().waitFor();
     await page.screenshot({path:'/tmp/chavebooks-animals-mobile.png',fullPage:true});
     assert.deepEqual(errors,[]);
-    console.log('PASS: 12 high-resolution images load, originals retained, all animals covered in each language, 24-card memory, variants accepted, mistakes hide solutions, all 15 animal activities fit at 320/375px.');
+    console.log('PASS: 12 optimized 600px images load, originals retained, all animals covered in each language, 24-card memory, variants accepted, mistakes hide solutions, all 15 animal activities fit at 320/375px.');
   } finally { await browser.close(); }
 })().catch(error=>{console.error(error);process.exitCode=1;});

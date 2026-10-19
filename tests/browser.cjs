@@ -71,7 +71,8 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
       else {
         await page.locator('.book-card').first().waitFor();
         assert.equal(await page.locator('.book-card').count(), id === 'ingles' ? 9 : 1);
-        assert.equal(await page.locator('.litres-button-note').count(), id === 'ingles' ? 9 : 1);
+        assert.equal(await page.locator('.litres-button-note').count(), 0);
+        assert.equal(await page.locator('.purchase-notice').count(), 1);
       }
     }
     // Wrong answers never show a solution until explicitly requested.

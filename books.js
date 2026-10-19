@@ -1,4 +1,4 @@
-// Público y nivel: sin franjas de edad no confirmadas.
+// Solo datos de catálogo confirmados por la autora; los campos adicionales son opcionales.
 window.LIBROS = [
   {
     "language": "ingles",
@@ -8,7 +8,9 @@ window.LIBROS = [
     "audience": "rusohablantes",
     "description": "Aprende inglés con Pluto y sus aventuras de otoño.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "titleEs": "Pluto en otoño",
+    "series": "Pluto"
   },
   {
     "language": "ingles",
@@ -18,7 +20,8 @@ window.LIBROS = [
     "audience": "hispanohablantes",
     "description": "Paseos otoñales, calabazas y Halloween con Pluto: palabras y actividades para empezar en inglés.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "series": "Pluto"
   },
   {
     "language": "ingles",
@@ -28,7 +31,8 @@ window.LIBROS = [
     "audience": "hispanohablantes",
     "description": "Acompaña a Pluto a la playa y practica tus primeras palabras en inglés.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "series": "Pluto"
   },
   {
     "language": "ingles",
@@ -48,7 +52,17 @@ window.LIBROS = [
     "audience": "hispanohablantes",
     "description": "Un primer acercamiento al vocabulario de inglés.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "format": "PDF",
+    "pages": 78,
+    "highlights": "Más de 300 palabras",
+    "topics": [
+      "Animales",
+      "Casa",
+      "Comida",
+      "Colores",
+      "Juguetes"
+    ]
   },
   {
     "language": "ingles",
@@ -58,7 +72,8 @@ window.LIBROS = [
     "audience": "rusohablantes",
     "description": "Recorre la casa con Pluto: vocabulario, frases sencillas y juegos para aprender inglés.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "series": "Pluto"
   },
   {
     "language": "ingles",
@@ -68,7 +83,8 @@ window.LIBROS = [
     "audience": "rusohablantes",
     "description": "Descubre la playa con Pluto a través de vocabulario, juegos, laberintos y actividades de atención.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "series": "Pluto"
   },
   {
     "language": "espanol",
@@ -78,7 +94,8 @@ window.LIBROS = [
     "audience": "rusohablantes",
     "description": "Un primer acercamiento al español para niños de habla rusa.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "titleEs": "Español para niños (para rusohablantes)"
   },
   {
     "language": "ingles",
@@ -88,7 +105,8 @@ window.LIBROS = [
     "audience": "rusohablantes",
     "description": "Descubre nombres de animales en inglés mientras coloreas.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "titleEs": "Colorea animales. ¡Aprendemos inglés!"
   },
   {
     "language": "ingles",
@@ -98,6 +116,7 @@ window.LIBROS = [
     "audience": "rusohablantes",
     "description": "Primeros pasos en inglés para niños de habla rusa.",
     "level": "Primeros pasos",
-    "age": "Infantil"
+    "age": "Infantil",
+    "titleEs": "Inglés para niños"
   }
 ];

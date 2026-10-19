@@ -18,7 +18,7 @@ const base=process.env.TEST_BASE_URL||'http://127.0.0.1:8000';
     await page.goto(`${base}/#/${id}/actividades/colores/${mode}`);await page.waitForFunction(mode=>document.querySelector('.exercise-steps [aria-current]')?.textContent.trim().startsWith(String(mode)),mode);
     if(mode===3){assert.equal(await page.locator('.memory-card').count(),24);continue;}
     await page.evaluate(()=>document.querySelectorAll('#exercise-stage img').forEach(i=>i.loading='eager'));await page.waitForFunction(()=>[...document.querySelectorAll('#exercise-stage img')].every(i=>i.complete&&i.naturalWidth>0));
-    assert.equal(await page.locator('#exercise-stage img').count(),mode===1?12:mode===4?72:6);
+    assert.equal(await page.locator('#exercise-stage img').count(),mode===1?12:mode===4?36:6);
     if(mode===2){
      const reversed={espanol:'verde y roja',ingles:'green and red',ruso:'зелёный и красный'};
      const pair=reversed[id].split(id==='ingles'?' and ':id==='ruso'?' и ':' y ');
@@ -29,7 +29,7 @@ const base=process.env.TEST_BASE_URL||'http://127.0.0.1:8000';
      await page.locator('#exercise button[type="reset"]').click();assert.equal(await page.locator('[name="q0"]').inputValue(),'');
     }
     if(mode===4){
-     assert.equal(await page.locator('.color-hunt-options input').count(),72);
+     assert.equal(await page.locator('.color-hunt-options input').count(),36);
      for(let i=0;i<6;i++)await page.locator(`[name="q${i}"]`).filter({visible:true}).evaluateAll((inputs,answer)=>inputs.find(input=>input.value===answer).click(),topic.variants['4'][i].answer);
      await page.locator('#exercise button[type="submit"]').click();assert.match(await page.locator('#result').textContent(),/6 de 6|6 of 6|6 из 6/);await page.locator('#exercise button[type="reset"]').click();assert.equal(await page.locator('.color-hunt-options input:checked').count(),0);
     }

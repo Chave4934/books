@@ -861,6 +861,7 @@ LESSON_STRINGS.set('Prepara la maleta', ['Pack your suitcase', 'Собери ч�
 LESSON_STRINGS.set('Tarjetas ilustradas', ['Picture cards', 'Карточки с картинками']);
 LESSON_STRINGS.set('Elige una tarjeta y después su pedido. También puedes arrastrar.', ['Choose a picture card, then its order. You can also drag it.', 'Выбери карточку, затем её заказ. Можно также перетаскивать карточки.']);
 LESSON_STRINGS.set('Elige primero una tarjeta.', ['Choose a card first.', 'Сначала выбери карточку.']);
+LESSON_STRINGS.set('Este contador es solo de este navegador y dispositivo, no de todos los visitantes. Si compartes el dispositivo, compartes el progreso. Se guarda al completar una actividad y no se sincroniza; si borras los datos del navegador, se pierde.', ['This progress belongs to this browser and device. If you share the device, you share the progress. It is saved when an activity is completed and does not sync; clearing browser data removes it.', 'Прогресс сохраняется только в этом браузере и на этом устройстве. Если вы пользуетесь одним устройством, прогресс будет общим. Он сохраняется после выполнения задания и не синхронизируется; очистка данных браузера удаляет его.']);
 function lessonText(value,id=currentLanguage) {
  if(id==='espanol'||!id)return value;
  const col=id==='ingles'?0:1,trimmed=value.trim(),pair=LESSON_STRINGS.get(trimmed);

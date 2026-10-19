@@ -10,11 +10,11 @@ Desde la carpeta del repositorio:
 python3 -m http.server 8000
 ```
 
-Abre `http://localhost:8000`. No necesitas instalar dependencias ni configurar claves. Las fuentes de Google son opcionales: si no hay conexión, se usan fuentes del sistema.
+Abre `http://localhost:8000`. No necesitas instalar dependencias ni configurar claves. DM Sans y Manrope se incluyen localmente, con sus licencias, sin depender de Google Fonts.
 
 ## Netlify
 
-La configuración está en `netlify.toml`: se publica la raíz del repositorio, sin comando de compilación. Si Netlify tiene una carpeta base configurada, debe apuntar a la raíz de este repositorio. Al subir los cambios a la rama que Netlify tenga conectada, Netlify podrá desplegarlos. Las subpáginas usan rutas con `#`, que funcionan también al recargar o compartir enlaces.
+La configuración está en `netlify.toml`: se ejecuta `node scripts/build.cjs` y se publica únicamente `dist/`. El build usa Node sin dependencias externas; excluye pruebas, documentación, diseños fuente y las versiones pesadas archivadas de animales. Si Netlify tiene una carpeta base configurada, debe apuntar a la raíz de este repositorio. Al subir los cambios a la rama que Netlify tenga conectada, Netlify podrá desplegarlos. Las subpáginas usan rutas con `#`, que funcionan también al recargar o compartir enlaces.
 
 ## Añadir tus libros de LitRes
 
@@ -156,7 +156,7 @@ Verificación de estos recorridos: `NODE_PATH=/tmp/chavebooks-check/node_modules
 
 ## Ajustes de consignas y selección de imágenes
 
-Los marcadores temporales varían dentro de cada actividad y son compatibles con el tiempo practicado en los tres idiomas. Los distractores gramaticales se mantienen en ese mismo tiempo y verbo: otras personas o errores de formación, según el idioma. Las preguntas de opción múltiple de verbos ofrecen tres opciones. En inglés, donde el pasado simple no varía por persona, los distractores practican errores de formación u ortografía sin introducir otro tiempo.
+Los marcadores temporales varían dentro de cada actividad y son compatibles con el tiempo practicado en los tres idiomas. Los distractores gramaticales se mantienen en ese mismo tiempo y verbo: otras personas o errores de formación, según el idioma. Las preguntas de opción múltiple de verbos ofrecen tres opciones. En inglés, donde el pasado simple no varía por persona, los distractores practican errores de formación u ortografía o formas reales, evitando palabras artificiales.
 
 Las ayudas de las actividades se ofrecen en las dos lenguas distintas a la que se estudia: «Ver traducción en español», «Help in English» y «Смотреть перевод на русском». Las traducciones nombran el idioma estudiado aunque la ayuda esté escrita en otra lengua.
 
@@ -165,3 +165,22 @@ Las frases de colores y el último ejercicio de frutas presentan dos puntos y lo
 La cesta de frutas y la nueva actividad 3 de ropa («Prepara la maleta») se resuelven con imágenes: pulsar tarjeta y pedido, arrastrar o usar el teclado. No hay desplegables con las respuestas. Al colocar una tarjeta aparece su imagen. Solo la actividad 3 de ropa estrena una clave de progreso (`activityRevisions`); las demás conservan sus registros.
 
 Verificación específica: `NODE_PATH=/tmp/chavebooks-check/node_modules node tests/polish.cjs`.
+
+## Publicación y revisión de calidad
+
+Para comprobar exactamente la versión que se publica:
+
+```sh
+node scripts/build.cjs
+python3 -m http.server 8000 --directory dist
+```
+
+`dist/` se genera y no se guarda en Git. La lista permitida de `scripts/build.cjs` copia solo los archivos de ejecución, imágenes públicas, fuentes y sus licencias. README, pruebas, scripts, diseños y los WebP grandes de `assets/animales/mejoradas/` quedan fuera. La página 404 está incluida. No se usa una redirección general que pueda devolver contenido para esas rutas internas.
+
+Las imágenes públicas tienen un presupuesto de 3 MB. Las versiones de 600px de animales están en `assets/animales/optimizadas/`; los originales y los WebP de mayor resolución se conservan en el repositorio, y el memory mantiene los PNG pequeños. La revisión de las claves de progreso no cambia.
+
+Los libros admiten `format`, `pages`, `highlights`, `topics`, `titleEs`/`subtitle` y `series` opcionales. Solo se rellenan con datos confirmados. El catálogo filtra por público y agrupa Pluto; las etiquetas uniformes y los avisos repetidos se omiten. El resumen ya no promete temas sin datos del catálogo.
+
+La imagen social final es `assets/social/chavebooks.png` (1200×630). Su fondo es una composición derivada creada a partir de tres ilustraciones de la autora; los originales permanecen intactos. El diseño editable está en `design/social.html` y `design/social-background.webp`, que no se publican. Para regenerarla con las fuentes reales, sirve la raíz del repositorio y ejecuta `NODE_PATH=/tmp/chavebooks-check/node_modules node scripts/render-social.cjs`. Esa herramienta de desarrollo requiere Playwright, pero la compilación de Netlify no lo necesita.
+
+Las nuevas pruebas por bloque son `tests/content.cjs`, `tests/mobile.cjs`, `tests/books.cjs` y `tests/publish.cjs`. La última debe ejecutarse contra un servidor que sirva `dist/`; el resto también funciona contra esa carpeta. Consulta `QUALITY_REPORT.md` para los cambios y resultados de esta revisión.

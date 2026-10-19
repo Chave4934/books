@@ -7,7 +7,7 @@ window.CURRICULUM = {
       "kind": "grammar",
       "icon": "grammar",
       "level": "A1",
-      "tip": "Los verbos regulares siguen un patrón. Otros cambian: ser → soy, tener → tengo, ir → voy.",
+      "tip": "Los verbos regulares siguen un patrón. Otros cambian: tener → tengo, ir → voy.",
       "variants": {
         "1": [
           {
@@ -110,7 +110,7 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "Normalmente, yo ___ una merienda para mis amigos.",
+            "prompt": "Los sábados, yo ___ una merienda para mis amigos.",
             "answer": "preparo",
             "hint": "preparar",
             "wrong": "preparas"
@@ -122,19 +122,19 @@ window.CURRICULUM = {
             "wrong": "pongo"
           },
           {
-            "prompt": "Luego, ana ___ pan de la tienda.",
+            "prompt": "Luego, Ana ___ pan de la tienda.",
             "answer": "trae",
             "hint": "traer",
             "wrong": "traigo"
           },
           {
-            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "prompt": "Entre todos, nosotros ___ una ensalada de frutas.",
             "answer": "hacemos",
             "hint": "hacer",
             "wrong": "hago"
           },
           {
-            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "prompt": "Al terminar, los niños ___ los vasos después de comer.",
             "answer": "recogen",
             "hint": "recoger",
             "wrong": "recojo"
@@ -355,31 +355,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "El año pasado, yo ___ una merienda para mis amigos.",
+            "prompt": "El sábado pasado, yo ___ los materiales para un taller de arte.",
             "answer": "preparé",
             "hint": "preparar",
             "wrong": "preparaste"
           },
           {
-            "prompt": "Después, tú ___ los platos en la mesa.",
+            "prompt": "Antes de empezar, tú ___ los pinceles en la mesa.",
             "answer": "pusiste",
             "hint": "poner",
             "wrong": "puse"
           },
           {
-            "prompt": "Luego, ana ___ pan de la tienda.",
+            "prompt": "Al llegar, Ana ___ papel de la tienda.",
             "answer": "trajo",
             "hint": "traer",
             "wrong": "traje"
           },
           {
-            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "prompt": "Durante el taller, nosotros ___ un mural de animales.",
             "answer": "hicimos",
             "hint": "hacer",
             "wrong": "hice"
           },
           {
-            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "prompt": "Al terminar, los niños ___ los materiales del suelo.",
             "answer": "recogieron",
             "hint": "recoger",
             "wrong": "recogí"
@@ -512,7 +512,7 @@ window.CURRICULUM = {
             ]
           },
           {
-            "prompt": "Últimamente, ella ___ una manzana en el patio.",
+            "prompt": "Hoy, ella ___ una manzana en el patio.",
             "answer": "ha comido",
             "hint": "comer",
             "wrong": "he comido",
@@ -545,7 +545,7 @@ window.CURRICULUM = {
             ]
           },
           {
-            "prompt": "Hoy, ellos ___ al museo de ciencias.",
+            "prompt": "Esta mañana, ellos ___ al museo de ciencias.",
             "answer": "han ido",
             "hint": "ir",
             "wrong": "he ido",
@@ -600,31 +600,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "Este mes, yo ___ una merienda para mis amigos.",
+            "prompt": "Hoy, yo ___ una merienda para mis amigos.",
             "answer": "he preparado",
             "hint": "preparar",
             "wrong": "has preparado"
           },
           {
-            "prompt": "Después, tú ___ los platos en la mesa.",
+            "prompt": "Tú ya ___ los platos en la mesa.",
             "answer": "has puesto",
             "hint": "poner",
             "wrong": "he puesto"
           },
           {
-            "prompt": "Luego, ana ___ pan de la tienda.",
+            "prompt": "Esta mañana, Ana ___ pan de la tienda.",
             "answer": "ha traído",
             "hint": "traer",
             "wrong": "he traído"
           },
           {
-            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "prompt": "Hasta ahora, nosotros ___ una ensalada de frutas.",
             "answer": "hemos hecho",
             "hint": "hacer",
             "wrong": "he hecho"
           },
           {
-            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "prompt": "Los niños ya ___ los vasos después de comer.",
             "answer": "han recogido",
             "hint": "recoger",
             "wrong": "he recogido"
@@ -664,7 +664,7 @@ window.CURRICULUM = {
         ],
         "5": [
           {
-            "prompt": "Hoy, yo ___ mi mochila antes de salir.",
+            "prompt": "En los últimos días, yo ___ mi mochila antes de salir.",
             "answer": "he buscado",
             "hint": "buscar",
             "wrong": "has buscado"
@@ -688,7 +688,7 @@ window.CURRICULUM = {
             "wrong": "he visto"
           },
           {
-            "prompt": "Este año, ellos ___ la puerta al salir.",
+            "prompt": "Hoy, ellos ___ la puerta al salir.",
             "answer": "han cerrado",
             "hint": "cerrar",
             "wrong": "he cerrado"
@@ -715,7 +715,7 @@ window.CURRICULUM = {
           ]
         },
         {
-          "prompt": "Últimamente, ella ___ una manzana en el patio.",
+          "prompt": "Hoy, ella ___ una manzana en el patio.",
           "answer": "ha comido",
           "hint": "comer",
           "wrong": "he comido",
@@ -845,31 +845,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "Por entonces, yo ___ una merienda para mis amigos.",
+            "prompt": "En los campamentos de verano, yo ___ los juegos de la tarde.",
             "answer": "preparaba",
             "hint": "preparar",
             "wrong": "preparabas"
           },
           {
-            "prompt": "Después, tú ___ los platos en la mesa.",
+            "prompt": "Mientras tanto, tú ___ las sillas junto al escenario.",
             "answer": "ponías",
             "hint": "poner",
             "wrong": "ponía"
           },
           {
-            "prompt": "Luego, ana ___ pan de la tienda.",
+            "prompt": "A menudo, Ana ___ disfraces de su casa.",
             "answer": "traía",
             "hint": "traer",
             "wrong": "traías"
           },
           {
-            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "prompt": "Cada viernes, nosotros ___ una obra de teatro.",
             "answer": "hacíamos",
             "hint": "hacer",
             "wrong": "hacía"
           },
           {
-            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "prompt": "Al acabar, los niños ___ los disfraces del escenario.",
             "answer": "recogían",
             "hint": "recoger",
             "wrong": "recogía"
@@ -1090,31 +1090,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "El próximo año, yo ___ una merienda para mis amigos.",
+            "prompt": "Este sábado, yo ___ una merienda para mis amigos.",
             "answer": "prepararé",
             "hint": "preparar",
             "wrong": "prepararás"
           },
           {
-            "prompt": "Después, tú ___ los platos en la mesa.",
+            "prompt": "Antes de comer, tú ___ los platos en la mesa.",
             "answer": "pondrás",
             "hint": "poner",
             "wrong": "pondré"
           },
           {
-            "prompt": "Luego, ana ___ pan de la tienda.",
+            "prompt": "Por la mañana, Ana ___ pan de la tienda.",
             "answer": "traerá",
             "hint": "traer",
             "wrong": "traeré"
           },
           {
-            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "prompt": "Entre todos, nosotros ___ una ensalada de frutas.",
             "answer": "haremos",
             "hint": "hacer",
             "wrong": "haré"
           },
           {
-            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "prompt": "Al terminar, los niños ___ los vasos.",
             "answer": "recogerán",
             "hint": "recoger",
             "wrong": "recogeré"
@@ -1257,7 +1257,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "animales",
       "level": "A1",
-      "tip": "Conoce los animales, escribe sus nombres y practica con juegos. Cada actividad incluye un grupo diferente; el memory reúne toda la colección.",
+      "tip": "Fíjate en el género: el perro, la vaca.",
       "items": [
         {
           "key": "perro",
@@ -1873,7 +1873,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "colores",
       "level": "A1",
-      "tip": "Doce colores para descubrir un mundo lleno de vida.",
+      "tip": "Algunos colores concuerdan: gato negro, gata negra.",
       "revision": "colores-v1",
       "formats": [
         "flashcards",
@@ -2544,7 +2544,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "ropa",
       "level": "A1",
-      "tip": "Doce prendas y accesorios para descubrir. Cada actividad propone una forma diferente de practicar.",
+      "tip": "Practica también las formas plurales: guantes, calcetines y botas.",
       "formats": [
         "picturechoice",
         "wordsearch",
@@ -2707,9 +2707,7 @@ window.CURRICULUM = {
           "aliases": [
             "bota",
             "botines",
-            "botín",
-            "zapatos",
-            "zapato"
+            "botín"
           ],
           "clue": "Calzado negro con cordones que cubre los tobillos.",
           "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
@@ -2795,9 +2793,7 @@ window.CURRICULUM = {
             "aliases": [
               "bota",
               "botines",
-              "botín",
-              "zapatos",
-              "zapato"
+              "botín"
             ],
             "clue": "Calzado negro con cordones que cubre los tobillos.",
             "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
@@ -3050,9 +3046,7 @@ window.CURRICULUM = {
             "aliases": [
               "bota",
               "botines",
-              "botín",
-              "zapatos",
-              "zapato"
+              "botín"
             ],
             "clue": "Calzado negro con cordones que cubre los tobillos.",
             "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
@@ -3216,9 +3210,7 @@ window.CURRICULUM = {
             "aliases": [
               "bota",
               "botines",
-              "botín",
-              "zapatos",
-              "zapato"
+              "botín"
             ],
             "clue": "Calzado negro con cordones que cubre los tobillos.",
             "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
@@ -3240,7 +3232,7 @@ window.CURRICULUM = {
       "icon": "rutina",
       "level": "A1",
       "revision": "acciones-v2",
-      "tip": "Doce acciones para contar lo que haces cada día.",
+      "tip": "Distingue el infinitivo (comer) de la forma personal (yo como).",
       "formats": [
         "identify",
         "actionstory",
@@ -3795,7 +3787,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "frutas",
       "level": "A1",
-      "tip": "Doce frutas y cinco maneras de aprender. Observa las imágenes y prueba un reto diferente cada día.",
+      "tip": "Conserva las tildes al escribir: limón, plátano. La ñ de piña es otra letra.",
       "formats": [
         "fruitletters",
         "flashcards",
@@ -4375,14 +4367,14 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Every week, I ___ Spanish at the library.",
+            "prompt": "Every week, I ___ English at the library.",
             "answer": "study",
             "hint": "study",
             "wrong": "studies",
             "options": [
               "study",
               "studies",
-              "studys"
+              "studying"
             ]
           },
           {
@@ -4393,7 +4385,7 @@ window.CURRICULUM = {
             "options": [
               "eats",
               "eat",
-              "eates"
+              "eating"
             ]
           },
           {
@@ -4404,7 +4396,7 @@ window.CURRICULUM = {
             "options": [
               "live",
               "lives",
-              "livees"
+              "living"
             ]
           },
           {
@@ -4415,7 +4407,7 @@ window.CURRICULUM = {
             "options": [
               "have",
               "has",
-              "haves"
+              "having"
             ]
           },
           {
@@ -4426,7 +4418,7 @@ window.CURRICULUM = {
             "options": [
               "go",
               "goes",
-              "gos"
+              "going"
             ]
           }
         ],
@@ -4474,31 +4466,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "Usually, I ___ a snack for my friends.",
+            "prompt": "On Saturdays, I ___ a snack for my friends.",
             "answer": "prepare",
             "hint": "prepare",
             "wrong": "prepares"
           },
           {
-            "prompt": "Then, you ___ the plates on the table.",
+            "prompt": "Before lunch, you ___ the plates on the table.",
             "answer": "put",
             "hint": "put",
             "wrong": "puts"
           },
           {
-            "prompt": "After that, Anna ___ bread from the shop.",
+            "prompt": "Anna usually ___ bread from the shop.",
             "answer": "brings",
             "hint": "bring",
             "wrong": "bring"
           },
           {
-            "prompt": "Next, we ___ a fruit salad.",
+            "prompt": "Together, we ___ a fruit salad.",
             "answer": "make",
             "hint": "make",
             "wrong": "makes"
           },
           {
-            "prompt": "Finally, the children ___ the cups after lunch.",
+            "prompt": "After lunch, the children ___ the cups.",
             "answer": "collect",
             "hint": "collect",
             "wrong": "collects"
@@ -4578,14 +4570,14 @@ window.CURRICULUM = {
       ],
       "items": [
         {
-          "prompt": "Every week, I ___ Spanish at the library.",
+          "prompt": "Every week, I ___ English at the library.",
           "answer": "study",
           "hint": "study",
           "wrong": "studies",
           "options": [
             "study",
             "studies",
-            "studys"
+            "studying"
           ]
         },
         {
@@ -4596,7 +4588,7 @@ window.CURRICULUM = {
           "options": [
             "eats",
             "eat",
-            "eates"
+            "eating"
           ]
         },
         {
@@ -4607,7 +4599,7 @@ window.CURRICULUM = {
           "options": [
             "live",
             "lives",
-            "livees"
+            "living"
           ]
         },
         {
@@ -4618,7 +4610,7 @@ window.CURRICULUM = {
           "options": [
             "have",
             "has",
-            "haves"
+            "having"
           ]
         },
         {
@@ -4629,7 +4621,7 @@ window.CURRICULUM = {
           "options": [
             "go",
             "goes",
-            "gos"
+            "going"
           ]
         }
       ],
@@ -4645,7 +4637,7 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Right now, I ___ Spanish at the library.",
+            "prompt": "Right now, I ___ English at the library.",
             "answer": "am studying",
             "hint": "study",
             "wrong": "is studying"
@@ -4719,31 +4711,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "Today, I ___ a snack for my friends.",
+            "prompt": "At our art workshop, I ___ the materials.",
             "answer": "am preparing",
             "hint": "prepare",
             "wrong": "is preparing"
           },
           {
-            "prompt": "Then, you ___ the plates on the table.",
+            "prompt": "At the moment, you ___ the brushes on the table.",
             "answer": "are putting",
             "hint": "put",
             "wrong": "am putting"
           },
           {
-            "prompt": "After that, Anna ___ bread from the shop.",
+            "prompt": "Look! Anna ___ some paper from the cupboard.",
             "answer": "is bringing",
             "hint": "bring",
             "wrong": "am bringing"
           },
           {
-            "prompt": "Next, we ___ a fruit salad.",
+            "prompt": "Right now, we ___ an animal mural.",
             "answer": "are making",
             "hint": "make",
             "wrong": "am making"
           },
           {
-            "prompt": "Finally, the children ___ the cups after lunch.",
+            "prompt": "The children ___ the empty paint pots now.",
             "answer": "are collecting",
             "hint": "collect",
             "wrong": "am collecting"
@@ -4783,13 +4775,13 @@ window.CURRICULUM = {
         ],
         "5": [
           {
-            "prompt": "This week, I ___ for my bag before leaving.",
+            "prompt": "Right now, I ___ for my bag.",
             "answer": "am looking",
             "hint": "look",
             "wrong": "is looking"
           },
           {
-            "prompt": "Right now, you ___ a notebook at the bookshop.",
+            "prompt": "At present, you ___ a notebook at the bookshop.",
             "answer": "are buying",
             "hint": "buy",
             "wrong": "am buying"
@@ -4823,7 +4815,7 @@ window.CURRICULUM = {
       ],
       "items": [
         {
-          "prompt": "Right now, I ___ Spanish at the library.",
+          "prompt": "Right now, I ___ English at the library.",
           "answer": "am studying",
           "hint": "study",
           "wrong": "is studying"
@@ -4865,14 +4857,14 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Yesterday, I ___ Spanish at the library.",
+            "prompt": "Yesterday, I ___ English at the library.",
             "answer": "studied",
             "hint": "study",
-            "wrong": "studyed",
+            "wrong": "study",
             "options": [
               "studied",
-              "studyed",
-              "studyd"
+              "study",
+              "studying"
             ]
           },
           {
@@ -4883,29 +4875,29 @@ window.CURRICULUM = {
             "options": [
               "ate",
               "eated",
-              "ated"
+              "eating"
             ]
           },
           {
             "prompt": "Last year, we ___ near the beach.",
             "answer": "lived",
             "hint": "live",
-            "wrong": "livved",
+            "wrong": "live",
             "options": [
               "lived",
-              "livved",
-              "liveed"
+              "live",
+              "living"
             ]
           },
           {
             "prompt": "Two days ago, you ___ a picnic in the park.",
             "answer": "had",
             "hint": "have",
-            "wrong": "haved",
+            "wrong": "have",
             "options": [
               "had",
-              "haved",
-              "hadded"
+              "have",
+              "having"
             ]
           },
           {
@@ -4916,7 +4908,7 @@ window.CURRICULUM = {
             "options": [
               "went",
               "goed",
-              "wented"
+              "going"
             ]
           }
         ],
@@ -4933,7 +4925,7 @@ window.CURRICULUM = {
             "prompt": "Last year, you ___ an adventure story.",
             "answer": "read",
             "hint": "read",
-            "wrong": "readed",
+            "wrong": "reading",
             "asset": "acciones/leer",
             "clue": "A child performing the action: read."
           },
@@ -4949,7 +4941,7 @@ window.CURRICULUM = {
             "prompt": "Last month, we ___ flowers with coloured pencils.",
             "answer": "drew",
             "hint": "draw",
-            "wrong": "drawed",
+            "wrong": "draw",
             "asset": "acciones/dibujar",
             "clue": "A child performing the action: draw."
           },
@@ -4964,34 +4956,34 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "Last year, I ___ a snack for my friends.",
+            "prompt": "Last Saturday, I ___ some games for a drama club.",
             "answer": "prepared",
             "hint": "prepare",
-            "wrong": "preparred"
+            "wrong": "prepare"
           },
           {
-            "prompt": "Then, you ___ the plates on the table.",
+            "prompt": "Before we started, you ___ the chairs near the stage.",
             "answer": "put",
             "hint": "put",
-            "wrong": "putted"
+            "wrong": "putting"
           },
           {
-            "prompt": "After that, Anna ___ bread from the shop.",
+            "prompt": "Anna ___ some costumes from home.",
             "answer": "brought",
             "hint": "bring",
             "wrong": "bringed"
           },
           {
-            "prompt": "Next, we ___ a fruit salad.",
+            "prompt": "During the club, we ___ a short film.",
             "answer": "made",
             "hint": "make",
             "wrong": "maked"
           },
           {
-            "prompt": "Finally, the children ___ the cups after lunch.",
+            "prompt": "At the end, the children ___ the costumes.",
             "answer": "collected",
             "hint": "collect",
-            "wrong": "collectted"
+            "wrong": "collect"
           }
         ],
         "4": [
@@ -5005,25 +4997,25 @@ window.CURRICULUM = {
             "prompt": "Last month, you ___ to school with your sister.",
             "answer": "walked",
             "hint": "walk",
-            "wrong": "walkked"
+            "wrong": "walk"
           },
           {
             "prompt": "Yesterday, she ___ her bedroom window.",
             "answer": "opened",
             "hint": "open",
-            "wrong": "openned"
+            "wrong": "open"
           },
           {
             "prompt": "Last week, we ___ with a ball in the garden.",
             "answer": "played",
             "hint": "play",
-            "wrong": "playied"
+            "wrong": "play"
           },
           {
             "prompt": "Last year, they ___ to music with headphones.",
             "answer": "listened",
             "hint": "listen",
-            "wrong": "listenned"
+            "wrong": "listen"
           }
         ],
         "5": [
@@ -5031,7 +5023,7 @@ window.CURRICULUM = {
             "prompt": "Last month, I ___ for my bag before leaving.",
             "answer": "looked",
             "hint": "look",
-            "wrong": "lookked"
+            "wrong": "look"
           },
           {
             "prompt": "Yesterday, you ___ a notebook at the bookshop.",
@@ -5049,13 +5041,13 @@ window.CURRICULUM = {
             "prompt": "Last year, we ___ a film about animals.",
             "answer": "watched",
             "hint": "watch",
-            "wrong": "watcht"
+            "wrong": "watch"
           },
           {
             "prompt": "Two days ago, they ___ the door before leaving.",
             "answer": "closed",
             "hint": "close",
-            "wrong": "clossed"
+            "wrong": "close"
           }
         ]
       },
@@ -5068,14 +5060,14 @@ window.CURRICULUM = {
       ],
       "items": [
         {
-          "prompt": "Yesterday, I ___ Spanish at the library.",
+          "prompt": "Yesterday, I ___ English at the library.",
           "answer": "studied",
           "hint": "study",
-          "wrong": "studyed",
+          "wrong": "study",
           "options": [
             "studied",
-            "studyed",
-            "studyd"
+            "study",
+            "studying"
           ]
         },
         {
@@ -5086,29 +5078,29 @@ window.CURRICULUM = {
           "options": [
             "ate",
             "eated",
-            "ated"
+            "eating"
           ]
         },
         {
           "prompt": "Last year, we ___ near the beach.",
           "answer": "lived",
           "hint": "live",
-          "wrong": "livved",
+          "wrong": "live",
           "options": [
             "lived",
-            "livved",
-            "liveed"
+            "live",
+            "living"
           ]
         },
         {
           "prompt": "Two days ago, you ___ a picnic in the park.",
           "answer": "had",
           "hint": "have",
-          "wrong": "haved",
+          "wrong": "have",
           "options": [
             "had",
-            "haved",
-            "hadded"
+            "have",
+            "having"
           ]
         },
         {
@@ -5119,7 +5111,7 @@ window.CURRICULUM = {
           "options": [
             "went",
             "goed",
-            "wented"
+            "going"
           ]
         }
       ],
@@ -5135,7 +5127,7 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "This week, I ___ Spanish at the library.",
+            "prompt": "This week, I ___ English at the library.",
             "answer": "have studied",
             "hint": "study",
             "wrong": "has studied"
@@ -5209,31 +5201,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "This month, I ___ a snack for my friends.",
+            "prompt": "So far today, I ___ a snack for my friends.",
             "answer": "have prepared",
             "hint": "prepare",
             "wrong": "has prepared"
           },
           {
-            "prompt": "Then, you ___ the plates on the table.",
+            "prompt": "You ___ the plates on the table already.",
             "answer": "have put",
             "hint": "put",
             "wrong": "has put"
           },
           {
-            "prompt": "After that, Anna ___ bread from the shop.",
+            "prompt": "Anna ___ bread from the shop today.",
             "answer": "has brought",
             "hint": "bring",
             "wrong": "have brought"
           },
           {
-            "prompt": "Next, we ___ a fruit salad.",
+            "prompt": "We ___ a fruit salad for our picnic.",
             "answer": "have made",
             "hint": "make",
             "wrong": "has made"
           },
           {
-            "prompt": "Finally, the children ___ the cups after lunch.",
+            "prompt": "The children ___ all the cups already.",
             "answer": "have collected",
             "hint": "collect",
             "wrong": "has collected"
@@ -5273,7 +5265,7 @@ window.CURRICULUM = {
         ],
         "5": [
           {
-            "prompt": "Today, I ___ for my bag before leaving.",
+            "prompt": "Today, I ___ for my bag twice.",
             "answer": "have looked",
             "hint": "look",
             "wrong": "has looked"
@@ -5313,7 +5305,7 @@ window.CURRICULUM = {
       ],
       "items": [
         {
-          "prompt": "This week, I ___ Spanish at the library.",
+          "prompt": "This week, I ___ English at the library.",
           "answer": "have studied",
           "hint": "study",
           "wrong": "has studied"
@@ -5351,11 +5343,11 @@ window.CURRICULUM = {
       "kind": "grammar",
       "icon": "grammar",
       "level": "A2",
-      "tip": "Use am, is or are + going to + verb to talk about plans.",
+      "tip": "Usa am, is o are + going to + verbo para hablar de planes.",
       "variants": {
         "1": [
           {
-            "prompt": "Tomorrow, I ___ Spanish at the library.",
+            "prompt": "Tomorrow, I ___ English at the library.",
             "answer": "am going to study",
             "hint": "study",
             "wrong": "is going to study",
@@ -5454,31 +5446,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "Next year, I ___ a snack for my friends.",
+            "prompt": "This Saturday, I ___ a snack for my friends.",
             "answer": "am going to prepare",
             "hint": "prepare",
             "wrong": "is going to prepare"
           },
           {
-            "prompt": "Then, you ___ the plates on the table.",
+            "prompt": "Before lunch, you ___ the plates on the table.",
             "answer": "are going to put",
             "hint": "put",
             "wrong": "am going to put"
           },
           {
-            "prompt": "After that, Anna ___ bread from the shop.",
+            "prompt": "Anna ___ bread from the shop in the morning.",
             "answer": "is going to bring",
             "hint": "bring",
             "wrong": "am going to bring"
           },
           {
-            "prompt": "Next, we ___ a fruit salad.",
+            "prompt": "Together, we ___ a fruit salad.",
             "answer": "are going to make",
             "hint": "make",
             "wrong": "am going to make"
           },
           {
-            "prompt": "Finally, the children ___ the cups after lunch.",
+            "prompt": "After lunch, the children ___ the cups.",
             "answer": "are going to collect",
             "hint": "collect",
             "wrong": "am going to collect"
@@ -5558,7 +5550,7 @@ window.CURRICULUM = {
       ],
       "items": [
         {
-          "prompt": "Tomorrow, I ___ Spanish at the library.",
+          "prompt": "Tomorrow, I ___ English at the library.",
           "answer": "am going to study",
           "hint": "study",
           "wrong": "is going to study",
@@ -5621,7 +5613,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "animales",
       "level": "A1",
-      "tip": "Conoce los animales, escribe sus nombres y practica con juegos. Cada actividad incluye un grupo diferente; el memory reúne toda la colección.",
+      "tip": "Sheep tiene la misma forma en singular y en plural.",
       "items": [
         {
           "key": "perro",
@@ -6200,7 +6192,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "colores",
       "level": "A1",
-      "tip": "Doce colores para descubrir un mundo lleno de vida.",
+      "tip": "En inglés el color va antes del nombre: a red apple.",
       "revision": "colores-v1",
       "formats": [
         "flashcards",
@@ -6795,7 +6787,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "ropa",
       "level": "A1",
-      "tip": "Doce prendas y accesorios para descubrir. Cada actividad propone una forma diferente de practicar.",
+      "tip": "Trousers, socks y gloves se usan normalmente en plural.",
       "formats": [
         "picturechoice",
         "wordsearch",
@@ -6951,8 +6943,7 @@ window.CURRICULUM = {
           "asset": "ropa/zapatos",
           "answer": "boots",
           "aliases": [
-            "ankle boots",
-            "shoes"
+            "ankle boots"
           ],
           "clue": "A pair of black lace-up ankle boots.",
           "memoryClue": "A pair of black lace-up ankle boots.",
@@ -7034,8 +7025,7 @@ window.CURRICULUM = {
             "asset": "ropa/zapatos",
             "answer": "boots",
             "aliases": [
-              "ankle boots",
-              "shoes"
+              "ankle boots"
             ],
             "clue": "A pair of black lace-up ankle boots.",
             "memoryClue": "A pair of black lace-up ankle boots.",
@@ -7278,8 +7268,7 @@ window.CURRICULUM = {
             "asset": "ropa/zapatos",
             "answer": "boots",
             "aliases": [
-              "ankle boots",
-              "shoes"
+              "ankle boots"
             ],
             "clue": "A pair of black lace-up ankle boots.",
             "memoryClue": "A pair of black lace-up ankle boots.",
@@ -7436,8 +7425,7 @@ window.CURRICULUM = {
             "asset": "ropa/zapatos",
             "answer": "boots",
             "aliases": [
-              "ankle boots",
-              "shoes"
+              "ankle boots"
             ],
             "clue": "A pair of black lace-up ankle boots.",
             "memoryClue": "A pair of black lace-up ankle boots.",
@@ -7459,7 +7447,7 @@ window.CURRICULUM = {
       "icon": "rutina",
       "level": "A1",
       "revision": "acciones-v2",
-      "tip": "Doce acciones para contar lo que haces cada día.",
+      "tip": "El infinitivo puede llevar to: eat o to eat.",
       "formats": [
         "identify",
         "actionstory",
@@ -8059,7 +8047,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "frutas",
       "level": "A1",
-      "tip": "Doce frutas y cinco maneras de aprender. Observa las imágenes y prueba un reto diferente cada día.",
+      "tip": "Distingue las formas plurales: cherry → cherries, grape → grapes.",
       "formats": [
         "fruitletters",
         "flashcards",
@@ -8682,31 +8670,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "Как правило я ___ завтрак для друзей.",
+            "prompt": "По субботам я ___ завтрак для друзей.",
             "hint": "готовить",
             "answer": "готовлю",
             "wrong": "готовит"
           },
           {
-            "prompt": "Потом ты ___ тарелки на стол.",
+            "prompt": "Перед завтраком ты ___ тарелки на стол.",
             "hint": "ставить",
             "answer": "ставишь",
             "wrong": "ставлю"
           },
           {
-            "prompt": "Затем Анна ___ хлеб из магазина.",
+            "prompt": "Анна обычно ___ хлеб из магазина.",
             "hint": "приносить",
             "answer": "приносит",
             "wrong": "приношу"
           },
           {
-            "prompt": "После этого мы ___ фруктовый салат.",
+            "prompt": "Вместе мы ___ фруктовый салат.",
             "hint": "делать",
             "answer": "делаем",
             "wrong": "делаю"
           },
           {
-            "prompt": "В конце дети ___ чашки после обеда.",
+            "prompt": "После еды дети ___ чашки со стола.",
             "hint": "убирать",
             "answer": "убирают",
             "wrong": "убираю"
@@ -8833,7 +8821,12 @@ window.CURRICULUM = {
           "prompt": "Каждый день они ___ в музей.",
           "hint": "ходить",
           "answer": "ходят",
-          "wrong": "ходили"
+          "wrong": "хожу",
+          "options": [
+            "ходят",
+            "хожу",
+            "ходишь"
+          ]
         }
       ],
       "revision": "practica-v3"
@@ -8934,7 +8927,7 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "В прошлом году я ___ завтрак для друзей.",
+            "prompt": "В прошлую субботу я ___ завтрак для участников похода.",
             "hint": "готовить",
             "answer": "готовил",
             "wrong": "готовило",
@@ -8943,7 +8936,7 @@ window.CURRICULUM = {
             ]
           },
           {
-            "prompt": "Потом ты ___ тарелки на стол.",
+            "prompt": "Перед выходом ты ___ рюкзаки у двери.",
             "hint": "ставить",
             "answer": "ставил",
             "wrong": "ставило",
@@ -8952,19 +8945,19 @@ window.CURRICULUM = {
             ]
           },
           {
-            "prompt": "Затем Анна ___ хлеб из магазина.",
+            "prompt": "Анна ___ карту из дома.",
             "hint": "приносить",
             "answer": "приносила",
             "wrong": "приносил"
           },
           {
-            "prompt": "После этого мы ___ фруктовый салат.",
+            "prompt": "На привале мы ___ фотографии леса.",
             "hint": "делать",
             "answer": "делали",
             "wrong": "делал"
           },
           {
-            "prompt": "В конце дети ___ чашки после обеда.",
+            "prompt": "После привала дети ___ мусор в пакет.",
             "hint": "убирать",
             "answer": "убирали",
             "wrong": "убирал"
@@ -9203,31 +9196,31 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "В следующем году я ___ завтрак для друзей.",
+            "prompt": "Завтра я ___ костюмы для школьного спектакля.",
             "hint": "готовить",
             "answer": "буду готовить",
             "wrong": "будешь готовить"
           },
           {
-            "prompt": "Потом ты ___ тарелки на стол.",
+            "prompt": "Перед спектаклем ты ___ стулья перед сценой.",
             "hint": "ставить",
             "answer": "будешь ставить",
             "wrong": "буду ставить"
           },
           {
-            "prompt": "Затем Анна ___ хлеб из магазина.",
+            "prompt": "Анна ___ декорации из дома утром.",
             "hint": "приносить",
             "answer": "будет приносить",
             "wrong": "буду приносить"
           },
           {
-            "prompt": "После этого мы ___ фруктовый салат.",
+            "prompt": "На репетиции мы ___ бумажные маски.",
             "hint": "делать",
             "answer": "будем делать",
             "wrong": "буду делать"
           },
           {
-            "prompt": "В конце дети ___ чашки после обеда.",
+            "prompt": "После выступления дети ___ сцену.",
             "hint": "убирать",
             "answer": "будут убирать",
             "wrong": "буду убирать"
@@ -9752,31 +9745,31 @@ window.CURRICULUM = {
       ],
       "items": [
         {
-          "prompt": "Это ___; один предмет называется «стол».",
+          "prompt": "«стол» → ___.",
           "answer": "столы",
           "hint": "стол",
           "wrong": "стол"
         },
         {
-          "prompt": "Здесь ___: книга и ещё один такой же предмет.",
+          "prompt": "«книга» → ___.",
           "answer": "книги",
           "hint": "книга",
           "wrong": "книга"
         },
         {
-          "prompt": "Это ___; один предмет называется «окно».",
+          "prompt": "«окно» → ___.",
           "answer": "окна",
           "hint": "окно",
           "wrong": "окно"
         },
         {
-          "prompt": "Здесь ___: стул и ещё один такой же предмет.",
+          "prompt": "«стул» → ___.",
           "answer": "стулья",
           "hint": "стул",
           "wrong": "стул"
         },
         {
-          "prompt": "Это ___; один предмет называется «картина».",
+          "prompt": "«картина» → ___.",
           "answer": "картины",
           "hint": "картина",
           "wrong": "картина"
@@ -9790,7 +9783,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "animales",
       "level": "A1",
-      "tip": "Conoce los animales, escribe sus nombres y practica con juegos. Cada actividad incluye un grupo diferente; el memory reúne toda la colección.",
+      "tip": "Recuerda las terminaciones: кот, собака, лошадь.",
       "items": [
         {
           "key": "perro",
@@ -10389,7 +10382,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "colores",
       "level": "A1",
-      "tip": "Doce colores para descubrir un mundo lleno de vida.",
+      "tip": "El color concuerda con el nombre: красный арбуз, красная ягода.",
       "revision": "colores-v1",
       "formats": [
         "flashcards",
@@ -10965,7 +10958,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "ropa",
       "level": "A1",
-      "tip": "Doce prendas y accesorios para descubrir. Cada actividad propone una forma diferente de practicar.",
+      "tip": "Брюки y перчатки se usan normalmente en plural.",
       "formats": [
         "picturechoice",
         "wordsearch",
@@ -11569,7 +11562,7 @@ window.CURRICULUM = {
       "icon": "rutina",
       "level": "A1",
       "revision": "acciones-v2",
-      "tip": "Doce acciones para contar lo que haces cada día.",
+      "tip": "Distingue el infinitivo читать de la forma personal я читаю.",
       "formats": [
         "identify",
         "actionstory",
@@ -12136,7 +12129,7 @@ window.CURRICULUM = {
       "kind": "vocabulary",
       "icon": "frutas",
       "level": "A1",
-      "tip": "Doce frutas y cinco maneras de aprender. Observa las imágenes y prueba un reto diferente cada día.",
+      "tip": "Conserva las letras rusas: й no es lo mismo que и.",
       "formats": [
         "fruitletters",
         "flashcards",
