@@ -11,7 +11,7 @@ window.LIBROS = [
     "age": "Infantil",
     "titleEs": "Pluto en otoño",
     "series": "Pluto",
-    "cover": null
+    "cover": "assets/portadas/74613814.webp"
   },
   {
     "language": "ingles",
@@ -79,7 +79,7 @@ window.LIBROS = [
     "level": "Primeros pasos",
     "age": "Infantil",
     "series": "Pluto",
-    "cover": null
+    "cover": "assets/portadas/74019993.webp"
   },
   {
     "language": "ingles",
@@ -91,7 +91,7 @@ window.LIBROS = [
     "level": "Primeros pasos",
     "age": "Infantil",
     "series": "Pluto",
-    "cover": null
+    "cover": "assets/portadas/73958354.webp"
   },
   {
     "language": "espanol",
@@ -115,7 +115,7 @@ window.LIBROS = [
     "level": "Primeros pasos",
     "age": "Infantil",
     "titleEs": "Colorea animales. ¡Aprendemos inglés!",
-    "cover": null
+    "cover": "assets/portadas/73855106.webp"
   },
   {
     "language": "ingles",
@@ -127,6 +127,6 @@ window.LIBROS = [
     "level": "Primeros pasos",
     "age": "Infantil",
     "titleEs": "Inglés para niños",
-    "cover": null
+    "cover": "assets/portadas/73828907.webp"
   }
 ];
