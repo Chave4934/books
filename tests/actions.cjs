@@ -7,7 +7,7 @@ const base=process.env.TEST_BASE_URL||'http://127.0.0.1:8000';
   const page=await browser.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(base);
   const topics=await page.evaluate(()=>Object.fromEntries(Object.entries(window.CURRICULUM).map(([id,ts])=>[id,ts.find(t=>t.id==='rutina')])));
   for(const [id,topic]of Object.entries(topics)){
-   assert.equal(topic.title,'Acciones habituales');assert.equal(topic.items.length,12);assert.equal(new Set(Object.values(topic.variants).flat().map(i=>i.key)).size,12);
+   assert.equal(topic.title,{espanol:'Acciones habituales',ingles:'Everyday actions',ruso:'Повседневные действия'}[id]);assert.equal(topic.items.length,12);assert.equal(new Set(Object.values(topic.variants).flat().map(i=>i.key)).size,12);
    assert.deepEqual(topic.formats,['identify','actionstory','memory','order','crossword']);
    for(let mode=1;mode<=5;mode++){
     await page.goto(`${base}/#/${id}/actividades/rutina/${mode}`);await page.waitForFunction(mode=>document.querySelector('.exercise-steps [aria-current]')?.textContent.trim().startsWith(String(mode)),mode);
@@ -17,10 +17,10 @@ const base=process.env.TEST_BASE_URL||'http://127.0.0.1:8000';
     if(mode===2){
      assert.equal(await page.locator('.action-story-gap input').count(),6);assert.equal(await page.locator('.action-story-gap img').count(),6);
      for(let i=0;i<6;i++)await page.locator(`[name="q${i}"]`).fill(i===0?'incorrecto':topic.variants['2'][i].answer);
-     await page.getByRole('button',{name:'Comprobar respuestas'}).click();assert.match(await page.locator('#result').textContent(),/5 de 6/);assert.equal(await page.locator('.solution:visible').count(),0);
-     await page.getByRole('button',{name:'Ver solución',exact:true}).click();assert.match(await page.locator('.solution:visible').textContent(),new RegExp(topic.variants['2'][0].answer));
-     await page.locator('[name="q0"]').fill(topic.variants['2'][0].answer);await page.getByRole('button',{name:'Comprobar respuestas'}).click();assert.match(await page.locator('#result').textContent(),/6 de 6/);await page.locator('#book-recommendation .related-book').waitFor();
-     await page.getByRole('button',{name:'Volver a empezar',exact:true}).click();assert.equal(await page.locator('[name="q0"]').inputValue(),'');
+     await page.locator('#exercise button[type="submit"]').click();assert.match(await page.locator('#result').textContent(),/5 de 6|5 of 6|5 из 6/);assert.equal(await page.locator('.solution:visible').count(),0);
+     await page.locator('.feedback .reveal-solution').click();assert.match(await page.locator('.solution:visible').textContent(),new RegExp(topic.variants['2'][0].answer));
+     await page.locator('[name="q0"]').fill(topic.variants['2'][0].answer);await page.locator('#exercise button[type="submit"]').click();assert.match(await page.locator('#result').textContent(),/6 de 6|6 of 6|6 из 6/);await page.locator('#book-recommendation .related-book').waitFor();
+     await page.locator('#exercise button[type="reset"]').click();assert.equal(await page.locator('[name="q0"]').inputValue(),'');
     }
    }
   }

@@ -1,4 +1,4 @@
-// Frases independientes por actividad y formatos propios de cada tema.
+// Ejemplos propios por actividad; textos en el idioma de estudio.
 window.CURRICULUM = {
   "espanol": [
     {
@@ -11,177 +11,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Yo ___ matemáticas en casa.",
+            "prompt": "Cada semana, yo ___ español en la biblioteca.",
             "answer": "estudio",
-            "wrong": "estudias",
-            "hint": "estudiar"
+            "hint": "estudiar",
+            "wrong": "estudiaba"
           },
           {
-            "prompt": "Mi vecina ___ médica.",
-            "answer": "es",
-            "wrong": "son",
-            "hint": "ser"
+            "prompt": "Cada semana, ella ___ una manzana en el patio.",
+            "answer": "come",
+            "hint": "comer",
+            "wrong": "comió"
           },
           {
-            "prompt": "Nosotros ___ las noticias en el tren.",
-            "answer": "leemos",
-            "wrong": "leen",
-            "hint": "leer"
+            "prompt": "Cada semana, nosotros ___ cerca de la playa.",
+            "answer": "vivimos",
+            "hint": "vivir",
+            "wrong": "vivíamos"
           },
           {
-            "prompt": "Yo ___ dos hermanos.",
-            "answer": "tengo",
-            "wrong": "tienes",
-            "hint": "tener"
+            "prompt": "Cada semana, tú ___ tiempo para jugar.",
+            "answer": "tienes",
+            "hint": "tener",
+            "wrong": "tuviste"
           },
           {
-            "prompt": "Yo ___ al mercado los sábados.",
-            "answer": "voy",
-            "wrong": "va",
-            "hint": "ir"
+            "prompt": "Cada semana, ellos ___ al museo de ciencias.",
+            "answer": "van",
+            "hint": "ir",
+            "wrong": "iban"
           }
         ],
         "2": [
           {
-            "prompt": "Yo ___ italiano con una amiga.",
-            "answer": "estudio",
-            "wrong": "estudias",
-            "hint": "estudiar"
+            "prompt": "Cada semana, yo ___ agua durante el almuerzo.",
+            "answer": "bebo",
+            "hint": "beber",
+            "wrong": "bebía",
+            "asset": "acciones/beber",
+            "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "La biblioteca ___ pequeña.",
-            "answer": "es",
-            "wrong": "son",
-            "hint": "ser"
-          },
-          {
-            "prompt": "Nosotros ___ poemas en voz alta.",
-            "answer": "leemos",
-            "wrong": "leen",
-            "hint": "leer"
-          },
-          {
-            "prompt": "Yo ___ una pregunta.",
-            "answer": "tengo",
-            "wrong": "tienes",
-            "hint": "tener"
-          },
-          {
-            "prompt": "Yo ___ al gimnasio los lunes.",
-            "answer": "voy",
-            "wrong": "va",
-            "hint": "ir"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "Yo ___ historia en la universidad.",
-            "answer": "estudio",
-            "wrong": "estudias",
-            "hint": "estudiar",
-            "orders": [
-              "En la universidad yo estudio historia."
-            ]
-          },
-          {
-            "prompt": "La sopa ___ deliciosa.",
-            "answer": "es",
-            "wrong": "son",
-            "hint": "ser",
-            "orders": [
-              "Deliciosa es la sopa."
-            ]
-          },
-          {
-            "prompt": "Nosotros ___ las instrucciones del juego.",
-            "answer": "leemos",
-            "wrong": "leen",
+            "prompt": "Cada semana, tú ___ un cuento de aventuras.",
+            "answer": "lees",
             "hint": "leer",
-            "orders": [
-              "Las instrucciones del juego nosotros leemos."
-            ]
+            "wrong": "leíste",
+            "asset": "acciones/leer",
+            "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "Yo ___ una bicicleta roja.",
-            "answer": "tengo",
-            "wrong": "tienes",
-            "hint": "tener",
-            "orders": [
-              "Una bicicleta roja tengo yo."
-            ]
+            "prompt": "Cada semana, ella ___ una carta para su abuela.",
+            "answer": "escribe",
+            "hint": "escribir",
+            "wrong": "escribía",
+            "asset": "acciones/escribir",
+            "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "Yo ___ al cine con mis primos.",
-            "answer": "voy",
-            "wrong": "va",
-            "hint": "ir",
-            "orders": [
-              "Con mis primos yo voy al cine."
-            ]
-          }
-        ],
-        "5": [
-          {
-            "prompt": "Yo ___ biología los martes.",
-            "answer": "estudio",
-            "wrong": "estudias",
-            "hint": "estudiar"
+            "prompt": "Cada semana, nosotros ___ flores con lápices de colores.",
+            "answer": "dibujamos",
+            "hint": "dibujar",
+            "wrong": "ha dibujar",
+            "asset": "acciones/dibujar",
+            "clue": "Una escena que representa la acción de dibujar."
           },
           {
-            "prompt": "Mi hermano ___ alto.",
-            "answer": "es",
-            "wrong": "son",
-            "hint": "ser"
-          },
-          {
-            "prompt": "Nosotros ___ revistas de viajes.",
-            "answer": "leemos",
-            "wrong": "leen",
-            "hint": "leer"
-          },
-          {
-            "prompt": "Yo ___ hambre después de nadar.",
-            "answer": "tengo",
-            "wrong": "tienes",
-            "hint": "tener"
-          },
-          {
-            "prompt": "Yo ___ a la piscina en verano.",
-            "answer": "voy",
-            "wrong": "va",
-            "hint": "ir"
+            "prompt": "Cada semana, ellos ___ ocho horas en su habitación.",
+            "answer": "duermen",
+            "hint": "dormir",
+            "wrong": "dormían",
+            "asset": "acciones/dormir",
+            "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Yo ___ español por la mañana.",
-            "answer": "estudio",
-            "wrong": "estudias",
-            "hint": "estudiar"
+            "prompt": "Cada semana, yo ___ una merienda para mis amigos.",
+            "answer": "preparo",
+            "hint": "preparar",
+            "wrong": "preparaba"
           },
           {
-            "prompt": "Mi profesora ___ muy simpática.",
-            "answer": "es",
-            "wrong": "son",
-            "hint": "ser"
+            "prompt": "Después, tú ___ los platos en la mesa.",
+            "answer": "pones",
+            "hint": "poner",
+            "wrong": "pusiste"
           },
           {
-            "prompt": "Nosotros ___ un cuento en clase.",
-            "answer": "leemos",
-            "wrong": "leen",
-            "hint": "leer"
+            "prompt": "Luego, ana ___ pan de la tienda.",
+            "answer": "trae",
+            "hint": "traer",
+            "wrong": "traía"
           },
           {
-            "prompt": "Después, yo ___ tiempo libre.",
-            "answer": "tengo",
-            "wrong": "tienes",
-            "hint": "tener"
+            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "answer": "hacemos",
+            "hint": "hacer",
+            "wrong": "hicimos"
           },
           {
-            "prompt": "Por la tarde, yo ___ a casa.",
-            "answer": "voy",
-            "wrong": "va",
-            "hint": "ir"
+            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "answer": "recogen",
+            "hint": "recoger",
+            "wrong": "recogían"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Cada semana, yo ___ por el parque con mi perro.",
+            "answer": "corro",
+            "hint": "correr",
+            "wrong": "corría"
+          },
+          {
+            "prompt": "Cada semana, tú ___ hasta la escuela con tu hermana.",
+            "answer": "caminas",
+            "hint": "caminar",
+            "wrong": "caminaste"
+          },
+          {
+            "prompt": "Cada semana, ella ___ la ventana de su habitación.",
+            "answer": "abre",
+            "hint": "abrir",
+            "wrong": "abría"
+          },
+          {
+            "prompt": "Cada semana, nosotros ___ con una pelota en el jardín.",
+            "answer": "jugamos",
+            "hint": "jugar",
+            "wrong": "ha jugar"
+          },
+          {
+            "prompt": "Cada semana, ellos ___ música con auriculares.",
+            "answer": "escuchan",
+            "hint": "escuchar",
+            "wrong": "escuchaban"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Cada semana, yo ___ mi mochila antes de salir.",
+            "answer": "busco",
+            "hint": "buscar",
+            "wrong": "buscaba"
+          },
+          {
+            "prompt": "Cada semana, tú ___ un cuaderno en la papelería.",
+            "answer": "compras",
+            "hint": "comprar",
+            "wrong": "compraste"
+          },
+          {
+            "prompt": "Cada semana, ella ___ a mi casa para estudiar.",
+            "answer": "viene",
+            "hint": "venir",
+            "wrong": "venía"
+          },
+          {
+            "prompt": "Cada semana, nosotros ___ una película sobre animales.",
+            "answer": "vemos",
+            "hint": "ver",
+            "wrong": "vimos"
+          },
+          {
+            "prompt": "Cada semana, ellos ___ la puerta al salir.",
+            "answer": "cierran",
+            "hint": "cerrar",
+            "wrong": "cerraban"
           }
         ]
       },
@@ -191,7 +186,40 @@ window.CURRICULUM = {
         "text",
         "order",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Cada semana, yo ___ español en la biblioteca.",
+          "answer": "estudio",
+          "hint": "estudiar",
+          "wrong": "estudiaba"
+        },
+        {
+          "prompt": "Cada semana, ella ___ una manzana en el patio.",
+          "answer": "come",
+          "hint": "comer",
+          "wrong": "comió"
+        },
+        {
+          "prompt": "Cada semana, nosotros ___ cerca de la playa.",
+          "answer": "vivimos",
+          "hint": "vivir",
+          "wrong": "vivíamos"
+        },
+        {
+          "prompt": "Cada semana, tú ___ tiempo para jugar.",
+          "answer": "tienes",
+          "hint": "tener",
+          "wrong": "tuviste"
+        },
+        {
+          "prompt": "Cada semana, ellos ___ al museo de ciencias.",
+          "answer": "van",
+          "hint": "ir",
+          "wrong": "iban"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "indefinido",
@@ -203,162 +231,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "El domingo pasado yo ___ a mi tío.",
-            "answer": "visité",
-            "wrong": "visito",
-            "hint": "visitar"
+            "prompt": "Ayer, yo ___ español en la biblioteca.",
+            "answer": "estudié",
+            "hint": "estudiar",
+            "wrong": "estudio"
           },
           {
-            "prompt": "Mi hermana ___ una ensalada ayer.",
-            "answer": "preparó",
-            "wrong": "prepara",
-            "hint": "preparar"
+            "prompt": "Ayer, ella ___ una manzana en el patio.",
+            "answer": "comió",
+            "hint": "comer",
+            "wrong": "come"
           },
           {
-            "prompt": "Anoche nosotros ___ en un restaurante.",
-            "answer": "comimos",
-            "wrong": "comemos",
-            "hint": "comer"
+            "prompt": "Ayer, nosotros ___ cerca de la playa.",
+            "answer": "vivimos",
+            "hint": "vivir",
+            "wrong": "ha vivir"
           },
           {
-            "prompt": "El guía nos ___ el castillo el lunes pasado.",
-            "answer": "mostró",
-            "wrong": "muestra",
-            "hint": "mostrar"
+            "prompt": "Ayer, tú ___ tiempo para jugar.",
+            "answer": "tuviste",
+            "hint": "tener",
+            "wrong": "tienes"
           },
           {
-            "prompt": "El viernes yo ___ del viaje.",
-            "answer": "volví",
-            "wrong": "vuelvo",
-            "hint": "volver"
+            "prompt": "Ayer, ellos ___ al museo de ciencias.",
+            "answer": "fueron",
+            "hint": "ir",
+            "wrong": "van"
           }
         ],
         "2": [
           {
-            "prompt": "Hace dos días yo ___ un museo.",
-            "answer": "visité",
-            "wrong": "visito",
-            "hint": "visitar"
+            "prompt": "Ayer, yo ___ agua durante el almuerzo.",
+            "answer": "bebí",
+            "hint": "beber",
+            "wrong": "bebo",
+            "asset": "acciones/beber",
+            "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "Ayer mi madre ___ el desayuno.",
-            "answer": "preparó",
-            "wrong": "prepara",
-            "hint": "preparar"
+            "prompt": "Ayer, tú ___ un cuento de aventuras.",
+            "answer": "leíste",
+            "hint": "leer",
+            "wrong": "lees",
+            "asset": "acciones/leer",
+            "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "El sábado nosotros ___ pescado.",
-            "answer": "comimos",
-            "wrong": "comemos",
-            "hint": "comer"
+            "prompt": "Ayer, ella ___ una carta para su abuela.",
+            "answer": "escribió",
+            "hint": "escribir",
+            "wrong": "escribe",
+            "asset": "acciones/escribir",
+            "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "Ayer el profesor ___ un mapa.",
-            "answer": "mostró",
-            "wrong": "muestra",
-            "hint": "mostrar"
+            "prompt": "Ayer, nosotros ___ flores con lápices de colores.",
+            "answer": "dibujamos",
+            "hint": "dibujar",
+            "wrong": "ha dibujar",
+            "asset": "acciones/dibujar",
+            "clue": "Una escena que representa la acción de dibujar."
           },
           {
-            "prompt": "Anoche yo ___ del teatro.",
-            "answer": "volví",
-            "wrong": "vuelvo",
-            "hint": "volver"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "El mes pasado yo ___ Valencia.",
-            "answer": "visité",
-            "wrong": "visito",
-            "hint": "visitar"
-          },
-          {
-            "prompt": "Ayer ella ___ un pastel.",
-            "answer": "preparó",
-            "wrong": "prepara",
-            "hint": "preparar"
-          },
-          {
-            "prompt": "El jueves nosotros ___ con unos amigos.",
-            "answer": "comimos",
-            "wrong": "comemos",
-            "hint": "comer"
-          },
-          {
-            "prompt": "El lunes Ana ___ su dibujo a la clase.",
-            "answer": "mostró",
-            "wrong": "muestra",
-            "hint": "mostrar"
-          },
-          {
-            "prompt": "Ayer yo ___ de la biblioteca.",
-            "answer": "volví",
-            "wrong": "vuelvo",
-            "hint": "volver"
-          }
-        ],
-        "5": [
-          {
-            "prompt": "El año pasado yo ___ Roma.",
-            "answer": "visité",
-            "wrong": "visito",
-            "hint": "visitar"
-          },
-          {
-            "prompt": "Anoche mi padre ___ la cena.",
-            "answer": "preparó",
-            "wrong": "prepara",
-            "hint": "preparar"
-          },
-          {
-            "prompt": "El martes nosotros ___ arroz.",
-            "answer": "comimos",
-            "wrong": "comemos",
-            "hint": "comer"
-          },
-          {
-            "prompt": "Ayer la artista ___ sus cuadros.",
-            "answer": "mostró",
-            "wrong": "muestra",
-            "hint": "mostrar"
-          },
-          {
-            "prompt": "El domingo yo ___ de la playa.",
-            "answer": "volví",
-            "wrong": "vuelvo",
-            "hint": "volver"
+            "prompt": "Ayer, ellos ___ ocho horas en su habitación.",
+            "answer": "durmieron",
+            "hint": "dormir",
+            "wrong": "duermen",
+            "asset": "acciones/dormir",
+            "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Ayer yo ___ a mi abuela.",
-            "answer": "visité",
-            "wrong": "visito",
-            "hint": "visitar"
+            "prompt": "Ayer, yo ___ una merienda para mis amigos.",
+            "answer": "preparé",
+            "hint": "preparar",
+            "wrong": "preparo"
           },
           {
-            "prompt": "Ella ___ una sopa para los dos.",
-            "answer": "preparó",
-            "wrong": "prepara",
-            "hint": "preparar"
+            "prompt": "Después, tú ___ los platos en la mesa.",
+            "answer": "pusiste",
+            "hint": "poner",
+            "wrong": "pones"
           },
           {
-            "prompt": "Nosotros ___ juntos a las dos.",
-            "answer": "comimos",
-            "wrong": "comemos",
-            "hint": "comer"
+            "prompt": "Luego, ana ___ pan de la tienda.",
+            "answer": "trajo",
+            "hint": "traer",
+            "wrong": "trae"
           },
           {
-            "prompt": "Después, mi abuela ___ fotos antiguas.",
-            "answer": "mostró",
-            "wrong": "muestra",
-            "hint": "mostrar"
+            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "answer": "hicimos",
+            "hint": "hacer",
+            "wrong": "hacemos"
           },
           {
-            "prompt": "Por la noche, yo ___ a casa.",
-            "answer": "volví",
-            "wrong": "vuelvo",
-            "hint": "volver"
+            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "answer": "recogieron",
+            "hint": "recoger",
+            "wrong": "recogen"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Ayer, yo ___ por el parque con mi perro.",
+            "answer": "corrí",
+            "hint": "correr",
+            "wrong": "corro"
+          },
+          {
+            "prompt": "Ayer, tú ___ hasta la escuela con tu hermana.",
+            "answer": "caminaste",
+            "hint": "caminar",
+            "wrong": "caminas"
+          },
+          {
+            "prompt": "Ayer, ella ___ la ventana de su habitación.",
+            "answer": "abrió",
+            "hint": "abrir",
+            "wrong": "abre"
+          },
+          {
+            "prompt": "Ayer, nosotros ___ con una pelota en el jardín.",
+            "answer": "jugamos",
+            "hint": "jugar",
+            "wrong": "ha jugar"
+          },
+          {
+            "prompt": "Ayer, ellos ___ música con auriculares.",
+            "answer": "escucharon",
+            "hint": "escuchar",
+            "wrong": "escuchan"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Ayer, yo ___ mi mochila antes de salir.",
+            "answer": "busqué",
+            "hint": "buscar",
+            "wrong": "busco"
+          },
+          {
+            "prompt": "Ayer, tú ___ un cuaderno en la papelería.",
+            "answer": "compraste",
+            "hint": "comprar",
+            "wrong": "compras"
+          },
+          {
+            "prompt": "Ayer, ella ___ a mi casa para estudiar.",
+            "answer": "vino",
+            "hint": "venir",
+            "wrong": "viene"
+          },
+          {
+            "prompt": "Ayer, nosotros ___ una película sobre animales.",
+            "answer": "vimos",
+            "hint": "ver",
+            "wrong": "vemos"
+          },
+          {
+            "prompt": "Ayer, ellos ___ la puerta al salir.",
+            "answer": "cerraron",
+            "hint": "cerrar",
+            "wrong": "cierran"
           }
         ]
       },
@@ -368,7 +406,40 @@ window.CURRICULUM = {
         "text",
         "letters",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Ayer, yo ___ español en la biblioteca.",
+          "answer": "estudié",
+          "hint": "estudiar",
+          "wrong": "estudio"
+        },
+        {
+          "prompt": "Ayer, ella ___ una manzana en el patio.",
+          "answer": "comió",
+          "hint": "comer",
+          "wrong": "come"
+        },
+        {
+          "prompt": "Ayer, nosotros ___ cerca de la playa.",
+          "answer": "vivimos",
+          "hint": "vivir",
+          "wrong": "ha vivir"
+        },
+        {
+          "prompt": "Ayer, tú ___ tiempo para jugar.",
+          "answer": "tuviste",
+          "hint": "tener",
+          "wrong": "tienes"
+        },
+        {
+          "prompt": "Ayer, ellos ___ al museo de ciencias.",
+          "answer": "fueron",
+          "hint": "ir",
+          "wrong": "van"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "perfecto",
@@ -380,177 +451,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Hoy yo ___ dos horas.",
+            "prompt": "Esta semana, yo ___ español en la biblioteca.",
             "answer": "he estudiado",
-            "wrong": "ha estudiado",
-            "hint": "estudiar"
+            "hint": "estudiar",
+            "wrong": "estudio"
           },
           {
-            "prompt": "Esta mañana ella ___ yoga.",
-            "answer": "ha practicado",
-            "wrong": "he practicado",
-            "hint": "practicar"
+            "prompt": "Esta semana, ella ___ una manzana en el patio.",
+            "answer": "ha comido",
+            "hint": "comer",
+            "wrong": "come"
           },
           {
-            "prompt": "Esta semana nosotros ___ tres revistas.",
-            "answer": "hemos leído",
-            "wrong": "han leído",
-            "hint": "leer"
+            "prompt": "Esta semana, nosotros ___ cerca de la playa.",
+            "answer": "hemos vivido",
+            "hint": "vivir",
+            "wrong": "vivimos"
           },
           {
-            "prompt": "Hoy yo ___ una canción nueva.",
-            "answer": "he aprendido",
-            "wrong": "has aprendido",
-            "hint": "aprender"
+            "prompt": "Esta semana, tú ___ tiempo para jugar.",
+            "answer": "has tenido",
+            "hint": "tener",
+            "wrong": "tienes"
           },
           {
-            "prompt": "Esta mañana ellos ___ al médico.",
+            "prompt": "Esta semana, ellos ___ al museo de ciencias.",
             "answer": "han ido",
-            "wrong": "hemos ido",
-            "hint": "ir"
+            "hint": "ir",
+            "wrong": "van"
           }
         ],
         "2": [
           {
-            "prompt": "Esta semana yo ___ para el examen.",
-            "answer": "he estudiado",
-            "wrong": "ha estudiado",
-            "hint": "estudiar"
+            "prompt": "Esta semana, yo ___ agua durante el almuerzo.",
+            "answer": "he bebido",
+            "hint": "beber",
+            "wrong": "bebo",
+            "asset": "acciones/beber",
+            "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "Hoy mi hermana ___ piano.",
-            "answer": "ha practicado",
-            "wrong": "he practicado",
-            "hint": "practicar"
-          },
-          {
-            "prompt": "Esta mañana nosotros ___ el periódico.",
-            "answer": "hemos leído",
-            "wrong": "han leído",
-            "hint": "leer"
-          },
-          {
-            "prompt": "Esta semana yo ___ a cocinar arroz.",
-            "answer": "he aprendido",
-            "wrong": "has aprendido",
-            "hint": "aprender"
-          },
-          {
-            "prompt": "Hoy mis primos ___ al parque.",
-            "answer": "han ido",
-            "wrong": "hemos ido",
-            "hint": "ir"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "Esta tarde yo ___ en casa.",
-            "answer": "he estudiado",
-            "wrong": "ha estudiado",
-            "hint": "estudiar",
-            "orders": [
-              "En casa esta tarde yo he estudiado."
-            ]
-          },
-          {
-            "prompt": "Hoy la bailarina ___ una hora.",
-            "answer": "ha practicado",
-            "wrong": "he practicado",
-            "hint": "practicar",
-            "orders": [
-              "Una hora hoy la bailarina ha practicado."
-            ]
-          },
-          {
-            "prompt": "Esta semana nosotros ___ una novela.",
-            "answer": "hemos leído",
-            "wrong": "han leído",
+            "prompt": "Esta semana, tú ___ un cuento de aventuras.",
+            "answer": "has leído",
             "hint": "leer",
-            "orders": [
-              "Una novela hemos leído nosotros esta semana."
-            ]
+            "wrong": "lees",
+            "asset": "acciones/leer",
+            "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "Hoy yo ___ una palabra difícil.",
-            "answer": "he aprendido",
-            "wrong": "has aprendido",
-            "hint": "aprender",
-            "orders": [
-              "Una palabra difícil he aprendido yo hoy."
-            ]
+            "prompt": "Esta semana, ella ___ una carta para su abuela.",
+            "answer": "ha escrito",
+            "hint": "escribir",
+            "wrong": "escribe",
+            "asset": "acciones/escribir",
+            "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "Esta mañana mis padres ___ al mercado.",
-            "answer": "han ido",
-            "wrong": "hemos ido",
-            "hint": "ir",
-            "orders": [
-              "Al mercado mis padres han ido esta mañana."
-            ]
-          }
-        ],
-        "5": [
-          {
-            "prompt": "Esta semana yo ___ química.",
-            "answer": "he estudiado",
-            "wrong": "ha estudiado",
-            "hint": "estudiar"
+            "prompt": "Esta semana, nosotros ___ flores con lápices de colores.",
+            "answer": "hemos dibujado",
+            "hint": "dibujar",
+            "wrong": "dibujamos",
+            "asset": "acciones/dibujar",
+            "clue": "Una escena que representa la acción de dibujar."
           },
           {
-            "prompt": "Hoy Ana ___ su pronunciación.",
-            "answer": "ha practicado",
-            "wrong": "he practicado",
-            "hint": "practicar"
-          },
-          {
-            "prompt": "Hoy nosotros ___ tus mensajes.",
-            "answer": "hemos leído",
-            "wrong": "han leído",
-            "hint": "leer"
-          },
-          {
-            "prompt": "Esta semana yo ___ a nadar.",
-            "answer": "he aprendido",
-            "wrong": "has aprendido",
-            "hint": "aprender"
-          },
-          {
-            "prompt": "Esta tarde los niños ___ a clase.",
-            "answer": "han ido",
-            "wrong": "hemos ido",
-            "hint": "ir"
+            "prompt": "Esta semana, ellos ___ ocho horas en su habitación.",
+            "answer": "han dormido",
+            "hint": "dormir",
+            "wrong": "duermen",
+            "asset": "acciones/dormir",
+            "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Esta semana yo ___ mucho.",
-            "answer": "he estudiado",
-            "wrong": "ha estudiado",
-            "hint": "estudiar"
+            "prompt": "Esta semana, yo ___ una merienda para mis amigos.",
+            "answer": "he preparado",
+            "hint": "preparar",
+            "wrong": "preparo"
           },
           {
-            "prompt": "Mi amiga ___ conmigo.",
-            "answer": "ha practicado",
-            "wrong": "he practicado",
-            "hint": "practicar"
+            "prompt": "Después, tú ___ los platos en la mesa.",
+            "answer": "has puesto",
+            "hint": "poner",
+            "wrong": "pones"
           },
           {
-            "prompt": "Hoy nosotros ___ un cuento.",
-            "answer": "hemos leído",
-            "wrong": "han leído",
-            "hint": "leer"
+            "prompt": "Luego, ana ___ pan de la tienda.",
+            "answer": "ha traído",
+            "hint": "traer",
+            "wrong": "trae"
           },
           {
-            "prompt": "También yo ___ cinco palabras nuevas.",
-            "answer": "he aprendido",
-            "wrong": "has aprendido",
-            "hint": "aprender"
+            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "answer": "hemos hecho",
+            "hint": "hacer",
+            "wrong": "hacemos"
           },
           {
-            "prompt": "Esta tarde mis amigos ___ a la biblioteca.",
-            "answer": "han ido",
-            "wrong": "hemos ido",
-            "hint": "ir"
+            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "answer": "han recogido",
+            "hint": "recoger",
+            "wrong": "recogen"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Esta semana, yo ___ por el parque con mi perro.",
+            "answer": "he corrido",
+            "hint": "correr",
+            "wrong": "corro"
+          },
+          {
+            "prompt": "Esta semana, tú ___ hasta la escuela con tu hermana.",
+            "answer": "has caminado",
+            "hint": "caminar",
+            "wrong": "caminas"
+          },
+          {
+            "prompt": "Esta semana, ella ___ la ventana de su habitación.",
+            "answer": "ha abierto",
+            "hint": "abrir",
+            "wrong": "abre"
+          },
+          {
+            "prompt": "Esta semana, nosotros ___ con una pelota en el jardín.",
+            "answer": "hemos jugado",
+            "hint": "jugar",
+            "wrong": "jugamos"
+          },
+          {
+            "prompt": "Esta semana, ellos ___ música con auriculares.",
+            "answer": "han escuchado",
+            "hint": "escuchar",
+            "wrong": "escuchan"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Esta semana, yo ___ mi mochila antes de salir.",
+            "answer": "he buscado",
+            "hint": "buscar",
+            "wrong": "busco"
+          },
+          {
+            "prompt": "Esta semana, tú ___ un cuaderno en la papelería.",
+            "answer": "has comprado",
+            "hint": "comprar",
+            "wrong": "compras"
+          },
+          {
+            "prompt": "Esta semana, ella ___ a mi casa para estudiar.",
+            "answer": "ha venido",
+            "hint": "venir",
+            "wrong": "viene"
+          },
+          {
+            "prompt": "Esta semana, nosotros ___ una película sobre animales.",
+            "answer": "hemos visto",
+            "hint": "ver",
+            "wrong": "vemos"
+          },
+          {
+            "prompt": "Esta semana, ellos ___ la puerta al salir.",
+            "answer": "han cerrado",
+            "hint": "cerrar",
+            "wrong": "cierran"
           }
         ]
       },
@@ -560,7 +626,40 @@ window.CURRICULUM = {
         "text",
         "order",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Esta semana, yo ___ español en la biblioteca.",
+          "answer": "he estudiado",
+          "hint": "estudiar",
+          "wrong": "estudio"
+        },
+        {
+          "prompt": "Esta semana, ella ___ una manzana en el patio.",
+          "answer": "ha comido",
+          "hint": "comer",
+          "wrong": "come"
+        },
+        {
+          "prompt": "Esta semana, nosotros ___ cerca de la playa.",
+          "answer": "hemos vivido",
+          "hint": "vivir",
+          "wrong": "vivimos"
+        },
+        {
+          "prompt": "Esta semana, tú ___ tiempo para jugar.",
+          "answer": "has tenido",
+          "hint": "tener",
+          "wrong": "tienes"
+        },
+        {
+          "prompt": "Esta semana, ellos ___ al museo de ciencias.",
+          "answer": "han ido",
+          "hint": "ir",
+          "wrong": "van"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "imperfecto",
@@ -572,162 +671,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Antes yo ___ en un pueblo.",
-            "answer": "vivía",
-            "wrong": "vivías",
-            "hint": "vivir"
+            "prompt": "Antes, yo ___ español en la biblioteca.",
+            "answer": "estudiaba",
+            "hint": "estudiar",
+            "wrong": "estudio"
           },
           {
-            "prompt": "De niños, nosotros ___ a la escuela andando.",
-            "answer": "íbamos",
-            "wrong": "iban",
-            "hint": "ir"
+            "prompt": "Antes, ella ___ una manzana en el patio.",
+            "answer": "comía",
+            "hint": "comer",
+            "wrong": "come"
           },
           {
-            "prompt": "Cada verano mi tío ___ helados.",
-            "answer": "hacía",
-            "wrong": "hacían",
-            "hint": "hacer"
+            "prompt": "Antes, nosotros ___ cerca de la playa.",
+            "answer": "vivíamos",
+            "hint": "vivir",
+            "wrong": "vivimos"
           },
           {
-            "prompt": "De pequeños, ellos ___ muchos cuentos.",
-            "answer": "leían",
-            "wrong": "leíamos",
-            "hint": "leer"
+            "prompt": "Antes, tú ___ tiempo para jugar.",
+            "answer": "tenías",
+            "hint": "tener",
+            "wrong": "tienes"
           },
           {
-            "prompt": "De niña yo ___ al tenis.",
-            "answer": "jugaba",
-            "wrong": "jugabas",
-            "hint": "jugar"
+            "prompt": "Antes, ellos ___ al museo de ciencias.",
+            "answer": "iban",
+            "hint": "ir",
+            "wrong": "van"
           }
         ],
         "2": [
           {
-            "prompt": "Cuando era estudiante, yo ___ con una amiga.",
-            "answer": "vivía",
-            "wrong": "vivías",
-            "hint": "vivir"
+            "prompt": "Antes, yo ___ agua durante el almuerzo.",
+            "answer": "bebía",
+            "hint": "beber",
+            "wrong": "bebo",
+            "asset": "acciones/beber",
+            "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "Antes nosotros ___ al cine los viernes.",
-            "answer": "íbamos",
-            "wrong": "iban",
-            "hint": "ir"
+            "prompt": "Antes, tú ___ un cuento de aventuras.",
+            "answer": "leías",
+            "hint": "leer",
+            "wrong": "lees",
+            "asset": "acciones/leer",
+            "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "Mi abuelo ___ pan cada mañana.",
-            "answer": "hacía",
-            "wrong": "hacían",
-            "hint": "hacer"
+            "prompt": "Antes, ella ___ una carta para su abuela.",
+            "answer": "escribía",
+            "hint": "escribir",
+            "wrong": "escribe",
+            "asset": "acciones/escribir",
+            "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "De niños, mis hermanos ___ cómics.",
-            "answer": "leían",
-            "wrong": "leíamos",
-            "hint": "leer"
+            "prompt": "Antes, nosotros ___ flores con lápices de colores.",
+            "answer": "dibujábamos",
+            "hint": "dibujar",
+            "wrong": "dibujamos",
+            "asset": "acciones/dibujar",
+            "clue": "Una escena que representa la acción de dibujar."
           },
           {
-            "prompt": "Cada tarde yo ___ en el patio.",
-            "answer": "jugaba",
-            "wrong": "jugabas",
-            "hint": "jugar"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "Hace años yo ___ en Sevilla.",
-            "answer": "vivía",
-            "wrong": "vivías",
-            "hint": "vivir"
-          },
-          {
-            "prompt": "Durante las vacaciones nosotros ___ al río.",
-            "answer": "íbamos",
-            "wrong": "iban",
-            "hint": "ir"
-          },
-          {
-            "prompt": "Antes mi padre ___ la compra los lunes.",
-            "answer": "hacía",
-            "wrong": "hacían",
-            "hint": "hacer"
-          },
-          {
-            "prompt": "En aquella época ellos ___ el periódico.",
-            "answer": "leían",
-            "wrong": "leíamos",
-            "hint": "leer"
-          },
-          {
-            "prompt": "De pequeño yo ___ con bloques.",
-            "answer": "jugaba",
-            "wrong": "jugabas",
-            "hint": "jugar"
-          }
-        ],
-        "5": [
-          {
-            "prompt": "Antes yo ___ cerca de la escuela.",
-            "answer": "vivía",
-            "wrong": "vivías",
-            "hint": "vivir"
-          },
-          {
-            "prompt": "De jóvenes nosotros ___ a conciertos.",
-            "answer": "íbamos",
-            "wrong": "iban",
-            "hint": "ir"
-          },
-          {
-            "prompt": "Mi vecino ___ ejercicio cada día.",
-            "answer": "hacía",
-            "wrong": "hacían",
-            "hint": "hacer"
-          },
-          {
-            "prompt": "Durante el curso mis amigos ___ en el autobús.",
-            "answer": "leían",
-            "wrong": "leíamos",
-            "hint": "leer"
-          },
-          {
-            "prompt": "Cuando tenía ocho años, yo ___ al fútbol.",
-            "answer": "jugaba",
-            "wrong": "jugabas",
-            "hint": "jugar"
+            "prompt": "Antes, ellos ___ ocho horas en su habitación.",
+            "answer": "dormían",
+            "hint": "dormir",
+            "wrong": "duermen",
+            "asset": "acciones/dormir",
+            "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Cuando era pequeña, yo ___ cerca del mar.",
-            "answer": "vivía",
-            "wrong": "vivías",
-            "hint": "vivir"
+            "prompt": "Antes, yo ___ una merienda para mis amigos.",
+            "answer": "preparaba",
+            "hint": "preparar",
+            "wrong": "preparo"
           },
           {
-            "prompt": "Mi familia y yo ___ a la playa cada domingo.",
-            "answer": "íbamos",
-            "wrong": "iban",
-            "hint": "ir"
+            "prompt": "Después, tú ___ los platos en la mesa.",
+            "answer": "ponías",
+            "hint": "poner",
+            "wrong": "pones"
           },
           {
-            "prompt": "Mi hermano ___ castillos de arena.",
-            "answer": "hacía",
-            "wrong": "hacían",
-            "hint": "hacer"
+            "prompt": "Luego, ana ___ pan de la tienda.",
+            "answer": "traía",
+            "hint": "traer",
+            "wrong": "trae"
           },
           {
-            "prompt": "Mis padres ___ bajo una sombrilla.",
-            "answer": "leían",
-            "wrong": "leíamos",
-            "hint": "leer"
+            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "answer": "hacíamos",
+            "hint": "hacer",
+            "wrong": "hacemos"
           },
           {
-            "prompt": "Yo siempre ___ con mis primos.",
-            "answer": "jugaba",
-            "wrong": "jugabas",
-            "hint": "jugar"
+            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "answer": "recogían",
+            "hint": "recoger",
+            "wrong": "recogen"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Antes, yo ___ por el parque con mi perro.",
+            "answer": "corría",
+            "hint": "correr",
+            "wrong": "corro"
+          },
+          {
+            "prompt": "Antes, tú ___ hasta la escuela con tu hermana.",
+            "answer": "caminabas",
+            "hint": "caminar",
+            "wrong": "caminas"
+          },
+          {
+            "prompt": "Antes, ella ___ la ventana de su habitación.",
+            "answer": "abría",
+            "hint": "abrir",
+            "wrong": "abre"
+          },
+          {
+            "prompt": "Antes, nosotros ___ con una pelota en el jardín.",
+            "answer": "jugábamos",
+            "hint": "jugar",
+            "wrong": "jugamos"
+          },
+          {
+            "prompt": "Antes, ellos ___ música con auriculares.",
+            "answer": "escuchaban",
+            "hint": "escuchar",
+            "wrong": "escuchan"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Antes, yo ___ mi mochila antes de salir.",
+            "answer": "buscaba",
+            "hint": "buscar",
+            "wrong": "busco"
+          },
+          {
+            "prompt": "Antes, tú ___ un cuaderno en la papelería.",
+            "answer": "comprabas",
+            "hint": "comprar",
+            "wrong": "compras"
+          },
+          {
+            "prompt": "Antes, ella ___ a mi casa para estudiar.",
+            "answer": "venía",
+            "hint": "venir",
+            "wrong": "viene"
+          },
+          {
+            "prompt": "Antes, nosotros ___ una película sobre animales.",
+            "answer": "veíamos",
+            "hint": "ver",
+            "wrong": "vemos"
+          },
+          {
+            "prompt": "Antes, ellos ___ la puerta al salir.",
+            "answer": "cerraban",
+            "hint": "cerrar",
+            "wrong": "cierran"
           }
         ]
       },
@@ -737,7 +846,40 @@ window.CURRICULUM = {
         "text",
         "letters",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Antes, yo ___ español en la biblioteca.",
+          "answer": "estudiaba",
+          "hint": "estudiar",
+          "wrong": "estudio"
+        },
+        {
+          "prompt": "Antes, ella ___ una manzana en el patio.",
+          "answer": "comía",
+          "hint": "comer",
+          "wrong": "come"
+        },
+        {
+          "prompt": "Antes, nosotros ___ cerca de la playa.",
+          "answer": "vivíamos",
+          "hint": "vivir",
+          "wrong": "vivimos"
+        },
+        {
+          "prompt": "Antes, tú ___ tiempo para jugar.",
+          "answer": "tenías",
+          "hint": "tener",
+          "wrong": "tienes"
+        },
+        {
+          "prompt": "Antes, ellos ___ al museo de ciencias.",
+          "answer": "iban",
+          "hint": "ir",
+          "wrong": "van"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "futuro",
@@ -749,177 +891,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "El mes que viene yo ___ a México.",
-            "answer": "viajaré",
-            "wrong": "viajará",
-            "hint": "viajar"
+            "prompt": "Mañana, yo ___ español en la biblioteca.",
+            "answer": "estudiaré",
+            "hint": "estudiar",
+            "wrong": "estudio"
           },
           {
-            "prompt": "Mi prima ___ el próximo lunes.",
-            "answer": "vendrá",
-            "wrong": "vendré",
-            "hint": "venir"
+            "prompt": "Mañana, ella ___ una manzana en el patio.",
+            "answer": "comerá",
+            "hint": "comer",
+            "wrong": "come"
           },
           {
-            "prompt": "Mañana nosotros ___ a las nueve.",
-            "answer": "saldremos",
-            "wrong": "saldrán",
-            "hint": "salir"
+            "prompt": "Mañana, nosotros ___ cerca de la playa.",
+            "answer": "viviremos",
+            "hint": "vivir",
+            "wrong": "vivimos"
           },
           {
-            "prompt": "El viernes ella ___ a su abuela.",
-            "answer": "visitará",
-            "wrong": "visitarás",
-            "hint": "visitar"
+            "prompt": "Mañana, tú ___ tiempo para jugar.",
+            "answer": "tendrás",
+            "hint": "tener",
+            "wrong": "tienes"
           },
           {
-            "prompt": "El domingo nosotros ___ del campo.",
-            "answer": "volveremos",
-            "wrong": "volverán",
-            "hint": "volver"
+            "prompt": "Mañana, ellos ___ al museo de ciencias.",
+            "answer": "irán",
+            "hint": "ir",
+            "wrong": "van"
           }
         ],
         "2": [
           {
-            "prompt": "El próximo verano yo ___ a Chile.",
-            "answer": "viajaré",
-            "wrong": "viajará",
-            "hint": "viajar"
+            "prompt": "Mañana, yo ___ agua durante el almuerzo.",
+            "answer": "beberé",
+            "hint": "beber",
+            "wrong": "bebo",
+            "asset": "acciones/beber",
+            "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "Mi amigo ___ a cenar mañana.",
-            "answer": "vendrá",
-            "wrong": "vendré",
-            "hint": "venir"
+            "prompt": "Mañana, tú ___ un cuento de aventuras.",
+            "answer": "leerás",
+            "hint": "leer",
+            "wrong": "lees",
+            "asset": "acciones/leer",
+            "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "El sábado nosotros ___ antes del amanecer.",
-            "answer": "saldremos",
-            "wrong": "saldrán",
-            "hint": "salir"
+            "prompt": "Mañana, ella ___ una carta para su abuela.",
+            "answer": "escribirá",
+            "hint": "escribir",
+            "wrong": "escribe",
+            "asset": "acciones/escribir",
+            "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "La próxima semana Ana ___ Toledo.",
-            "answer": "visitará",
-            "wrong": "visitarás",
-            "hint": "visitar"
+            "prompt": "Mañana, nosotros ___ flores con lápices de colores.",
+            "answer": "dibujaremos",
+            "hint": "dibujar",
+            "wrong": "dibujamos",
+            "asset": "acciones/dibujar",
+            "clue": "Una escena que representa la acción de dibujar."
           },
           {
-            "prompt": "Mañana nosotros ___ a la oficina.",
-            "answer": "volveremos",
-            "wrong": "volverán",
-            "hint": "volver"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "En diciembre yo ___ a Perú.",
-            "answer": "viajaré",
-            "wrong": "viajará",
-            "hint": "viajar",
-            "orders": [
-              "Yo viajaré a Perú en diciembre."
-            ]
-          },
-          {
-            "prompt": "Mi hermano ___ esta tarde.",
-            "answer": "vendrá",
-            "wrong": "vendré",
-            "hint": "venir",
-            "orders": [
-              "Esta tarde vendrá mi hermano."
-            ]
-          },
-          {
-            "prompt": "El lunes nosotros ___ en tren.",
-            "answer": "saldremos",
-            "wrong": "saldrán",
-            "hint": "salir",
-            "orders": [
-              "Nosotros saldremos en tren el lunes."
-            ]
-          },
-          {
-            "prompt": "Mañana mi madre ___ el acuario.",
-            "answer": "visitará",
-            "wrong": "visitarás",
-            "hint": "visitar",
-            "orders": [
-              "Mi madre visitará el acuario mañana."
-            ]
-          },
-          {
-            "prompt": "El martes nosotros ___ a clase.",
-            "answer": "volveremos",
-            "wrong": "volverán",
-            "hint": "volver",
-            "orders": [
-              "Nosotros volveremos a clase el martes."
-            ]
-          }
-        ],
-        "5": [
-          {
-            "prompt": "La próxima semana yo ___ a Cuba.",
-            "answer": "viajaré",
-            "wrong": "viajará",
-            "hint": "viajar"
-          },
-          {
-            "prompt": "El médico ___ mañana.",
-            "answer": "vendrá",
-            "wrong": "vendré",
-            "hint": "venir"
-          },
-          {
-            "prompt": "Esta noche nosotros ___ a pasear.",
-            "answer": "saldremos",
-            "wrong": "saldrán",
-            "hint": "salir"
-          },
-          {
-            "prompt": "El sábado ella ___ una exposición.",
-            "answer": "visitará",
-            "wrong": "visitarás",
-            "hint": "visitar"
-          },
-          {
-            "prompt": "El próximo mes nosotros ___ a Madrid.",
-            "answer": "volveremos",
-            "wrong": "volverán",
-            "hint": "volver"
+            "prompt": "Mañana, ellos ___ ocho horas en su habitación.",
+            "answer": "dormirán",
+            "hint": "dormir",
+            "wrong": "duermen",
+            "asset": "acciones/dormir",
+            "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Mañana yo ___ a una ciudad nueva.",
-            "answer": "viajaré",
-            "wrong": "viajará",
-            "hint": "viajar"
+            "prompt": "Mañana, yo ___ una merienda para mis amigos.",
+            "answer": "prepararé",
+            "hint": "preparar",
+            "wrong": "preparo"
           },
           {
-            "prompt": "Mi hermana ___ conmigo.",
+            "prompt": "Después, tú ___ los platos en la mesa.",
+            "answer": "pondrás",
+            "hint": "poner",
+            "wrong": "pones"
+          },
+          {
+            "prompt": "Luego, ana ___ pan de la tienda.",
+            "answer": "traerá",
+            "hint": "traer",
+            "wrong": "trae"
+          },
+          {
+            "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
+            "answer": "haremos",
+            "hint": "hacer",
+            "wrong": "hacemos"
+          },
+          {
+            "prompt": "Al final, los niños ___ los vasos después de comer.",
+            "answer": "recogerán",
+            "hint": "recoger",
+            "wrong": "recogen"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Mañana, yo ___ por el parque con mi perro.",
+            "answer": "correré",
+            "hint": "correr",
+            "wrong": "corro"
+          },
+          {
+            "prompt": "Mañana, tú ___ hasta la escuela con tu hermana.",
+            "answer": "caminarás",
+            "hint": "caminar",
+            "wrong": "caminas"
+          },
+          {
+            "prompt": "Mañana, ella ___ la ventana de su habitación.",
+            "answer": "abrirá",
+            "hint": "abrir",
+            "wrong": "abre"
+          },
+          {
+            "prompt": "Mañana, nosotros ___ con una pelota en el jardín.",
+            "answer": "jugaremos",
+            "hint": "jugar",
+            "wrong": "jugamos"
+          },
+          {
+            "prompt": "Mañana, ellos ___ música con auriculares.",
+            "answer": "escucharán",
+            "hint": "escuchar",
+            "wrong": "escuchan"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Mañana, yo ___ mi mochila antes de salir.",
+            "answer": "buscaré",
+            "hint": "buscar",
+            "wrong": "busco"
+          },
+          {
+            "prompt": "Mañana, tú ___ un cuaderno en la papelería.",
+            "answer": "comprarás",
+            "hint": "comprar",
+            "wrong": "compras"
+          },
+          {
+            "prompt": "Mañana, ella ___ a mi casa para estudiar.",
             "answer": "vendrá",
-            "wrong": "vendré",
-            "hint": "venir"
+            "hint": "venir",
+            "wrong": "viene"
           },
           {
-            "prompt": "Nosotros ___ temprano.",
-            "answer": "saldremos",
-            "wrong": "saldrán",
-            "hint": "salir"
+            "prompt": "Mañana, nosotros ___ una película sobre animales.",
+            "answer": "veremos",
+            "hint": "ver",
+            "wrong": "vemos"
           },
           {
-            "prompt": "Ella ___ un museo por la tarde.",
-            "answer": "visitará",
-            "wrong": "visitarás",
-            "hint": "visitar"
-          },
-          {
-            "prompt": "Por la noche, nosotros ___ a casa.",
-            "answer": "volveremos",
-            "wrong": "volverán",
-            "hint": "volver"
+            "prompt": "Mañana, ellos ___ la puerta al salir.",
+            "answer": "cerrarán",
+            "hint": "cerrar",
+            "wrong": "cierran"
           }
         ]
       },
@@ -929,7 +1066,40 @@ window.CURRICULUM = {
         "text",
         "order",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Mañana, yo ___ español en la biblioteca.",
+          "answer": "estudiaré",
+          "hint": "estudiar",
+          "wrong": "estudio"
+        },
+        {
+          "prompt": "Mañana, ella ___ una manzana en el patio.",
+          "answer": "comerá",
+          "hint": "comer",
+          "wrong": "come"
+        },
+        {
+          "prompt": "Mañana, nosotros ___ cerca de la playa.",
+          "answer": "viviremos",
+          "hint": "vivir",
+          "wrong": "vivimos"
+        },
+        {
+          "prompt": "Mañana, tú ___ tiempo para jugar.",
+          "answer": "tendrás",
+          "hint": "tener",
+          "wrong": "tienes"
+        },
+        {
+          "prompt": "Mañana, ellos ___ al museo de ciencias.",
+          "answer": "irán",
+          "hint": "ir",
+          "wrong": "van"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "animales",
@@ -1863,8 +2033,17 @@ window.CURRICULUM = {
               "rojo verde",
               "verde rojo"
             ],
-            "prompt": "En este dibujo, la sandía es ___: fíjate en la pulpa y la corteza. Escribe esos dos colores.",
-            "clue": "Una rodaja de sandía: pulpa roja y corteza verde."
+            "prompt": "La pulpa y la corteza de la sandía:",
+            "clue": "Una rodaja de sandía: pulpa roja y corteza verde.",
+            "parts": [
+              [
+                "roja",
+                "rojo"
+              ],
+              [
+                "verde"
+              ]
+            ]
           },
           {
             "key": "objeto-1",
@@ -3822,7 +4001,7 @@ window.CURRICULUM = {
             "answer": "mango",
             "aliases": [],
             "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
+            "crosswordClue": "Fruta tropical dulce con un hueso grande y plano.",
             "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
             "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
             "prompt": ""
@@ -3868,7 +4047,7 @@ window.CURRICULUM = {
             "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
             "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
             "prompt": "",
-            "orderLabel": "Para el desayuno"
+            "orderLabel": "Para la merienda, necesito mango ."
           },
           {
             "key": "melocoton",
@@ -3882,7 +4061,7 @@ window.CURRICULUM = {
             "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
             "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
             "prompt": "",
-            "orderLabel": "Para compartir"
+            "orderLabel": "En mi cesta quiero melocotón ."
           },
           {
             "key": "naranja",
@@ -3894,7 +4073,7 @@ window.CURRICULUM = {
             "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
             "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
             "prompt": "",
-            "orderLabel": "Para el zumo"
+            "orderLabel": "Para el zumo, elijo naranja ."
           },
           {
             "key": "sandia",
@@ -3906,7 +4085,7 @@ window.CURRICULUM = {
             "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
             "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
             "prompt": "Rodaja roja con semillas negras y corteza verde: ___.",
-            "orderLabel": "Para la merienda"
+            "orderLabel": "Para compartir, llevo sandía ."
           },
           {
             "key": "platanos",
@@ -3928,7 +4107,7 @@ window.CURRICULUM = {
             "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
             "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
             "prompt": "",
-            "orderLabel": "Para llevar"
+            "orderLabel": "Para desayunar, compro plátanos ."
           },
           {
             "key": "manzana",
@@ -3940,7 +4119,7 @@ window.CURRICULUM = {
             "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
             "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
             "prompt": "",
-            "orderLabel": "Para el postre"
+            "orderLabel": "Para la tarta, busco manzana ."
           }
         ],
         "5": [
@@ -4037,162 +4216,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "I ___ French on Mondays.",
+            "prompt": "Every week, I ___ Spanish at the library.",
             "answer": "study",
-            "wrong": "studies",
-            "hint": "study"
+            "hint": "study",
+            "wrong": "studies"
           },
           {
-            "prompt": "My brother ___ an apple after lunch.",
+            "prompt": "Every week, she ___ an apple in the garden.",
             "answer": "eats",
-            "wrong": "eat",
-            "hint": "eat"
+            "hint": "eat",
+            "wrong": "eat"
           },
           {
-            "prompt": "We ___ to the library on Fridays.",
-            "answer": "walk",
-            "wrong": "walks",
-            "hint": "walk"
+            "prompt": "Every week, we ___ near the beach.",
+            "answer": "live",
+            "hint": "live",
+            "wrong": "lives"
           },
           {
-            "prompt": "My aunt ___ maths at a small school.",
-            "answer": "teaches",
-            "wrong": "teach",
-            "hint": "teach"
+            "prompt": "Every week, you ___ a picnic in the park.",
+            "answer": "have",
+            "hint": "have",
+            "wrong": "has"
           },
           {
-            "prompt": "My cousin ___ tennis every weekend.",
-            "answer": "plays",
-            "wrong": "play",
-            "hint": "play"
+            "prompt": "Every week, they ___ to the science museum.",
+            "answer": "go",
+            "hint": "go",
+            "wrong": "goes"
           }
         ],
         "2": [
           {
-            "prompt": "I ___ history at university.",
-            "answer": "study",
-            "wrong": "studies",
-            "hint": "study"
+            "prompt": "Every week, I ___ water with my lunch.",
+            "answer": "drink",
+            "hint": "drink",
+            "wrong": "drinks",
+            "asset": "acciones/beber",
+            "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "My grandmother ___ soup for dinner.",
-            "answer": "eats",
-            "wrong": "eat",
-            "hint": "eat"
+            "prompt": "Every week, you ___ an adventure story.",
+            "answer": "read",
+            "hint": "read",
+            "wrong": "reads",
+            "asset": "acciones/leer",
+            "clue": "A child performing the action: read."
           },
           {
-            "prompt": "We ___ in the park every morning.",
-            "answer": "walk",
-            "wrong": "walks",
-            "hint": "walk"
+            "prompt": "Every week, she ___ a letter to her grandmother.",
+            "answer": "writes",
+            "hint": "write",
+            "wrong": "write",
+            "asset": "acciones/escribir",
+            "clue": "A child performing the action: write."
           },
           {
-            "prompt": "Our neighbour ___ music.",
-            "answer": "teaches",
-            "wrong": "teach",
-            "hint": "teach"
+            "prompt": "Every week, we ___ flowers with coloured pencils.",
+            "answer": "draw",
+            "hint": "draw",
+            "wrong": "draws",
+            "asset": "acciones/dibujar",
+            "clue": "A child performing the action: draw."
           },
           {
-            "prompt": "My friend ___ the guitar after school.",
-            "answer": "plays",
-            "wrong": "play",
-            "hint": "play"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "I ___ science with a friend.",
-            "answer": "study",
-            "wrong": "studies",
-            "hint": "study"
-          },
-          {
-            "prompt": "My cat ___ fish every day.",
-            "answer": "eats",
-            "wrong": "eat",
-            "hint": "eat"
-          },
-          {
-            "prompt": "We ___ home after work.",
-            "answer": "walk",
-            "wrong": "walks",
-            "hint": "walk"
-          },
-          {
-            "prompt": "Mr Green ___ art.",
-            "answer": "teaches",
-            "wrong": "teach",
-            "hint": "teach"
-          },
-          {
-            "prompt": "My sister ___ chess on Tuesdays.",
-            "answer": "plays",
-            "wrong": "play",
-            "hint": "play"
-          }
-        ],
-        "5": [
-          {
-            "prompt": "I ___ Russian in the evenings.",
-            "answer": "study",
-            "wrong": "studies",
-            "hint": "study"
-          },
-          {
-            "prompt": "My father ___ toast for breakfast.",
-            "answer": "eats",
-            "wrong": "eat",
-            "hint": "eat"
-          },
-          {
-            "prompt": "We ___ by the river on Sundays.",
-            "answer": "walk",
-            "wrong": "walks",
-            "hint": "walk"
-          },
-          {
-            "prompt": "My mother ___ English online.",
-            "answer": "teaches",
-            "wrong": "teach",
-            "hint": "teach"
-          },
-          {
-            "prompt": "My brother ___ basketball on Saturdays.",
-            "answer": "plays",
-            "wrong": "play",
-            "hint": "play"
+            "prompt": "Every week, they ___ in their own beds.",
+            "answer": "sleep",
+            "hint": "sleep",
+            "wrong": "sleeps",
+            "asset": "acciones/dormir",
+            "clue": "A child performing the action: sleep."
           }
         ],
         "3": [
           {
-            "prompt": "I ___ English every morning.",
-            "answer": "study",
-            "wrong": "studies",
-            "hint": "study"
+            "prompt": "Every week, I ___ a snack for my friends.",
+            "answer": "prepare",
+            "hint": "prepare",
+            "wrong": "prepares"
           },
           {
-            "prompt": "My sister ___ breakfast at eight.",
-            "answer": "eats",
-            "wrong": "eat",
-            "hint": "eat"
+            "prompt": "Then, you ___ the plates on the table.",
+            "answer": "put",
+            "hint": "put",
+            "wrong": "puts"
           },
           {
-            "prompt": "We ___ to school together.",
+            "prompt": "After that, Anna ___ bread from the shop.",
+            "answer": "brings",
+            "hint": "bring",
+            "wrong": "bring"
+          },
+          {
+            "prompt": "Next, we ___ a fruit salad.",
+            "answer": "make",
+            "hint": "make",
+            "wrong": "makes"
+          },
+          {
+            "prompt": "Finally, the children ___ the cups after lunch.",
+            "answer": "collect",
+            "hint": "collect",
+            "wrong": "collects"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Every week, I ___ through the park with my dog.",
+            "answer": "run",
+            "hint": "run",
+            "wrong": "runs"
+          },
+          {
+            "prompt": "Every week, you ___ to school with your sister.",
             "answer": "walk",
-            "wrong": "walks",
-            "hint": "walk"
+            "hint": "walk",
+            "wrong": "walks"
           },
           {
-            "prompt": "Our teacher ___ us new words.",
-            "answer": "teaches",
-            "wrong": "teach",
-            "hint": "teach"
+            "prompt": "Every week, she ___ her bedroom window.",
+            "answer": "opens",
+            "hint": "open",
+            "wrong": "open"
           },
           {
-            "prompt": "After school, he ___ football.",
-            "answer": "plays",
-            "wrong": "play",
-            "hint": "play"
+            "prompt": "Every week, we ___ with a ball in the garden.",
+            "answer": "play",
+            "hint": "play",
+            "wrong": "plays"
+          },
+          {
+            "prompt": "Every week, they ___ to music with headphones.",
+            "answer": "listen",
+            "hint": "listen",
+            "wrong": "listens"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Every week, I ___ for my bag before leaving.",
+            "answer": "look",
+            "hint": "look",
+            "wrong": "looks"
+          },
+          {
+            "prompt": "Every week, you ___ a notebook at the bookshop.",
+            "answer": "buy",
+            "hint": "buy",
+            "wrong": "buys"
+          },
+          {
+            "prompt": "Every week, she ___ to my house to study.",
+            "answer": "comes",
+            "hint": "come",
+            "wrong": "come"
+          },
+          {
+            "prompt": "Every week, we ___ a film about animals.",
+            "answer": "watch",
+            "hint": "watch",
+            "wrong": "watches"
+          },
+          {
+            "prompt": "Every week, they ___ the door before leaving.",
+            "answer": "close",
+            "hint": "close",
+            "wrong": "closes"
           }
         ]
       },
@@ -4202,7 +4391,40 @@ window.CURRICULUM = {
         "text",
         "order",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Every week, I ___ Spanish at the library.",
+          "answer": "study",
+          "hint": "study",
+          "wrong": "studies"
+        },
+        {
+          "prompt": "Every week, she ___ an apple in the garden.",
+          "answer": "eats",
+          "hint": "eat",
+          "wrong": "eat"
+        },
+        {
+          "prompt": "Every week, we ___ near the beach.",
+          "answer": "live",
+          "hint": "live",
+          "wrong": "lives"
+        },
+        {
+          "prompt": "Every week, you ___ a picnic in the park.",
+          "answer": "have",
+          "hint": "have",
+          "wrong": "has"
+        },
+        {
+          "prompt": "Every week, they ___ to the science museum.",
+          "answer": "go",
+          "hint": "go",
+          "wrong": "goes"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "present-continuous",
@@ -4214,162 +4436,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "I ___ to the station right now.",
-            "answer": "am walking",
-            "wrong": "is walking",
-            "hint": "walk"
+            "prompt": "Right now, I ___ Spanish at the library.",
+            "answer": "am studying",
+            "hint": "study",
+            "wrong": "are studying"
           },
           {
-            "prompt": "My dog ___ across the garden now.",
-            "answer": "is running",
-            "wrong": "are running",
-            "hint": "run"
+            "prompt": "Right now, she ___ an apple in the garden.",
+            "answer": "is eating",
+            "hint": "eat",
+            "wrong": "are eating"
           },
           {
-            "prompt": "The children ___ tennis at the moment.",
-            "answer": "are playing",
-            "wrong": "is playing",
-            "hint": "play"
+            "prompt": "Right now, we ___ near the beach.",
+            "answer": "are living",
+            "hint": "live",
+            "wrong": "is living"
           },
           {
-            "prompt": "My mother ___ a letter right now.",
-            "answer": "is reading",
-            "wrong": "am reading",
-            "hint": "read"
+            "prompt": "Right now, you ___ a picnic in the park.",
+            "answer": "are having",
+            "hint": "have",
+            "wrong": "is having"
           },
           {
-            "prompt": "We ___ our holiday today.",
-            "answer": "are enjoying",
-            "wrong": "is enjoying",
-            "hint": "enjoy"
+            "prompt": "Right now, they ___ to the science museum.",
+            "answer": "are going",
+            "hint": "go",
+            "wrong": "is going"
           }
         ],
         "2": [
           {
-            "prompt": "I ___ beside the river now.",
-            "answer": "am walking",
-            "wrong": "is walking",
-            "hint": "walk"
+            "prompt": "Right now, I ___ water with my lunch.",
+            "answer": "am drinking",
+            "hint": "drink",
+            "wrong": "are drinking",
+            "asset": "acciones/beber",
+            "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "My sister ___ in a race today.",
-            "answer": "is running",
-            "wrong": "are running",
-            "hint": "run"
+            "prompt": "Right now, you ___ an adventure story.",
+            "answer": "are reading",
+            "hint": "read",
+            "wrong": "is reading",
+            "asset": "acciones/leer",
+            "clue": "A child performing the action: read."
           },
           {
-            "prompt": "Two friends ___ chess right now.",
-            "answer": "are playing",
-            "wrong": "is playing",
-            "hint": "play"
+            "prompt": "Right now, she ___ a letter to her grandmother.",
+            "answer": "is writing",
+            "hint": "write",
+            "wrong": "are writing",
+            "asset": "acciones/escribir",
+            "clue": "A child performing the action: write."
           },
           {
-            "prompt": "My father ___ the newspaper at the moment.",
-            "answer": "is reading",
-            "wrong": "am reading",
-            "hint": "read"
+            "prompt": "Right now, we ___ flowers with coloured pencils.",
+            "answer": "are drawing",
+            "hint": "draw",
+            "wrong": "is drawing",
+            "asset": "acciones/dibujar",
+            "clue": "A child performing the action: draw."
           },
           {
-            "prompt": "We ___ the concert now.",
-            "answer": "are enjoying",
-            "wrong": "is enjoying",
-            "hint": "enjoy"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "I ___ to the shop at the moment.",
-            "answer": "am walking",
-            "wrong": "is walking",
-            "hint": "walk"
-          },
-          {
-            "prompt": "A horse ___ across the field now.",
-            "answer": "is running",
-            "wrong": "are running",
-            "hint": "run"
-          },
-          {
-            "prompt": "The girls ___ a board game right now.",
-            "answer": "are playing",
-            "wrong": "is playing",
-            "hint": "play"
-          },
-          {
-            "prompt": "My friend ___ a comic now.",
-            "answer": "is reading",
-            "wrong": "am reading",
-            "hint": "read"
-          },
-          {
-            "prompt": "We ___ this sunny afternoon.",
-            "answer": "are enjoying",
-            "wrong": "is enjoying",
-            "hint": "enjoy"
-          }
-        ],
-        "5": [
-          {
-            "prompt": "I ___ home now.",
-            "answer": "am walking",
-            "wrong": "is walking",
-            "hint": "walk"
-          },
-          {
-            "prompt": "My cousin ___ to catch the bus right now.",
-            "answer": "is running",
-            "wrong": "are running",
-            "hint": "run"
-          },
-          {
-            "prompt": "The boys ___ basketball now.",
-            "answer": "are playing",
-            "wrong": "is playing",
-            "hint": "play"
-          },
-          {
-            "prompt": "My aunt ___ a recipe at the moment.",
-            "answer": "is reading",
-            "wrong": "am reading",
-            "hint": "read"
-          },
-          {
-            "prompt": "We ___ the school trip today.",
-            "answer": "are enjoying",
-            "wrong": "is enjoying",
-            "hint": "enjoy"
+            "prompt": "Right now, they ___ in their own beds.",
+            "answer": "are sleeping",
+            "hint": "sleep",
+            "wrong": "is sleeping",
+            "asset": "acciones/dormir",
+            "clue": "A child performing the action: sleep."
           }
         ],
         "3": [
           {
-            "prompt": "I ___ at the park now.",
-            "answer": "am walking",
-            "wrong": "is walking",
-            "hint": "walk"
+            "prompt": "Right now, I ___ a snack for my friends.",
+            "answer": "am preparing",
+            "hint": "prepare",
+            "wrong": "are preparing"
           },
           {
-            "prompt": "My brother ___ next to me.",
-            "answer": "is running",
-            "wrong": "are running",
-            "hint": "run"
+            "prompt": "Then, you ___ the plates on the table.",
+            "answer": "are putting",
+            "hint": "put",
+            "wrong": "is putting"
           },
           {
-            "prompt": "Two children ___ with a ball.",
+            "prompt": "After that, Anna ___ bread from the shop.",
+            "answer": "is bringing",
+            "hint": "bring",
+            "wrong": "are bringing"
+          },
+          {
+            "prompt": "Next, we ___ a fruit salad.",
+            "answer": "are making",
+            "hint": "make",
+            "wrong": "is making"
+          },
+          {
+            "prompt": "Finally, the children ___ the cups after lunch.",
+            "answer": "are collecting",
+            "hint": "collect",
+            "wrong": "is collecting"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Right now, I ___ through the park with my dog.",
+            "answer": "am running",
+            "hint": "run",
+            "wrong": "are running"
+          },
+          {
+            "prompt": "Right now, you ___ to school with your sister.",
+            "answer": "are walking",
+            "hint": "walk",
+            "wrong": "is walking"
+          },
+          {
+            "prompt": "Right now, she ___ her bedroom window.",
+            "answer": "is opening",
+            "hint": "open",
+            "wrong": "are opening"
+          },
+          {
+            "prompt": "Right now, we ___ with a ball in the garden.",
             "answer": "are playing",
-            "wrong": "is playing",
-            "hint": "play"
+            "hint": "play",
+            "wrong": "is playing"
           },
           {
-            "prompt": "A woman ___ a book.",
-            "answer": "is reading",
-            "wrong": "am reading",
-            "hint": "read"
+            "prompt": "Right now, they ___ to music with headphones.",
+            "answer": "are listening",
+            "hint": "listen",
+            "wrong": "is listening"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Right now, I ___ for my bag before leaving.",
+            "answer": "am looking",
+            "hint": "look",
+            "wrong": "are looking"
           },
           {
-            "prompt": "We ___ the sunshine.",
-            "answer": "are enjoying",
-            "wrong": "is enjoying",
-            "hint": "enjoy"
+            "prompt": "Right now, you ___ a notebook at the bookshop.",
+            "answer": "are buying",
+            "hint": "buy",
+            "wrong": "is buying"
+          },
+          {
+            "prompt": "Right now, she ___ to my house to study.",
+            "answer": "is coming",
+            "hint": "come",
+            "wrong": "are coming"
+          },
+          {
+            "prompt": "Right now, we ___ a film about animals.",
+            "answer": "are watching",
+            "hint": "watch",
+            "wrong": "is watching"
+          },
+          {
+            "prompt": "Right now, they ___ the door before leaving.",
+            "answer": "are closing",
+            "hint": "close",
+            "wrong": "is closing"
           }
         ]
       },
@@ -4379,7 +4611,40 @@ window.CURRICULUM = {
         "text",
         "letters",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Right now, I ___ Spanish at the library.",
+          "answer": "am studying",
+          "hint": "study",
+          "wrong": "are studying"
+        },
+        {
+          "prompt": "Right now, she ___ an apple in the garden.",
+          "answer": "is eating",
+          "hint": "eat",
+          "wrong": "are eating"
+        },
+        {
+          "prompt": "Right now, we ___ near the beach.",
+          "answer": "are living",
+          "hint": "live",
+          "wrong": "is living"
+        },
+        {
+          "prompt": "Right now, you ___ a picnic in the park.",
+          "answer": "are having",
+          "hint": "have",
+          "wrong": "is having"
+        },
+        {
+          "prompt": "Right now, they ___ to the science museum.",
+          "answer": "are going",
+          "hint": "go",
+          "wrong": "is going"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "past-simple",
@@ -4391,177 +4656,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Last Sunday I ___ my uncle.",
-            "answer": "visited",
-            "wrong": "visit",
-            "hint": "visit"
+            "prompt": "Yesterday, I ___ Spanish at the library.",
+            "answer": "studied",
+            "hint": "study",
+            "wrong": "study"
           },
           {
-            "prompt": "Yesterday she ___ a sandwich.",
-            "answer": "made",
-            "wrong": "makes",
-            "hint": "make"
+            "prompt": "Yesterday, she ___ an apple in the garden.",
+            "answer": "ate",
+            "hint": "eat",
+            "wrong": "eat"
           },
           {
-            "prompt": "We ___ a picnic last Saturday.",
+            "prompt": "Yesterday, we ___ near the beach.",
+            "answer": "lived",
+            "hint": "live",
+            "wrong": "live"
+          },
+          {
+            "prompt": "Yesterday, you ___ a picnic in the park.",
             "answer": "had",
-            "wrong": "have",
-            "hint": "have"
+            "hint": "have",
+            "wrong": "have"
           },
           {
-            "prompt": "They ___ to the museum yesterday.",
-            "answer": "walked",
-            "wrong": "walk",
-            "hint": "walk"
-          },
-          {
-            "prompt": "I ___ to the cinema last night.",
+            "prompt": "Yesterday, they ___ to the science museum.",
             "answer": "went",
-            "wrong": "go",
-            "hint": "go"
+            "hint": "go",
+            "wrong": "go"
           }
         ],
         "2": [
           {
-            "prompt": "Last month I ___ Paris.",
-            "answer": "visited",
-            "wrong": "visit",
-            "hint": "visit"
+            "prompt": "Yesterday, I ___ water with my lunch.",
+            "answer": "drank",
+            "hint": "drink",
+            "wrong": "drink",
+            "asset": "acciones/beber",
+            "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "She ___ a scarf last winter.",
-            "answer": "made",
-            "wrong": "makes",
-            "hint": "make"
+            "prompt": "Yesterday, you ___ an adventure story.",
+            "answer": "read",
+            "hint": "read",
+            "wrong": "readed",
+            "asset": "acciones/leer",
+            "clue": "A child performing the action: read."
           },
           {
-            "prompt": "We ___ breakfast at seven yesterday.",
-            "answer": "had",
-            "wrong": "have",
-            "hint": "have"
+            "prompt": "Yesterday, she ___ a letter to her grandmother.",
+            "answer": "wrote",
+            "hint": "write",
+            "wrong": "write",
+            "asset": "acciones/escribir",
+            "clue": "A child performing the action: write."
           },
           {
-            "prompt": "They ___ home after the party last night.",
-            "answer": "walked",
-            "wrong": "walk",
-            "hint": "walk"
+            "prompt": "Yesterday, we ___ flowers with coloured pencils.",
+            "answer": "drew",
+            "hint": "draw",
+            "wrong": "draw",
+            "asset": "acciones/dibujar",
+            "clue": "A child performing the action: draw."
           },
           {
-            "prompt": "I ___ to the beach on Sunday.",
-            "answer": "went",
-            "wrong": "go",
-            "hint": "go"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "Yesterday I ___ a friend.",
-            "answer": "visited",
-            "wrong": "visit",
-            "hint": "visit",
-            "orders": [
-              "I visited a friend yesterday."
-            ]
-          },
-          {
-            "prompt": "My sister ___ dinner last night.",
-            "answer": "made",
-            "wrong": "makes",
-            "hint": "make",
-            "orders": [
-              "Last night my sister made dinner."
-            ]
-          },
-          {
-            "prompt": "We ___ a test last Monday.",
-            "answer": "had",
-            "wrong": "have",
-            "hint": "have",
-            "orders": [
-              "Last Monday we had a test."
-            ]
-          },
-          {
-            "prompt": "My parents ___ in the hills yesterday.",
-            "answer": "walked",
-            "wrong": "walk",
-            "hint": "walk",
-            "orders": [
-              "Yesterday my parents walked in the hills."
-            ]
-          },
-          {
-            "prompt": "I ___ to bed early last night.",
-            "answer": "went",
-            "wrong": "go",
-            "hint": "go",
-            "orders": [
-              "Last night I went to bed early."
-            ]
-          }
-        ],
-        "5": [
-          {
-            "prompt": "Last year I ___ Rome.",
-            "answer": "visited",
-            "wrong": "visit",
-            "hint": "visit"
-          },
-          {
-            "prompt": "My mother ___ a dress last week.",
-            "answer": "made",
-            "wrong": "makes",
-            "hint": "make"
-          },
-          {
-            "prompt": "We ___ lunch at noon yesterday.",
-            "answer": "had",
-            "wrong": "have",
-            "hint": "have"
-          },
-          {
-            "prompt": "We ___ beside the lake on Saturday.",
-            "answer": "walked",
-            "wrong": "walk",
-            "hint": "walk"
-          },
-          {
-            "prompt": "I ___ to the market yesterday.",
-            "answer": "went",
-            "wrong": "go",
-            "hint": "go"
+            "prompt": "Yesterday, they ___ in their own beds.",
+            "answer": "slept",
+            "hint": "sleep",
+            "wrong": "sleep",
+            "asset": "acciones/dormir",
+            "clue": "A child performing the action: sleep."
           }
         ],
         "3": [
           {
-            "prompt": "Yesterday I ___ my grandmother.",
-            "answer": "visited",
-            "wrong": "visit",
-            "hint": "visit"
+            "prompt": "Yesterday, I ___ a snack for my friends.",
+            "answer": "prepared",
+            "hint": "prepare",
+            "wrong": "prepare"
           },
           {
-            "prompt": "She ___ a cake for us.",
+            "prompt": "Then, you ___ the plates on the table.",
+            "answer": "put",
+            "hint": "put",
+            "wrong": "puted"
+          },
+          {
+            "prompt": "After that, Anna ___ bread from the shop.",
+            "answer": "brought",
+            "hint": "bring",
+            "wrong": "bring"
+          },
+          {
+            "prompt": "Next, we ___ a fruit salad.",
             "answer": "made",
-            "wrong": "makes",
-            "hint": "make"
+            "hint": "make",
+            "wrong": "make"
           },
           {
-            "prompt": "We ___ lunch together.",
-            "answer": "had",
-            "wrong": "have",
-            "hint": "have"
+            "prompt": "Finally, the children ___ the cups after lunch.",
+            "answer": "collected",
+            "hint": "collect",
+            "wrong": "collect"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Yesterday, I ___ through the park with my dog.",
+            "answer": "ran",
+            "hint": "run",
+            "wrong": "run"
           },
           {
-            "prompt": "After lunch, we ___ in the garden.",
+            "prompt": "Yesterday, you ___ to school with your sister.",
             "answer": "walked",
-            "wrong": "walk",
-            "hint": "walk"
+            "hint": "walk",
+            "wrong": "walk"
           },
           {
-            "prompt": "I ___ home at six.",
-            "answer": "went",
-            "wrong": "go",
-            "hint": "go"
+            "prompt": "Yesterday, she ___ her bedroom window.",
+            "answer": "opened",
+            "hint": "open",
+            "wrong": "open"
+          },
+          {
+            "prompt": "Yesterday, we ___ with a ball in the garden.",
+            "answer": "played",
+            "hint": "play",
+            "wrong": "play"
+          },
+          {
+            "prompt": "Yesterday, they ___ to music with headphones.",
+            "answer": "listened",
+            "hint": "listen",
+            "wrong": "listen"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Yesterday, I ___ for my bag before leaving.",
+            "answer": "looked",
+            "hint": "look",
+            "wrong": "look"
+          },
+          {
+            "prompt": "Yesterday, you ___ a notebook at the bookshop.",
+            "answer": "bought",
+            "hint": "buy",
+            "wrong": "buy"
+          },
+          {
+            "prompt": "Yesterday, she ___ to my house to study.",
+            "answer": "came",
+            "hint": "come",
+            "wrong": "come"
+          },
+          {
+            "prompt": "Yesterday, we ___ a film about animals.",
+            "answer": "watched",
+            "hint": "watch",
+            "wrong": "watch"
+          },
+          {
+            "prompt": "Yesterday, they ___ the door before leaving.",
+            "answer": "closed",
+            "hint": "close",
+            "wrong": "close"
           }
         ]
       },
@@ -4571,7 +4831,40 @@ window.CURRICULUM = {
         "text",
         "order",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Yesterday, I ___ Spanish at the library.",
+          "answer": "studied",
+          "hint": "study",
+          "wrong": "study"
+        },
+        {
+          "prompt": "Yesterday, she ___ an apple in the garden.",
+          "answer": "ate",
+          "hint": "eat",
+          "wrong": "eat"
+        },
+        {
+          "prompt": "Yesterday, we ___ near the beach.",
+          "answer": "lived",
+          "hint": "live",
+          "wrong": "live"
+        },
+        {
+          "prompt": "Yesterday, you ___ a picnic in the park.",
+          "answer": "had",
+          "hint": "have",
+          "wrong": "have"
+        },
+        {
+          "prompt": "Yesterday, they ___ to the science museum.",
+          "answer": "went",
+          "hint": "go",
+          "wrong": "go"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "present-perfect",
@@ -4583,162 +4876,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "This month I ___ a new course.",
-            "answer": "have started",
-            "wrong": "has started",
-            "hint": "start"
+            "prompt": "This week, I ___ Spanish at the library.",
+            "answer": "have studied",
+            "hint": "study",
+            "wrong": "has studied"
           },
           {
-            "prompt": "My sister ___ with the cooking today.",
-            "answer": "has helped",
-            "wrong": "have helped",
-            "hint": "help"
+            "prompt": "This week, she ___ an apple in the garden.",
+            "answer": "has eaten",
+            "hint": "eat",
+            "wrong": "have eaten"
           },
           {
-            "prompt": "We ___ two books this month.",
-            "answer": "have read",
-            "wrong": "has read",
-            "hint": "read"
+            "prompt": "This week, we ___ near the beach.",
+            "answer": "have lived",
+            "hint": "live",
+            "wrong": "has lived"
           },
           {
-            "prompt": "Our neighbour ___ us some flowers.",
-            "answer": "has given",
-            "wrong": "have given",
-            "hint": "give"
+            "prompt": "This week, you ___ a picnic in the park.",
+            "answer": "have had",
+            "hint": "have",
+            "wrong": "has had"
           },
           {
-            "prompt": "I ___ three emails today.",
-            "answer": "have written",
-            "wrong": "has written",
-            "hint": "write"
+            "prompt": "This week, they ___ to the science museum.",
+            "answer": "have gone",
+            "hint": "go",
+            "wrong": "has gone"
           }
         ],
         "2": [
           {
-            "prompt": "I ___ learning Japanese this year.",
-            "answer": "have started",
-            "wrong": "has started",
-            "hint": "start"
+            "prompt": "This week, I ___ water with my lunch.",
+            "answer": "have drunk",
+            "hint": "drink",
+            "wrong": "has drunk",
+            "asset": "acciones/beber",
+            "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "My teacher ___ me with this exercise.",
-            "answer": "has helped",
-            "wrong": "have helped",
-            "hint": "help"
-          },
-          {
-            "prompt": "We ___ your instructions already.",
+            "prompt": "This week, you ___ an adventure story.",
             "answer": "have read",
+            "hint": "read",
             "wrong": "has read",
-            "hint": "read"
+            "asset": "acciones/leer",
+            "clue": "A child performing the action: read."
           },
           {
-            "prompt": "My uncle ___ me a bicycle.",
-            "answer": "has given",
-            "wrong": "have given",
-            "hint": "give"
+            "prompt": "This week, she ___ a letter to her grandmother.",
+            "answer": "has written",
+            "hint": "write",
+            "wrong": "have written",
+            "asset": "acciones/escribir",
+            "clue": "A child performing the action: write."
           },
           {
-            "prompt": "I ___ a poem this week.",
-            "answer": "have written",
-            "wrong": "has written",
-            "hint": "write"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "I ___ a new job this week.",
-            "answer": "have started",
-            "wrong": "has started",
-            "hint": "start"
+            "prompt": "This week, we ___ flowers with coloured pencils.",
+            "answer": "have drawn",
+            "hint": "draw",
+            "wrong": "has drawn",
+            "asset": "acciones/dibujar",
+            "clue": "A child performing the action: draw."
           },
           {
-            "prompt": "My friend ___ me move house today.",
-            "answer": "has helped",
-            "wrong": "have helped",
-            "hint": "help"
-          },
-          {
-            "prompt": "We ___ the first chapter so far.",
-            "answer": "have read",
-            "wrong": "has read",
-            "hint": "read"
-          },
-          {
-            "prompt": "My mother ___ me good advice.",
-            "answer": "has given",
-            "wrong": "have given",
-            "hint": "give"
-          },
-          {
-            "prompt": "I ___ a story today.",
-            "answer": "have written",
-            "wrong": "has written",
-            "hint": "write"
-          }
-        ],
-        "5": [
-          {
-            "prompt": "I ___ a garden project this month.",
-            "answer": "have started",
-            "wrong": "has started",
-            "hint": "start"
-          },
-          {
-            "prompt": "My brother ___ clean the kitchen today.",
-            "answer": "has helped",
-            "wrong": "have helped",
-            "hint": "help"
-          },
-          {
-            "prompt": "We ___ all your messages.",
-            "answer": "have read",
-            "wrong": "has read",
-            "hint": "read"
-          },
-          {
-            "prompt": "The guide ___ us a map.",
-            "answer": "has given",
-            "wrong": "have given",
-            "hint": "give"
-          },
-          {
-            "prompt": "I ___ a song this week.",
-            "answer": "have written",
-            "wrong": "has written",
-            "hint": "write"
+            "prompt": "This week, they ___ in their own beds.",
+            "answer": "have slept",
+            "hint": "sleep",
+            "wrong": "has slept",
+            "asset": "acciones/dormir",
+            "clue": "A child performing the action: sleep."
           }
         ],
         "3": [
           {
-            "prompt": "This week I ___ a new project.",
-            "answer": "have started",
-            "wrong": "has started",
-            "hint": "start"
+            "prompt": "This week, I ___ a snack for my friends.",
+            "answer": "have prepared",
+            "hint": "prepare",
+            "wrong": "has prepared"
           },
           {
-            "prompt": "My friend ___ me with the research.",
-            "answer": "has helped",
-            "wrong": "have helped",
-            "hint": "help"
+            "prompt": "Then, you ___ the plates on the table.",
+            "answer": "have put",
+            "hint": "put",
+            "wrong": "has put"
           },
           {
-            "prompt": "We ___ three articles so far.",
-            "answer": "have read",
-            "wrong": "has read",
-            "hint": "read"
+            "prompt": "After that, Anna ___ bread from the shop.",
+            "answer": "has brought",
+            "hint": "bring",
+            "wrong": "have brought"
           },
           {
-            "prompt": "Our teacher ___ us useful advice.",
-            "answer": "has given",
-            "wrong": "have given",
-            "hint": "give"
+            "prompt": "Next, we ___ a fruit salad.",
+            "answer": "have made",
+            "hint": "make",
+            "wrong": "has made"
           },
           {
-            "prompt": "I ___ the introduction.",
-            "answer": "have written",
-            "wrong": "has written",
-            "hint": "write"
+            "prompt": "Finally, the children ___ the cups after lunch.",
+            "answer": "have collected",
+            "hint": "collect",
+            "wrong": "has collected"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "This week, I ___ through the park with my dog.",
+            "answer": "have run",
+            "hint": "run",
+            "wrong": "has run"
+          },
+          {
+            "prompt": "This week, you ___ to school with your sister.",
+            "answer": "have walked",
+            "hint": "walk",
+            "wrong": "has walked"
+          },
+          {
+            "prompt": "This week, she ___ her bedroom window.",
+            "answer": "has opened",
+            "hint": "open",
+            "wrong": "have opened"
+          },
+          {
+            "prompt": "This week, we ___ with a ball in the garden.",
+            "answer": "have played",
+            "hint": "play",
+            "wrong": "has played"
+          },
+          {
+            "prompt": "This week, they ___ to music with headphones.",
+            "answer": "have listened",
+            "hint": "listen",
+            "wrong": "has listened"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "This week, I ___ for my bag before leaving.",
+            "answer": "have looked",
+            "hint": "look",
+            "wrong": "has looked"
+          },
+          {
+            "prompt": "This week, you ___ a notebook at the bookshop.",
+            "answer": "have bought",
+            "hint": "buy",
+            "wrong": "has bought"
+          },
+          {
+            "prompt": "This week, she ___ to my house to study.",
+            "answer": "has come",
+            "hint": "come",
+            "wrong": "have come"
+          },
+          {
+            "prompt": "This week, we ___ a film about animals.",
+            "answer": "have watched",
+            "hint": "watch",
+            "wrong": "has watched"
+          },
+          {
+            "prompt": "This week, they ___ the door before leaving.",
+            "answer": "have closed",
+            "hint": "close",
+            "wrong": "has closed"
           }
         ]
       },
@@ -4748,189 +5051,217 @@ window.CURRICULUM = {
         "text",
         "letters",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "This week, I ___ Spanish at the library.",
+          "answer": "have studied",
+          "hint": "study",
+          "wrong": "has studied"
+        },
+        {
+          "prompt": "This week, she ___ an apple in the garden.",
+          "answer": "has eaten",
+          "hint": "eat",
+          "wrong": "have eaten"
+        },
+        {
+          "prompt": "This week, we ___ near the beach.",
+          "answer": "have lived",
+          "hint": "live",
+          "wrong": "has lived"
+        },
+        {
+          "prompt": "This week, you ___ a picnic in the park.",
+          "answer": "have had",
+          "hint": "have",
+          "wrong": "has had"
+        },
+        {
+          "prompt": "This week, they ___ to the science museum.",
+          "answer": "have gone",
+          "hint": "go",
+          "wrong": "has gone"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "future",
-      "title": "Future with will",
+      "title": "Plans with going to",
       "kind": "grammar",
       "icon": "grammar",
       "level": "A2",
-      "tip": "Will + forma base permite expresar predicciones o decisiones. Will no cambia con el sujeto.",
+      "tip": "Use am, is or are + going to + verb to talk about plans.",
       "variants": {
         "1": [
           {
-            "prompt": "Next week I ___ my aunt.",
-            "answer": "will visit",
-            "wrong": "will visits",
-            "hint": "visit"
+            "prompt": "Tomorrow, I ___ Spanish at the library.",
+            "answer": "am going to study",
+            "hint": "study",
+            "wrong": "are going to study"
           },
           {
-            "prompt": "She ___ us at the airport tomorrow.",
-            "answer": "will meet",
-            "wrong": "will meets",
-            "hint": "meet"
+            "prompt": "Tomorrow, she ___ an apple in the garden.",
+            "answer": "is going to eat",
+            "hint": "eat",
+            "wrong": "are going to eat"
           },
           {
-            "prompt": "We ___ a picnic on Sunday.",
-            "answer": "will have",
-            "wrong": "will has",
-            "hint": "have"
+            "prompt": "Tomorrow, we ___ near the beach.",
+            "answer": "are going to live",
+            "hint": "live",
+            "wrong": "is going to live"
           },
           {
-            "prompt": "My friend ___ us the museum tomorrow.",
-            "answer": "will show",
-            "wrong": "will shows",
-            "hint": "show"
+            "prompt": "Tomorrow, you ___ a picnic in the park.",
+            "answer": "are going to have",
+            "hint": "have",
+            "wrong": "is going to have"
           },
           {
-            "prompt": "I ___ before midnight tonight.",
-            "answer": "will return",
-            "wrong": "will returns",
-            "hint": "return"
+            "prompt": "Tomorrow, they ___ to the science museum.",
+            "answer": "are going to go",
+            "hint": "go",
+            "wrong": "is going to go"
           }
         ],
         "2": [
           {
-            "prompt": "Tomorrow I ___ the science museum.",
-            "answer": "will visit",
-            "wrong": "will visits",
-            "hint": "visit"
+            "prompt": "Tomorrow, I ___ water with my lunch.",
+            "answer": "am going to drink",
+            "hint": "drink",
+            "wrong": "are going to drink",
+            "asset": "acciones/beber",
+            "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "My sister ___ her teacher on Monday.",
-            "answer": "will meet",
-            "wrong": "will meets",
-            "hint": "meet"
+            "prompt": "Tomorrow, you ___ an adventure story.",
+            "answer": "are going to read",
+            "hint": "read",
+            "wrong": "is going to read",
+            "asset": "acciones/leer",
+            "clue": "A child performing the action: read."
           },
           {
-            "prompt": "We ___ dinner at seven tomorrow.",
-            "answer": "will have",
-            "wrong": "will has",
-            "hint": "have"
+            "prompt": "Tomorrow, she ___ a letter to her grandmother.",
+            "answer": "is going to write",
+            "hint": "write",
+            "wrong": "are going to write",
+            "asset": "acciones/escribir",
+            "clue": "A child performing the action: write."
           },
           {
-            "prompt": "The guide ___ us the castle tomorrow.",
-            "answer": "will show",
-            "wrong": "will shows",
-            "hint": "show"
+            "prompt": "Tomorrow, we ___ flowers with coloured pencils.",
+            "answer": "are going to draw",
+            "hint": "draw",
+            "wrong": "is going to draw",
+            "asset": "acciones/dibujar",
+            "clue": "A child performing the action: draw."
           },
           {
-            "prompt": "I ___ on Friday.",
-            "answer": "will return",
-            "wrong": "will returns",
-            "hint": "return"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "On Saturday I ___ my grandparents.",
-            "answer": "will visit",
-            "wrong": "will visits",
-            "hint": "visit",
-            "orders": [
-              "I will visit my grandparents on Saturday."
-            ]
-          },
-          {
-            "prompt": "My cousin ___ me outside the library tomorrow.",
-            "answer": "will meet",
-            "wrong": "will meets",
-            "hint": "meet",
-            "orders": [
-              "Tomorrow my cousin will meet me outside the library."
-            ]
-          },
-          {
-            "prompt": "We ___ a break after lunch tomorrow.",
-            "answer": "will have",
-            "wrong": "will has",
-            "hint": "have",
-            "orders": [
-              "Tomorrow we will have a break after lunch."
-            ]
-          },
-          {
-            "prompt": "My brother ___ me his new bike tonight.",
-            "answer": "will show",
-            "wrong": "will shows",
-            "hint": "show",
-            "orders": [
-              "Tonight my brother will show me his new bike."
-            ]
-          },
-          {
-            "prompt": "I ___ from Paris next week.",
-            "answer": "will return",
-            "wrong": "will returns",
-            "hint": "return",
-            "orders": [
-              "Next week I will return from Paris."
-            ]
-          }
-        ],
-        "5": [
-          {
-            "prompt": "Next month I ___ London.",
-            "answer": "will visit",
-            "wrong": "will visits",
-            "hint": "visit"
-          },
-          {
-            "prompt": "She ___ her friends at noon tomorrow.",
-            "answer": "will meet",
-            "wrong": "will meets",
-            "hint": "meet"
-          },
-          {
-            "prompt": "We ___ breakfast together on Sunday.",
-            "answer": "will have",
-            "wrong": "will has",
-            "hint": "have"
-          },
-          {
-            "prompt": "Our teacher ___ us a film tomorrow.",
-            "answer": "will show",
-            "wrong": "will shows",
-            "hint": "show"
-          },
-          {
-            "prompt": "I ___ to school on Monday.",
-            "answer": "will return",
-            "wrong": "will returns",
-            "hint": "return"
+            "prompt": "Tomorrow, they ___ in their own beds.",
+            "answer": "are going to sleep",
+            "hint": "sleep",
+            "wrong": "is going to sleep",
+            "asset": "acciones/dormir",
+            "clue": "A child performing the action: sleep."
           }
         ],
         "3": [
           {
-            "prompt": "Tomorrow I ___ my cousin.",
-            "answer": "will visit",
-            "wrong": "will visits",
-            "hint": "visit"
+            "prompt": "Tomorrow, I ___ a snack for my friends.",
+            "answer": "am going to prepare",
+            "hint": "prepare",
+            "wrong": "are going to prepare"
           },
           {
-            "prompt": "She ___ me at the station.",
-            "answer": "will meet",
-            "wrong": "will meets",
-            "hint": "meet"
+            "prompt": "Then, you ___ the plates on the table.",
+            "answer": "are going to put",
+            "hint": "put",
+            "wrong": "is going to put"
           },
           {
-            "prompt": "We ___ lunch together.",
-            "answer": "will have",
-            "wrong": "will has",
-            "hint": "have"
+            "prompt": "After that, Anna ___ bread from the shop.",
+            "answer": "is going to bring",
+            "hint": "bring",
+            "wrong": "are going to bring"
           },
           {
-            "prompt": "Then my cousin ___ me her city.",
-            "answer": "will show",
-            "wrong": "will shows",
-            "hint": "show"
+            "prompt": "Next, we ___ a fruit salad.",
+            "answer": "are going to make",
+            "hint": "make",
+            "wrong": "is going to make"
           },
           {
-            "prompt": "I ___ home in the evening.",
-            "answer": "will return",
-            "wrong": "will returns",
-            "hint": "return"
+            "prompt": "Finally, the children ___ the cups after lunch.",
+            "answer": "are going to collect",
+            "hint": "collect",
+            "wrong": "is going to collect"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Tomorrow, I ___ through the park with my dog.",
+            "answer": "am going to run",
+            "hint": "run",
+            "wrong": "are going to run"
+          },
+          {
+            "prompt": "Tomorrow, you ___ to school with your sister.",
+            "answer": "are going to walk",
+            "hint": "walk",
+            "wrong": "is going to walk"
+          },
+          {
+            "prompt": "Tomorrow, she ___ her bedroom window.",
+            "answer": "is going to open",
+            "hint": "open",
+            "wrong": "are going to open"
+          },
+          {
+            "prompt": "Tomorrow, we ___ with a ball in the garden.",
+            "answer": "are going to play",
+            "hint": "play",
+            "wrong": "is going to play"
+          },
+          {
+            "prompt": "Tomorrow, they ___ to music with headphones.",
+            "answer": "are going to listen",
+            "hint": "listen",
+            "wrong": "is going to listen"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Tomorrow, I ___ for my bag before leaving.",
+            "answer": "am going to look",
+            "hint": "look",
+            "wrong": "are going to look"
+          },
+          {
+            "prompt": "Tomorrow, you ___ a notebook at the bookshop.",
+            "answer": "are going to buy",
+            "hint": "buy",
+            "wrong": "is going to buy"
+          },
+          {
+            "prompt": "Tomorrow, she ___ to my house to study.",
+            "answer": "is going to come",
+            "hint": "come",
+            "wrong": "are going to come"
+          },
+          {
+            "prompt": "Tomorrow, we ___ a film about animals.",
+            "answer": "are going to watch",
+            "hint": "watch",
+            "wrong": "is going to watch"
+          },
+          {
+            "prompt": "Tomorrow, they ___ the door before leaving.",
+            "answer": "are going to close",
+            "hint": "close",
+            "wrong": "is going to close"
           }
         ]
       },
@@ -4940,11 +5271,44 @@ window.CURRICULUM = {
         "text",
         "order",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Tomorrow, I ___ Spanish at the library.",
+          "answer": "am going to study",
+          "hint": "study",
+          "wrong": "are going to study"
+        },
+        {
+          "prompt": "Tomorrow, she ___ an apple in the garden.",
+          "answer": "is going to eat",
+          "hint": "eat",
+          "wrong": "are going to eat"
+        },
+        {
+          "prompt": "Tomorrow, we ___ near the beach.",
+          "answer": "are going to live",
+          "hint": "live",
+          "wrong": "is going to live"
+        },
+        {
+          "prompt": "Tomorrow, you ___ a picnic in the park.",
+          "answer": "are going to have",
+          "hint": "have",
+          "wrong": "is going to have"
+        },
+        {
+          "prompt": "Tomorrow, they ___ to the science museum.",
+          "answer": "are going to go",
+          "hint": "go",
+          "wrong": "is going to go"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "animales",
-      "title": "Los animales",
+      "title": "Animals",
       "kind": "vocabulary",
       "icon": "animales",
       "level": "A1",
@@ -4957,9 +5321,9 @@ window.CURRICULUM = {
           "aliases": [
             "puppy"
           ],
-          "clue": "Un animal doméstico que ladra.",
-          "memoryClue": "Hace «guau» y mueve la cola.",
-          "searchClue": "El compañero que sale a pasear con correa.",
+          "clue": "A pet that barks.",
+          "memoryClue": "A pet that barks.",
+          "searchClue": "This pet wags its tail and goes for walks on a lead.",
           "prompt": "The ___ barks: 'Woof!'"
         },
         {
@@ -4967,9 +5331,9 @@ window.CURRICULUM = {
           "asset": "animales/vaca",
           "answer": "cow",
           "aliases": [],
-          "clue": "Un animal de granja que hace «muu» y da leche.",
-          "memoryClue": "Nos da leche y puede tener manchas negras.",
-          "searchClue": "Animal de granja del que obtenemos leche.",
+          "clue": "A farm animal that moos and gives milk.",
+          "memoryClue": "A farm animal that moos and gives milk.",
+          "searchClue": "The farmer milks this large animal.",
           "prompt": "The farmer milks the ___."
         },
         {
@@ -4977,9 +5341,9 @@ window.CURRICULUM = {
           "asset": "animales/caballo",
           "answer": "horse",
           "aliases": [],
-          "clue": "Un animal con crin que relincha.",
-          "memoryClue": "Se le puede poner una silla para montar.",
-          "searchClue": "Animal de crin larga en el que se puede montar.",
+          "clue": "An animal with a mane that neighs.",
+          "memoryClue": "An animal with a mane that neighs.",
+          "searchClue": "You can put a saddle on this animal and ride it.",
           "prompt": "I put a saddle on the ___ before riding."
         },
         {
@@ -4989,9 +5353,9 @@ window.CURRICULUM = {
           "aliases": [
             "hog"
           ],
-          "clue": "Un animal de granja de hocico redondo que hace «oink».",
-          "memoryClue": "Tiene hocico redondo y una cola rizada.",
-          "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+          "clue": "A farm animal with a round snout and a curly tail.",
+          "memoryClue": "A farm animal with a round snout and a curly tail.",
+          "searchClue": "This pink farm animal says “oink”.",
           "prompt": "The ___ says 'oink' and has a curly tail."
         },
         {
@@ -5001,9 +5365,9 @@ window.CURRICULUM = {
           "aliases": [
             "bunny"
           ],
-          "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
-          "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
-          "searchClue": "Animal pequeño de orejas largas y cola corta.",
+          "clue": "A small animal with very long ears.",
+          "memoryClue": "A small animal with very long ears.",
+          "searchClue": "This animal hops and has a short fluffy tail.",
           "prompt": "The ___ hops and moves its very long ears."
         },
         {
@@ -5011,9 +5375,9 @@ window.CURRICULUM = {
           "asset": "animales/elefante",
           "answer": "elephant",
           "aliases": [],
-          "clue": "Un animal grande con trompa y grandes orejas.",
-          "memoryClue": "Usa una trompa larga para beber agua.",
-          "searchClue": "El animal más grande de este grupo, con trompa.",
+          "clue": "A very large animal with a long trunk.",
+          "memoryClue": "A very large animal with a long trunk.",
+          "searchClue": "This animal uses its trunk to pick things up.",
           "prompt": "The ___ drinks water with its long trunk."
         },
         {
@@ -5023,9 +5387,9 @@ window.CURRICULUM = {
           "aliases": [
             "kitty"
           ],
-          "clue": "Un animal doméstico de bigotes que hace «miau».",
-          "memoryClue": "Ronronea y se limpia con la lengua.",
-          "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+          "clue": "A pet with whiskers that meows.",
+          "memoryClue": "A pet with whiskers that meows.",
+          "searchClue": "This small pet says “meow” and has sharp claws.",
           "prompt": "The ___ says 'meow' and then purrs."
         },
         {
@@ -5033,9 +5397,9 @@ window.CURRICULUM = {
           "asset": "animales/mono",
           "answer": "monkey",
           "aliases": [],
-          "clue": "Un animal de manos hábiles que trepa por los árboles.",
-          "memoryClue": "Puede agarrar ramas con las manos.",
-          "searchClue": "Animal de cola larga y manos que agarran ramas.",
+          "clue": "An animal that climbs branches using its hands.",
+          "memoryClue": "An animal that climbs branches using its hands.",
+          "searchClue": "This animal swings through trees and has a long tail.",
           "prompt": "The ___ grabs a branch with its hands and climbs."
         },
         {
@@ -5043,9 +5407,9 @@ window.CURRICULUM = {
           "asset": "animales/oso",
           "answer": "bear",
           "aliases": [],
-          "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
-          "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
-          "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+          "clue": "A large animal with round ears and thick brown fur.",
+          "memoryClue": "A large animal with round ears and thick brown fur.",
+          "searchClue": "This strong animal has big paws and a short tail.",
           "prompt": "The ___ is a large wild animal with round ears that can hibernate in winter."
         },
         {
@@ -5053,9 +5417,9 @@ window.CURRICULUM = {
           "asset": "animales/oveja",
           "answer": "sheep",
           "aliases": [],
-          "clue": "Un animal de granja cubierto de lana que hace «bee».",
-          "memoryClue": "Su cuerpo está cubierto de lana.",
-          "searchClue": "Animal de granja del que obtenemos lana.",
+          "clue": "A farm animal covered in wool.",
+          "memoryClue": "A farm animal covered in wool.",
+          "searchClue": "We get wool from this animal.",
           "prompt": "The farmer cuts wool from the ___."
         },
         {
@@ -5063,9 +5427,9 @@ window.CURRICULUM = {
           "asset": "animales/leon",
           "answer": "lion",
           "aliases": [],
-          "clue": "Un gran felino salvaje que ruge y tiene melena.",
-          "memoryClue": "El gran felino de la melena.",
-          "searchClue": "Felino de gran melena y fuerte rugido.",
+          "clue": "A wild cat; the adult male has a mane.",
+          "memoryClue": "A wild cat; the adult male has a mane.",
+          "searchClue": "This large cat roars and has a tuft at the end of its tail.",
           "prompt": "The ___ roars and shakes the mane around its head."
         },
         {
@@ -5075,9 +5439,9 @@ window.CURRICULUM = {
           "aliases": [
             "duckling"
           ],
-          "clue": "Un ave de pico ancho que nada y hace «cuac».",
-          "memoryClue": "Nada en el estanque y hace «cuac».",
-          "searchClue": "Ave de pico ancho que nada en el agua.",
+          "clue": "A bird with a flat bill and webbed feet.",
+          "memoryClue": "A bird with a flat bill and webbed feet.",
+          "searchClue": "This bird swims and says “quack”.",
           "prompt": "The ___ swims in the pond and says 'quack'."
         }
       ],
@@ -5091,27 +5455,27 @@ window.CURRICULUM = {
       "memoryExtra": [],
       "facts": [
         [
-          "Puede agarrar ramas con las manos.",
+          "It can hold branches with its hands.",
           true
         ],
         [
-          "Tiene una trompa larga.",
+          "It has a long trunk.",
           false
         ],
         [
-          "Tiene crin y relincha.",
+          "It has a mane and neighs.",
           true
         ],
         [
-          "Su cuerpo está cubierto de lana.",
+          "Its body is covered in wool.",
           false
         ],
         [
-          "El macho adulto tiene una gran melena.",
+          "The adult male has a large mane.",
           true
         ],
         [
-          "Es un mamífero de cuatro patas.",
+          "It is a four-legged mammal.",
           false
         ]
       ],
@@ -5124,9 +5488,9 @@ window.CURRICULUM = {
             "aliases": [
               "puppy"
             ],
-            "clue": "Un animal doméstico que ladra.",
-            "memoryClue": "Hace «guau» y mueve la cola.",
-            "searchClue": "El compañero que sale a pasear con correa.",
+            "clue": "A pet that barks.",
+            "memoryClue": "A pet that barks.",
+            "searchClue": "This pet wags its tail and goes for walks on a lead.",
             "prompt": "The ___ barks: 'Woof!'"
           },
           {
@@ -5136,9 +5500,9 @@ window.CURRICULUM = {
             "aliases": [
               "kitty"
             ],
-            "clue": "Un animal doméstico de bigotes que hace «miau».",
-            "memoryClue": "Ronronea y se limpia con la lengua.",
-            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "clue": "A pet with whiskers that meows.",
+            "memoryClue": "A pet with whiskers that meows.",
+            "searchClue": "This small pet says “meow” and has sharp claws.",
             "prompt": "The ___ says 'meow' and then purrs."
           },
           {
@@ -5146,9 +5510,9 @@ window.CURRICULUM = {
             "asset": "animales/vaca",
             "answer": "cow",
             "aliases": [],
-            "clue": "Un animal de granja que hace «muu» y da leche.",
-            "memoryClue": "Nos da leche y puede tener manchas negras.",
-            "searchClue": "Animal de granja del que obtenemos leche.",
+            "clue": "A farm animal that moos and gives milk.",
+            "memoryClue": "A farm animal that moos and gives milk.",
+            "searchClue": "The farmer milks this large animal.",
             "prompt": "The farmer milks the ___."
           },
           {
@@ -5158,9 +5522,9 @@ window.CURRICULUM = {
             "aliases": [
               "hog"
             ],
-            "clue": "Un animal de granja de hocico redondo que hace «oink».",
-            "memoryClue": "Tiene hocico redondo y una cola rizada.",
-            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "clue": "A farm animal with a round snout and a curly tail.",
+            "memoryClue": "A farm animal with a round snout and a curly tail.",
+            "searchClue": "This pink farm animal says “oink”.",
             "prompt": "The ___ says 'oink' and has a curly tail."
           },
           {
@@ -5170,9 +5534,9 @@ window.CURRICULUM = {
             "aliases": [
               "bunny"
             ],
-            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
-            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
-            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "clue": "A small animal with very long ears.",
+            "memoryClue": "A small animal with very long ears.",
+            "searchClue": "This animal hops and has a short fluffy tail.",
             "prompt": "The ___ hops and moves its very long ears."
           },
           {
@@ -5180,9 +5544,9 @@ window.CURRICULUM = {
             "asset": "animales/oveja",
             "answer": "sheep",
             "aliases": [],
-            "clue": "Un animal de granja cubierto de lana que hace «bee».",
-            "memoryClue": "Su cuerpo está cubierto de lana.",
-            "searchClue": "Animal de granja del que obtenemos lana.",
+            "clue": "A farm animal covered in wool.",
+            "memoryClue": "A farm animal covered in wool.",
+            "searchClue": "We get wool from this animal.",
             "prompt": "The farmer cuts wool from the ___."
           }
         ],
@@ -5192,9 +5556,9 @@ window.CURRICULUM = {
             "asset": "animales/mono",
             "answer": "monkey",
             "aliases": [],
-            "clue": "Un animal de manos hábiles que trepa por los árboles.",
-            "memoryClue": "Puede agarrar ramas con las manos.",
-            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "clue": "An animal that climbs branches using its hands.",
+            "memoryClue": "An animal that climbs branches using its hands.",
+            "searchClue": "This animal swings through trees and has a long tail.",
             "prompt": "The ___ grabs a branch with its hands and climbs."
           },
           {
@@ -5202,9 +5566,9 @@ window.CURRICULUM = {
             "asset": "animales/oso",
             "answer": "bear",
             "aliases": [],
-            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
-            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
-            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "clue": "A large animal with round ears and thick brown fur.",
+            "memoryClue": "A large animal with round ears and thick brown fur.",
+            "searchClue": "This strong animal has big paws and a short tail.",
             "prompt": "The ___ is a large wild animal with round ears that can hibernate in winter."
           },
           {
@@ -5212,9 +5576,9 @@ window.CURRICULUM = {
             "asset": "animales/caballo",
             "answer": "horse",
             "aliases": [],
-            "clue": "Un animal con crin que relincha.",
-            "memoryClue": "Se le puede poner una silla para montar.",
-            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "clue": "An animal with a mane that neighs.",
+            "memoryClue": "An animal with a mane that neighs.",
+            "searchClue": "You can put a saddle on this animal and ride it.",
             "prompt": "I put a saddle on the ___ before riding."
           },
           {
@@ -5222,9 +5586,9 @@ window.CURRICULUM = {
             "asset": "animales/elefante",
             "answer": "elephant",
             "aliases": [],
-            "clue": "Un animal grande con trompa y grandes orejas.",
-            "memoryClue": "Usa una trompa larga para beber agua.",
-            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "clue": "A very large animal with a long trunk.",
+            "memoryClue": "A very large animal with a long trunk.",
+            "searchClue": "This animal uses its trunk to pick things up.",
             "prompt": "The ___ drinks water with its long trunk."
           },
           {
@@ -5232,9 +5596,9 @@ window.CURRICULUM = {
             "asset": "animales/leon",
             "answer": "lion",
             "aliases": [],
-            "clue": "Un gran felino salvaje que ruge y tiene melena.",
-            "memoryClue": "El gran felino de la melena.",
-            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "clue": "A wild cat; the adult male has a mane.",
+            "memoryClue": "A wild cat; the adult male has a mane.",
+            "searchClue": "This large cat roars and has a tuft at the end of its tail.",
             "prompt": "The ___ roars and shakes the mane around its head."
           },
           {
@@ -5244,9 +5608,9 @@ window.CURRICULUM = {
             "aliases": [
               "duckling"
             ],
-            "clue": "Un ave de pico ancho que nada y hace «cuac».",
-            "memoryClue": "Nada en el estanque y hace «cuac».",
-            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "clue": "A bird with a flat bill and webbed feet.",
+            "memoryClue": "A bird with a flat bill and webbed feet.",
+            "searchClue": "This bird swims and says “quack”.",
             "prompt": "The ___ swims in the pond and says 'quack'."
           }
         ],
@@ -5258,9 +5622,9 @@ window.CURRICULUM = {
             "aliases": [
               "puppy"
             ],
-            "clue": "Un animal doméstico que ladra.",
-            "memoryClue": "Hace «guau» y mueve la cola.",
-            "searchClue": "El compañero que sale a pasear con correa.",
+            "clue": "A pet that barks.",
+            "memoryClue": "A pet that barks.",
+            "searchClue": "This pet wags its tail and goes for walks on a lead.",
             "prompt": "The ___ barks: 'Woof!'"
           },
           {
@@ -5268,9 +5632,9 @@ window.CURRICULUM = {
             "asset": "animales/vaca",
             "answer": "cow",
             "aliases": [],
-            "clue": "Un animal de granja que hace «muu» y da leche.",
-            "memoryClue": "Nos da leche y puede tener manchas negras.",
-            "searchClue": "Animal de granja del que obtenemos leche.",
+            "clue": "A farm animal that moos and gives milk.",
+            "memoryClue": "A farm animal that moos and gives milk.",
+            "searchClue": "The farmer milks this large animal.",
             "prompt": "The farmer milks the ___."
           },
           {
@@ -5278,9 +5642,9 @@ window.CURRICULUM = {
             "asset": "animales/caballo",
             "answer": "horse",
             "aliases": [],
-            "clue": "Un animal con crin que relincha.",
-            "memoryClue": "Se le puede poner una silla para montar.",
-            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "clue": "An animal with a mane that neighs.",
+            "memoryClue": "An animal with a mane that neighs.",
+            "searchClue": "You can put a saddle on this animal and ride it.",
             "prompt": "I put a saddle on the ___ before riding."
           },
           {
@@ -5290,9 +5654,9 @@ window.CURRICULUM = {
             "aliases": [
               "hog"
             ],
-            "clue": "Un animal de granja de hocico redondo que hace «oink».",
-            "memoryClue": "Tiene hocico redondo y una cola rizada.",
-            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "clue": "A farm animal with a round snout and a curly tail.",
+            "memoryClue": "A farm animal with a round snout and a curly tail.",
+            "searchClue": "This pink farm animal says “oink”.",
             "prompt": "The ___ says 'oink' and has a curly tail."
           },
           {
@@ -5302,9 +5666,9 @@ window.CURRICULUM = {
             "aliases": [
               "bunny"
             ],
-            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
-            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
-            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "clue": "A small animal with very long ears.",
+            "memoryClue": "A small animal with very long ears.",
+            "searchClue": "This animal hops and has a short fluffy tail.",
             "prompt": "The ___ hops and moves its very long ears."
           },
           {
@@ -5312,9 +5676,9 @@ window.CURRICULUM = {
             "asset": "animales/elefante",
             "answer": "elephant",
             "aliases": [],
-            "clue": "Un animal grande con trompa y grandes orejas.",
-            "memoryClue": "Usa una trompa larga para beber agua.",
-            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "clue": "A very large animal with a long trunk.",
+            "memoryClue": "A very large animal with a long trunk.",
+            "searchClue": "This animal uses its trunk to pick things up.",
             "prompt": "The ___ drinks water with its long trunk."
           },
           {
@@ -5324,9 +5688,9 @@ window.CURRICULUM = {
             "aliases": [
               "kitty"
             ],
-            "clue": "Un animal doméstico de bigotes que hace «miau».",
-            "memoryClue": "Ronronea y se limpia con la lengua.",
-            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "clue": "A pet with whiskers that meows.",
+            "memoryClue": "A pet with whiskers that meows.",
+            "searchClue": "This small pet says “meow” and has sharp claws.",
             "prompt": "The ___ says 'meow' and then purrs."
           },
           {
@@ -5334,9 +5698,9 @@ window.CURRICULUM = {
             "asset": "animales/mono",
             "answer": "monkey",
             "aliases": [],
-            "clue": "Un animal de manos hábiles que trepa por los árboles.",
-            "memoryClue": "Puede agarrar ramas con las manos.",
-            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "clue": "An animal that climbs branches using its hands.",
+            "memoryClue": "An animal that climbs branches using its hands.",
+            "searchClue": "This animal swings through trees and has a long tail.",
             "prompt": "The ___ grabs a branch with its hands and climbs."
           },
           {
@@ -5344,9 +5708,9 @@ window.CURRICULUM = {
             "asset": "animales/oso",
             "answer": "bear",
             "aliases": [],
-            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
-            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
-            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "clue": "A large animal with round ears and thick brown fur.",
+            "memoryClue": "A large animal with round ears and thick brown fur.",
+            "searchClue": "This strong animal has big paws and a short tail.",
             "prompt": "The ___ is a large wild animal with round ears that can hibernate in winter."
           },
           {
@@ -5354,9 +5718,9 @@ window.CURRICULUM = {
             "asset": "animales/oveja",
             "answer": "sheep",
             "aliases": [],
-            "clue": "Un animal de granja cubierto de lana que hace «bee».",
-            "memoryClue": "Su cuerpo está cubierto de lana.",
-            "searchClue": "Animal de granja del que obtenemos lana.",
+            "clue": "A farm animal covered in wool.",
+            "memoryClue": "A farm animal covered in wool.",
+            "searchClue": "We get wool from this animal.",
             "prompt": "The farmer cuts wool from the ___."
           },
           {
@@ -5364,9 +5728,9 @@ window.CURRICULUM = {
             "asset": "animales/leon",
             "answer": "lion",
             "aliases": [],
-            "clue": "Un gran felino salvaje que ruge y tiene melena.",
-            "memoryClue": "El gran felino de la melena.",
-            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "clue": "A wild cat; the adult male has a mane.",
+            "memoryClue": "A wild cat; the adult male has a mane.",
+            "searchClue": "This large cat roars and has a tuft at the end of its tail.",
             "prompt": "The ___ roars and shakes the mane around its head."
           },
           {
@@ -5376,9 +5740,9 @@ window.CURRICULUM = {
             "aliases": [
               "duckling"
             ],
-            "clue": "Un ave de pico ancho que nada y hace «cuac».",
-            "memoryClue": "Nada en el estanque y hace «cuac».",
-            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "clue": "A bird with a flat bill and webbed feet.",
+            "memoryClue": "A bird with a flat bill and webbed feet.",
+            "searchClue": "This bird swims and says “quack”.",
             "prompt": "The ___ swims in the pond and says 'quack'."
           }
         ],
@@ -5390,9 +5754,9 @@ window.CURRICULUM = {
             "aliases": [
               "duckling"
             ],
-            "clue": "Un ave de pico ancho que nada y hace «cuac».",
-            "memoryClue": "Nada en el estanque y hace «cuac».",
-            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "clue": "A bird with a flat bill and webbed feet.",
+            "memoryClue": "A bird with a flat bill and webbed feet.",
+            "searchClue": "This bird swims and says “quack”.",
             "prompt": "The ___ swims in the pond and says 'quack'."
           },
           {
@@ -5400,9 +5764,9 @@ window.CURRICULUM = {
             "asset": "animales/leon",
             "answer": "lion",
             "aliases": [],
-            "clue": "Un gran felino salvaje que ruge y tiene melena.",
-            "memoryClue": "El gran felino de la melena.",
-            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "clue": "A wild cat; the adult male has a mane.",
+            "memoryClue": "A wild cat; the adult male has a mane.",
+            "searchClue": "This large cat roars and has a tuft at the end of its tail.",
             "prompt": "The ___ roars and shakes the mane around its head."
           },
           {
@@ -5410,9 +5774,9 @@ window.CURRICULUM = {
             "asset": "animales/vaca",
             "answer": "cow",
             "aliases": [],
-            "clue": "Un animal de granja que hace «muu» y da leche.",
-            "memoryClue": "Nos da leche y puede tener manchas negras.",
-            "searchClue": "Animal de granja del que obtenemos leche.",
+            "clue": "A farm animal that moos and gives milk.",
+            "memoryClue": "A farm animal that moos and gives milk.",
+            "searchClue": "The farmer milks this large animal.",
             "prompt": "The farmer milks the ___."
           },
           {
@@ -5422,9 +5786,9 @@ window.CURRICULUM = {
             "aliases": [
               "kitty"
             ],
-            "clue": "Un animal doméstico de bigotes que hace «miau».",
-            "memoryClue": "Ronronea y se limpia con la lengua.",
-            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "clue": "A pet with whiskers that meows.",
+            "memoryClue": "A pet with whiskers that meows.",
+            "searchClue": "This small pet says “meow” and has sharp claws.",
             "prompt": "The ___ says 'meow' and then purrs."
           },
           {
@@ -5432,9 +5796,9 @@ window.CURRICULUM = {
             "asset": "animales/mono",
             "answer": "monkey",
             "aliases": [],
-            "clue": "Un animal de manos hábiles que trepa por los árboles.",
-            "memoryClue": "Puede agarrar ramas con las manos.",
-            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "clue": "An animal that climbs branches using its hands.",
+            "memoryClue": "An animal that climbs branches using its hands.",
+            "searchClue": "This animal swings through trees and has a long tail.",
             "prompt": "The ___ grabs a branch with its hands and climbs."
           },
           {
@@ -5442,9 +5806,9 @@ window.CURRICULUM = {
             "asset": "animales/oso",
             "answer": "bear",
             "aliases": [],
-            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
-            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
-            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "clue": "A large animal with round ears and thick brown fur.",
+            "memoryClue": "A large animal with round ears and thick brown fur.",
+            "searchClue": "This strong animal has big paws and a short tail.",
             "prompt": "The ___ is a large wild animal with round ears that can hibernate in winter."
           }
         ],
@@ -5454,9 +5818,9 @@ window.CURRICULUM = {
             "asset": "animales/elefante",
             "answer": "elephant",
             "aliases": [],
-            "clue": "Un animal grande con trompa y grandes orejas.",
-            "memoryClue": "Usa una trompa larga para beber agua.",
-            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "clue": "A very large animal with a long trunk.",
+            "memoryClue": "A very large animal with a long trunk.",
+            "searchClue": "This animal uses its trunk to pick things up.",
             "prompt": "The ___ drinks water with its long trunk."
           },
           {
@@ -5466,9 +5830,9 @@ window.CURRICULUM = {
             "aliases": [
               "bunny"
             ],
-            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
-            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
-            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "clue": "A small animal with very long ears.",
+            "memoryClue": "A small animal with very long ears.",
+            "searchClue": "This animal hops and has a short fluffy tail.",
             "prompt": "The ___ hops and moves its very long ears."
           },
           {
@@ -5478,9 +5842,9 @@ window.CURRICULUM = {
             "aliases": [
               "hog"
             ],
-            "clue": "Un animal de granja de hocico redondo que hace «oink».",
-            "memoryClue": "Tiene hocico redondo y una cola rizada.",
-            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "clue": "A farm animal with a round snout and a curly tail.",
+            "memoryClue": "A farm animal with a round snout and a curly tail.",
+            "searchClue": "This pink farm animal says “oink”.",
             "prompt": "The ___ says 'oink' and has a curly tail."
           },
           {
@@ -5488,9 +5852,9 @@ window.CURRICULUM = {
             "asset": "animales/caballo",
             "answer": "horse",
             "aliases": [],
-            "clue": "Un animal con crin que relincha.",
-            "memoryClue": "Se le puede poner una silla para montar.",
-            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "clue": "An animal with a mane that neighs.",
+            "memoryClue": "An animal with a mane that neighs.",
+            "searchClue": "You can put a saddle on this animal and ride it.",
             "prompt": "I put a saddle on the ___ before riding."
           },
           {
@@ -5498,9 +5862,9 @@ window.CURRICULUM = {
             "asset": "animales/mono",
             "answer": "monkey",
             "aliases": [],
-            "clue": "Un animal de manos hábiles que trepa por los árboles.",
-            "memoryClue": "Puede agarrar ramas con las manos.",
-            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "clue": "An animal that climbs branches using its hands.",
+            "memoryClue": "An animal that climbs branches using its hands.",
+            "searchClue": "This animal swings through trees and has a long tail.",
             "prompt": "The ___ grabs a branch with its hands and climbs."
           },
           {
@@ -5508,9 +5872,9 @@ window.CURRICULUM = {
             "asset": "animales/oveja",
             "answer": "sheep",
             "aliases": [],
-            "clue": "Un animal de granja cubierto de lana que hace «bee».",
-            "memoryClue": "Su cuerpo está cubierto de lana.",
-            "searchClue": "Animal de granja del que obtenemos lana.",
+            "clue": "A farm animal covered in wool.",
+            "memoryClue": "A farm animal covered in wool.",
+            "searchClue": "We get wool from this animal.",
             "prompt": "The farmer cuts wool from the ___."
           }
         ]
@@ -5523,7 +5887,7 @@ window.CURRICULUM = {
     },
     {
       "id": "colores",
-      "title": "Colores",
+      "title": "Colours",
       "kind": "vocabulary",
       "icon": "colores",
       "level": "A1",
@@ -5542,100 +5906,100 @@ window.CURRICULUM = {
           "asset": "colores/rojo",
           "answer": "red",
           "aliases": [],
-          "clue": "Mancha de pintura de color rojo.",
-          "memoryClue": "Pintura rojo.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of red paint.",
+          "memoryClue": "A patch of red paint.",
+          "flashClue": "A patch of red paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "amarillo",
           "asset": "colores/amarillo",
           "answer": "yellow",
           "aliases": [],
-          "clue": "Mancha de pintura de color amarillo.",
-          "memoryClue": "Pintura amarillo.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of yellow paint.",
+          "memoryClue": "A patch of yellow paint.",
+          "flashClue": "A patch of yellow paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "azul",
           "asset": "colores/azul",
           "answer": "blue",
           "aliases": [],
-          "clue": "Mancha de pintura de color azul.",
-          "memoryClue": "Pintura azul.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of blue paint.",
+          "memoryClue": "A patch of blue paint.",
+          "flashClue": "A patch of blue paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "verde",
           "asset": "colores/verde",
           "answer": "green",
           "aliases": [],
-          "clue": "Mancha de pintura de color verde.",
-          "memoryClue": "Pintura verde.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of green paint.",
+          "memoryClue": "A patch of green paint.",
+          "flashClue": "A patch of green paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "naranja",
           "asset": "colores/naranja",
           "answer": "orange",
           "aliases": [],
-          "clue": "Mancha de pintura de color naranja.",
-          "memoryClue": "Pintura naranja.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of orange paint.",
+          "memoryClue": "A patch of orange paint.",
+          "flashClue": "A patch of orange paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "morado",
           "asset": "colores/morado",
           "answer": "purple",
           "aliases": [],
-          "clue": "Mancha de pintura de color morado.",
-          "memoryClue": "Pintura morado.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of purple paint.",
+          "memoryClue": "A patch of purple paint.",
+          "flashClue": "A patch of purple paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "rosa",
           "asset": "colores/rosa",
           "answer": "pink",
           "aliases": [],
-          "clue": "Mancha de pintura de color rosa.",
-          "memoryClue": "Pintura rosa.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of pink paint.",
+          "memoryClue": "A patch of pink paint.",
+          "flashClue": "A patch of pink paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "marron",
           "asset": "colores/marron",
           "answer": "brown",
           "aliases": [],
-          "clue": "Mancha de pintura de color marrón.",
-          "memoryClue": "Pintura marrón.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of brown paint.",
+          "memoryClue": "A patch of brown paint.",
+          "flashClue": "A patch of brown paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "negro",
           "asset": "colores/negro",
           "answer": "black",
           "aliases": [],
-          "clue": "Mancha de pintura de color negro.",
-          "memoryClue": "Pintura negro.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of black paint.",
+          "memoryClue": "A patch of black paint.",
+          "flashClue": "A patch of black paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "blanco",
           "asset": "colores/blanco",
           "answer": "white",
           "aliases": [],
-          "clue": "Mancha de pintura de color blanco.",
-          "memoryClue": "Pintura blanco.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of white paint.",
+          "memoryClue": "A patch of white paint.",
+          "flashClue": "A patch of white paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "gris",
@@ -5644,10 +6008,10 @@ window.CURRICULUM = {
           "aliases": [
             "gray"
           ],
-          "clue": "Mancha de pintura de color gris.",
-          "memoryClue": "Pintura gris.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of grey paint.",
+          "memoryClue": "A patch of grey paint.",
+          "flashClue": "A patch of grey paint.",
+          "searchClue": "Find the name of this colour."
         },
         {
           "key": "celeste",
@@ -5656,10 +6020,10 @@ window.CURRICULUM = {
           "aliases": [
             "sky blue"
           ],
-          "clue": "Mancha de pintura de color celeste.",
-          "memoryClue": "Pintura celeste.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "A patch of light blue paint.",
+          "memoryClue": "A patch of light blue paint.",
+          "flashClue": "A patch of light blue paint.",
+          "searchClue": "Find the name of this colour."
         }
       ],
       "variants": {
@@ -5669,100 +6033,100 @@ window.CURRICULUM = {
             "asset": "colores/rojo",
             "answer": "red",
             "aliases": [],
-            "clue": "Mancha de pintura de color rojo.",
-            "memoryClue": "Pintura rojo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of red paint.",
+            "memoryClue": "A patch of red paint.",
+            "flashClue": "A patch of red paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "amarillo",
             "asset": "colores/amarillo",
             "answer": "yellow",
             "aliases": [],
-            "clue": "Mancha de pintura de color amarillo.",
-            "memoryClue": "Pintura amarillo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of yellow paint.",
+            "memoryClue": "A patch of yellow paint.",
+            "flashClue": "A patch of yellow paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "azul",
             "asset": "colores/azul",
             "answer": "blue",
             "aliases": [],
-            "clue": "Mancha de pintura de color azul.",
-            "memoryClue": "Pintura azul.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of blue paint.",
+            "memoryClue": "A patch of blue paint.",
+            "flashClue": "A patch of blue paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "verde",
             "asset": "colores/verde",
             "answer": "green",
             "aliases": [],
-            "clue": "Mancha de pintura de color verde.",
-            "memoryClue": "Pintura verde.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of green paint.",
+            "memoryClue": "A patch of green paint.",
+            "flashClue": "A patch of green paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "naranja",
             "asset": "colores/naranja",
             "answer": "orange",
             "aliases": [],
-            "clue": "Mancha de pintura de color naranja.",
-            "memoryClue": "Pintura naranja.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of orange paint.",
+            "memoryClue": "A patch of orange paint.",
+            "flashClue": "A patch of orange paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "morado",
             "asset": "colores/morado",
             "answer": "purple",
             "aliases": [],
-            "clue": "Mancha de pintura de color morado.",
-            "memoryClue": "Pintura morado.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of purple paint.",
+            "memoryClue": "A patch of purple paint.",
+            "flashClue": "A patch of purple paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "rosa",
             "asset": "colores/rosa",
             "answer": "pink",
             "aliases": [],
-            "clue": "Mancha de pintura de color rosa.",
-            "memoryClue": "Pintura rosa.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of pink paint.",
+            "memoryClue": "A patch of pink paint.",
+            "flashClue": "A patch of pink paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "marron",
             "asset": "colores/marron",
             "answer": "brown",
             "aliases": [],
-            "clue": "Mancha de pintura de color marrón.",
-            "memoryClue": "Pintura marrón.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of brown paint.",
+            "memoryClue": "A patch of brown paint.",
+            "flashClue": "A patch of brown paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "negro",
             "asset": "colores/negro",
             "answer": "black",
             "aliases": [],
-            "clue": "Mancha de pintura de color negro.",
-            "memoryClue": "Pintura negro.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of black paint.",
+            "memoryClue": "A patch of black paint.",
+            "flashClue": "A patch of black paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "blanco",
             "asset": "colores/blanco",
             "answer": "white",
             "aliases": [],
-            "clue": "Mancha de pintura de color blanco.",
-            "memoryClue": "Pintura blanco.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of white paint.",
+            "memoryClue": "A patch of white paint.",
+            "flashClue": "A patch of white paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "gris",
@@ -5771,10 +6135,10 @@ window.CURRICULUM = {
             "aliases": [
               "gray"
             ],
-            "clue": "Mancha de pintura de color gris.",
-            "memoryClue": "Pintura gris.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of grey paint.",
+            "memoryClue": "A patch of grey paint.",
+            "flashClue": "A patch of grey paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "celeste",
@@ -5783,10 +6147,10 @@ window.CURRICULUM = {
             "aliases": [
               "sky blue"
             ],
-            "clue": "Mancha de pintura de color celeste.",
-            "memoryClue": "Pintura celeste.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of light blue paint.",
+            "memoryClue": "A patch of light blue paint.",
+            "flashClue": "A patch of light blue paint.",
+            "searchClue": "Find the name of this colour."
           }
         ],
         "2": [
@@ -5801,8 +6165,16 @@ window.CURRICULUM = {
               "red & green",
               "green & red"
             ],
-            "prompt": "In this picture, the watermelon flesh and rind are ___. Write both colours.",
-            "clue": "Una rodaja de sandía: pulpa roja y corteza verde."
+            "prompt": "The watermelon flesh and rind:",
+            "clue": "A slice with red flesh, black seeds and green rind.",
+            "parts": [
+              [
+                "red"
+              ],
+              [
+                "green"
+              ]
+            ]
           },
           {
             "key": "objeto-1",
@@ -5810,7 +6182,7 @@ window.CURRICULUM = {
             "answer": "yellow",
             "aliases": [],
             "prompt": "The lemon is ___.",
-            "clue": "Un limón amarillo."
+            "clue": "An oval yellow fruit with a sour taste."
           },
           {
             "key": "objeto-2",
@@ -5818,7 +6190,7 @@ window.CURRICULUM = {
             "answer": "pink",
             "aliases": [],
             "prompt": "The pig is ___.",
-            "clue": "Un cerdito rosa."
+            "clue": "A farm animal with a round snout and a curly tail."
           },
           {
             "key": "objeto-3",
@@ -5831,7 +6203,7 @@ window.CURRICULUM = {
               "pink"
             ],
             "prompt": "The grapes in this picture are ___.",
-            "clue": "Un racimo de uvas moradas."
+            "clue": "A bunch of small purple fruits."
           },
           {
             "key": "objeto-4",
@@ -5839,7 +6211,7 @@ window.CURRICULUM = {
             "answer": "orange",
             "aliases": [],
             "prompt": "The orange is ___.",
-            "clue": "Una naranja de color naranja."
+            "clue": "A round orange citrus fruit."
           },
           {
             "key": "objeto-5",
@@ -5847,7 +6219,7 @@ window.CURRICULUM = {
             "answer": "white",
             "aliases": [],
             "prompt": "The sheep’s wool is ___.",
-            "clue": "Una oveja de lana blanca."
+            "clue": "A farm animal covered in wool."
           }
         ],
         "3": [
@@ -5856,100 +6228,100 @@ window.CURRICULUM = {
             "asset": "colores/rojo",
             "answer": "red",
             "aliases": [],
-            "clue": "Mancha de pintura de color rojo.",
-            "memoryClue": "Pintura rojo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of red paint.",
+            "memoryClue": "A patch of red paint.",
+            "flashClue": "A patch of red paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "amarillo",
             "asset": "colores/amarillo",
             "answer": "yellow",
             "aliases": [],
-            "clue": "Mancha de pintura de color amarillo.",
-            "memoryClue": "Pintura amarillo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of yellow paint.",
+            "memoryClue": "A patch of yellow paint.",
+            "flashClue": "A patch of yellow paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "azul",
             "asset": "colores/azul",
             "answer": "blue",
             "aliases": [],
-            "clue": "Mancha de pintura de color azul.",
-            "memoryClue": "Pintura azul.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of blue paint.",
+            "memoryClue": "A patch of blue paint.",
+            "flashClue": "A patch of blue paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "verde",
             "asset": "colores/verde",
             "answer": "green",
             "aliases": [],
-            "clue": "Mancha de pintura de color verde.",
-            "memoryClue": "Pintura verde.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of green paint.",
+            "memoryClue": "A patch of green paint.",
+            "flashClue": "A patch of green paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "naranja",
             "asset": "colores/naranja",
             "answer": "orange",
             "aliases": [],
-            "clue": "Mancha de pintura de color naranja.",
-            "memoryClue": "Pintura naranja.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of orange paint.",
+            "memoryClue": "A patch of orange paint.",
+            "flashClue": "A patch of orange paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "morado",
             "asset": "colores/morado",
             "answer": "purple",
             "aliases": [],
-            "clue": "Mancha de pintura de color morado.",
-            "memoryClue": "Pintura morado.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of purple paint.",
+            "memoryClue": "A patch of purple paint.",
+            "flashClue": "A patch of purple paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "rosa",
             "asset": "colores/rosa",
             "answer": "pink",
             "aliases": [],
-            "clue": "Mancha de pintura de color rosa.",
-            "memoryClue": "Pintura rosa.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of pink paint.",
+            "memoryClue": "A patch of pink paint.",
+            "flashClue": "A patch of pink paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "marron",
             "asset": "colores/marron",
             "answer": "brown",
             "aliases": [],
-            "clue": "Mancha de pintura de color marrón.",
-            "memoryClue": "Pintura marrón.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of brown paint.",
+            "memoryClue": "A patch of brown paint.",
+            "flashClue": "A patch of brown paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "negro",
             "asset": "colores/negro",
             "answer": "black",
             "aliases": [],
-            "clue": "Mancha de pintura de color negro.",
-            "memoryClue": "Pintura negro.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of black paint.",
+            "memoryClue": "A patch of black paint.",
+            "flashClue": "A patch of black paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "blanco",
             "asset": "colores/blanco",
             "answer": "white",
             "aliases": [],
-            "clue": "Mancha de pintura de color blanco.",
-            "memoryClue": "Pintura blanco.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of white paint.",
+            "memoryClue": "A patch of white paint.",
+            "flashClue": "A patch of white paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "gris",
@@ -5958,10 +6330,10 @@ window.CURRICULUM = {
             "aliases": [
               "gray"
             ],
-            "clue": "Mancha de pintura de color gris.",
-            "memoryClue": "Pintura gris.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of grey paint.",
+            "memoryClue": "A patch of grey paint.",
+            "flashClue": "A patch of grey paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "celeste",
@@ -5970,10 +6342,10 @@ window.CURRICULUM = {
             "aliases": [
               "sky blue"
             ],
-            "clue": "Mancha de pintura de color celeste.",
-            "memoryClue": "Pintura celeste.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of light blue paint.",
+            "memoryClue": "A patch of light blue paint.",
+            "flashClue": "A patch of light blue paint.",
+            "searchClue": "Find the name of this colour."
           }
         ],
         "4": [
@@ -5982,10 +6354,10 @@ window.CURRICULUM = {
             "asset": "colores/azul",
             "answer": "blue",
             "aliases": [],
-            "clue": "Mancha de pintura de color azul.",
-            "memoryClue": "Pintura azul.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of blue paint.",
+            "memoryClue": "A patch of blue paint.",
+            "flashClue": "A patch of blue paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "celeste",
@@ -5994,40 +6366,40 @@ window.CURRICULUM = {
             "aliases": [
               "sky blue"
             ],
-            "clue": "Mancha de pintura de color celeste.",
-            "memoryClue": "Pintura celeste.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of light blue paint.",
+            "memoryClue": "A patch of light blue paint.",
+            "flashClue": "A patch of light blue paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "rosa",
             "asset": "colores/rosa",
             "answer": "pink",
             "aliases": [],
-            "clue": "Mancha de pintura de color rosa.",
-            "memoryClue": "Pintura rosa.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of pink paint.",
+            "memoryClue": "A patch of pink paint.",
+            "flashClue": "A patch of pink paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "marron",
             "asset": "colores/marron",
             "answer": "brown",
             "aliases": [],
-            "clue": "Mancha de pintura de color marrón.",
-            "memoryClue": "Pintura marrón.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of brown paint.",
+            "memoryClue": "A patch of brown paint.",
+            "flashClue": "A patch of brown paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "negro",
             "asset": "colores/negro",
             "answer": "black",
             "aliases": [],
-            "clue": "Mancha de pintura de color negro.",
-            "memoryClue": "Pintura negro.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of black paint.",
+            "memoryClue": "A patch of black paint.",
+            "flashClue": "A patch of black paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "gris",
@@ -6036,10 +6408,10 @@ window.CURRICULUM = {
             "aliases": [
               "gray"
             ],
-            "clue": "Mancha de pintura de color gris.",
-            "memoryClue": "Pintura gris.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of grey paint.",
+            "memoryClue": "A patch of grey paint.",
+            "flashClue": "A patch of grey paint.",
+            "searchClue": "Find the name of this colour."
           }
         ],
         "5": [
@@ -6048,60 +6420,60 @@ window.CURRICULUM = {
             "asset": "colores/rojo",
             "answer": "red",
             "aliases": [],
-            "clue": "Mancha de pintura de color rojo.",
-            "memoryClue": "Pintura rojo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of red paint.",
+            "memoryClue": "A patch of red paint.",
+            "flashClue": "A patch of red paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "amarillo",
             "asset": "colores/amarillo",
             "answer": "yellow",
             "aliases": [],
-            "clue": "Mancha de pintura de color amarillo.",
-            "memoryClue": "Pintura amarillo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of yellow paint.",
+            "memoryClue": "A patch of yellow paint.",
+            "flashClue": "A patch of yellow paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "verde",
             "asset": "colores/verde",
             "answer": "green",
             "aliases": [],
-            "clue": "Mancha de pintura de color verde.",
-            "memoryClue": "Pintura verde.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of green paint.",
+            "memoryClue": "A patch of green paint.",
+            "flashClue": "A patch of green paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "naranja",
             "asset": "colores/naranja",
             "answer": "orange",
             "aliases": [],
-            "clue": "Mancha de pintura de color naranja.",
-            "memoryClue": "Pintura naranja.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of orange paint.",
+            "memoryClue": "A patch of orange paint.",
+            "flashClue": "A patch of orange paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "morado",
             "asset": "colores/morado",
             "answer": "purple",
             "aliases": [],
-            "clue": "Mancha de pintura de color morado.",
-            "memoryClue": "Pintura morado.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of purple paint.",
+            "memoryClue": "A patch of purple paint.",
+            "flashClue": "A patch of purple paint.",
+            "searchClue": "Find the name of this colour."
           },
           {
             "key": "blanco",
             "asset": "colores/blanco",
             "answer": "white",
             "aliases": [],
-            "clue": "Mancha de pintura de color blanco.",
-            "memoryClue": "Pintura blanco.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "A patch of white paint.",
+            "memoryClue": "A patch of white paint.",
+            "flashClue": "A patch of white paint.",
+            "searchClue": "Find the name of this colour."
           }
         ]
       },
@@ -6110,7 +6482,7 @@ window.CURRICULUM = {
     {
       "id": "ropa",
       "revision": "ilustrada-v2",
-      "title": "La ropa",
+      "title": "Clothes",
       "kind": "vocabulary",
       "icon": "ropa",
       "level": "A1",
@@ -6130,10 +6502,10 @@ window.CURRICULUM = {
           "aliases": [
             "coat"
           ],
-          "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
-          "memoryClue": "Una prenda exterior que abriga el cuerpo.",
-          "flashClue": "Una prenda exterior que abriga el cuerpo.",
-          "searchClue": "Prenda exterior de manga larga para abrigarse.",
+          "clue": "A green long-sleeved outer garment.",
+          "memoryClue": "A green long-sleeved outer garment.",
+          "flashClue": "A green long-sleeved outer garment.",
+          "searchClue": "You wear this over your clothes to keep warm.",
           "prompt": ""
         },
         {
@@ -6143,10 +6515,10 @@ window.CURRICULUM = {
           "aliases": [
             "muffler"
           ],
-          "clue": "Tira de tela azul que se lleva alrededor del cuello.",
-          "memoryClue": "Abriga el cuello y puede tener flecos.",
-          "flashClue": "Abriga el cuello y puede tener flecos.",
-          "searchClue": "Accesorio largo que rodea el cuello.",
+          "clue": "A blue strip of cloth worn around the neck.",
+          "memoryClue": "A blue strip of cloth worn around the neck.",
+          "flashClue": "A blue strip of cloth worn around the neck.",
+          "searchClue": "This long accessory keeps your neck warm.",
           "prompt": "I wrap this blue ___ around my neck."
         },
         {
@@ -6156,10 +6528,10 @@ window.CURRICULUM = {
           "aliases": [
             "sock"
           ],
-          "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
-          "memoryClue": "Se llevan entre el pie y el calzado.",
-          "flashClue": "Se llevan entre el pie y el calzado.",
-          "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+          "clue": "Two orange items worn on your feet inside shoes.",
+          "memoryClue": "Two orange items worn on your feet inside shoes.",
+          "flashClue": "Two orange items worn on your feet inside shoes.",
+          "searchClue": "You put these on before your shoes.",
           "prompt": ""
         },
         {
@@ -6172,10 +6544,10 @@ window.CURRICULUM = {
             "tee shirt",
             "tee"
           ],
-          "clue": "Prenda azul de manga corta, sin botones.",
-          "memoryClue": "Parte de arriba de manga corta, sin botones.",
-          "flashClue": "Parte de arriba de manga corta, sin botones.",
-          "searchClue": "Prenda de manga corta que no lleva botones.",
+          "clue": "A blue short-sleeved top with no buttons.",
+          "memoryClue": "A blue short-sleeved top with no buttons.",
+          "flashClue": "A blue short-sleeved top with no buttons.",
+          "searchClue": "This casual top has short sleeves.",
           "prompt": "This blue ___ has short sleeves and no buttons."
         },
         {
@@ -6183,10 +6555,10 @@ window.CURRICULUM = {
           "asset": "ropa/falda",
           "answer": "skirt",
           "aliases": [],
-          "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
-          "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
-          "flashClue": "No es un vestido: solo cubre la parte de abajo.",
-          "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+          "clue": "A red garment worn from the waist, without trouser legs.",
+          "memoryClue": "A red garment worn from the waist, without trouser legs.",
+          "flashClue": "A red garment worn from the waist, without trouser legs.",
+          "searchClue": "A garment that hangs from the waist and is not trousers.",
           "prompt": "This orange ___ covers the lower part of the body and has no separate legs."
         },
         {
@@ -6196,10 +6568,10 @@ window.CURRICULUM = {
           "aliases": [
             "baseball cap"
           ],
-          "clue": "Accesorio verde para la cabeza, con visera.",
-          "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-          "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-          "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+          "clue": "A blue cap with a peak.",
+          "memoryClue": "A blue cap with a peak.",
+          "flashClue": "A blue cap with a peak.",
+          "searchClue": "This head covering has a peak at the front.",
           "prompt": "I wear this green ___ on my head to keep the sun out of my eyes."
         },
         {
@@ -6209,10 +6581,10 @@ window.CURRICULUM = {
           "aliases": [
             "glove"
           ],
-          "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
-          "memoryClue": "Abrigan las manos y los dedos.",
-          "flashClue": "Abrigan las manos y los dedos.",
-          "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+          "clue": "Two items that cover the hands and fingers.",
+          "memoryClue": "Two items that cover the hands and fingers.",
+          "flashClue": "Two items that cover the hands and fingers.",
+          "searchClue": "These keep all your fingers warm.",
           "prompt": ""
         },
         {
@@ -6222,10 +6594,10 @@ window.CURRICULUM = {
           "aliases": [
             "pants"
           ],
-          "clue": "Prenda azul que cubre las piernas por separado.",
-          "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
-          "flashClue": "Cubre cada pierna por separado, desde la cintura.",
-          "searchClue": "Ropa para las piernas, con una parte para cada una.",
+          "clue": "A pair of blue trousers.",
+          "memoryClue": "A pair of blue trousers.",
+          "flashClue": "A pair of blue trousers.",
+          "searchClue": "This garment has two legs and covers the lower body.",
           "prompt": "These blue ___ cover both legs separately."
         },
         {
@@ -6237,10 +6609,10 @@ window.CURRICULUM = {
             "pajama",
             "pyjama"
           ],
-          "clue": "Conjunto naranja de dos piezas para dormir.",
-          "memoryClue": "Conjunto cómodo para irse a la cama.",
-          "flashClue": "Conjunto cómodo para irse a la cama.",
-          "searchClue": "Ropa que se usa para dormir por la noche.",
+          "clue": "A matching top and trousers worn for sleeping.",
+          "memoryClue": "A matching top and trousers worn for sleeping.",
+          "flashClue": "A matching top and trousers worn for sleeping.",
+          "searchClue": "You put these clothes on for bed.",
           "prompt": ""
         },
         {
@@ -6248,10 +6620,10 @@ window.CURRICULUM = {
           "asset": "ropa/sombrero",
           "answer": "hat",
           "aliases": [],
-          "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
-          "memoryClue": "Tiene un ala que rodea la cabeza.",
-          "flashClue": "Tiene un ala que rodea la cabeza.",
-          "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+          "clue": "A hat with a brim all the way round.",
+          "memoryClue": "A hat with a brim all the way round.",
+          "flashClue": "A hat with a brim all the way round.",
+          "searchClue": "Unlike a cap, this head covering has a brim all around.",
           "prompt": ""
         },
         {
@@ -6259,10 +6631,10 @@ window.CURRICULUM = {
           "asset": "ropa/vestido",
           "answer": "dress",
           "aliases": [],
-          "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
-          "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
-          "flashClue": "La parte de arriba y la falda forman una sola prenda.",
-          "searchClue": "Prenda de una sola pieza con falda incorporada.",
+          "clue": "A pink one-piece garment with a skirt.",
+          "memoryClue": "A pink one-piece garment with a skirt.",
+          "flashClue": "A pink one-piece garment with a skirt.",
+          "searchClue": "The top and skirt form one garment.",
           "prompt": ""
         },
         {
@@ -6273,10 +6645,10 @@ window.CURRICULUM = {
             "ankle boots",
             "shoes"
           ],
-          "clue": "Calzado negro con cordones que cubre los tobillos.",
-          "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-          "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-          "searchClue": "Calzado alto, negro y con cordones.",
+          "clue": "A pair of black lace-up ankle boots.",
+          "memoryClue": "A pair of black lace-up ankle boots.",
+          "flashClue": "A pair of black lace-up ankle boots.",
+          "searchClue": "This footwear covers your feet and ankles.",
           "prompt": "These black ___ have laces and cover my ankles."
         }
       ],
@@ -6287,10 +6659,10 @@ window.CURRICULUM = {
             "asset": "ropa/vestido",
             "answer": "dress",
             "aliases": [],
-            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
-            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
-            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
-            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "clue": "A pink one-piece garment with a skirt.",
+            "memoryClue": "A pink one-piece garment with a skirt.",
+            "flashClue": "A pink one-piece garment with a skirt.",
+            "searchClue": "The top and skirt form one garment.",
             "prompt": ""
           },
           {
@@ -6303,10 +6675,10 @@ window.CURRICULUM = {
               "tee shirt",
               "tee"
             ],
-            "clue": "Prenda azul de manga corta, sin botones.",
-            "memoryClue": "Parte de arriba de manga corta, sin botones.",
-            "flashClue": "Parte de arriba de manga corta, sin botones.",
-            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "clue": "A blue short-sleeved top with no buttons.",
+            "memoryClue": "A blue short-sleeved top with no buttons.",
+            "flashClue": "A blue short-sleeved top with no buttons.",
+            "searchClue": "This casual top has short sleeves.",
             "prompt": "This blue ___ has short sleeves and no buttons."
           },
           {
@@ -6316,10 +6688,10 @@ window.CURRICULUM = {
             "aliases": [
               "pants"
             ],
-            "clue": "Prenda azul que cubre las piernas por separado.",
-            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
-            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
-            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "clue": "A pair of blue trousers.",
+            "memoryClue": "A pair of blue trousers.",
+            "flashClue": "A pair of blue trousers.",
+            "searchClue": "This garment has two legs and covers the lower body.",
             "prompt": "These blue ___ cover both legs separately."
           },
           {
@@ -6329,10 +6701,10 @@ window.CURRICULUM = {
             "aliases": [
               "coat"
             ],
-            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
-            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
-            "flashClue": "Una prenda exterior que abriga el cuerpo.",
-            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "clue": "A green long-sleeved outer garment.",
+            "memoryClue": "A green long-sleeved outer garment.",
+            "flashClue": "A green long-sleeved outer garment.",
+            "searchClue": "You wear this over your clothes to keep warm.",
             "prompt": ""
           },
           {
@@ -6342,10 +6714,10 @@ window.CURRICULUM = {
             "aliases": [
               "baseball cap"
             ],
-            "clue": "Accesorio verde para la cabeza, con visera.",
-            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "clue": "A blue cap with a peak.",
+            "memoryClue": "A blue cap with a peak.",
+            "flashClue": "A blue cap with a peak.",
+            "searchClue": "This head covering has a peak at the front.",
             "prompt": "I wear this green ___ on my head to keep the sun out of my eyes."
           },
           {
@@ -6356,10 +6728,10 @@ window.CURRICULUM = {
               "ankle boots",
               "shoes"
             ],
-            "clue": "Calzado negro con cordones que cubre los tobillos.",
-            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "searchClue": "Calzado alto, negro y con cordones.",
+            "clue": "A pair of black lace-up ankle boots.",
+            "memoryClue": "A pair of black lace-up ankle boots.",
+            "flashClue": "A pair of black lace-up ankle boots.",
+            "searchClue": "This footwear covers your feet and ankles.",
             "prompt": "These black ___ have laces and cover my ankles."
           }
         ],
@@ -6371,10 +6743,10 @@ window.CURRICULUM = {
             "aliases": [
               "muffler"
             ],
-            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
-            "memoryClue": "Abriga el cuello y puede tener flecos.",
-            "flashClue": "Abriga el cuello y puede tener flecos.",
-            "searchClue": "Accesorio largo que rodea el cuello.",
+            "clue": "A blue strip of cloth worn around the neck.",
+            "memoryClue": "A blue strip of cloth worn around the neck.",
+            "flashClue": "A blue strip of cloth worn around the neck.",
+            "searchClue": "This long accessory keeps your neck warm.",
             "prompt": "I wrap this blue ___ around my neck."
           },
           {
@@ -6384,10 +6756,10 @@ window.CURRICULUM = {
             "aliases": [
               "sock"
             ],
-            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
-            "memoryClue": "Se llevan entre el pie y el calzado.",
-            "flashClue": "Se llevan entre el pie y el calzado.",
-            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "clue": "Two orange items worn on your feet inside shoes.",
+            "memoryClue": "Two orange items worn on your feet inside shoes.",
+            "flashClue": "Two orange items worn on your feet inside shoes.",
+            "searchClue": "You put these on before your shoes.",
             "prompt": ""
           },
           {
@@ -6395,10 +6767,10 @@ window.CURRICULUM = {
             "asset": "ropa/falda",
             "answer": "skirt",
             "aliases": [],
-            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
-            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
-            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
-            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "clue": "A red garment worn from the waist, without trouser legs.",
+            "memoryClue": "A red garment worn from the waist, without trouser legs.",
+            "flashClue": "A red garment worn from the waist, without trouser legs.",
+            "searchClue": "A garment that hangs from the waist and is not trousers.",
             "prompt": "This orange ___ covers the lower part of the body and has no separate legs."
           },
           {
@@ -6408,10 +6780,10 @@ window.CURRICULUM = {
             "aliases": [
               "glove"
             ],
-            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
-            "memoryClue": "Abrigan las manos y los dedos.",
-            "flashClue": "Abrigan las manos y los dedos.",
-            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "clue": "Two items that cover the hands and fingers.",
+            "memoryClue": "Two items that cover the hands and fingers.",
+            "flashClue": "Two items that cover the hands and fingers.",
+            "searchClue": "These keep all your fingers warm.",
             "prompt": ""
           },
           {
@@ -6423,10 +6795,10 @@ window.CURRICULUM = {
               "pajama",
               "pyjama"
             ],
-            "clue": "Conjunto naranja de dos piezas para dormir.",
-            "memoryClue": "Conjunto cómodo para irse a la cama.",
-            "flashClue": "Conjunto cómodo para irse a la cama.",
-            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "clue": "A matching top and trousers worn for sleeping.",
+            "memoryClue": "A matching top and trousers worn for sleeping.",
+            "flashClue": "A matching top and trousers worn for sleeping.",
+            "searchClue": "You put these clothes on for bed.",
             "prompt": ""
           },
           {
@@ -6434,10 +6806,10 @@ window.CURRICULUM = {
             "asset": "ropa/sombrero",
             "answer": "hat",
             "aliases": [],
-            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
-            "memoryClue": "Tiene un ala que rodea la cabeza.",
-            "flashClue": "Tiene un ala que rodea la cabeza.",
-            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "clue": "A hat with a brim all the way round.",
+            "memoryClue": "A hat with a brim all the way round.",
+            "flashClue": "A hat with a brim all the way round.",
+            "searchClue": "Unlike a cap, this head covering has a brim all around.",
             "prompt": ""
           }
         ],
@@ -6451,10 +6823,10 @@ window.CURRICULUM = {
               "pajama",
               "pyjama"
             ],
-            "clue": "Conjunto naranja de dos piezas para dormir.",
-            "memoryClue": "Conjunto cómodo para irse a la cama.",
-            "flashClue": "Un conjunto de dos piezas para acostarse y dormir.",
-            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "clue": "A matching top and trousers worn for sleeping.",
+            "memoryClue": "A matching top and trousers worn for sleeping.",
+            "flashClue": "A matching top and trousers worn for sleeping.",
+            "searchClue": "You put these clothes on for bed.",
             "prompt": ""
           },
           {
@@ -6462,10 +6834,10 @@ window.CURRICULUM = {
             "asset": "ropa/vestido",
             "answer": "dress",
             "aliases": [],
-            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
-            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
-            "flashClue": "Una sola pieza verde con la parte de arriba unida a una falda.",
-            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "clue": "A pink one-piece garment with a skirt.",
+            "memoryClue": "A pink one-piece garment with a skirt.",
+            "flashClue": "A pink one-piece garment with a skirt.",
+            "searchClue": "The top and skirt form one garment.",
             "prompt": ""
           },
           {
@@ -6475,10 +6847,10 @@ window.CURRICULUM = {
             "aliases": [
               "glove"
             ],
-            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
-            "memoryClue": "Abrigan las manos y los dedos.",
-            "flashClue": "Te los pones en las manos para abrigar cada dedo.",
-            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "clue": "Two items that cover the hands and fingers.",
+            "memoryClue": "Two items that cover the hands and fingers.",
+            "flashClue": "Two items that cover the hands and fingers.",
+            "searchClue": "These keep all your fingers warm.",
             "prompt": ""
           },
           {
@@ -6488,10 +6860,10 @@ window.CURRICULUM = {
             "aliases": [
               "coat"
             ],
-            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
-            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
-            "flashClue": "La prenda verde que te pones sobre la camiseta para abrigarte.",
-            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "clue": "A green long-sleeved outer garment.",
+            "memoryClue": "A green long-sleeved outer garment.",
+            "flashClue": "A green long-sleeved outer garment.",
+            "searchClue": "You wear this over your clothes to keep warm.",
             "prompt": ""
           },
           {
@@ -6501,10 +6873,10 @@ window.CURRICULUM = {
             "aliases": [
               "sock"
             ],
-            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
-            "memoryClue": "Se llevan entre el pie y el calzado.",
-            "flashClue": "Cubren los pies y van por dentro del calzado.",
-            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "clue": "Two orange items worn on your feet inside shoes.",
+            "memoryClue": "Two orange items worn on your feet inside shoes.",
+            "flashClue": "Two orange items worn on your feet inside shoes.",
+            "searchClue": "You put these on before your shoes.",
             "prompt": ""
           },
           {
@@ -6512,10 +6884,10 @@ window.CURRICULUM = {
             "asset": "ropa/sombrero",
             "answer": "hat",
             "aliases": [],
-            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
-            "memoryClue": "Tiene un ala que rodea la cabeza.",
-            "flashClue": "El accesorio azul oscuro que se lleva en la cabeza.",
-            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "clue": "A hat with a brim all the way round.",
+            "memoryClue": "A hat with a brim all the way round.",
+            "flashClue": "A hat with a brim all the way round.",
+            "searchClue": "Unlike a cap, this head covering has a brim all around.",
             "prompt": ""
           }
         ],
@@ -6527,10 +6899,10 @@ window.CURRICULUM = {
             "aliases": [
               "muffler"
             ],
-            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
-            "memoryClue": "Abriga el cuello y puede tener flecos.",
-            "flashClue": "Abriga el cuello y puede tener flecos.",
-            "searchClue": "Accesorio largo que rodea el cuello.",
+            "clue": "A blue strip of cloth worn around the neck.",
+            "memoryClue": "A blue strip of cloth worn around the neck.",
+            "flashClue": "A blue strip of cloth worn around the neck.",
+            "searchClue": "This long accessory keeps your neck warm.",
             "prompt": "I wrap this blue ___ around my neck."
           },
           {
@@ -6538,10 +6910,10 @@ window.CURRICULUM = {
             "asset": "ropa/falda",
             "answer": "skirt",
             "aliases": [],
-            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
-            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
-            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
-            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "clue": "A red garment worn from the waist, without trouser legs.",
+            "memoryClue": "A red garment worn from the waist, without trouser legs.",
+            "flashClue": "A red garment worn from the waist, without trouser legs.",
+            "searchClue": "A garment that hangs from the waist and is not trousers.",
             "prompt": "This orange ___ covers the lower part of the body and has no separate legs."
           },
           {
@@ -6551,10 +6923,10 @@ window.CURRICULUM = {
             "aliases": [
               "baseball cap"
             ],
-            "clue": "Accesorio verde para la cabeza, con visera.",
-            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "clue": "A blue cap with a peak.",
+            "memoryClue": "A blue cap with a peak.",
+            "flashClue": "A blue cap with a peak.",
+            "searchClue": "This head covering has a peak at the front.",
             "prompt": "I wear this green ___ on my head to keep the sun out of my eyes."
           },
           {
@@ -6567,10 +6939,10 @@ window.CURRICULUM = {
               "tee shirt",
               "tee"
             ],
-            "clue": "Prenda azul de manga corta, sin botones.",
-            "memoryClue": "Parte de arriba de manga corta, sin botones.",
-            "flashClue": "Parte de arriba de manga corta, sin botones.",
-            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "clue": "A blue short-sleeved top with no buttons.",
+            "memoryClue": "A blue short-sleeved top with no buttons.",
+            "flashClue": "A blue short-sleeved top with no buttons.",
+            "searchClue": "This casual top has short sleeves.",
             "prompt": "This blue ___ has short sleeves and no buttons."
           },
           {
@@ -6580,10 +6952,10 @@ window.CURRICULUM = {
             "aliases": [
               "pants"
             ],
-            "clue": "Prenda azul que cubre las piernas por separado.",
-            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
-            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
-            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "clue": "A pair of blue trousers.",
+            "memoryClue": "A pair of blue trousers.",
+            "flashClue": "A pair of blue trousers.",
+            "searchClue": "This garment has two legs and covers the lower body.",
             "prompt": "These blue ___ cover both legs separately."
           },
           {
@@ -6594,10 +6966,10 @@ window.CURRICULUM = {
               "ankle boots",
               "shoes"
             ],
-            "clue": "Calzado negro con cordones que cubre los tobillos.",
-            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "searchClue": "Calzado alto, negro y con cordones.",
+            "clue": "A pair of black lace-up ankle boots.",
+            "memoryClue": "A pair of black lace-up ankle boots.",
+            "flashClue": "A pair of black lace-up ankle boots.",
+            "searchClue": "This footwear covers your feet and ankles.",
             "prompt": "These black ___ have laces and cover my ankles."
           }
         ],
@@ -6609,10 +6981,10 @@ window.CURRICULUM = {
             "aliases": [
               "coat"
             ],
-            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
-            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
-            "flashClue": "Una prenda exterior que abriga el cuerpo.",
-            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "clue": "A green long-sleeved outer garment.",
+            "memoryClue": "A green long-sleeved outer garment.",
+            "flashClue": "A green long-sleeved outer garment.",
+            "searchClue": "You wear this over your clothes to keep warm.",
             "prompt": ""
           },
           {
@@ -6622,10 +6994,10 @@ window.CURRICULUM = {
             "aliases": [
               "muffler"
             ],
-            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
-            "memoryClue": "Abriga el cuello y puede tener flecos.",
-            "flashClue": "Abriga el cuello y puede tener flecos.",
-            "searchClue": "Accesorio largo que rodea el cuello.",
+            "clue": "A blue strip of cloth worn around the neck.",
+            "memoryClue": "A blue strip of cloth worn around the neck.",
+            "flashClue": "A blue strip of cloth worn around the neck.",
+            "searchClue": "This long accessory keeps your neck warm.",
             "prompt": "I wrap this blue ___ around my neck."
           },
           {
@@ -6635,10 +7007,10 @@ window.CURRICULUM = {
             "aliases": [
               "sock"
             ],
-            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
-            "memoryClue": "Se llevan entre el pie y el calzado.",
-            "flashClue": "Se llevan entre el pie y el calzado.",
-            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "clue": "Two orange items worn on your feet inside shoes.",
+            "memoryClue": "Two orange items worn on your feet inside shoes.",
+            "flashClue": "Two orange items worn on your feet inside shoes.",
+            "searchClue": "You put these on before your shoes.",
             "prompt": ""
           },
           {
@@ -6651,10 +7023,10 @@ window.CURRICULUM = {
               "tee shirt",
               "tee"
             ],
-            "clue": "Prenda azul de manga corta, sin botones.",
-            "memoryClue": "Parte de arriba de manga corta, sin botones.",
-            "flashClue": "Parte de arriba de manga corta, sin botones.",
-            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "clue": "A blue short-sleeved top with no buttons.",
+            "memoryClue": "A blue short-sleeved top with no buttons.",
+            "flashClue": "A blue short-sleeved top with no buttons.",
+            "searchClue": "This casual top has short sleeves.",
             "prompt": "This blue ___ has short sleeves and no buttons."
           },
           {
@@ -6662,10 +7034,10 @@ window.CURRICULUM = {
             "asset": "ropa/falda",
             "answer": "skirt",
             "aliases": [],
-            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
-            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
-            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
-            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "clue": "A red garment worn from the waist, without trouser legs.",
+            "memoryClue": "A red garment worn from the waist, without trouser legs.",
+            "flashClue": "A red garment worn from the waist, without trouser legs.",
+            "searchClue": "A garment that hangs from the waist and is not trousers.",
             "prompt": "This orange ___ covers the lower part of the body and has no separate legs."
           },
           {
@@ -6675,10 +7047,10 @@ window.CURRICULUM = {
             "aliases": [
               "baseball cap"
             ],
-            "clue": "Accesorio verde para la cabeza, con visera.",
-            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "clue": "A blue cap with a peak.",
+            "memoryClue": "A blue cap with a peak.",
+            "flashClue": "A blue cap with a peak.",
+            "searchClue": "This head covering has a peak at the front.",
             "prompt": "I wear this green ___ on my head to keep the sun out of my eyes."
           },
           {
@@ -6688,10 +7060,10 @@ window.CURRICULUM = {
             "aliases": [
               "glove"
             ],
-            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
-            "memoryClue": "Abrigan las manos y los dedos.",
-            "flashClue": "Abrigan las manos y los dedos.",
-            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "clue": "Two items that cover the hands and fingers.",
+            "memoryClue": "Two items that cover the hands and fingers.",
+            "flashClue": "Two items that cover the hands and fingers.",
+            "searchClue": "These keep all your fingers warm.",
             "prompt": ""
           },
           {
@@ -6701,10 +7073,10 @@ window.CURRICULUM = {
             "aliases": [
               "pants"
             ],
-            "clue": "Prenda azul que cubre las piernas por separado.",
-            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
-            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
-            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "clue": "A pair of blue trousers.",
+            "memoryClue": "A pair of blue trousers.",
+            "flashClue": "A pair of blue trousers.",
+            "searchClue": "This garment has two legs and covers the lower body.",
             "prompt": "These blue ___ cover both legs separately."
           },
           {
@@ -6716,10 +7088,10 @@ window.CURRICULUM = {
               "pajama",
               "pyjama"
             ],
-            "clue": "Conjunto naranja de dos piezas para dormir.",
-            "memoryClue": "Conjunto cómodo para irse a la cama.",
-            "flashClue": "Conjunto cómodo para irse a la cama.",
-            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "clue": "A matching top and trousers worn for sleeping.",
+            "memoryClue": "A matching top and trousers worn for sleeping.",
+            "flashClue": "A matching top and trousers worn for sleeping.",
+            "searchClue": "You put these clothes on for bed.",
             "prompt": ""
           },
           {
@@ -6727,10 +7099,10 @@ window.CURRICULUM = {
             "asset": "ropa/sombrero",
             "answer": "hat",
             "aliases": [],
-            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
-            "memoryClue": "Tiene un ala que rodea la cabeza.",
-            "flashClue": "Tiene un ala que rodea la cabeza.",
-            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "clue": "A hat with a brim all the way round.",
+            "memoryClue": "A hat with a brim all the way round.",
+            "flashClue": "A hat with a brim all the way round.",
+            "searchClue": "Unlike a cap, this head covering has a brim all around.",
             "prompt": ""
           },
           {
@@ -6738,10 +7110,10 @@ window.CURRICULUM = {
             "asset": "ropa/vestido",
             "answer": "dress",
             "aliases": [],
-            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
-            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
-            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
-            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "clue": "A pink one-piece garment with a skirt.",
+            "memoryClue": "A pink one-piece garment with a skirt.",
+            "flashClue": "A pink one-piece garment with a skirt.",
+            "searchClue": "The top and skirt form one garment.",
             "prompt": ""
           },
           {
@@ -6752,10 +7124,10 @@ window.CURRICULUM = {
               "ankle boots",
               "shoes"
             ],
-            "clue": "Calzado negro con cordones que cubre los tobillos.",
-            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "searchClue": "Calzado alto, negro y con cordones.",
+            "clue": "A pair of black lace-up ankle boots.",
+            "memoryClue": "A pair of black lace-up ankle boots.",
+            "flashClue": "A pair of black lace-up ankle boots.",
+            "searchClue": "This footwear covers your feet and ankles.",
             "prompt": "These black ___ have laces and cover my ankles."
           }
         ]
@@ -6764,7 +7136,7 @@ window.CURRICULUM = {
     },
     {
       "id": "rutina",
-      "title": "Acciones habituales",
+      "title": "Everyday actions",
       "kind": "vocabulary",
       "icon": "rutina",
       "level": "A1",
@@ -6785,10 +7157,10 @@ window.CURRICULUM = {
           "aliases": [
             "to eat"
           ],
-          "clue": "Un niño come un bocadillo.",
-          "memoryClue": "Un niño come un bocadillo.",
-          "flashClue": "Un niño come un bocadillo.",
-          "searchClue": "Un niño come un bocadillo."
+          "clue": "A child eats a sandwich.",
+          "memoryClue": "A child eats a sandwich.",
+          "flashClue": "A child eats a sandwich.",
+          "searchClue": "Taking food into your mouth."
         },
         {
           "key": "beber",
@@ -6797,10 +7169,10 @@ window.CURRICULUM = {
           "aliases": [
             "to drink"
           ],
-          "clue": "Un niño bebe de un vaso.",
-          "memoryClue": "Un niño bebe de un vaso.",
-          "flashClue": "Un niño bebe de un vaso.",
-          "searchClue": "Un niño bebe de un vaso."
+          "clue": "A child drinks from a glass.",
+          "memoryClue": "A child drinks from a glass.",
+          "flashClue": "A child drinks from a glass.",
+          "searchClue": "Taking a drink of water."
         },
         {
           "key": "dormir",
@@ -6809,10 +7181,10 @@ window.CURRICULUM = {
           "aliases": [
             "to sleep"
           ],
-          "clue": "Un niño duerme en una cama.",
-          "memoryClue": "Un niño duerme en una cama.",
-          "flashClue": "Un niño duerme en una cama.",
-          "searchClue": "Un niño duerme en una cama."
+          "clue": "A child sleeps in bed.",
+          "memoryClue": "A child sleeps in bed.",
+          "flashClue": "A child sleeps in bed.",
+          "searchClue": "Resting in bed with your eyes closed."
         },
         {
           "key": "correr",
@@ -6821,10 +7193,10 @@ window.CURRICULUM = {
           "aliases": [
             "to run"
           ],
-          "clue": "Un niño corre al aire libre.",
-          "memoryClue": "Un niño corre al aire libre.",
-          "flashClue": "Un niño corre al aire libre.",
-          "searchClue": "Un niño corre al aire libre."
+          "clue": "A child runs through the park.",
+          "memoryClue": "A child runs through the park.",
+          "flashClue": "A child runs through the park.",
+          "searchClue": "Moving faster than walking."
         },
         {
           "key": "dibujar",
@@ -6833,10 +7205,10 @@ window.CURRICULUM = {
           "aliases": [
             "to draw"
           ],
-          "clue": "Un niño dibuja con colores.",
-          "memoryClue": "Un niño dibuja con colores.",
-          "flashClue": "Un niño dibuja con colores.",
-          "searchClue": "Un niño dibuja con colores."
+          "clue": "A child draws with coloured pencils.",
+          "memoryClue": "A child draws with coloured pencils.",
+          "flashClue": "A child draws with coloured pencils.",
+          "searchClue": "Making a picture with pencils."
         },
         {
           "key": "caminar",
@@ -6845,10 +7217,10 @@ window.CURRICULUM = {
           "aliases": [
             "to walk"
           ],
-          "clue": "Un niño camina al aire libre.",
-          "memoryClue": "Un niño camina al aire libre.",
-          "flashClue": "Un niño camina al aire libre.",
-          "searchClue": "Un niño camina al aire libre."
+          "clue": "A child walks through the park.",
+          "memoryClue": "A child walks through the park.",
+          "flashClue": "A child walks through the park.",
+          "searchClue": "Moving forward by taking steps."
         },
         {
           "key": "leer",
@@ -6857,10 +7229,10 @@ window.CURRICULUM = {
           "aliases": [
             "to read"
           ],
-          "clue": "Un niño lee un libro.",
-          "memoryClue": "Un niño lee un libro.",
-          "flashClue": "Un niño lee un libro.",
-          "searchClue": "Un niño lee un libro."
+          "clue": "A child reads a book.",
+          "memoryClue": "A child reads a book.",
+          "flashClue": "A child reads a book.",
+          "searchClue": "Following the words in a book."
         },
         {
           "key": "escribir",
@@ -6869,10 +7241,10 @@ window.CURRICULUM = {
           "aliases": [
             "to write"
           ],
-          "clue": "Un niño escribe en un cuaderno.",
-          "memoryClue": "Un niño escribe en un cuaderno.",
-          "flashClue": "Un niño escribe en un cuaderno.",
-          "searchClue": "Un niño escribe en un cuaderno."
+          "clue": "A child writes in a notebook.",
+          "memoryClue": "A child writes in a notebook.",
+          "flashClue": "A child writes in a notebook.",
+          "searchClue": "Putting words on paper with a pencil."
         },
         {
           "key": "jugar",
@@ -6881,10 +7253,10 @@ window.CURRICULUM = {
           "aliases": [
             "to play"
           ],
-          "clue": "Un niño juega con una pelota.",
-          "memoryClue": "Un niño juega con una pelota.",
-          "flashClue": "Un niño juega con una pelota.",
-          "searchClue": "Un niño juega con una pelota."
+          "clue": "A child plays with a ball.",
+          "memoryClue": "A child plays with a ball.",
+          "flashClue": "A child plays with a ball.",
+          "searchClue": "Having fun with a ball."
         },
         {
           "key": "abrir",
@@ -6893,10 +7265,10 @@ window.CURRICULUM = {
           "aliases": [
             "to open"
           ],
-          "clue": "Un niño abre una ventana; la flecha sube.",
-          "memoryClue": "Un niño abre una ventana; la flecha sube.",
-          "flashClue": "Un niño abre una ventana; la flecha sube.",
-          "searchClue": "Un niño abre una ventana; la flecha sube."
+          "clue": "A child opens a window; the arrow points up.",
+          "memoryClue": "A child opens a window; the arrow points up.",
+          "flashClue": "A child opens a window; the arrow points up.",
+          "searchClue": "Moving the window to let air in."
         },
         {
           "key": "cerrar",
@@ -6905,10 +7277,10 @@ window.CURRICULUM = {
           "aliases": [
             "to close"
           ],
-          "clue": "Un niño cierra una ventana; la flecha baja.",
-          "memoryClue": "Un niño cierra una ventana; la flecha baja.",
-          "flashClue": "Un niño cierra una ventana; la flecha baja.",
-          "searchClue": "Un niño cierra una ventana; la flecha baja."
+          "clue": "A child closes a window; the arrow points down.",
+          "memoryClue": "A child closes a window; the arrow points down.",
+          "flashClue": "A child closes a window; the arrow points down.",
+          "searchClue": "Moving the window to keep air out."
         },
         {
           "key": "escuchar",
@@ -6917,10 +7289,10 @@ window.CURRICULUM = {
           "aliases": [
             "to listen"
           ],
-          "clue": "Un niño escucha música con auriculares.",
-          "memoryClue": "Un niño escucha música con auriculares.",
-          "flashClue": "Un niño escucha música con auriculares.",
-          "searchClue": "Un niño escucha música con auriculares."
+          "clue": "A child listens to music with headphones.",
+          "memoryClue": "A child listens to music with headphones.",
+          "flashClue": "A child listens to music with headphones.",
+          "searchClue": "Paying attention to music."
         }
       ],
       "variants": {
@@ -6932,10 +7304,10 @@ window.CURRICULUM = {
             "aliases": [
               "to eat"
             ],
-            "clue": "Un niño come un bocadillo.",
-            "memoryClue": "Un niño come un bocadillo.",
-            "flashClue": "Un niño come un bocadillo.",
-            "searchClue": "Un niño come un bocadillo."
+            "clue": "A child eats a sandwich.",
+            "memoryClue": "A child eats a sandwich.",
+            "flashClue": "A child eats a sandwich.",
+            "searchClue": "Taking food into your mouth."
           },
           {
             "key": "beber",
@@ -6944,10 +7316,10 @@ window.CURRICULUM = {
             "aliases": [
               "to drink"
             ],
-            "clue": "Un niño bebe de un vaso.",
-            "memoryClue": "Un niño bebe de un vaso.",
-            "flashClue": "Un niño bebe de un vaso.",
-            "searchClue": "Un niño bebe de un vaso."
+            "clue": "A child drinks from a glass.",
+            "memoryClue": "A child drinks from a glass.",
+            "flashClue": "A child drinks from a glass.",
+            "searchClue": "Taking a drink of water."
           },
           {
             "key": "correr",
@@ -6956,10 +7328,10 @@ window.CURRICULUM = {
             "aliases": [
               "to run"
             ],
-            "clue": "Un niño corre al aire libre.",
-            "memoryClue": "Un niño corre al aire libre.",
-            "flashClue": "Un niño corre al aire libre.",
-            "searchClue": "Un niño corre al aire libre."
+            "clue": "A child runs through the park.",
+            "memoryClue": "A child runs through the park.",
+            "flashClue": "A child runs through the park.",
+            "searchClue": "Moving faster than walking."
           },
           {
             "key": "caminar",
@@ -6968,10 +7340,10 @@ window.CURRICULUM = {
             "aliases": [
               "to walk"
             ],
-            "clue": "Un niño camina al aire libre.",
-            "memoryClue": "Un niño camina al aire libre.",
-            "flashClue": "Un niño camina al aire libre.",
-            "searchClue": "Un niño camina al aire libre."
+            "clue": "A child walks through the park.",
+            "memoryClue": "A child walks through the park.",
+            "flashClue": "A child walks through the park.",
+            "searchClue": "Moving forward by taking steps."
           },
           {
             "key": "escribir",
@@ -6980,10 +7352,10 @@ window.CURRICULUM = {
             "aliases": [
               "to write"
             ],
-            "clue": "Un niño escribe en un cuaderno.",
-            "memoryClue": "Un niño escribe en un cuaderno.",
-            "flashClue": "Un niño escribe en un cuaderno.",
-            "searchClue": "Un niño escribe en un cuaderno."
+            "clue": "A child writes in a notebook.",
+            "memoryClue": "A child writes in a notebook.",
+            "flashClue": "A child writes in a notebook.",
+            "searchClue": "Putting words on paper with a pencil."
           },
           {
             "key": "escuchar",
@@ -6992,10 +7364,10 @@ window.CURRICULUM = {
             "aliases": [
               "to listen"
             ],
-            "clue": "Un niño escucha música con auriculares.",
-            "memoryClue": "Un niño escucha música con auriculares.",
-            "flashClue": "Un niño escucha música con auriculares.",
-            "searchClue": "Un niño escucha música con auriculares."
+            "clue": "A child listens to music with headphones.",
+            "memoryClue": "A child listens to music with headphones.",
+            "flashClue": "A child listens to music with headphones.",
+            "searchClue": "Paying attention to music."
           }
         ],
         "3": [
@@ -7006,10 +7378,10 @@ window.CURRICULUM = {
             "aliases": [
               "to eat"
             ],
-            "clue": "Un niño come un bocadillo.",
-            "memoryClue": "Un niño come un bocadillo.",
-            "flashClue": "Un niño come un bocadillo.",
-            "searchClue": "Un niño come un bocadillo."
+            "clue": "A child eats a sandwich.",
+            "memoryClue": "A child eats a sandwich.",
+            "flashClue": "A child eats a sandwich.",
+            "searchClue": "Taking food into your mouth."
           },
           {
             "key": "beber",
@@ -7018,10 +7390,10 @@ window.CURRICULUM = {
             "aliases": [
               "to drink"
             ],
-            "clue": "Un niño bebe de un vaso.",
-            "memoryClue": "Un niño bebe de un vaso.",
-            "flashClue": "Un niño bebe de un vaso.",
-            "searchClue": "Un niño bebe de un vaso."
+            "clue": "A child drinks from a glass.",
+            "memoryClue": "A child drinks from a glass.",
+            "flashClue": "A child drinks from a glass.",
+            "searchClue": "Taking a drink of water."
           },
           {
             "key": "dormir",
@@ -7030,10 +7402,10 @@ window.CURRICULUM = {
             "aliases": [
               "to sleep"
             ],
-            "clue": "Un niño duerme en una cama.",
-            "memoryClue": "Un niño duerme en una cama.",
-            "flashClue": "Un niño duerme en una cama.",
-            "searchClue": "Un niño duerme en una cama."
+            "clue": "A child sleeps in bed.",
+            "memoryClue": "A child sleeps in bed.",
+            "flashClue": "A child sleeps in bed.",
+            "searchClue": "Resting in bed with your eyes closed."
           },
           {
             "key": "correr",
@@ -7042,10 +7414,10 @@ window.CURRICULUM = {
             "aliases": [
               "to run"
             ],
-            "clue": "Un niño corre al aire libre.",
-            "memoryClue": "Un niño corre al aire libre.",
-            "flashClue": "Un niño corre al aire libre.",
-            "searchClue": "Un niño corre al aire libre."
+            "clue": "A child runs through the park.",
+            "memoryClue": "A child runs through the park.",
+            "flashClue": "A child runs through the park.",
+            "searchClue": "Moving faster than walking."
           },
           {
             "key": "dibujar",
@@ -7054,10 +7426,10 @@ window.CURRICULUM = {
             "aliases": [
               "to draw"
             ],
-            "clue": "Un niño dibuja con colores.",
-            "memoryClue": "Un niño dibuja con colores.",
-            "flashClue": "Un niño dibuja con colores.",
-            "searchClue": "Un niño dibuja con colores."
+            "clue": "A child draws with coloured pencils.",
+            "memoryClue": "A child draws with coloured pencils.",
+            "flashClue": "A child draws with coloured pencils.",
+            "searchClue": "Making a picture with pencils."
           },
           {
             "key": "caminar",
@@ -7066,10 +7438,10 @@ window.CURRICULUM = {
             "aliases": [
               "to walk"
             ],
-            "clue": "Un niño camina al aire libre.",
-            "memoryClue": "Un niño camina al aire libre.",
-            "flashClue": "Un niño camina al aire libre.",
-            "searchClue": "Un niño camina al aire libre."
+            "clue": "A child walks through the park.",
+            "memoryClue": "A child walks through the park.",
+            "flashClue": "A child walks through the park.",
+            "searchClue": "Moving forward by taking steps."
           },
           {
             "key": "leer",
@@ -7078,10 +7450,10 @@ window.CURRICULUM = {
             "aliases": [
               "to read"
             ],
-            "clue": "Un niño lee un libro.",
-            "memoryClue": "Un niño lee un libro.",
-            "flashClue": "Un niño lee un libro.",
-            "searchClue": "Un niño lee un libro."
+            "clue": "A child reads a book.",
+            "memoryClue": "A child reads a book.",
+            "flashClue": "A child reads a book.",
+            "searchClue": "Following the words in a book."
           },
           {
             "key": "escribir",
@@ -7090,10 +7462,10 @@ window.CURRICULUM = {
             "aliases": [
               "to write"
             ],
-            "clue": "Un niño escribe en un cuaderno.",
-            "memoryClue": "Un niño escribe en un cuaderno.",
-            "flashClue": "Un niño escribe en un cuaderno.",
-            "searchClue": "Un niño escribe en un cuaderno."
+            "clue": "A child writes in a notebook.",
+            "memoryClue": "A child writes in a notebook.",
+            "flashClue": "A child writes in a notebook.",
+            "searchClue": "Putting words on paper with a pencil."
           },
           {
             "key": "jugar",
@@ -7102,10 +7474,10 @@ window.CURRICULUM = {
             "aliases": [
               "to play"
             ],
-            "clue": "Un niño juega con una pelota.",
-            "memoryClue": "Un niño juega con una pelota.",
-            "flashClue": "Un niño juega con una pelota.",
-            "searchClue": "Un niño juega con una pelota."
+            "clue": "A child plays with a ball.",
+            "memoryClue": "A child plays with a ball.",
+            "flashClue": "A child plays with a ball.",
+            "searchClue": "Having fun with a ball."
           },
           {
             "key": "abrir",
@@ -7114,10 +7486,10 @@ window.CURRICULUM = {
             "aliases": [
               "to open"
             ],
-            "clue": "Un niño abre una ventana; la flecha sube.",
-            "memoryClue": "Un niño abre una ventana; la flecha sube.",
-            "flashClue": "Un niño abre una ventana; la flecha sube.",
-            "searchClue": "Un niño abre una ventana; la flecha sube."
+            "clue": "A child opens a window; the arrow points up.",
+            "memoryClue": "A child opens a window; the arrow points up.",
+            "flashClue": "A child opens a window; the arrow points up.",
+            "searchClue": "Moving the window to let air in."
           },
           {
             "key": "cerrar",
@@ -7126,10 +7498,10 @@ window.CURRICULUM = {
             "aliases": [
               "to close"
             ],
-            "clue": "Un niño cierra una ventana; la flecha baja.",
-            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
-            "flashClue": "Un niño cierra una ventana; la flecha baja.",
-            "searchClue": "Un niño cierra una ventana; la flecha baja."
+            "clue": "A child closes a window; the arrow points down.",
+            "memoryClue": "A child closes a window; the arrow points down.",
+            "flashClue": "A child closes a window; the arrow points down.",
+            "searchClue": "Moving the window to keep air out."
           },
           {
             "key": "escuchar",
@@ -7138,10 +7510,10 @@ window.CURRICULUM = {
             "aliases": [
               "to listen"
             ],
-            "clue": "Un niño escucha música con auriculares.",
-            "memoryClue": "Un niño escucha música con auriculares.",
-            "flashClue": "Un niño escucha música con auriculares.",
-            "searchClue": "Un niño escucha música con auriculares."
+            "clue": "A child listens to music with headphones.",
+            "memoryClue": "A child listens to music with headphones.",
+            "flashClue": "A child listens to music with headphones.",
+            "searchClue": "Paying attention to music."
           }
         ],
         "5": [
@@ -7152,11 +7524,11 @@ window.CURRICULUM = {
             "aliases": [
               "to close"
             ],
-            "clue": "Un niño cierra una ventana; la flecha baja.",
-            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
-            "flashClue": "Un niño cierra una ventana; la flecha baja.",
-            "searchClue": "Un niño cierra una ventana; la flecha baja.",
-            "crosswordClue": "Mover la ventana para que no pase el aire."
+            "clue": "A child closes a window; the arrow points down.",
+            "memoryClue": "A child closes a window; the arrow points down.",
+            "flashClue": "A child closes a window; the arrow points down.",
+            "searchClue": "Moving the window to keep air out.",
+            "crosswordClue": "Moving the window to keep air out."
           },
           {
             "key": "escuchar",
@@ -7165,11 +7537,11 @@ window.CURRICULUM = {
             "aliases": [
               "to listen"
             ],
-            "clue": "Un niño escucha música con auriculares.",
-            "memoryClue": "Un niño escucha música con auriculares.",
-            "flashClue": "Un niño escucha música con auriculares.",
-            "searchClue": "Un niño escucha música con auriculares.",
-            "crosswordClue": "Prestar atención a la música que suena."
+            "clue": "A child listens to music with headphones.",
+            "memoryClue": "A child listens to music with headphones.",
+            "flashClue": "A child listens to music with headphones.",
+            "searchClue": "Paying attention to music.",
+            "crosswordClue": "Paying attention to music."
           },
           {
             "key": "dormir",
@@ -7178,11 +7550,11 @@ window.CURRICULUM = {
             "aliases": [
               "to sleep"
             ],
-            "clue": "Un niño duerme en una cama.",
-            "memoryClue": "Un niño duerme en una cama.",
-            "flashClue": "Un niño duerme en una cama.",
-            "searchClue": "Un niño duerme en una cama.",
-            "crosswordClue": "Descansar en la cama con los ojos cerrados."
+            "clue": "A child sleeps in bed.",
+            "memoryClue": "A child sleeps in bed.",
+            "flashClue": "A child sleeps in bed.",
+            "searchClue": "Resting in bed with your eyes closed.",
+            "crosswordClue": "Resting in bed with your eyes closed."
           },
           {
             "key": "leer",
@@ -7191,11 +7563,11 @@ window.CURRICULUM = {
             "aliases": [
               "to read"
             ],
-            "clue": "Un niño lee un libro.",
-            "memoryClue": "Un niño lee un libro.",
-            "flashClue": "Un niño lee un libro.",
-            "searchClue": "Un niño lee un libro.",
-            "crosswordClue": "Seguir las palabras de un libro para entender su historia."
+            "clue": "A child reads a book.",
+            "memoryClue": "A child reads a book.",
+            "flashClue": "A child reads a book.",
+            "searchClue": "Following the words in a book.",
+            "crosswordClue": "Following the words in a book."
           },
           {
             "key": "escribir",
@@ -7204,11 +7576,11 @@ window.CURRICULUM = {
             "aliases": [
               "to write"
             ],
-            "clue": "Un niño escribe en un cuaderno.",
-            "memoryClue": "Un niño escribe en un cuaderno.",
-            "flashClue": "Un niño escribe en un cuaderno.",
-            "searchClue": "Un niño escribe en un cuaderno.",
-            "crosswordClue": "Formar palabras en un cuaderno con un lápiz."
+            "clue": "A child writes in a notebook.",
+            "memoryClue": "A child writes in a notebook.",
+            "flashClue": "A child writes in a notebook.",
+            "searchClue": "Putting words on paper with a pencil.",
+            "crosswordClue": "Putting words on paper with a pencil."
           },
           {
             "key": "beber",
@@ -7217,11 +7589,11 @@ window.CURRICULUM = {
             "aliases": [
               "to drink"
             ],
-            "clue": "Un niño bebe de un vaso.",
-            "memoryClue": "Un niño bebe de un vaso.",
-            "flashClue": "Un niño bebe de un vaso.",
-            "searchClue": "Un niño bebe de un vaso.",
-            "crosswordClue": "Tomar agua de un vaso."
+            "clue": "A child drinks from a glass.",
+            "memoryClue": "A child drinks from a glass.",
+            "flashClue": "A child drinks from a glass.",
+            "searchClue": "Taking a drink of water.",
+            "crosswordClue": "Taking a drink of water."
           }
         ],
         "2": [
@@ -7230,10 +7602,10 @@ window.CURRICULUM = {
             "asset": "acciones/abrir",
             "answer": "open",
             "aliases": [],
-            "clue": "Un niño abre una ventana; la flecha sube.",
-            "memoryClue": "Un niño abre una ventana; la flecha sube.",
-            "flashClue": "Un niño abre una ventana; la flecha sube.",
-            "searchClue": "Un niño abre una ventana; la flecha sube.",
+            "clue": "A child opens a window; the arrow points up.",
+            "memoryClue": "A child opens a window; the arrow points up.",
+            "flashClue": "A child opens a window; the arrow points up.",
+            "searchClue": "Moving the window to let air in.",
             "prompt": "In the morning, I ___ my bedroom window."
           },
           {
@@ -7241,10 +7613,10 @@ window.CURRICULUM = {
             "asset": "acciones/comer",
             "answer": "eat",
             "aliases": [],
-            "clue": "Un niño come un bocadillo.",
-            "memoryClue": "Un niño come un bocadillo.",
-            "flashClue": "Un niño come un bocadillo.",
-            "searchClue": "Un niño come un bocadillo.",
+            "clue": "A child eats a sandwich.",
+            "memoryClue": "A child eats a sandwich.",
+            "flashClue": "A child eats a sandwich.",
+            "searchClue": "Taking food into your mouth.",
             "prompt": "Then I ___ a sandwich for breakfast."
           },
           {
@@ -7252,10 +7624,10 @@ window.CURRICULUM = {
             "asset": "acciones/beber",
             "answer": "drink",
             "aliases": [],
-            "clue": "Un niño bebe de un vaso.",
-            "memoryClue": "Un niño bebe de un vaso.",
-            "flashClue": "Un niño bebe de un vaso.",
-            "searchClue": "Un niño bebe de un vaso.",
+            "clue": "A child drinks from a glass.",
+            "memoryClue": "A child drinks from a glass.",
+            "flashClue": "A child drinks from a glass.",
+            "searchClue": "Taking a drink of water.",
             "prompt": "With breakfast, I ___ a glass of water."
           },
           {
@@ -7263,10 +7635,10 @@ window.CURRICULUM = {
             "asset": "acciones/dibujar",
             "answer": "draw",
             "aliases": [],
-            "clue": "Un niño dibuja con colores.",
-            "memoryClue": "Un niño dibuja con colores.",
-            "flashClue": "Un niño dibuja con colores.",
-            "searchClue": "Un niño dibuja con colores.",
+            "clue": "A child draws with coloured pencils.",
+            "memoryClue": "A child draws with coloured pencils.",
+            "flashClue": "A child draws with coloured pencils.",
+            "searchClue": "Making a picture with pencils.",
             "prompt": "In the afternoon, I ___ a picture with my coloured pencils."
           },
           {
@@ -7274,10 +7646,10 @@ window.CURRICULUM = {
             "asset": "acciones/leer",
             "answer": "read",
             "aliases": [],
-            "clue": "Un niño lee un libro.",
-            "memoryClue": "Un niño lee un libro.",
-            "flashClue": "Un niño lee un libro.",
-            "searchClue": "Un niño lee un libro.",
+            "clue": "A child reads a book.",
+            "memoryClue": "A child reads a book.",
+            "flashClue": "A child reads a book.",
+            "searchClue": "Following the words in a book.",
             "prompt": "Before bedtime, I ___ an adventure book."
           },
           {
@@ -7285,10 +7657,10 @@ window.CURRICULUM = {
             "asset": "acciones/dormir",
             "answer": "sleep",
             "aliases": [],
-            "clue": "Un niño duerme en una cama.",
-            "memoryClue": "Un niño duerme en una cama.",
-            "flashClue": "Un niño duerme en una cama.",
-            "searchClue": "Un niño duerme en una cama.",
+            "clue": "A child sleeps in bed.",
+            "memoryClue": "A child sleeps in bed.",
+            "flashClue": "A child sleeps in bed.",
+            "searchClue": "Resting in bed with your eyes closed.",
             "prompt": "At night, I ___ in my bed until morning."
           }
         ],
@@ -7298,10 +7670,10 @@ window.CURRICULUM = {
             "asset": "acciones/correr",
             "answer": "run",
             "aliases": [],
-            "clue": "Un niño corre al aire libre.",
-            "memoryClue": "Un niño corre al aire libre.",
-            "flashClue": "Un niño corre al aire libre.",
-            "searchClue": "Un niño corre al aire libre.",
+            "clue": "A child runs through the park.",
+            "memoryClue": "A child runs through the park.",
+            "flashClue": "A child runs through the park.",
+            "searchClue": "Moving faster than walking.",
             "prompt": "I ___ in the park."
           },
           {
@@ -7309,10 +7681,10 @@ window.CURRICULUM = {
             "asset": "acciones/caminar",
             "answer": "walk",
             "aliases": [],
-            "clue": "Un niño camina al aire libre.",
-            "memoryClue": "Un niño camina al aire libre.",
-            "flashClue": "Un niño camina al aire libre.",
-            "searchClue": "Un niño camina al aire libre.",
+            "clue": "A child walks through the park.",
+            "memoryClue": "A child walks through the park.",
+            "flashClue": "A child walks through the park.",
+            "searchClue": "Moving forward by taking steps.",
             "prompt": "We ___ to school."
           },
           {
@@ -7320,10 +7692,10 @@ window.CURRICULUM = {
             "asset": "acciones/escribir",
             "answer": "writes",
             "aliases": [],
-            "clue": "Un niño escribe en un cuaderno.",
-            "memoryClue": "Un niño escribe en un cuaderno.",
-            "flashClue": "Un niño escribe en un cuaderno.",
-            "searchClue": "Un niño escribe en un cuaderno.",
+            "clue": "A child writes in a notebook.",
+            "memoryClue": "A child writes in a notebook.",
+            "flashClue": "A child writes in a notebook.",
+            "searchClue": "Putting words on paper with a pencil.",
             "prompt": "Anna ___ a letter."
           },
           {
@@ -7331,10 +7703,10 @@ window.CURRICULUM = {
             "asset": "acciones/jugar",
             "answer": "play",
             "aliases": [],
-            "clue": "Un niño juega con una pelota.",
-            "memoryClue": "Un niño juega con una pelota.",
-            "flashClue": "Un niño juega con una pelota.",
-            "searchClue": "Un niño juega con una pelota.",
+            "clue": "A child plays with a ball.",
+            "memoryClue": "A child plays with a ball.",
+            "flashClue": "A child plays with a ball.",
+            "searchClue": "Having fun with a ball.",
             "prompt": "The children ___ with a ball."
           },
           {
@@ -7342,10 +7714,10 @@ window.CURRICULUM = {
             "asset": "acciones/cerrar",
             "answer": "close",
             "aliases": [],
-            "clue": "Un niño cierra una ventana; la flecha baja.",
-            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
-            "flashClue": "Un niño cierra una ventana; la flecha baja.",
-            "searchClue": "Un niño cierra una ventana; la flecha baja.",
+            "clue": "A child closes a window; the arrow points down.",
+            "memoryClue": "A child closes a window; the arrow points down.",
+            "flashClue": "A child closes a window; the arrow points down.",
+            "searchClue": "Moving the window to keep air out.",
             "prompt": "You ___ the window."
           },
           {
@@ -7353,10 +7725,10 @@ window.CURRICULUM = {
             "asset": "acciones/escuchar",
             "answer": "listen",
             "aliases": [],
-            "clue": "Un niño escucha música con auriculares.",
-            "memoryClue": "Un niño escucha música con auriculares.",
-            "flashClue": "Un niño escucha música con auriculares.",
-            "searchClue": "Un niño escucha música con auriculares.",
+            "clue": "A child listens to music with headphones.",
+            "memoryClue": "A child listens to music with headphones.",
+            "flashClue": "A child listens to music with headphones.",
+            "searchClue": "Paying attention to music.",
             "prompt": "I ___ to music at home."
           }
         ]
@@ -7365,7 +7737,7 @@ window.CURRICULUM = {
     },
     {
       "id": "frutas",
-      "title": "Las frutas",
+      "title": "Fruit",
       "kind": "vocabulary",
       "icon": "frutas",
       "level": "A1",
@@ -7385,10 +7757,10 @@ window.CURRICULUM = {
           "aliases": [
             "cherry"
           ],
-          "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-          "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
-          "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-          "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "clue": "Two small red fruits on long stems.",
+          "crosswordClue": "Small red fruits with stones inside, often joined by their stems.",
+          "memoryClue": "Two small red fruits on long stems.",
+          "flashClue": "Two small red fruits on long stems.",
           "prompt": "These small red fruits have long stems and a stone inside: ___."
         },
         {
@@ -7396,10 +7768,10 @@ window.CURRICULUM = {
           "asset": "frutas/fresa",
           "answer": "strawberry",
           "aliases": [],
-          "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-          "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
-          "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-          "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "clue": "A red fruit with seeds on the outside.",
+          "crosswordClue": "This heart-shaped fruit has green leaves on top.",
+          "memoryClue": "A red fruit with seeds on the outside.",
+          "flashClue": "A red fruit with seeds on the outside.",
           "prompt": "This red fruit has seeds on the outside: ___."
         },
         {
@@ -7407,10 +7779,10 @@ window.CURRICULUM = {
           "asset": "frutas/limon",
           "answer": "lemon",
           "aliases": [],
-          "clue": "Fruta amarilla, ovalada y de sabor ácido.",
-          "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
-          "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
-          "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "clue": "An oval yellow fruit with a sour taste.",
+          "crosswordClue": "A sour yellow citrus fruit often added to water.",
+          "memoryClue": "An oval yellow fruit with a sour taste.",
+          "flashClue": "An oval yellow fruit with a sour taste.",
           "prompt": "This yellow citrus fruit tastes sour: ___."
         },
         {
@@ -7418,10 +7790,10 @@ window.CURRICULUM = {
           "asset": "frutas/mango",
           "answer": "mango",
           "aliases": [],
-          "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-          "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
-          "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-          "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "clue": "A tropical fruit with yellow and red skin.",
+          "crosswordClue": "A sweet tropical fruit with one large flat stone.",
+          "memoryClue": "A tropical fruit with yellow and red skin.",
+          "flashClue": "A tropical fruit with yellow and red skin.",
           "prompt": ""
         },
         {
@@ -7429,10 +7801,10 @@ window.CURRICULUM = {
           "asset": "frutas/manzana",
           "answer": "apple",
           "aliases": [],
-          "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-          "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
-          "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-          "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "clue": "A round red fruit with a stalk.",
+          "crosswordClue": "A crisp round fruit often used to make pies.",
+          "memoryClue": "A round red fruit with a stalk.",
+          "flashClue": "A round red fruit with a stalk.",
           "prompt": ""
         },
         {
@@ -7440,10 +7812,10 @@ window.CURRICULUM = {
           "asset": "frutas/melocoton",
           "answer": "peach",
           "aliases": [],
-          "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-          "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
-          "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-          "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "clue": "A round fruit with orange-pink skin.",
+          "crosswordClue": "A soft-skinned fruit with a stone in the middle.",
+          "memoryClue": "A round fruit with orange-pink skin.",
+          "flashClue": "A round fruit with orange-pink skin.",
           "prompt": ""
         },
         {
@@ -7451,10 +7823,10 @@ window.CURRICULUM = {
           "asset": "frutas/naranja",
           "answer": "orange",
           "aliases": [],
-          "clue": "Fruta redonda de piel naranja que se divide en gajos.",
-          "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
-          "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
-          "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "clue": "A round orange citrus fruit.",
+          "crosswordClue": "A citrus fruit with the same name as its colour.",
+          "memoryClue": "A round orange citrus fruit.",
+          "flashClue": "A round orange citrus fruit.",
           "prompt": ""
         },
         {
@@ -7462,10 +7834,10 @@ window.CURRICULUM = {
           "asset": "frutas/pera",
           "answer": "pear",
           "aliases": [],
-          "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
-          "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
-          "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
-          "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "clue": "A green fruit that is narrow at the top.",
+          "crosswordClue": "This fruit is wider at the bottom than at the stalk.",
+          "memoryClue": "A green fruit that is narrow at the top.",
+          "flashClue": "A green fruit that is narrow at the top.",
           "prompt": ""
         },
         {
@@ -7473,10 +7845,10 @@ window.CURRICULUM = {
           "asset": "frutas/pina",
           "answer": "pineapple",
           "aliases": [],
-          "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-          "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
-          "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-          "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "clue": "A tropical fruit with a crown of spiky green leaves.",
+          "crosswordClue": "A large tropical fruit with rough skin and yellow flesh.",
+          "memoryClue": "A tropical fruit with a crown of spiky green leaves.",
+          "flashClue": "A tropical fruit with a crown of spiky green leaves.",
           "prompt": "This tropical fruit has a crown of spiky leaves: ___."
         },
         {
@@ -7486,10 +7858,10 @@ window.CURRICULUM = {
           "aliases": [
             "banana"
           ],
-          "clue": "Frutas amarillas, largas y curvas que se pelan.",
-          "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
-          "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
-          "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+          "clue": "A bunch of curved yellow fruits.",
+          "crosswordClue": "You peel these long yellow fruits before eating them.",
+          "memoryClue": "A bunch of curved yellow fruits.",
+          "flashClue": "A bunch of curved yellow fruits.",
           "prompt": ""
         },
         {
@@ -7497,10 +7869,10 @@ window.CURRICULUM = {
           "asset": "frutas/sandia",
           "answer": "watermelon",
           "aliases": [],
-          "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-          "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
-          "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-          "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "clue": "A slice with red flesh, black seeds and green rind.",
+          "crosswordClue": "A large summer fruit with red flesh and green rind.",
+          "memoryClue": "A slice with red flesh, black seeds and green rind.",
+          "flashClue": "A slice with red flesh, black seeds and green rind.",
           "prompt": "This large fruit has green skin, red flesh and black seeds: ___."
         },
         {
@@ -7510,10 +7882,10 @@ window.CURRICULUM = {
           "aliases": [
             "grape"
           ],
-          "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-          "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
-          "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-          "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "clue": "A bunch of small purple fruits.",
+          "crosswordClue": "These small fruits grow in bunches on a vine.",
+          "memoryClue": "A bunch of small purple fruits.",
+          "flashClue": "A bunch of small purple fruits.",
           "prompt": "These small round fruits grow in a bunch: ___."
         }
       ],
@@ -7524,10 +7896,10 @@ window.CURRICULUM = {
             "asset": "frutas/manzana",
             "answer": "apple",
             "aliases": [],
-            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
-            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "clue": "A round red fruit with a stalk.",
+            "crosswordClue": "A crisp round fruit often used to make pies.",
+            "memoryClue": "A round red fruit with a stalk.",
+            "flashClue": "A round red fruit with a stalk.",
             "prompt": ""
           },
           {
@@ -7535,10 +7907,10 @@ window.CURRICULUM = {
             "asset": "frutas/pera",
             "answer": "pear",
             "aliases": [],
-            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
-            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
-            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
-            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "clue": "A green fruit that is narrow at the top.",
+            "crosswordClue": "This fruit is wider at the bottom than at the stalk.",
+            "memoryClue": "A green fruit that is narrow at the top.",
+            "flashClue": "A green fruit that is narrow at the top.",
             "prompt": ""
           },
           {
@@ -7548,10 +7920,10 @@ window.CURRICULUM = {
             "aliases": [
               "banana"
             ],
-            "clue": "Frutas amarillas, largas y curvas que se pelan.",
-            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
-            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
-            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "clue": "A bunch of curved yellow fruits.",
+            "crosswordClue": "You peel these long yellow fruits before eating them.",
+            "memoryClue": "A bunch of curved yellow fruits.",
+            "flashClue": "A bunch of curved yellow fruits.",
             "prompt": ""
           },
           {
@@ -7559,10 +7931,10 @@ window.CURRICULUM = {
             "asset": "frutas/limon",
             "answer": "lemon",
             "aliases": [],
-            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
-            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "clue": "An oval yellow fruit with a sour taste.",
+            "crosswordClue": "A sour yellow citrus fruit often added to water.",
+            "memoryClue": "An oval yellow fruit with a sour taste.",
+            "flashClue": "An oval yellow fruit with a sour taste.",
             "prompt": "This yellow citrus fruit tastes sour: ___."
           },
           {
@@ -7570,10 +7942,10 @@ window.CURRICULUM = {
             "asset": "frutas/naranja",
             "answer": "orange",
             "aliases": [],
-            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
-            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
-            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
-            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "clue": "A round orange citrus fruit.",
+            "crosswordClue": "A citrus fruit with the same name as its colour.",
+            "memoryClue": "A round orange citrus fruit.",
+            "flashClue": "A round orange citrus fruit.",
             "prompt": ""
           },
           {
@@ -7581,10 +7953,10 @@ window.CURRICULUM = {
             "asset": "frutas/fresa",
             "answer": "strawberry",
             "aliases": [],
-            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
-            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "clue": "A red fruit with seeds on the outside.",
+            "crosswordClue": "This heart-shaped fruit has green leaves on top.",
+            "memoryClue": "A red fruit with seeds on the outside.",
+            "flashClue": "A red fruit with seeds on the outside.",
             "prompt": "This red fruit has seeds on the outside: ___."
           }
         ],
@@ -7596,10 +7968,10 @@ window.CURRICULUM = {
             "aliases": [
               "cherry"
             ],
-            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
-            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "flashClue": "Pequeñas y rojas: dos piezas con tallos largos.",
+            "clue": "Two small red fruits on long stems.",
+            "crosswordClue": "Small red fruits with stones inside, often joined by their stems.",
+            "memoryClue": "Two small red fruits on long stems.",
+            "flashClue": "Two small red fruits on long stems.",
             "prompt": "These small red fruits have long stems and a stone inside: ___."
           },
           {
@@ -7607,10 +7979,10 @@ window.CURRICULUM = {
             "asset": "frutas/mango",
             "answer": "mango",
             "aliases": [],
-            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
-            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "flashClue": "Una fruta tropical de cinco letras, amarilla y roja por fuera.",
+            "clue": "A tropical fruit with yellow and red skin.",
+            "crosswordClue": "A sweet tropical fruit with one large flat stone.",
+            "memoryClue": "A tropical fruit with yellow and red skin.",
+            "flashClue": "A tropical fruit with yellow and red skin.",
             "prompt": ""
           },
           {
@@ -7618,10 +7990,10 @@ window.CURRICULUM = {
             "asset": "frutas/melocoton",
             "answer": "peach",
             "aliases": [],
-            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
-            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-            "flashClue": "La fruta de piel suave y un hueso en el centro.",
+            "clue": "A round fruit with orange-pink skin.",
+            "crosswordClue": "A soft-skinned fruit with a stone in the middle.",
+            "memoryClue": "A round fruit with orange-pink skin.",
+            "flashClue": "A round fruit with orange-pink skin.",
             "prompt": ""
           },
           {
@@ -7629,10 +8001,10 @@ window.CURRICULUM = {
             "asset": "frutas/pina",
             "answer": "pineapple",
             "aliases": [],
-            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
-            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "flashClue": "La fruta de la corona de hojas.",
+            "clue": "A tropical fruit with a crown of spiky green leaves.",
+            "crosswordClue": "A large tropical fruit with rough skin and yellow flesh.",
+            "memoryClue": "A tropical fruit with a crown of spiky green leaves.",
+            "flashClue": "A tropical fruit with a crown of spiky green leaves.",
             "prompt": "This tropical fruit has a crown of spiky leaves: ___."
           },
           {
@@ -7640,10 +8012,10 @@ window.CURRICULUM = {
             "asset": "frutas/sandia",
             "answer": "watermelon",
             "aliases": [],
-            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
-            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "flashClue": "La rodaja de corteza verde y centro rojo.",
+            "clue": "A slice with red flesh, black seeds and green rind.",
+            "crosswordClue": "A large summer fruit with red flesh and green rind.",
+            "memoryClue": "A slice with red flesh, black seeds and green rind.",
+            "flashClue": "A slice with red flesh, black seeds and green rind.",
             "prompt": "This large fruit has green skin, red flesh and black seeds: ___."
           },
           {
@@ -7653,10 +8025,10 @@ window.CURRICULUM = {
             "aliases": [
               "grape"
             ],
-            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
-            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-            "flashClue": "Muchas piezas redondas y moradas en un mismo racimo.",
+            "clue": "A bunch of small purple fruits.",
+            "crosswordClue": "These small fruits grow in bunches on a vine.",
+            "memoryClue": "A bunch of small purple fruits.",
+            "flashClue": "A bunch of small purple fruits.",
             "prompt": "These small round fruits grow in a bunch: ___."
           }
         ],
@@ -7666,10 +8038,10 @@ window.CURRICULUM = {
             "asset": "frutas/manzana",
             "answer": "apple",
             "aliases": [],
-            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
-            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "clue": "A round red fruit with a stalk.",
+            "crosswordClue": "A crisp round fruit often used to make pies.",
+            "memoryClue": "A round red fruit with a stalk.",
+            "flashClue": "A round red fruit with a stalk.",
             "prompt": ""
           },
           {
@@ -7677,10 +8049,10 @@ window.CURRICULUM = {
             "asset": "frutas/pera",
             "answer": "pear",
             "aliases": [],
-            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
-            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
-            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
-            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "clue": "A green fruit that is narrow at the top.",
+            "crosswordClue": "This fruit is wider at the bottom than at the stalk.",
+            "memoryClue": "A green fruit that is narrow at the top.",
+            "flashClue": "A green fruit that is narrow at the top.",
             "prompt": ""
           },
           {
@@ -7688,10 +8060,10 @@ window.CURRICULUM = {
             "asset": "frutas/limon",
             "answer": "lemon",
             "aliases": [],
-            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
-            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "clue": "An oval yellow fruit with a sour taste.",
+            "crosswordClue": "A sour yellow citrus fruit often added to water.",
+            "memoryClue": "An oval yellow fruit with a sour taste.",
+            "flashClue": "An oval yellow fruit with a sour taste.",
             "prompt": "This yellow citrus fruit tastes sour: ___."
           },
           {
@@ -7699,10 +8071,10 @@ window.CURRICULUM = {
             "asset": "frutas/mango",
             "answer": "mango",
             "aliases": [],
-            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
-            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "clue": "A tropical fruit with yellow and red skin.",
+            "crosswordClue": "A sweet tropical fruit with one large flat stone.",
+            "memoryClue": "A tropical fruit with yellow and red skin.",
+            "flashClue": "A tropical fruit with yellow and red skin.",
             "prompt": ""
           },
           {
@@ -7710,10 +8082,10 @@ window.CURRICULUM = {
             "asset": "frutas/pina",
             "answer": "pineapple",
             "aliases": [],
-            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
-            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "clue": "A tropical fruit with a crown of spiky green leaves.",
+            "crosswordClue": "A large tropical fruit with rough skin and yellow flesh.",
+            "memoryClue": "A tropical fruit with a crown of spiky green leaves.",
+            "flashClue": "A tropical fruit with a crown of spiky green leaves.",
             "prompt": "This tropical fruit has a crown of spiky leaves: ___."
           },
           {
@@ -7723,10 +8095,10 @@ window.CURRICULUM = {
             "aliases": [
               "cherry"
             ],
-            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
-            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "clue": "Two small red fruits on long stems.",
+            "crosswordClue": "Small red fruits with stones inside, often joined by their stems.",
+            "memoryClue": "Two small red fruits on long stems.",
+            "flashClue": "Two small red fruits on long stems.",
             "prompt": "These small red fruits have long stems and a stone inside: ___."
           }
         ],
@@ -7736,48 +8108,48 @@ window.CURRICULUM = {
             "asset": "frutas/mango",
             "answer": "mango",
             "aliases": [],
-            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
-            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "clue": "A tropical fruit with yellow and red skin.",
+            "crosswordClue": "A sweet tropical fruit with one large flat stone.",
+            "memoryClue": "A tropical fruit with yellow and red skin.",
+            "flashClue": "A tropical fruit with yellow and red skin.",
             "prompt": "",
-            "orderLabel": "Para el desayuno"
+            "orderLabel": "Snack order: mango"
           },
           {
             "key": "melocoton",
             "asset": "frutas/melocoton",
             "answer": "peach",
             "aliases": [],
-            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
-            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-            "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "clue": "A round fruit with orange-pink skin.",
+            "crosswordClue": "A soft-skinned fruit with a stone in the middle.",
+            "memoryClue": "A round fruit with orange-pink skin.",
+            "flashClue": "A round fruit with orange-pink skin.",
             "prompt": "",
-            "orderLabel": "Para compartir"
+            "orderLabel": "Basket order: peach"
           },
           {
             "key": "naranja",
             "asset": "frutas/naranja",
             "answer": "orange",
             "aliases": [],
-            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
-            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
-            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
-            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "clue": "A round orange citrus fruit.",
+            "crosswordClue": "A citrus fruit with the same name as its colour.",
+            "memoryClue": "A round orange citrus fruit.",
+            "flashClue": "A round orange citrus fruit.",
             "prompt": "",
-            "orderLabel": "Para el zumo"
+            "orderLabel": "Juice order: orange"
           },
           {
             "key": "sandia",
             "asset": "frutas/sandia",
             "answer": "watermelon",
             "aliases": [],
-            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
-            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "clue": "A slice with red flesh, black seeds and green rind.",
+            "crosswordClue": "A large summer fruit with red flesh and green rind.",
+            "memoryClue": "A slice with red flesh, black seeds and green rind.",
+            "flashClue": "A slice with red flesh, black seeds and green rind.",
             "prompt": "This large fruit has green skin, red flesh and black seeds: ___.",
-            "orderLabel": "Para la merienda"
+            "orderLabel": "To share: watermelon"
           },
           {
             "key": "platanos",
@@ -7786,24 +8158,24 @@ window.CURRICULUM = {
             "aliases": [
               "banana"
             ],
-            "clue": "Frutas amarillas, largas y curvas que se pelan.",
-            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
-            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
-            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "clue": "A bunch of curved yellow fruits.",
+            "crosswordClue": "You peel these long yellow fruits before eating them.",
+            "memoryClue": "A bunch of curved yellow fruits.",
+            "flashClue": "A bunch of curved yellow fruits.",
             "prompt": "",
-            "orderLabel": "Para llevar"
+            "orderLabel": "Breakfast order: bananas"
           },
           {
             "key": "manzana",
             "asset": "frutas/manzana",
             "answer": "apple",
             "aliases": [],
-            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
-            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "clue": "A round red fruit with a stalk.",
+            "crosswordClue": "A crisp round fruit often used to make pies.",
+            "memoryClue": "A round red fruit with a stalk.",
+            "flashClue": "A round red fruit with a stalk.",
             "prompt": "",
-            "orderLabel": "Para el postre"
+            "orderLabel": "Pie order: apple"
           }
         ],
         "5": [
@@ -7812,10 +8184,10 @@ window.CURRICULUM = {
             "asset": "frutas/fresa",
             "answer": "strawberry",
             "aliases": [],
-            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
-            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "clue": "A red fruit with seeds on the outside.",
+            "crosswordClue": "This heart-shaped fruit has green leaves on top.",
+            "memoryClue": "A red fruit with seeds on the outside.",
+            "flashClue": "A red fruit with seeds on the outside.",
             "prompt": "This red fruit has seeds on the outside: ___."
           },
           {
@@ -7823,10 +8195,10 @@ window.CURRICULUM = {
             "asset": "frutas/limon",
             "answer": "lemon",
             "aliases": [],
-            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
-            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "clue": "An oval yellow fruit with a sour taste.",
+            "crosswordClue": "A sour yellow citrus fruit often added to water.",
+            "memoryClue": "An oval yellow fruit with a sour taste.",
+            "flashClue": "An oval yellow fruit with a sour taste.",
             "prompt": "This yellow citrus fruit tastes sour: ___."
           },
           {
@@ -7834,10 +8206,10 @@ window.CURRICULUM = {
             "asset": "frutas/pina",
             "answer": "pineapple",
             "aliases": [],
-            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
-            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "clue": "A tropical fruit with a crown of spiky green leaves.",
+            "crosswordClue": "A large tropical fruit with rough skin and yellow flesh.",
+            "memoryClue": "A tropical fruit with a crown of spiky green leaves.",
+            "flashClue": "A tropical fruit with a crown of spiky green leaves.",
             "prompt": "This tropical fruit has a crown of spiky leaves: ___."
           },
           {
@@ -7845,10 +8217,10 @@ window.CURRICULUM = {
             "asset": "frutas/sandia",
             "answer": "watermelon",
             "aliases": [],
-            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
-            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "clue": "A slice with red flesh, black seeds and green rind.",
+            "crosswordClue": "A large summer fruit with red flesh and green rind.",
+            "memoryClue": "A slice with red flesh, black seeds and green rind.",
+            "flashClue": "A slice with red flesh, black seeds and green rind.",
             "prompt": "This large fruit has green skin, red flesh and black seeds: ___."
           },
           {
@@ -7858,10 +8230,10 @@ window.CURRICULUM = {
             "aliases": [
               "cherry"
             ],
-            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
-            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "clue": "Two small red fruits on long stems.",
+            "crosswordClue": "Small red fruits with stones inside, often joined by their stems.",
+            "memoryClue": "Two small red fruits on long stems.",
+            "flashClue": "Two small red fruits on long stems.",
             "prompt": "These small red fruits have long stems and a stone inside: ___."
           },
           {
@@ -7871,10 +8243,10 @@ window.CURRICULUM = {
             "aliases": [
               "grape"
             ],
-            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
-            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-            "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "clue": "A bunch of small purple fruits.",
+            "crosswordClue": "These small fruits grow in bunches on a vine.",
+            "memoryClue": "A bunch of small purple fruits.",
+            "flashClue": "A bunch of small purple fruits.",
             "prompt": "These small round fruits grow in a bunch: ___."
           }
         ]
@@ -7885,7 +8257,7 @@ window.CURRICULUM = {
   "ruso": [
     {
       "id": "presente",
-      "title": "Verbos en presente",
+      "title": "Глаголы в настоящем времени",
       "kind": "grammar",
       "icon": "grammar",
       "level": "A1",
@@ -7893,177 +8265,172 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Я ___ журнал каждый вечер.",
-            "answer": "читаю",
-            "wrong": "читаешь",
-            "hint": "читать"
+            "prompt": "Обычно я ___ новые слова.",
+            "hint": "учить",
+            "answer": "учу",
+            "wrong": "учил"
           },
           {
-            "prompt": "Мама ___ радио утром.",
-            "answer": "слушает",
-            "wrong": "слушают",
-            "hint": "слушать"
+            "prompt": "Обычно она ___ яблоко в саду.",
+            "hint": "есть",
+            "answer": "ест",
+            "wrong": "ела"
           },
           {
-            "prompt": "Мы ___ в школу пешком.",
-            "answer": "идём",
-            "wrong": "идёт",
-            "hint": "идти"
+            "prompt": "Обычно мы ___ рядом с морем.",
+            "hint": "жить",
+            "answer": "живём",
+            "wrong": "жили"
           },
           {
-            "prompt": "Мои друзья ___ в шахматы.",
-            "answer": "играют",
-            "wrong": "играет",
-            "hint": "играть"
+            "prompt": "Обычно ты ___ в библиотеке.",
+            "hint": "работать",
+            "answer": "работаешь",
+            "wrong": "работал"
           },
           {
-            "prompt": "Я ___ после работы.",
-            "answer": "отдыхаю",
-            "wrong": "отдыхаешь",
-            "hint": "отдыхать"
+            "prompt": "Обычно они ___ в музей.",
+            "hint": "ходить",
+            "answer": "ходят",
+            "wrong": "ходили"
           }
         ],
         "2": [
           {
-            "prompt": "Я ___ письмо от друга.",
-            "answer": "читаю",
-            "wrong": "читаешь",
-            "hint": "читать"
+            "prompt": "Обычно я ___ воду за обедом.",
+            "hint": "пить",
+            "answer": "пью",
+            "wrong": "пил",
+            "asset": "acciones/beber",
+            "clue": "Иллюстрация действия: пить."
           },
           {
-            "prompt": "Моя подруга ___ подкаст.",
-            "answer": "слушает",
-            "wrong": "слушают",
-            "hint": "слушать"
-          },
-          {
-            "prompt": "Мы ___ в библиотеку.",
-            "answer": "идём",
-            "wrong": "идёт",
-            "hint": "идти"
-          },
-          {
-            "prompt": "Они ___ в теннис.",
-            "answer": "играют",
-            "wrong": "играет",
-            "hint": "играть"
-          },
-          {
-            "prompt": "Я ___ в воскресенье.",
-            "answer": "отдыхаю",
-            "wrong": "отдыхаешь",
-            "hint": "отдыхать"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "Я ___ газету утром.",
-            "answer": "читаю",
-            "wrong": "читаешь",
+            "prompt": "Обычно ты ___ книгу о приключениях.",
             "hint": "читать",
-            "orders": [
-              "Утром я читаю газету."
-            ]
+            "answer": "читаешь",
+            "wrong": "читал",
+            "asset": "acciones/leer",
+            "clue": "Иллюстрация действия: читать."
           },
           {
-            "prompt": "Сестра ___ новую песню.",
-            "answer": "слушает",
-            "wrong": "слушают",
-            "hint": "слушать",
-            "orders": [
-              "Новую песню слушает сестра."
-            ]
+            "prompt": "Обычно она ___ письмо бабушке.",
+            "hint": "писать",
+            "answer": "пишет",
+            "wrong": "писала",
+            "asset": "acciones/escribir",
+            "clue": "Иллюстрация действия: писать."
           },
           {
-            "prompt": "Мы ___ на рынок.",
-            "answer": "идём",
-            "wrong": "идёт",
-            "hint": "идти",
-            "orders": [
-              "На рынок идём мы."
-            ]
+            "prompt": "Обычно мы ___ цветы карандашами.",
+            "hint": "рисовать",
+            "answer": "рисуем",
+            "wrong": "рисовали",
+            "asset": "acciones/dibujar",
+            "clue": "Иллюстрация действия: рисовать."
           },
           {
-            "prompt": "Дети ___ во дворе.",
-            "answer": "играют",
-            "wrong": "играет",
-            "hint": "играть",
-            "orders": [
-              "Во дворе играют дети."
-            ]
-          },
-          {
-            "prompt": "Я ___ на даче летом.",
-            "answer": "отдыхаю",
-            "wrong": "отдыхаешь",
-            "hint": "отдыхать",
-            "orders": [
-              "Летом я отдыхаю на даче."
-            ]
-          }
-        ],
-        "5": [
-          {
-            "prompt": "Я ___ сказку перед сном.",
-            "answer": "читаю",
-            "wrong": "читаешь",
-            "hint": "читать"
-          },
-          {
-            "prompt": "Бабушка ___ новости.",
-            "answer": "слушает",
-            "wrong": "слушают",
-            "hint": "слушать"
-          },
-          {
-            "prompt": "Мы ___ в музей.",
-            "answer": "идём",
-            "wrong": "идёт",
-            "hint": "идти"
-          },
-          {
-            "prompt": "Мои братья ___ в баскетбол.",
-            "answer": "играют",
-            "wrong": "играет",
-            "hint": "играть"
-          },
-          {
-            "prompt": "Я ___ вечером в саду.",
-            "answer": "отдыхаю",
-            "wrong": "отдыхаешь",
-            "hint": "отдыхать"
+            "prompt": "Обычно они ___ в своих кроватях.",
+            "hint": "спать",
+            "answer": "спят",
+            "wrong": "спали",
+            "asset": "acciones/dormir",
+            "clue": "Иллюстрация действия: спать."
           }
         ],
         "3": [
           {
-            "prompt": "Утром я ___ книгу.",
-            "answer": "читаю",
-            "wrong": "читаешь",
-            "hint": "читать"
+            "prompt": "Обычно я ___ завтрак для друзей.",
+            "hint": "готовить",
+            "answer": "готовлю",
+            "wrong": "готовил"
           },
           {
-            "prompt": "Моя сестра ___ музыку.",
-            "answer": "слушает",
-            "wrong": "слушают",
-            "hint": "слушать"
+            "prompt": "Потом ты ___ тарелки на стол.",
+            "hint": "ставить",
+            "answer": "ставишь",
+            "wrong": "ставил"
           },
           {
-            "prompt": "Потом мы ___ в парк.",
-            "answer": "идём",
-            "wrong": "идёт",
-            "hint": "идти"
+            "prompt": "Затем Анна ___ хлеб из магазина.",
+            "hint": "приносить",
+            "answer": "приносит",
+            "wrong": "приносила"
           },
           {
-            "prompt": "Там дети ___ в футбол.",
-            "answer": "играют",
-            "wrong": "играет",
-            "hint": "играть"
+            "prompt": "После этого мы ___ фруктовый салат.",
+            "hint": "делать",
+            "answer": "делаем",
+            "wrong": "делали"
           },
           {
-            "prompt": "Вечером я ___ дома.",
-            "answer": "отдыхаю",
-            "wrong": "отдыхаешь",
-            "hint": "отдыхать"
+            "prompt": "В конце дети ___ чашки после обеда.",
+            "hint": "убирать",
+            "answer": "убирают",
+            "wrong": "убирали"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Обычно я ___ по парку с собакой.",
+            "hint": "бегать",
+            "answer": "бегаю",
+            "wrong": "бегал"
+          },
+          {
+            "prompt": "Обычно ты ___ с сестрой.",
+            "hint": "гулять",
+            "answer": "гуляешь",
+            "wrong": "гулял"
+          },
+          {
+            "prompt": "Обычно она ___ окно в комнате.",
+            "hint": "открывать",
+            "answer": "открывает",
+            "wrong": "открывала"
+          },
+          {
+            "prompt": "Обычно мы ___ с мячом в саду.",
+            "hint": "играть",
+            "answer": "играем",
+            "wrong": "играли"
+          },
+          {
+            "prompt": "Обычно они ___ музыку в наушниках.",
+            "hint": "слушать",
+            "answer": "слушают",
+            "wrong": "слушали"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Обычно я ___ свой рюкзак.",
+            "hint": "искать",
+            "answer": "ищу",
+            "wrong": "искал"
+          },
+          {
+            "prompt": "Обычно ты ___ тетрадь в магазине.",
+            "hint": "покупать",
+            "answer": "покупаешь",
+            "wrong": "покупал"
+          },
+          {
+            "prompt": "Обычно она ___ подруге с уроками.",
+            "hint": "помогать",
+            "answer": "помогает",
+            "wrong": "помогала"
+          },
+          {
+            "prompt": "Обычно мы ___ фильм о животных.",
+            "hint": "смотреть",
+            "answer": "смотрим",
+            "wrong": "смотрели"
+          },
+          {
+            "prompt": "Обычно они ___ дверь перед уходом.",
+            "hint": "закрывать",
+            "answer": "закрывают",
+            "wrong": "закрывали"
           }
         ]
       },
@@ -8073,11 +8440,44 @@ window.CURRICULUM = {
         "text",
         "order",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Обычно я ___ новые слова.",
+          "hint": "учить",
+          "answer": "учу",
+          "wrong": "учил"
+        },
+        {
+          "prompt": "Обычно она ___ яблоко в саду.",
+          "hint": "есть",
+          "answer": "ест",
+          "wrong": "ела"
+        },
+        {
+          "prompt": "Обычно мы ___ рядом с морем.",
+          "hint": "жить",
+          "answer": "живём",
+          "wrong": "жили"
+        },
+        {
+          "prompt": "Обычно ты ___ в библиотеке.",
+          "hint": "работать",
+          "answer": "работаешь",
+          "wrong": "работал"
+        },
+        {
+          "prompt": "Обычно они ___ в музей.",
+          "hint": "ходить",
+          "answer": "ходят",
+          "wrong": "ходили"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "pasado",
-      "title": "Verbos en pasado",
+      "title": "Глаголы в прошедшем времени",
       "kind": "grammar",
       "icon": "grammar",
       "level": "A1",
@@ -8085,162 +8485,202 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Вчера Мария ___ журнал.",
-            "answer": "читала",
-            "wrong": "читал",
-            "hint": "читать"
+            "prompt": "Вчера я ___ новые слова.",
+            "hint": "учить",
+            "answer": "учил",
+            "wrong": "учу",
+            "aliases": [
+              "учила"
+            ]
           },
           {
-            "prompt": "Утром мой отец ___ радио.",
-            "answer": "слушал",
-            "wrong": "слушала",
-            "hint": "слушать"
+            "prompt": "Вчера она ___ яблоко в саду.",
+            "hint": "есть",
+            "answer": "ела",
+            "wrong": "ест"
           },
           {
-            "prompt": "В субботу мы ___ у реки.",
-            "answer": "гуляли",
-            "wrong": "гуляла",
-            "hint": "гулять"
+            "prompt": "Вчера мы ___ рядом с морем.",
+            "hint": "жить",
+            "answer": "жили",
+            "wrong": "живём"
           },
           {
-            "prompt": "Вчера бабушка ___ суп.",
-            "answer": "готовила",
-            "wrong": "готовил",
-            "hint": "готовить"
+            "prompt": "Вчера ты ___ в библиотеке.",
+            "hint": "работать",
+            "answer": "работал",
+            "wrong": "работаешь",
+            "aliases": [
+              "работала"
+            ]
           },
           {
-            "prompt": "После обеда друзья ___ в саду.",
-            "answer": "отдыхали",
-            "wrong": "отдыхал",
-            "hint": "отдыхать"
+            "prompt": "Вчера они ___ в музей.",
+            "hint": "ходить",
+            "answer": "ходили",
+            "wrong": "ходят"
           }
         ],
         "2": [
           {
-            "prompt": "В воскресенье Ольга ___ газету.",
-            "answer": "читала",
-            "wrong": "читал",
-            "hint": "читать"
+            "prompt": "Вчера я ___ воду за обедом.",
+            "hint": "пить",
+            "answer": "пил",
+            "wrong": "пью",
+            "asset": "acciones/beber",
+            "clue": "Иллюстрация действия: пить.",
+            "aliases": [
+              "пила"
+            ]
           },
           {
-            "prompt": "Вчера мой друг ___ подкаст.",
-            "answer": "слушал",
-            "wrong": "слушала",
-            "hint": "слушать"
+            "prompt": "Вчера ты ___ книгу о приключениях.",
+            "hint": "читать",
+            "answer": "читал",
+            "wrong": "читаешь",
+            "asset": "acciones/leer",
+            "clue": "Иллюстрация действия: читать.",
+            "aliases": [
+              "читала"
+            ]
           },
           {
-            "prompt": "Вечером дети ___ во дворе.",
-            "answer": "гуляли",
-            "wrong": "гуляла",
-            "hint": "гулять"
+            "prompt": "Вчера она ___ письмо бабушке.",
+            "hint": "писать",
+            "answer": "писала",
+            "wrong": "пишет",
+            "asset": "acciones/escribir",
+            "clue": "Иллюстрация действия: писать."
           },
           {
-            "prompt": "В субботу сестра ___ завтрак.",
-            "answer": "готовила",
-            "wrong": "готовил",
-            "hint": "готовить"
+            "prompt": "Вчера мы ___ цветы карандашами.",
+            "hint": "рисовать",
+            "answer": "рисовали",
+            "wrong": "рисуем",
+            "asset": "acciones/dibujar",
+            "clue": "Иллюстрация действия: рисовать."
           },
           {
-            "prompt": "Вчера родители ___ на даче.",
-            "answer": "отдыхали",
-            "wrong": "отдыхал",
-            "hint": "отдыхать"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "Вчера мама ___ письмо.",
-            "answer": "читала",
-            "wrong": "читал",
-            "hint": "читать"
-          },
-          {
-            "prompt": "Вечером дедушка ___ новости.",
-            "answer": "слушал",
-            "wrong": "слушала",
-            "hint": "слушать"
-          },
-          {
-            "prompt": "В воскресенье они ___ по городу.",
-            "answer": "гуляли",
-            "wrong": "гуляла",
-            "hint": "гулять"
-          },
-          {
-            "prompt": "Утром Анна ___ кашу.",
-            "answer": "готовила",
-            "wrong": "готовил",
-            "hint": "готовить"
-          },
-          {
-            "prompt": "В выходные мы ___ у моря.",
-            "answer": "отдыхали",
-            "wrong": "отдыхал",
-            "hint": "отдыхать"
-          }
-        ],
-        "5": [
-          {
-            "prompt": "Вчера девочка ___ сказку.",
-            "answer": "читала",
-            "wrong": "читал",
-            "hint": "читать"
-          },
-          {
-            "prompt": "Утром брат ___ новую песню.",
-            "answer": "слушал",
-            "wrong": "слушала",
-            "hint": "слушать"
-          },
-          {
-            "prompt": "В субботу друзья ___ в лесу.",
-            "answer": "гуляли",
-            "wrong": "гуляла",
-            "hint": "гулять"
-          },
-          {
-            "prompt": "Вчера тётя ___ обед.",
-            "answer": "готовила",
-            "wrong": "готовил",
-            "hint": "готовить"
-          },
-          {
-            "prompt": "После работы они ___ дома.",
-            "answer": "отдыхали",
-            "wrong": "отдыхал",
-            "hint": "отдыхать"
+            "prompt": "Вчера они ___ в своих кроватях.",
+            "hint": "спать",
+            "answer": "спали",
+            "wrong": "спят",
+            "asset": "acciones/dormir",
+            "clue": "Иллюстрация действия: спать."
           }
         ],
         "3": [
           {
-            "prompt": "Вчера Анна ___ книгу.",
-            "answer": "читала",
-            "wrong": "читал",
-            "hint": "читать"
+            "prompt": "Вчера я ___ завтрак для друзей.",
+            "hint": "готовить",
+            "answer": "готовил",
+            "wrong": "готовлю",
+            "aliases": [
+              "готовила"
+            ]
           },
           {
-            "prompt": "Её брат ___ музыку.",
-            "answer": "слушал",
-            "wrong": "слушала",
-            "hint": "слушать"
+            "prompt": "Потом ты ___ тарелки на стол.",
+            "hint": "ставить",
+            "answer": "ставил",
+            "wrong": "ставишь",
+            "aliases": [
+              "ставила"
+            ]
           },
           {
-            "prompt": "Потом они ___ в парке.",
-            "answer": "гуляли",
-            "wrong": "гуляла",
-            "hint": "гулять"
+            "prompt": "Затем Анна ___ хлеб из магазина.",
+            "hint": "приносить",
+            "answer": "приносила",
+            "wrong": "приносит"
           },
           {
-            "prompt": "Мама ___ ужин.",
-            "answer": "готовила",
-            "wrong": "готовил",
-            "hint": "готовить"
+            "prompt": "После этого мы ___ фруктовый салат.",
+            "hint": "делать",
+            "answer": "делали",
+            "wrong": "делаем"
           },
           {
-            "prompt": "Вечером все ___ дома.",
-            "answer": "отдыхали",
-            "wrong": "отдыхал",
-            "hint": "отдыхать"
+            "prompt": "В конце дети ___ чашки после обеда.",
+            "hint": "убирать",
+            "answer": "убирали",
+            "wrong": "убирают"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Вчера я ___ по парку с собакой.",
+            "hint": "бегать",
+            "answer": "бегал",
+            "wrong": "бегаю",
+            "aliases": [
+              "бегала"
+            ]
+          },
+          {
+            "prompt": "Вчера ты ___ с сестрой.",
+            "hint": "гулять",
+            "answer": "гулял",
+            "wrong": "гуляешь",
+            "aliases": [
+              "гуляла"
+            ]
+          },
+          {
+            "prompt": "Вчера она ___ окно в комнате.",
+            "hint": "открывать",
+            "answer": "открывала",
+            "wrong": "открывает"
+          },
+          {
+            "prompt": "Вчера мы ___ с мячом в саду.",
+            "hint": "играть",
+            "answer": "играли",
+            "wrong": "играем"
+          },
+          {
+            "prompt": "Вчера они ___ музыку в наушниках.",
+            "hint": "слушать",
+            "answer": "слушали",
+            "wrong": "слушают"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Вчера я ___ свой рюкзак.",
+            "hint": "искать",
+            "answer": "искал",
+            "wrong": "ищу",
+            "aliases": [
+              "искала"
+            ]
+          },
+          {
+            "prompt": "Вчера ты ___ тетрадь в магазине.",
+            "hint": "покупать",
+            "answer": "покупал",
+            "wrong": "покупаешь",
+            "aliases": [
+              "покупала"
+            ]
+          },
+          {
+            "prompt": "Вчера она ___ подруге с уроками.",
+            "hint": "помогать",
+            "answer": "помогала",
+            "wrong": "помогает"
+          },
+          {
+            "prompt": "Вчера мы ___ фильм о животных.",
+            "hint": "смотреть",
+            "answer": "смотрели",
+            "wrong": "смотрим"
+          },
+          {
+            "prompt": "Вчера они ___ дверь перед уходом.",
+            "hint": "закрывать",
+            "answer": "закрывали",
+            "wrong": "закрывают"
           }
         ]
       },
@@ -8250,11 +8690,44 @@ window.CURRICULUM = {
         "text",
         "letters",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Вчера я ___ новые слова.",
+          "hint": "учить",
+          "answer": "учил",
+          "wrong": "учу"
+        },
+        {
+          "prompt": "Вчера она ___ яблоко в саду.",
+          "hint": "есть",
+          "answer": "ела",
+          "wrong": "ест"
+        },
+        {
+          "prompt": "Вчера мы ___ рядом с морем.",
+          "hint": "жить",
+          "answer": "жили",
+          "wrong": "живём"
+        },
+        {
+          "prompt": "Вчера ты ___ в библиотеке.",
+          "hint": "работать",
+          "answer": "работал",
+          "wrong": "работаешь"
+        },
+        {
+          "prompt": "Вчера они ___ в музей.",
+          "hint": "ходить",
+          "answer": "ходили",
+          "wrong": "ходят"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "futuro",
-      "title": "Futuro con быть",
+      "title": "Будущее время с быть",
       "kind": "grammar",
       "icon": "grammar",
       "level": "A1",
@@ -8263,176 +8736,171 @@ window.CURRICULUM = {
         "1": [
           {
             "prompt": "Завтра я ___ новые слова.",
+            "hint": "учить",
             "answer": "буду учить",
-            "wrong": "будет учить",
-            "hint": "учить"
+            "wrong": "будут учить"
           },
           {
-            "prompt": "Моя сестра ___ дома завтра.",
-            "answer": "будет заниматься",
-            "wrong": "буду заниматься",
-            "hint": "заниматься"
+            "prompt": "Завтра она ___ яблоко в саду.",
+            "hint": "есть",
+            "answer": "будет есть",
+            "wrong": "будут есть"
           },
           {
-            "prompt": "В субботу мы ___ рассказы.",
-            "answer": "будем читать",
-            "wrong": "будут читать",
-            "hint": "читать"
+            "prompt": "Завтра мы ___ рядом с морем.",
+            "hint": "жить",
+            "answer": "будем жить",
+            "wrong": "будут жить"
           },
           {
-            "prompt": "Завтра гид ___ по-русски.",
-            "answer": "будет говорить",
-            "wrong": "будем говорить",
-            "hint": "говорить"
+            "prompt": "Завтра ты ___ в библиотеке.",
+            "hint": "работать",
+            "answer": "будешь работать",
+            "wrong": "будут работать"
           },
           {
-            "prompt": "Вечером ученики ___ правило.",
-            "answer": "будут повторять",
-            "wrong": "будет повторять",
-            "hint": "повторять"
+            "prompt": "Завтра они ___ в музей.",
+            "hint": "ходить",
+            "answer": "будут ходить",
+            "wrong": "будет ходить"
           }
         ],
         "2": [
           {
-            "prompt": "Я ___ английский язык летом.",
-            "answer": "буду учить",
-            "wrong": "будет учить",
-            "hint": "учить"
+            "prompt": "Завтра я ___ воду за обедом.",
+            "hint": "пить",
+            "answer": "буду пить",
+            "wrong": "будут пить",
+            "asset": "acciones/beber",
+            "clue": "Иллюстрация действия: пить."
           },
           {
-            "prompt": "Она ___ в библиотеке завтра.",
-            "answer": "будет заниматься",
-            "wrong": "буду заниматься",
-            "hint": "заниматься"
-          },
-          {
-            "prompt": "Мы ___ журнал в воскресенье.",
-            "answer": "будем читать",
-            "wrong": "будут читать",
-            "hint": "читать"
-          },
-          {
-            "prompt": "Учитель ___ о музыке завтра.",
-            "answer": "будет говорить",
-            "wrong": "будем говорить",
-            "hint": "говорить"
-          },
-          {
-            "prompt": "Дети ___ новые фразы вечером.",
-            "answer": "будут повторять",
-            "wrong": "будет повторять",
-            "hint": "повторять"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "Завтра я ___ стихотворение.",
-            "answer": "буду учить",
-            "wrong": "будет учить",
-            "hint": "учить",
-            "orders": [
-              "Я буду учить стихотворение завтра."
-            ]
-          },
-          {
-            "prompt": "Моя подруга ___ утром в понедельник.",
-            "answer": "будет заниматься",
-            "wrong": "буду заниматься",
-            "hint": "заниматься",
-            "orders": [
-              "Утром в понедельник моя подруга будет заниматься."
-            ]
-          },
-          {
-            "prompt": "Мы ___ газету завтра.",
-            "answer": "будем читать",
-            "wrong": "будут читать",
+            "prompt": "Завтра ты ___ книгу о приключениях.",
             "hint": "читать",
-            "orders": [
-              "Завтра мы будем читать газету."
-            ]
-          },
-          {
-            "prompt": "Завтра он ___ на уроке.",
-            "answer": "будет говорить",
-            "wrong": "будем говорить",
-            "hint": "говорить",
-            "orders": [
-              "Он будет говорить на уроке завтра."
-            ]
-          },
-          {
-            "prompt": "В пятницу они ___ текст.",
-            "answer": "будут повторять",
-            "wrong": "будет повторять",
-            "hint": "повторять",
-            "orders": [
-              "Они будут повторять текст в пятницу."
-            ]
-          }
-        ],
-        "5": [
-          {
-            "prompt": "Я ___ грамматику вечером.",
-            "answer": "буду учить",
-            "wrong": "будет учить",
-            "hint": "учить"
-          },
-          {
-            "prompt": "Моя сестра ___ после обеда завтра.",
-            "answer": "будет заниматься",
-            "wrong": "буду заниматься",
-            "hint": "заниматься"
-          },
-          {
-            "prompt": "Мы ___ письма в субботу.",
-            "answer": "будем читать",
+            "answer": "будешь читать",
             "wrong": "будут читать",
-            "hint": "читать"
+            "asset": "acciones/leer",
+            "clue": "Иллюстрация действия: читать."
           },
           {
-            "prompt": "Мой брат ___ с учителем завтра.",
-            "answer": "будет говорить",
-            "wrong": "будем говорить",
-            "hint": "говорить"
+            "prompt": "Завтра она ___ письмо бабушке.",
+            "hint": "писать",
+            "answer": "будет писать",
+            "wrong": "будут писать",
+            "asset": "acciones/escribir",
+            "clue": "Иллюстрация действия: писать."
           },
           {
-            "prompt": "Ученики ___ глаголы завтра.",
-            "answer": "будут повторять",
-            "wrong": "будет повторять",
-            "hint": "повторять"
+            "prompt": "Завтра мы ___ цветы карандашами.",
+            "hint": "рисовать",
+            "answer": "будем рисовать",
+            "wrong": "будут рисовать",
+            "asset": "acciones/dibujar",
+            "clue": "Иллюстрация действия: рисовать."
+          },
+          {
+            "prompt": "Завтра они ___ в своих кроватях.",
+            "hint": "спать",
+            "answer": "будут спать",
+            "wrong": "будет спать",
+            "asset": "acciones/dormir",
+            "clue": "Иллюстрация действия: спать."
           }
         ],
         "3": [
           {
-            "prompt": "Завтра я ___ русский язык.",
-            "answer": "буду учить",
-            "wrong": "будет учить",
-            "hint": "учить"
+            "prompt": "Завтра я ___ завтрак для друзей.",
+            "hint": "готовить",
+            "answer": "буду готовить",
+            "wrong": "будут готовить"
           },
           {
-            "prompt": "Моя подруга ___ со мной.",
-            "answer": "будет заниматься",
-            "wrong": "буду заниматься",
-            "hint": "заниматься"
+            "prompt": "Потом ты ___ тарелки на стол.",
+            "hint": "ставить",
+            "answer": "будешь ставить",
+            "wrong": "будут ставить"
           },
           {
-            "prompt": "Мы ___ новый текст.",
-            "answer": "будем читать",
-            "wrong": "будут читать",
-            "hint": "читать"
+            "prompt": "Затем Анна ___ хлеб из магазина.",
+            "hint": "приносить",
+            "answer": "будет приносить",
+            "wrong": "будут приносить"
           },
           {
-            "prompt": "Потом учитель ___ медленно.",
-            "answer": "будет говорить",
-            "wrong": "будем говорить",
-            "hint": "говорить"
+            "prompt": "После этого мы ___ фруктовый салат.",
+            "hint": "делать",
+            "answer": "будем делать",
+            "wrong": "будут делать"
           },
           {
-            "prompt": "Вечером дети ___ слова.",
-            "answer": "будут повторять",
-            "wrong": "будет повторять",
-            "hint": "повторять"
+            "prompt": "В конце дети ___ чашки после обеда.",
+            "hint": "убирать",
+            "answer": "будут убирать",
+            "wrong": "будет убирать"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Завтра я ___ по парку с собакой.",
+            "hint": "бегать",
+            "answer": "буду бегать",
+            "wrong": "будут бегать"
+          },
+          {
+            "prompt": "Завтра ты ___ с сестрой.",
+            "hint": "гулять",
+            "answer": "будешь гулять",
+            "wrong": "будут гулять"
+          },
+          {
+            "prompt": "Завтра она ___ окно в комнате.",
+            "hint": "открывать",
+            "answer": "будет открывать",
+            "wrong": "будут открывать"
+          },
+          {
+            "prompt": "Завтра мы ___ с мячом в саду.",
+            "hint": "играть",
+            "answer": "будем играть",
+            "wrong": "будут играть"
+          },
+          {
+            "prompt": "Завтра они ___ музыку в наушниках.",
+            "hint": "слушать",
+            "answer": "будут слушать",
+            "wrong": "будет слушать"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Завтра я ___ свой рюкзак.",
+            "hint": "искать",
+            "answer": "буду искать",
+            "wrong": "будут искать"
+          },
+          {
+            "prompt": "Завтра ты ___ тетрадь в магазине.",
+            "hint": "покупать",
+            "answer": "будешь покупать",
+            "wrong": "будут покупать"
+          },
+          {
+            "prompt": "Завтра она ___ подруге с уроками.",
+            "hint": "помогать",
+            "answer": "будет помогать",
+            "wrong": "будут помогать"
+          },
+          {
+            "prompt": "Завтра мы ___ фильм о животных.",
+            "hint": "смотреть",
+            "answer": "будем смотреть",
+            "wrong": "будут смотреть"
+          },
+          {
+            "prompt": "Завтра они ___ дверь перед уходом.",
+            "hint": "закрывать",
+            "answer": "будут закрывать",
+            "wrong": "будет закрывать"
           }
         ]
       },
@@ -8442,11 +8910,44 @@ window.CURRICULUM = {
         "text",
         "order",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Завтра я ___ новые слова.",
+          "hint": "учить",
+          "answer": "буду учить",
+          "wrong": "будут учить"
+        },
+        {
+          "prompt": "Завтра она ___ яблоко в саду.",
+          "hint": "есть",
+          "answer": "будет есть",
+          "wrong": "будут есть"
+        },
+        {
+          "prompt": "Завтра мы ___ рядом с морем.",
+          "hint": "жить",
+          "answer": "будем жить",
+          "wrong": "будут жить"
+        },
+        {
+          "prompt": "Завтра ты ___ в библиотеке.",
+          "hint": "работать",
+          "answer": "будешь работать",
+          "wrong": "будут работать"
+        },
+        {
+          "prompt": "Завтра они ___ в музей.",
+          "hint": "ходить",
+          "answer": "будут ходить",
+          "wrong": "будет ходить"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "posesivos",
-      "title": "Posesivos: мой, моя, моё, мои",
+      "title": "Притяжательные местоимения",
       "kind": "grammar",
       "icon": "grammar",
       "level": "A1",
@@ -8454,162 +8955,162 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "Это ___ брат.",
+            "prompt": "Это ___ стол.",
             "answer": "мой",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "моя"
           },
           {
-            "prompt": "Это ___ сестра.",
+            "prompt": "Это ___ книга.",
             "answer": "моя",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           },
           {
-            "prompt": "Это ___ письмо.",
+            "prompt": "Это ___ окно.",
             "answer": "моё",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           },
           {
-            "prompt": "Это ___ друзья.",
+            "prompt": "Это ___ стулья.",
             "answer": "мои",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           },
           {
-            "prompt": "Это ___ рюкзак.",
-            "answer": "мой",
-            "wrong": "мои",
-            "hint": "мой / моя / моё / мои"
+            "prompt": "Это ___ картина.",
+            "answer": "моя",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           }
         ],
         "2": [
           {
-            "prompt": "Здесь ___ стол.",
+            "prompt": "Это ___ рюкзак.",
             "answer": "мой",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "моя"
           },
           {
-            "prompt": "Это ___ школа.",
+            "prompt": "Это ___ ручка.",
             "answer": "моя",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           },
           {
-            "prompt": "Это ___ яблоко.",
+            "prompt": "Это ___ письмо.",
             "answer": "моё",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           },
           {
-            "prompt": "Вот ___ родители.",
+            "prompt": "Это ___ друзья.",
             "answer": "мои",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           },
           {
-            "prompt": "Это ___ телефон.",
-            "answer": "мой",
-            "wrong": "мои",
-            "hint": "мой / моя / моё / мои"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "Это ___ учитель.",
-            "answer": "мой",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
-          },
-          {
-            "prompt": "Это ___ сумка.",
+            "prompt": "Это ___ тетрадь.",
             "answer": "моя",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
-          },
-          {
-            "prompt": "Вот ___ кресло.",
-            "answer": "моё",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
-          },
-          {
-            "prompt": "Это ___ тетради.",
-            "answer": "мои",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
-          },
-          {
-            "prompt": "Это ___ шарф.",
-            "answer": "мой",
-            "wrong": "мои",
-            "hint": "мой / моя / моё / мои"
-          }
-        ],
-        "5": [
-          {
-            "prompt": "Вот ___ велосипед.",
-            "answer": "мой",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
-          },
-          {
-            "prompt": "Вот ___ чашка.",
-            "answer": "моя",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
-          },
-          {
-            "prompt": "Это ___ полотенце.",
-            "answer": "моё",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
-          },
-          {
-            "prompt": "Вот ___ карандаши.",
-            "answer": "мои",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
-          },
-          {
-            "prompt": "Это ___ ключ.",
-            "answer": "мой",
-            "wrong": "мои",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           }
         ],
         "3": [
           {
             "prompt": "Это ___ дом.",
             "answer": "мой",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "моя"
           },
           {
-            "prompt": "А это ___ комната.",
+            "prompt": "Это ___ сумка.",
             "answer": "моя",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           },
           {
-            "prompt": "Здесь ___ окно.",
+            "prompt": "Это ___ яблоко.",
             "answer": "моё",
-            "wrong": "моя",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           },
           {
-            "prompt": "На столе лежат ___ книги.",
+            "prompt": "Это ___ братья.",
             "answer": "мои",
-            "wrong": "мой",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           },
           {
-            "prompt": "Рядом спит ___ кот.",
+            "prompt": "Это ___ сестра.",
+            "answer": "моя",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "Это ___ карандаш.",
             "answer": "мой",
-            "wrong": "мои",
-            "hint": "мой / моя / моё / мои"
+            "hint": "мой / моя / моё / мои",
+            "wrong": "моя"
+          },
+          {
+            "prompt": "Это ___ шапка.",
+            "answer": "моя",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
+          },
+          {
+            "prompt": "Это ___ платье.",
+            "answer": "моё",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
+          },
+          {
+            "prompt": "Это ___ коты.",
+            "answer": "мои",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
+          },
+          {
+            "prompt": "Это ___ собака.",
+            "answer": "моя",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "Это ___ учитель.",
+            "answer": "мой",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "моя"
+          },
+          {
+            "prompt": "Это ___ машина.",
+            "answer": "моя",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
+          },
+          {
+            "prompt": "Это ___ море.",
+            "answer": "моё",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
+          },
+          {
+            "prompt": "Это ___ мячи.",
+            "answer": "мои",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
+          },
+          {
+            "prompt": "Это ___ комната.",
+            "answer": "моя",
+            "hint": "мой / моя / моё / мои",
+            "wrong": "мой"
           }
         ]
       },
@@ -8619,11 +9120,44 @@ window.CURRICULUM = {
         "text",
         "letters",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Это ___ стол.",
+          "answer": "мой",
+          "hint": "мой / моя / моё / мои",
+          "wrong": "моя"
+        },
+        {
+          "prompt": "Это ___ книга.",
+          "answer": "моя",
+          "hint": "мой / моя / моё / мои",
+          "wrong": "мой"
+        },
+        {
+          "prompt": "Это ___ окно.",
+          "answer": "моё",
+          "hint": "мой / моя / моё / мои",
+          "wrong": "мой"
+        },
+        {
+          "prompt": "Это ___ стулья.",
+          "answer": "мои",
+          "hint": "мой / моя / моё / мои",
+          "wrong": "мой"
+        },
+        {
+          "prompt": "Это ___ картина.",
+          "answer": "моя",
+          "hint": "мой / моя / моё / мои",
+          "wrong": "мой"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "plural",
-      "title": "El plural de los sustantivos",
+      "title": "Множественное число",
       "kind": "grammar",
       "icon": "grammar",
       "level": "A1",
@@ -8631,177 +9165,162 @@ window.CURRICULUM = {
       "variants": {
         "1": [
           {
-            "prompt": "В кафе стоят новые ___.",
+            "prompt": "«стол» → ___.",
             "answer": "столы",
-            "wrong": "стол",
-            "hint": "стол"
+            "hint": "стол",
+            "wrong": "стол"
           },
           {
-            "prompt": "У стены стоят красные ___.",
-            "answer": "стулья",
-            "wrong": "стул",
-            "hint": "стул"
-          },
-          {
-            "prompt": "На столе лежат интересные ___.",
+            "prompt": "«книга» → ___.",
             "answer": "книги",
-            "wrong": "книга",
-            "hint": "книга"
+            "hint": "книга",
+            "wrong": "книга"
           },
           {
-            "prompt": "В музее висят красивые ___.",
-            "answer": "картины",
-            "wrong": "картина",
-            "hint": "картина"
-          },
-          {
-            "prompt": "В школе большие ___.",
+            "prompt": "«окно» → ___.",
             "answer": "окна",
-            "wrong": "окно",
-            "hint": "окно"
+            "hint": "окно",
+            "wrong": "окно"
+          },
+          {
+            "prompt": "«стул» → ___.",
+            "answer": "стулья",
+            "hint": "стул",
+            "wrong": "стул"
+          },
+          {
+            "prompt": "«картина» → ___.",
+            "answer": "картины",
+            "hint": "картина",
+            "wrong": "картина"
           }
         ],
         "2": [
           {
-            "prompt": "В саду стоят деревянные ___.",
-            "answer": "столы",
-            "wrong": "стол",
-            "hint": "стол"
+            "prompt": "«рюкзак» → ___.",
+            "answer": "рюкзаки",
+            "hint": "рюкзак",
+            "wrong": "рюкзак"
           },
           {
-            "prompt": "В кухне стоят удобные ___.",
-            "answer": "стулья",
-            "wrong": "стул",
-            "hint": "стул"
+            "prompt": "«ручка» → ___.",
+            "answer": "ручки",
+            "hint": "ручка",
+            "wrong": "ручка"
           },
           {
-            "prompt": "В магазине есть детские ___.",
-            "answer": "книги",
-            "wrong": "книга",
-            "hint": "книга"
+            "prompt": "«письмо» → ___.",
+            "answer": "письма",
+            "hint": "письмо",
+            "wrong": "письмо"
           },
           {
-            "prompt": "В галерее новые ___.",
-            "answer": "картины",
-            "wrong": "картина",
-            "hint": "картина"
+            "prompt": "«друг» → ___.",
+            "answer": "друзья",
+            "hint": "друг",
+            "wrong": "друг"
           },
           {
-            "prompt": "В доме чистые ___.",
-            "answer": "окна",
-            "wrong": "окно",
-            "hint": "окно"
-          }
-        ],
-        "4": [
-          {
-            "prompt": "В библиотеке длинные ___.",
-            "answer": "столы",
-            "wrong": "стол",
-            "hint": "стол",
-            "orders": [
-              "Длинные столы в библиотеке."
-            ]
-          },
-          {
-            "prompt": "В театре мягкие ___.",
-            "answer": "стулья",
-            "wrong": "стул",
-            "hint": "стул",
-            "orders": [
-              "Мягкие стулья в театре."
-            ]
-          },
-          {
-            "prompt": "В шкафу стоят старые ___.",
-            "answer": "книги",
-            "wrong": "книга",
-            "hint": "книга",
-            "orders": [
-              "Старые книги стоят в шкафу."
-            ]
-          },
-          {
-            "prompt": "В зале висят известные ___.",
-            "answer": "картины",
-            "wrong": "картина",
-            "hint": "картина",
-            "orders": [
-              "Известные картины висят в зале."
-            ]
-          },
-          {
-            "prompt": "В квартире открытые ___.",
-            "answer": "окна",
-            "wrong": "окно",
-            "hint": "окно",
-            "orders": [
-              "Открытые окна в квартире."
-            ]
-          }
-        ],
-        "5": [
-          {
-            "prompt": "В ресторане круглые ___.",
-            "answer": "столы",
-            "wrong": "стол",
-            "hint": "стол"
-          },
-          {
-            "prompt": "На сцене стоят белые ___.",
-            "answer": "стулья",
-            "wrong": "стул",
-            "hint": "стул"
-          },
-          {
-            "prompt": "В сумке лежат школьные ___.",
-            "answer": "книги",
-            "wrong": "книга",
-            "hint": "книга"
-          },
-          {
-            "prompt": "В коридоре висят яркие ___.",
-            "answer": "картины",
-            "wrong": "картина",
-            "hint": "картина"
-          },
-          {
-            "prompt": "В комнате закрытые ___.",
-            "answer": "окна",
-            "wrong": "окно",
-            "hint": "окно"
+            "prompt": "«тетрадь» → ___.",
+            "answer": "тетради",
+            "hint": "тетрадь",
+            "wrong": "тетрадь"
           }
         ],
         "3": [
           {
-            "prompt": "В классе стоят ___.",
-            "answer": "столы",
-            "wrong": "стол",
-            "hint": "стол"
+            "prompt": "«дом» → ___.",
+            "answer": "дома",
+            "hint": "дом",
+            "wrong": "дом"
           },
           {
-            "prompt": "Рядом стоят ___.",
-            "answer": "стулья",
-            "wrong": "стул",
-            "hint": "стул"
+            "prompt": "«сумка» → ___.",
+            "answer": "сумки",
+            "hint": "сумка",
+            "wrong": "сумка"
           },
           {
-            "prompt": "На полке лежат ___.",
-            "answer": "книги",
-            "wrong": "книга",
-            "hint": "книга"
+            "prompt": "«яблоко» → ___.",
+            "answer": "яблоки",
+            "hint": "яблоко",
+            "wrong": "яблоко"
           },
           {
-            "prompt": "На стенах висят ___.",
-            "answer": "картины",
-            "wrong": "картина",
-            "hint": "картина"
+            "prompt": "«брат» → ___.",
+            "answer": "братья",
+            "hint": "брат",
+            "wrong": "брат"
           },
           {
-            "prompt": "В комнате большие ___.",
-            "answer": "окна",
-            "wrong": "окно",
-            "hint": "окно"
+            "prompt": "«сестра» → ___.",
+            "answer": "сёстры",
+            "hint": "сестра",
+            "wrong": "сестра"
+          }
+        ],
+        "4": [
+          {
+            "prompt": "«карандаш» → ___.",
+            "answer": "карандаши",
+            "hint": "карандаш",
+            "wrong": "карандаш"
+          },
+          {
+            "prompt": "«шапка» → ___.",
+            "answer": "шапки",
+            "hint": "шапка",
+            "wrong": "шапка"
+          },
+          {
+            "prompt": "«платье» → ___.",
+            "answer": "платья",
+            "hint": "платье",
+            "wrong": "платье"
+          },
+          {
+            "prompt": "«кот» → ___.",
+            "answer": "коты",
+            "hint": "кот",
+            "wrong": "кот"
+          },
+          {
+            "prompt": "«собака» → ___.",
+            "answer": "собаки",
+            "hint": "собака",
+            "wrong": "собака"
+          }
+        ],
+        "5": [
+          {
+            "prompt": "«учитель» → ___.",
+            "answer": "учителя",
+            "hint": "учитель",
+            "wrong": "учитель"
+          },
+          {
+            "prompt": "«машина» → ___.",
+            "answer": "машины",
+            "hint": "машина",
+            "wrong": "машина"
+          },
+          {
+            "prompt": "«море» → ___.",
+            "answer": "моря",
+            "hint": "море",
+            "wrong": "море"
+          },
+          {
+            "prompt": "«мяч» → ___.",
+            "answer": "мячи",
+            "hint": "мяч",
+            "wrong": "мяч"
+          },
+          {
+            "prompt": "«комната» → ___.",
+            "answer": "комнаты",
+            "hint": "комната",
+            "wrong": "комната"
           }
         ]
       },
@@ -8811,11 +9330,44 @@ window.CURRICULUM = {
         "text",
         "order",
         "detective"
-      ]
+      ],
+      "items": [
+        {
+          "prompt": "Это ___; один предмет называется «стол».",
+          "answer": "столы",
+          "hint": "стол",
+          "wrong": "стол"
+        },
+        {
+          "prompt": "Здесь ___: книга и ещё один такой же предмет.",
+          "answer": "книги",
+          "hint": "книга",
+          "wrong": "книга"
+        },
+        {
+          "prompt": "Это ___; один предмет называется «окно».",
+          "answer": "окна",
+          "hint": "окно",
+          "wrong": "окно"
+        },
+        {
+          "prompt": "Здесь ___: стул и ещё один такой же предмет.",
+          "answer": "стулья",
+          "hint": "стул",
+          "wrong": "стул"
+        },
+        {
+          "prompt": "Это ___; один предмет называется «картина».",
+          "answer": "картины",
+          "hint": "картина",
+          "wrong": "картина"
+        }
+      ],
+      "revision": "practica-v3"
     },
     {
       "id": "animales",
-      "title": "Los animales",
+      "title": "Животные",
       "kind": "vocabulary",
       "icon": "animales",
       "level": "A1",
@@ -8830,9 +9382,9 @@ window.CURRICULUM = {
             "пес",
             "щенок"
           ],
-          "clue": "Un animal doméstico que ladra.",
-          "memoryClue": "Hace «guau» y mueve la cola.",
-          "searchClue": "El compañero que sale a pasear con correa.",
+          "clue": "Домашнее животное, которое лает.",
+          "memoryClue": "Домашнее животное, которое лает.",
+          "searchClue": "Этот питомец виляет хвостом и гуляет на поводке.",
           "prompt": "Это ___. Это животное лает: «Гав!». "
         },
         {
@@ -8840,9 +9392,9 @@ window.CURRICULUM = {
           "asset": "animales/vaca",
           "answer": "корова",
           "aliases": [],
-          "clue": "Un animal de granja que hace «muu» y da leche.",
-          "memoryClue": "Nos da leche y puede tener manchas negras.",
-          "searchClue": "Animal de granja del que obtenemos leche.",
+          "clue": "Животное на ферме, которое мычит и даёт молоко.",
+          "memoryClue": "Животное на ферме, которое мычит и даёт молоко.",
+          "searchClue": "Это крупное животное доят на ферме.",
           "prompt": "Это ___. Она мычит, и её доят."
         },
         {
@@ -8852,9 +9404,9 @@ window.CURRICULUM = {
           "aliases": [
             "конь"
           ],
-          "clue": "Un animal con crin que relincha.",
-          "memoryClue": "Se le puede poner una silla para montar.",
-          "searchClue": "Animal de crin larga en el que se puede montar.",
+          "clue": "Животное с гривой, которое ржёт.",
+          "memoryClue": "Животное с гривой, которое ржёт.",
+          "searchClue": "На это животное можно надеть седло и ездить верхом.",
           "prompt": "Это ___. На это животное надевают седло, чтобы ездить верхом."
         },
         {
@@ -8862,9 +9414,9 @@ window.CURRICULUM = {
           "asset": "animales/cerdo",
           "answer": "свинья",
           "aliases": [],
-          "clue": "Un animal de granja de hocico redondo que hace «oink».",
-          "memoryClue": "Tiene hocico redondo y una cola rizada.",
-          "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+          "clue": "Животное с круглым пятачком и хвостом колечком.",
+          "memoryClue": "Животное с круглым пятачком и хвостом колечком.",
+          "searchClue": "Это розовое животное хрюкает.",
           "prompt": "Это ___. У неё круглый пятачок и хвост колечком."
         },
         {
@@ -8872,9 +9424,9 @@ window.CURRICULUM = {
           "asset": "animales/conejo",
           "answer": "кролик",
           "aliases": [],
-          "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
-          "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
-          "searchClue": "Animal pequeño de orejas largas y cola corta.",
+          "clue": "Небольшое животное с очень длинными ушами.",
+          "memoryClue": "Небольшое животное с очень длинными ушами.",
+          "searchClue": "Этот зверёк прыгает, а хвост у него короткий и пушистый.",
           "prompt": "Это ___. У него очень длинные уши, и он прыгает."
         },
         {
@@ -8882,9 +9434,9 @@ window.CURRICULUM = {
           "asset": "animales/elefante",
           "answer": "слон",
           "aliases": [],
-          "clue": "Un animal grande con trompa y grandes orejas.",
-          "memoryClue": "Usa una trompa larga para beber agua.",
-          "searchClue": "El animal más grande de este grupo, con trompa.",
+          "clue": "Очень крупное животное с длинным хоботом.",
+          "memoryClue": "Очень крупное животное с длинным хоботом.",
+          "searchClue": "Это животное берёт предметы хоботом.",
           "prompt": "Это ___. Он пьёт воду длинным хоботом."
         },
         {
@@ -8894,9 +9446,9 @@ window.CURRICULUM = {
           "aliases": [
             "кот"
           ],
-          "clue": "Un animal doméstico de bigotes que hace «miau».",
-          "memoryClue": "Ronronea y se limpia con la lengua.",
-          "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+          "clue": "Домашний питомец с усами, который мяукает.",
+          "memoryClue": "Домашний питомец с усами, который мяукает.",
+          "searchClue": "Этот маленький питомец говорит «мяу» и имеет острые когти.",
           "prompt": "Это ___. Это животное мяукает и мурлычет."
         },
         {
@@ -8906,9 +9458,9 @@ window.CURRICULUM = {
           "aliases": [
             "обезьянка"
           ],
-          "clue": "Un animal de manos hábiles que trepa por los árboles.",
-          "memoryClue": "Puede agarrar ramas con las manos.",
-          "searchClue": "Animal de cola larga y manos que agarran ramas.",
+          "clue": "Животное, которое лазает по веткам с помощью рук.",
+          "memoryClue": "Животное, которое лазает по веткам с помощью рук.",
+          "searchClue": "Этот зверь качается на ветках и имеет длинный хвост.",
           "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
         },
         {
@@ -8916,9 +9468,9 @@ window.CURRICULUM = {
           "asset": "animales/oso",
           "answer": "медведь",
           "aliases": [],
-          "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
-          "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
-          "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+          "clue": "Крупный зверь с круглыми ушами и густой бурой шерстью.",
+          "memoryClue": "Крупный зверь с круглыми ушами и густой бурой шерстью.",
+          "searchClue": "У этого сильного зверя большие лапы и короткий хвост.",
           "prompt": "Это ___. Это крупное дикое животное с круглыми ушами может спать всю зиму."
         },
         {
@@ -8928,9 +9480,9 @@ window.CURRICULUM = {
           "aliases": [
             "овечка"
           ],
-          "clue": "Un animal de granja cubierto de lana que hace «bee».",
-          "memoryClue": "Su cuerpo está cubierto de lana.",
-          "searchClue": "Animal de granja del que obtenemos lana.",
+          "clue": "Животное на ферме, покрытое шерстью.",
+          "memoryClue": "Животное на ферме, покрытое шерстью.",
+          "searchClue": "Из шерсти этого животного делают тёплую одежду.",
           "prompt": "Это ___. Она даёт шерсть и блеет."
         },
         {
@@ -8938,9 +9490,9 @@ window.CURRICULUM = {
           "asset": "animales/leon",
           "answer": "лев",
           "aliases": [],
-          "clue": "Un gran felino salvaje que ruge y tiene melena.",
-          "memoryClue": "El gran felino de la melena.",
-          "searchClue": "Felino de gran melena y fuerte rugido.",
+          "clue": "Большая дикая кошка; у взрослого самца есть грива.",
+          "memoryClue": "Большая дикая кошка; у взрослого самца есть грива.",
+          "searchClue": "Этот хищник рычит, а на конце хвоста у него кисточка.",
           "prompt": "Это ___. У него большая грива, и он рычит."
         },
         {
@@ -8951,9 +9503,9 @@ window.CURRICULUM = {
             "утёнок",
             "утенок"
           ],
-          "clue": "Un ave de pico ancho que nada y hace «cuac».",
-          "memoryClue": "Nada en el estanque y hace «cuac».",
-          "searchClue": "Ave de pico ancho que nada en el agua.",
+          "clue": "Птица с плоским клювом и перепонками на лапах.",
+          "memoryClue": "Птица с плоским клювом и перепонками на лапах.",
+          "searchClue": "Эта птица плавает и крякает.",
           "prompt": "Это ___. Эта птица плавает в пруду и крякает."
         }
       ],
@@ -8967,27 +9519,27 @@ window.CURRICULUM = {
       "memoryExtra": [],
       "facts": [
         [
-          "Puede agarrar ramas con las manos.",
+          "Может держаться за ветки руками.",
           true
         ],
         [
-          "Tiene una trompa larga.",
+          "У него длинный хобот.",
           false
         ],
         [
-          "Tiene crin y relincha.",
+          "У него грива, и он ржёт.",
           true
         ],
         [
-          "Su cuerpo está cubierto de lana.",
+          "Тело покрыто шерстью.",
           false
         ],
         [
-          "El macho adulto tiene una gran melena.",
+          "У взрослого самца большая грива.",
           true
         ],
         [
-          "Es un mamífero de cuatro patas.",
+          "Это четвероногое млекопитающее.",
           false
         ]
       ],
@@ -9002,9 +9554,9 @@ window.CURRICULUM = {
               "пес",
               "щенок"
             ],
-            "clue": "Un animal doméstico que ladra.",
-            "memoryClue": "Hace «guau» y mueve la cola.",
-            "searchClue": "El compañero que sale a pasear con correa.",
+            "clue": "Домашнее животное, которое лает.",
+            "memoryClue": "Домашнее животное, которое лает.",
+            "searchClue": "Этот питомец виляет хвостом и гуляет на поводке.",
             "prompt": "Это ___. Это животное лает: «Гав!». "
           },
           {
@@ -9014,9 +9566,9 @@ window.CURRICULUM = {
             "aliases": [
               "кот"
             ],
-            "clue": "Un animal doméstico de bigotes que hace «miau».",
-            "memoryClue": "Ronronea y se limpia con la lengua.",
-            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "clue": "Домашний питомец с усами, который мяукает.",
+            "memoryClue": "Домашний питомец с усами, который мяукает.",
+            "searchClue": "Этот маленький питомец говорит «мяу» и имеет острые когти.",
             "prompt": "Это ___. Это животное мяукает и мурлычет."
           },
           {
@@ -9024,9 +9576,9 @@ window.CURRICULUM = {
             "asset": "animales/vaca",
             "answer": "корова",
             "aliases": [],
-            "clue": "Un animal de granja que hace «muu» y da leche.",
-            "memoryClue": "Nos da leche y puede tener manchas negras.",
-            "searchClue": "Animal de granja del que obtenemos leche.",
+            "clue": "Животное на ферме, которое мычит и даёт молоко.",
+            "memoryClue": "Животное на ферме, которое мычит и даёт молоко.",
+            "searchClue": "Это крупное животное доят на ферме.",
             "prompt": "Это ___. Она мычит, и её доят."
           },
           {
@@ -9034,9 +9586,9 @@ window.CURRICULUM = {
             "asset": "animales/cerdo",
             "answer": "свинья",
             "aliases": [],
-            "clue": "Un animal de granja de hocico redondo que hace «oink».",
-            "memoryClue": "Tiene hocico redondo y una cola rizada.",
-            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "clue": "Животное с круглым пятачком и хвостом колечком.",
+            "memoryClue": "Животное с круглым пятачком и хвостом колечком.",
+            "searchClue": "Это розовое животное хрюкает.",
             "prompt": "Это ___. У неё круглый пятачок и хвост колечком."
           },
           {
@@ -9044,9 +9596,9 @@ window.CURRICULUM = {
             "asset": "animales/conejo",
             "answer": "кролик",
             "aliases": [],
-            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
-            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
-            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "clue": "Небольшое животное с очень длинными ушами.",
+            "memoryClue": "Небольшое животное с очень длинными ушами.",
+            "searchClue": "Этот зверёк прыгает, а хвост у него короткий и пушистый.",
             "prompt": "Это ___. У него очень длинные уши, и он прыгает."
           },
           {
@@ -9056,9 +9608,9 @@ window.CURRICULUM = {
             "aliases": [
               "овечка"
             ],
-            "clue": "Un animal de granja cubierto de lana que hace «bee».",
-            "memoryClue": "Su cuerpo está cubierto de lana.",
-            "searchClue": "Animal de granja del que obtenemos lana.",
+            "clue": "Животное на ферме, покрытое шерстью.",
+            "memoryClue": "Животное на ферме, покрытое шерстью.",
+            "searchClue": "Из шерсти этого животного делают тёплую одежду.",
             "prompt": "Это ___. Она даёт шерсть и блеет."
           }
         ],
@@ -9070,9 +9622,9 @@ window.CURRICULUM = {
             "aliases": [
               "обезьянка"
             ],
-            "clue": "Un animal de manos hábiles que trepa por los árboles.",
-            "memoryClue": "Puede agarrar ramas con las manos.",
-            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "clue": "Животное, которое лазает по веткам с помощью рук.",
+            "memoryClue": "Животное, которое лазает по веткам с помощью рук.",
+            "searchClue": "Этот зверь качается на ветках и имеет длинный хвост.",
             "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
           },
           {
@@ -9080,9 +9632,9 @@ window.CURRICULUM = {
             "asset": "animales/oso",
             "answer": "медведь",
             "aliases": [],
-            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
-            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
-            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "clue": "Крупный зверь с круглыми ушами и густой бурой шерстью.",
+            "memoryClue": "Крупный зверь с круглыми ушами и густой бурой шерстью.",
+            "searchClue": "У этого сильного зверя большие лапы и короткий хвост.",
             "prompt": "Это ___. Это крупное дикое животное с круглыми ушами может спать всю зиму."
           },
           {
@@ -9092,9 +9644,9 @@ window.CURRICULUM = {
             "aliases": [
               "конь"
             ],
-            "clue": "Un animal con crin que relincha.",
-            "memoryClue": "Se le puede poner una silla para montar.",
-            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "clue": "Животное с гривой, которое ржёт.",
+            "memoryClue": "Животное с гривой, которое ржёт.",
+            "searchClue": "На это животное можно надеть седло и ездить верхом.",
             "prompt": "Это ___. На это животное надевают седло, чтобы ездить верхом."
           },
           {
@@ -9102,9 +9654,9 @@ window.CURRICULUM = {
             "asset": "animales/elefante",
             "answer": "слон",
             "aliases": [],
-            "clue": "Un animal grande con trompa y grandes orejas.",
-            "memoryClue": "Usa una trompa larga para beber agua.",
-            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "clue": "Очень крупное животное с длинным хоботом.",
+            "memoryClue": "Очень крупное животное с длинным хоботом.",
+            "searchClue": "Это животное берёт предметы хоботом.",
             "prompt": "Это ___. Он пьёт воду длинным хоботом."
           },
           {
@@ -9112,9 +9664,9 @@ window.CURRICULUM = {
             "asset": "animales/leon",
             "answer": "лев",
             "aliases": [],
-            "clue": "Un gran felino salvaje que ruge y tiene melena.",
-            "memoryClue": "El gran felino de la melena.",
-            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "clue": "Большая дикая кошка; у взрослого самца есть грива.",
+            "memoryClue": "Большая дикая кошка; у взрослого самца есть грива.",
+            "searchClue": "Этот хищник рычит, а на конце хвоста у него кисточка.",
             "prompt": "Это ___. У него большая грива, и он рычит."
           },
           {
@@ -9125,9 +9677,9 @@ window.CURRICULUM = {
               "утёнок",
               "утенок"
             ],
-            "clue": "Un ave de pico ancho que nada y hace «cuac».",
-            "memoryClue": "Nada en el estanque y hace «cuac».",
-            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "clue": "Птица с плоским клювом и перепонками на лапах.",
+            "memoryClue": "Птица с плоским клювом и перепонками на лапах.",
+            "searchClue": "Эта птица плавает и крякает.",
             "prompt": "Это ___. Эта птица плавает в пруду и крякает."
           }
         ],
@@ -9141,9 +9693,9 @@ window.CURRICULUM = {
               "пес",
               "щенок"
             ],
-            "clue": "Un animal doméstico que ladra.",
-            "memoryClue": "Hace «guau» y mueve la cola.",
-            "searchClue": "El compañero que sale a pasear con correa.",
+            "clue": "Домашнее животное, которое лает.",
+            "memoryClue": "Домашнее животное, которое лает.",
+            "searchClue": "Этот питомец виляет хвостом и гуляет на поводке.",
             "prompt": "Это ___. Это животное лает: «Гав!». "
           },
           {
@@ -9151,9 +9703,9 @@ window.CURRICULUM = {
             "asset": "animales/vaca",
             "answer": "корова",
             "aliases": [],
-            "clue": "Un animal de granja que hace «muu» y da leche.",
-            "memoryClue": "Nos da leche y puede tener manchas negras.",
-            "searchClue": "Animal de granja del que obtenemos leche.",
+            "clue": "Животное на ферме, которое мычит и даёт молоко.",
+            "memoryClue": "Животное на ферме, которое мычит и даёт молоко.",
+            "searchClue": "Это крупное животное доят на ферме.",
             "prompt": "Это ___. Она мычит, и её доят."
           },
           {
@@ -9163,9 +9715,9 @@ window.CURRICULUM = {
             "aliases": [
               "конь"
             ],
-            "clue": "Un animal con crin que relincha.",
-            "memoryClue": "Se le puede poner una silla para montar.",
-            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "clue": "Животное с гривой, которое ржёт.",
+            "memoryClue": "Животное с гривой, которое ржёт.",
+            "searchClue": "На это животное можно надеть седло и ездить верхом.",
             "prompt": "Это ___. На это животное надевают седло, чтобы ездить верхом."
           },
           {
@@ -9173,9 +9725,9 @@ window.CURRICULUM = {
             "asset": "animales/cerdo",
             "answer": "свинья",
             "aliases": [],
-            "clue": "Un animal de granja de hocico redondo que hace «oink».",
-            "memoryClue": "Tiene hocico redondo y una cola rizada.",
-            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "clue": "Животное с круглым пятачком и хвостом колечком.",
+            "memoryClue": "Животное с круглым пятачком и хвостом колечком.",
+            "searchClue": "Это розовое животное хрюкает.",
             "prompt": "Это ___. У неё круглый пятачок и хвост колечком."
           },
           {
@@ -9183,9 +9735,9 @@ window.CURRICULUM = {
             "asset": "animales/conejo",
             "answer": "кролик",
             "aliases": [],
-            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
-            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
-            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "clue": "Небольшое животное с очень длинными ушами.",
+            "memoryClue": "Небольшое животное с очень длинными ушами.",
+            "searchClue": "Этот зверёк прыгает, а хвост у него короткий и пушистый.",
             "prompt": "Это ___. У него очень длинные уши, и он прыгает."
           },
           {
@@ -9193,9 +9745,9 @@ window.CURRICULUM = {
             "asset": "animales/elefante",
             "answer": "слон",
             "aliases": [],
-            "clue": "Un animal grande con trompa y grandes orejas.",
-            "memoryClue": "Usa una trompa larga para beber agua.",
-            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "clue": "Очень крупное животное с длинным хоботом.",
+            "memoryClue": "Очень крупное животное с длинным хоботом.",
+            "searchClue": "Это животное берёт предметы хоботом.",
             "prompt": "Это ___. Он пьёт воду длинным хоботом."
           },
           {
@@ -9205,9 +9757,9 @@ window.CURRICULUM = {
             "aliases": [
               "кот"
             ],
-            "clue": "Un animal doméstico de bigotes que hace «miau».",
-            "memoryClue": "Ronronea y se limpia con la lengua.",
-            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "clue": "Домашний питомец с усами, который мяукает.",
+            "memoryClue": "Домашний питомец с усами, который мяукает.",
+            "searchClue": "Этот маленький питомец говорит «мяу» и имеет острые когти.",
             "prompt": "Это ___. Это животное мяукает и мурлычет."
           },
           {
@@ -9217,9 +9769,9 @@ window.CURRICULUM = {
             "aliases": [
               "обезьянка"
             ],
-            "clue": "Un animal de manos hábiles que trepa por los árboles.",
-            "memoryClue": "Puede agarrar ramas con las manos.",
-            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "clue": "Животное, которое лазает по веткам с помощью рук.",
+            "memoryClue": "Животное, которое лазает по веткам с помощью рук.",
+            "searchClue": "Этот зверь качается на ветках и имеет длинный хвост.",
             "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
           },
           {
@@ -9227,9 +9779,9 @@ window.CURRICULUM = {
             "asset": "animales/oso",
             "answer": "медведь",
             "aliases": [],
-            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
-            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
-            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "clue": "Крупный зверь с круглыми ушами и густой бурой шерстью.",
+            "memoryClue": "Крупный зверь с круглыми ушами и густой бурой шерстью.",
+            "searchClue": "У этого сильного зверя большие лапы и короткий хвост.",
             "prompt": "Это ___. Это крупное дикое животное с круглыми ушами может спать всю зиму."
           },
           {
@@ -9239,9 +9791,9 @@ window.CURRICULUM = {
             "aliases": [
               "овечка"
             ],
-            "clue": "Un animal de granja cubierto de lana que hace «bee».",
-            "memoryClue": "Su cuerpo está cubierto de lana.",
-            "searchClue": "Animal de granja del que obtenemos lana.",
+            "clue": "Животное на ферме, покрытое шерстью.",
+            "memoryClue": "Животное на ферме, покрытое шерстью.",
+            "searchClue": "Из шерсти этого животного делают тёплую одежду.",
             "prompt": "Это ___. Она даёт шерсть и блеет."
           },
           {
@@ -9249,9 +9801,9 @@ window.CURRICULUM = {
             "asset": "animales/leon",
             "answer": "лев",
             "aliases": [],
-            "clue": "Un gran felino salvaje que ruge y tiene melena.",
-            "memoryClue": "El gran felino de la melena.",
-            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "clue": "Большая дикая кошка; у взрослого самца есть грива.",
+            "memoryClue": "Большая дикая кошка; у взрослого самца есть грива.",
+            "searchClue": "Этот хищник рычит, а на конце хвоста у него кисточка.",
             "prompt": "Это ___. У него большая грива, и он рычит."
           },
           {
@@ -9262,9 +9814,9 @@ window.CURRICULUM = {
               "утёнок",
               "утенок"
             ],
-            "clue": "Un ave de pico ancho que nada y hace «cuac».",
-            "memoryClue": "Nada en el estanque y hace «cuac».",
-            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "clue": "Птица с плоским клювом и перепонками на лапах.",
+            "memoryClue": "Птица с плоским клювом и перепонками на лапах.",
+            "searchClue": "Эта птица плавает и крякает.",
             "prompt": "Это ___. Эта птица плавает в пруду и крякает."
           }
         ],
@@ -9277,9 +9829,9 @@ window.CURRICULUM = {
               "утёнок",
               "утенок"
             ],
-            "clue": "Un ave de pico ancho que nada y hace «cuac».",
-            "memoryClue": "Nada en el estanque y hace «cuac».",
-            "searchClue": "Ave de pico ancho que nada en el agua.",
+            "clue": "Птица с плоским клювом и перепонками на лапах.",
+            "memoryClue": "Птица с плоским клювом и перепонками на лапах.",
+            "searchClue": "Эта птица плавает и крякает.",
             "prompt": "Это ___. Эта птица плавает в пруду и крякает."
           },
           {
@@ -9287,9 +9839,9 @@ window.CURRICULUM = {
             "asset": "animales/leon",
             "answer": "лев",
             "aliases": [],
-            "clue": "Un gran felino salvaje que ruge y tiene melena.",
-            "memoryClue": "El gran felino de la melena.",
-            "searchClue": "Felino de gran melena y fuerte rugido.",
+            "clue": "Большая дикая кошка; у взрослого самца есть грива.",
+            "memoryClue": "Большая дикая кошка; у взрослого самца есть грива.",
+            "searchClue": "Этот хищник рычит, а на конце хвоста у него кисточка.",
             "prompt": "Это ___. У него большая грива, и он рычит."
           },
           {
@@ -9297,9 +9849,9 @@ window.CURRICULUM = {
             "asset": "animales/vaca",
             "answer": "корова",
             "aliases": [],
-            "clue": "Un animal de granja que hace «muu» y da leche.",
-            "memoryClue": "Nos da leche y puede tener manchas negras.",
-            "searchClue": "Animal de granja del que obtenemos leche.",
+            "clue": "Животное на ферме, которое мычит и даёт молоко.",
+            "memoryClue": "Животное на ферме, которое мычит и даёт молоко.",
+            "searchClue": "Это крупное животное доят на ферме.",
             "prompt": "Это ___. Она мычит, и её доят."
           },
           {
@@ -9309,9 +9861,9 @@ window.CURRICULUM = {
             "aliases": [
               "кот"
             ],
-            "clue": "Un animal doméstico de bigotes que hace «miau».",
-            "memoryClue": "Ronronea y se limpia con la lengua.",
-            "searchClue": "Animal doméstico que afila las uñas y maúlla.",
+            "clue": "Домашний питомец с усами, который мяукает.",
+            "memoryClue": "Домашний питомец с усами, который мяукает.",
+            "searchClue": "Этот маленький питомец говорит «мяу» и имеет острые когти.",
             "prompt": "Это ___. Это животное мяукает и мурлычет."
           },
           {
@@ -9321,9 +9873,9 @@ window.CURRICULUM = {
             "aliases": [
               "обезьянка"
             ],
-            "clue": "Un animal de manos hábiles que trepa por los árboles.",
-            "memoryClue": "Puede agarrar ramas con las manos.",
-            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "clue": "Животное, которое лазает по веткам с помощью рук.",
+            "memoryClue": "Животное, которое лазает по веткам с помощью рук.",
+            "searchClue": "Этот зверь качается на ветках и имеет длинный хвост.",
             "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
           },
           {
@@ -9331,9 +9883,9 @@ window.CURRICULUM = {
             "asset": "animales/oso",
             "answer": "медведь",
             "aliases": [],
-            "clue": "Un animal grande y fuerte de pelo espeso y orejas redondas.",
-            "memoryClue": "Tiene patas fuertes, orejas redondas y puede hibernar.",
-            "searchClue": "Animal robusto de pelo espeso que puede hibernar.",
+            "clue": "Крупный зверь с круглыми ушами и густой бурой шерстью.",
+            "memoryClue": "Крупный зверь с круглыми ушами и густой бурой шерстью.",
+            "searchClue": "У этого сильного зверя большие лапы и короткий хвост.",
             "prompt": "Это ___. Это крупное дикое животное с круглыми ушами может спать всю зиму."
           }
         ],
@@ -9343,9 +9895,9 @@ window.CURRICULUM = {
             "asset": "animales/elefante",
             "answer": "слон",
             "aliases": [],
-            "clue": "Un animal grande con trompa y grandes orejas.",
-            "memoryClue": "Usa una trompa larga para beber agua.",
-            "searchClue": "El animal más grande de este grupo, con trompa.",
+            "clue": "Очень крупное животное с длинным хоботом.",
+            "memoryClue": "Очень крупное животное с длинным хоботом.",
+            "searchClue": "Это животное берёт предметы хоботом.",
             "prompt": "Это ___. Он пьёт воду длинным хоботом."
           },
           {
@@ -9353,9 +9905,9 @@ window.CURRICULUM = {
             "asset": "animales/conejo",
             "answer": "кролик",
             "aliases": [],
-            "clue": "Un animal pequeño que salta y tiene orejas muy largas.",
-            "memoryClue": "Da saltitos y mueve su nariz bajo unas orejas largas.",
-            "searchClue": "Animal pequeño de orejas largas y cola corta.",
+            "clue": "Небольшое животное с очень длинными ушами.",
+            "memoryClue": "Небольшое животное с очень длинными ушами.",
+            "searchClue": "Этот зверёк прыгает, а хвост у него короткий и пушистый.",
             "prompt": "Это ___. У него очень длинные уши, и он прыгает."
           },
           {
@@ -9363,9 +9915,9 @@ window.CURRICULUM = {
             "asset": "animales/cerdo",
             "answer": "свинья",
             "aliases": [],
-            "clue": "Un animal de granja de hocico redondo que hace «oink».",
-            "memoryClue": "Tiene hocico redondo y una cola rizada.",
-            "searchClue": "Animal de granja que gruñe y tiene hocico redondo.",
+            "clue": "Животное с круглым пятачком и хвостом колечком.",
+            "memoryClue": "Животное с круглым пятачком и хвостом колечком.",
+            "searchClue": "Это розовое животное хрюкает.",
             "prompt": "Это ___. У неё круглый пятачок и хвост колечком."
           },
           {
@@ -9375,9 +9927,9 @@ window.CURRICULUM = {
             "aliases": [
               "конь"
             ],
-            "clue": "Un animal con crin que relincha.",
-            "memoryClue": "Se le puede poner una silla para montar.",
-            "searchClue": "Animal de crin larga en el que se puede montar.",
+            "clue": "Животное с гривой, которое ржёт.",
+            "memoryClue": "Животное с гривой, которое ржёт.",
+            "searchClue": "На это животное можно надеть седло и ездить верхом.",
             "prompt": "Это ___. На это животное надевают седло, чтобы ездить верхом."
           },
           {
@@ -9387,9 +9939,9 @@ window.CURRICULUM = {
             "aliases": [
               "обезьянка"
             ],
-            "clue": "Un animal de manos hábiles que trepa por los árboles.",
-            "memoryClue": "Puede agarrar ramas con las manos.",
-            "searchClue": "Animal de cola larga y manos que agarran ramas.",
+            "clue": "Животное, которое лазает по веткам с помощью рук.",
+            "memoryClue": "Животное, которое лазает по веткам с помощью рук.",
+            "searchClue": "Этот зверь качается на ветках и имеет длинный хвост.",
             "prompt": "Это ___. Это животное хватает ветки руками и лазает по деревьям."
           },
           {
@@ -9399,9 +9951,9 @@ window.CURRICULUM = {
             "aliases": [
               "овечка"
             ],
-            "clue": "Un animal de granja cubierto de lana que hace «bee».",
-            "memoryClue": "Su cuerpo está cubierto de lana.",
-            "searchClue": "Animal de granja del que obtenemos lana.",
+            "clue": "Животное на ферме, покрытое шерстью.",
+            "memoryClue": "Животное на ферме, покрытое шерстью.",
+            "searchClue": "Из шерсти этого животного делают тёплую одежду.",
             "prompt": "Это ___. Она даёт шерсть и блеет."
           }
         ]
@@ -9414,7 +9966,7 @@ window.CURRICULUM = {
     },
     {
       "id": "colores",
-      "title": "Colores",
+      "title": "Цвета",
       "kind": "vocabulary",
       "icon": "colores",
       "level": "A1",
@@ -9433,120 +9985,120 @@ window.CURRICULUM = {
           "asset": "colores/rojo",
           "answer": "красный",
           "aliases": [],
-          "clue": "Mancha de pintura de color rojo.",
-          "memoryClue": "Pintura rojo.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: красный.",
+          "memoryClue": "Краска: красный.",
+          "flashClue": "Краска: красный.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "amarillo",
           "asset": "colores/amarillo",
           "answer": "жёлтый",
           "aliases": [],
-          "clue": "Mancha de pintura de color amarillo.",
-          "memoryClue": "Pintura amarillo.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: жёлтый.",
+          "memoryClue": "Краска: жёлтый.",
+          "flashClue": "Краска: жёлтый.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "azul",
           "asset": "colores/azul",
           "answer": "синий",
           "aliases": [],
-          "clue": "Mancha de pintura de color azul.",
-          "memoryClue": "Pintura azul.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: синий.",
+          "memoryClue": "Краска: синий.",
+          "flashClue": "Краска: синий.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "verde",
           "asset": "colores/verde",
           "answer": "зелёный",
           "aliases": [],
-          "clue": "Mancha de pintura de color verde.",
-          "memoryClue": "Pintura verde.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: зелёный.",
+          "memoryClue": "Краска: зелёный.",
+          "flashClue": "Краска: зелёный.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "naranja",
           "asset": "colores/naranja",
           "answer": "оранжевый",
           "aliases": [],
-          "clue": "Mancha de pintura de color naranja.",
-          "memoryClue": "Pintura naranja.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: оранжевый.",
+          "memoryClue": "Краска: оранжевый.",
+          "flashClue": "Краска: оранжевый.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "morado",
           "asset": "colores/morado",
           "answer": "фиолетовый",
           "aliases": [],
-          "clue": "Mancha de pintura de color morado.",
-          "memoryClue": "Pintura morado.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: фиолетовый.",
+          "memoryClue": "Краска: фиолетовый.",
+          "flashClue": "Краска: фиолетовый.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "rosa",
           "asset": "colores/rosa",
           "answer": "розовый",
           "aliases": [],
-          "clue": "Mancha de pintura de color rosa.",
-          "memoryClue": "Pintura rosa.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: розовый.",
+          "memoryClue": "Краска: розовый.",
+          "flashClue": "Краска: розовый.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "marron",
           "asset": "colores/marron",
           "answer": "коричневый",
           "aliases": [],
-          "clue": "Mancha de pintura de color marrón.",
-          "memoryClue": "Pintura marrón.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: коричневый.",
+          "memoryClue": "Краска: коричневый.",
+          "flashClue": "Краска: коричневый.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "negro",
           "asset": "colores/negro",
           "answer": "чёрный",
           "aliases": [],
-          "clue": "Mancha de pintura de color negro.",
-          "memoryClue": "Pintura negro.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: чёрный.",
+          "memoryClue": "Краска: чёрный.",
+          "flashClue": "Краска: чёрный.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "blanco",
           "asset": "colores/blanco",
           "answer": "белый",
           "aliases": [],
-          "clue": "Mancha de pintura de color blanco.",
-          "memoryClue": "Pintura blanco.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: белый.",
+          "memoryClue": "Краска: белый.",
+          "flashClue": "Краска: белый.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "gris",
           "asset": "colores/gris",
           "answer": "серый",
           "aliases": [],
-          "clue": "Mancha de pintura de color gris.",
-          "memoryClue": "Pintura gris.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: серый.",
+          "memoryClue": "Краска: серый.",
+          "flashClue": "Краска: серый.",
+          "searchClue": "Найди название этого цвета."
         },
         {
           "key": "celeste",
           "asset": "colores/celeste",
           "answer": "голубой",
           "aliases": [],
-          "clue": "Mancha de pintura de color celeste.",
-          "memoryClue": "Pintura celeste.",
-          "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-          "searchClue": "Busca el nombre de esta pintura."
+          "clue": "Краска: голубой.",
+          "memoryClue": "Краска: голубой.",
+          "flashClue": "Краска: голубой.",
+          "searchClue": "Найди название этого цвета."
         }
       ],
       "variants": {
@@ -9556,120 +10108,120 @@ window.CURRICULUM = {
             "asset": "colores/rojo",
             "answer": "красный",
             "aliases": [],
-            "clue": "Mancha de pintura de color rojo.",
-            "memoryClue": "Pintura rojo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: красный.",
+            "memoryClue": "Краска: красный.",
+            "flashClue": "Краска: красный.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "amarillo",
             "asset": "colores/amarillo",
             "answer": "жёлтый",
             "aliases": [],
-            "clue": "Mancha de pintura de color amarillo.",
-            "memoryClue": "Pintura amarillo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: жёлтый.",
+            "memoryClue": "Краска: жёлтый.",
+            "flashClue": "Краска: жёлтый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "azul",
             "asset": "colores/azul",
             "answer": "синий",
             "aliases": [],
-            "clue": "Mancha de pintura de color azul.",
-            "memoryClue": "Pintura azul.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: синий.",
+            "memoryClue": "Краска: синий.",
+            "flashClue": "Краска: синий.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "verde",
             "asset": "colores/verde",
             "answer": "зелёный",
             "aliases": [],
-            "clue": "Mancha de pintura de color verde.",
-            "memoryClue": "Pintura verde.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: зелёный.",
+            "memoryClue": "Краска: зелёный.",
+            "flashClue": "Краска: зелёный.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "naranja",
             "asset": "colores/naranja",
             "answer": "оранжевый",
             "aliases": [],
-            "clue": "Mancha de pintura de color naranja.",
-            "memoryClue": "Pintura naranja.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: оранжевый.",
+            "memoryClue": "Краска: оранжевый.",
+            "flashClue": "Краска: оранжевый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "morado",
             "asset": "colores/morado",
             "answer": "фиолетовый",
             "aliases": [],
-            "clue": "Mancha de pintura de color morado.",
-            "memoryClue": "Pintura morado.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: фиолетовый.",
+            "memoryClue": "Краска: фиолетовый.",
+            "flashClue": "Краска: фиолетовый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "rosa",
             "asset": "colores/rosa",
             "answer": "розовый",
             "aliases": [],
-            "clue": "Mancha de pintura de color rosa.",
-            "memoryClue": "Pintura rosa.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: розовый.",
+            "memoryClue": "Краска: розовый.",
+            "flashClue": "Краска: розовый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "marron",
             "asset": "colores/marron",
             "answer": "коричневый",
             "aliases": [],
-            "clue": "Mancha de pintura de color marrón.",
-            "memoryClue": "Pintura marrón.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: коричневый.",
+            "memoryClue": "Краска: коричневый.",
+            "flashClue": "Краска: коричневый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "negro",
             "asset": "colores/negro",
             "answer": "чёрный",
             "aliases": [],
-            "clue": "Mancha de pintura de color negro.",
-            "memoryClue": "Pintura negro.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: чёрный.",
+            "memoryClue": "Краска: чёрный.",
+            "flashClue": "Краска: чёрный.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "blanco",
             "asset": "colores/blanco",
             "answer": "белый",
             "aliases": [],
-            "clue": "Mancha de pintura de color blanco.",
-            "memoryClue": "Pintura blanco.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: белый.",
+            "memoryClue": "Краска: белый.",
+            "flashClue": "Краска: белый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "gris",
             "asset": "colores/gris",
             "answer": "серый",
             "aliases": [],
-            "clue": "Mancha de pintura de color gris.",
-            "memoryClue": "Pintura gris.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: серый.",
+            "memoryClue": "Краска: серый.",
+            "flashClue": "Краска: серый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "celeste",
             "asset": "colores/celeste",
             "answer": "голубой",
             "aliases": [],
-            "clue": "Mancha de pintura de color celeste.",
-            "memoryClue": "Pintura celeste.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: голубой.",
+            "memoryClue": "Краска: голубой.",
+            "flashClue": "Краска: голубой.",
+            "searchClue": "Найди название этого цвета."
           }
         ],
         "2": [
@@ -9682,8 +10234,16 @@ window.CURRICULUM = {
               "красный зелёный",
               "зелёный красный"
             ],
-            "prompt": "На картинке арбуз ___: назови два цвета мякоти и кожуры.",
-            "clue": "Una rodaja de sandía: pulpa roja y corteza verde."
+            "prompt": "Цвет мякоти и цвет корки арбуза:",
+            "clue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
+            "parts": [
+              [
+                "красный"
+              ],
+              [
+                "зелёный"
+              ]
+            ]
           },
           {
             "key": "objeto-1",
@@ -9691,7 +10251,7 @@ window.CURRICULUM = {
             "answer": "жёлтый",
             "aliases": [],
             "prompt": "Лимон ___.",
-            "clue": "Un limón amarillo."
+            "clue": "Овальный жёлтый фрукт с кислым вкусом."
           },
           {
             "key": "objeto-2",
@@ -9699,7 +10259,7 @@ window.CURRICULUM = {
             "answer": "розовый",
             "aliases": [],
             "prompt": "Поросёнок ___.",
-            "clue": "Un cerdito rosa."
+            "clue": "Животное с круглым пятачком и хвостом колечком."
           },
           {
             "key": "objeto-3",
@@ -9711,7 +10271,7 @@ window.CURRICULUM = {
               "розовый"
             ],
             "prompt": "Виноград на картинке ___.",
-            "clue": "Un racimo de uvas moradas."
+            "clue": "Гроздь маленьких фиолетовых ягод."
           },
           {
             "key": "objeto-4",
@@ -9719,7 +10279,7 @@ window.CURRICULUM = {
             "answer": "оранжевый",
             "aliases": [],
             "prompt": "Апельсин ___.",
-            "clue": "Una naranja de color naranja."
+            "clue": "Круглый оранжевый цитрус."
           },
           {
             "key": "objeto-5",
@@ -9727,7 +10287,7 @@ window.CURRICULUM = {
             "answer": "белая",
             "aliases": [],
             "prompt": "Шерсть овцы ___.",
-            "clue": "Una oveja de lana blanca."
+            "clue": "Животное на ферме, покрытое шерстью."
           }
         ],
         "3": [
@@ -9736,120 +10296,120 @@ window.CURRICULUM = {
             "asset": "colores/rojo",
             "answer": "красный",
             "aliases": [],
-            "clue": "Mancha de pintura de color rojo.",
-            "memoryClue": "Pintura rojo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: красный.",
+            "memoryClue": "Краска: красный.",
+            "flashClue": "Краска: красный.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "amarillo",
             "asset": "colores/amarillo",
             "answer": "жёлтый",
             "aliases": [],
-            "clue": "Mancha de pintura de color amarillo.",
-            "memoryClue": "Pintura amarillo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: жёлтый.",
+            "memoryClue": "Краска: жёлтый.",
+            "flashClue": "Краска: жёлтый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "azul",
             "asset": "colores/azul",
             "answer": "синий",
             "aliases": [],
-            "clue": "Mancha de pintura de color azul.",
-            "memoryClue": "Pintura azul.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: синий.",
+            "memoryClue": "Краска: синий.",
+            "flashClue": "Краска: синий.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "verde",
             "asset": "colores/verde",
             "answer": "зелёный",
             "aliases": [],
-            "clue": "Mancha de pintura de color verde.",
-            "memoryClue": "Pintura verde.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: зелёный.",
+            "memoryClue": "Краска: зелёный.",
+            "flashClue": "Краска: зелёный.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "naranja",
             "asset": "colores/naranja",
             "answer": "оранжевый",
             "aliases": [],
-            "clue": "Mancha de pintura de color naranja.",
-            "memoryClue": "Pintura naranja.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: оранжевый.",
+            "memoryClue": "Краска: оранжевый.",
+            "flashClue": "Краска: оранжевый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "morado",
             "asset": "colores/morado",
             "answer": "фиолетовый",
             "aliases": [],
-            "clue": "Mancha de pintura de color morado.",
-            "memoryClue": "Pintura morado.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: фиолетовый.",
+            "memoryClue": "Краска: фиолетовый.",
+            "flashClue": "Краска: фиолетовый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "rosa",
             "asset": "colores/rosa",
             "answer": "розовый",
             "aliases": [],
-            "clue": "Mancha de pintura de color rosa.",
-            "memoryClue": "Pintura rosa.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: розовый.",
+            "memoryClue": "Краска: розовый.",
+            "flashClue": "Краска: розовый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "marron",
             "asset": "colores/marron",
             "answer": "коричневый",
             "aliases": [],
-            "clue": "Mancha de pintura de color marrón.",
-            "memoryClue": "Pintura marrón.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: коричневый.",
+            "memoryClue": "Краска: коричневый.",
+            "flashClue": "Краска: коричневый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "negro",
             "asset": "colores/negro",
             "answer": "чёрный",
             "aliases": [],
-            "clue": "Mancha de pintura de color negro.",
-            "memoryClue": "Pintura negro.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: чёрный.",
+            "memoryClue": "Краска: чёрный.",
+            "flashClue": "Краска: чёрный.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "blanco",
             "asset": "colores/blanco",
             "answer": "белый",
             "aliases": [],
-            "clue": "Mancha de pintura de color blanco.",
-            "memoryClue": "Pintura blanco.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: белый.",
+            "memoryClue": "Краска: белый.",
+            "flashClue": "Краска: белый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "gris",
             "asset": "colores/gris",
             "answer": "серый",
             "aliases": [],
-            "clue": "Mancha de pintura de color gris.",
-            "memoryClue": "Pintura gris.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: серый.",
+            "memoryClue": "Краска: серый.",
+            "flashClue": "Краска: серый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "celeste",
             "asset": "colores/celeste",
             "answer": "голубой",
             "aliases": [],
-            "clue": "Mancha de pintura de color celeste.",
-            "memoryClue": "Pintura celeste.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: голубой.",
+            "memoryClue": "Краска: голубой.",
+            "flashClue": "Краска: голубой.",
+            "searchClue": "Найди название этого цвета."
           }
         ],
         "4": [
@@ -9858,60 +10418,60 @@ window.CURRICULUM = {
             "asset": "colores/azul",
             "answer": "синий",
             "aliases": [],
-            "clue": "Mancha de pintura de color azul.",
-            "memoryClue": "Pintura azul.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: синий.",
+            "memoryClue": "Краска: синий.",
+            "flashClue": "Краска: синий.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "celeste",
             "asset": "colores/celeste",
             "answer": "голубой",
             "aliases": [],
-            "clue": "Mancha de pintura de color celeste.",
-            "memoryClue": "Pintura celeste.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: голубой.",
+            "memoryClue": "Краска: голубой.",
+            "flashClue": "Краска: голубой.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "rosa",
             "asset": "colores/rosa",
             "answer": "розовый",
             "aliases": [],
-            "clue": "Mancha de pintura de color rosa.",
-            "memoryClue": "Pintura rosa.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: розовый.",
+            "memoryClue": "Краска: розовый.",
+            "flashClue": "Краска: розовый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "marron",
             "asset": "colores/marron",
             "answer": "коричневый",
             "aliases": [],
-            "clue": "Mancha de pintura de color marrón.",
-            "memoryClue": "Pintura marrón.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: коричневый.",
+            "memoryClue": "Краска: коричневый.",
+            "flashClue": "Краска: коричневый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "negro",
             "asset": "colores/negro",
             "answer": "чёрный",
             "aliases": [],
-            "clue": "Mancha de pintura de color negro.",
-            "memoryClue": "Pintura negro.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: чёрный.",
+            "memoryClue": "Краска: чёрный.",
+            "flashClue": "Краска: чёрный.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "gris",
             "asset": "colores/gris",
             "answer": "серый",
             "aliases": [],
-            "clue": "Mancha de pintura de color gris.",
-            "memoryClue": "Pintura gris.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: серый.",
+            "memoryClue": "Краска: серый.",
+            "flashClue": "Краска: серый.",
+            "searchClue": "Найди название этого цвета."
           }
         ],
         "5": [
@@ -9920,60 +10480,60 @@ window.CURRICULUM = {
             "asset": "colores/rojo",
             "answer": "красный",
             "aliases": [],
-            "clue": "Mancha de pintura de color rojo.",
-            "memoryClue": "Pintura rojo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: красный.",
+            "memoryClue": "Краска: красный.",
+            "flashClue": "Краска: красный.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "amarillo",
             "asset": "colores/amarillo",
             "answer": "жёлтый",
             "aliases": [],
-            "clue": "Mancha de pintura de color amarillo.",
-            "memoryClue": "Pintura amarillo.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: жёлтый.",
+            "memoryClue": "Краска: жёлтый.",
+            "flashClue": "Краска: жёлтый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "verde",
             "asset": "colores/verde",
             "answer": "зелёный",
             "aliases": [],
-            "clue": "Mancha de pintura de color verde.",
-            "memoryClue": "Pintura verde.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: зелёный.",
+            "memoryClue": "Краска: зелёный.",
+            "flashClue": "Краска: зелёный.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "naranja",
             "asset": "colores/naranja",
             "answer": "оранжевый",
             "aliases": [],
-            "clue": "Mancha de pintura de color naranja.",
-            "memoryClue": "Pintura naranja.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: оранжевый.",
+            "memoryClue": "Краска: оранжевый.",
+            "flashClue": "Краска: оранжевый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "morado",
             "asset": "colores/morado",
             "answer": "фиолетовый",
             "aliases": [],
-            "clue": "Mancha de pintura de color morado.",
-            "memoryClue": "Pintura morado.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: фиолетовый.",
+            "memoryClue": "Краска: фиолетовый.",
+            "flashClue": "Краска: фиолетовый.",
+            "searchClue": "Найди название этого цвета."
           },
           {
             "key": "blanco",
             "asset": "colores/blanco",
             "answer": "белый",
             "aliases": [],
-            "clue": "Mancha de pintura de color blanco.",
-            "memoryClue": "Pintura blanco.",
-            "flashClue": "Observa la pintura, intenta recordar el color y voltea la tarjeta si lo necesitas.",
-            "searchClue": "Busca el nombre de esta pintura."
+            "clue": "Краска: белый.",
+            "memoryClue": "Краска: белый.",
+            "flashClue": "Краска: белый.",
+            "searchClue": "Найди название этого цвета."
           }
         ]
       },
@@ -9982,7 +10542,7 @@ window.CURRICULUM = {
     {
       "id": "ropa",
       "revision": "ilustrada-v2",
-      "title": "La ropa",
+      "title": "Одежда",
       "kind": "vocabulary",
       "icon": "ropa",
       "level": "A1",
@@ -10000,10 +10560,10 @@ window.CURRICULUM = {
           "asset": "ropa/abrigo",
           "answer": "куртка",
           "aliases": [],
-          "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
-          "memoryClue": "Una prenda exterior que abriga el cuerpo.",
-          "flashClue": "Una prenda exterior que abriga el cuerpo.",
-          "searchClue": "Prenda exterior de manga larga para abrigarse.",
+          "clue": "Зелёная верхняя одежда с длинными рукавами.",
+          "memoryClue": "Зелёная верхняя одежда с длинными рукавами.",
+          "flashClue": "Зелёная верхняя одежда с длинными рукавами.",
+          "searchClue": "Её надевают поверх другой одежды, чтобы согреться.",
           "prompt": ""
         },
         {
@@ -10013,10 +10573,10 @@ window.CURRICULUM = {
           "aliases": [
             "шарфик"
           ],
-          "clue": "Tira de tela azul que se lleva alrededor del cuello.",
-          "memoryClue": "Abriga el cuello y puede tener flecos.",
-          "flashClue": "Abriga el cuello y puede tener flecos.",
-          "searchClue": "Accesorio largo que rodea el cuello.",
+          "clue": "Синяя полоса ткани, которую носят вокруг шеи.",
+          "memoryClue": "Синяя полоса ткани, которую носят вокруг шеи.",
+          "flashClue": "Синяя полоса ткани, которую носят вокруг шеи.",
+          "searchClue": "Этот длинный аксессуар согревает шею.",
           "prompt": "Вокруг шеи я ношу этот синий ___."
         },
         {
@@ -10024,10 +10584,10 @@ window.CURRICULUM = {
           "asset": "ropa/calcetines",
           "answer": "носки",
           "aliases": [],
-          "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
-          "memoryClue": "Se llevan entre el pie y el calzado.",
-          "flashClue": "Se llevan entre el pie y el calzado.",
-          "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+          "clue": "Два оранжевых предмета одежды для ног внутри обуви.",
+          "memoryClue": "Два оранжевых предмета одежды для ног внутри обуви.",
+          "flashClue": "Два оранжевых предмета одежды для ног внутри обуви.",
+          "searchClue": "Их надевают на ноги перед обувью.",
           "prompt": ""
         },
         {
@@ -10035,10 +10595,10 @@ window.CURRICULUM = {
           "asset": "ropa/camiseta",
           "answer": "футболка",
           "aliases": [],
-          "clue": "Prenda azul de manga corta, sin botones.",
-          "memoryClue": "Parte de arriba de manga corta, sin botones.",
-          "flashClue": "Parte de arriba de manga corta, sin botones.",
-          "searchClue": "Prenda de manga corta que no lleva botones.",
+          "clue": "Синяя одежда с короткими рукавами без пуговиц.",
+          "memoryClue": "Синяя одежда с короткими рукавами без пуговиц.",
+          "flashClue": "Синяя одежда с короткими рукавами без пуговиц.",
+          "searchClue": "У этой повседневной одежды короткие рукава.",
           "prompt": "Синяя одежда с короткими рукавами и без пуговиц — это ___."
         },
         {
@@ -10046,10 +10606,10 @@ window.CURRICULUM = {
           "asset": "ropa/falda",
           "answer": "юбка",
           "aliases": [],
-          "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
-          "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
-          "flashClue": "No es un vestido: solo cubre la parte de abajo.",
-          "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+          "clue": "Красная одежда от талии вниз, без штанин.",
+          "memoryClue": "Красная одежда от талии вниз, без штанин.",
+          "flashClue": "Красная одежда от талии вниз, без штанин.",
+          "searchClue": "Этот предмет одежды свисает от талии и не является брюками.",
           "prompt": "Эта оранжевая одежда начинается на талии и не разделяется на две штанины. Это ___."
         },
         {
@@ -10059,10 +10619,10 @@ window.CURRICULUM = {
           "aliases": [
             "бейсболка"
           ],
-          "clue": "Accesorio verde para la cabeza, con visera.",
-          "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-          "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-          "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+          "clue": "Синий головной убор с козырьком.",
+          "memoryClue": "Синий головной убор с козырьком.",
+          "flashClue": "Синий головной убор с козырьком.",
+          "searchClue": "У этого головного убора спереди есть козырёк.",
           "prompt": "На голове у меня зелёная ___ с козырьком."
         },
         {
@@ -10070,10 +10630,10 @@ window.CURRICULUM = {
           "asset": "ropa/guantes",
           "answer": "перчатки",
           "aliases": [],
-          "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
-          "memoryClue": "Abrigan las manos y los dedos.",
-          "flashClue": "Abrigan las manos y los dedos.",
-          "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+          "clue": "Два предмета одежды для кистей рук и пальцев.",
+          "memoryClue": "Два предмета одежды для кистей рук и пальцев.",
+          "flashClue": "Два предмета одежды для кистей рук и пальцев.",
+          "searchClue": "Эта одежда согревает каждый палец отдельно.",
           "prompt": ""
         },
         {
@@ -10083,10 +10643,10 @@ window.CURRICULUM = {
           "aliases": [
             "штаны"
           ],
-          "clue": "Prenda azul que cubre las piernas por separado.",
-          "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
-          "flashClue": "Cubre cada pierna por separado, desde la cintura.",
-          "searchClue": "Ropa para las piernas, con una parte para cada una.",
+          "clue": "Синие брюки с двумя штанинами.",
+          "memoryClue": "Синие брюки с двумя штанинами.",
+          "flashClue": "Синие брюки с двумя штанинами.",
+          "searchClue": "Эта одежда закрывает нижнюю часть тела и обе ноги.",
           "prompt": "Эта голубая одежда закрывает обе ноги по отдельности. Это ___."
         },
         {
@@ -10094,10 +10654,10 @@ window.CURRICULUM = {
           "asset": "ropa/pijama",
           "answer": "пижама",
           "aliases": [],
-          "clue": "Conjunto naranja de dos piezas para dormir.",
-          "memoryClue": "Conjunto cómodo para irse a la cama.",
-          "flashClue": "Conjunto cómodo para irse a la cama.",
-          "searchClue": "Ropa que se usa para dormir por la noche.",
+          "clue": "Комплект из кофты и штанов для сна.",
+          "memoryClue": "Комплект из кофты и штанов для сна.",
+          "flashClue": "Комплект из кофты и штанов для сна.",
+          "searchClue": "Эту одежду надевают перед сном.",
           "prompt": ""
         },
         {
@@ -10105,10 +10665,10 @@ window.CURRICULUM = {
           "asset": "ropa/sombrero",
           "answer": "шляпа",
           "aliases": [],
-          "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
-          "memoryClue": "Tiene un ala que rodea la cabeza.",
-          "flashClue": "Tiene un ala que rodea la cabeza.",
-          "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+          "clue": "Головной убор с полями со всех сторон.",
+          "memoryClue": "Головной убор с полями со всех сторон.",
+          "flashClue": "Головной убор с полями со всех сторон.",
+          "searchClue": "В отличие от кепки, этот убор имеет поля по кругу.",
           "prompt": ""
         },
         {
@@ -10116,10 +10676,10 @@ window.CURRICULUM = {
           "asset": "ropa/vestido",
           "answer": "платье",
           "aliases": [],
-          "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
-          "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
-          "flashClue": "La parte de arriba y la falda forman una sola prenda.",
-          "searchClue": "Prenda de una sola pieza con falda incorporada.",
+          "clue": "Розовая одежда, в которой верх и юбка соединены.",
+          "memoryClue": "Розовая одежда, в которой верх и юбка соединены.",
+          "flashClue": "Розовая одежда, в которой верх и юбка соединены.",
+          "searchClue": "Верх и юбка составляют один предмет одежды.",
           "prompt": ""
         },
         {
@@ -10130,10 +10690,10 @@ window.CURRICULUM = {
             "ботинок",
             "обувь"
           ],
-          "clue": "Calzado negro con cordones que cubre los tobillos.",
-          "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-          "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-          "searchClue": "Calzado alto, negro y con cordones.",
+          "clue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+          "memoryClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+          "flashClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+          "searchClue": "Эта обувь закрывает стопы и щиколотки.",
           "prompt": "Чёрная обувь со шнурками, которая закрывает щиколотки, — это ___."
         }
       ],
@@ -10144,10 +10704,10 @@ window.CURRICULUM = {
             "asset": "ropa/vestido",
             "answer": "платье",
             "aliases": [],
-            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
-            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
-            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
-            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "clue": "Розовая одежда, в которой верх и юбка соединены.",
+            "memoryClue": "Розовая одежда, в которой верх и юбка соединены.",
+            "flashClue": "Розовая одежда, в которой верх и юбка соединены.",
+            "searchClue": "Верх и юбка составляют один предмет одежды.",
             "prompt": ""
           },
           {
@@ -10155,10 +10715,10 @@ window.CURRICULUM = {
             "asset": "ropa/camiseta",
             "answer": "футболка",
             "aliases": [],
-            "clue": "Prenda azul de manga corta, sin botones.",
-            "memoryClue": "Parte de arriba de manga corta, sin botones.",
-            "flashClue": "Parte de arriba de manga corta, sin botones.",
-            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "clue": "Синяя одежда с короткими рукавами без пуговиц.",
+            "memoryClue": "Синяя одежда с короткими рукавами без пуговиц.",
+            "flashClue": "Синяя одежда с короткими рукавами без пуговиц.",
+            "searchClue": "У этой повседневной одежды короткие рукава.",
             "prompt": "Синяя одежда с короткими рукавами и без пуговиц — это ___."
           },
           {
@@ -10168,10 +10728,10 @@ window.CURRICULUM = {
             "aliases": [
               "штаны"
             ],
-            "clue": "Prenda azul que cubre las piernas por separado.",
-            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
-            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
-            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "clue": "Синие брюки с двумя штанинами.",
+            "memoryClue": "Синие брюки с двумя штанинами.",
+            "flashClue": "Синие брюки с двумя штанинами.",
+            "searchClue": "Эта одежда закрывает нижнюю часть тела и обе ноги.",
             "prompt": "Эта голубая одежда закрывает обе ноги по отдельности. Это ___."
           },
           {
@@ -10179,10 +10739,10 @@ window.CURRICULUM = {
             "asset": "ropa/abrigo",
             "answer": "куртка",
             "aliases": [],
-            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
-            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
-            "flashClue": "Una prenda exterior que abriga el cuerpo.",
-            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "clue": "Зелёная верхняя одежда с длинными рукавами.",
+            "memoryClue": "Зелёная верхняя одежда с длинными рукавами.",
+            "flashClue": "Зелёная верхняя одежда с длинными рукавами.",
+            "searchClue": "Её надевают поверх другой одежды, чтобы согреться.",
             "prompt": ""
           },
           {
@@ -10192,10 +10752,10 @@ window.CURRICULUM = {
             "aliases": [
               "бейсболка"
             ],
-            "clue": "Accesorio verde para la cabeza, con visera.",
-            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "clue": "Синий головной убор с козырьком.",
+            "memoryClue": "Синий головной убор с козырьком.",
+            "flashClue": "Синий головной убор с козырьком.",
+            "searchClue": "У этого головного убора спереди есть козырёк.",
             "prompt": "На голове у меня зелёная ___ с козырьком."
           },
           {
@@ -10206,10 +10766,10 @@ window.CURRICULUM = {
               "ботинок",
               "обувь"
             ],
-            "clue": "Calzado negro con cordones que cubre los tobillos.",
-            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "searchClue": "Calzado alto, negro y con cordones.",
+            "clue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+            "memoryClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+            "flashClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+            "searchClue": "Эта обувь закрывает стопы и щиколотки.",
             "prompt": "Чёрная обувь со шнурками, которая закрывает щиколотки, — это ___."
           }
         ],
@@ -10221,10 +10781,10 @@ window.CURRICULUM = {
             "aliases": [
               "шарфик"
             ],
-            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
-            "memoryClue": "Abriga el cuello y puede tener flecos.",
-            "flashClue": "Abriga el cuello y puede tener flecos.",
-            "searchClue": "Accesorio largo que rodea el cuello.",
+            "clue": "Синяя полоса ткани, которую носят вокруг шеи.",
+            "memoryClue": "Синяя полоса ткани, которую носят вокруг шеи.",
+            "flashClue": "Синяя полоса ткани, которую носят вокруг шеи.",
+            "searchClue": "Этот длинный аксессуар согревает шею.",
             "prompt": "Вокруг шеи я ношу этот синий ___."
           },
           {
@@ -10232,10 +10792,10 @@ window.CURRICULUM = {
             "asset": "ropa/calcetines",
             "answer": "носки",
             "aliases": [],
-            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
-            "memoryClue": "Se llevan entre el pie y el calzado.",
-            "flashClue": "Se llevan entre el pie y el calzado.",
-            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "clue": "Два оранжевых предмета одежды для ног внутри обуви.",
+            "memoryClue": "Два оранжевых предмета одежды для ног внутри обуви.",
+            "flashClue": "Два оранжевых предмета одежды для ног внутри обуви.",
+            "searchClue": "Их надевают на ноги перед обувью.",
             "prompt": ""
           },
           {
@@ -10243,10 +10803,10 @@ window.CURRICULUM = {
             "asset": "ropa/falda",
             "answer": "юбка",
             "aliases": [],
-            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
-            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
-            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
-            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "clue": "Красная одежда от талии вниз, без штанин.",
+            "memoryClue": "Красная одежда от талии вниз, без штанин.",
+            "flashClue": "Красная одежда от талии вниз, без штанин.",
+            "searchClue": "Этот предмет одежды свисает от талии и не является брюками.",
             "prompt": "Эта оранжевая одежда начинается на талии и не разделяется на две штанины. Это ___."
           },
           {
@@ -10254,10 +10814,10 @@ window.CURRICULUM = {
             "asset": "ropa/guantes",
             "answer": "перчатки",
             "aliases": [],
-            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
-            "memoryClue": "Abrigan las manos y los dedos.",
-            "flashClue": "Abrigan las manos y los dedos.",
-            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "clue": "Два предмета одежды для кистей рук и пальцев.",
+            "memoryClue": "Два предмета одежды для кистей рук и пальцев.",
+            "flashClue": "Два предмета одежды для кистей рук и пальцев.",
+            "searchClue": "Эта одежда согревает каждый палец отдельно.",
             "prompt": ""
           },
           {
@@ -10265,10 +10825,10 @@ window.CURRICULUM = {
             "asset": "ropa/pijama",
             "answer": "пижама",
             "aliases": [],
-            "clue": "Conjunto naranja de dos piezas para dormir.",
-            "memoryClue": "Conjunto cómodo para irse a la cama.",
-            "flashClue": "Conjunto cómodo para irse a la cama.",
-            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "clue": "Комплект из кофты и штанов для сна.",
+            "memoryClue": "Комплект из кофты и штанов для сна.",
+            "flashClue": "Комплект из кофты и штанов для сна.",
+            "searchClue": "Эту одежду надевают перед сном.",
             "prompt": ""
           },
           {
@@ -10276,10 +10836,10 @@ window.CURRICULUM = {
             "asset": "ropa/sombrero",
             "answer": "шляпа",
             "aliases": [],
-            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
-            "memoryClue": "Tiene un ala que rodea la cabeza.",
-            "flashClue": "Tiene un ala que rodea la cabeza.",
-            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "clue": "Головной убор с полями со всех сторон.",
+            "memoryClue": "Головной убор с полями со всех сторон.",
+            "flashClue": "Головной убор с полями со всех сторон.",
+            "searchClue": "В отличие от кепки, этот убор имеет поля по кругу.",
             "prompt": ""
           }
         ],
@@ -10289,10 +10849,10 @@ window.CURRICULUM = {
             "asset": "ropa/pijama",
             "answer": "пижама",
             "aliases": [],
-            "clue": "Conjunto naranja de dos piezas para dormir.",
-            "memoryClue": "Conjunto cómodo para irse a la cama.",
-            "flashClue": "Un conjunto de dos piezas para acostarse y dormir.",
-            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "clue": "Комплект из кофты и штанов для сна.",
+            "memoryClue": "Комплект из кофты и штанов для сна.",
+            "flashClue": "Комплект из кофты и штанов для сна.",
+            "searchClue": "Эту одежду надевают перед сном.",
             "prompt": ""
           },
           {
@@ -10300,10 +10860,10 @@ window.CURRICULUM = {
             "asset": "ropa/vestido",
             "answer": "платье",
             "aliases": [],
-            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
-            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
-            "flashClue": "Una sola pieza verde con la parte de arriba unida a una falda.",
-            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "clue": "Розовая одежда, в которой верх и юбка соединены.",
+            "memoryClue": "Розовая одежда, в которой верх и юбка соединены.",
+            "flashClue": "Розовая одежда, в которой верх и юбка соединены.",
+            "searchClue": "Верх и юбка составляют один предмет одежды.",
             "prompt": ""
           },
           {
@@ -10311,10 +10871,10 @@ window.CURRICULUM = {
             "asset": "ropa/guantes",
             "answer": "перчатки",
             "aliases": [],
-            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
-            "memoryClue": "Abrigan las manos y los dedos.",
-            "flashClue": "Te los pones en las manos para abrigar cada dedo.",
-            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "clue": "Два предмета одежды для кистей рук и пальцев.",
+            "memoryClue": "Два предмета одежды для кистей рук и пальцев.",
+            "flashClue": "Два предмета одежды для кистей рук и пальцев.",
+            "searchClue": "Эта одежда согревает каждый палец отдельно.",
             "prompt": ""
           },
           {
@@ -10322,10 +10882,10 @@ window.CURRICULUM = {
             "asset": "ropa/abrigo",
             "answer": "куртка",
             "aliases": [],
-            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
-            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
-            "flashClue": "La prenda verde que te pones sobre la camiseta para abrigarte.",
-            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "clue": "Зелёная верхняя одежда с длинными рукавами.",
+            "memoryClue": "Зелёная верхняя одежда с длинными рукавами.",
+            "flashClue": "Зелёная верхняя одежда с длинными рукавами.",
+            "searchClue": "Её надевают поверх другой одежды, чтобы согреться.",
             "prompt": ""
           },
           {
@@ -10333,10 +10893,10 @@ window.CURRICULUM = {
             "asset": "ropa/calcetines",
             "answer": "носки",
             "aliases": [],
-            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
-            "memoryClue": "Se llevan entre el pie y el calzado.",
-            "flashClue": "Cubren los pies y van por dentro del calzado.",
-            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "clue": "Два оранжевых предмета одежды для ног внутри обуви.",
+            "memoryClue": "Два оранжевых предмета одежды для ног внутри обуви.",
+            "flashClue": "Два оранжевых предмета одежды для ног внутри обуви.",
+            "searchClue": "Их надевают на ноги перед обувью.",
             "prompt": ""
           },
           {
@@ -10344,10 +10904,10 @@ window.CURRICULUM = {
             "asset": "ropa/sombrero",
             "answer": "шляпа",
             "aliases": [],
-            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
-            "memoryClue": "Tiene un ala que rodea la cabeza.",
-            "flashClue": "El accesorio azul oscuro que se lleva en la cabeza.",
-            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "clue": "Головной убор с полями со всех сторон.",
+            "memoryClue": "Головной убор с полями со всех сторон.",
+            "flashClue": "Головной убор с полями со всех сторон.",
+            "searchClue": "В отличие от кепки, этот убор имеет поля по кругу.",
             "prompt": ""
           }
         ],
@@ -10359,10 +10919,10 @@ window.CURRICULUM = {
             "aliases": [
               "шарфик"
             ],
-            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
-            "memoryClue": "Abriga el cuello y puede tener flecos.",
-            "flashClue": "Abriga el cuello y puede tener flecos.",
-            "searchClue": "Accesorio largo que rodea el cuello.",
+            "clue": "Синяя полоса ткани, которую носят вокруг шеи.",
+            "memoryClue": "Синяя полоса ткани, которую носят вокруг шеи.",
+            "flashClue": "Синяя полоса ткани, которую носят вокруг шеи.",
+            "searchClue": "Этот длинный аксессуар согревает шею.",
             "prompt": "Вокруг шеи я ношу этот синий ___."
           },
           {
@@ -10370,10 +10930,10 @@ window.CURRICULUM = {
             "asset": "ropa/falda",
             "answer": "юбка",
             "aliases": [],
-            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
-            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
-            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
-            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "clue": "Красная одежда от талии вниз, без штанин.",
+            "memoryClue": "Красная одежда от талии вниз, без штанин.",
+            "flashClue": "Красная одежда от талии вниз, без штанин.",
+            "searchClue": "Этот предмет одежды свисает от талии и не является брюками.",
             "prompt": "Эта оранжевая одежда начинается на талии и не разделяется на две штанины. Это ___."
           },
           {
@@ -10383,10 +10943,10 @@ window.CURRICULUM = {
             "aliases": [
               "бейсболка"
             ],
-            "clue": "Accesorio verde para la cabeza, con visera.",
-            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "clue": "Синий головной убор с козырьком.",
+            "memoryClue": "Синий головной убор с козырьком.",
+            "flashClue": "Синий головной убор с козырьком.",
+            "searchClue": "У этого головного убора спереди есть козырёк.",
             "prompt": "На голове у меня зелёная ___ с козырьком."
           },
           {
@@ -10394,10 +10954,10 @@ window.CURRICULUM = {
             "asset": "ropa/camiseta",
             "answer": "футболка",
             "aliases": [],
-            "clue": "Prenda azul de manga corta, sin botones.",
-            "memoryClue": "Parte de arriba de manga corta, sin botones.",
-            "flashClue": "Parte de arriba de manga corta, sin botones.",
-            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "clue": "Синяя одежда с короткими рукавами без пуговиц.",
+            "memoryClue": "Синяя одежда с короткими рукавами без пуговиц.",
+            "flashClue": "Синяя одежда с короткими рукавами без пуговиц.",
+            "searchClue": "У этой повседневной одежды короткие рукава.",
             "prompt": "Синяя одежда с короткими рукавами и без пуговиц — это ___."
           },
           {
@@ -10407,10 +10967,10 @@ window.CURRICULUM = {
             "aliases": [
               "штаны"
             ],
-            "clue": "Prenda azul que cubre las piernas por separado.",
-            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
-            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
-            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "clue": "Синие брюки с двумя штанинами.",
+            "memoryClue": "Синие брюки с двумя штанинами.",
+            "flashClue": "Синие брюки с двумя штанинами.",
+            "searchClue": "Эта одежда закрывает нижнюю часть тела и обе ноги.",
             "prompt": "Эта голубая одежда закрывает обе ноги по отдельности. Это ___."
           },
           {
@@ -10421,10 +10981,10 @@ window.CURRICULUM = {
               "ботинок",
               "обувь"
             ],
-            "clue": "Calzado negro con cordones que cubre los tobillos.",
-            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "searchClue": "Calzado alto, negro y con cordones.",
+            "clue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+            "memoryClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+            "flashClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+            "searchClue": "Эта обувь закрывает стопы и щиколотки.",
             "prompt": "Чёрная обувь со шнурками, которая закрывает щиколотки, — это ___."
           }
         ],
@@ -10434,10 +10994,10 @@ window.CURRICULUM = {
             "asset": "ropa/abrigo",
             "answer": "куртка",
             "aliases": [],
-            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
-            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
-            "flashClue": "Una prenda exterior que abriga el cuerpo.",
-            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "clue": "Зелёная верхняя одежда с длинными рукавами.",
+            "memoryClue": "Зелёная верхняя одежда с длинными рукавами.",
+            "flashClue": "Зелёная верхняя одежда с длинными рукавами.",
+            "searchClue": "Её надевают поверх другой одежды, чтобы согреться.",
             "prompt": ""
           },
           {
@@ -10447,10 +11007,10 @@ window.CURRICULUM = {
             "aliases": [
               "шарфик"
             ],
-            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
-            "memoryClue": "Abriga el cuello y puede tener flecos.",
-            "flashClue": "Abriga el cuello y puede tener flecos.",
-            "searchClue": "Accesorio largo que rodea el cuello.",
+            "clue": "Синяя полоса ткани, которую носят вокруг шеи.",
+            "memoryClue": "Синяя полоса ткани, которую носят вокруг шеи.",
+            "flashClue": "Синяя полоса ткани, которую носят вокруг шеи.",
+            "searchClue": "Этот длинный аксессуар согревает шею.",
             "prompt": "Вокруг шеи я ношу этот синий ___."
           },
           {
@@ -10458,10 +11018,10 @@ window.CURRICULUM = {
             "asset": "ropa/calcetines",
             "answer": "носки",
             "aliases": [],
-            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
-            "memoryClue": "Se llevan entre el pie y el calzado.",
-            "flashClue": "Se llevan entre el pie y el calzado.",
-            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "clue": "Два оранжевых предмета одежды для ног внутри обуви.",
+            "memoryClue": "Два оранжевых предмета одежды для ног внутри обуви.",
+            "flashClue": "Два оранжевых предмета одежды для ног внутри обуви.",
+            "searchClue": "Их надевают на ноги перед обувью.",
             "prompt": ""
           },
           {
@@ -10469,10 +11029,10 @@ window.CURRICULUM = {
             "asset": "ropa/camiseta",
             "answer": "футболка",
             "aliases": [],
-            "clue": "Prenda azul de manga corta, sin botones.",
-            "memoryClue": "Parte de arriba de manga corta, sin botones.",
-            "flashClue": "Parte de arriba de manga corta, sin botones.",
-            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "clue": "Синяя одежда с короткими рукавами без пуговиц.",
+            "memoryClue": "Синяя одежда с короткими рукавами без пуговиц.",
+            "flashClue": "Синяя одежда с короткими рукавами без пуговиц.",
+            "searchClue": "У этой повседневной одежды короткие рукава.",
             "prompt": "Синяя одежда с короткими рукавами и без пуговиц — это ___."
           },
           {
@@ -10480,10 +11040,10 @@ window.CURRICULUM = {
             "asset": "ropa/falda",
             "answer": "юбка",
             "aliases": [],
-            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
-            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
-            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
-            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "clue": "Красная одежда от талии вниз, без штанин.",
+            "memoryClue": "Красная одежда от талии вниз, без штанин.",
+            "flashClue": "Красная одежда от талии вниз, без штанин.",
+            "searchClue": "Этот предмет одежды свисает от талии и не является брюками.",
             "prompt": "Эта оранжевая одежда начинается на талии и не разделяется на две штанины. Это ___."
           },
           {
@@ -10493,10 +11053,10 @@ window.CURRICULUM = {
             "aliases": [
               "бейсболка"
             ],
-            "clue": "Accesorio verde para la cabeza, con visera.",
-            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
-            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "clue": "Синий головной убор с козырьком.",
+            "memoryClue": "Синий головной убор с козырьком.",
+            "flashClue": "Синий головной убор с козырьком.",
+            "searchClue": "У этого головного убора спереди есть козырёк.",
             "prompt": "На голове у меня зелёная ___ с козырьком."
           },
           {
@@ -10504,10 +11064,10 @@ window.CURRICULUM = {
             "asset": "ropa/guantes",
             "answer": "перчатки",
             "aliases": [],
-            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
-            "memoryClue": "Abrigan las manos y los dedos.",
-            "flashClue": "Abrigan las manos y los dedos.",
-            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "clue": "Два предмета одежды для кистей рук и пальцев.",
+            "memoryClue": "Два предмета одежды для кистей рук и пальцев.",
+            "flashClue": "Два предмета одежды для кистей рук и пальцев.",
+            "searchClue": "Эта одежда согревает каждый палец отдельно.",
             "prompt": ""
           },
           {
@@ -10517,10 +11077,10 @@ window.CURRICULUM = {
             "aliases": [
               "штаны"
             ],
-            "clue": "Prenda azul que cubre las piernas por separado.",
-            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
-            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
-            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "clue": "Синие брюки с двумя штанинами.",
+            "memoryClue": "Синие брюки с двумя штанинами.",
+            "flashClue": "Синие брюки с двумя штанинами.",
+            "searchClue": "Эта одежда закрывает нижнюю часть тела и обе ноги.",
             "prompt": "Эта голубая одежда закрывает обе ноги по отдельности. Это ___."
           },
           {
@@ -10528,10 +11088,10 @@ window.CURRICULUM = {
             "asset": "ropa/pijama",
             "answer": "пижама",
             "aliases": [],
-            "clue": "Conjunto naranja de dos piezas para dormir.",
-            "memoryClue": "Conjunto cómodo para irse a la cama.",
-            "flashClue": "Conjunto cómodo para irse a la cama.",
-            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "clue": "Комплект из кофты и штанов для сна.",
+            "memoryClue": "Комплект из кофты и штанов для сна.",
+            "flashClue": "Комплект из кофты и штанов для сна.",
+            "searchClue": "Эту одежду надевают перед сном.",
             "prompt": ""
           },
           {
@@ -10539,10 +11099,10 @@ window.CURRICULUM = {
             "asset": "ropa/sombrero",
             "answer": "шляпа",
             "aliases": [],
-            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
-            "memoryClue": "Tiene un ala que rodea la cabeza.",
-            "flashClue": "Tiene un ala que rodea la cabeza.",
-            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "clue": "Головной убор с полями со всех сторон.",
+            "memoryClue": "Головной убор с полями со всех сторон.",
+            "flashClue": "Головной убор с полями со всех сторон.",
+            "searchClue": "В отличие от кепки, этот убор имеет поля по кругу.",
             "prompt": ""
           },
           {
@@ -10550,10 +11110,10 @@ window.CURRICULUM = {
             "asset": "ropa/vestido",
             "answer": "платье",
             "aliases": [],
-            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
-            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
-            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
-            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "clue": "Розовая одежда, в которой верх и юбка соединены.",
+            "memoryClue": "Розовая одежда, в которой верх и юбка соединены.",
+            "flashClue": "Розовая одежда, в которой верх и юбка соединены.",
+            "searchClue": "Верх и юбка составляют один предмет одежды.",
             "prompt": ""
           },
           {
@@ -10564,10 +11124,10 @@ window.CURRICULUM = {
               "ботинок",
               "обувь"
             ],
-            "clue": "Calzado negro con cordones que cubre los tobillos.",
-            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
-            "searchClue": "Calzado alto, negro y con cordones.",
+            "clue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+            "memoryClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+            "flashClue": "Чёрная обувь на шнурках, закрывающая щиколотки.",
+            "searchClue": "Эта обувь закрывает стопы и щиколотки.",
             "prompt": "Чёрная обувь со шнурками, которая закрывает щиколотки, — это ___."
           }
         ]
@@ -10576,7 +11136,7 @@ window.CURRICULUM = {
     },
     {
       "id": "rutina",
-      "title": "Acciones habituales",
+      "title": "Повседневные действия",
       "kind": "vocabulary",
       "icon": "rutina",
       "level": "A1",
@@ -10597,30 +11157,30 @@ window.CURRICULUM = {
           "aliases": [
             "кушать"
           ],
-          "clue": "Un niño come un bocadillo.",
-          "memoryClue": "Un niño come un bocadillo.",
-          "flashClue": "Un niño come un bocadillo.",
-          "searchClue": "Un niño come un bocadillo."
+          "clue": "Ребёнок ест бутерброд.",
+          "memoryClue": "Ребёнок ест бутерброд.",
+          "flashClue": "Ребёнок ест бутерброд.",
+          "searchClue": "Принимать пищу."
         },
         {
           "key": "beber",
           "asset": "acciones/beber",
           "answer": "пить",
           "aliases": [],
-          "clue": "Un niño bebe de un vaso.",
-          "memoryClue": "Un niño bebe de un vaso.",
-          "flashClue": "Un niño bebe de un vaso.",
-          "searchClue": "Un niño bebe de un vaso."
+          "clue": "Ребёнок пьёт из стакана.",
+          "memoryClue": "Ребёнок пьёт из стакана.",
+          "flashClue": "Ребёнок пьёт из стакана.",
+          "searchClue": "Пить воду из стакана."
         },
         {
           "key": "dormir",
           "asset": "acciones/dormir",
           "answer": "спать",
           "aliases": [],
-          "clue": "Un niño duerme en una cama.",
-          "memoryClue": "Un niño duerme en una cama.",
-          "flashClue": "Un niño duerme en una cama.",
-          "searchClue": "Un niño duerme en una cama."
+          "clue": "Ребёнок спит в кровати.",
+          "memoryClue": "Ребёнок спит в кровати.",
+          "flashClue": "Ребёнок спит в кровати.",
+          "searchClue": "Отдыхать в кровати с закрытыми глазами."
         },
         {
           "key": "correr",
@@ -10629,10 +11189,10 @@ window.CURRICULUM = {
           "aliases": [
             "бежать"
           ],
-          "clue": "Un niño corre al aire libre.",
-          "memoryClue": "Un niño corre al aire libre.",
-          "flashClue": "Un niño corre al aire libre.",
-          "searchClue": "Un niño corre al aire libre."
+          "clue": "Ребёнок бежит по парку.",
+          "memoryClue": "Ребёнок бежит по парку.",
+          "flashClue": "Ребёнок бежит по парку.",
+          "searchClue": "Передвигаться быстрее, чем шагом."
         },
         {
           "key": "dibujar",
@@ -10641,10 +11201,10 @@ window.CURRICULUM = {
           "aliases": [
             "нарисовать"
           ],
-          "clue": "Un niño dibuja con colores.",
-          "memoryClue": "Un niño dibuja con colores.",
-          "flashClue": "Un niño dibuja con colores.",
-          "searchClue": "Un niño dibuja con colores."
+          "clue": "Ребёнок рисует цветными карандашами.",
+          "memoryClue": "Ребёнок рисует цветными карандашами.",
+          "flashClue": "Ребёнок рисует цветными карандашами.",
+          "searchClue": "Создавать картинку карандашами."
         },
         {
           "key": "caminar",
@@ -10654,40 +11214,40 @@ window.CURRICULUM = {
             "идти",
             "гулять"
           ],
-          "clue": "Un niño camina al aire libre.",
-          "memoryClue": "Un niño camina al aire libre.",
-          "flashClue": "Un niño camina al aire libre.",
-          "searchClue": "Un niño camina al aire libre."
+          "clue": "Ребёнок идёт по парку.",
+          "memoryClue": "Ребёнок идёт по парку.",
+          "flashClue": "Ребёнок идёт по парку.",
+          "searchClue": "Передвигаться, делая шаги."
         },
         {
           "key": "leer",
           "asset": "acciones/leer",
           "answer": "читать",
           "aliases": [],
-          "clue": "Un niño lee un libro.",
-          "memoryClue": "Un niño lee un libro.",
-          "flashClue": "Un niño lee un libro.",
-          "searchClue": "Un niño lee un libro."
+          "clue": "Ребёнок читает книгу.",
+          "memoryClue": "Ребёнок читает книгу.",
+          "flashClue": "Ребёнок читает книгу.",
+          "searchClue": "Следить за словами в книге."
         },
         {
           "key": "escribir",
           "asset": "acciones/escribir",
           "answer": "писать",
           "aliases": [],
-          "clue": "Un niño escribe en un cuaderno.",
-          "memoryClue": "Un niño escribe en un cuaderno.",
-          "flashClue": "Un niño escribe en un cuaderno.",
-          "searchClue": "Un niño escribe en un cuaderno."
+          "clue": "Ребёнок пишет в тетради.",
+          "memoryClue": "Ребёнок пишет в тетради.",
+          "flashClue": "Ребёнок пишет в тетради.",
+          "searchClue": "Выводить слова карандашом на бумаге."
         },
         {
           "key": "jugar",
           "asset": "acciones/jugar",
           "answer": "играть",
           "aliases": [],
-          "clue": "Un niño juega con una pelota.",
-          "memoryClue": "Un niño juega con una pelota.",
-          "flashClue": "Un niño juega con una pelota.",
-          "searchClue": "Un niño juega con una pelota."
+          "clue": "Ребёнок играет с мячом.",
+          "memoryClue": "Ребёнок играет с мячом.",
+          "flashClue": "Ребёнок играет с мячом.",
+          "searchClue": "Развлекаться с мячом."
         },
         {
           "key": "abrir",
@@ -10696,10 +11256,10 @@ window.CURRICULUM = {
           "aliases": [
             "открыть"
           ],
-          "clue": "Un niño abre una ventana; la flecha sube.",
-          "memoryClue": "Un niño abre una ventana; la flecha sube.",
-          "flashClue": "Un niño abre una ventana; la flecha sube.",
-          "searchClue": "Un niño abre una ventana; la flecha sube."
+          "clue": "Ребёнок открывает окно; стрелка направлена вверх.",
+          "memoryClue": "Ребёнок открывает окно; стрелка направлена вверх.",
+          "flashClue": "Ребёнок открывает окно; стрелка направлена вверх.",
+          "searchClue": "Двигать окно, чтобы впустить воздух."
         },
         {
           "key": "cerrar",
@@ -10708,20 +11268,20 @@ window.CURRICULUM = {
           "aliases": [
             "закрыть"
           ],
-          "clue": "Un niño cierra una ventana; la flecha baja.",
-          "memoryClue": "Un niño cierra una ventana; la flecha baja.",
-          "flashClue": "Un niño cierra una ventana; la flecha baja.",
-          "searchClue": "Un niño cierra una ventana; la flecha baja."
+          "clue": "Ребёнок закрывает окно; стрелка направлена вниз.",
+          "memoryClue": "Ребёнок закрывает окно; стрелка направлена вниз.",
+          "flashClue": "Ребёнок закрывает окно; стрелка направлена вниз.",
+          "searchClue": "Двигать окно, чтобы не впускать воздух."
         },
         {
           "key": "escuchar",
           "asset": "acciones/escuchar",
           "answer": "слушать",
           "aliases": [],
-          "clue": "Un niño escucha música con auriculares.",
-          "memoryClue": "Un niño escucha música con auriculares.",
-          "flashClue": "Un niño escucha música con auriculares.",
-          "searchClue": "Un niño escucha música con auriculares."
+          "clue": "Ребёнок слушает музыку в наушниках.",
+          "memoryClue": "Ребёнок слушает музыку в наушниках.",
+          "flashClue": "Ребёнок слушает музыку в наушниках.",
+          "searchClue": "Внимательно воспринимать музыку."
         }
       ],
       "variants": {
@@ -10733,20 +11293,20 @@ window.CURRICULUM = {
             "aliases": [
               "кушать"
             ],
-            "clue": "Un niño come un bocadillo.",
-            "memoryClue": "Un niño come un bocadillo.",
-            "flashClue": "Un niño come un bocadillo.",
-            "searchClue": "Un niño come un bocadillo."
+            "clue": "Ребёнок ест бутерброд.",
+            "memoryClue": "Ребёнок ест бутерброд.",
+            "flashClue": "Ребёнок ест бутерброд.",
+            "searchClue": "Принимать пищу."
           },
           {
             "key": "beber",
             "asset": "acciones/beber",
             "answer": "пить",
             "aliases": [],
-            "clue": "Un niño bebe de un vaso.",
-            "memoryClue": "Un niño bebe de un vaso.",
-            "flashClue": "Un niño bebe de un vaso.",
-            "searchClue": "Un niño bebe de un vaso."
+            "clue": "Ребёнок пьёт из стакана.",
+            "memoryClue": "Ребёнок пьёт из стакана.",
+            "flashClue": "Ребёнок пьёт из стакана.",
+            "searchClue": "Пить воду из стакана."
           },
           {
             "key": "correr",
@@ -10755,10 +11315,10 @@ window.CURRICULUM = {
             "aliases": [
               "бежать"
             ],
-            "clue": "Un niño corre al aire libre.",
-            "memoryClue": "Un niño corre al aire libre.",
-            "flashClue": "Un niño corre al aire libre.",
-            "searchClue": "Un niño corre al aire libre."
+            "clue": "Ребёнок бежит по парку.",
+            "memoryClue": "Ребёнок бежит по парку.",
+            "flashClue": "Ребёнок бежит по парку.",
+            "searchClue": "Передвигаться быстрее, чем шагом."
           },
           {
             "key": "caminar",
@@ -10768,30 +11328,30 @@ window.CURRICULUM = {
               "идти",
               "гулять"
             ],
-            "clue": "Un niño camina al aire libre.",
-            "memoryClue": "Un niño camina al aire libre.",
-            "flashClue": "Un niño camina al aire libre.",
-            "searchClue": "Un niño camina al aire libre."
+            "clue": "Ребёнок идёт по парку.",
+            "memoryClue": "Ребёнок идёт по парку.",
+            "flashClue": "Ребёнок идёт по парку.",
+            "searchClue": "Передвигаться, делая шаги."
           },
           {
             "key": "escribir",
             "asset": "acciones/escribir",
             "answer": "писать",
             "aliases": [],
-            "clue": "Un niño escribe en un cuaderno.",
-            "memoryClue": "Un niño escribe en un cuaderno.",
-            "flashClue": "Un niño escribe en un cuaderno.",
-            "searchClue": "Un niño escribe en un cuaderno."
+            "clue": "Ребёнок пишет в тетради.",
+            "memoryClue": "Ребёнок пишет в тетради.",
+            "flashClue": "Ребёнок пишет в тетради.",
+            "searchClue": "Выводить слова карандашом на бумаге."
           },
           {
             "key": "escuchar",
             "asset": "acciones/escuchar",
             "answer": "слушать",
             "aliases": [],
-            "clue": "Un niño escucha música con auriculares.",
-            "memoryClue": "Un niño escucha música con auriculares.",
-            "flashClue": "Un niño escucha música con auriculares.",
-            "searchClue": "Un niño escucha música con auriculares."
+            "clue": "Ребёнок слушает музыку в наушниках.",
+            "memoryClue": "Ребёнок слушает музыку в наушниках.",
+            "flashClue": "Ребёнок слушает музыку в наушниках.",
+            "searchClue": "Внимательно воспринимать музыку."
           }
         ],
         "3": [
@@ -10802,30 +11362,30 @@ window.CURRICULUM = {
             "aliases": [
               "кушать"
             ],
-            "clue": "Un niño come un bocadillo.",
-            "memoryClue": "Un niño come un bocadillo.",
-            "flashClue": "Un niño come un bocadillo.",
-            "searchClue": "Un niño come un bocadillo."
+            "clue": "Ребёнок ест бутерброд.",
+            "memoryClue": "Ребёнок ест бутерброд.",
+            "flashClue": "Ребёнок ест бутерброд.",
+            "searchClue": "Принимать пищу."
           },
           {
             "key": "beber",
             "asset": "acciones/beber",
             "answer": "пить",
             "aliases": [],
-            "clue": "Un niño bebe de un vaso.",
-            "memoryClue": "Un niño bebe de un vaso.",
-            "flashClue": "Un niño bebe de un vaso.",
-            "searchClue": "Un niño bebe de un vaso."
+            "clue": "Ребёнок пьёт из стакана.",
+            "memoryClue": "Ребёнок пьёт из стакана.",
+            "flashClue": "Ребёнок пьёт из стакана.",
+            "searchClue": "Пить воду из стакана."
           },
           {
             "key": "dormir",
             "asset": "acciones/dormir",
             "answer": "спать",
             "aliases": [],
-            "clue": "Un niño duerme en una cama.",
-            "memoryClue": "Un niño duerme en una cama.",
-            "flashClue": "Un niño duerme en una cama.",
-            "searchClue": "Un niño duerme en una cama."
+            "clue": "Ребёнок спит в кровати.",
+            "memoryClue": "Ребёнок спит в кровати.",
+            "flashClue": "Ребёнок спит в кровати.",
+            "searchClue": "Отдыхать в кровати с закрытыми глазами."
           },
           {
             "key": "correr",
@@ -10834,10 +11394,10 @@ window.CURRICULUM = {
             "aliases": [
               "бежать"
             ],
-            "clue": "Un niño corre al aire libre.",
-            "memoryClue": "Un niño corre al aire libre.",
-            "flashClue": "Un niño corre al aire libre.",
-            "searchClue": "Un niño corre al aire libre."
+            "clue": "Ребёнок бежит по парку.",
+            "memoryClue": "Ребёнок бежит по парку.",
+            "flashClue": "Ребёнок бежит по парку.",
+            "searchClue": "Передвигаться быстрее, чем шагом."
           },
           {
             "key": "dibujar",
@@ -10846,10 +11406,10 @@ window.CURRICULUM = {
             "aliases": [
               "нарисовать"
             ],
-            "clue": "Un niño dibuja con colores.",
-            "memoryClue": "Un niño dibuja con colores.",
-            "flashClue": "Un niño dibuja con colores.",
-            "searchClue": "Un niño dibuja con colores."
+            "clue": "Ребёнок рисует цветными карандашами.",
+            "memoryClue": "Ребёнок рисует цветными карандашами.",
+            "flashClue": "Ребёнок рисует цветными карандашами.",
+            "searchClue": "Создавать картинку карандашами."
           },
           {
             "key": "caminar",
@@ -10859,40 +11419,40 @@ window.CURRICULUM = {
               "идти",
               "гулять"
             ],
-            "clue": "Un niño camina al aire libre.",
-            "memoryClue": "Un niño camina al aire libre.",
-            "flashClue": "Un niño camina al aire libre.",
-            "searchClue": "Un niño camina al aire libre."
+            "clue": "Ребёнок идёт по парку.",
+            "memoryClue": "Ребёнок идёт по парку.",
+            "flashClue": "Ребёнок идёт по парку.",
+            "searchClue": "Передвигаться, делая шаги."
           },
           {
             "key": "leer",
             "asset": "acciones/leer",
             "answer": "читать",
             "aliases": [],
-            "clue": "Un niño lee un libro.",
-            "memoryClue": "Un niño lee un libro.",
-            "flashClue": "Un niño lee un libro.",
-            "searchClue": "Un niño lee un libro."
+            "clue": "Ребёнок читает книгу.",
+            "memoryClue": "Ребёнок читает книгу.",
+            "flashClue": "Ребёнок читает книгу.",
+            "searchClue": "Следить за словами в книге."
           },
           {
             "key": "escribir",
             "asset": "acciones/escribir",
             "answer": "писать",
             "aliases": [],
-            "clue": "Un niño escribe en un cuaderno.",
-            "memoryClue": "Un niño escribe en un cuaderno.",
-            "flashClue": "Un niño escribe en un cuaderno.",
-            "searchClue": "Un niño escribe en un cuaderno."
+            "clue": "Ребёнок пишет в тетради.",
+            "memoryClue": "Ребёнок пишет в тетради.",
+            "flashClue": "Ребёнок пишет в тетради.",
+            "searchClue": "Выводить слова карандашом на бумаге."
           },
           {
             "key": "jugar",
             "asset": "acciones/jugar",
             "answer": "играть",
             "aliases": [],
-            "clue": "Un niño juega con una pelota.",
-            "memoryClue": "Un niño juega con una pelota.",
-            "flashClue": "Un niño juega con una pelota.",
-            "searchClue": "Un niño juega con una pelota."
+            "clue": "Ребёнок играет с мячом.",
+            "memoryClue": "Ребёнок играет с мячом.",
+            "flashClue": "Ребёнок играет с мячом.",
+            "searchClue": "Развлекаться с мячом."
           },
           {
             "key": "abrir",
@@ -10901,10 +11461,10 @@ window.CURRICULUM = {
             "aliases": [
               "открыть"
             ],
-            "clue": "Un niño abre una ventana; la flecha sube.",
-            "memoryClue": "Un niño abre una ventana; la flecha sube.",
-            "flashClue": "Un niño abre una ventana; la flecha sube.",
-            "searchClue": "Un niño abre una ventana; la flecha sube."
+            "clue": "Ребёнок открывает окно; стрелка направлена вверх.",
+            "memoryClue": "Ребёнок открывает окно; стрелка направлена вверх.",
+            "flashClue": "Ребёнок открывает окно; стрелка направлена вверх.",
+            "searchClue": "Двигать окно, чтобы впустить воздух."
           },
           {
             "key": "cerrar",
@@ -10913,20 +11473,20 @@ window.CURRICULUM = {
             "aliases": [
               "закрыть"
             ],
-            "clue": "Un niño cierra una ventana; la flecha baja.",
-            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
-            "flashClue": "Un niño cierra una ventana; la flecha baja.",
-            "searchClue": "Un niño cierra una ventana; la flecha baja."
+            "clue": "Ребёнок закрывает окно; стрелка направлена вниз.",
+            "memoryClue": "Ребёнок закрывает окно; стрелка направлена вниз.",
+            "flashClue": "Ребёнок закрывает окно; стрелка направлена вниз.",
+            "searchClue": "Двигать окно, чтобы не впускать воздух."
           },
           {
             "key": "escuchar",
             "asset": "acciones/escuchar",
             "answer": "слушать",
             "aliases": [],
-            "clue": "Un niño escucha música con auriculares.",
-            "memoryClue": "Un niño escucha música con auriculares.",
-            "flashClue": "Un niño escucha música con auriculares.",
-            "searchClue": "Un niño escucha música con auriculares."
+            "clue": "Ребёнок слушает музыку в наушниках.",
+            "memoryClue": "Ребёнок слушает музыку в наушниках.",
+            "flashClue": "Ребёнок слушает музыку в наушниках.",
+            "searchClue": "Внимательно воспринимать музыку."
           }
         ],
         "5": [
@@ -10937,33 +11497,33 @@ window.CURRICULUM = {
             "aliases": [
               "кушать"
             ],
-            "clue": "Un niño come un bocadillo.",
-            "memoryClue": "Un niño come un bocadillo.",
-            "flashClue": "Un niño come un bocadillo.",
-            "searchClue": "Un niño come un bocadillo.",
-            "crosswordClue": "Tomar un bocadillo como alimento."
+            "clue": "Ребёнок ест бутерброд.",
+            "memoryClue": "Ребёнок ест бутерброд.",
+            "flashClue": "Ребёнок ест бутерброд.",
+            "searchClue": "Принимать пищу.",
+            "crosswordClue": "Принимать пищу."
           },
           {
             "key": "beber",
             "asset": "acciones/beber",
             "answer": "пить",
             "aliases": [],
-            "clue": "Un niño bebe de un vaso.",
-            "memoryClue": "Un niño bebe de un vaso.",
-            "flashClue": "Un niño bebe de un vaso.",
-            "searchClue": "Un niño bebe de un vaso.",
-            "crosswordClue": "Tomar agua de un vaso."
+            "clue": "Ребёнок пьёт из стакана.",
+            "memoryClue": "Ребёнок пьёт из стакана.",
+            "flashClue": "Ребёнок пьёт из стакана.",
+            "searchClue": "Пить воду из стакана.",
+            "crosswordClue": "Пить воду из стакана."
           },
           {
             "key": "dormir",
             "asset": "acciones/dormir",
             "answer": "спать",
             "aliases": [],
-            "clue": "Un niño duerme en una cama.",
-            "memoryClue": "Un niño duerme en una cama.",
-            "flashClue": "Un niño duerme en una cama.",
-            "searchClue": "Un niño duerme en una cama.",
-            "crosswordClue": "Descansar en la cama con los ojos cerrados."
+            "clue": "Ребёнок спит в кровати.",
+            "memoryClue": "Ребёнок спит в кровати.",
+            "flashClue": "Ребёнок спит в кровати.",
+            "searchClue": "Отдыхать в кровати с закрытыми глазами.",
+            "crosswordClue": "Отдыхать в кровати с закрытыми глазами."
           },
           {
             "key": "correr",
@@ -10972,11 +11532,11 @@ window.CURRICULUM = {
             "aliases": [
               "бежать"
             ],
-            "clue": "Un niño corre al aire libre.",
-            "memoryClue": "Un niño corre al aire libre.",
-            "flashClue": "Un niño corre al aire libre.",
-            "searchClue": "Un niño corre al aire libre.",
-            "crosswordClue": "Avanzar deprisa, a mayor velocidad que al caminar."
+            "clue": "Ребёнок бежит по парку.",
+            "memoryClue": "Ребёнок бежит по парку.",
+            "flashClue": "Ребёнок бежит по парку.",
+            "searchClue": "Передвигаться быстрее, чем шагом.",
+            "crosswordClue": "Передвигаться быстрее, чем шагом."
           },
           {
             "key": "dibujar",
@@ -10985,22 +11545,22 @@ window.CURRICULUM = {
             "aliases": [
               "нарисовать"
             ],
-            "clue": "Un niño dibuja con colores.",
-            "memoryClue": "Un niño dibuja con colores.",
-            "flashClue": "Un niño dibuja con colores.",
-            "searchClue": "Un niño dibuja con colores.",
-            "crosswordClue": "Crear una imagen con lápices de colores."
+            "clue": "Ребёнок рисует цветными карандашами.",
+            "memoryClue": "Ребёнок рисует цветными карандашами.",
+            "flashClue": "Ребёнок рисует цветными карандашами.",
+            "searchClue": "Создавать картинку карандашами.",
+            "crosswordClue": "Создавать картинку карандашами."
           },
           {
             "key": "leer",
             "asset": "acciones/leer",
             "answer": "читать",
             "aliases": [],
-            "clue": "Un niño lee un libro.",
-            "memoryClue": "Un niño lee un libro.",
-            "flashClue": "Un niño lee un libro.",
-            "searchClue": "Un niño lee un libro.",
-            "crosswordClue": "Seguir las palabras de un libro para entender su historia."
+            "clue": "Ребёнок читает книгу.",
+            "memoryClue": "Ребёнок читает книгу.",
+            "flashClue": "Ребёнок читает книгу.",
+            "searchClue": "Следить за словами в книге.",
+            "crosswordClue": "Следить за словами в книге."
           }
         ],
         "2": [
@@ -11009,10 +11569,10 @@ window.CURRICULUM = {
             "asset": "acciones/abrir",
             "answer": "открываю",
             "aliases": [],
-            "clue": "Un niño abre una ventana; la flecha sube.",
-            "memoryClue": "Un niño abre una ventana; la flecha sube.",
-            "flashClue": "Un niño abre una ventana; la flecha sube.",
-            "searchClue": "Un niño abre una ventana; la flecha sube.",
+            "clue": "Ребёнок открывает окно; стрелка направлена вверх.",
+            "memoryClue": "Ребёнок открывает окно; стрелка направлена вверх.",
+            "flashClue": "Ребёнок открывает окно; стрелка направлена вверх.",
+            "searchClue": "Двигать окно, чтобы впустить воздух.",
             "prompt": "Утром я ___ окно в своей комнате."
           },
           {
@@ -11020,10 +11580,10 @@ window.CURRICULUM = {
             "asset": "acciones/comer",
             "answer": "ем",
             "aliases": [],
-            "clue": "Un niño come un bocadillo.",
-            "memoryClue": "Un niño come un bocadillo.",
-            "flashClue": "Un niño come un bocadillo.",
-            "searchClue": "Un niño come un bocadillo.",
+            "clue": "Ребёнок ест бутерброд.",
+            "memoryClue": "Ребёнок ест бутерброд.",
+            "flashClue": "Ребёнок ест бутерброд.",
+            "searchClue": "Принимать пищу.",
             "prompt": "Потом я ___ бутерброд на завтрак."
           },
           {
@@ -11031,10 +11591,10 @@ window.CURRICULUM = {
             "asset": "acciones/beber",
             "answer": "пью",
             "aliases": [],
-            "clue": "Un niño bebe de un vaso.",
-            "memoryClue": "Un niño bebe de un vaso.",
-            "flashClue": "Un niño bebe de un vaso.",
-            "searchClue": "Un niño bebe de un vaso.",
+            "clue": "Ребёнок пьёт из стакана.",
+            "memoryClue": "Ребёнок пьёт из стакана.",
+            "flashClue": "Ребёнок пьёт из стакана.",
+            "searchClue": "Пить воду из стакана.",
             "prompt": "За завтраком я ___ стакан воды."
           },
           {
@@ -11042,10 +11602,10 @@ window.CURRICULUM = {
             "asset": "acciones/dibujar",
             "answer": "рисую",
             "aliases": [],
-            "clue": "Un niño dibuja con colores.",
-            "memoryClue": "Un niño dibuja con colores.",
-            "flashClue": "Un niño dibuja con colores.",
-            "searchClue": "Un niño dibuja con colores.",
+            "clue": "Ребёнок рисует цветными карандашами.",
+            "memoryClue": "Ребёнок рисует цветными карандашами.",
+            "flashClue": "Ребёнок рисует цветными карандашами.",
+            "searchClue": "Создавать картинку карандашами.",
             "prompt": "Днём я ___ пейзаж цветными карандашами."
           },
           {
@@ -11053,10 +11613,10 @@ window.CURRICULUM = {
             "asset": "acciones/leer",
             "answer": "читаю",
             "aliases": [],
-            "clue": "Un niño lee un libro.",
-            "memoryClue": "Un niño lee un libro.",
-            "flashClue": "Un niño lee un libro.",
-            "searchClue": "Un niño lee un libro.",
+            "clue": "Ребёнок читает книгу.",
+            "memoryClue": "Ребёнок читает книгу.",
+            "flashClue": "Ребёнок читает книгу.",
+            "searchClue": "Следить за словами в книге.",
             "prompt": "Перед сном я ___ книгу о приключениях."
           },
           {
@@ -11064,10 +11624,10 @@ window.CURRICULUM = {
             "asset": "acciones/dormir",
             "answer": "сплю",
             "aliases": [],
-            "clue": "Un niño duerme en una cama.",
-            "memoryClue": "Un niño duerme en una cama.",
-            "flashClue": "Un niño duerme en una cama.",
-            "searchClue": "Un niño duerme en una cama.",
+            "clue": "Ребёнок спит в кровати.",
+            "memoryClue": "Ребёнок спит в кровати.",
+            "flashClue": "Ребёнок спит в кровати.",
+            "searchClue": "Отдыхать в кровати с закрытыми глазами.",
             "prompt": "Ночью я ___ в своей кровати до утра."
           }
         ],
@@ -11077,10 +11637,10 @@ window.CURRICULUM = {
             "asset": "acciones/correr",
             "answer": "бегаю",
             "aliases": [],
-            "clue": "Un niño corre al aire libre.",
-            "memoryClue": "Un niño corre al aire libre.",
-            "flashClue": "Un niño corre al aire libre.",
-            "searchClue": "Un niño corre al aire libre.",
+            "clue": "Ребёнок бежит по парку.",
+            "memoryClue": "Ребёнок бежит по парку.",
+            "flashClue": "Ребёнок бежит по парку.",
+            "searchClue": "Передвигаться быстрее, чем шагом.",
             "prompt": "Я ___ в парке."
           },
           {
@@ -11088,10 +11648,10 @@ window.CURRICULUM = {
             "asset": "acciones/caminar",
             "answer": "ходим",
             "aliases": [],
-            "clue": "Un niño camina al aire libre.",
-            "memoryClue": "Un niño camina al aire libre.",
-            "flashClue": "Un niño camina al aire libre.",
-            "searchClue": "Un niño camina al aire libre.",
+            "clue": "Ребёнок идёт по парку.",
+            "memoryClue": "Ребёнок идёт по парку.",
+            "flashClue": "Ребёнок идёт по парку.",
+            "searchClue": "Передвигаться, делая шаги.",
             "prompt": "Мы ___ в школу пешком."
           },
           {
@@ -11099,10 +11659,10 @@ window.CURRICULUM = {
             "asset": "acciones/escribir",
             "answer": "пишет",
             "aliases": [],
-            "clue": "Un niño escribe en un cuaderno.",
-            "memoryClue": "Un niño escribe en un cuaderno.",
-            "flashClue": "Un niño escribe en un cuaderno.",
-            "searchClue": "Un niño escribe en un cuaderno.",
+            "clue": "Ребёнок пишет в тетради.",
+            "memoryClue": "Ребёнок пишет в тетради.",
+            "flashClue": "Ребёнок пишет в тетради.",
+            "searchClue": "Выводить слова карандашом на бумаге.",
             "prompt": "Анна ___ письмо."
           },
           {
@@ -11110,10 +11670,10 @@ window.CURRICULUM = {
             "asset": "acciones/jugar",
             "answer": "играют",
             "aliases": [],
-            "clue": "Un niño juega con una pelota.",
-            "memoryClue": "Un niño juega con una pelota.",
-            "flashClue": "Un niño juega con una pelota.",
-            "searchClue": "Un niño juega con una pelota.",
+            "clue": "Ребёнок играет с мячом.",
+            "memoryClue": "Ребёнок играет с мячом.",
+            "flashClue": "Ребёнок играет с мячом.",
+            "searchClue": "Развлекаться с мячом.",
             "prompt": "Дети ___ с мячом."
           },
           {
@@ -11121,10 +11681,10 @@ window.CURRICULUM = {
             "asset": "acciones/cerrar",
             "answer": "закрываешь",
             "aliases": [],
-            "clue": "Un niño cierra una ventana; la flecha baja.",
-            "memoryClue": "Un niño cierra una ventana; la flecha baja.",
-            "flashClue": "Un niño cierra una ventana; la flecha baja.",
-            "searchClue": "Un niño cierra una ventana; la flecha baja.",
+            "clue": "Ребёнок закрывает окно; стрелка направлена вниз.",
+            "memoryClue": "Ребёнок закрывает окно; стрелка направлена вниз.",
+            "flashClue": "Ребёнок закрывает окно; стрелка направлена вниз.",
+            "searchClue": "Двигать окно, чтобы не впускать воздух.",
             "prompt": "Ты ___ окно."
           },
           {
@@ -11132,10 +11692,10 @@ window.CURRICULUM = {
             "asset": "acciones/escuchar",
             "answer": "слушаю",
             "aliases": [],
-            "clue": "Un niño escucha música con auriculares.",
-            "memoryClue": "Un niño escucha música con auriculares.",
-            "flashClue": "Un niño escucha música con auriculares.",
-            "searchClue": "Un niño escucha música con auriculares.",
+            "clue": "Ребёнок слушает музыку в наушниках.",
+            "memoryClue": "Ребёнок слушает музыку в наушниках.",
+            "flashClue": "Ребёнок слушает музыку в наушниках.",
+            "searchClue": "Внимательно воспринимать музыку.",
             "prompt": "Я ___ музыку дома."
           }
         ]
@@ -11144,7 +11704,7 @@ window.CURRICULUM = {
     },
     {
       "id": "frutas",
-      "title": "Las frutas",
+      "title": "Фрукты",
       "kind": "vocabulary",
       "icon": "frutas",
       "level": "A1",
@@ -11165,10 +11725,10 @@ window.CURRICULUM = {
             "вишни",
             "черешня"
           ],
-          "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-          "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
-          "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-          "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+          "clue": "Две маленькие красные ягоды на длинных черешках.",
+          "crosswordClue": "Красные ягоды с косточками, часто соединённые черешками.",
+          "memoryClue": "Две маленькие красные ягоды на длинных черешках.",
+          "flashClue": "Две маленькие красные ягоды на длинных черешках.",
           "prompt": "Маленькие красные ягоды с длинными плодоножками и косточкой внутри — это ___."
         },
         {
@@ -11176,10 +11736,10 @@ window.CURRICULUM = {
           "asset": "frutas/fresa",
           "answer": "клубника",
           "aliases": [],
-          "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-          "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
-          "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-          "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+          "clue": "Красная ягода с семенами снаружи.",
+          "crosswordClue": "Эта ягода похожа на сердечко и имеет зелёные листочки.",
+          "memoryClue": "Красная ягода с семенами снаружи.",
+          "flashClue": "Красная ягода с семенами снаружи.",
           "prompt": "Красная ягода с семечками снаружи — это ___."
         },
         {
@@ -11187,10 +11747,10 @@ window.CURRICULUM = {
           "asset": "frutas/limon",
           "answer": "лимон",
           "aliases": [],
-          "clue": "Fruta amarilla, ovalada y de sabor ácido.",
-          "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
-          "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
-          "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+          "clue": "Овальный жёлтый фрукт с кислым вкусом.",
+          "crosswordClue": "Кислый жёлтый цитрус, который добавляют в воду.",
+          "memoryClue": "Овальный жёлтый фрукт с кислым вкусом.",
+          "flashClue": "Овальный жёлтый фрукт с кислым вкусом.",
           "prompt": "Жёлтый кислый цитрусовый фрукт — это ___."
         },
         {
@@ -11198,10 +11758,10 @@ window.CURRICULUM = {
           "asset": "frutas/mango",
           "answer": "манго",
           "aliases": [],
-          "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-          "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
-          "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-          "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+          "clue": "Тропический фрукт с жёлто-красной кожурой.",
+          "crosswordClue": "Сладкий тропический фрукт с большой плоской косточкой.",
+          "memoryClue": "Тропический фрукт с жёлто-красной кожурой.",
+          "flashClue": "Тропический фрукт с жёлто-красной кожурой.",
           "prompt": ""
         },
         {
@@ -11209,10 +11769,10 @@ window.CURRICULUM = {
           "asset": "frutas/manzana",
           "answer": "яблоко",
           "aliases": [],
-          "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-          "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
-          "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-          "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+          "clue": "Круглый красный плод с черенком.",
+          "crosswordClue": "Хрустящий круглый плод, из которого часто делают пироги.",
+          "memoryClue": "Круглый красный плод с черенком.",
+          "flashClue": "Круглый красный плод с черенком.",
           "prompt": ""
         },
         {
@@ -11220,10 +11780,10 @@ window.CURRICULUM = {
           "asset": "frutas/melocoton",
           "answer": "персик",
           "aliases": [],
-          "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-          "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
-          "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-          "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+          "clue": "Круглый фрукт с оранжево-розовой кожицей.",
+          "crosswordClue": "У этого мягкого фрукта внутри большая косточка.",
+          "memoryClue": "Круглый фрукт с оранжево-розовой кожицей.",
+          "flashClue": "Круглый фрукт с оранжево-розовой кожицей.",
           "prompt": ""
         },
         {
@@ -11231,10 +11791,10 @@ window.CURRICULUM = {
           "asset": "frutas/naranja",
           "answer": "апельсин",
           "aliases": [],
-          "clue": "Fruta redonda de piel naranja que se divide en gajos.",
-          "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
-          "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
-          "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+          "clue": "Круглый оранжевый цитрус.",
+          "crosswordClue": "Этот цитрус делят на дольки и выжимают из него сок.",
+          "memoryClue": "Круглый оранжевый цитрус.",
+          "flashClue": "Круглый оранжевый цитрус.",
           "prompt": ""
         },
         {
@@ -11242,10 +11802,10 @@ window.CURRICULUM = {
           "asset": "frutas/pera",
           "answer": "груша",
           "aliases": [],
-          "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
-          "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
-          "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
-          "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+          "clue": "Зелёный фрукт, узкий сверху.",
+          "crosswordClue": "Этот фрукт шире снизу, чем возле черенка.",
+          "memoryClue": "Зелёный фрукт, узкий сверху.",
+          "flashClue": "Зелёный фрукт, узкий сверху.",
           "prompt": ""
         },
         {
@@ -11253,10 +11813,10 @@ window.CURRICULUM = {
           "asset": "frutas/pina",
           "answer": "ананас",
           "aliases": [],
-          "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-          "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
-          "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-          "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+          "clue": "Тропический плод с короной из колючих листьев.",
+          "crosswordClue": "Большой тропический плод с жёсткой кожурой и жёлтой мякотью.",
+          "memoryClue": "Тропический плод с короной из колючих листьев.",
+          "flashClue": "Тропический плод с короной из колючих листьев.",
           "prompt": "Тропический фрукт с короной из острых листьев — это ___."
         },
         {
@@ -11266,10 +11826,10 @@ window.CURRICULUM = {
           "aliases": [
             "банан"
           ],
-          "clue": "Frutas amarillas, largas y curvas que se pelan.",
-          "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
-          "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
-          "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+          "clue": "Связка длинных изогнутых жёлтых плодов.",
+          "crosswordClue": "С этих длинных жёлтых плодов снимают кожуру перед едой.",
+          "memoryClue": "Связка длинных изогнутых жёлтых плодов.",
+          "flashClue": "Связка длинных изогнутых жёлтых плодов.",
           "prompt": ""
         },
         {
@@ -11277,10 +11837,10 @@ window.CURRICULUM = {
           "asset": "frutas/sandia",
           "answer": "арбуз",
           "aliases": [],
-          "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-          "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
-          "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-          "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+          "clue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
+          "crosswordClue": "Большой летний плод с красной мякотью и зелёной коркой.",
+          "memoryClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
+          "flashClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
           "prompt": "Большой плод с зелёной кожурой, красной мякотью и чёрными семечками — это ___."
         },
         {
@@ -11288,10 +11848,10 @@ window.CURRICULUM = {
           "asset": "frutas/uvas",
           "answer": "виноград",
           "aliases": [],
-          "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-          "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
-          "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-          "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+          "clue": "Гроздь маленьких фиолетовых ягод.",
+          "crosswordClue": "Эти ягоды растут гроздьями на лозе.",
+          "memoryClue": "Гроздь маленьких фиолетовых ягод.",
+          "flashClue": "Гроздь маленьких фиолетовых ягод.",
           "prompt": "Маленькие круглые ягоды растут гроздью — это ___."
         }
       ],
@@ -11302,10 +11862,10 @@ window.CURRICULUM = {
             "asset": "frutas/manzana",
             "answer": "яблоко",
             "aliases": [],
-            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
-            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "clue": "Круглый красный плод с черенком.",
+            "crosswordClue": "Хрустящий круглый плод, из которого часто делают пироги.",
+            "memoryClue": "Круглый красный плод с черенком.",
+            "flashClue": "Круглый красный плод с черенком.",
             "prompt": ""
           },
           {
@@ -11313,10 +11873,10 @@ window.CURRICULUM = {
             "asset": "frutas/pera",
             "answer": "груша",
             "aliases": [],
-            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
-            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
-            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
-            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "clue": "Зелёный фрукт, узкий сверху.",
+            "crosswordClue": "Этот фрукт шире снизу, чем возле черенка.",
+            "memoryClue": "Зелёный фрукт, узкий сверху.",
+            "flashClue": "Зелёный фрукт, узкий сверху.",
             "prompt": ""
           },
           {
@@ -11326,10 +11886,10 @@ window.CURRICULUM = {
             "aliases": [
               "банан"
             ],
-            "clue": "Frutas amarillas, largas y curvas que se pelan.",
-            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
-            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
-            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "clue": "Связка длинных изогнутых жёлтых плодов.",
+            "crosswordClue": "С этих длинных жёлтых плодов снимают кожуру перед едой.",
+            "memoryClue": "Связка длинных изогнутых жёлтых плодов.",
+            "flashClue": "Связка длинных изогнутых жёлтых плодов.",
             "prompt": ""
           },
           {
@@ -11337,10 +11897,10 @@ window.CURRICULUM = {
             "asset": "frutas/limon",
             "answer": "лимон",
             "aliases": [],
-            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
-            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "clue": "Овальный жёлтый фрукт с кислым вкусом.",
+            "crosswordClue": "Кислый жёлтый цитрус, который добавляют в воду.",
+            "memoryClue": "Овальный жёлтый фрукт с кислым вкусом.",
+            "flashClue": "Овальный жёлтый фрукт с кислым вкусом.",
             "prompt": "Жёлтый кислый цитрусовый фрукт — это ___."
           },
           {
@@ -11348,10 +11908,10 @@ window.CURRICULUM = {
             "asset": "frutas/naranja",
             "answer": "апельсин",
             "aliases": [],
-            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
-            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
-            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
-            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "clue": "Круглый оранжевый цитрус.",
+            "crosswordClue": "Этот цитрус делят на дольки и выжимают из него сок.",
+            "memoryClue": "Круглый оранжевый цитрус.",
+            "flashClue": "Круглый оранжевый цитрус.",
             "prompt": ""
           },
           {
@@ -11359,10 +11919,10 @@ window.CURRICULUM = {
             "asset": "frutas/fresa",
             "answer": "клубника",
             "aliases": [],
-            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
-            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "clue": "Красная ягода с семенами снаружи.",
+            "crosswordClue": "Эта ягода похожа на сердечко и имеет зелёные листочки.",
+            "memoryClue": "Красная ягода с семенами снаружи.",
+            "flashClue": "Красная ягода с семенами снаружи.",
             "prompt": "Красная ягода с семечками снаружи — это ___."
           }
         ],
@@ -11375,10 +11935,10 @@ window.CURRICULUM = {
               "вишни",
               "черешня"
             ],
-            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
-            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "flashClue": "Pequeñas y rojas: dos piezas con tallos largos.",
+            "clue": "Две маленькие красные ягоды на длинных черешках.",
+            "crosswordClue": "Красные ягоды с косточками, часто соединённые черешками.",
+            "memoryClue": "Две маленькие красные ягоды на длинных черешках.",
+            "flashClue": "Две маленькие красные ягоды на длинных черешках.",
             "prompt": "Маленькие красные ягоды с длинными плодоножками и косточкой внутри — это ___."
           },
           {
@@ -11386,10 +11946,10 @@ window.CURRICULUM = {
             "asset": "frutas/mango",
             "answer": "манго",
             "aliases": [],
-            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
-            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "flashClue": "Una fruta tropical de cinco letras, amarilla y roja por fuera.",
+            "clue": "Тропический фрукт с жёлто-красной кожурой.",
+            "crosswordClue": "Сладкий тропический фрукт с большой плоской косточкой.",
+            "memoryClue": "Тропический фрукт с жёлто-красной кожурой.",
+            "flashClue": "Тропический фрукт с жёлто-красной кожурой.",
             "prompt": ""
           },
           {
@@ -11397,10 +11957,10 @@ window.CURRICULUM = {
             "asset": "frutas/melocoton",
             "answer": "персик",
             "aliases": [],
-            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
-            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-            "flashClue": "La fruta de piel suave y un hueso en el centro.",
+            "clue": "Круглый фрукт с оранжево-розовой кожицей.",
+            "crosswordClue": "У этого мягкого фрукта внутри большая косточка.",
+            "memoryClue": "Круглый фрукт с оранжево-розовой кожицей.",
+            "flashClue": "Круглый фрукт с оранжево-розовой кожицей.",
             "prompt": ""
           },
           {
@@ -11408,10 +11968,10 @@ window.CURRICULUM = {
             "asset": "frutas/pina",
             "answer": "ананас",
             "aliases": [],
-            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
-            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "flashClue": "La fruta de la corona de hojas.",
+            "clue": "Тропический плод с короной из колючих листьев.",
+            "crosswordClue": "Большой тропический плод с жёсткой кожурой и жёлтой мякотью.",
+            "memoryClue": "Тропический плод с короной из колючих листьев.",
+            "flashClue": "Тропический плод с короной из колючих листьев.",
             "prompt": "Тропический фрукт с короной из острых листьев — это ___."
           },
           {
@@ -11419,10 +11979,10 @@ window.CURRICULUM = {
             "asset": "frutas/sandia",
             "answer": "арбуз",
             "aliases": [],
-            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
-            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "flashClue": "La rodaja de corteza verde y centro rojo.",
+            "clue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
+            "crosswordClue": "Большой летний плод с красной мякотью и зелёной коркой.",
+            "memoryClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
+            "flashClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
             "prompt": "Большой плод с зелёной кожурой, красной мякотью и чёрными семечками — это ___."
           },
           {
@@ -11430,10 +11990,10 @@ window.CURRICULUM = {
             "asset": "frutas/uvas",
             "answer": "виноград",
             "aliases": [],
-            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
-            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-            "flashClue": "Muchas piezas redondas y moradas en un mismo racimo.",
+            "clue": "Гроздь маленьких фиолетовых ягод.",
+            "crosswordClue": "Эти ягоды растут гроздьями на лозе.",
+            "memoryClue": "Гроздь маленьких фиолетовых ягод.",
+            "flashClue": "Гроздь маленьких фиолетовых ягод.",
             "prompt": "Маленькие круглые ягоды растут гроздью — это ___."
           }
         ],
@@ -11443,10 +12003,10 @@ window.CURRICULUM = {
             "asset": "frutas/manzana",
             "answer": "яблоко",
             "aliases": [],
-            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
-            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "clue": "Круглый красный плод с черенком.",
+            "crosswordClue": "Хрустящий круглый плод, из которого часто делают пироги.",
+            "memoryClue": "Круглый красный плод с черенком.",
+            "flashClue": "Круглый красный плод с черенком.",
             "prompt": ""
           },
           {
@@ -11454,10 +12014,10 @@ window.CURRICULUM = {
             "asset": "frutas/pera",
             "answer": "груша",
             "aliases": [],
-            "clue": "Fruta verde, estrecha arriba y más ancha abajo.",
-            "crosswordClue": "Fruta verde que se ensancha por abajo y se estrecha junto al tallo.",
-            "memoryClue": "Fruta verde, estrecha arriba y más ancha abajo.",
-            "flashClue": "Fruta verde, estrecha arriba y más ancha abajo.",
+            "clue": "Зелёный фрукт, узкий сверху.",
+            "crosswordClue": "Этот фрукт шире снизу, чем возле черенка.",
+            "memoryClue": "Зелёный фрукт, узкий сверху.",
+            "flashClue": "Зелёный фрукт, узкий сверху.",
             "prompt": ""
           },
           {
@@ -11465,10 +12025,10 @@ window.CURRICULUM = {
             "asset": "frutas/limon",
             "answer": "лимон",
             "aliases": [],
-            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
-            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "clue": "Овальный жёлтый фрукт с кислым вкусом.",
+            "crosswordClue": "Кислый жёлтый цитрус, который добавляют в воду.",
+            "memoryClue": "Овальный жёлтый фрукт с кислым вкусом.",
+            "flashClue": "Овальный жёлтый фрукт с кислым вкусом.",
             "prompt": "Жёлтый кислый цитрусовый фрукт — это ___."
           },
           {
@@ -11476,10 +12036,10 @@ window.CURRICULUM = {
             "asset": "frutas/mango",
             "answer": "манго",
             "aliases": [],
-            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
-            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "clue": "Тропический фрукт с жёлто-красной кожурой.",
+            "crosswordClue": "Сладкий тропический фрукт с большой плоской косточкой.",
+            "memoryClue": "Тропический фрукт с жёлто-красной кожурой.",
+            "flashClue": "Тропический фрукт с жёлто-красной кожурой.",
             "prompt": ""
           },
           {
@@ -11487,10 +12047,10 @@ window.CURRICULUM = {
             "asset": "frutas/pina",
             "answer": "ананас",
             "aliases": [],
-            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
-            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "clue": "Тропический плод с короной из колючих листьев.",
+            "crosswordClue": "Большой тропический плод с жёсткой кожурой и жёлтой мякотью.",
+            "memoryClue": "Тропический плод с короной из колючих листьев.",
+            "flashClue": "Тропический плод с короной из колючих листьев.",
             "prompt": "Тропический фрукт с короной из острых листьев — это ___."
           },
           {
@@ -11501,10 +12061,10 @@ window.CURRICULUM = {
               "вишни",
               "черешня"
             ],
-            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
-            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "clue": "Две маленькие красные ягоды на длинных черешках.",
+            "crosswordClue": "Красные ягоды с косточками, часто соединённые черешками.",
+            "memoryClue": "Две маленькие красные ягоды на длинных черешках.",
+            "flashClue": "Две маленькие красные ягоды на длинных черешках.",
             "prompt": "Маленькие красные ягоды с длинными плодоножками и косточкой внутри — это ___."
           }
         ],
@@ -11514,48 +12074,48 @@ window.CURRICULUM = {
             "asset": "frutas/mango",
             "answer": "манго",
             "aliases": [],
-            "clue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "crosswordClue": "Fruta tropical cuyo nombre tiene cinco letras y empieza por M.",
-            "memoryClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
-            "flashClue": "Fruta tropical de piel amarilla y roja con un hueso grande y plano.",
+            "clue": "Тропический фрукт с жёлто-красной кожурой.",
+            "crosswordClue": "Сладкий тропический фрукт с большой плоской косточкой.",
+            "memoryClue": "Тропический фрукт с жёлто-красной кожурой.",
+            "flashClue": "Тропический фрукт с жёлто-красной кожурой.",
             "prompt": "",
-            "orderLabel": "Para el desayuno"
+            "orderLabel": "Мой заказ: манго ."
           },
           {
             "key": "melocoton",
             "asset": "frutas/melocoton",
             "answer": "персик",
             "aliases": [],
-            "clue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-            "crosswordClue": "Fruta con una línea en la piel, pelusita y un hueso grande en el centro.",
-            "memoryClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
-            "flashClue": "Fruta redondeada, de piel suave con pelusita y un hueso en el centro.",
+            "clue": "Круглый фрукт с оранжево-розовой кожицей.",
+            "crosswordClue": "У этого мягкого фрукта внутри большая косточка.",
+            "memoryClue": "Круглый фрукт с оранжево-розовой кожицей.",
+            "flashClue": "Круглый фрукт с оранжево-розовой кожицей.",
             "prompt": "",
-            "orderLabel": "Para compartir"
+            "orderLabel": "В корзину: персик ."
           },
           {
             "key": "naranja",
             "asset": "frutas/naranja",
             "answer": "апельсин",
             "aliases": [],
-            "clue": "Fruta redonda de piel naranja que se divide en gajos.",
-            "crosswordClue": "Cítrico redondo y del mismo color que su nombre en español.",
-            "memoryClue": "Fruta redonda de piel naranja que se divide en gajos.",
-            "flashClue": "Fruta redonda de piel naranja que se divide en gajos.",
+            "clue": "Круглый оранжевый цитрус.",
+            "crosswordClue": "Этот цитрус делят на дольки и выжимают из него сок.",
+            "memoryClue": "Круглый оранжевый цитрус.",
+            "flashClue": "Круглый оранжевый цитрус.",
             "prompt": "",
-            "orderLabel": "Para el zumo"
+            "orderLabel": "Для сока: апельсин ."
           },
           {
             "key": "sandia",
             "asset": "frutas/sandia",
             "answer": "арбуз",
             "aliases": [],
-            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
-            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "clue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
+            "crosswordClue": "Большой летний плод с красной мякотью и зелёной коркой.",
+            "memoryClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
+            "flashClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
             "prompt": "Большой плод с зелёной кожурой, красной мякотью и чёрными семечками — это ___.",
-            "orderLabel": "Para la merienda"
+            "orderLabel": "Для друзей: арбуз ."
           },
           {
             "key": "platanos",
@@ -11564,24 +12124,24 @@ window.CURRICULUM = {
             "aliases": [
               "банан"
             ],
-            "clue": "Frutas amarillas, largas y curvas que se pelan.",
-            "crosswordClue": "Frutas amarillas y curvas con una piel que se retira antes de comer.",
-            "memoryClue": "Frutas amarillas, largas y curvas que se pelan.",
-            "flashClue": "Frutas amarillas, largas y curvas que se pelan.",
+            "clue": "Связка длинных изогнутых жёлтых плодов.",
+            "crosswordClue": "С этих длинных жёлтых плодов снимают кожуру перед едой.",
+            "memoryClue": "Связка длинных изогнутых жёлтых плодов.",
+            "flashClue": "Связка длинных изогнутых жёлтых плодов.",
             "prompt": "",
-            "orderLabel": "Para llevar"
+            "orderLabel": "На завтрак: бананы ."
           },
           {
             "key": "manzana",
             "asset": "frutas/manzana",
             "answer": "яблоко",
             "aliases": [],
-            "clue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "crosswordClue": "Fruta del manzano, redonda y con pequeñas semillas en el centro.",
-            "memoryClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
-            "flashClue": "Fruta roja y redonda con una pequeña hendidura junto al tallo.",
+            "clue": "Круглый красный плод с черенком.",
+            "crosswordClue": "Хрустящий круглый плод, из которого часто делают пироги.",
+            "memoryClue": "Круглый красный плод с черенком.",
+            "flashClue": "Круглый красный плод с черенком.",
             "prompt": "",
-            "orderLabel": "Para el postre"
+            "orderLabel": "Для пирога: яблоко ."
           }
         ],
         "5": [
@@ -11590,10 +12150,10 @@ window.CURRICULUM = {
             "asset": "frutas/fresa",
             "answer": "клубника",
             "aliases": [],
-            "clue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-            "crosswordClue": "Fruta roja con forma de corazón y semillas en la parte de fuera.",
-            "memoryClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
-            "flashClue": "Fruta roja con hojas verdes y pequeñas semillas por fuera.",
+            "clue": "Красная ягода с семенами снаружи.",
+            "crosswordClue": "Эта ягода похожа на сердечко и имеет зелёные листочки.",
+            "memoryClue": "Красная ягода с семенами снаружи.",
+            "flashClue": "Красная ягода с семенами снаружи.",
             "prompt": "Красная ягода с семечками снаружи — это ___."
           },
           {
@@ -11601,10 +12161,10 @@ window.CURRICULUM = {
             "asset": "frutas/limon",
             "answer": "лимон",
             "aliases": [],
-            "clue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "crosswordClue": "Cítrico amarillo y ácido que se puede añadir al agua.",
-            "memoryClue": "Fruta amarilla, ovalada y de sabor ácido.",
-            "flashClue": "Fruta amarilla, ovalada y de sabor ácido.",
+            "clue": "Овальный жёлтый фрукт с кислым вкусом.",
+            "crosswordClue": "Кислый жёлтый цитрус, который добавляют в воду.",
+            "memoryClue": "Овальный жёлтый фрукт с кислым вкусом.",
+            "flashClue": "Овальный жёлтый фрукт с кислым вкусом.",
             "prompt": "Жёлтый кислый цитрусовый фрукт — это ___."
           },
           {
@@ -11612,10 +12172,10 @@ window.CURRICULUM = {
             "asset": "frutas/pina",
             "answer": "ананас",
             "aliases": [],
-            "clue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "crosswordClue": "Fruta tropical con corona de hojas y piel de rombos.",
-            "memoryClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
-            "flashClue": "Fruta de piel con rombos y una corona de hojas puntiagudas.",
+            "clue": "Тропический плод с короной из колючих листьев.",
+            "crosswordClue": "Большой тропический плод с жёсткой кожурой и жёлтой мякотью.",
+            "memoryClue": "Тропический плод с короной из колючих листьев.",
+            "flashClue": "Тропический плод с короной из колючих листьев.",
             "prompt": "Тропический фрукт с короной из острых листьев — это ___."
           },
           {
@@ -11623,10 +12183,10 @@ window.CURRICULUM = {
             "asset": "frutas/sandia",
             "answer": "арбуз",
             "aliases": [],
-            "clue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "crosswordClue": "Fruta grande cuya rodaja es roja por dentro y verde por fuera.",
-            "memoryClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
-            "flashClue": "Rodaja de fruta roja con semillas negras y corteza verde.",
+            "clue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
+            "crosswordClue": "Большой летний плод с красной мякотью и зелёной коркой.",
+            "memoryClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
+            "flashClue": "Ломтик с красной мякотью, чёрными семечками и зелёной коркой.",
             "prompt": "Большой плод с зелёной кожурой, красной мякотью и чёрными семечками — это ___."
           },
           {
@@ -11637,10 +12197,10 @@ window.CURRICULUM = {
               "вишни",
               "черешня"
             ],
-            "clue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "crosswordClue": "Son pequeñas, rojas, tienen hueso y cuelgan de un tallo.",
-            "memoryClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
-            "flashClue": "Dos frutas pequeñas y rojas unidas a unos tallos.",
+            "clue": "Две маленькие красные ягоды на длинных черешках.",
+            "crosswordClue": "Красные ягоды с косточками, часто соединённые черешками.",
+            "memoryClue": "Две маленькие красные ягоды на длинных черешках.",
+            "flashClue": "Две маленькие красные ягоды на длинных черешках.",
             "prompt": "Маленькие красные ягоды с длинными плодоножками и косточкой внутри — это ___."
           },
           {
@@ -11648,10 +12208,10 @@ window.CURRICULUM = {
             "asset": "frutas/uvas",
             "answer": "виноград",
             "aliases": [],
-            "clue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-            "crosswordClue": "Frutas pequeñas y redondas agrupadas en un racimo.",
-            "memoryClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
-            "flashClue": "Frutas pequeñas y moradas que crecen juntas en un racimo.",
+            "clue": "Гроздь маленьких фиолетовых ягод.",
+            "crosswordClue": "Эти ягоды растут гроздьями на лозе.",
+            "memoryClue": "Гроздь маленьких фиолетовых ягод.",
+            "flashClue": "Гроздь маленьких фиолетовых ягод.",
             "prompt": "Маленькие круглые ягоды растут гроздью — это ___."
           }
         ]

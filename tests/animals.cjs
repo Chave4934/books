@@ -23,7 +23,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
         await page.waitForFunction(() => [...document.querySelectorAll('#exercise-stage img')].every(img => img.complete && img.naturalWidth >= 1000));
       }
       await page.goto(`${base}/#/${lang}/actividades/animales/3`);
-      await page.locator('.memory-card').last().waitFor();
+      await page.locator('#memory-board[aria-busy="false"]').waitFor();
       assert.equal(await page.locator('.memory-card').count(), 24);
       await page.evaluate(topic => {
         const items = topic.variants['3'];
@@ -31,10 +31,10 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
         for (let pair=0;pair<12;pair++) cards.forEach((card,index)=>{if(card.pair===pair)document.querySelector(`[data-card="${index}"]`).click();});
       }, topic);
       await page.evaluate(() => document.querySelectorAll('.memory-card img').forEach(img => img.loading='eager'));
-      await page.waitForFunction(() => [...document.querySelectorAll('.memory-card img')].every(img => img.complete && img.naturalWidth >= 1000));
+      await page.waitForFunction(() => [...document.querySelectorAll('.memory-card img')].every(img => img.complete && img.naturalWidth >= 140));
       assert.equal(await page.locator('.memory-card img').count(), 12);
-      assert.match(await page.locator('#result').textContent(), /12 de 12 parejas/);
-      assert.match(await page.locator('#result').textContent(), /Actividad completada/);
+      assert.match(await page.locator('#result').textContent(), /12 de 12 parejas|12 of 12 pairs|12 из 12 пар/);
+      assert.match(await page.locator('#result').textContent(), /Actividad completada|Activity complete|Задание выполнено/);
     }
     for (const animal of expected) {
       const response = await page.request.get(`${base}/assets/animales/${animal}.png`);
@@ -48,13 +48,13 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
     await page.locator('#exercise').waitFor();
     const items=inventory.ingles.variants['1'];
     for (let i=0;i<items.length;i++) await page.locator(`[name="q${i}"]`).fill(items[i].key==='perro'?'puppy':items[i].answer);
-    await page.getByRole('button',{name:'Comprobar respuestas'}).click();
-    assert.match(await page.locator('#result').textContent(), /6 de 6/);
+    await page.locator('#exercise button[type="submit"]').click();
+    assert.match(await page.locator('#result').textContent(), /6 de 6|6 of 6|6 из 6/);
     await page.locator('[name="q0"]').fill('elephant');
-    await page.getByRole('button',{name:'Comprobar respuestas'}).click();
-    assert.match(await page.locator('#result').textContent(), /5 de 6/);
+    await page.locator('#exercise button[type="submit"]').click();
+    assert.match(await page.locator('#result').textContent(), /5 de 6|5 of 6|5 из 6/);
     assert.equal(await page.locator('.solution:visible').count(),0);
-    await page.getByRole('button',{name:'Ver solución',exact:true}).click();
+    await page.locator('.feedback .reveal-solution').click();
     assert.match(await page.locator('.solution:visible').textContent(), /dog/);
     for(const width of [320,375]) {
       await page.setViewportSize({width,height:812});

@@ -10,10 +10,10 @@ const base=process.env.TEST_BASE_URL||'http://127.0.0.1:8000';
    assert.equal(topic.items.length,12);assert.equal(new Set(Object.values(topic.variants).flat().filter(i=>i.asset.startsWith('colores/')).map(i=>i.key)).size,12);
    const sequences=await page.evaluate(id=>window.CURRICULUM[id].filter(t=>t.kind==='vocabulary').map(t=>t.formats.join('/')),id);assert.equal(new Set(sequences).size,5);
    await page.goto(`${base}/#/${id}/actividades/casa/1`);await page.locator('.flip-card').last().waitFor();assert.equal(new URL(page.url()).hash,`#/${id}/actividades/colores/1`);assert.equal(await page.locator('.flip-card').count(),12);
-   await page.locator('.flip-card').first().click();assert.equal(await page.locator('.flash-answer:visible').textContent(),topic.items[0].answer);await page.getByRole('button',{name:'Volver a empezar',exact:true}).click();assert.equal(await page.locator('.flash-answer:visible').count(),0);
+   await page.locator('.flip-card').first().click();assert.equal(await page.locator('.flash-answer:visible').textContent(),topic.items[0].answer);await page.locator('#exercise button[type="reset"]').click();assert.equal(await page.locator('.flash-answer:visible').count(),0);
    const regionals={espanol:{marron:'café',morado:'violeta',rosa:'rosado',celeste:'azul claro'},ingles:{gris:'gray',celeste:'sky blue'},ruso:{amarillo:'желтый',negro:'черный'}};
    for(let i=0;i<12;i++)await page.locator(`[name="q${i}"]`).fill(regionals[id][topic.items[i].key]||topic.items[i].answer);
-   await page.getByRole('button',{name:'Comprobar respuestas'}).click();assert.match(await page.locator('#result').textContent(),/12 de 12/);
+   await page.locator('#exercise button[type="submit"]').click();assert.match(await page.locator('#result').textContent(),/12 de 12|12 of 12|12 из 12/);
    for(let mode=1;mode<=5;mode++){
     await page.goto(`${base}/#/${id}/actividades/colores/${mode}`);await page.waitForFunction(mode=>document.querySelector('.exercise-steps [aria-current]')?.textContent.trim().startsWith(String(mode)),mode);
     if(mode===3){assert.equal(await page.locator('.memory-card').count(),24);continue;}
@@ -21,15 +21,17 @@ const base=process.env.TEST_BASE_URL||'http://127.0.0.1:8000';
     assert.equal(await page.locator('#exercise-stage img').count(),mode===1?12:mode===4?72:6);
     if(mode===2){
      const reversed={espanol:'verde y roja',ingles:'green and red',ruso:'зелёный и красный'};
-     for(let i=0;i<6;i++)await page.locator(`[name="q${i}"]`).fill(i===0?reversed[id]:topic.variants['2'][i].answer);
-     await page.getByRole('button',{name:'Comprobar respuestas'}).click();assert.match(await page.locator('#result').textContent(),/6 de 6/);
-     await page.locator('[name="q0"]').fill('incorrecto');await page.getByRole('button',{name:'Comprobar respuestas'}).click();assert.match(await page.locator('#result').textContent(),/5 de 6/);assert.equal(await page.locator('.solution:visible').count(),0);await page.getByRole('button',{name:'Ver solución',exact:true}).click();assert.match(await page.locator('.solution:visible').textContent(),new RegExp(topic.variants['2'][0].answer));
-     await page.getByRole('button',{name:'Volver a empezar',exact:true}).click();assert.equal(await page.locator('[name="q0"]').inputValue(),'');
+     const pair=reversed[id].split(id==='ingles'?' and ':id==='ruso'?' и ':' y ');
+     await page.locator('.colour-part').nth(0).fill(pair[0]);await page.locator('.colour-part').nth(1).fill(pair[1]);
+     for(let i=1;i<6;i++)await page.locator(`[name="q${i}"]`).fill(topic.variants['2'][i].answer);
+     await page.locator('#exercise button[type="submit"]').click();assert.match(await page.locator('#result').textContent(),/6 de 6|6 of 6|6 из 6/);
+     await page.locator('.colour-part').first().fill('incorrecto');await page.locator('#exercise button[type="submit"]').click();assert.match(await page.locator('#result').textContent(),/5 de 6|5 of 6|5 из 6/);assert.equal(await page.locator('.solution:visible').count(),0);await page.locator('.feedback .reveal-solution').click();assert.match(await page.locator('.solution:visible').textContent(),new RegExp(topic.variants['2'][0].answer));
+     await page.locator('#exercise button[type="reset"]').click();assert.equal(await page.locator('[name="q0"]').inputValue(),'');
     }
     if(mode===4){
      assert.equal(await page.locator('.color-hunt-options input').count(),72);
      for(let i=0;i<6;i++)await page.locator(`[name="q${i}"]`).filter({visible:true}).evaluateAll((inputs,answer)=>inputs.find(input=>input.value===answer).click(),topic.variants['4'][i].answer);
-     await page.getByRole('button',{name:'Comprobar respuestas'}).click();assert.match(await page.locator('#result').textContent(),/6 de 6/);await page.getByRole('button',{name:'Volver a empezar',exact:true}).click();assert.equal(await page.locator('.color-hunt-options input:checked').count(),0);
+     await page.locator('#exercise button[type="submit"]').click();assert.match(await page.locator('#result').textContent(),/6 de 6|6 of 6|6 из 6/);await page.locator('#exercise button[type="reset"]').click();assert.equal(await page.locator('.color-hunt-options input:checked').count(),0);
     }
    }
   }

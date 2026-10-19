@@ -55,11 +55,11 @@ La clasificación sigue el idioma que se aprende, aunque el título o las instru
 
 El contenido está en `activities.js`, el motor de actividades en `learning.js` y la navegación general en `app.js`. Cada idioma tiene diez temas y cincuenta actividades. Cada actividad de gramática tiene cinco frases propias, sin repetir las de otras actividades del mismo tema. En español se mantienen los cinco temas de gramática y los cinco de vocabulario solicitados.
 
-Los temas tienen formatos diferentes: sopa de letras con selección de extremos, crucigrama conectado, memory de veinte tarjetas, tarjetas que se voltean, verdadero/falso, horarios, escritura, relaciones y frases ordenadas. Las actividades de gramática incluyen solo la palabra base entre paréntesis, sin repetir la persona. En el detective se escribe solo el fragmento corregido. Los errores se marcan sin mostrar la solución hasta pulsar «Ver solución».
+Los temas tienen formatos diferentes: sopa de letras con selección de extremos, crucigrama conectado, memory de 24 tarjetas, tarjetas que se voltean, verdadero/falso, horarios, escritura, relaciones y frases ordenadas. Las actividades de gramática incluyen solo la palabra base entre paréntesis, sin repetir la persona. En el detective se escribe solo el fragmento corregido. Los errores se marcan sin mostrar la solución hasta pulsar «Ver solución».
 
 Las ilustraciones, portadas y miniaturas propias se configuran en `media.js`. Consulta [la guía de imágenes](assets/README.md). No quedan emojis de objetos o acciones. Mientras faltan las imágenes, los retos usan descripciones de texto; las tarjetas de libros usan un diseño tipográfico. No se afirma que las actividades sean páginas de muestra de los libros mientras no se hayan verificado su contenido e ilustraciones.
 
-Las respuestas admiten mayúsculas, espacios repetidos y puntuación final. En ruso se aceptan е y ё. Las tildes se mantienen en los ejercicios de escritura en español; los juegos de letras omiten tildes, espacios y guiones y lo explican en sus instrucciones. Las variantes regionales y ciertos órdenes alternativos correctos se declaran expresamente en el contenido, sin coincidencias aproximadas que pudieran dar por válida una respuesta incorrecta.
+Las respuestas admiten mayúsculas, espacios repetidos y puntuación final. En ruso se aceptan е y ё. Las tildes se mantienen en los ejercicios de escritura en español; los juegos aceptan las vocales con tilde y las normalizan en la cuadrícula, conservando ñ y й. Las variantes regionales y ciertos órdenes alternativos correctos se declaran expresamente en el contenido, sin coincidencias aproximadas que pudieran dar por válida una respuesta incorrecta.
 
 El progreso se guarda en el navegador al completar una actividad. No es un contador global ni una cuenta personal. Las personas que compartan navegador comparten contador. No se envían respuestas ni progreso a un servidor; bloquear el almacenamiento no impide practicar.
 
@@ -130,8 +130,26 @@ NODE_PATH=/tmp/chavebooks-check/node_modules node tests/clothes.cjs
 
 ### Acciones habituales
 
-El tema que antes era «La rutina diaria» mantiene la ruta `#/espanol/actividades/rutina` y ahora usa las doce ilustraciones de la autora en `assets/acciones/`. Sus cinco actividades por idioma combinan reconocimiento en infinitivo, una historia ilustrada en presente, memory de 24 tarjetas, frases para ordenar y crucigrama. Los temas gramaticales se conservan. Los archivos pequeños se muestran a tamaño moderado, sin interpolarlos ni modificar los originales. Verificación específica: `NODE_PATH=/tmp/chavebooks-check/node_modules node tests/actions.cjs`.
+El tema que antes era «La rutina diaria» mantiene la ruta `#/espanol/actividades/rutina` y ahora usa las doce ilustraciones de la autora en `assets/acciones/`. Sus cinco actividades por idioma combinan reconocimiento en infinitivo, una historia ilustrada en presente, memory de 24 tarjetas, frases para ordenar y crucigrama. Los temas gramaticales se conservan; el futuro inglés ahora usa planes con going to. Los archivos pequeños se muestran a tamaño moderado, sin interpolarlos ni modificar los originales. Verificación específica: `NODE_PATH=/tmp/chavebooks-check/node_modules node tests/actions.cjs`.
 
 ### Colores
 
 «Colores» sustituye a «Partes de la casa» en los tres idiomas con doce pinturas de la autora, presentación con tarjetas, frases sobre ilustraciones, memory de 24 tarjetas, selección visual de pinturas y sopa de letras. `#/espanol/actividades/casa` redirige a `#/espanol/actividades/colores` sin aplicar el progreso antiguo al tema nuevo. Los colores de la sandía aceptan ambos órdenes y variantes equivalentes. Verificación específica: `NODE_PATH=/tmp/chavebooks-check/node_modules node tests/colors.cjs`.
+
+## Navegación, idiomas y práctica (revisión de octubre de 2026)
+
+La bienvenida se ha reducido y el ruso tiene un tono más morado. «Siguiente actividad» aparece antes del libro. Al completar las cinco actividades se ofrece una felicitación y un enlace destacado a `#/espanol/actividades/<tema>/resumen`, con un informe de práctica, otros temas y un libro relacionado.
+
+Los menús generales permanecen en español. Las consignas, títulos de temas y pistas de inglés/ruso están en el idioma de estudio; la consigna principal tiene ayuda en español desplegable. `localization.js` mantiene los textos de interfaz y sus patrones numéricos; las frases y pistas educativas se escriben directamente en el idioma correspondiente en `activities.js`. Los textos dinámicos de la interfaz se traducen al renderizarse sin alterar valores de respuestas ni las ayudas marcadas `data-no-translate`.
+
+Cada tema gramatical de verbos usa 25 verbos distintos, cinco por actividad. La segunda actividad contiene cinco ilustraciones de acciones de la autora; el relato del tercer ejercicio usa un grupo nuevo de verbos. Los temas rusos no verbales también cambian de sustantivos. La revisión `practica-v3` conserva el historial previo sin marcar como completado el contenido nuevo. El futuro inglés conserva la ruta `future` y practica `am/is/are going to`.
+
+La sandía tiene dos campos largos unidos por «y», «and» o «и». Los huecos de frases se muestran como una línea larga. Las pistas de letras que faltan usan casillas, diferenciadas de los huecos para palabras completas. La cesta de frutas relaciona pedidos escritos con fotografías sin etiquetas de respuesta; admite ratón, arrastre, teclado y selectores.
+
+Los crucigramas solo cruzan palabras perpendicularmente. La numeración sigue el orden de lectura; las pistas se agrupan y ordenan por horizontal/vertical. Elegir una pista resalta su palabra; escribir avanza a la siguiente casilla y las flechas permiten moverse. Las vocales con tilde se aceptan y se normalizan; ñ y й se conservan.
+
+Los memory insertan y precargan las imágenes con carga inmediata antes de activar las tarjetas. Usan los PNG originales pequeños de animales para sus miniaturas de 85px; las vistas grandes mantienen las mejoras. Si falla una imagen, muestran su descripción. Los recortes solicitados de caminar/correr están en `assets/acciones/recortes/`; los originales permanecen intactos.
+
+`chavebooks-progress-v1` conserva las actividades completadas. `chavebooks-attempts-v1` guarda solo contadores locales de comprobaciones, respuestas incorrectas, consultas de soluciones y parejas fallidas; no almacena las respuestas escritas ni las envía. El resumen no inventa notas para actividades antiguas sin datos. Los controles de reinicio por tema o idioma piden confirmación dentro de la página y borran únicamente el ámbito seleccionado. Reiniciar un formulario limpia sus respuestas; reiniciar el progreso del tema también borra sus contadores e historial local.
+
+Verificación de estos recorridos: `NODE_PATH=/tmp/chavebooks-check/node_modules node tests/review.cjs`. Se conserva la prueba completa de 150 actividades en `tests/browser.cjs` y las pruebas específicas de los cinco temas ilustrados.

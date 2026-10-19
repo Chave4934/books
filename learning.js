@@ -4,7 +4,7 @@ const FORMAT_INFO = {
   actionstory: ['Un día en imágenes', 'Completa esta historia en presente. Cada dibujo sustituye a la pista del verbo: escribe solo la forma que falta y fíjate en quién realiza la acción.'],
   picturechoice: ['Elige el nombre', 'Mira la ilustración y elige su nombre entre las tres opciones.'],
   fruitletters: ['Completa las letras', 'Mira la fruta, completa mentalmente las letras que faltan y escribe el nombre entero.'],
-  basket: ['Prepara la cesta', 'Elige una tarjeta y pulsa el pedido con la misma fruta, o arrastra la tarjeta hasta él. Coloca cada fruta en su sitio.'],
+  basket: ['Prepara la cesta', 'Lee cada pedido y coloca la tarjeta de la fruta que se pide. Puedes pulsar, arrastrar o usar el selector.'],
   choice: ['Elige la forma correcta', 'Elige la opción que completa cada frase.'],
   write: ['Completa las frases', 'Escribe solo la forma que falta. Entre paréntesis encontrarás el verbo o la palabra base.'],
   text: ['Un pequeño texto', 'Completa los huecos de esta historia. Usa la palabra base entre paréntesis.'],
@@ -17,7 +17,7 @@ const FORMAT_INFO = {
   truefalse: ['Verdadero o falso', 'Lee cada afirmación y decide si es verdadera o falsa.'],
   memory: ['Memory: veinte tarjetas', 'Encuentra diez parejas: una palabra y su significado. Pulsa dos tarjetas para descubrirlas.'],
   wordsearch: ['Sopa de letras', 'Busca las cinco palabras. Pulsa la primera letra y después la última. Pueden ir en horizontal, vertical o diagonal.'],
-  crossword: ['Un pequeño crucigrama', 'Lee las pistas y completa las casillas. Algunas palabras comparten letras. Escribe sin tildes en las vocales; conserva la ñ y la й.'],
+  crossword: ['Un pequeño crucigrama', 'Elige una pista para resaltar su palabra. Escribe una letra por casilla; las flechas te ayudan a moverte. Puedes usar tildes; la ñ se conserva.'],
   flashcards: ['Tarjetas para aprender', 'Piensa en la palabra, escríbela y comprueba tu respuesta. Si la necesitas, puedes voltear la tarjeta.'],
   sequence: ['Un día en orden', 'Lee el horario de este día y relaciona cada hora con la acción adecuada.']
 };
@@ -46,11 +46,16 @@ function mediaPath(group,key) {
   if(/^(?:assets\/|\/assets\/)[\w\-./%]+$/i.test(path)&&!path.includes('..'))return path;
   return null;
 }
-function imageFor(item) { const path=mediaPath('vocabulary',item.asset);return path?`<img class="activity-image" src="${escapeHTML(path)}" alt="${escapeHTML(item.clue||item.memoryClue)}" loading="lazy">`:''; }
+function imageFor(item,small=false) {
+  let path=mediaPath('vocabulary',item.asset);
+  // The original animal PNGs are already the right size for an 85px memory card.
+  if(small&&/^animales\/[a-z]+$/.test(item.asset))path=`assets/animales/${item.asset.split('/')[1]}.png`;
+  return path?`<img class="activity-image" draggable="false" src="${escapeHTML(path)}" alt="${escapeHTML(item.clue||item.memoryClue||'')}" loading="${small?'eager':'lazy'}" decoding="async">`:'';
+}
 function formatInfo(topic,mode) {
   const format=activityFormat(topic,mode);
   if(format==='flashcards'&&topic.id==='colores')return ['Tu caja de colores','Descubre los doce colores. Mira cada pintura, escribe su nombre y, si lo necesitas, voltea la tarjeta para aprenderlo.'];
-  if(format==='identify'&&topic.id==='rutina')return ['¿Qué está haciendo?','Mira cada ilustración y escribe la acción en infinitivo en el idioma que estudias; por ejemplo, saltar, jump o прыгать. En inglés puedes escribir el verbo con o sin «to».'];
+  if(format==='identify'&&topic.id==='rutina')return ['¿Qué está haciendo?',`Mira cada ilustración y escribe la acción en infinitivo en ${languages[currentLanguage].name.toLowerCase()}.`];
   if(format==='identify'&&activityItems(topic,mode).every(item=>mediaPath('vocabulary',item.asset)))return ['Mira y escribe','Mira cada ilustración y escribe la palabra. Puedes abrir una pista si la necesitas.'];
   if(format==='order'&&topic.id==='rutina')return ['Construye las frases','Mira la acción y pulsa todas las palabras para construir una frase. Empieza por la palabra con mayúscula y termina con la que lleva punto.'];
   if(format==='truefalse'&&topic.kind==='grammar')return ['¿Está bien escrito?','Decide si la frase es gramaticalmente correcta.'];
@@ -62,13 +67,14 @@ function renderActivities(id,topicId,modeId) {
   const topics=window.CURRICULUM[id],content=document.querySelector('#section-content');
   if(!topicId) {
     const count=topics.reduce((n,t)=>n+topicDone(id,t.id),0);
-    content.innerHTML=`<div class="activity-heading"><div><p class="eyebrow">HOY, ¿QUÉ TE APETECE PRACTICAR?</p><h2>Tu próxima pequeña conquista.</h2><p>Elige un tema: te esperan juegos, historias y nuevas formas de aprender.</p></div><span class="level">10 temas · 50 actividades</span></div><div class="catalog-summary"><span>Tu progreso en este navegador</span><strong>${count} / 50 completadas</strong><progress aria-label="Actividades completadas en este navegador" max="50" value="${count}"></progress></div>${['grammar','vocabulary'].map(kind=>`<section class="topic-section" aria-labelledby="heading-${kind}"><div class="topic-section-title"><h3 id="heading-${kind}">${kind==='grammar'?'Juega con la gramática':'Palabras para tu mundo'}</h3><span>5 temas para explorar</span></div><div class="topic-grid">${topics.filter(t=>t.kind===kind).map(t=>`<a class="topic-card" href="${topicPath(id,t.id)}"><span class="topic-icon">${topicIcon(t)}</span><span class="level">${t.level}</span><h3>${t.title}</h3><p>5 actividades · ${topicDone(id,t.id)} completadas</p><span class="topic-open">Explorar el tema <span aria-hidden="true">→</span></span></a>`).join('')}</div></section>`).join('')}<p class="progress-note">Este contador es solo de este navegador y dispositivo, no de todos los visitantes. Si compartes el dispositivo, compartís el progreso. Se guarda al completar una actividad y no se sincroniza; si borras los datos del navegador, se pierde.</p>`;return;
+    content.innerHTML=`<div class="activity-heading"><div><p class="eyebrow">HOY, ¿QUÉ TE APETECE PRACTICAR?</p><h2>Tu próxima pequeña conquista.</h2><p>Elige un tema: te esperan juegos, historias y nuevas formas de aprender.</p></div><span class="level">10 temas · 50 actividades</span></div><div class="catalog-summary"><span>Tu progreso en este navegador</span><strong>${count} / 50 completadas</strong><progress aria-label="Actividades completadas en este navegador" max="50" value="${count}"></progress></div>${['grammar','vocabulary'].map(kind=>`<section class="topic-section" aria-labelledby="heading-${kind}"><div class="topic-section-title"><h3 id="heading-${kind}">${kind==='grammar'?'Juega con la gramática':'Palabras para tu mundo'}</h3><span>5 temas para explorar</span></div><div class="topic-grid">${topics.filter(t=>t.kind===kind).map(t=>`<a class="topic-card" href="${topicPath(id,t.id)}"><span class="topic-icon">${topicIcon(t)}</span><span class="level">${t.level}</span><h3>${t.title}</h3><p>5 actividades · ${topicDone(id,t.id)} completadas</p><span class="topic-open">Explorar el tema <span aria-hidden="true">→</span></span></a>`).join('')}</div></section>`).join('')}${resetArea(id)}<p class="progress-note">Este contador es solo de este navegador y dispositivo, no de todos los visitantes. Si compartes el dispositivo, compartís el progreso. Se guarda al completar una actividad y no se sincroniza; si borras los datos del navegador, se pierde.</p>`;return;
   }
   const topic=topics.find(t=>t.id===topicId);
+  if(topic&&modeId==='resumen'){renderTopicSummary(id,topic);return;}
   if(!topic||(modeId&&!/^[1-5]$/.test(modeId))) {content.innerHTML=`<div class="empty-books"><h2>No encontramos esta actividad.</h2><a class="button dark" href="#/${id}/actividades">Ver todos los temas</a></div>`;return;}
   document.title=`${topic.title} · ${languages[id].name} | chavebooks`;
   if(!modeId) {
-    content.innerHTML=`<a class="back topic-back" href="#/${id}/actividades">← Todos los temas</a><div class="topic-welcome"><span class="welcome-icon">${topicIcon(topic)}</span><div><p class="eyebrow">${topic.kind==='grammar'?'GRAMÁTICA':'VOCABULARIO'} · ${topic.level}</p><h2>${topic.title}</h2><p>Elige tu actividad de hoy.</p></div><span class="completion-badge">${topicDone(id,topic.id)} / 5</span></div><div class="mode-grid">${topic.formats.map((format,i)=>{const [title,description]=formatInfo(topic,i+1);return `<a class="mode-card" href="${topicPath(id,topic.id)}/${i+1}"><span class="mode-index">ACTIVIDAD 0${i+1} ${isDone(id,topic.id,i+1)?'· COMPLETADA':''}</span><h3>${title}</h3><p>${description}</p><span class="topic-open">${isDone(id,topic.id,i+1)?'Volver a practicar':'¡Vamos allá!'} →</span></a>`;}).join('')}</div>`;return;
+    content.innerHTML=`<a class="back topic-back" href="#/${id}/actividades">← Todos los temas</a><div class="topic-welcome"><span class="welcome-icon">${topicIcon(topic)}</span><div><p class="eyebrow">${topic.kind==='grammar'?'GRAMÁTICA':'VOCABULARIO'} · ${topic.level}</p><h2>${topic.title}</h2><p>Elige tu actividad de hoy.</p></div><span class="completion-badge">${topicDone(id,topic.id)} / 5</span></div><div class="mode-grid">${topic.formats.map((format,i)=>{const [title,description]=formatInfo(topic,i+1);return `<a class="mode-card" href="${topicPath(id,topic.id)}/${i+1}"><span class="mode-index">ACTIVIDAD 0${i+1} ${isDone(id,topic.id,i+1)?'· COMPLETADA':''}</span><h3>${title}</h3><p>${description}</p><span class="topic-open">${isDone(id,topic.id,i+1)?'Volver a practicar':'¡Vamos allá!'} →</span></a>`;}).join('')}</div>${resetArea(id,topic.id)}`;return;
   }
   const mode=Number(modeId),format=activityFormat(topic,mode);
   window.trackLearningEvent?.('Activity Started',{language:id,topic:topic.id,format});
@@ -78,15 +84,54 @@ function renderActivities(id,topicId,modeId) {
   else if(format==='memory')renderMemory(id,topic,mode);
   else renderStandard(id,topic,mode);
 }
+let activeLesson=null;
+let practice={};
+try {const data=JSON.parse(localStorage.getItem('chavebooks-attempts-v1')||'{}');if(data&&typeof data==='object'&&!Array.isArray(data))practice=data;}catch{}
+function savePractice(){try{localStorage.setItem('chavebooks-attempts-v1',JSON.stringify(practice));}catch{}}
+function recordPractice(delta){
+  if(!activeLesson)return;
+  const {id,topic,mode}=activeLesson,key=activityKey(id,topic.id,mode),row=practice[key]||{};
+  for(const [name,n]of Object.entries(delta)){const previous=Number(row[name]);row[name]=(Number.isFinite(previous)&&previous>=0?previous:0)+n;}
+  practice[key]=row;savePractice();
+}
+function resetArea(id,topic='') {
+ return `<div class="reset-area"><button type="button" class="reset" data-reset-progress="${id}/${topic}">${topic?'Reiniciar este tema':'Reiniciar progreso del idioma'}</button><div class="reset-confirmation" hidden></div></div>`;
+}
+document.addEventListener('click',event=>{
+ const button=event.target.closest('[data-reset-progress]');if(!button)return;
+ const scope=button.dataset.resetProgress,[id,topic]=scope.split('/');
+ if(!window.CURRICULUM[id]||(topic&&!window.CURRICULUM[id].some(t=>t.id===topic)))return;
+ const panel=button.nextElementSibling;panel.hidden=false;
+ panel.innerHTML='<p>¿Reiniciar el progreso guardado? Solo afecta a esta selección en este navegador.</p><button type="button" class="button dark confirm-reset">Sí, reiniciar</button> <button type="button" class="reset cancel-reset">Cancelar</button>';
+ panel.querySelector('.cancel-reset').onclick=()=>{panel.hidden=true;panel.replaceChildren();button.focus();};
+ panel.querySelector('.confirm-reset').onclick=()=>{
+  const prefix=topic?`${id}/${topic}/`:`${id}/`;
+  for(const state of [completed,practice])for(const key of Object.keys(state))if(key.startsWith(prefix))delete state[key];
+  try{localStorage.setItem('chavebooks-progress-v1',JSON.stringify(completed));}catch{}
+  savePractice();route();document.querySelector('#section-content').scrollIntoView();
+ };
+});
 function renderExerciseShell(id,topic,mode) {
-  const [title,instruction]=formatInfo(topic,mode);
-  document.querySelector('#section-content').innerHTML=`<a class="back topic-back" href="${topicPath(id,topic.id)}">← Las cinco actividades de ${topic.title}</a><div class="exercise-heading"><p class="eyebrow">${topic.title} · ACTIVIDAD ${mode} DE 5</p><h2>${title}</h2><p>${instruction}</p></div><div class="exercise-steps" aria-label="Las cinco actividades">${topic.formats.map((_,i)=>`<a href="${topicPath(id,topic.id)}/${i+1}" aria-label="Actividad ${i+1}: ${formatInfo(topic,i+1)[0]}" ${mode===i+1?'aria-current="page"':''}>${i+1}${isDone(id,topic.id,i+1)?'<span aria-hidden="true">✓</span>':''}</a>`).join('')}</div><div id="exercise-stage"></div><div id="book-recommendation"></div><div class="exercise-next"><a href="${topicPath(id,topic.id)}">Ver las cinco actividades</a>${mode<5?`<a href="${topicPath(id,topic.id)}/${mode+1}">Siguiente actividad →</a>`:`<a href="#/${id}/actividades">Elegir otro tema →</a>`}</div>`;
+ activeLesson={id,topic,mode};
+ const [title,instruction]=formatInfo(topic,mode),code=languages[id].htmlLang;
+ document.querySelector('#section-content').setAttribute('lang',code);
+ const help=id==='espanol'?'':`<details class="instruction-help" data-no-translate lang="es"><summary>${id==='ingles'?'Spanish help':'Помощь на испанском'}</summary><p>${escapeHTML(instruction)}</p></details>`;
+ document.querySelector('#section-content').innerHTML=`<a class="back topic-back" href="${topicPath(id,topic.id)}">← Las cinco actividades de ${topic.title}</a><div class="exercise-heading"><p class="eyebrow">${topic.title} · ACTIVIDAD ${mode} DE 5</p><h2>${title}</h2><p>${instruction}</p>${help}</div><div class="exercise-steps" aria-label="Las cinco actividades">${topic.formats.map((_,i)=>`<a href="${topicPath(id,topic.id)}/${i+1}" aria-label="Actividad ${i+1}: ${formatInfo(topic,i+1)[0]}" ${mode===i+1?'aria-current="page"':''}>${i+1}${isDone(id,topic.id,i+1)?'<span aria-hidden="true">✓</span>':''}</a>`).join('')}</div><div id="exercise-stage"></div><nav class="exercise-next" aria-label="Continuar practicando"><a href="${topicPath(id,topic.id)}">Ver las cinco actividades</a>${mode<5?`<a class="button dark" href="${topicPath(id,topic.id)}/${mode+1}">Siguiente actividad →</a>`:`<a class="button dark" href="#/${id}/actividades">Elegir otro tema →</a>`}</nav><div id="topic-celebration"></div><div id="book-recommendation"></div>`;
 }
 function finishActivity(id,topic,mode) {
-  const key=activityKey(id,topic.id,mode),first=!completed[key];completed[key]=true;
-  try {localStorage.setItem('chavebooks-progress-v1',JSON.stringify(completed));}catch{}
-  if(first)window.trackLearningEvent?.('Activity Completed',{language:id,topic:topic.id,format:activityFormat(topic,mode)});
-  recommendBook(id,topic);
+ const key=activityKey(id,topic.id,mode),first=!completed[key];completed[key]=true;
+ try {localStorage.setItem('chavebooks-progress-v1',JSON.stringify(completed));}catch{}
+ if(first)window.trackLearningEvent?.('Activity Completed',{language:id,topic:topic.id,format:activityFormat(topic,mode)});
+ const step=document.querySelector('.exercise-steps [aria-current]');if(step&&!step.querySelector('span'))step.insertAdjacentHTML('beforeend','<span aria-hidden="true">✓</span>');
+ if(topicDone(id,topic.id)===5){const next=document.querySelector('.exercise-next .button');next.href=`${topicPath(id,topic.id)}/resumen`;next.textContent='Ver mi resumen →';document.querySelector('#topic-celebration').innerHTML=`<aside class="topic-celebration"><h2>¡Tema completado!</h2><p>Completaste las cinco actividades.</p><a class="button dark" href="${topicPath(id,topic.id)}/resumen">Ver mi resumen →</a></aside>`;}
+ recommendBook(id,topic);
+}
+function renderTopicSummary(id,topic){
+ activeLesson=null;
+ const other=window.CURRICULUM[id].filter(t=>t.id!==topic.id&&t.kind==='vocabulary').slice(0,4);
+ const done=topicDone(id,topic.id)===5;
+ document.querySelector('#section-content').innerHTML=`<a class="back" href="${topicPath(id,topic.id)}">← Las cinco actividades de ${topic.title}</a><section class="topic-celebration summary-page"><p class="eyebrow">${escapeHTML(topic.title)}</p><h2>${done?'¡Felicidades!':'Tu práctica, paso a paso'}</h2><p>${done?'Completaste las cinco actividades.':'Aún puedes seguir practicando este tema.'}</p><ol class="practice-report">${topic.formats.map((_,i)=>{const row=practice[activityKey(id,topic.id,i+1)],safe=key=>Number.isFinite(row?.[key])&&row[key]>=0?row[key]:0;return `<li><a href="${topicPath(id,topic.id)}/${i+1}">${i+1}. ${formatInfo(topic,i+1)[0]}</a><p>${row?`<span>Comprobaciones: ${safe('checks')}</span><span>Respuestas por revisar: ${safe('errors')}</span><span>Soluciones consultadas: ${safe('solutions')}</span>${row.memoryMisses?`<span>Parejas por revisar: ${safe('memoryMisses')}</span>`:''}`:'Sin datos de intentos anteriores.'}</p></li>`;}).join('')}</ol><p class="progress-note">El resumen cuenta las respuestas revisadas, no es una nota de examen.</p><a class="button dark" href="#/${id}/actividades">Elegir otro tema →</a>${resetArea(id,topic.id)}</section><h2 class="more-topics-heading">Más temas para explorar</h2><div class="topic-grid">${other.map(t=>`<a class="topic-card" href="${topicPath(id,t.id)}"><span class="topic-icon">${topicIcon(t)}</span><h3>${t.title}</h3><span class="topic-open">Explorar el tema →</span></a>`).join('')}</div><p class="book-topic-suggestions">En mis libros también encontrarás propuestas sobre la casa, la ciudad, las verduras, las profesiones, las emociones y la naturaleza.</p><div id="book-recommendation"></div>`;
+ recommendBook(id,topic);
 }
 function recommendBook(id,topic) {
   const target=document.querySelector('#book-recommendation');
@@ -98,7 +143,7 @@ function recommendBook(id,topic) {
 function feedbackFor(element,correct,answers) {
   element.replaceChildren();element.className=`feedback ${correct?'correct':'incorrect'}`;
   const text=document.createElement('span');text.textContent=correct?'✓ ¡Correcto!':'Revisa tu respuesta. Puedes intentarlo otra vez.';element.append(text);
-  if(!correct){const button=document.createElement('button');button.type='button';button.className='reveal-solution';button.textContent='Ver solución';button.setAttribute('aria-expanded','false');const solution=document.createElement('span');solution.className='solution';solution.hidden=true;button.addEventListener('click',()=>{solution.hidden=!solution.hidden;solution.textContent=solution.hidden?'':`Solución: ${answers[0]}`;button.textContent=solution.hidden?'Ver solución':'Ocultar solución';button.setAttribute('aria-expanded',String(!solution.hidden));});element.append(button,solution);}
+  if(!correct){const button=document.createElement('button');button.type='button';button.className='reveal-solution';button.textContent='Ver solución';button.setAttribute('aria-expanded','false');const solution=document.createElement('span');solution.className='solution';solution.hidden=true;button.addEventListener('click',()=>{if(solution.hidden)recordPractice({solutions:1});solution.hidden=!solution.hidden;solution.textContent=solution.hidden?'':`Solución: ${answers[0]}`;button.textContent=solution.hidden?'Ver solución':'Ocultar solución';button.setAttribute('aria-expanded',String(!solution.hidden));});element.append(button,solution);}
 }
 function expectedAnswers(topic,mode,item) {return activityFormat(topic,mode)==='order'?[fullSentence(item),...(item.orders||[])]:[item.answer,...(item.aliases||[])];}
 function renderStandard(id,topic,mode) {
@@ -111,26 +156,27 @@ function renderStandard(id,topic,mode) {
     }else if(format==='colorhunt'){
       prompt=`Encuentra: <strong lang="${lang}">${escapeHTML(item.answer)}</strong>`;
     }else if(format==='picturechoice'){
-      prompt='¿Qué ves en la imagen?';control=imageFor(item);
+      prompt='';control=imageFor(item);
     }else if(format==='fruitletters'){
-      prompt='Escribe el nombre completo de esta fruta.';
-      control=`${imageFor(item)}<p class="scrambled" lang="${lang}" aria-label="Nombre con letras que faltan">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'_'))}</p>`;
+      prompt='';
+      control=`${imageFor(item)}<p class="scrambled" lang="${lang}" aria-label="Nombre con letras que faltan">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'□'))}</p>`;
     }else if(format==='basket'){
       prompt=escapeHTML(item.orderLabel);
-      control=`<div class="basket-order">${imageFor(item)}<button type="button" class="basket-target" data-question="${i}" aria-label="Colocar fruta en el pedido ${i+1}"><span>Coloca aquí tu elección</span></button><label class="basket-select-label" for="basket-select-${i}">También puedes elegir aquí</label><select class="basket-select" id="basket-select-${i}" data-question="${i}"><option value="">Elige una fruta</option>${shuffled(items,i+2).map(fruit=>`<option value="${escapeHTML(fruit.key)}">${escapeHTML(fruit.answer)}</option>`).join('')}</select><input type="hidden" name="q${i}" id="answer-${i}"></div>`;
+      control=`<div class="basket-order"><button type="button" class="basket-target" data-question="${i}" aria-label="Colocar fruta en el pedido ${i+1}"><span>Coloca aquí tu elección</span></button><label class="basket-select-label" for="basket-select-${i}">También puedes elegir aquí</label><select class="basket-select" id="basket-select-${i}" data-question="${i}"><option value="">Elige una fruta</option>${shuffled(items,i+2).map(fruit=>`<option value="${escapeHTML(fruit.key)}">${escapeHTML(fruit.answer)}</option>`).join('')}</select><input type="hidden" name="q${i}" id="answer-${i}"></div>`;
     }else if(format==='identify'){
       const image=imageFor(item);prompt=image?`Imagen ${i+1}`:item.clue;
       control=image?`<div class="picture-card">${image}<details><summary>Una pista</summary><p>${escapeHTML(item.clue)}</p></details></div>`:'';
     }else if(format==='match')prompt=topic.matchClues[i];
-    else if(format==='flashcards') {prompt=item.flashClue||item.memoryClue;control=`${imageFor(item)}<div class="flashcard"><button type="button" class="flip-card" aria-expanded="false">Voltear tarjeta</button><span class="flash-answer" hidden></span></div>`;}
+    else if(format==='flashcards') {prompt=topic.id==='colores'?'':item.flashClue||item.memoryClue;control=`${imageFor(item)}<div class="flashcard"><button type="button" class="flip-card" aria-expanded="false">Voltear tarjeta</button><span class="flash-answer" hidden></span></div>`;}
     else if(format==='truefalse') {
       if(vocabulary){if(topic.id==='animales')control=imageFor(item);prompt=`<strong lang="${lang}">${escapeHTML(item.answer)}</strong>: ${escapeHTML(topic.facts[i][0])}`;answers=[String(topic.facts[i][1])];}
       else {prompt=escapeHTML(item.prompt.replace('___',i%2===0?item.answer:item.wrong));answers=[String(i%2===0)];}
     }else if(format==='sequence'){prompt=`${sequenceHours[i]} · ${['Al salir de la cama','En la ducha, con agua y jabón','La primera comida del día','Con el libro para aprender','Con las luces apagadas para descansar'][i]}`;}
     else if(format==='detective')prompt=escapeHTML(item.prompt).replace('___',`<mark>${escapeHTML(item.wrong)}</mark>`);
-    else if(['choice','write','text','letters'].includes(format))prompt=`${escapeHTML(item.prompt)} (${escapeHTML(item.hint)})`;
+    else if(['choice','write','text','letters'].includes(format))prompt=`${escapeHTML(item.prompt)}${topic.id==='plural'?'':` (${escapeHTML(item.hint)})`}`;
+    if(topic.kind==='grammar'&&item.asset)control=imageFor(item)+control;
     if(format==='context'&&topic.id==='ropa')control=imageFor(item)+control;
-    if(format==='letters')control+=`<p class="scrambled" lang="${lang}">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'_'))}</p>`;
+    if(format==='letters')control+=`<p class="scrambled" lang="${lang}">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'□'))}</p>`;
     if(format==='colorhunt'){
       control=`<div class="color-hunt-options">${shuffled(topic.items,i+11).map((color,j)=>`<label><input type="radio" name="q${i}" value="${escapeHTML(color.answer)}" required aria-label="${escapeHTML(color.clue)}"><span>${imageFor(color)}</span></label>`).join('')}</div>`;
     }else if(format==='choice'||format==='truefalse'||format==='picturechoice'){
@@ -138,20 +184,25 @@ function renderStandard(id,topic,mode) {
       control+=`<div class="answers">${options.map(([value,text])=>`<label><input type="radio" name="q${i}" value="${escapeHTML(value)}" required><span>${escapeHTML(text)}</span></label>`).join('')}</div>`;
     }else if(format==='match'||format==='sequence')control+=`<select id="answer-${i}" name="q${i}" required aria-labelledby="question-${i}" lang="${lang}"><option value="">Elige una opción</option>${shuffled(items.map(x=>x.answer),i+mode).map(a=>`<option value="${escapeHTML(a)}">${escapeHTML(a)}</option>`).join('')}</select>`;
     else if(format==='order'){
-      prompt='Construye una frase con todas las palabras.';
+      prompt='';
       if(topic.id==='rutina')control=imageFor(item)+control;
       control+=`<div class="word-slots" id="slots-${i}" aria-label="Tu frase" lang="${lang}"></div><div class="word-bank" data-question="${i}" lang="${lang}">${shuffled(fullSentence(item).split(' '),i+9).map((word,j)=>`<button type="button" class="word-token" data-token="${j}" data-word="${escapeHTML(word)}" aria-label="Añadir ${escapeHTML(word)}">${escapeHTML(word)}</button>`).join('')}</div><input type="hidden" name="q${i}" id="answer-${i}">`;
     }else if(format==='actionstory'){
-      prompt=`Parte ${i+1} de la historia`;
+      prompt='';
       const parts=item.prompt.split('___');
       control=`<div class="action-story-line" lang="${lang}"><span>${escapeHTML(parts[0])}</span><span class="action-story-gap">${imageFor(item)}<input class="written-answer" id="answer-${i}" name="q${i}" type="text" required autocomplete="off" autocapitalize="off" spellcheck="false" lang="${lang}" aria-label="Verbo que falta en la parte ${i+1}" aria-describedby="story-${i}" placeholder="Verbo"></span><span>${escapeHTML(parts[1])}</span><span class="visually-hidden" id="story-${i}">${escapeHTML(item.prompt.replace('___','[hueco]'))}</span></div>`;
     }
-    else if(format!=='basket')control+=`<input class="written-answer" id="answer-${i}" name="q${i}" type="text" required autocomplete="off" autocapitalize="off" spellcheck="false" lang="${lang}" aria-labelledby="question-${i}" placeholder="${format==='detective'?'Solo la parte corregida':'Escribe tu respuesta'}">`;
+    else if(format==='colorcontext'&&item.parts){
+      const join=id==='ingles'?'and':id==='ruso'?'и':'y';
+      control+=`<div class="two-colours"><input class="written-answer colour-part" data-question="${i}" data-part="0" type="text" required autocomplete="off" aria-label="Primer color" lang="${lang}"><span>${join}</span><input class="written-answer colour-part" data-question="${i}" data-part="1" type="text" required autocomplete="off" aria-label="Segundo color" lang="${lang}"><input type="hidden" id="answer-${i}" name="q${i}"></div>`;
+    }else if(format!=='basket')control+=`<input class="written-answer" id="answer-${i}" name="q${i}" type="text" required autocomplete="off" autocapitalize="off" spellcheck="false" lang="${lang}" aria-labelledby="question-${i}" placeholder="${format==='detective'?'Solo la parte corregida':'Escribe tu respuesta'}">`;
+    prompt=String(prompt||'').replaceAll('___','<span class="inline-gap" aria-label="Hueco"></span>');
     return {html:`<fieldset class="question"><legend id="question-${i}"><span class="question-number">0${i+1}</span> ${prompt}</legend>${control}<div class="feedback" id="feedback-${i}" aria-live="polite"></div></fieldset>`,answers};
   });
-  const basketBank=format==='basket'?`<section class="basket-bank" aria-label="Tarjetas de frutas"><p>Elige una fruta y después su pedido. También puedes arrastrar.</p><div class="fruit-cards">${shuffled(items,8).map(item=>`<button type="button" class="fruit-card" draggable="true" data-fruit="${escapeHTML(item.key)}" aria-pressed="false">${imageFor(item)}<span lang="${lang}">${escapeHTML(item.answer)}</span></button>`).join('')}</div><p id="basket-selection" role="status" aria-live="polite">Ninguna tarjeta seleccionada.</p></section>`:'';
+  const basketBank=format==='basket'?`<section class="basket-bank" aria-label="Tarjetas de frutas"><p>Elige una fruta y después su pedido. También puedes arrastrar.</p><div class="fruit-cards">${shuffled(items,8).map(item=>`<button type="button" class="fruit-card" draggable="true" data-fruit="${escapeHTML(item.key)}" aria-pressed="false">${imageFor(item)}</button>`).join('')}</div><p id="basket-selection" role="status" aria-live="polite">Ninguna tarjeta seleccionada.</p></section>`:'';
   document.querySelector('#exercise-stage').innerHTML=`${basketBank}${format==='context'?`<div class="vocabulary-bank"><strong>Banco de palabras</strong><p lang="${lang}">${shuffled(items.map(x=>x.answer),4).map(w=>`<span>${escapeHTML(w)}</span>`).join('')}</p></div>`:''}<form id="exercise"><div class="exercise-meta"><span>${format==='text'?'Una historia con cinco huecos':`${questions.length} retos para practicar`}</span><span>${topic.level} · Sin prisas</span></div><div class="${['text','actionstory'].includes(format)?'story-sheet':''}">${questions.map(q=>q.html).join('')}</div><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
   const form=document.querySelector('#exercise');
+  form.querySelectorAll('.colour-part').forEach(input=>input.addEventListener('input',()=>{const i=input.dataset.question,parts=[...form.querySelectorAll(`.colour-part[data-question="${i}"]`)].map(el=>el.value.trim());form.querySelector(`[name="q${i}"]`).value=parts.every(Boolean)?parts.join(id==='ingles'?' and ':id==='ruso'?' и ':' y '):'';}));
   const clear=()=>{form.querySelectorAll('.feedback').forEach(el=>{el.replaceChildren();el.className='feedback';});document.querySelector('#result').textContent='';document.querySelector('#book-recommendation').replaceChildren();};
   if(format==='basket') {
     let selected=null;
@@ -163,7 +214,7 @@ function renderStandard(id,topic,mode) {
     form.querySelectorAll('.basket-target').forEach(target=>{target.addEventListener('click',()=>place(target));target.addEventListener('dragover',event=>event.preventDefault());target.addEventListener('drop',event=>{event.preventDefault();const key=event.dataTransfer.getData('text/plain');if(items.some(item=>item.key===key)){choose(key);place(target);}});});
     form.addEventListener('reset',()=>{choose(null);form.querySelectorAll('.basket-target').forEach(target=>{target.classList.remove('filled');target.querySelector('span').textContent='Coloca aquí tu elección';});});
   }
-  form.querySelectorAll('.flip-card').forEach((button,i)=>button.addEventListener('click',()=>{const answer=button.nextElementSibling;answer.hidden=!answer.hidden;answer.textContent=answer.hidden?'':items[i].answer;button.textContent=answer.hidden?'Voltear tarjeta':'Ocultar palabra';button.setAttribute('aria-expanded',String(!answer.hidden));}));
+  form.querySelectorAll('.flip-card').forEach((button,i)=>button.addEventListener('click',()=>{const answer=button.nextElementSibling;if(answer.hidden)recordPractice({solutions:1});answer.hidden=!answer.hidden;answer.textContent=answer.hidden?'':items[i].answer;button.textContent=answer.hidden?'Voltear tarjeta':'Ocultar palabra';button.setAttribute('aria-expanded',String(!answer.hidden));}));
   form.querySelectorAll('.word-bank').forEach(bank=>{
     const i=Number(bank.dataset.question),slots=document.querySelector(`#slots-${i}`),input=document.querySelector(`#answer-${i}`);
     const sync=()=>{input.value=[...slots.querySelectorAll('button')].map(b=>b.dataset.word).join(' ');clear();};
@@ -175,20 +226,31 @@ function renderStandard(id,topic,mode) {
     event.preventDefault();const values=new FormData(form);if(questions.some((_,i)=>!String(values.get(`q${i}`)||'').trim())){document.querySelector('#result').textContent='Completa todas las respuestas antes de comprobar.';return;}
     let score=0;questions.forEach((q,i)=>{const response=values.get(`q${i}`);const correct=q.answers.some(a=>normalizeAnswer(a)===normalizeAnswer(response));if(correct)score++;const solutions=format==='truefalse'?[vocabulary?(q.answers[0]==='true'?'Verdadero':'Falso'):`${q.answers[0]==='true'?'La frase es correcta.':'La frase es incorrecta.'} Forma correcta: ${fullSentence(items[i])}`]:q.answers;feedbackFor(document.querySelector(`#feedback-${i}`),correct,solutions);});
     document.querySelector('#result').textContent=`${score} de ${questions.length} respuestas correctas. ${score===questions.length?'¡Actividad completada!':'Puedes volver a intentarlo o abrir las soluciones que necesites.'}`;
+    recordPractice({checks:1,errors:questions.length-score});
     if(score===questions.length)finishActivity(id,topic,mode);
   });
 }
 function renderMemory(id,topic,mode) {
-  const items=[...activityItems(topic,mode),...(topic.memoryExtra||[])],cards=shuffled(items.flatMap((item,i)=>[{pair:i,side:'word',text:item.answer},{pair:i,side:'meaning',text:item.memoryClue}]),7);
-  document.querySelector('#exercise-stage').innerHTML=`<section class="puzzle-panel"><p class="memory-note">Empareja las ${items.length} palabras con sus imágenes o significados. Una tarjeta muestra la palabra y la otra, su pareja.</p><div class="memory-grid">${cards.map((card,i)=>`<button class="memory-card" type="button" data-card="${i}" aria-label="Tarjeta ${i+1}, oculta"><span aria-hidden="true">?</span></button>`).join('')}</div><div id="result" class="result" role="status" aria-live="polite">0 de ${items.length} parejas</div><div class="exercise-actions"><button type="button" class="reset" id="reset-game">Volver a empezar</button><button type="button" class="reveal-solution" id="memory-help" aria-expanded="false">Ver las parejas</button></div><div id="memory-solutions" hidden></div></section>`;
-  let open=[],matches=0,locked=false;const buttons=[...document.querySelectorAll('.memory-card')];
-  buttons.forEach((button,i)=>button.addEventListener('click',()=>{
-    if(locked||button.disabled||open.includes(i))return;
-    const image=cards[i].side==='meaning'?imageFor(items[cards[i].pair]):'';if(image)button.innerHTML=image;else button.textContent=cards[i].text;button.setAttribute('aria-label',cards[i].text);button.classList.add('flipped');open.push(i);
-    if(open.length===2){const [a,b]=open;if(cards[a].pair===cards[b].pair){buttons[a].disabled=true;buttons[b].disabled=true;buttons[a].classList.add('matched');buttons[b].classList.add('matched');open=[];matches++;document.querySelector('#result').textContent=`${matches} de ${items.length} parejas${matches===items.length?' · ¡Actividad completada!':''}`;if(matches===items.length)finishActivity(id,topic,mode);}else{locked=true;document.querySelector('#result').textContent=`${matches} de ${items.length} parejas. No forman pareja; prueba otras tarjetas.`;setTimeout(()=>{for(const index of open){buttons[index].textContent='?';buttons[index].setAttribute('aria-label',`Tarjeta ${index+1}, oculta`);buttons[index].classList.remove('flipped');}open=[];locked=false;},1100);}}
-  }));
-  document.querySelector('#reset-game').addEventListener('click',()=>{document.querySelector('#book-recommendation').replaceChildren();renderMemory(id,topic,mode);});
-  document.querySelector('#memory-help').addEventListener('click',event=>{const el=document.querySelector('#memory-solutions');el.hidden=!el.hidden;event.target.setAttribute('aria-expanded',String(!el.hidden));el.innerHTML=el.hidden?'':`<ul>${items.map(item=>`<li>${escapeHTML(item.answer)} — ${escapeHTML(item.memoryClue)}</li>`).join('')}</ul>`;});
+ const items=[...activityItems(topic,mode),...(topic.memoryExtra||[])],cards=shuffled(items.flatMap((item,i)=>[{pair:i,side:'word',text:item.answer},{pair:i,side:'meaning',text:item.memoryClue}]),7);
+ const stage=document.querySelector('#exercise-stage');
+ stage.innerHTML=`<section class="puzzle-panel" id="memory-board" aria-busy="true"><p class="memory-note">Empareja las ${items.length} palabras con sus imágenes o significados. Una tarjeta muestra la palabra y la otra, su pareja.</p><p id="memory-loading" role="status">Cargando las imágenes…</p><div class="memory-grid">${cards.map((card,i)=>`<button class="memory-card" type="button" data-card="${i}" disabled aria-label="Tarjeta ${i+1}, oculta"><span class="memory-back" aria-hidden="true">?</span><span class="memory-front" hidden>${card.side==='meaning'?(imageFor(items[card.pair],true)||escapeHTML(card.text)):`<span lang="${languages[id].htmlLang}">${escapeHTML(card.text)}</span>`}</span></button>`).join('')}</div><div id="result" class="result" role="status" aria-live="polite">0 de ${items.length} parejas</div><div class="exercise-actions"><button type="button" class="reset" id="reset-game">Volver a empezar</button><button type="button" class="reveal-solution" id="memory-help" aria-expanded="false">Ver las parejas</button></div><div id="memory-solutions" hidden></div></section>`;
+ let open=[],matches=0,locked=false;const buttons=[...stage.querySelectorAll('.memory-card')];
+ const pictures=[...stage.querySelectorAll('img')];
+ Promise.all(pictures.map(img=>new Promise(resolve=>{
+  const ready=()=>{if(!img.naturalWidth)img.replaceWith(document.createTextNode(img.alt));resolve();};
+  if(img.complete)ready();else{img.addEventListener('load',ready,{once:true});img.addEventListener('error',ready,{once:true});}
+ }))).then(()=>{if(!stage.contains(buttons[0]))return;buttons.forEach(b=>b.disabled=false);stage.querySelector('#memory-board').setAttribute('aria-busy','false');stage.querySelector('#memory-loading').remove();});
+ const close=index=>{const button=buttons[index];button.querySelector('.memory-front').hidden=true;button.querySelector('.memory-back').hidden=false;button.setAttribute('aria-label',lessonText(`Tarjeta ${index+1}, oculta`,id));button.classList.remove('flipped');};
+ buttons.forEach((button,i)=>button.addEventListener('click',()=>{
+  if(locked||button.disabled||open.includes(i))return;
+  button.querySelector('.memory-front').hidden=false;button.querySelector('.memory-back').hidden=true;button.setAttribute('aria-label',cards[i].text);button.classList.add('flipped');open.push(i);
+  if(open.length!==2)return;
+  const [a,b]=open;recordPractice({checks:1});
+  if(cards[a].pair===cards[b].pair){buttons[a].disabled=true;buttons[b].disabled=true;buttons[a].classList.add('matched');buttons[b].classList.add('matched');open=[];matches++;stage.querySelector('#result').textContent=`${matches} de ${items.length} parejas${matches===items.length?' · ¡Actividad completada!':''}`;if(matches===items.length)finishActivity(id,topic,mode);}
+  else{locked=true;recordPractice({memoryMisses:1});stage.querySelector('#result').textContent=`${matches} de ${items.length} parejas. No forman pareja; prueba otras tarjetas.`;setTimeout(()=>{if(!stage.contains(buttons[0]))return;open.forEach(close);open=[];locked=false;},1100);}
+ }));
+ stage.querySelector('#reset-game').addEventListener('click',()=>{document.querySelector('#book-recommendation').replaceChildren();renderMemory(id,topic,mode);});
+ stage.querySelector('#memory-help').addEventListener('click',event=>{const el=stage.querySelector('#memory-solutions');if(el.hidden)recordPractice({solutions:1});el.hidden=!el.hidden;event.target.setAttribute('aria-expanded',String(!el.hidden));el.innerHTML=el.hidden?'':`<ul>${items.map(item=>`<li>${escapeHTML(item.answer)} — ${escapeHTML(item.memoryClue)}</li>`).join('')}</ul>`;});
 }
 function makeWordSearch(items) {
   const words=items.map(item=>puzzleWord(item.answer)),size=Math.max(10,...words.map(w=>w.length+1));
@@ -216,12 +278,12 @@ function renderWordSearch(id,topic,mode) {
     const cells=valid?Array.from({length:length+1},(_,k)=>({r:first.r+Math.sign(dr)*k,c:first.c+Math.sign(dc)*k})):[];
     const text=cells.map(p=>puzzle.grid[p.r][p.c]).join('');const index=puzzle.words.findIndex(word=>word===text||word===Array.from(text).reverse().join(''));
     clearSelection();first=null;
-    if(index<0){document.querySelector('#puzzle-feedback').textContent='Revisa tu selección. Puedes intentarlo otra vez.';return;}
+    if(index<0){recordPractice({checks:1,errors:1});document.querySelector('#puzzle-feedback').textContent='Revisa tu selección. Puedes intentarlo otra vez.';return;}
     if(found.has(index)){document.querySelector('#puzzle-feedback').textContent='Esa palabra ya está encontrada. Busca otra.';return;}
-    found.add(index);cells.forEach(p=>grid.querySelector(`[data-r="${p.r}"][data-c="${p.c}"]`).classList.add('found'));document.querySelector(`#clue-${index} .found-label`).textContent=`✓ ${items[index].answer}`;document.querySelector('#result').textContent=`${found.size} de ${items.length} palabras encontradas${found.size===items.length?' · ¡Actividad completada!':''}`;if(found.size===items.length)finishActivity(id,topic,mode);
+    recordPractice({checks:1});found.add(index);cells.forEach(p=>grid.querySelector(`[data-r="${p.r}"][data-c="${p.c}"]`).classList.add('found'));document.querySelector(`#clue-${index} .found-label`).textContent=`✓ ${items[index].answer}`;document.querySelector('#result').textContent=`${found.size} de ${items.length} palabras encontradas${found.size===items.length?' · ¡Actividad completada!':''}`;if(found.size===items.length)finishActivity(id,topic,mode);
   });
   document.querySelector('#reset-game').addEventListener('click',()=>{document.querySelector('#book-recommendation').replaceChildren();renderWordSearch(id,topic,mode);});
-  document.querySelector('#puzzle-help').addEventListener('click',event=>{const el=document.querySelector('#puzzle-solution');el.hidden=!el.hidden;event.target.setAttribute('aria-expanded',String(!el.hidden));el.innerHTML=el.hidden?'':`<ul>${puzzle.placements.map((cells,i)=>`<li>${escapeHTML(items[i].answer)}: fila ${cells[0].r+1}, columna ${cells[0].c+1} → fila ${cells.at(-1).r+1}, columna ${cells.at(-1).c+1}.</li>`).join('')}</ul>`;});
+  document.querySelector('#puzzle-help').addEventListener('click',event=>{const el=document.querySelector('#puzzle-solution');if(el.hidden)recordPractice({solutions:1});el.hidden=!el.hidden;event.target.setAttribute('aria-expanded',String(!el.hidden));el.innerHTML=el.hidden?'':`<ul>${puzzle.placements.map((cells,i)=>`<li>${escapeHTML(items[i].answer)}: fila ${cells[0].r+1}, columna ${cells[0].c+1} → fila ${cells.at(-1).r+1}, columna ${cells.at(-1).c+1}.</li>`).join('')}</ul>`;});
 }
 function makeCrossword(items) {
   const size=31,grid=Array.from({length:size},()=>Array(size).fill('')),placements=[];
@@ -231,7 +293,11 @@ function makeCrossword(items) {
     if(r<1||c<1||r+dr*(word.length-1)>=size-1||c+dc*(word.length-1)>=size-1)return false;
     if(grid[r-dr][c-dc]||grid[r+dr*word.length][c+dc*word.length])return false;
     for(let k=0;k<word.length;k++){const y=r+dr*k,x=c+dc*k,existing=grid[y][x];if(existing&&existing!==word[k])return false;
-      if(existing)crossings++;else if((dr===0&&(grid[y-1][x]||grid[y+1][x]))||(dc===0&&(grid[y][x-1]||grid[y][x+1])))return false;
+      if(existing){
+        // A crossing must be perpendicular; two words cannot share a stretch of letters.
+        if(placements.some(p=>p.dr===dr&&(dr===0?p.r===y&&x>=p.c&&x<p.c+p.word.length:p.c===x&&y>=p.r&&y<p.r+p.word.length)))return false;
+        crossings++;
+      }else if((dr===0&&(grid[y-1][x]||grid[y+1][x]))||(dc===0&&(grid[y][x-1]||grid[y][x+1])))return false;
     }return crossings>0;
   }
   const first=words.shift(),startC=Math.floor((size-first.word.length)/2);Array.from(first.word).forEach((l,k)=>grid[15][startC+k]=l);placements.push({...first,r:15,c:startC,dr:0,dc:1});
@@ -260,9 +326,42 @@ function makeCrossword(items) {
   return {grid: grid.slice(minR,maxR+1).map(row=>row.slice(minC,maxC+1)),placements:placements.map(p=>({...p,r:p.r-minR,c:p.c-minC})).sort((a,b)=>a.index-b.index)};
 }
 function renderCrossword(id,topic,mode) {
-  const items=activityItems(topic,mode),puzzle=makeCrossword(items),numbers=new Map();puzzle.placements.forEach((p,i)=>numbers.set(`${p.r},${p.c}`,[numbers.get(`${p.r},${p.c}`),i+1].filter(Boolean).join(",")));
-  document.querySelector('#exercise-stage').innerHTML=`<form class="puzzle-panel" id="crossword-form"><div class="grid-scroll"><div class="crossword-grid" style="--grid-size:${puzzle.grid[0].length}" aria-label="Crucigrama">${puzzle.grid.flatMap((row,r)=>row.map((letter,c)=>letter?`<label class="crossword-cell"><span>${numbers.get(`${r},${c}`)||''}</span><input type="text" maxlength="1" autocomplete="off" spellcheck="false" data-r="${r}" data-c="${c}" aria-label="Fila ${r+1}, columna ${c+1}"></label>`:'<span class="crossword-empty"></span>')).join('')}</div></div><ol class="crossword-clues">${puzzle.placements.map((p,i)=>`<li>${imageFor(items[i])}${escapeHTML(items[i].crosswordClue)} <small>(${p.dr?'Vertical':'Horizontal'}, ${p.word.length} letras)</small><div class="feedback" id="feedback-${i}" aria-live="polite"></div></li>`).join('')}</ol><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
-  const form=document.querySelector('#crossword-form');const clear=()=>{form.querySelectorAll('.feedback').forEach(el=>el.replaceChildren());document.querySelector('#result').textContent='';document.querySelector('#book-recommendation').replaceChildren();};
-  form.addEventListener('input',event=>{event.target.value=puzzleWord(event.target.value).slice(0,1);clear();});form.addEventListener('reset',clear);
-  form.addEventListener('submit',event=>{event.preventDefault();let score=0;puzzle.placements.forEach((p,i)=>{const text=Array.from(p.word,(_,k)=>form.querySelector(`[data-r="${p.r+p.dr*k}"][data-c="${p.c+p.dc*k}"]`).value).join('');const correct=puzzleWord(text)===p.word;if(correct)score++;feedbackFor(document.querySelector(`#feedback-${i}`),correct,[items[i].answer]);});document.querySelector('#result').textContent=`${score} de ${items.length} palabras correctas. ${score===items.length?'¡Actividad completada!':'Revisa las casillas o abre una solución si la necesitas.'}`;if(score===items.length)finishActivity(id,topic,mode);});
+ const items=activityItems(topic,mode),puzzle=makeCrossword(items),numbers=new Map();
+ const starts=[...new Set(puzzle.placements.map(p=>`${p.r},${p.c}`))].sort((a,b)=>{const [ar,ac]=a.split(',').map(Number),[br,bc]=b.split(',').map(Number);return ar-br||ac-bc;});
+ starts.forEach((key,i)=>numbers.set(key,i+1));
+ const ordered=puzzle.placements.map((p,i)=>({p,i})).sort((a,b)=>numbers.get(`${a.p.r},${a.p.c}`)-numbers.get(`${b.p.r},${b.p.c}`));
+ document.querySelector('#exercise-stage').innerHTML=`<form class="puzzle-panel" id="crossword-form"><p class="crossword-status" aria-live="polite">Elige una pista</p><div class="grid-scroll"><div class="crossword-grid" style="--grid-size:${puzzle.grid[0].length}" aria-label="Crucigrama">${puzzle.grid.flatMap((row,r)=>row.map((letter,c)=>letter?`<label class="crossword-cell"><span>${numbers.get(`${r},${c}`)||''}</span><input type="text" maxlength="1" autocomplete="off" spellcheck="false" lang="${languages[id].htmlLang}" data-r="${r}" data-c="${c}" aria-label="Fila ${r+1}, columna ${c+1}"></label>`:'<span class="crossword-empty" aria-hidden="true"></span>')).join('')}</div></div><div class="crossword-clue-groups">${[0,1].map(dr=>`<section><h3>${dr?'Vertical':'Horizontal'}</h3><ul class="crossword-clues">${ordered.flatMap(({p,i})=>p.dr!==dr?[]:[`<li><button type="button" class="crossword-clue" data-word="${i}" aria-pressed="false"><strong>${numbers.get(`${p.r},${p.c}`)}.</strong>${imageFor(items[i])}<span>${escapeHTML(items[i].crosswordClue)} <small>(${p.word.length} letras)</small></span></button><div class="feedback" id="feedback-${i}" aria-live="polite"></div></li>`]).join('')}</ul></section>`).join('')}</div><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
+ const form=document.querySelector('#crossword-form');let selected=0;
+ const cellsFor=p=>Array.from(p.word,(_,k)=>form.querySelector(`[data-r="${p.r+p.dr*k}"][data-c="${p.c+p.dc*k}"]`));
+ const select=(index,focus=false)=>{
+  selected=index;const p=puzzle.placements[index];
+  form.querySelectorAll('.crossword-cell').forEach(cell=>cell.classList.remove('word-active'));
+  cellsFor(p).forEach(cell=>cell.parentElement.classList.add('word-active'));
+  form.querySelectorAll('[data-word]').forEach(clue=>clue.setAttribute('aria-pressed',String(Number(clue.dataset.word)===index)));
+  form.querySelector('.crossword-status').textContent=`${numbers.get(`${p.r},${p.c}`)} · ${lessonText(p.dr?'Vertical':'Horizontal',id)} · ${p.word.length} ${id==='ingles'?'letters':id==='ruso'?'букв':'letras'}`;
+  if(focus)(cellsFor(p).find(cell=>!cell.value)||cellsFor(p)[0]).focus();
+ };
+ form.querySelectorAll('[data-word]').forEach(button=>button.onclick=()=>select(Number(button.dataset.word),true));
+ const clear=()=>{form.querySelectorAll('.feedback').forEach(el=>el.replaceChildren());form.querySelector('#result').textContent='';document.querySelector('#book-recommendation').replaceChildren();};
+ form.addEventListener('focusin',event=>{if(!event.target.matches('.crossword-cell input'))return;const index=puzzle.placements.findIndex((p,i)=>i===selected&&cellsFor(p).includes(event.target));if(index<0){const candidate=puzzle.placements.findIndex(p=>cellsFor(p).includes(event.target));if(candidate>=0)select(candidate);}});
+ form.addEventListener('input',event=>{
+  if(!event.target.matches('.crossword-cell input'))return;
+  event.target.value=puzzleWord(event.target.value).slice(0,1);clear();
+  const cells=cellsFor(puzzle.placements[selected]),at=cells.indexOf(event.target);if(event.target.value&&at>=0&&at<cells.length-1)cells[at+1].focus();
+ });
+ form.addEventListener('keydown',event=>{
+  const input=event.target;if(!input.matches('.crossword-cell input'))return;
+  const delta={ArrowRight:[0,1],ArrowLeft:[0,-1],ArrowDown:[1,0],ArrowUp:[-1,0]}[event.key];
+  if(delta){event.preventDefault();form.querySelector(`[data-r="${Number(input.dataset.r)+delta[0]}"][data-c="${Number(input.dataset.c)+delta[1]}"]`)?.focus();}
+  if(event.key==='Backspace'&&!input.value){const cells=cellsFor(puzzle.placements[selected]),i=cells.indexOf(input);if(i>0)cells[i-1].focus();}
+ });
+ form.addEventListener('reset',()=>{clear();select(0);});
+ form.addEventListener('submit',event=>{
+  event.preventDefault();let score=0;
+  puzzle.placements.forEach((p,i)=>{const text=cellsFor(p).map(cell=>cell.value).join('');const correct=puzzleWord(text)===p.word;if(correct)score++;feedbackFor(form.querySelector(`#feedback-${i}`),correct,[items[i].answer]);});
+  recordPractice({checks:1,errors:items.length-score});
+  form.querySelector('#result').textContent=`${score} de ${items.length} palabras correctas. ${score===items.length?'¡Actividad completada!':'Revisa las casillas o abre una solución si la necesitas.'}`;
+  if(score===items.length)finishActivity(id,topic,mode);
+ });
+ select(0);
 }

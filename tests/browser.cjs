@@ -25,6 +25,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
           const format = topic.formats[mode - 1];
           await page.goto(`${base}/#/${id}/actividades/${topic.id}/${mode}`);
           await page.waitForFunction(({ title, format, mode }) => document.querySelector('.exercise-heading .eyebrow')?.textContent.includes(title) && document.querySelector('#exercise-stage')?.children.length > 0 && document.querySelector('.exercise-steps [aria-current]')?.textContent.trim().startsWith(String(mode)), { title: topic.title, format, mode });
+          if(format==='memory')await page.locator('#memory-board[aria-busy="false"]').waitFor();
           await page.evaluate(({ id, topic, mode, format }) => {
             const items = topic.variants ? topic.variants[String(mode)] : topic.items;
             if (format === 'wordsearch') {
@@ -51,12 +52,13 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
                 else if (format === 'order') {
                   const bank = document.querySelector(`.word-bank[data-question="${i}"]`);
                   correct.split(' ').forEach(word => [...bank.querySelectorAll('button')].find(b => !b.disabled && b.dataset.word === word).click());
-                } else field.value = correct;
+                } else if(item.parts){const fields=[...document.querySelectorAll(`.colour-part[data-question="${i}"]`)];fields.forEach((field,j)=>{field.value=item.parts[j][0];field.dispatchEvent(new Event('input',{bubbles:true}));});}
+                else field.value = correct;
               });
               document.querySelector('#exercise').requestSubmit();
             }
           }, { id, topic, mode, format });
-          assert.match(await page.locator('#result').textContent(), /Actividad completada/i, `${id}/${topic.id}/${format}`);
+          assert.match(await page.locator('#result').textContent(), /Actividad completada|Activity complete|Задание выполнено/i, `${id}/${topic.id}/${format}`);
           await page.locator('#book-recommendation .related-book').waitFor();
           count++;
         }
@@ -81,7 +83,7 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
     assert.equal(await page.locator('.solution:visible').count(), 0);
     await page.locator('.reveal-solution').first().click();
     assert.equal(await page.locator('.solution:visible').count(), 1);
-    assert.match(await page.locator('.solution:visible').textContent(), /estudio/);
+    assert.match(await page.locator('.solution:visible').textContent(), new RegExp(curriculum.espanol[0].variants['5'][0].answer));
     await page.locator('[name="q0"]').fill('estudio');
     assert.equal(await page.locator('.solution:visible').count(), 0);
     await page.getByRole('button', { name: 'Volver a empezar', exact: true }).click();
