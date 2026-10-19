@@ -32,3 +32,5 @@ Las variantes regionales, como remera, playera, pollera, chamarra o pants, está
 La secuencia difiere de las de animales, frutas, casa y rutina. Las preguntas y los grupos cambian entre actividades. Las soluciones solo se muestran al pedirlas. El progreso de las actividades ilustradas usa la revisión `ilustrada-v2`, para no dar por hechos ejercicios nuevos por haber completado las versiones antiguas; los registros anteriores se conservan sin borrar.
 
 Los dibujos pequeños se muestran completos, con `object-fit: contain`, en marcos contenidos de hasta 160 × 155 píxeles para evitar ampliarlos innecesariamente. Las tarjetas de memory y las pistas de sopa de letras usan tamaños menores.
+
+La actividad 3 ahora es «Prepara la maleta»: relacionar seis pedidos escritos con sus imágenes mediante pulsaciones, arrastre o teclado. La revisión de esa actividad es `pedidos-v3`; las otras cuatro mantienen `ilustrada-v2` y conservan su progreso.

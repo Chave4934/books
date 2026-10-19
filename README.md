@@ -106,7 +106,7 @@ Las ilustraciones de animales mostradas en la web usan ahora las versiones de ma
 
 ## Las frutas, en lugar de La comida
 
-Los doce originales de `Frutas.rar` están en `assets/frutas/`. Este tema reemplaza comida en español, inglés y ruso, manteniendo diez temas y cincuenta actividades por idioma. Incluye letras que faltan, tarjetas que se voltean, un crucigrama de seis palabras con imágenes, una cesta que funciona con arrastrar y soltar, pulsaciones, teclado o selectores, y frases para completar.
+Los doce originales de `Frutas.rar` están en `assets/frutas/`. Este tema reemplaza comida en español, inglés y ruso, manteniendo diez temas y cincuenta actividades por idioma. Incluye letras que faltan, tarjetas que se voltean, un crucigrama de seis palabras con imágenes, una cesta que funciona con arrastrar y soltar, pulsaciones, o teclado, y frases para completar.
 
 Cada ejercicio usa su propio grupo de frutas. El inventario, los nombres en los tres idiomas y la distribución están en `assets/frutas/README.md`. Los enlaces antiguos de comida llevan a frutas. Sus actividades se guardan con una clave nueva para no dar por completados ejercicios que el alumno no ha hecho.
 
@@ -118,7 +118,7 @@ NODE_PATH=/tmp/chavebooks-check/node_modules node tests/fruits.cjs
 
 ## La ropa con doce ilustraciones
 
-Los doce originales de `Ropa.rar` están en `assets/ropa/`, con nombres, variantes y distribución documentados en `assets/ropa/README.md`. Las cinco actividades son elegir entre tres nombres, sopa de letras, tarjetas que se voltean, frases con imágenes y un memory de 24 tarjetas. Esta secuencia es diferente de las de los demás temas de vocabulario.
+Los doce originales de `Ropa.rar` están en `assets/ropa/`, con nombres, variantes y distribución documentados en `assets/ropa/README.md`. Las cinco actividades son elegir entre tres nombres, sopa de letras, pedidos ilustrados para preparar la maleta, frases con imágenes y un memory de 24 tarjetas. Esta secuencia es diferente de las de los demás temas de vocabulario.
 
 La ropa ilustrada tiene su propia revisión de progreso: completar los ejercicios antiguos no marca automáticamente como hechas estas actividades nuevas. Los registros previos y el progreso de los demás temas se conservan.
 
@@ -140,11 +140,11 @@ El tema que antes era «La rutina diaria» mantiene la ruta `#/espanol/actividad
 
 La bienvenida se ha reducido y el ruso tiene un tono más morado. «Siguiente actividad» aparece antes del libro. Al completar las cinco actividades se ofrece una felicitación y un enlace destacado a `#/espanol/actividades/<tema>/resumen`, con un informe de práctica, otros temas y un libro relacionado.
 
-Los menús generales permanecen en español. Las consignas, títulos de temas y pistas de inglés/ruso están en el idioma de estudio; la consigna principal tiene ayuda en español desplegable. `localization.js` mantiene los textos de interfaz y sus patrones numéricos; las frases y pistas educativas se escriben directamente en el idioma correspondiente en `activities.js`. Los textos dinámicos de la interfaz se traducen al renderizarse sin alterar valores de respuestas ni las ayudas marcadas `data-no-translate`.
+Los menús generales permanecen en español. Las consignas, títulos de temas y pistas de inglés/ruso están en el idioma de estudio; la consigna principal tiene ayudas desplegables en los otros dos idiomas, con los enlaces escritos en la lengua de la traducción. `localization.js` mantiene los textos de interfaz y sus patrones numéricos; las frases y pistas educativas se escriben directamente en el idioma correspondiente en `activities.js`. Los textos dinámicos de la interfaz se traducen al renderizarse sin alterar valores de respuestas ni las ayudas marcadas `data-no-translate`.
 
 Cada tema gramatical de verbos usa 25 verbos distintos, cinco por actividad. La segunda actividad contiene cinco ilustraciones de acciones de la autora; el relato del tercer ejercicio usa un grupo nuevo de verbos. Los temas rusos no verbales también cambian de sustantivos. La revisión `practica-v3` conserva el historial previo sin marcar como completado el contenido nuevo. El futuro inglés conserva la ruta `future` y practica `am/is/are going to`.
 
-La sandía tiene dos campos largos unidos por «y», «and» o «и». Los huecos de frases se muestran como una línea larga. Las pistas de letras que faltan usan casillas, diferenciadas de los huecos para palabras completas. La cesta de frutas relaciona pedidos escritos con fotografías sin etiquetas de respuesta; admite ratón, arrastre, teclado y selectores.
+La sandía tiene dos campos largos unidos por «y», «and» o «и». Los huecos de frases se muestran como una línea larga. Las pistas de letras que faltan usan rayitas individuales, diferenciadas de los huecos largos para palabras completas. La cesta de frutas relaciona pedidos escritos con fotografías sin etiquetas de respuesta; admite ratón, arrastre y teclado.
 
 Los crucigramas solo cruzan palabras perpendicularmente. La numeración sigue el orden de lectura; las pistas se agrupan y ordenan por horizontal/vertical. Elegir una pista resalta su palabra; escribir avanza a la siguiente casilla y las flechas permiten moverse. Las vocales con tilde se aceptan y se normalizan; ñ y й se conservan.
 
@@ -153,3 +153,15 @@ Los memory insertan y precargan las imágenes con carga inmediata antes de activ
 `chavebooks-progress-v1` conserva las actividades completadas. `chavebooks-attempts-v1` guarda solo contadores locales de comprobaciones, respuestas incorrectas, consultas de soluciones y parejas fallidas; no almacena las respuestas escritas ni las envía. El resumen no inventa notas para actividades antiguas sin datos. Los controles de reinicio por tema o idioma piden confirmación dentro de la página y borran únicamente el ámbito seleccionado. Reiniciar un formulario limpia sus respuestas; reiniciar el progreso del tema también borra sus contadores e historial local.
 
 Verificación de estos recorridos: `NODE_PATH=/tmp/chavebooks-check/node_modules node tests/review.cjs`. Se conserva la prueba completa de 150 actividades en `tests/browser.cjs` y las pruebas específicas de los cinco temas ilustrados.
+
+## Ajustes de consignas y selección de imágenes
+
+Los marcadores temporales varían dentro de cada actividad y son compatibles con el tiempo practicado en los tres idiomas. Los distractores gramaticales se mantienen en ese mismo tiempo y verbo: otras personas o errores de formación, según el idioma. Las preguntas de opción múltiple de verbos ofrecen tres opciones. En inglés, donde el pasado simple no varía por persona, los distractores practican errores de formación u ortografía sin introducir otro tiempo.
+
+Las ayudas de las actividades se ofrecen en las dos lenguas distintas a la que se estudia: «Ver traducción en español», «Help in English» y «Смотреть перевод на русском». Las traducciones nombran el idioma estudiado aunque la ayuda esté escrita en otra lengua.
+
+Las frases de colores y el último ejercicio de frutas presentan dos puntos y los campos para responder, sin líneas duplicadas. Las letras que faltan tienen una raya corta cada una. Las miniaturas de cabecera tienen 80 × 80 px y los animales de los ejercicios usan el mismo tamaño moderado que las frutas.
+
+La cesta de frutas y la nueva actividad 3 de ropa («Prepara la maleta») se resuelven con imágenes: pulsar tarjeta y pedido, arrastrar o usar el teclado. No hay desplegables con las respuestas. Al colocar una tarjeta aparece su imagen. Solo la actividad 3 de ropa estrena una clave de progreso (`activityRevisions`); las demás conservan sus registros.
+
+Verificación específica: `NODE_PATH=/tmp/chavebooks-check/node_modules node tests/polish.cjs`.

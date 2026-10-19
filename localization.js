@@ -856,11 +856,18 @@ LESSON_STRINGS.set('Hueco', ['Gap', 'Пропуск']);
 LESSON_STRINGS.set('Las cinco actividades', ['The five activities', 'Пять заданий']);
 LESSON_STRINGS.set('Continuar practicando', ['Keep practising', 'Продолжить практику']);
 LESSON_STRINGS.set('Nombre con letras que faltan', ['Name with missing letters', 'Название с пропущенными буквами']);
+LESSON_STRINGS.set('Lee cada pedido y elige la imagen que corresponde. Pulsa una tarjeta y después su pedido, o arrástrala.', ['Read each order and choose its picture. Click a card and then its order, or drag it there.', 'Прочитай заказ и выбери подходящую картинку. Нажми на карточку, затем на заказ или перетащи её.']);
+LESSON_STRINGS.set('Prepara la maleta', ['Pack your suitcase', 'Собери чемодан']);
+LESSON_STRINGS.set('Tarjetas ilustradas', ['Picture cards', 'Карточки с картинками']);
+LESSON_STRINGS.set('Elige una tarjeta y después su pedido. También puedes arrastrar.', ['Choose a picture card, then its order. You can also drag it.', 'Выбери карточку, затем её заказ. Можно также перетаскивать карточки.']);
+LESSON_STRINGS.set('Elige primero una tarjeta.', ['Choose a card first.', 'Сначала выбери карточку.']);
 function lessonText(value,id=currentLanguage) {
  if(id==='espanol'||!id)return value;
  const col=id==='ingles'?0:1,trimmed=value.trim(),pair=LESSON_STRINGS.get(trimmed);
  if(pair)return value.replace(trimmed,pair[col]);
  const rules=[
+ [/^VOCABULARIO · (.*)$/,level=>[`VOCABULARY · ${level}`,`СЛОВАРНЫЙ ЗАПАС · ${level}`]],
+ [/^GRAMÁTICA · (.*)$/,level=>[`GRAMMAR · ${level}`,`ГРАММАТИКА · ${level}`]],
  [/^La frase es (correcta|incorrecta)\. Forma correcta: (.*)$/, (state,x)=>[`The sentence is ${state==='correcta'?'correct':'incorrect'}. Correct form: ${x}`,`Предложение ${state==='correcta'?'правильное':'неправильное'}. Правильная форма: ${x}`]],
  [/^(A[12]|B[12]) · Sin prisas$/,x=>[`${x} · At your own pace`,`${x} · В своём темпе`]],
  [/^(\d+) \/ 50 completadas$/,n=>[`${n} / 50 complete`,`${n} / 50 выполнено`]],
@@ -888,7 +895,7 @@ function lessonText(value,id=currentLanguage) {
  [/^ACTIVIDAD 0(\d+)(.*)$/, (n,x)=>[`ACTIVITY 0${n}${x?' · COMPLETED':''}`,`ЗАДАНИЕ 0${n}${x?' · ВЫПОЛНЕНО':''}`]],
  [/^5 actividades · (\d+) completadas$/,n=>[`5 activities · ${n} complete`,`5 заданий · выполнено: ${n}`]],
  [/^10 temas · 50 actividades$/,()=>['10 topics · 50 activities','10 тем · 50 заданий']],
- [/^Mira cada ilustración y escribe la acción en infinitivo en (.*)\.$/,()=>['Look at each picture and write the action in English. Use the infinitive, with or without “to”.','Посмотри на картинку и напиши действие по-русски в неопределённой форме.']],
+ [/^Mira cada ilustración y escribe la acción en infinitivo en (.*)\.$/,name=>[`Look at each picture and write the action in ${{español:'Spanish',inglés:'English',ruso:'Russian'}[name]}. Use the infinitive${name==='inglés'?', with or without “to”':''}.`,`Посмотри на картинку и напиши действие ${{español:'по-испански',inglés:'по-английски',ruso:'по-русски'}[name]} в неопределённой форме.`]],
  [/^Respuestas por revisar: (\d+)$/,n=>[`Answers to review: ${n}`,`Ответов для повторения: ${n}`]],
  [/^Comprobaciones: (\d+)$/,n=>[`Checks: ${n}`,`Проверок: ${n}`]],
  [/^Soluciones consultadas: (\d+)$/,n=>[`Answers revealed: ${n}`,`Открыто ответов: ${n}`]],

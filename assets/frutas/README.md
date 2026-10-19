@@ -32,3 +32,5 @@ Los dibujos recibidos tienen aproximadamente 100–186 píxeles de ancho. Se mue
 El tema sustituye «La comida». Las rutas nuevas usan `#/espanol/actividades/frutas` (o inglés/ruso). Los enlaces guardados de `comida` se redirigen al tema nuevo; el progreso de comida no se atribuye a las actividades nuevas de frutas.
 
 La cesta presenta ahora pedidos escritos y seis tarjetas con imágenes sin nombre, para practicar la relación entre palabra e ilustración. El crucigrama numera los inicios en orden de lectura, separa las pistas horizontales y verticales y solo permite cruces perpendiculares. Las pistas están en el idioma de estudio.
+
+La cesta no ofrece desplegables: se elige la imagen y se coloca en el pedido con ratón, arrastre o teclado. Los campos colocados muestran la tarjeta elegida. La última actividad usa dos puntos sin huecos duplicados.

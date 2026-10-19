@@ -4,7 +4,7 @@ const FORMAT_INFO = {
   actionstory: ['Un día en imágenes', 'Completa esta historia en presente. Cada dibujo sustituye a la pista del verbo: escribe solo la forma que falta y fíjate en quién realiza la acción.'],
   picturechoice: ['Elige el nombre', 'Mira la ilustración y elige su nombre entre las tres opciones.'],
   fruitletters: ['Completa las letras', 'Mira la fruta, completa mentalmente las letras que faltan y escribe el nombre entero.'],
-  basket: ['Prepara la cesta', 'Lee cada pedido y coloca la tarjeta de la fruta que se pide. Puedes pulsar, arrastrar o usar el selector.'],
+  basket: ['Prepara la cesta', 'Lee cada pedido y elige la imagen que corresponde. Pulsa una tarjeta y después su pedido, o arrástrala.'],
   choice: ['Elige la forma correcta', 'Elige la opción que completa cada frase.'],
   write: ['Completa las frases', 'Escribe solo la forma que falta. Entre paréntesis encontrarás el verbo o la palabra base.'],
   text: ['Un pequeño texto', 'Completa los huecos de esta historia. Usa la palabra base entre paréntesis.'],
@@ -23,7 +23,7 @@ const FORMAT_INFO = {
 };
 let completed = {};
 try { const saved = JSON.parse(localStorage.getItem('chavebooks-progress-v1') || '{}'); if(saved && typeof saved === 'object' && !Array.isArray(saved)) completed=saved; } catch {}
-function activityKey(id,topic,mode) { const revision=window.CURRICULUM?.[id]?.find(t=>t.id===topic)?.revision;return revision?`${id}/${topic}/${revision}/${mode}`:`${id}/${topic}/${mode}`; }
+function activityKey(id,topic,mode) { const entry=window.CURRICULUM?.[id]?.find(t=>t.id===topic),revision=entry?.activityRevisions?.[String(mode)]||entry?.revision;return revision?`${id}/${topic}/${revision}/${mode}`:`${id}/${topic}/${mode}`; }
 function isDone(id,topic,mode) { return completed[activityKey(id,topic,mode)]===true; }
 function topicDone(id,topic) { return [1,2,3,4,5].filter(m=>isDone(id,topic,m)).length; }
 function topicPath(id,topic) { return `#/${id}/actividades/${topic}`; }
@@ -54,6 +54,7 @@ function imageFor(item,small=false) {
 }
 function formatInfo(topic,mode) {
   const format=activityFormat(topic,mode);
+  if(format==='basket'&&topic.id==='ropa')return ['Prepara la maleta',FORMAT_INFO.basket[1]];
   if(format==='flashcards'&&topic.id==='colores')return ['Tu caja de colores','Descubre los doce colores. Mira cada pintura, escribe su nombre y, si lo necesitas, voltea la tarjeta para aprenderlo.'];
   if(format==='identify'&&topic.id==='rutina')return ['¿Qué está haciendo?',`Mira cada ilustración y escribe la acción en infinitivo en ${languages[currentLanguage].name.toLowerCase()}.`];
   if(format==='identify'&&activityItems(topic,mode).every(item=>mediaPath('vocabulary',item.asset)))return ['Mira y escribe','Mira cada ilustración y escribe la palabra. Puedes abrir una pista si la necesitas.'];
@@ -115,7 +116,16 @@ function renderExerciseShell(id,topic,mode) {
  activeLesson={id,topic,mode};
  const [title,instruction]=formatInfo(topic,mode),code=languages[id].htmlLang;
  document.querySelector('#section-content').setAttribute('lang',code);
- const help=id==='espanol'?'':`<details class="instruction-help" data-no-translate lang="es"><summary>${id==='ingles'?'Spanish help':'Помощь на испанском'}</summary><p>${escapeHTML(instruction)}</p></details>`;
+ const helpTargets=['espanol','ingles','ruso'].filter(target=>target!==id);
+ const help=`<div class="instruction-helps">${helpTargets.map(target=>{
+  const label={espanol:'Ver traducción en español',ingles:'Help in English',ruso:'Смотреть перевод на русском'}[target];
+  let text=lessonText(instruction,target);
+  // Generic writing instructions must name the language being studied, even in a translation.
+  if(target==='ingles'&&id!=='ingles')text=text.replaceAll('in English',id==='espanol'?'in Spanish':'in Russian');
+  if(target==='ruso'&&id!=='ruso')text=text.replaceAll('по-русски',id==='espanol'?'по-испански':'по-английски');
+  return `<details class="instruction-help" data-no-translate lang="${languages[target].htmlLang}"><summary>${label}</summary><p>${escapeHTML(text)}</p></details>`;
+ }).join('')}</div>`;
+
  document.querySelector('#section-content').innerHTML=`<a class="back topic-back" href="${topicPath(id,topic.id)}">← Las cinco actividades de ${topic.title}</a><div class="exercise-heading"><p class="eyebrow">${topic.title} · ACTIVIDAD ${mode} DE 5</p><h2>${title}</h2><p>${instruction}</p>${help}</div><div class="exercise-steps" aria-label="Las cinco actividades">${topic.formats.map((_,i)=>`<a href="${topicPath(id,topic.id)}/${i+1}" aria-label="Actividad ${i+1}: ${formatInfo(topic,i+1)[0]}" ${mode===i+1?'aria-current="page"':''}>${i+1}${isDone(id,topic.id,i+1)?'<span aria-hidden="true">✓</span>':''}</a>`).join('')}</div><div id="exercise-stage"></div><nav class="exercise-next" aria-label="Continuar practicando"><a href="${topicPath(id,topic.id)}">Ver las cinco actividades</a>${mode<5?`<a class="button dark" href="${topicPath(id,topic.id)}/${mode+1}">Siguiente actividad →</a>`:`<a class="button dark" href="#/${id}/actividades">Elegir otro tema →</a>`}</nav><div id="topic-celebration"></div><div id="book-recommendation"></div>`;
 }
 function finishActivity(id,topic,mode) {
@@ -146,6 +156,7 @@ function feedbackFor(element,correct,answers) {
   if(!correct){const button=document.createElement('button');button.type='button';button.className='reveal-solution';button.textContent='Ver solución';button.setAttribute('aria-expanded','false');const solution=document.createElement('span');solution.className='solution';solution.hidden=true;button.addEventListener('click',()=>{if(solution.hidden)recordPractice({solutions:1});solution.hidden=!solution.hidden;solution.textContent=solution.hidden?'':`Solución: ${answers[0]}`;button.textContent=solution.hidden?'Ver solución':'Ocultar solución';button.setAttribute('aria-expanded',String(!solution.hidden));});element.append(button,solution);}
 }
 function expectedAnswers(topic,mode,item) {return activityFormat(topic,mode)==='order'?[fullSentence(item),...(item.orders||[])]:[item.answer,...(item.aliases||[])];}
+function letterClue(answer){return Array.from(answer).map(letter=>/[aeiouáéíóúаеёиоуыэюя]/i.test(letter)?'<span class="letter-gap" aria-hidden="true"></span>':escapeHTML(letter)).join('');}
 function renderStandard(id,topic,mode) {
   const format=activityFormat(topic,mode),items=activityItems(topic,mode),vocabulary=topic.kind==='vocabulary',lang=languages[id].htmlLang;
   const sequenceHours=['07:00','07:15','07:45','09:00','22:00'];
@@ -159,10 +170,10 @@ function renderStandard(id,topic,mode) {
       prompt='';control=imageFor(item);
     }else if(format==='fruitletters'){
       prompt='';
-      control=`${imageFor(item)}<p class="scrambled" lang="${lang}" aria-label="Nombre con letras que faltan">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'□'))}</p>`;
+      control=`${imageFor(item)}<p class="scrambled" lang="${lang}" aria-label="Nombre con letras que faltan">${letterClue(item.answer)}</p>`;
     }else if(format==='basket'){
       prompt=escapeHTML(item.orderLabel);
-      control=`<div class="basket-order"><button type="button" class="basket-target" data-question="${i}" aria-label="Colocar fruta en el pedido ${i+1}"><span>Coloca aquí tu elección</span></button><label class="basket-select-label" for="basket-select-${i}">También puedes elegir aquí</label><select class="basket-select" id="basket-select-${i}" data-question="${i}"><option value="">Elige una fruta</option>${shuffled(items,i+2).map(fruit=>`<option value="${escapeHTML(fruit.key)}">${escapeHTML(fruit.answer)}</option>`).join('')}</select><input type="hidden" name="q${i}" id="answer-${i}"></div>`;
+      control=`<div class="basket-order"><button type="button" class="basket-target" data-question="${i}" aria-label="Colocar fruta en el pedido ${i+1}"><span>Coloca aquí tu elección</span></button><input type="hidden" name="q${i}" id="answer-${i}"></div>`;
     }else if(format==='identify'){
       const image=imageFor(item);prompt=image?`Imagen ${i+1}`:item.clue;
       control=image?`<div class="picture-card">${image}<details><summary>Una pista</summary><p>${escapeHTML(item.clue)}</p></details></div>`:'';
@@ -176,11 +187,11 @@ function renderStandard(id,topic,mode) {
     else if(['choice','write','text','letters'].includes(format))prompt=`${escapeHTML(item.prompt)}${topic.id==='plural'?'':` (${escapeHTML(item.hint)})`}`;
     if(topic.kind==='grammar'&&item.asset)control=imageFor(item)+control;
     if(format==='context'&&topic.id==='ropa')control=imageFor(item)+control;
-    if(format==='letters')control+=`<p class="scrambled" lang="${lang}">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'□'))}</p>`;
+    if(format==='letters')control+=`<p class="scrambled" lang="${lang}">${letterClue(item.answer)}</p>`;
     if(format==='colorhunt'){
       control=`<div class="color-hunt-options">${shuffled(topic.items,i+11).map((color,j)=>`<label><input type="radio" name="q${i}" value="${escapeHTML(color.answer)}" required aria-label="${escapeHTML(color.clue)}"><span>${imageFor(color)}</span></label>`).join('')}</div>`;
     }else if(format==='choice'||format==='truefalse'||format==='picturechoice'){
-      const options=format==='truefalse'?[['true',vocabulary?'Verdadero':'Correcta'],['false',vocabulary?'Falso':'Incorrecta']]:format==='picturechoice'?shuffled([item.answer,...shuffled(topic.items.filter(other=>other.key!==item.key),i+31).slice(0,2).map(other=>other.answer)],i+mode).map(option=>[option,option]):shuffled([item.answer,item.wrong],i+mode).map(option=>[option,option]);
+      const options=format==='truefalse'?[['true',vocabulary?'Verdadero':'Correcta'],['false',vocabulary?'Falso':'Incorrecta']]:format==='picturechoice'?shuffled([item.answer,...shuffled(topic.items.filter(other=>other.key!==item.key),i+31).slice(0,2).map(other=>other.answer)],i+mode).map(option=>[option,option]):shuffled(item.options||[item.answer,item.wrong],i+mode).map(option=>[option,option]);
       control+=`<div class="answers">${options.map(([value,text])=>`<label><input type="radio" name="q${i}" value="${escapeHTML(value)}" required><span>${escapeHTML(text)}</span></label>`).join('')}</div>`;
     }else if(format==='match'||format==='sequence')control+=`<select id="answer-${i}" name="q${i}" required aria-labelledby="question-${i}" lang="${lang}"><option value="">Elige una opción</option>${shuffled(items.map(x=>x.answer),i+mode).map(a=>`<option value="${escapeHTML(a)}">${escapeHTML(a)}</option>`).join('')}</select>`;
     else if(format==='order'){
@@ -196,10 +207,12 @@ function renderStandard(id,topic,mode) {
       const join=id==='ingles'?'and':id==='ruso'?'и':'y';
       control+=`<div class="two-colours"><input class="written-answer colour-part" data-question="${i}" data-part="0" type="text" required autocomplete="off" aria-label="Primer color" lang="${lang}"><span>${join}</span><input class="written-answer colour-part" data-question="${i}" data-part="1" type="text" required autocomplete="off" aria-label="Segundo color" lang="${lang}"><input type="hidden" id="answer-${i}" name="q${i}"></div>`;
     }else if(format!=='basket')control+=`<input class="written-answer" id="answer-${i}" name="q${i}" type="text" required autocomplete="off" autocapitalize="off" spellcheck="false" lang="${lang}" aria-labelledby="question-${i}" placeholder="${format==='detective'?'Solo la parte corregida':'Escribe tu respuesta'}">`;
-    prompt=String(prompt||'').replaceAll('___','<span class="inline-gap" aria-label="Hueco"></span>');
+    prompt=String(prompt||'');
+    if(format==='colorcontext'||(format==='context'&&topic.id==='frutas'))prompt=prompt.replace(/\s*___[.!]?/g,'').trim().replace(/[.:]+$/,'')+':';
+    else prompt=prompt.replaceAll('___','<span class="inline-gap" aria-label="Hueco"></span>');
     return {html:`<fieldset class="question"><legend id="question-${i}"><span class="question-number">0${i+1}</span> ${prompt}</legend>${control}<div class="feedback" id="feedback-${i}" aria-live="polite"></div></fieldset>`,answers};
   });
-  const basketBank=format==='basket'?`<section class="basket-bank" aria-label="Tarjetas de frutas"><p>Elige una fruta y después su pedido. También puedes arrastrar.</p><div class="fruit-cards">${shuffled(items,8).map(item=>`<button type="button" class="fruit-card" draggable="true" data-fruit="${escapeHTML(item.key)}" aria-pressed="false">${imageFor(item)}</button>`).join('')}</div><p id="basket-selection" role="status" aria-live="polite">Ninguna tarjeta seleccionada.</p></section>`:'';
+  const basketBank=format==='basket'?`<section class="basket-bank" aria-label="Tarjetas ilustradas"><p>Elige una tarjeta y después su pedido. También puedes arrastrar.</p><div class="fruit-cards">${shuffled(items,8).map(item=>`<button type="button" class="fruit-card" draggable="true" data-fruit="${escapeHTML(item.key)}" aria-pressed="false">${imageFor(item)}</button>`).join('')}</div><p id="basket-selection" role="status" aria-live="polite">Ninguna tarjeta seleccionada.</p></section>`:'';
   document.querySelector('#exercise-stage').innerHTML=`${basketBank}${format==='context'?`<div class="vocabulary-bank"><strong>Banco de palabras</strong><p lang="${lang}">${shuffled(items.map(x=>x.answer),4).map(w=>`<span>${escapeHTML(w)}</span>`).join('')}</p></div>`:''}<form id="exercise"><div class="exercise-meta"><span>${format==='text'?'Una historia con cinco huecos':`${questions.length} retos para practicar`}</span><span>${topic.level} · Sin prisas</span></div><div class="${['text','actionstory'].includes(format)?'story-sheet':''}">${questions.map(q=>q.html).join('')}</div><div class="exercise-actions"><button class="button dark" type="submit">Comprobar respuestas →</button><button class="reset" type="reset">Volver a empezar</button></div><div id="result" class="result" role="status" aria-live="polite"></div></form>`;
   const form=document.querySelector('#exercise');
   form.querySelectorAll('.colour-part').forEach(input=>input.addEventListener('input',()=>{const i=input.dataset.question,parts=[...form.querySelectorAll(`.colour-part[data-question="${i}"]`)].map(el=>el.value.trim());form.querySelector(`[name="q${i}"]`).value=parts.every(Boolean)?parts.join(id==='ingles'?' and ':id==='ruso'?' и ':' y '):'';}));
@@ -208,9 +221,9 @@ function renderStandard(id,topic,mode) {
     let selected=null;
     const cards=[...document.querySelectorAll('.fruit-card')];
     const choose=key=>{selected=items.find(item=>item.key===key)||null;cards.forEach(card=>card.setAttribute('aria-pressed',String(card.dataset.fruit===key)));document.querySelector('#basket-selection').textContent=selected?`Has elegido: ${selected.answer}. Ahora elige su pedido.`:'Ninguna tarjeta seleccionada.';};
-    const place=target=>{if(!selected){document.querySelector('#result').textContent='Elige primero una tarjeta de fruta.';return;}clear();document.querySelector(`#answer-${target.dataset.question}`).value=selected.answer;target.querySelector('span').textContent=selected.answer;target.classList.add('filled');document.querySelector(`#basket-select-${target.dataset.question}`).value=selected.key;choose(null);};
+    const place=target=>{if(!selected){document.querySelector('#result').textContent='Elige primero una tarjeta.';return;}clear();document.querySelector(`#answer-${target.dataset.question}`).value=selected.answer;target.querySelector('span').innerHTML=imageFor(selected,true)||escapeHTML(selected.answer);target.classList.add('filled');choose(null);};
     cards.forEach(card=>{card.addEventListener('click',()=>choose(card.dataset.fruit));card.addEventListener('dragstart',event=>{choose(card.dataset.fruit);event.dataTransfer.setData('text/plain',card.dataset.fruit);event.dataTransfer.effectAllowed='copy';});});
-    form.querySelectorAll('.basket-select').forEach(select=>select.addEventListener('change',()=>{if(select.value){choose(select.value);place(form.querySelector(`.basket-target[data-question="${select.dataset.question}"]`));}}));
+
     form.querySelectorAll('.basket-target').forEach(target=>{target.addEventListener('click',()=>place(target));target.addEventListener('dragover',event=>event.preventDefault());target.addEventListener('drop',event=>{event.preventDefault();const key=event.dataTransfer.getData('text/plain');if(items.some(item=>item.key===key)){choose(key);place(target);}});});
     form.addEventListener('reset',()=>{choose(null);form.querySelectorAll('.basket-target').forEach(target=>{target.classList.remove('filled');target.querySelector('span').textContent='Coloca aquí tu elección';});});
   }

@@ -338,3 +338,25 @@ body[data-language="ruso"] { --world: #dcc6f5; --world-soft: #f0e5fc; --line: #d
  .crossword-clue .activity-image { width: 65px!important; height: 65px!important; }
 }
 .memory-front .activity-image[src*="acciones/recortes/"] { object-fit: contain; }
+
+/* Ajustes de lectura: hueco de palabra, letras individuales y miniaturas uniformes. */
+.inline-gap { margin: 0 6px; transform: translateY(3px); }
+.letter-gap { display: inline-block; width: .65em; height: .8em; border-bottom: 2px solid currentColor; margin: 0 .12em; vertical-align: baseline; transform: translateY(2px); }
+.instruction-helps { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: flex-start; }
+.instruction-helps .instruction-help { min-width: 0; max-width: 100%; }
+.instruction-helps .instruction-help[open] { flex-basis: 100%; }
+.welcome-icon { width: 80px; height: 80px; flex: 0 0 80px; }
+.welcome-icon .topic-photo { width: 80px; height: 80px; object-fit: contain; }
+.activity-image[src*="assets/animales/"] { width: min(160px,100%); height: 155px; }
+.memory-card .activity-image[src*="assets/animales/"] { width: 100%; height: 85px; }
+.puzzle-clue .activity-image[src*="assets/animales/"] { width: 100%; height: 100px; }
+.basket-bank .fruit-card .activity-image { width: 100%; height: 95px; margin: 0 auto 8px; }
+.basket-target { min-height: 96px; }
+.basket-target .activity-image { width: 75px; height: 55px; margin: 0 auto; object-fit: contain; }
+@media(max-width:760px) { .topic-welcome > div { flex: 1; min-width: 0; } }
+@media(max-width:760px) {
+ .topic-welcome { display: grid; grid-template-columns: 80px minmax(0,1fr); grid-template-areas: 'picture count' 'title title'; }
+ .topic-welcome .welcome-icon { grid-area: picture; }
+ .topic-welcome > div { grid-area: title; }
+ .topic-welcome .completion-badge { grid-area: count; justify-self: end; margin-left: 0; }
+}

@@ -14,63 +14,88 @@ window.CURRICULUM = {
             "prompt": "Cada semana, yo ___ español en la biblioteca.",
             "answer": "estudio",
             "hint": "estudiar",
-            "wrong": "estudiaba"
+            "wrong": "estudias",
+            "options": [
+              "estudio",
+              "estudias",
+              "estudia"
+            ]
           },
           {
-            "prompt": "Cada semana, ella ___ una manzana en el patio.",
+            "prompt": "A menudo, ella ___ una manzana en el patio.",
             "answer": "come",
             "hint": "comer",
-            "wrong": "comió"
+            "wrong": "como",
+            "options": [
+              "come",
+              "como",
+              "comes"
+            ]
           },
           {
-            "prompt": "Cada semana, nosotros ___ cerca de la playa.",
+            "prompt": "Normalmente, nosotros ___ cerca de la playa.",
             "answer": "vivimos",
             "hint": "vivir",
-            "wrong": "vivíamos"
+            "wrong": "vivo",
+            "options": [
+              "vivimos",
+              "vivo",
+              "vives"
+            ]
           },
           {
-            "prompt": "Cada semana, tú ___ tiempo para jugar.",
+            "prompt": "Casi siempre, tú ___ tiempo para jugar.",
             "answer": "tienes",
             "hint": "tener",
-            "wrong": "tuviste"
+            "wrong": "tengo",
+            "options": [
+              "tienes",
+              "tengo",
+              "tiene"
+            ]
           },
           {
-            "prompt": "Cada semana, ellos ___ al museo de ciencias.",
+            "prompt": "Los domingos, ellos ___ al museo de ciencias.",
             "answer": "van",
             "hint": "ir",
-            "wrong": "iban"
+            "wrong": "voy",
+            "options": [
+              "van",
+              "voy",
+              "vas"
+            ]
           }
         ],
         "2": [
           {
-            "prompt": "Cada semana, yo ___ agua durante el almuerzo.",
+            "prompt": "A menudo, yo ___ agua durante el almuerzo.",
             "answer": "bebo",
             "hint": "beber",
-            "wrong": "bebía",
+            "wrong": "bebes",
             "asset": "acciones/beber",
             "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "Cada semana, tú ___ un cuento de aventuras.",
+            "prompt": "Normalmente, tú ___ un cuento de aventuras.",
             "answer": "lees",
             "hint": "leer",
-            "wrong": "leíste",
+            "wrong": "leo",
             "asset": "acciones/leer",
             "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "Cada semana, ella ___ una carta para su abuela.",
+            "prompt": "Casi siempre, ella ___ una carta para su abuela.",
             "answer": "escribe",
             "hint": "escribir",
-            "wrong": "escribía",
+            "wrong": "escribo",
             "asset": "acciones/escribir",
             "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "Cada semana, nosotros ___ flores con lápices de colores.",
+            "prompt": "Los domingos, nosotros ___ flores con lápices de colores.",
             "answer": "dibujamos",
             "hint": "dibujar",
-            "wrong": "ha dibujar",
+            "wrong": "dibujo",
             "asset": "acciones/dibujar",
             "clue": "Una escena que representa la acción de dibujar."
           },
@@ -78,105 +103,105 @@ window.CURRICULUM = {
             "prompt": "Cada semana, ellos ___ ocho horas en su habitación.",
             "answer": "duermen",
             "hint": "dormir",
-            "wrong": "dormían",
+            "wrong": "duermo",
             "asset": "acciones/dormir",
             "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Cada semana, yo ___ una merienda para mis amigos.",
+            "prompt": "Normalmente, yo ___ una merienda para mis amigos.",
             "answer": "preparo",
             "hint": "preparar",
-            "wrong": "preparaba"
+            "wrong": "preparas"
           },
           {
             "prompt": "Después, tú ___ los platos en la mesa.",
             "answer": "pones",
             "hint": "poner",
-            "wrong": "pusiste"
+            "wrong": "pongo"
           },
           {
             "prompt": "Luego, ana ___ pan de la tienda.",
             "answer": "trae",
             "hint": "traer",
-            "wrong": "traía"
+            "wrong": "traigo"
           },
           {
             "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
             "answer": "hacemos",
             "hint": "hacer",
-            "wrong": "hicimos"
+            "wrong": "hago"
           },
           {
             "prompt": "Al final, los niños ___ los vasos después de comer.",
             "answer": "recogen",
             "hint": "recoger",
-            "wrong": "recogían"
+            "wrong": "recojo"
           }
         ],
         "4": [
           {
-            "prompt": "Cada semana, yo ___ por el parque con mi perro.",
+            "prompt": "Casi siempre, yo ___ por el parque con mi perro.",
             "answer": "corro",
             "hint": "correr",
-            "wrong": "corría"
+            "wrong": "corres"
           },
           {
-            "prompt": "Cada semana, tú ___ hasta la escuela con tu hermana.",
+            "prompt": "Los domingos, tú ___ hasta la escuela con tu hermana.",
             "answer": "caminas",
             "hint": "caminar",
-            "wrong": "caminaste"
+            "wrong": "camino"
           },
           {
             "prompt": "Cada semana, ella ___ la ventana de su habitación.",
             "answer": "abre",
             "hint": "abrir",
-            "wrong": "abría"
+            "wrong": "abro"
           },
           {
-            "prompt": "Cada semana, nosotros ___ con una pelota en el jardín.",
+            "prompt": "A menudo, nosotros ___ con una pelota en el jardín.",
             "answer": "jugamos",
             "hint": "jugar",
-            "wrong": "ha jugar"
+            "wrong": "juego"
           },
           {
-            "prompt": "Cada semana, ellos ___ música con auriculares.",
+            "prompt": "Normalmente, ellos ___ música con auriculares.",
             "answer": "escuchan",
             "hint": "escuchar",
-            "wrong": "escuchaban"
+            "wrong": "escucho"
           }
         ],
         "5": [
           {
-            "prompt": "Cada semana, yo ___ mi mochila antes de salir.",
+            "prompt": "Los domingos, yo ___ mi mochila antes de salir.",
             "answer": "busco",
             "hint": "buscar",
-            "wrong": "buscaba"
+            "wrong": "buscas"
           },
           {
             "prompt": "Cada semana, tú ___ un cuaderno en la papelería.",
             "answer": "compras",
             "hint": "comprar",
-            "wrong": "compraste"
+            "wrong": "compro"
           },
           {
-            "prompt": "Cada semana, ella ___ a mi casa para estudiar.",
+            "prompt": "A menudo, ella ___ a mi casa para estudiar.",
             "answer": "viene",
             "hint": "venir",
-            "wrong": "venía"
+            "wrong": "vengo"
           },
           {
-            "prompt": "Cada semana, nosotros ___ una película sobre animales.",
+            "prompt": "Normalmente, nosotros ___ una película sobre animales.",
             "answer": "vemos",
             "hint": "ver",
-            "wrong": "vimos"
+            "wrong": "veo"
           },
           {
-            "prompt": "Cada semana, ellos ___ la puerta al salir.",
+            "prompt": "Casi siempre, ellos ___ la puerta al salir.",
             "answer": "cierran",
             "hint": "cerrar",
-            "wrong": "cerraban"
+            "wrong": "cierro"
           }
         ]
       },
@@ -192,31 +217,56 @@ window.CURRICULUM = {
           "prompt": "Cada semana, yo ___ español en la biblioteca.",
           "answer": "estudio",
           "hint": "estudiar",
-          "wrong": "estudiaba"
+          "wrong": "estudias",
+          "options": [
+            "estudio",
+            "estudias",
+            "estudia"
+          ]
         },
         {
-          "prompt": "Cada semana, ella ___ una manzana en el patio.",
+          "prompt": "A menudo, ella ___ una manzana en el patio.",
           "answer": "come",
           "hint": "comer",
-          "wrong": "comió"
+          "wrong": "como",
+          "options": [
+            "come",
+            "como",
+            "comes"
+          ]
         },
         {
-          "prompt": "Cada semana, nosotros ___ cerca de la playa.",
+          "prompt": "Normalmente, nosotros ___ cerca de la playa.",
           "answer": "vivimos",
           "hint": "vivir",
-          "wrong": "vivíamos"
+          "wrong": "vivo",
+          "options": [
+            "vivimos",
+            "vivo",
+            "vives"
+          ]
         },
         {
-          "prompt": "Cada semana, tú ___ tiempo para jugar.",
+          "prompt": "Casi siempre, tú ___ tiempo para jugar.",
           "answer": "tienes",
           "hint": "tener",
-          "wrong": "tuviste"
+          "wrong": "tengo",
+          "options": [
+            "tienes",
+            "tengo",
+            "tiene"
+          ]
         },
         {
-          "prompt": "Cada semana, ellos ___ al museo de ciencias.",
+          "prompt": "Los domingos, ellos ___ al museo de ciencias.",
           "answer": "van",
           "hint": "ir",
-          "wrong": "iban"
+          "wrong": "voy",
+          "options": [
+            "van",
+            "voy",
+            "vas"
+          ]
         }
       ],
       "revision": "practica-v3"
@@ -234,63 +284,63 @@ window.CURRICULUM = {
             "prompt": "Ayer, yo ___ español en la biblioteca.",
             "answer": "estudié",
             "hint": "estudiar",
-            "wrong": "estudio"
+            "wrong": "estudiaste"
           },
           {
-            "prompt": "Ayer, ella ___ una manzana en el patio.",
+            "prompt": "La semana pasada, ella ___ una manzana en el patio.",
             "answer": "comió",
             "hint": "comer",
-            "wrong": "come"
+            "wrong": "comí"
           },
           {
-            "prompt": "Ayer, nosotros ___ cerca de la playa.",
+            "prompt": "El año pasado, nosotros ___ cerca de la playa.",
             "answer": "vivimos",
             "hint": "vivir",
-            "wrong": "ha vivir"
+            "wrong": "viví"
           },
           {
-            "prompt": "Ayer, tú ___ tiempo para jugar.",
+            "prompt": "Hace dos días, tú ___ tiempo para jugar.",
             "answer": "tuviste",
             "hint": "tener",
-            "wrong": "tienes"
+            "wrong": "tuve"
           },
           {
-            "prompt": "Ayer, ellos ___ al museo de ciencias.",
+            "prompt": "El mes pasado, ellos ___ al museo de ciencias.",
             "answer": "fueron",
             "hint": "ir",
-            "wrong": "van"
+            "wrong": "fui"
           }
         ],
         "2": [
           {
-            "prompt": "Ayer, yo ___ agua durante el almuerzo.",
+            "prompt": "La semana pasada, yo ___ agua durante el almuerzo.",
             "answer": "bebí",
             "hint": "beber",
-            "wrong": "bebo",
+            "wrong": "bebiste",
             "asset": "acciones/beber",
             "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "Ayer, tú ___ un cuento de aventuras.",
+            "prompt": "El año pasado, tú ___ un cuento de aventuras.",
             "answer": "leíste",
             "hint": "leer",
-            "wrong": "lees",
+            "wrong": "leí",
             "asset": "acciones/leer",
             "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "Ayer, ella ___ una carta para su abuela.",
+            "prompt": "Hace dos días, ella ___ una carta para su abuela.",
             "answer": "escribió",
             "hint": "escribir",
-            "wrong": "escribe",
+            "wrong": "escribí",
             "asset": "acciones/escribir",
             "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "Ayer, nosotros ___ flores con lápices de colores.",
+            "prompt": "El mes pasado, nosotros ___ flores con lápices de colores.",
             "answer": "dibujamos",
             "hint": "dibujar",
-            "wrong": "ha dibujar",
+            "wrong": "dibujé",
             "asset": "acciones/dibujar",
             "clue": "Una escena que representa la acción de dibujar."
           },
@@ -298,105 +348,105 @@ window.CURRICULUM = {
             "prompt": "Ayer, ellos ___ ocho horas en su habitación.",
             "answer": "durmieron",
             "hint": "dormir",
-            "wrong": "duermen",
+            "wrong": "dormí",
             "asset": "acciones/dormir",
             "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Ayer, yo ___ una merienda para mis amigos.",
+            "prompt": "El año pasado, yo ___ una merienda para mis amigos.",
             "answer": "preparé",
             "hint": "preparar",
-            "wrong": "preparo"
+            "wrong": "preparaste"
           },
           {
             "prompt": "Después, tú ___ los platos en la mesa.",
             "answer": "pusiste",
             "hint": "poner",
-            "wrong": "pones"
+            "wrong": "puse"
           },
           {
             "prompt": "Luego, ana ___ pan de la tienda.",
             "answer": "trajo",
             "hint": "traer",
-            "wrong": "trae"
+            "wrong": "traje"
           },
           {
             "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
             "answer": "hicimos",
             "hint": "hacer",
-            "wrong": "hacemos"
+            "wrong": "hice"
           },
           {
             "prompt": "Al final, los niños ___ los vasos después de comer.",
             "answer": "recogieron",
             "hint": "recoger",
-            "wrong": "recogen"
+            "wrong": "recogí"
           }
         ],
         "4": [
           {
-            "prompt": "Ayer, yo ___ por el parque con mi perro.",
+            "prompt": "Hace dos días, yo ___ por el parque con mi perro.",
             "answer": "corrí",
             "hint": "correr",
-            "wrong": "corro"
+            "wrong": "corriste"
           },
           {
-            "prompt": "Ayer, tú ___ hasta la escuela con tu hermana.",
+            "prompt": "El mes pasado, tú ___ hasta la escuela con tu hermana.",
             "answer": "caminaste",
             "hint": "caminar",
-            "wrong": "caminas"
+            "wrong": "caminé"
           },
           {
             "prompt": "Ayer, ella ___ la ventana de su habitación.",
             "answer": "abrió",
             "hint": "abrir",
-            "wrong": "abre"
+            "wrong": "abrí"
           },
           {
-            "prompt": "Ayer, nosotros ___ con una pelota en el jardín.",
+            "prompt": "La semana pasada, nosotros ___ con una pelota en el jardín.",
             "answer": "jugamos",
             "hint": "jugar",
-            "wrong": "ha jugar"
+            "wrong": "jugué"
           },
           {
-            "prompt": "Ayer, ellos ___ música con auriculares.",
+            "prompt": "El año pasado, ellos ___ música con auriculares.",
             "answer": "escucharon",
             "hint": "escuchar",
-            "wrong": "escuchan"
+            "wrong": "escuché"
           }
         ],
         "5": [
           {
-            "prompt": "Ayer, yo ___ mi mochila antes de salir.",
+            "prompt": "El mes pasado, yo ___ mi mochila antes de salir.",
             "answer": "busqué",
             "hint": "buscar",
-            "wrong": "busco"
+            "wrong": "buscaste"
           },
           {
             "prompt": "Ayer, tú ___ un cuaderno en la papelería.",
             "answer": "compraste",
             "hint": "comprar",
-            "wrong": "compras"
+            "wrong": "compré"
           },
           {
-            "prompt": "Ayer, ella ___ a mi casa para estudiar.",
+            "prompt": "La semana pasada, ella ___ a mi casa para estudiar.",
             "answer": "vino",
             "hint": "venir",
-            "wrong": "viene"
+            "wrong": "vine"
           },
           {
-            "prompt": "Ayer, nosotros ___ una película sobre animales.",
+            "prompt": "El año pasado, nosotros ___ una película sobre animales.",
             "answer": "vimos",
             "hint": "ver",
-            "wrong": "vemos"
+            "wrong": "vi"
           },
           {
-            "prompt": "Ayer, ellos ___ la puerta al salir.",
+            "prompt": "Hace dos días, ellos ___ la puerta al salir.",
             "answer": "cerraron",
             "hint": "cerrar",
-            "wrong": "cierran"
+            "wrong": "cerré"
           }
         ]
       },
@@ -412,31 +462,31 @@ window.CURRICULUM = {
           "prompt": "Ayer, yo ___ español en la biblioteca.",
           "answer": "estudié",
           "hint": "estudiar",
-          "wrong": "estudio"
+          "wrong": "estudiaste"
         },
         {
-          "prompt": "Ayer, ella ___ una manzana en el patio.",
+          "prompt": "La semana pasada, ella ___ una manzana en el patio.",
           "answer": "comió",
           "hint": "comer",
-          "wrong": "come"
+          "wrong": "comí"
         },
         {
-          "prompt": "Ayer, nosotros ___ cerca de la playa.",
+          "prompt": "El año pasado, nosotros ___ cerca de la playa.",
           "answer": "vivimos",
           "hint": "vivir",
-          "wrong": "ha vivir"
+          "wrong": "viví"
         },
         {
-          "prompt": "Ayer, tú ___ tiempo para jugar.",
+          "prompt": "Hace dos días, tú ___ tiempo para jugar.",
           "answer": "tuviste",
           "hint": "tener",
-          "wrong": "tienes"
+          "wrong": "tuve"
         },
         {
-          "prompt": "Ayer, ellos ___ al museo de ciencias.",
+          "prompt": "El mes pasado, ellos ___ al museo de ciencias.",
           "answer": "fueron",
           "hint": "ir",
-          "wrong": "van"
+          "wrong": "fui"
         }
       ],
       "revision": "practica-v3"
@@ -454,63 +504,88 @@ window.CURRICULUM = {
             "prompt": "Esta semana, yo ___ español en la biblioteca.",
             "answer": "he estudiado",
             "hint": "estudiar",
-            "wrong": "estudio"
+            "wrong": "has estudiado",
+            "options": [
+              "he estudiado",
+              "has estudiado",
+              "ha estudiado"
+            ]
           },
           {
-            "prompt": "Esta semana, ella ___ una manzana en el patio.",
+            "prompt": "Últimamente, ella ___ una manzana en el patio.",
             "answer": "ha comido",
             "hint": "comer",
-            "wrong": "come"
+            "wrong": "he comido",
+            "options": [
+              "ha comido",
+              "he comido",
+              "has comido"
+            ]
           },
           {
-            "prompt": "Esta semana, nosotros ___ cerca de la playa.",
+            "prompt": "Este mes, nosotros ___ cerca de la playa.",
             "answer": "hemos vivido",
             "hint": "vivir",
-            "wrong": "vivimos"
+            "wrong": "he vivido",
+            "options": [
+              "hemos vivido",
+              "he vivido",
+              "has vivido"
+            ]
           },
           {
-            "prompt": "Esta semana, tú ___ tiempo para jugar.",
+            "prompt": "Este año, tú ___ tiempo para jugar.",
             "answer": "has tenido",
             "hint": "tener",
-            "wrong": "tienes"
+            "wrong": "he tenido",
+            "options": [
+              "has tenido",
+              "he tenido",
+              "ha tenido"
+            ]
           },
           {
-            "prompt": "Esta semana, ellos ___ al museo de ciencias.",
+            "prompt": "Hoy, ellos ___ al museo de ciencias.",
             "answer": "han ido",
             "hint": "ir",
-            "wrong": "van"
+            "wrong": "he ido",
+            "options": [
+              "han ido",
+              "he ido",
+              "has ido"
+            ]
           }
         ],
         "2": [
           {
-            "prompt": "Esta semana, yo ___ agua durante el almuerzo.",
+            "prompt": "Últimamente, yo ___ agua durante el almuerzo.",
             "answer": "he bebido",
             "hint": "beber",
-            "wrong": "bebo",
+            "wrong": "has bebido",
             "asset": "acciones/beber",
             "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "Esta semana, tú ___ un cuento de aventuras.",
+            "prompt": "Este mes, tú ___ un cuento de aventuras.",
             "answer": "has leído",
             "hint": "leer",
-            "wrong": "lees",
+            "wrong": "he leído",
             "asset": "acciones/leer",
             "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "Esta semana, ella ___ una carta para su abuela.",
+            "prompt": "Este año, ella ___ una carta para su abuela.",
             "answer": "ha escrito",
             "hint": "escribir",
-            "wrong": "escribe",
+            "wrong": "he escrito",
             "asset": "acciones/escribir",
             "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "Esta semana, nosotros ___ flores con lápices de colores.",
+            "prompt": "Hoy, nosotros ___ flores con lápices de colores.",
             "answer": "hemos dibujado",
             "hint": "dibujar",
-            "wrong": "dibujamos",
+            "wrong": "he dibujado",
             "asset": "acciones/dibujar",
             "clue": "Una escena que representa la acción de dibujar."
           },
@@ -518,105 +593,105 @@ window.CURRICULUM = {
             "prompt": "Esta semana, ellos ___ ocho horas en su habitación.",
             "answer": "han dormido",
             "hint": "dormir",
-            "wrong": "duermen",
+            "wrong": "he dormido",
             "asset": "acciones/dormir",
             "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Esta semana, yo ___ una merienda para mis amigos.",
+            "prompt": "Este mes, yo ___ una merienda para mis amigos.",
             "answer": "he preparado",
             "hint": "preparar",
-            "wrong": "preparo"
+            "wrong": "has preparado"
           },
           {
             "prompt": "Después, tú ___ los platos en la mesa.",
             "answer": "has puesto",
             "hint": "poner",
-            "wrong": "pones"
+            "wrong": "he puesto"
           },
           {
             "prompt": "Luego, ana ___ pan de la tienda.",
             "answer": "ha traído",
             "hint": "traer",
-            "wrong": "trae"
+            "wrong": "he traído"
           },
           {
             "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
             "answer": "hemos hecho",
             "hint": "hacer",
-            "wrong": "hacemos"
+            "wrong": "he hecho"
           },
           {
             "prompt": "Al final, los niños ___ los vasos después de comer.",
             "answer": "han recogido",
             "hint": "recoger",
-            "wrong": "recogen"
+            "wrong": "he recogido"
           }
         ],
         "4": [
           {
-            "prompt": "Esta semana, yo ___ por el parque con mi perro.",
+            "prompt": "Este año, yo ___ por el parque con mi perro.",
             "answer": "he corrido",
             "hint": "correr",
-            "wrong": "corro"
+            "wrong": "has corrido"
           },
           {
-            "prompt": "Esta semana, tú ___ hasta la escuela con tu hermana.",
+            "prompt": "Hoy, tú ___ hasta la escuela con tu hermana.",
             "answer": "has caminado",
             "hint": "caminar",
-            "wrong": "caminas"
+            "wrong": "he caminado"
           },
           {
             "prompt": "Esta semana, ella ___ la ventana de su habitación.",
             "answer": "ha abierto",
             "hint": "abrir",
-            "wrong": "abre"
+            "wrong": "he abierto"
           },
           {
-            "prompt": "Esta semana, nosotros ___ con una pelota en el jardín.",
+            "prompt": "Últimamente, nosotros ___ con una pelota en el jardín.",
             "answer": "hemos jugado",
             "hint": "jugar",
-            "wrong": "jugamos"
+            "wrong": "he jugado"
           },
           {
-            "prompt": "Esta semana, ellos ___ música con auriculares.",
+            "prompt": "Este mes, ellos ___ música con auriculares.",
             "answer": "han escuchado",
             "hint": "escuchar",
-            "wrong": "escuchan"
+            "wrong": "he escuchado"
           }
         ],
         "5": [
           {
-            "prompt": "Esta semana, yo ___ mi mochila antes de salir.",
+            "prompt": "Hoy, yo ___ mi mochila antes de salir.",
             "answer": "he buscado",
             "hint": "buscar",
-            "wrong": "busco"
+            "wrong": "has buscado"
           },
           {
             "prompt": "Esta semana, tú ___ un cuaderno en la papelería.",
             "answer": "has comprado",
             "hint": "comprar",
-            "wrong": "compras"
+            "wrong": "he comprado"
           },
           {
-            "prompt": "Esta semana, ella ___ a mi casa para estudiar.",
+            "prompt": "Últimamente, ella ___ a mi casa para estudiar.",
             "answer": "ha venido",
             "hint": "venir",
-            "wrong": "viene"
+            "wrong": "he venido"
           },
           {
-            "prompt": "Esta semana, nosotros ___ una película sobre animales.",
+            "prompt": "Este mes, nosotros ___ una película sobre animales.",
             "answer": "hemos visto",
             "hint": "ver",
-            "wrong": "vemos"
+            "wrong": "he visto"
           },
           {
-            "prompt": "Esta semana, ellos ___ la puerta al salir.",
+            "prompt": "Este año, ellos ___ la puerta al salir.",
             "answer": "han cerrado",
             "hint": "cerrar",
-            "wrong": "cierran"
+            "wrong": "he cerrado"
           }
         ]
       },
@@ -632,31 +707,56 @@ window.CURRICULUM = {
           "prompt": "Esta semana, yo ___ español en la biblioteca.",
           "answer": "he estudiado",
           "hint": "estudiar",
-          "wrong": "estudio"
+          "wrong": "has estudiado",
+          "options": [
+            "he estudiado",
+            "has estudiado",
+            "ha estudiado"
+          ]
         },
         {
-          "prompt": "Esta semana, ella ___ una manzana en el patio.",
+          "prompt": "Últimamente, ella ___ una manzana en el patio.",
           "answer": "ha comido",
           "hint": "comer",
-          "wrong": "come"
+          "wrong": "he comido",
+          "options": [
+            "ha comido",
+            "he comido",
+            "has comido"
+          ]
         },
         {
-          "prompt": "Esta semana, nosotros ___ cerca de la playa.",
+          "prompt": "Este mes, nosotros ___ cerca de la playa.",
           "answer": "hemos vivido",
           "hint": "vivir",
-          "wrong": "vivimos"
+          "wrong": "he vivido",
+          "options": [
+            "hemos vivido",
+            "he vivido",
+            "has vivido"
+          ]
         },
         {
-          "prompt": "Esta semana, tú ___ tiempo para jugar.",
+          "prompt": "Este año, tú ___ tiempo para jugar.",
           "answer": "has tenido",
           "hint": "tener",
-          "wrong": "tienes"
+          "wrong": "he tenido",
+          "options": [
+            "has tenido",
+            "he tenido",
+            "ha tenido"
+          ]
         },
         {
-          "prompt": "Esta semana, ellos ___ al museo de ciencias.",
+          "prompt": "Hoy, ellos ___ al museo de ciencias.",
           "answer": "han ido",
           "hint": "ir",
-          "wrong": "van"
+          "wrong": "he ido",
+          "options": [
+            "han ido",
+            "he ido",
+            "has ido"
+          ]
         }
       ],
       "revision": "practica-v3"
@@ -674,63 +774,63 @@ window.CURRICULUM = {
             "prompt": "Antes, yo ___ español en la biblioteca.",
             "answer": "estudiaba",
             "hint": "estudiar",
-            "wrong": "estudio"
+            "wrong": "estudiabas"
           },
           {
-            "prompt": "Antes, ella ___ una manzana en el patio.",
+            "prompt": "En aquella época, ella ___ una manzana en el patio.",
             "answer": "comía",
             "hint": "comer",
-            "wrong": "come"
+            "wrong": "comías"
           },
           {
-            "prompt": "Antes, nosotros ___ cerca de la playa.",
+            "prompt": "Por entonces, nosotros ___ cerca de la playa.",
             "answer": "vivíamos",
             "hint": "vivir",
-            "wrong": "vivimos"
+            "wrong": "vivía"
           },
           {
-            "prompt": "Antes, tú ___ tiempo para jugar.",
+            "prompt": "En esos años, tú ___ tiempo para jugar.",
             "answer": "tenías",
             "hint": "tener",
-            "wrong": "tienes"
+            "wrong": "tenía"
           },
           {
-            "prompt": "Antes, ellos ___ al museo de ciencias.",
+            "prompt": "Habitualmente, ellos ___ al museo de ciencias.",
             "answer": "iban",
             "hint": "ir",
-            "wrong": "van"
+            "wrong": "iba"
           }
         ],
         "2": [
           {
-            "prompt": "Antes, yo ___ agua durante el almuerzo.",
+            "prompt": "En aquella época, yo ___ agua durante el almuerzo.",
             "answer": "bebía",
             "hint": "beber",
-            "wrong": "bebo",
+            "wrong": "bebías",
             "asset": "acciones/beber",
             "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "Antes, tú ___ un cuento de aventuras.",
+            "prompt": "Por entonces, tú ___ un cuento de aventuras.",
             "answer": "leías",
             "hint": "leer",
-            "wrong": "lees",
+            "wrong": "leía",
             "asset": "acciones/leer",
             "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "Antes, ella ___ una carta para su abuela.",
+            "prompt": "En esos años, ella ___ una carta para su abuela.",
             "answer": "escribía",
             "hint": "escribir",
-            "wrong": "escribe",
+            "wrong": "escribías",
             "asset": "acciones/escribir",
             "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "Antes, nosotros ___ flores con lápices de colores.",
+            "prompt": "Habitualmente, nosotros ___ flores con lápices de colores.",
             "answer": "dibujábamos",
             "hint": "dibujar",
-            "wrong": "dibujamos",
+            "wrong": "dibujaba",
             "asset": "acciones/dibujar",
             "clue": "Una escena que representa la acción de dibujar."
           },
@@ -738,105 +838,105 @@ window.CURRICULUM = {
             "prompt": "Antes, ellos ___ ocho horas en su habitación.",
             "answer": "dormían",
             "hint": "dormir",
-            "wrong": "duermen",
+            "wrong": "dormía",
             "asset": "acciones/dormir",
             "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Antes, yo ___ una merienda para mis amigos.",
+            "prompt": "Por entonces, yo ___ una merienda para mis amigos.",
             "answer": "preparaba",
             "hint": "preparar",
-            "wrong": "preparo"
+            "wrong": "preparabas"
           },
           {
             "prompt": "Después, tú ___ los platos en la mesa.",
             "answer": "ponías",
             "hint": "poner",
-            "wrong": "pones"
+            "wrong": "ponía"
           },
           {
             "prompt": "Luego, ana ___ pan de la tienda.",
             "answer": "traía",
             "hint": "traer",
-            "wrong": "trae"
+            "wrong": "traías"
           },
           {
             "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
             "answer": "hacíamos",
             "hint": "hacer",
-            "wrong": "hacemos"
+            "wrong": "hacía"
           },
           {
             "prompt": "Al final, los niños ___ los vasos después de comer.",
             "answer": "recogían",
             "hint": "recoger",
-            "wrong": "recogen"
+            "wrong": "recogía"
           }
         ],
         "4": [
           {
-            "prompt": "Antes, yo ___ por el parque con mi perro.",
+            "prompt": "En esos años, yo ___ por el parque con mi perro.",
             "answer": "corría",
             "hint": "correr",
-            "wrong": "corro"
+            "wrong": "corrías"
           },
           {
-            "prompt": "Antes, tú ___ hasta la escuela con tu hermana.",
+            "prompt": "Habitualmente, tú ___ hasta la escuela con tu hermana.",
             "answer": "caminabas",
             "hint": "caminar",
-            "wrong": "caminas"
+            "wrong": "caminaba"
           },
           {
             "prompt": "Antes, ella ___ la ventana de su habitación.",
             "answer": "abría",
             "hint": "abrir",
-            "wrong": "abre"
+            "wrong": "abrías"
           },
           {
-            "prompt": "Antes, nosotros ___ con una pelota en el jardín.",
+            "prompt": "En aquella época, nosotros ___ con una pelota en el jardín.",
             "answer": "jugábamos",
             "hint": "jugar",
-            "wrong": "jugamos"
+            "wrong": "jugaba"
           },
           {
-            "prompt": "Antes, ellos ___ música con auriculares.",
+            "prompt": "Por entonces, ellos ___ música con auriculares.",
             "answer": "escuchaban",
             "hint": "escuchar",
-            "wrong": "escuchan"
+            "wrong": "escuchaba"
           }
         ],
         "5": [
           {
-            "prompt": "Antes, yo ___ mi mochila antes de salir.",
+            "prompt": "Habitualmente, yo ___ mi mochila antes de salir.",
             "answer": "buscaba",
             "hint": "buscar",
-            "wrong": "busco"
+            "wrong": "buscabas"
           },
           {
             "prompt": "Antes, tú ___ un cuaderno en la papelería.",
             "answer": "comprabas",
             "hint": "comprar",
-            "wrong": "compras"
+            "wrong": "compraba"
           },
           {
-            "prompt": "Antes, ella ___ a mi casa para estudiar.",
+            "prompt": "En aquella época, ella ___ a mi casa para estudiar.",
             "answer": "venía",
             "hint": "venir",
-            "wrong": "viene"
+            "wrong": "venías"
           },
           {
-            "prompt": "Antes, nosotros ___ una película sobre animales.",
+            "prompt": "Por entonces, nosotros ___ una película sobre animales.",
             "answer": "veíamos",
             "hint": "ver",
-            "wrong": "vemos"
+            "wrong": "veía"
           },
           {
-            "prompt": "Antes, ellos ___ la puerta al salir.",
+            "prompt": "En esos años, ellos ___ la puerta al salir.",
             "answer": "cerraban",
             "hint": "cerrar",
-            "wrong": "cierran"
+            "wrong": "cerraba"
           }
         ]
       },
@@ -852,31 +952,31 @@ window.CURRICULUM = {
           "prompt": "Antes, yo ___ español en la biblioteca.",
           "answer": "estudiaba",
           "hint": "estudiar",
-          "wrong": "estudio"
+          "wrong": "estudiabas"
         },
         {
-          "prompt": "Antes, ella ___ una manzana en el patio.",
+          "prompt": "En aquella época, ella ___ una manzana en el patio.",
           "answer": "comía",
           "hint": "comer",
-          "wrong": "come"
+          "wrong": "comías"
         },
         {
-          "prompt": "Antes, nosotros ___ cerca de la playa.",
+          "prompt": "Por entonces, nosotros ___ cerca de la playa.",
           "answer": "vivíamos",
           "hint": "vivir",
-          "wrong": "vivimos"
+          "wrong": "vivía"
         },
         {
-          "prompt": "Antes, tú ___ tiempo para jugar.",
+          "prompt": "En esos años, tú ___ tiempo para jugar.",
           "answer": "tenías",
           "hint": "tener",
-          "wrong": "tienes"
+          "wrong": "tenía"
         },
         {
-          "prompt": "Antes, ellos ___ al museo de ciencias.",
+          "prompt": "Habitualmente, ellos ___ al museo de ciencias.",
           "answer": "iban",
           "hint": "ir",
-          "wrong": "van"
+          "wrong": "iba"
         }
       ],
       "revision": "practica-v3"
@@ -894,63 +994,88 @@ window.CURRICULUM = {
             "prompt": "Mañana, yo ___ español en la biblioteca.",
             "answer": "estudiaré",
             "hint": "estudiar",
-            "wrong": "estudio"
+            "wrong": "estudiarás",
+            "options": [
+              "estudiaré",
+              "estudiarás",
+              "estudiará"
+            ]
           },
           {
-            "prompt": "Mañana, ella ___ una manzana en el patio.",
+            "prompt": "La próxima semana, ella ___ una manzana en el patio.",
             "answer": "comerá",
             "hint": "comer",
-            "wrong": "come"
+            "wrong": "comeré",
+            "options": [
+              "comerá",
+              "comeré",
+              "comerás"
+            ]
           },
           {
-            "prompt": "Mañana, nosotros ___ cerca de la playa.",
+            "prompt": "El próximo año, nosotros ___ cerca de la playa.",
             "answer": "viviremos",
             "hint": "vivir",
-            "wrong": "vivimos"
+            "wrong": "viviré",
+            "options": [
+              "viviremos",
+              "viviré",
+              "vivirás"
+            ]
           },
           {
-            "prompt": "Mañana, tú ___ tiempo para jugar.",
+            "prompt": "Dentro de dos días, tú ___ tiempo para jugar.",
             "answer": "tendrás",
             "hint": "tener",
-            "wrong": "tienes"
+            "wrong": "tendré",
+            "options": [
+              "tendrás",
+              "tendré",
+              "tendrá"
+            ]
           },
           {
-            "prompt": "Mañana, ellos ___ al museo de ciencias.",
+            "prompt": "El mes que viene, ellos ___ al museo de ciencias.",
             "answer": "irán",
             "hint": "ir",
-            "wrong": "van"
+            "wrong": "iré",
+            "options": [
+              "irán",
+              "iré",
+              "irás"
+            ]
           }
         ],
         "2": [
           {
-            "prompt": "Mañana, yo ___ agua durante el almuerzo.",
+            "prompt": "La próxima semana, yo ___ agua durante el almuerzo.",
             "answer": "beberé",
             "hint": "beber",
-            "wrong": "bebo",
+            "wrong": "beberás",
             "asset": "acciones/beber",
             "clue": "Una escena que representa la acción de beber."
           },
           {
-            "prompt": "Mañana, tú ___ un cuento de aventuras.",
+            "prompt": "El próximo año, tú ___ un cuento de aventuras.",
             "answer": "leerás",
             "hint": "leer",
-            "wrong": "lees",
+            "wrong": "leeré",
             "asset": "acciones/leer",
             "clue": "Una escena que representa la acción de leer."
           },
           {
-            "prompt": "Mañana, ella ___ una carta para su abuela.",
+            "prompt": "Dentro de dos días, ella ___ una carta para su abuela.",
             "answer": "escribirá",
             "hint": "escribir",
-            "wrong": "escribe",
+            "wrong": "escribiré",
             "asset": "acciones/escribir",
             "clue": "Una escena que representa la acción de escribir."
           },
           {
-            "prompt": "Mañana, nosotros ___ flores con lápices de colores.",
+            "prompt": "El mes que viene, nosotros ___ flores con lápices de colores.",
             "answer": "dibujaremos",
             "hint": "dibujar",
-            "wrong": "dibujamos",
+            "wrong": "dibujaré",
             "asset": "acciones/dibujar",
             "clue": "Una escena que representa la acción de dibujar."
           },
@@ -958,105 +1083,105 @@ window.CURRICULUM = {
             "prompt": "Mañana, ellos ___ ocho horas en su habitación.",
             "answer": "dormirán",
             "hint": "dormir",
-            "wrong": "duermen",
+            "wrong": "dormiré",
             "asset": "acciones/dormir",
             "clue": "Una escena que representa la acción de dormir."
           }
         ],
         "3": [
           {
-            "prompt": "Mañana, yo ___ una merienda para mis amigos.",
+            "prompt": "El próximo año, yo ___ una merienda para mis amigos.",
             "answer": "prepararé",
             "hint": "preparar",
-            "wrong": "preparo"
+            "wrong": "prepararás"
           },
           {
             "prompt": "Después, tú ___ los platos en la mesa.",
             "answer": "pondrás",
             "hint": "poner",
-            "wrong": "pones"
+            "wrong": "pondré"
           },
           {
             "prompt": "Luego, ana ___ pan de la tienda.",
             "answer": "traerá",
             "hint": "traer",
-            "wrong": "trae"
+            "wrong": "traeré"
           },
           {
             "prompt": "Más tarde, nosotros ___ una ensalada de frutas.",
             "answer": "haremos",
             "hint": "hacer",
-            "wrong": "hacemos"
+            "wrong": "haré"
           },
           {
             "prompt": "Al final, los niños ___ los vasos después de comer.",
             "answer": "recogerán",
             "hint": "recoger",
-            "wrong": "recogen"
+            "wrong": "recogeré"
           }
         ],
         "4": [
           {
-            "prompt": "Mañana, yo ___ por el parque con mi perro.",
+            "prompt": "Dentro de dos días, yo ___ por el parque con mi perro.",
             "answer": "correré",
             "hint": "correr",
-            "wrong": "corro"
+            "wrong": "correrás"
           },
           {
-            "prompt": "Mañana, tú ___ hasta la escuela con tu hermana.",
+            "prompt": "El mes que viene, tú ___ hasta la escuela con tu hermana.",
             "answer": "caminarás",
             "hint": "caminar",
-            "wrong": "caminas"
+            "wrong": "caminaré"
           },
           {
             "prompt": "Mañana, ella ___ la ventana de su habitación.",
             "answer": "abrirá",
             "hint": "abrir",
-            "wrong": "abre"
+            "wrong": "abriré"
           },
           {
-            "prompt": "Mañana, nosotros ___ con una pelota en el jardín.",
+            "prompt": "La próxima semana, nosotros ___ con una pelota en el jardín.",
             "answer": "jugaremos",
             "hint": "jugar",
-            "wrong": "jugamos"
+            "wrong": "jugaré"
           },
           {
-            "prompt": "Mañana, ellos ___ música con auriculares.",
+            "prompt": "El próximo año, ellos ___ música con auriculares.",
             "answer": "escucharán",
             "hint": "escuchar",
-            "wrong": "escuchan"
+            "wrong": "escucharé"
           }
         ],
         "5": [
           {
-            "prompt": "Mañana, yo ___ mi mochila antes de salir.",
+            "prompt": "El mes que viene, yo ___ mi mochila antes de salir.",
             "answer": "buscaré",
             "hint": "buscar",
-            "wrong": "busco"
+            "wrong": "buscarás"
           },
           {
             "prompt": "Mañana, tú ___ un cuaderno en la papelería.",
             "answer": "comprarás",
             "hint": "comprar",
-            "wrong": "compras"
+            "wrong": "compraré"
           },
           {
-            "prompt": "Mañana, ella ___ a mi casa para estudiar.",
+            "prompt": "La próxima semana, ella ___ a mi casa para estudiar.",
             "answer": "vendrá",
             "hint": "venir",
-            "wrong": "viene"
+            "wrong": "vendré"
           },
           {
-            "prompt": "Mañana, nosotros ___ una película sobre animales.",
+            "prompt": "El próximo año, nosotros ___ una película sobre animales.",
             "answer": "veremos",
             "hint": "ver",
-            "wrong": "vemos"
+            "wrong": "veré"
           },
           {
-            "prompt": "Mañana, ellos ___ la puerta al salir.",
+            "prompt": "Dentro de dos días, ellos ___ la puerta al salir.",
             "answer": "cerrarán",
             "hint": "cerrar",
-            "wrong": "cierran"
+            "wrong": "cerraré"
           }
         ]
       },
@@ -1072,31 +1197,56 @@ window.CURRICULUM = {
           "prompt": "Mañana, yo ___ español en la biblioteca.",
           "answer": "estudiaré",
           "hint": "estudiar",
-          "wrong": "estudio"
+          "wrong": "estudiarás",
+          "options": [
+            "estudiaré",
+            "estudiarás",
+            "estudiará"
+          ]
         },
         {
-          "prompt": "Mañana, ella ___ una manzana en el patio.",
+          "prompt": "La próxima semana, ella ___ una manzana en el patio.",
           "answer": "comerá",
           "hint": "comer",
-          "wrong": "come"
+          "wrong": "comeré",
+          "options": [
+            "comerá",
+            "comeré",
+            "comerás"
+          ]
         },
         {
-          "prompt": "Mañana, nosotros ___ cerca de la playa.",
+          "prompt": "El próximo año, nosotros ___ cerca de la playa.",
           "answer": "viviremos",
           "hint": "vivir",
-          "wrong": "vivimos"
+          "wrong": "viviré",
+          "options": [
+            "viviremos",
+            "viviré",
+            "vivirás"
+          ]
         },
         {
-          "prompt": "Mañana, tú ___ tiempo para jugar.",
+          "prompt": "Dentro de dos días, tú ___ tiempo para jugar.",
           "answer": "tendrás",
           "hint": "tener",
-          "wrong": "tienes"
+          "wrong": "tendré",
+          "options": [
+            "tendrás",
+            "tendré",
+            "tendrá"
+          ]
         },
         {
-          "prompt": "Mañana, ellos ___ al museo de ciencias.",
+          "prompt": "El mes que viene, ellos ___ al museo de ciencias.",
           "answer": "irán",
           "hint": "ir",
-          "wrong": "van"
+          "wrong": "iré",
+          "options": [
+            "irán",
+            "iré",
+            "irás"
+          ]
         }
       ],
       "revision": "practica-v3"
@@ -2398,7 +2548,7 @@ window.CURRICULUM = {
       "formats": [
         "picturechoice",
         "wordsearch",
-        "flashcards",
+        "basket",
         "context",
         "memory"
       ],
@@ -2751,7 +2901,8 @@ window.CURRICULUM = {
             "memoryClue": "Conjunto cómodo para irse a la cama.",
             "flashClue": "Un conjunto de dos piezas para acostarse y dormir.",
             "searchClue": "Ropa que se usa para dormir por la noche.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Para dormir: pijama"
           },
           {
             "key": "vestido",
@@ -2762,7 +2913,8 @@ window.CURRICULUM = {
             "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
             "flashClue": "Una sola pieza verde con la parte de arriba unida a una falda.",
             "searchClue": "Prenda de una sola pieza con falda incorporada.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Para la fiesta: vestido"
           },
           {
             "key": "guantes",
@@ -2775,7 +2927,8 @@ window.CURRICULUM = {
             "memoryClue": "Abrigan las manos y los dedos.",
             "flashClue": "Te los pones en las manos para abrigar cada dedo.",
             "searchClue": "Prendas para las manos, con cinco dedos cada una.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Para abrigar mis manos: guantes"
           },
           {
             "key": "abrigo",
@@ -2792,7 +2945,8 @@ window.CURRICULUM = {
             "memoryClue": "Una prenda exterior que abriga el cuerpo.",
             "flashClue": "La prenda verde que te pones sobre la camiseta para abrigarte.",
             "searchClue": "Prenda exterior de manga larga para abrigarse.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Para salir al frío: chaqueta"
           },
           {
             "key": "calcetines",
@@ -2806,7 +2960,8 @@ window.CURRICULUM = {
             "memoryClue": "Se llevan entre el pie y el calzado.",
             "flashClue": "Cubren los pies y van por dentro del calzado.",
             "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Antes de calzarme: calcetines"
           },
           {
             "key": "sombrero",
@@ -2817,7 +2972,8 @@ window.CURRICULUM = {
             "memoryClue": "Tiene un ala que rodea la cabeza.",
             "flashClue": "El accesorio azul oscuro que se lleva en la cabeza.",
             "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Para protegerme del sol: sombrero"
           }
         ],
         "4": [
@@ -3072,7 +3228,10 @@ window.CURRICULUM = {
           }
         ]
       },
-      "memoryExtra": []
+      "memoryExtra": [],
+      "activityRevisions": {
+        "3": "pedidos-v3"
+      }
     },
     {
       "id": "rutina",
@@ -4219,36 +4378,61 @@ window.CURRICULUM = {
             "prompt": "Every week, I ___ Spanish at the library.",
             "answer": "study",
             "hint": "study",
-            "wrong": "studies"
+            "wrong": "studies",
+            "options": [
+              "study",
+              "studies",
+              "studys"
+            ]
           },
           {
-            "prompt": "Every week, she ___ an apple in the garden.",
+            "prompt": "On Sundays, she ___ an apple in the garden.",
             "answer": "eats",
             "hint": "eat",
-            "wrong": "eat"
+            "wrong": "eat",
+            "options": [
+              "eats",
+              "eat",
+              "eates"
+            ]
           },
           {
-            "prompt": "Every week, we ___ near the beach.",
+            "prompt": "Usually, we ___ near the beach.",
             "answer": "live",
             "hint": "live",
-            "wrong": "lives"
+            "wrong": "lives",
+            "options": [
+              "live",
+              "lives",
+              "livees"
+            ]
           },
           {
-            "prompt": "Every week, you ___ a picnic in the park.",
+            "prompt": "In the mornings, you ___ a picnic in the park.",
             "answer": "have",
             "hint": "have",
-            "wrong": "has"
+            "wrong": "has",
+            "options": [
+              "have",
+              "has",
+              "haves"
+            ]
           },
           {
-            "prompt": "Every week, they ___ to the science museum.",
+            "prompt": "Often, they ___ to the science museum.",
             "answer": "go",
             "hint": "go",
-            "wrong": "goes"
+            "wrong": "goes",
+            "options": [
+              "go",
+              "goes",
+              "gos"
+            ]
           }
         ],
         "2": [
           {
-            "prompt": "Every week, I ___ water with my lunch.",
+            "prompt": "On Sundays, I ___ water with my lunch.",
             "answer": "drink",
             "hint": "drink",
             "wrong": "drinks",
@@ -4256,7 +4440,7 @@ window.CURRICULUM = {
             "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "Every week, you ___ an adventure story.",
+            "prompt": "Usually, you ___ an adventure story.",
             "answer": "read",
             "hint": "read",
             "wrong": "reads",
@@ -4264,7 +4448,7 @@ window.CURRICULUM = {
             "clue": "A child performing the action: read."
           },
           {
-            "prompt": "Every week, she ___ a letter to her grandmother.",
+            "prompt": "In the mornings, she ___ a letter to her grandmother.",
             "answer": "writes",
             "hint": "write",
             "wrong": "write",
@@ -4272,7 +4456,7 @@ window.CURRICULUM = {
             "clue": "A child performing the action: write."
           },
           {
-            "prompt": "Every week, we ___ flowers with coloured pencils.",
+            "prompt": "Often, we ___ flowers with coloured pencils.",
             "answer": "draw",
             "hint": "draw",
             "wrong": "draws",
@@ -4290,7 +4474,7 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "Every week, I ___ a snack for my friends.",
+            "prompt": "Usually, I ___ a snack for my friends.",
             "answer": "prepare",
             "hint": "prepare",
             "wrong": "prepares"
@@ -4322,13 +4506,13 @@ window.CURRICULUM = {
         ],
         "4": [
           {
-            "prompt": "Every week, I ___ through the park with my dog.",
+            "prompt": "In the mornings, I ___ through the park with my dog.",
             "answer": "run",
             "hint": "run",
             "wrong": "runs"
           },
           {
-            "prompt": "Every week, you ___ to school with your sister.",
+            "prompt": "Often, you ___ to school with your sister.",
             "answer": "walk",
             "hint": "walk",
             "wrong": "walks"
@@ -4340,13 +4524,13 @@ window.CURRICULUM = {
             "wrong": "open"
           },
           {
-            "prompt": "Every week, we ___ with a ball in the garden.",
+            "prompt": "On Sundays, we ___ with a ball in the garden.",
             "answer": "play",
             "hint": "play",
             "wrong": "plays"
           },
           {
-            "prompt": "Every week, they ___ to music with headphones.",
+            "prompt": "Usually, they ___ to music with headphones.",
             "answer": "listen",
             "hint": "listen",
             "wrong": "listens"
@@ -4354,7 +4538,7 @@ window.CURRICULUM = {
         ],
         "5": [
           {
-            "prompt": "Every week, I ___ for my bag before leaving.",
+            "prompt": "Often, I ___ for my bag before leaving.",
             "answer": "look",
             "hint": "look",
             "wrong": "looks"
@@ -4366,19 +4550,19 @@ window.CURRICULUM = {
             "wrong": "buys"
           },
           {
-            "prompt": "Every week, she ___ to my house to study.",
+            "prompt": "On Sundays, she ___ to my house to study.",
             "answer": "comes",
             "hint": "come",
             "wrong": "come"
           },
           {
-            "prompt": "Every week, we ___ a film about animals.",
+            "prompt": "Usually, we ___ a film about animals.",
             "answer": "watch",
             "hint": "watch",
             "wrong": "watches"
           },
           {
-            "prompt": "Every week, they ___ the door before leaving.",
+            "prompt": "In the mornings, they ___ the door before leaving.",
             "answer": "close",
             "hint": "close",
             "wrong": "closes"
@@ -4397,31 +4581,56 @@ window.CURRICULUM = {
           "prompt": "Every week, I ___ Spanish at the library.",
           "answer": "study",
           "hint": "study",
-          "wrong": "studies"
+          "wrong": "studies",
+          "options": [
+            "study",
+            "studies",
+            "studys"
+          ]
         },
         {
-          "prompt": "Every week, she ___ an apple in the garden.",
+          "prompt": "On Sundays, she ___ an apple in the garden.",
           "answer": "eats",
           "hint": "eat",
-          "wrong": "eat"
+          "wrong": "eat",
+          "options": [
+            "eats",
+            "eat",
+            "eates"
+          ]
         },
         {
-          "prompt": "Every week, we ___ near the beach.",
+          "prompt": "Usually, we ___ near the beach.",
           "answer": "live",
           "hint": "live",
-          "wrong": "lives"
+          "wrong": "lives",
+          "options": [
+            "live",
+            "lives",
+            "livees"
+          ]
         },
         {
-          "prompt": "Every week, you ___ a picnic in the park.",
+          "prompt": "In the mornings, you ___ a picnic in the park.",
           "answer": "have",
           "hint": "have",
-          "wrong": "has"
+          "wrong": "has",
+          "options": [
+            "have",
+            "has",
+            "haves"
+          ]
         },
         {
-          "prompt": "Every week, they ___ to the science museum.",
+          "prompt": "Often, they ___ to the science museum.",
           "answer": "go",
           "hint": "go",
-          "wrong": "goes"
+          "wrong": "goes",
+          "options": [
+            "go",
+            "goes",
+            "gos"
+          ]
         }
       ],
       "revision": "practica-v3"
@@ -4439,63 +4648,63 @@ window.CURRICULUM = {
             "prompt": "Right now, I ___ Spanish at the library.",
             "answer": "am studying",
             "hint": "study",
-            "wrong": "are studying"
+            "wrong": "is studying"
           },
           {
-            "prompt": "Right now, she ___ an apple in the garden.",
+            "prompt": "At this moment, she ___ an apple in the garden.",
             "answer": "is eating",
             "hint": "eat",
-            "wrong": "are eating"
+            "wrong": "am eating"
           },
           {
-            "prompt": "Right now, we ___ near the beach.",
+            "prompt": "Today, we ___ near the beach.",
             "answer": "are living",
             "hint": "live",
-            "wrong": "is living"
+            "wrong": "am living"
           },
           {
-            "prompt": "Right now, you ___ a picnic in the park.",
+            "prompt": "For now, you ___ a picnic in the park.",
             "answer": "are having",
             "hint": "have",
-            "wrong": "is having"
+            "wrong": "am having"
           },
           {
-            "prompt": "Right now, they ___ to the science museum.",
+            "prompt": "This week, they ___ to the science museum.",
             "answer": "are going",
             "hint": "go",
-            "wrong": "is going"
+            "wrong": "am going"
           }
         ],
         "2": [
           {
-            "prompt": "Right now, I ___ water with my lunch.",
+            "prompt": "At this moment, I ___ water with my lunch.",
             "answer": "am drinking",
             "hint": "drink",
-            "wrong": "are drinking",
+            "wrong": "is drinking",
             "asset": "acciones/beber",
             "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "Right now, you ___ an adventure story.",
+            "prompt": "Today, you ___ an adventure story.",
             "answer": "are reading",
             "hint": "read",
-            "wrong": "is reading",
+            "wrong": "am reading",
             "asset": "acciones/leer",
             "clue": "A child performing the action: read."
           },
           {
-            "prompt": "Right now, she ___ a letter to her grandmother.",
+            "prompt": "For now, she ___ a letter to her grandmother.",
             "answer": "is writing",
             "hint": "write",
-            "wrong": "are writing",
+            "wrong": "am writing",
             "asset": "acciones/escribir",
             "clue": "A child performing the action: write."
           },
           {
-            "prompt": "Right now, we ___ flowers with coloured pencils.",
+            "prompt": "This week, we ___ flowers with coloured pencils.",
             "answer": "are drawing",
             "hint": "draw",
-            "wrong": "is drawing",
+            "wrong": "am drawing",
             "asset": "acciones/dibujar",
             "clue": "A child performing the action: draw."
           },
@@ -4503,105 +4712,105 @@ window.CURRICULUM = {
             "prompt": "Right now, they ___ in their own beds.",
             "answer": "are sleeping",
             "hint": "sleep",
-            "wrong": "is sleeping",
+            "wrong": "am sleeping",
             "asset": "acciones/dormir",
             "clue": "A child performing the action: sleep."
           }
         ],
         "3": [
           {
-            "prompt": "Right now, I ___ a snack for my friends.",
+            "prompt": "Today, I ___ a snack for my friends.",
             "answer": "am preparing",
             "hint": "prepare",
-            "wrong": "are preparing"
+            "wrong": "is preparing"
           },
           {
             "prompt": "Then, you ___ the plates on the table.",
             "answer": "are putting",
             "hint": "put",
-            "wrong": "is putting"
+            "wrong": "am putting"
           },
           {
             "prompt": "After that, Anna ___ bread from the shop.",
             "answer": "is bringing",
             "hint": "bring",
-            "wrong": "are bringing"
+            "wrong": "am bringing"
           },
           {
             "prompt": "Next, we ___ a fruit salad.",
             "answer": "are making",
             "hint": "make",
-            "wrong": "is making"
+            "wrong": "am making"
           },
           {
             "prompt": "Finally, the children ___ the cups after lunch.",
             "answer": "are collecting",
             "hint": "collect",
-            "wrong": "is collecting"
+            "wrong": "am collecting"
           }
         ],
         "4": [
           {
-            "prompt": "Right now, I ___ through the park with my dog.",
+            "prompt": "For now, I ___ through the park with my dog.",
             "answer": "am running",
             "hint": "run",
-            "wrong": "are running"
+            "wrong": "is running"
           },
           {
-            "prompt": "Right now, you ___ to school with your sister.",
+            "prompt": "This week, you ___ to school with your sister.",
             "answer": "are walking",
             "hint": "walk",
-            "wrong": "is walking"
+            "wrong": "am walking"
           },
           {
             "prompt": "Right now, she ___ her bedroom window.",
             "answer": "is opening",
             "hint": "open",
-            "wrong": "are opening"
+            "wrong": "am opening"
           },
           {
-            "prompt": "Right now, we ___ with a ball in the garden.",
+            "prompt": "At this moment, we ___ with a ball in the garden.",
             "answer": "are playing",
             "hint": "play",
-            "wrong": "is playing"
+            "wrong": "am playing"
           },
           {
-            "prompt": "Right now, they ___ to music with headphones.",
+            "prompt": "Today, they ___ to music with headphones.",
             "answer": "are listening",
             "hint": "listen",
-            "wrong": "is listening"
+            "wrong": "am listening"
           }
         ],
         "5": [
           {
-            "prompt": "Right now, I ___ for my bag before leaving.",
+            "prompt": "This week, I ___ for my bag before leaving.",
             "answer": "am looking",
             "hint": "look",
-            "wrong": "are looking"
+            "wrong": "is looking"
           },
           {
             "prompt": "Right now, you ___ a notebook at the bookshop.",
             "answer": "are buying",
             "hint": "buy",
-            "wrong": "is buying"
+            "wrong": "am buying"
           },
           {
-            "prompt": "Right now, she ___ to my house to study.",
+            "prompt": "At this moment, she ___ to my house to study.",
             "answer": "is coming",
             "hint": "come",
-            "wrong": "are coming"
+            "wrong": "am coming"
           },
           {
-            "prompt": "Right now, we ___ a film about animals.",
+            "prompt": "Today, we ___ a film about animals.",
             "answer": "are watching",
             "hint": "watch",
-            "wrong": "is watching"
+            "wrong": "am watching"
           },
           {
-            "prompt": "Right now, they ___ the door before leaving.",
+            "prompt": "For now, they ___ the door before leaving.",
             "answer": "are closing",
             "hint": "close",
-            "wrong": "is closing"
+            "wrong": "am closing"
           }
         ]
       },
@@ -4617,31 +4826,31 @@ window.CURRICULUM = {
           "prompt": "Right now, I ___ Spanish at the library.",
           "answer": "am studying",
           "hint": "study",
-          "wrong": "are studying"
+          "wrong": "is studying"
         },
         {
-          "prompt": "Right now, she ___ an apple in the garden.",
+          "prompt": "At this moment, she ___ an apple in the garden.",
           "answer": "is eating",
           "hint": "eat",
-          "wrong": "are eating"
+          "wrong": "am eating"
         },
         {
-          "prompt": "Right now, we ___ near the beach.",
+          "prompt": "Today, we ___ near the beach.",
           "answer": "are living",
           "hint": "live",
-          "wrong": "is living"
+          "wrong": "am living"
         },
         {
-          "prompt": "Right now, you ___ a picnic in the park.",
+          "prompt": "For now, you ___ a picnic in the park.",
           "answer": "are having",
           "hint": "have",
-          "wrong": "is having"
+          "wrong": "am having"
         },
         {
-          "prompt": "Right now, they ___ to the science museum.",
+          "prompt": "This week, they ___ to the science museum.",
           "answer": "are going",
           "hint": "go",
-          "wrong": "is going"
+          "wrong": "am going"
         }
       ],
       "revision": "practica-v3"
@@ -4659,44 +4868,69 @@ window.CURRICULUM = {
             "prompt": "Yesterday, I ___ Spanish at the library.",
             "answer": "studied",
             "hint": "study",
-            "wrong": "study"
+            "wrong": "studyed",
+            "options": [
+              "studied",
+              "studyed",
+              "studyd"
+            ]
           },
           {
-            "prompt": "Yesterday, she ___ an apple in the garden.",
+            "prompt": "Last week, she ___ an apple in the garden.",
             "answer": "ate",
             "hint": "eat",
-            "wrong": "eat"
+            "wrong": "eated",
+            "options": [
+              "ate",
+              "eated",
+              "ated"
+            ]
           },
           {
-            "prompt": "Yesterday, we ___ near the beach.",
+            "prompt": "Last year, we ___ near the beach.",
             "answer": "lived",
             "hint": "live",
-            "wrong": "live"
+            "wrong": "livved",
+            "options": [
+              "lived",
+              "livved",
+              "liveed"
+            ]
           },
           {
-            "prompt": "Yesterday, you ___ a picnic in the park.",
+            "prompt": "Two days ago, you ___ a picnic in the park.",
             "answer": "had",
             "hint": "have",
-            "wrong": "have"
+            "wrong": "haved",
+            "options": [
+              "had",
+              "haved",
+              "hadded"
+            ]
           },
           {
-            "prompt": "Yesterday, they ___ to the science museum.",
+            "prompt": "Last month, they ___ to the science museum.",
             "answer": "went",
             "hint": "go",
-            "wrong": "go"
+            "wrong": "goed",
+            "options": [
+              "went",
+              "goed",
+              "wented"
+            ]
           }
         ],
         "2": [
           {
-            "prompt": "Yesterday, I ___ water with my lunch.",
+            "prompt": "Last week, I ___ water with my lunch.",
             "answer": "drank",
             "hint": "drink",
-            "wrong": "drink",
+            "wrong": "drinked",
             "asset": "acciones/beber",
             "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "Yesterday, you ___ an adventure story.",
+            "prompt": "Last year, you ___ an adventure story.",
             "answer": "read",
             "hint": "read",
             "wrong": "readed",
@@ -4704,18 +4938,18 @@ window.CURRICULUM = {
             "clue": "A child performing the action: read."
           },
           {
-            "prompt": "Yesterday, she ___ a letter to her grandmother.",
+            "prompt": "Two days ago, she ___ a letter to her grandmother.",
             "answer": "wrote",
             "hint": "write",
-            "wrong": "write",
+            "wrong": "writed",
             "asset": "acciones/escribir",
             "clue": "A child performing the action: write."
           },
           {
-            "prompt": "Yesterday, we ___ flowers with coloured pencils.",
+            "prompt": "Last month, we ___ flowers with coloured pencils.",
             "answer": "drew",
             "hint": "draw",
-            "wrong": "draw",
+            "wrong": "drawed",
             "asset": "acciones/dibujar",
             "clue": "A child performing the action: draw."
           },
@@ -4723,105 +4957,105 @@ window.CURRICULUM = {
             "prompt": "Yesterday, they ___ in their own beds.",
             "answer": "slept",
             "hint": "sleep",
-            "wrong": "sleep",
+            "wrong": "sleeped",
             "asset": "acciones/dormir",
             "clue": "A child performing the action: sleep."
           }
         ],
         "3": [
           {
-            "prompt": "Yesterday, I ___ a snack for my friends.",
+            "prompt": "Last year, I ___ a snack for my friends.",
             "answer": "prepared",
             "hint": "prepare",
-            "wrong": "prepare"
+            "wrong": "preparred"
           },
           {
             "prompt": "Then, you ___ the plates on the table.",
             "answer": "put",
             "hint": "put",
-            "wrong": "puted"
+            "wrong": "putted"
           },
           {
             "prompt": "After that, Anna ___ bread from the shop.",
             "answer": "brought",
             "hint": "bring",
-            "wrong": "bring"
+            "wrong": "bringed"
           },
           {
             "prompt": "Next, we ___ a fruit salad.",
             "answer": "made",
             "hint": "make",
-            "wrong": "make"
+            "wrong": "maked"
           },
           {
             "prompt": "Finally, the children ___ the cups after lunch.",
             "answer": "collected",
             "hint": "collect",
-            "wrong": "collect"
+            "wrong": "collectted"
           }
         ],
         "4": [
           {
-            "prompt": "Yesterday, I ___ through the park with my dog.",
+            "prompt": "Two days ago, I ___ through the park with my dog.",
             "answer": "ran",
             "hint": "run",
-            "wrong": "run"
+            "wrong": "runned"
           },
           {
-            "prompt": "Yesterday, you ___ to school with your sister.",
+            "prompt": "Last month, you ___ to school with your sister.",
             "answer": "walked",
             "hint": "walk",
-            "wrong": "walk"
+            "wrong": "walkked"
           },
           {
             "prompt": "Yesterday, she ___ her bedroom window.",
             "answer": "opened",
             "hint": "open",
-            "wrong": "open"
+            "wrong": "openned"
           },
           {
-            "prompt": "Yesterday, we ___ with a ball in the garden.",
+            "prompt": "Last week, we ___ with a ball in the garden.",
             "answer": "played",
             "hint": "play",
-            "wrong": "play"
+            "wrong": "playied"
           },
           {
-            "prompt": "Yesterday, they ___ to music with headphones.",
+            "prompt": "Last year, they ___ to music with headphones.",
             "answer": "listened",
             "hint": "listen",
-            "wrong": "listen"
+            "wrong": "listenned"
           }
         ],
         "5": [
           {
-            "prompt": "Yesterday, I ___ for my bag before leaving.",
+            "prompt": "Last month, I ___ for my bag before leaving.",
             "answer": "looked",
             "hint": "look",
-            "wrong": "look"
+            "wrong": "lookked"
           },
           {
             "prompt": "Yesterday, you ___ a notebook at the bookshop.",
             "answer": "bought",
             "hint": "buy",
-            "wrong": "buy"
+            "wrong": "buyed"
           },
           {
-            "prompt": "Yesterday, she ___ to my house to study.",
+            "prompt": "Last week, she ___ to my house to study.",
             "answer": "came",
             "hint": "come",
-            "wrong": "come"
+            "wrong": "comed"
           },
           {
-            "prompt": "Yesterday, we ___ a film about animals.",
+            "prompt": "Last year, we ___ a film about animals.",
             "answer": "watched",
             "hint": "watch",
-            "wrong": "watch"
+            "wrong": "watcht"
           },
           {
-            "prompt": "Yesterday, they ___ the door before leaving.",
+            "prompt": "Two days ago, they ___ the door before leaving.",
             "answer": "closed",
             "hint": "close",
-            "wrong": "close"
+            "wrong": "clossed"
           }
         ]
       },
@@ -4837,31 +5071,56 @@ window.CURRICULUM = {
           "prompt": "Yesterday, I ___ Spanish at the library.",
           "answer": "studied",
           "hint": "study",
-          "wrong": "study"
+          "wrong": "studyed",
+          "options": [
+            "studied",
+            "studyed",
+            "studyd"
+          ]
         },
         {
-          "prompt": "Yesterday, she ___ an apple in the garden.",
+          "prompt": "Last week, she ___ an apple in the garden.",
           "answer": "ate",
           "hint": "eat",
-          "wrong": "eat"
+          "wrong": "eated",
+          "options": [
+            "ate",
+            "eated",
+            "ated"
+          ]
         },
         {
-          "prompt": "Yesterday, we ___ near the beach.",
+          "prompt": "Last year, we ___ near the beach.",
           "answer": "lived",
           "hint": "live",
-          "wrong": "live"
+          "wrong": "livved",
+          "options": [
+            "lived",
+            "livved",
+            "liveed"
+          ]
         },
         {
-          "prompt": "Yesterday, you ___ a picnic in the park.",
+          "prompt": "Two days ago, you ___ a picnic in the park.",
           "answer": "had",
           "hint": "have",
-          "wrong": "have"
+          "wrong": "haved",
+          "options": [
+            "had",
+            "haved",
+            "hadded"
+          ]
         },
         {
-          "prompt": "Yesterday, they ___ to the science museum.",
+          "prompt": "Last month, they ___ to the science museum.",
           "answer": "went",
           "hint": "go",
-          "wrong": "go"
+          "wrong": "goed",
+          "options": [
+            "went",
+            "goed",
+            "wented"
+          ]
         }
       ],
       "revision": "practica-v3"
@@ -4882,25 +5141,25 @@ window.CURRICULUM = {
             "wrong": "has studied"
           },
           {
-            "prompt": "This week, she ___ an apple in the garden.",
+            "prompt": "Recently, she ___ an apple in the garden.",
             "answer": "has eaten",
             "hint": "eat",
             "wrong": "have eaten"
           },
           {
-            "prompt": "This week, we ___ near the beach.",
+            "prompt": "This month, we ___ near the beach.",
             "answer": "have lived",
             "hint": "live",
             "wrong": "has lived"
           },
           {
-            "prompt": "This week, you ___ a picnic in the park.",
+            "prompt": "This year, you ___ a picnic in the park.",
             "answer": "have had",
             "hint": "have",
             "wrong": "has had"
           },
           {
-            "prompt": "This week, they ___ to the science museum.",
+            "prompt": "Today, they ___ to the science museum.",
             "answer": "have gone",
             "hint": "go",
             "wrong": "has gone"
@@ -4908,7 +5167,7 @@ window.CURRICULUM = {
         ],
         "2": [
           {
-            "prompt": "This week, I ___ water with my lunch.",
+            "prompt": "Recently, I ___ water with my lunch.",
             "answer": "have drunk",
             "hint": "drink",
             "wrong": "has drunk",
@@ -4916,7 +5175,7 @@ window.CURRICULUM = {
             "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "This week, you ___ an adventure story.",
+            "prompt": "This month, you ___ an adventure story.",
             "answer": "have read",
             "hint": "read",
             "wrong": "has read",
@@ -4924,7 +5183,7 @@ window.CURRICULUM = {
             "clue": "A child performing the action: read."
           },
           {
-            "prompt": "This week, she ___ a letter to her grandmother.",
+            "prompt": "This year, she ___ a letter to her grandmother.",
             "answer": "has written",
             "hint": "write",
             "wrong": "have written",
@@ -4932,7 +5191,7 @@ window.CURRICULUM = {
             "clue": "A child performing the action: write."
           },
           {
-            "prompt": "This week, we ___ flowers with coloured pencils.",
+            "prompt": "Today, we ___ flowers with coloured pencils.",
             "answer": "have drawn",
             "hint": "draw",
             "wrong": "has drawn",
@@ -4950,7 +5209,7 @@ window.CURRICULUM = {
         ],
         "3": [
           {
-            "prompt": "This week, I ___ a snack for my friends.",
+            "prompt": "This month, I ___ a snack for my friends.",
             "answer": "have prepared",
             "hint": "prepare",
             "wrong": "has prepared"
@@ -4982,13 +5241,13 @@ window.CURRICULUM = {
         ],
         "4": [
           {
-            "prompt": "This week, I ___ through the park with my dog.",
+            "prompt": "This year, I ___ through the park with my dog.",
             "answer": "have run",
             "hint": "run",
             "wrong": "has run"
           },
           {
-            "prompt": "This week, you ___ to school with your sister.",
+            "prompt": "Today, you ___ to school with your sister.",
             "answer": "have walked",
             "hint": "walk",
             "wrong": "has walked"
@@ -5000,13 +5259,13 @@ window.CURRICULUM = {
             "wrong": "have opened"
           },
           {
-            "prompt": "This week, we ___ with a ball in the garden.",
+            "prompt": "Recently, we ___ with a ball in the garden.",
             "answer": "have played",
             "hint": "play",
             "wrong": "has played"
           },
           {
-            "prompt": "This week, they ___ to music with headphones.",
+            "prompt": "This month, they ___ to music with headphones.",
             "answer": "have listened",
             "hint": "listen",
             "wrong": "has listened"
@@ -5014,7 +5273,7 @@ window.CURRICULUM = {
         ],
         "5": [
           {
-            "prompt": "This week, I ___ for my bag before leaving.",
+            "prompt": "Today, I ___ for my bag before leaving.",
             "answer": "have looked",
             "hint": "look",
             "wrong": "has looked"
@@ -5026,19 +5285,19 @@ window.CURRICULUM = {
             "wrong": "has bought"
           },
           {
-            "prompt": "This week, she ___ to my house to study.",
+            "prompt": "Recently, she ___ to my house to study.",
             "answer": "has come",
             "hint": "come",
             "wrong": "have come"
           },
           {
-            "prompt": "This week, we ___ a film about animals.",
+            "prompt": "This month, we ___ a film about animals.",
             "answer": "have watched",
             "hint": "watch",
             "wrong": "has watched"
           },
           {
-            "prompt": "This week, they ___ the door before leaving.",
+            "prompt": "This year, they ___ the door before leaving.",
             "answer": "have closed",
             "hint": "close",
             "wrong": "has closed"
@@ -5060,25 +5319,25 @@ window.CURRICULUM = {
           "wrong": "has studied"
         },
         {
-          "prompt": "This week, she ___ an apple in the garden.",
+          "prompt": "Recently, she ___ an apple in the garden.",
           "answer": "has eaten",
           "hint": "eat",
           "wrong": "have eaten"
         },
         {
-          "prompt": "This week, we ___ near the beach.",
+          "prompt": "This month, we ___ near the beach.",
           "answer": "have lived",
           "hint": "live",
           "wrong": "has lived"
         },
         {
-          "prompt": "This week, you ___ a picnic in the park.",
+          "prompt": "This year, you ___ a picnic in the park.",
           "answer": "have had",
           "hint": "have",
           "wrong": "has had"
         },
         {
-          "prompt": "This week, they ___ to the science museum.",
+          "prompt": "Today, they ___ to the science museum.",
           "answer": "have gone",
           "hint": "go",
           "wrong": "has gone"
@@ -5099,63 +5358,88 @@ window.CURRICULUM = {
             "prompt": "Tomorrow, I ___ Spanish at the library.",
             "answer": "am going to study",
             "hint": "study",
-            "wrong": "are going to study"
+            "wrong": "is going to study",
+            "options": [
+              "am going to study",
+              "is going to study",
+              "are going to study"
+            ]
           },
           {
-            "prompt": "Tomorrow, she ___ an apple in the garden.",
+            "prompt": "Next week, she ___ an apple in the garden.",
             "answer": "is going to eat",
             "hint": "eat",
-            "wrong": "are going to eat"
+            "wrong": "am going to eat",
+            "options": [
+              "is going to eat",
+              "am going to eat",
+              "are going to eat"
+            ]
           },
           {
-            "prompt": "Tomorrow, we ___ near the beach.",
+            "prompt": "Next year, we ___ near the beach.",
             "answer": "are going to live",
             "hint": "live",
-            "wrong": "is going to live"
+            "wrong": "am going to live",
+            "options": [
+              "are going to live",
+              "am going to live",
+              "is going to live"
+            ]
           },
           {
-            "prompt": "Tomorrow, you ___ a picnic in the park.",
+            "prompt": "In two days, you ___ a picnic in the park.",
             "answer": "are going to have",
             "hint": "have",
-            "wrong": "is going to have"
+            "wrong": "am going to have",
+            "options": [
+              "are going to have",
+              "am going to have",
+              "is going to have"
+            ]
           },
           {
-            "prompt": "Tomorrow, they ___ to the science museum.",
+            "prompt": "Next month, they ___ to the science museum.",
             "answer": "are going to go",
             "hint": "go",
-            "wrong": "is going to go"
+            "wrong": "am going to go",
+            "options": [
+              "are going to go",
+              "am going to go",
+              "is going to go"
+            ]
           }
         ],
         "2": [
           {
-            "prompt": "Tomorrow, I ___ water with my lunch.",
+            "prompt": "Next week, I ___ water with my lunch.",
             "answer": "am going to drink",
             "hint": "drink",
-            "wrong": "are going to drink",
+            "wrong": "is going to drink",
             "asset": "acciones/beber",
             "clue": "A child performing the action: drink."
           },
           {
-            "prompt": "Tomorrow, you ___ an adventure story.",
+            "prompt": "Next year, you ___ an adventure story.",
             "answer": "are going to read",
             "hint": "read",
-            "wrong": "is going to read",
+            "wrong": "am going to read",
             "asset": "acciones/leer",
             "clue": "A child performing the action: read."
           },
           {
-            "prompt": "Tomorrow, she ___ a letter to her grandmother.",
+            "prompt": "In two days, she ___ a letter to her grandmother.",
             "answer": "is going to write",
             "hint": "write",
-            "wrong": "are going to write",
+            "wrong": "am going to write",
             "asset": "acciones/escribir",
             "clue": "A child performing the action: write."
           },
           {
-            "prompt": "Tomorrow, we ___ flowers with coloured pencils.",
+            "prompt": "Next month, we ___ flowers with coloured pencils.",
             "answer": "are going to draw",
             "hint": "draw",
-            "wrong": "is going to draw",
+            "wrong": "am going to draw",
             "asset": "acciones/dibujar",
             "clue": "A child performing the action: draw."
           },
@@ -5163,105 +5447,105 @@ window.CURRICULUM = {
             "prompt": "Tomorrow, they ___ in their own beds.",
             "answer": "are going to sleep",
             "hint": "sleep",
-            "wrong": "is going to sleep",
+            "wrong": "am going to sleep",
             "asset": "acciones/dormir",
             "clue": "A child performing the action: sleep."
           }
         ],
         "3": [
           {
-            "prompt": "Tomorrow, I ___ a snack for my friends.",
+            "prompt": "Next year, I ___ a snack for my friends.",
             "answer": "am going to prepare",
             "hint": "prepare",
-            "wrong": "are going to prepare"
+            "wrong": "is going to prepare"
           },
           {
             "prompt": "Then, you ___ the plates on the table.",
             "answer": "are going to put",
             "hint": "put",
-            "wrong": "is going to put"
+            "wrong": "am going to put"
           },
           {
             "prompt": "After that, Anna ___ bread from the shop.",
             "answer": "is going to bring",
             "hint": "bring",
-            "wrong": "are going to bring"
+            "wrong": "am going to bring"
           },
           {
             "prompt": "Next, we ___ a fruit salad.",
             "answer": "are going to make",
             "hint": "make",
-            "wrong": "is going to make"
+            "wrong": "am going to make"
           },
           {
             "prompt": "Finally, the children ___ the cups after lunch.",
             "answer": "are going to collect",
             "hint": "collect",
-            "wrong": "is going to collect"
+            "wrong": "am going to collect"
           }
         ],
         "4": [
           {
-            "prompt": "Tomorrow, I ___ through the park with my dog.",
+            "prompt": "In two days, I ___ through the park with my dog.",
             "answer": "am going to run",
             "hint": "run",
-            "wrong": "are going to run"
+            "wrong": "is going to run"
           },
           {
-            "prompt": "Tomorrow, you ___ to school with your sister.",
+            "prompt": "Next month, you ___ to school with your sister.",
             "answer": "are going to walk",
             "hint": "walk",
-            "wrong": "is going to walk"
+            "wrong": "am going to walk"
           },
           {
             "prompt": "Tomorrow, she ___ her bedroom window.",
             "answer": "is going to open",
             "hint": "open",
-            "wrong": "are going to open"
+            "wrong": "am going to open"
           },
           {
-            "prompt": "Tomorrow, we ___ with a ball in the garden.",
+            "prompt": "Next week, we ___ with a ball in the garden.",
             "answer": "are going to play",
             "hint": "play",
-            "wrong": "is going to play"
+            "wrong": "am going to play"
           },
           {
-            "prompt": "Tomorrow, they ___ to music with headphones.",
+            "prompt": "Next year, they ___ to music with headphones.",
             "answer": "are going to listen",
             "hint": "listen",
-            "wrong": "is going to listen"
+            "wrong": "am going to listen"
           }
         ],
         "5": [
           {
-            "prompt": "Tomorrow, I ___ for my bag before leaving.",
+            "prompt": "Next month, I ___ for my bag before leaving.",
             "answer": "am going to look",
             "hint": "look",
-            "wrong": "are going to look"
+            "wrong": "is going to look"
           },
           {
             "prompt": "Tomorrow, you ___ a notebook at the bookshop.",
             "answer": "are going to buy",
             "hint": "buy",
-            "wrong": "is going to buy"
+            "wrong": "am going to buy"
           },
           {
-            "prompt": "Tomorrow, she ___ to my house to study.",
+            "prompt": "Next week, she ___ to my house to study.",
             "answer": "is going to come",
             "hint": "come",
-            "wrong": "are going to come"
+            "wrong": "am going to come"
           },
           {
-            "prompt": "Tomorrow, we ___ a film about animals.",
+            "prompt": "Next year, we ___ a film about animals.",
             "answer": "are going to watch",
             "hint": "watch",
-            "wrong": "is going to watch"
+            "wrong": "am going to watch"
           },
           {
-            "prompt": "Tomorrow, they ___ the door before leaving.",
+            "prompt": "In two days, they ___ the door before leaving.",
             "answer": "are going to close",
             "hint": "close",
-            "wrong": "is going to close"
+            "wrong": "am going to close"
           }
         ]
       },
@@ -5277,31 +5561,56 @@ window.CURRICULUM = {
           "prompt": "Tomorrow, I ___ Spanish at the library.",
           "answer": "am going to study",
           "hint": "study",
-          "wrong": "are going to study"
+          "wrong": "is going to study",
+          "options": [
+            "am going to study",
+            "is going to study",
+            "are going to study"
+          ]
         },
         {
-          "prompt": "Tomorrow, she ___ an apple in the garden.",
+          "prompt": "Next week, she ___ an apple in the garden.",
           "answer": "is going to eat",
           "hint": "eat",
-          "wrong": "are going to eat"
+          "wrong": "am going to eat",
+          "options": [
+            "is going to eat",
+            "am going to eat",
+            "are going to eat"
+          ]
         },
         {
-          "prompt": "Tomorrow, we ___ near the beach.",
+          "prompt": "Next year, we ___ near the beach.",
           "answer": "are going to live",
           "hint": "live",
-          "wrong": "is going to live"
+          "wrong": "am going to live",
+          "options": [
+            "are going to live",
+            "am going to live",
+            "is going to live"
+          ]
         },
         {
-          "prompt": "Tomorrow, you ___ a picnic in the park.",
+          "prompt": "In two days, you ___ a picnic in the park.",
           "answer": "are going to have",
           "hint": "have",
-          "wrong": "is going to have"
+          "wrong": "am going to have",
+          "options": [
+            "are going to have",
+            "am going to have",
+            "is going to have"
+          ]
         },
         {
-          "prompt": "Tomorrow, they ___ to the science museum.",
+          "prompt": "Next month, they ___ to the science museum.",
           "answer": "are going to go",
           "hint": "go",
-          "wrong": "is going to go"
+          "wrong": "am going to go",
+          "options": [
+            "are going to go",
+            "am going to go",
+            "is going to go"
+          ]
         }
       ],
       "revision": "practica-v3"
@@ -6490,7 +6799,7 @@ window.CURRICULUM = {
       "formats": [
         "picturechoice",
         "wordsearch",
-        "flashcards",
+        "basket",
         "context",
         "memory"
       ],
@@ -6827,7 +7136,8 @@ window.CURRICULUM = {
             "memoryClue": "A matching top and trousers worn for sleeping.",
             "flashClue": "A matching top and trousers worn for sleeping.",
             "searchClue": "You put these clothes on for bed.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "For bedtime: pyjamas"
           },
           {
             "key": "vestido",
@@ -6838,7 +7148,8 @@ window.CURRICULUM = {
             "memoryClue": "A pink one-piece garment with a skirt.",
             "flashClue": "A pink one-piece garment with a skirt.",
             "searchClue": "The top and skirt form one garment.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "For the party: dress"
           },
           {
             "key": "guantes",
@@ -6851,7 +7162,8 @@ window.CURRICULUM = {
             "memoryClue": "Two items that cover the hands and fingers.",
             "flashClue": "Two items that cover the hands and fingers.",
             "searchClue": "These keep all your fingers warm.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "To keep my hands warm: gloves"
           },
           {
             "key": "abrigo",
@@ -6864,7 +7176,8 @@ window.CURRICULUM = {
             "memoryClue": "A green long-sleeved outer garment.",
             "flashClue": "A green long-sleeved outer garment.",
             "searchClue": "You wear this over your clothes to keep warm.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "For a cold day: jacket"
           },
           {
             "key": "calcetines",
@@ -6877,7 +7190,8 @@ window.CURRICULUM = {
             "memoryClue": "Two orange items worn on your feet inside shoes.",
             "flashClue": "Two orange items worn on your feet inside shoes.",
             "searchClue": "You put these on before your shoes.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Before putting on my shoes: socks"
           },
           {
             "key": "sombrero",
@@ -6888,7 +7202,8 @@ window.CURRICULUM = {
             "memoryClue": "A hat with a brim all the way round.",
             "flashClue": "A hat with a brim all the way round.",
             "searchClue": "Unlike a cap, this head covering has a brim all around.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "For protection from the sun: hat"
           }
         ],
         "4": [
@@ -7132,7 +7447,10 @@ window.CURRICULUM = {
           }
         ]
       },
-      "memoryExtra": []
+      "memoryExtra": [],
+      "activityRevisions": {
+        "3": "pedidos-v3"
+      }
     },
     {
       "id": "rutina",
@@ -8268,63 +8586,88 @@ window.CURRICULUM = {
             "prompt": "Обычно я ___ новые слова.",
             "hint": "учить",
             "answer": "учу",
-            "wrong": "учил"
+            "wrong": "учишь",
+            "options": [
+              "учу",
+              "учишь",
+              "учит"
+            ]
           },
           {
-            "prompt": "Обычно она ___ яблоко в саду.",
+            "prompt": "Каждую неделю она ___ яблоко в саду.",
             "hint": "есть",
             "answer": "ест",
-            "wrong": "ела"
+            "wrong": "ем",
+            "options": [
+              "ест",
+              "ем",
+              "ешь"
+            ]
           },
           {
-            "prompt": "Обычно мы ___ рядом с морем.",
+            "prompt": "Как правило мы ___ рядом с морем.",
             "hint": "жить",
             "answer": "живём",
-            "wrong": "жили"
+            "wrong": "живу",
+            "options": [
+              "живём",
+              "живу",
+              "живёшь"
+            ]
           },
           {
-            "prompt": "Обычно ты ___ в библиотеке.",
+            "prompt": "По утрам ты ___ в библиотеке.",
             "hint": "работать",
             "answer": "работаешь",
-            "wrong": "работал"
+            "wrong": "работаю",
+            "options": [
+              "работаешь",
+              "работаю",
+              "работает"
+            ]
           },
           {
-            "prompt": "Обычно они ___ в музей.",
+            "prompt": "Каждый день они ___ в музей.",
             "hint": "ходить",
             "answer": "ходят",
-            "wrong": "ходили"
+            "wrong": "хожу",
+            "options": [
+              "ходят",
+              "хожу",
+              "ходишь"
+            ]
           }
         ],
         "2": [
           {
-            "prompt": "Обычно я ___ воду за обедом.",
+            "prompt": "Каждую неделю я ___ воду за обедом.",
             "hint": "пить",
             "answer": "пью",
-            "wrong": "пил",
+            "wrong": "пьёт",
             "asset": "acciones/beber",
             "clue": "Иллюстрация действия: пить."
           },
           {
-            "prompt": "Обычно ты ___ книгу о приключениях.",
+            "prompt": "Как правило ты ___ книгу о приключениях.",
             "hint": "читать",
             "answer": "читаешь",
-            "wrong": "читал",
+            "wrong": "читаю",
             "asset": "acciones/leer",
             "clue": "Иллюстрация действия: читать."
           },
           {
-            "prompt": "Обычно она ___ письмо бабушке.",
+            "prompt": "По утрам она ___ письмо бабушке.",
             "hint": "писать",
             "answer": "пишет",
-            "wrong": "писала",
+            "wrong": "пишу",
             "asset": "acciones/escribir",
             "clue": "Иллюстрация действия: писать."
           },
           {
-            "prompt": "Обычно мы ___ цветы карандашами.",
+            "prompt": "Каждый день мы ___ цветы карандашами.",
             "hint": "рисовать",
             "answer": "рисуем",
-            "wrong": "рисовали",
+            "wrong": "рисую",
             "asset": "acciones/dibujar",
             "clue": "Иллюстрация действия: рисовать."
           },
@@ -8332,105 +8675,105 @@ window.CURRICULUM = {
             "prompt": "Обычно они ___ в своих кроватях.",
             "hint": "спать",
             "answer": "спят",
-            "wrong": "спали",
+            "wrong": "сплю",
             "asset": "acciones/dormir",
             "clue": "Иллюстрация действия: спать."
           }
         ],
         "3": [
           {
-            "prompt": "Обычно я ___ завтрак для друзей.",
+            "prompt": "Как правило я ___ завтрак для друзей.",
             "hint": "готовить",
             "answer": "готовлю",
-            "wrong": "готовил"
+            "wrong": "готовит"
           },
           {
             "prompt": "Потом ты ___ тарелки на стол.",
             "hint": "ставить",
             "answer": "ставишь",
-            "wrong": "ставил"
+            "wrong": "ставлю"
           },
           {
             "prompt": "Затем Анна ___ хлеб из магазина.",
             "hint": "приносить",
             "answer": "приносит",
-            "wrong": "приносила"
+            "wrong": "приношу"
           },
           {
             "prompt": "После этого мы ___ фруктовый салат.",
             "hint": "делать",
             "answer": "делаем",
-            "wrong": "делали"
+            "wrong": "делаю"
           },
           {
             "prompt": "В конце дети ___ чашки после обеда.",
             "hint": "убирать",
             "answer": "убирают",
-            "wrong": "убирали"
+            "wrong": "убираю"
           }
         ],
         "4": [
           {
-            "prompt": "Обычно я ___ по парку с собакой.",
+            "prompt": "По утрам я ___ по парку с собакой.",
             "hint": "бегать",
             "answer": "бегаю",
-            "wrong": "бегал"
+            "wrong": "бегает"
           },
           {
-            "prompt": "Обычно ты ___ с сестрой.",
+            "prompt": "Каждый день ты ___ с сестрой.",
             "hint": "гулять",
             "answer": "гуляешь",
-            "wrong": "гулял"
+            "wrong": "гуляю"
           },
           {
             "prompt": "Обычно она ___ окно в комнате.",
             "hint": "открывать",
             "answer": "открывает",
-            "wrong": "открывала"
+            "wrong": "открываю"
           },
           {
-            "prompt": "Обычно мы ___ с мячом в саду.",
+            "prompt": "Каждую неделю мы ___ с мячом в саду.",
             "hint": "играть",
             "answer": "играем",
-            "wrong": "играли"
+            "wrong": "играю"
           },
           {
-            "prompt": "Обычно они ___ музыку в наушниках.",
+            "prompt": "Как правило они ___ музыку в наушниках.",
             "hint": "слушать",
             "answer": "слушают",
-            "wrong": "слушали"
+            "wrong": "слушаю"
           }
         ],
         "5": [
           {
-            "prompt": "Обычно я ___ свой рюкзак.",
+            "prompt": "Каждый день я ___ свой рюкзак.",
             "hint": "искать",
             "answer": "ищу",
-            "wrong": "искал"
+            "wrong": "ищет"
           },
           {
             "prompt": "Обычно ты ___ тетрадь в магазине.",
             "hint": "покупать",
             "answer": "покупаешь",
-            "wrong": "покупал"
+            "wrong": "покупаю"
           },
           {
-            "prompt": "Обычно она ___ подруге с уроками.",
+            "prompt": "Каждую неделю она ___ подруге с уроками.",
             "hint": "помогать",
             "answer": "помогает",
-            "wrong": "помогала"
+            "wrong": "помогаю"
           },
           {
-            "prompt": "Обычно мы ___ фильм о животных.",
+            "prompt": "Как правило мы ___ фильм о животных.",
             "hint": "смотреть",
             "answer": "смотрим",
-            "wrong": "смотрели"
+            "wrong": "смотрю"
           },
           {
-            "prompt": "Обычно они ___ дверь перед уходом.",
+            "prompt": "По утрам они ___ дверь перед уходом.",
             "hint": "закрывать",
             "answer": "закрывают",
-            "wrong": "закрывали"
+            "wrong": "закрываю"
           }
         ]
       },
@@ -8446,28 +8789,48 @@ window.CURRICULUM = {
           "prompt": "Обычно я ___ новые слова.",
           "hint": "учить",
           "answer": "учу",
-          "wrong": "учил"
+          "wrong": "учишь",
+          "options": [
+            "учу",
+            "учишь",
+            "учит"
+          ]
         },
         {
-          "prompt": "Обычно она ___ яблоко в саду.",
+          "prompt": "Каждую неделю она ___ яблоко в саду.",
           "hint": "есть",
           "answer": "ест",
-          "wrong": "ела"
+          "wrong": "ем",
+          "options": [
+            "ест",
+            "ем",
+            "ешь"
+          ]
         },
         {
-          "prompt": "Обычно мы ___ рядом с морем.",
+          "prompt": "Как правило мы ___ рядом с морем.",
           "hint": "жить",
           "answer": "живём",
-          "wrong": "жили"
+          "wrong": "живу",
+          "options": [
+            "живём",
+            "живу",
+            "живёшь"
+          ]
         },
         {
-          "prompt": "Обычно ты ___ в библиотеке.",
+          "prompt": "По утрам ты ___ в библиотеке.",
           "hint": "работать",
           "answer": "работаешь",
-          "wrong": "работал"
+          "wrong": "работаю",
+          "options": [
+            "работаешь",
+            "работаю",
+            "работает"
+          ]
         },
         {
-          "prompt": "Обычно они ___ в музей.",
+          "prompt": "Каждый день они ___ в музей.",
           "hint": "ходить",
           "answer": "ходят",
           "wrong": "ходили"
@@ -8488,45 +8851,45 @@ window.CURRICULUM = {
             "prompt": "Вчера я ___ новые слова.",
             "hint": "учить",
             "answer": "учил",
-            "wrong": "учу",
+            "wrong": "учило",
             "aliases": [
               "учила"
             ]
           },
           {
-            "prompt": "Вчера она ___ яблоко в саду.",
+            "prompt": "На прошлой неделе она ___ яблоко в саду.",
             "hint": "есть",
             "answer": "ела",
-            "wrong": "ест"
+            "wrong": "ел"
           },
           {
-            "prompt": "Вчера мы ___ рядом с морем.",
+            "prompt": "В прошлом году мы ___ рядом с морем.",
             "hint": "жить",
             "answer": "жили",
-            "wrong": "живём"
+            "wrong": "жил"
           },
           {
-            "prompt": "Вчера ты ___ в библиотеке.",
+            "prompt": "Два дня назад ты ___ в библиотеке.",
             "hint": "работать",
             "answer": "работал",
-            "wrong": "работаешь",
+            "wrong": "работало",
             "aliases": [
               "работала"
             ]
           },
           {
-            "prompt": "Вчера они ___ в музей.",
+            "prompt": "В прошлом месяце они ___ в музей.",
             "hint": "ходить",
             "answer": "ходили",
-            "wrong": "ходят"
+            "wrong": "ходил"
           }
         ],
         "2": [
           {
-            "prompt": "Вчера я ___ воду за обедом.",
+            "prompt": "На прошлой неделе я ___ воду за обедом.",
             "hint": "пить",
             "answer": "пил",
-            "wrong": "пью",
+            "wrong": "пило",
             "asset": "acciones/beber",
             "clue": "Иллюстрация действия: пить.",
             "aliases": [
@@ -8534,10 +8897,10 @@ window.CURRICULUM = {
             ]
           },
           {
-            "prompt": "Вчера ты ___ книгу о приключениях.",
+            "prompt": "В прошлом году ты ___ книгу о приключениях.",
             "hint": "читать",
             "answer": "читал",
-            "wrong": "читаешь",
+            "wrong": "читало",
             "asset": "acciones/leer",
             "clue": "Иллюстрация действия: читать.",
             "aliases": [
@@ -8545,18 +8908,18 @@ window.CURRICULUM = {
             ]
           },
           {
-            "prompt": "Вчера она ___ письмо бабушке.",
+            "prompt": "Два дня назад она ___ письмо бабушке.",
             "hint": "писать",
             "answer": "писала",
-            "wrong": "пишет",
+            "wrong": "писал",
             "asset": "acciones/escribir",
             "clue": "Иллюстрация действия: писать."
           },
           {
-            "prompt": "Вчера мы ___ цветы карандашами.",
+            "prompt": "В прошлом месяце мы ___ цветы карандашами.",
             "hint": "рисовать",
             "answer": "рисовали",
-            "wrong": "рисуем",
+            "wrong": "рисовал",
             "asset": "acciones/dibujar",
             "clue": "Иллюстрация действия: рисовать."
           },
@@ -8564,17 +8927,17 @@ window.CURRICULUM = {
             "prompt": "Вчера они ___ в своих кроватях.",
             "hint": "спать",
             "answer": "спали",
-            "wrong": "спят",
+            "wrong": "спал",
             "asset": "acciones/dormir",
             "clue": "Иллюстрация действия: спать."
           }
         ],
         "3": [
           {
-            "prompt": "Вчера я ___ завтрак для друзей.",
+            "prompt": "В прошлом году я ___ завтрак для друзей.",
             "hint": "готовить",
             "answer": "готовил",
-            "wrong": "готовлю",
+            "wrong": "готовило",
             "aliases": [
               "готовила"
             ]
@@ -8583,7 +8946,7 @@ window.CURRICULUM = {
             "prompt": "Потом ты ___ тарелки на стол.",
             "hint": "ставить",
             "answer": "ставил",
-            "wrong": "ставишь",
+            "wrong": "ставило",
             "aliases": [
               "ставила"
             ]
@@ -8592,36 +8955,36 @@ window.CURRICULUM = {
             "prompt": "Затем Анна ___ хлеб из магазина.",
             "hint": "приносить",
             "answer": "приносила",
-            "wrong": "приносит"
+            "wrong": "приносил"
           },
           {
             "prompt": "После этого мы ___ фруктовый салат.",
             "hint": "делать",
             "answer": "делали",
-            "wrong": "делаем"
+            "wrong": "делал"
           },
           {
             "prompt": "В конце дети ___ чашки после обеда.",
             "hint": "убирать",
             "answer": "убирали",
-            "wrong": "убирают"
+            "wrong": "убирал"
           }
         ],
         "4": [
           {
-            "prompt": "Вчера я ___ по парку с собакой.",
+            "prompt": "Два дня назад я ___ по парку с собакой.",
             "hint": "бегать",
             "answer": "бегал",
-            "wrong": "бегаю",
+            "wrong": "бегало",
             "aliases": [
               "бегала"
             ]
           },
           {
-            "prompt": "Вчера ты ___ с сестрой.",
+            "prompt": "В прошлом месяце ты ___ с сестрой.",
             "hint": "гулять",
             "answer": "гулял",
-            "wrong": "гуляешь",
+            "wrong": "гуляло",
             "aliases": [
               "гуляла"
             ]
@@ -8630,27 +8993,27 @@ window.CURRICULUM = {
             "prompt": "Вчера она ___ окно в комнате.",
             "hint": "открывать",
             "answer": "открывала",
-            "wrong": "открывает"
+            "wrong": "открывал"
           },
           {
-            "prompt": "Вчера мы ___ с мячом в саду.",
+            "prompt": "На прошлой неделе мы ___ с мячом в саду.",
             "hint": "играть",
             "answer": "играли",
-            "wrong": "играем"
+            "wrong": "играл"
           },
           {
-            "prompt": "Вчера они ___ музыку в наушниках.",
+            "prompt": "В прошлом году они ___ музыку в наушниках.",
             "hint": "слушать",
             "answer": "слушали",
-            "wrong": "слушают"
+            "wrong": "слушал"
           }
         ],
         "5": [
           {
-            "prompt": "Вчера я ___ свой рюкзак.",
+            "prompt": "В прошлом месяце я ___ свой рюкзак.",
             "hint": "искать",
             "answer": "искал",
-            "wrong": "ищу",
+            "wrong": "искало",
             "aliases": [
               "искала"
             ]
@@ -8659,28 +9022,28 @@ window.CURRICULUM = {
             "prompt": "Вчера ты ___ тетрадь в магазине.",
             "hint": "покупать",
             "answer": "покупал",
-            "wrong": "покупаешь",
+            "wrong": "покупало",
             "aliases": [
               "покупала"
             ]
           },
           {
-            "prompt": "Вчера она ___ подруге с уроками.",
+            "prompt": "На прошлой неделе она ___ подруге с уроками.",
             "hint": "помогать",
             "answer": "помогала",
-            "wrong": "помогает"
+            "wrong": "помогал"
           },
           {
-            "prompt": "Вчера мы ___ фильм о животных.",
+            "prompt": "В прошлом году мы ___ фильм о животных.",
             "hint": "смотреть",
             "answer": "смотрели",
-            "wrong": "смотрим"
+            "wrong": "смотрел"
           },
           {
-            "prompt": "Вчера они ___ дверь перед уходом.",
+            "prompt": "Два дня назад они ___ дверь перед уходом.",
             "hint": "закрывать",
             "answer": "закрывали",
-            "wrong": "закрывают"
+            "wrong": "закрывал"
           }
         ]
       },
@@ -8696,31 +9059,37 @@ window.CURRICULUM = {
           "prompt": "Вчера я ___ новые слова.",
           "hint": "учить",
           "answer": "учил",
-          "wrong": "учу"
+          "wrong": "учило",
+          "aliases": [
+            "учила"
+          ]
         },
         {
-          "prompt": "Вчера она ___ яблоко в саду.",
+          "prompt": "На прошлой неделе она ___ яблоко в саду.",
           "hint": "есть",
           "answer": "ела",
-          "wrong": "ест"
+          "wrong": "ел"
         },
         {
-          "prompt": "Вчера мы ___ рядом с морем.",
+          "prompt": "В прошлом году мы ___ рядом с морем.",
           "hint": "жить",
           "answer": "жили",
-          "wrong": "живём"
+          "wrong": "жил"
         },
         {
-          "prompt": "Вчера ты ___ в библиотеке.",
+          "prompt": "Два дня назад ты ___ в библиотеке.",
           "hint": "работать",
           "answer": "работал",
-          "wrong": "работаешь"
+          "wrong": "работало",
+          "aliases": [
+            "работала"
+          ]
         },
         {
-          "prompt": "Вчера они ___ в музей.",
+          "prompt": "В прошлом месяце они ___ в музей.",
           "hint": "ходить",
           "answer": "ходили",
-          "wrong": "ходят"
+          "wrong": "ходил"
         }
       ],
       "revision": "practica-v3"
@@ -8738,63 +9107,88 @@ window.CURRICULUM = {
             "prompt": "Завтра я ___ новые слова.",
             "hint": "учить",
             "answer": "буду учить",
-            "wrong": "будут учить"
+            "wrong": "будешь учить",
+            "options": [
+              "буду учить",
+              "будешь учить",
+              "будет учить"
+            ]
           },
           {
-            "prompt": "Завтра она ___ яблоко в саду.",
+            "prompt": "На следующей неделе она ___ яблоко в саду.",
             "hint": "есть",
             "answer": "будет есть",
-            "wrong": "будут есть"
+            "wrong": "буду есть",
+            "options": [
+              "будет есть",
+              "буду есть",
+              "будешь есть"
+            ]
           },
           {
-            "prompt": "Завтра мы ___ рядом с морем.",
+            "prompt": "В следующем году мы ___ рядом с морем.",
             "hint": "жить",
             "answer": "будем жить",
-            "wrong": "будут жить"
+            "wrong": "буду жить",
+            "options": [
+              "будем жить",
+              "буду жить",
+              "будешь жить"
+            ]
           },
           {
-            "prompt": "Завтра ты ___ в библиотеке.",
+            "prompt": "Через два дня ты ___ в библиотеке.",
             "hint": "работать",
             "answer": "будешь работать",
-            "wrong": "будут работать"
+            "wrong": "буду работать",
+            "options": [
+              "будешь работать",
+              "буду работать",
+              "будет работать"
+            ]
           },
           {
-            "prompt": "Завтра они ___ в музей.",
+            "prompt": "В следующем месяце они ___ в музей.",
             "hint": "ходить",
             "answer": "будут ходить",
-            "wrong": "будет ходить"
+            "wrong": "буду ходить",
+            "options": [
+              "будут ходить",
+              "буду ходить",
+              "будешь ходить"
+            ]
           }
         ],
         "2": [
           {
-            "prompt": "Завтра я ___ воду за обедом.",
+            "prompt": "На следующей неделе я ___ воду за обедом.",
             "hint": "пить",
             "answer": "буду пить",
-            "wrong": "будут пить",
+            "wrong": "будешь пить",
             "asset": "acciones/beber",
             "clue": "Иллюстрация действия: пить."
           },
           {
-            "prompt": "Завтра ты ___ книгу о приключениях.",
+            "prompt": "В следующем году ты ___ книгу о приключениях.",
             "hint": "читать",
             "answer": "будешь читать",
-            "wrong": "будут читать",
+            "wrong": "буду читать",
             "asset": "acciones/leer",
             "clue": "Иллюстрация действия: читать."
           },
           {
-            "prompt": "Завтра она ___ письмо бабушке.",
+            "prompt": "Через два дня она ___ письмо бабушке.",
             "hint": "писать",
             "answer": "будет писать",
-            "wrong": "будут писать",
+            "wrong": "буду писать",
             "asset": "acciones/escribir",
             "clue": "Иллюстрация действия: писать."
           },
           {
-            "prompt": "Завтра мы ___ цветы карандашами.",
+            "prompt": "В следующем месяце мы ___ цветы карандашами.",
             "hint": "рисовать",
             "answer": "будем рисовать",
-            "wrong": "будут рисовать",
+            "wrong": "буду рисовать",
             "asset": "acciones/dibujar",
             "clue": "Иллюстрация действия: рисовать."
           },
@@ -8802,105 +9196,105 @@ window.CURRICULUM = {
             "prompt": "Завтра они ___ в своих кроватях.",
             "hint": "спать",
             "answer": "будут спать",
-            "wrong": "будет спать",
+            "wrong": "буду спать",
             "asset": "acciones/dormir",
             "clue": "Иллюстрация действия: спать."
           }
         ],
         "3": [
           {
-            "prompt": "Завтра я ___ завтрак для друзей.",
+            "prompt": "В следующем году я ___ завтрак для друзей.",
             "hint": "готовить",
             "answer": "буду готовить",
-            "wrong": "будут готовить"
+            "wrong": "будешь готовить"
           },
           {
             "prompt": "Потом ты ___ тарелки на стол.",
             "hint": "ставить",
             "answer": "будешь ставить",
-            "wrong": "будут ставить"
+            "wrong": "буду ставить"
           },
           {
             "prompt": "Затем Анна ___ хлеб из магазина.",
             "hint": "приносить",
             "answer": "будет приносить",
-            "wrong": "будут приносить"
+            "wrong": "буду приносить"
           },
           {
             "prompt": "После этого мы ___ фруктовый салат.",
             "hint": "делать",
             "answer": "будем делать",
-            "wrong": "будут делать"
+            "wrong": "буду делать"
           },
           {
             "prompt": "В конце дети ___ чашки после обеда.",
             "hint": "убирать",
             "answer": "будут убирать",
-            "wrong": "будет убирать"
+            "wrong": "буду убирать"
           }
         ],
         "4": [
           {
-            "prompt": "Завтра я ___ по парку с собакой.",
+            "prompt": "Через два дня я ___ по парку с собакой.",
             "hint": "бегать",
             "answer": "буду бегать",
-            "wrong": "будут бегать"
+            "wrong": "будешь бегать"
           },
           {
-            "prompt": "Завтра ты ___ с сестрой.",
+            "prompt": "В следующем месяце ты ___ с сестрой.",
             "hint": "гулять",
             "answer": "будешь гулять",
-            "wrong": "будут гулять"
+            "wrong": "буду гулять"
           },
           {
             "prompt": "Завтра она ___ окно в комнате.",
             "hint": "открывать",
             "answer": "будет открывать",
-            "wrong": "будут открывать"
+            "wrong": "буду открывать"
           },
           {
-            "prompt": "Завтра мы ___ с мячом в саду.",
+            "prompt": "На следующей неделе мы ___ с мячом в саду.",
             "hint": "играть",
             "answer": "будем играть",
-            "wrong": "будут играть"
+            "wrong": "буду играть"
           },
           {
-            "prompt": "Завтра они ___ музыку в наушниках.",
+            "prompt": "В следующем году они ___ музыку в наушниках.",
             "hint": "слушать",
             "answer": "будут слушать",
-            "wrong": "будет слушать"
+            "wrong": "буду слушать"
           }
         ],
         "5": [
           {
-            "prompt": "Завтра я ___ свой рюкзак.",
+            "prompt": "В следующем месяце я ___ свой рюкзак.",
             "hint": "искать",
             "answer": "буду искать",
-            "wrong": "будут искать"
+            "wrong": "будешь искать"
           },
           {
             "prompt": "Завтра ты ___ тетрадь в магазине.",
             "hint": "покупать",
             "answer": "будешь покупать",
-            "wrong": "будут покупать"
+            "wrong": "буду покупать"
           },
           {
-            "prompt": "Завтра она ___ подруге с уроками.",
+            "prompt": "На следующей неделе она ___ подруге с уроками.",
             "hint": "помогать",
             "answer": "будет помогать",
-            "wrong": "будут помогать"
+            "wrong": "буду помогать"
           },
           {
-            "prompt": "Завтра мы ___ фильм о животных.",
+            "prompt": "В следующем году мы ___ фильм о животных.",
             "hint": "смотреть",
             "answer": "будем смотреть",
-            "wrong": "будут смотреть"
+            "wrong": "буду смотреть"
           },
           {
-            "prompt": "Завтра они ___ дверь перед уходом.",
+            "prompt": "Через два дня они ___ дверь перед уходом.",
             "hint": "закрывать",
             "answer": "будут закрывать",
-            "wrong": "будет закрывать"
+            "wrong": "буду закрывать"
           }
         ]
       },
@@ -8916,31 +9310,56 @@ window.CURRICULUM = {
           "prompt": "Завтра я ___ новые слова.",
           "hint": "учить",
           "answer": "буду учить",
-          "wrong": "будут учить"
+          "wrong": "будешь учить",
+          "options": [
+            "буду учить",
+            "будешь учить",
+            "будет учить"
+          ]
         },
         {
-          "prompt": "Завтра она ___ яблоко в саду.",
+          "prompt": "На следующей неделе она ___ яблоко в саду.",
           "hint": "есть",
           "answer": "будет есть",
-          "wrong": "будут есть"
+          "wrong": "буду есть",
+          "options": [
+            "будет есть",
+            "буду есть",
+            "будешь есть"
+          ]
         },
         {
-          "prompt": "Завтра мы ___ рядом с морем.",
+          "prompt": "В следующем году мы ___ рядом с морем.",
           "hint": "жить",
           "answer": "будем жить",
-          "wrong": "будут жить"
+          "wrong": "буду жить",
+          "options": [
+            "будем жить",
+            "буду жить",
+            "будешь жить"
+          ]
         },
         {
-          "prompt": "Завтра ты ___ в библиотеке.",
+          "prompt": "Через два дня ты ___ в библиотеке.",
           "hint": "работать",
           "answer": "будешь работать",
-          "wrong": "будут работать"
+          "wrong": "буду работать",
+          "options": [
+            "будешь работать",
+            "буду работать",
+            "будет работать"
+          ]
         },
         {
-          "prompt": "Завтра они ___ в музей.",
+          "prompt": "В следующем месяце они ___ в музей.",
           "hint": "ходить",
           "answer": "будут ходить",
-          "wrong": "будет ходить"
+          "wrong": "буду ходить",
+          "options": [
+            "будут ходить",
+            "буду ходить",
+            "будешь ходить"
+          ]
         }
       ],
       "revision": "practica-v3"
@@ -10550,7 +10969,7 @@ window.CURRICULUM = {
       "formats": [
         "picturechoice",
         "wordsearch",
-        "flashcards",
+        "basket",
         "context",
         "memory"
       ],
@@ -10853,7 +11272,8 @@ window.CURRICULUM = {
             "memoryClue": "Комплект из кофты и штанов для сна.",
             "flashClue": "Комплект из кофты и штанов для сна.",
             "searchClue": "Эту одежду надевают перед сном.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Для сна: пижама"
           },
           {
             "key": "vestido",
@@ -10864,7 +11284,8 @@ window.CURRICULUM = {
             "memoryClue": "Розовая одежда, в которой верх и юбка соединены.",
             "flashClue": "Розовая одежда, в которой верх и юбка соединены.",
             "searchClue": "Верх и юбка составляют один предмет одежды.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Для праздника: платье"
           },
           {
             "key": "guantes",
@@ -10875,7 +11296,8 @@ window.CURRICULUM = {
             "memoryClue": "Два предмета одежды для кистей рук и пальцев.",
             "flashClue": "Два предмета одежды для кистей рук и пальцев.",
             "searchClue": "Эта одежда согревает каждый палец отдельно.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Чтобы согреть руки: перчатки"
           },
           {
             "key": "abrigo",
@@ -10886,7 +11308,8 @@ window.CURRICULUM = {
             "memoryClue": "Зелёная верхняя одежда с длинными рукавами.",
             "flashClue": "Зелёная верхняя одежда с длинными рукавами.",
             "searchClue": "Её надевают поверх другой одежды, чтобы согреться.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Для холодного дня: куртка"
           },
           {
             "key": "calcetines",
@@ -10897,7 +11320,8 @@ window.CURRICULUM = {
             "memoryClue": "Два оранжевых предмета одежды для ног внутри обуви.",
             "flashClue": "Два оранжевых предмета одежды для ног внутри обуви.",
             "searchClue": "Их надевают на ноги перед обувью.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Перед тем как надеть обувь: носки"
           },
           {
             "key": "sombrero",
@@ -10908,7 +11332,8 @@ window.CURRICULUM = {
             "memoryClue": "Головной убор с полями со всех сторон.",
             "flashClue": "Головной убор с полями со всех сторон.",
             "searchClue": "В отличие от кепки, этот убор имеет поля по кругу.",
-            "prompt": ""
+            "prompt": "",
+            "orderLabel": "Для защиты от солнца: шляпа"
           }
         ],
         "4": [
@@ -11132,7 +11557,10 @@ window.CURRICULUM = {
           }
         ]
       },
-      "memoryExtra": []
+      "memoryExtra": [],
+      "activityRevisions": {
+        "3": "pedidos-v3"
+      }
     },
     {
       "id": "rutina",
