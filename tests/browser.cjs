@@ -105,8 +105,8 @@ const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:8000';
     assert.equal(social.status(),200);
     assert.equal(social.headers()['content-type'],'image/png');
     // Real uploaded images are used as soon as their paths are assigned.
-    await page.evaluate(() => { window.MEDIA.vocabulary['ropa/1'] = 'assets/social/chavebooks.png'; });
-    await page.goto(`${base}/#/ingles/actividades/ropa/1`);
+    await page.evaluate(() => { window.MEDIA.vocabulary['casa/1'] = 'assets/social/chavebooks.png'; });
+    await page.goto(`${base}/#/ingles/actividades/casa/1`);
     await page.locator('.activity-image').waitFor();
     assert.equal(await page.locator('.activity-image').count(), 1);
     const routes = ['', '#/ingles/actividades', '#/espanol/actividades/ropa/2', '#/ingles/actividades/frutas/3', '#/ruso/actividades/ropa/3', '#/ruso/actividades/presente/4', '#/ingles/libros'];

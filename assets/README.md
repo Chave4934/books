@@ -5,7 +5,7 @@ Puedes adjuntar las imágenes en el chat o subirlas a estas carpetas desde GitHu
 Después de subirlos, asigna sus rutas en `media.js`, sustituyendo los `null`. Ejemplo:
 
 ```js
-"ropa/1": "assets/ropa/vestido.webp"
+"ropa/vestido": "assets/ropa/vestido.png"
 ```
 
 Se reutiliza cada ilustración en los tres idiomas. Los textos alternativos y las pistas están en `activities.js`.
@@ -16,15 +16,13 @@ Se reutiliza cada ilustración en los tres idiomas. Los textos alternativos y la
 | --- | --- | --- | --- | --- | --- |
 | animales | Ver colección de doce animales en `animales/README.md` | — | — | — | — |
 | casa | dormitorio completo | cocina | baño | salón | jardín |
-| ropa | vestido | pantalones | camiseta | zapatillas | abrigo |
+| ropa | Ver doce prendas y accesorios en `ropa/README.md` | — | — | — | — |
 | rutina | persona despertándose | persona duchándose | persona desayunando | persona estudiando | persona durmiendo |
 | frutas | Ver colección de doce frutas en `frutas/README.md` | — | — | — | — |
 
 Las escenas de casa deben mostrar habitaciones completas, no una cama aislada para representar un dormitorio. Las de rutina deben mostrar una persona realizando la acción; un despertador o un bol por sí solos no la explican.
 
-En ropa, el memory tiene otras cinco palabras. El de animales usa los doce originales recibidos. Sus claves 6–10 corresponden a:
-
-- ropa: falda, sombrero, calcetines, bufanda, guantes;
+Animales y ropa usan sus doce ilustraciones originales en cada tema. Sus claves son semánticas (`animales/perro`, `ropa/vestido`), y cada memory reúne las doce imágenes en 24 tarjetas. Consulta los inventarios de cada carpeta.
 
 Antes de adaptar el contenido a un libro, confirma la lista de animales, objetos o acciones que contiene esa edición. La lista actual es material independiente; no debe anunciarse como una muestra literal del libro hasta usar sus mismos elementos e ilustraciones.
 
@@ -46,4 +44,4 @@ Los identificadores, títulos, público y descripciones están en `books.js`. Ha
 
 `social/chavebooks.png` es la imagen general de vista previa, de 1200 × 630 píxeles. Su fuente editable es `social/chavebooks.svg`. No contiene portadas ni imágenes de los libros. Al actualizarla, puede que las redes sociales mantengan temporalmente una copia anterior en su caché.
 
-La colección de animales usa claves semánticas (`animales/perro`, `animales/leon`, etc.), no las claves numéricas antiguas. Consulta [su inventario y distribución](animales/README.md). Los doce originales de animales ya están guardados y asignados en la web. La colección de frutas también tiene sus doce originales asignados; consulta `frutas/README.md`. Casa, ropa, rutina y portadas conservan sus rutas sin asignar hasta recibir sus archivos.
+La colección de animales usa claves semánticas (`animales/perro`, `animales/leon`, etc.), no las claves numéricas antiguas. Consulta [su inventario y distribución](animales/README.md). Los doce originales de animales ya están guardados y asignados en la web. La colección de frutas también tiene sus doce originales asignados; consulta `frutas/README.md`. La colección de ropa también está integrada; consulta `ropa/README.md`. Casa, rutina y portadas conservan sus rutas sin asignar hasta recibir sus archivos.

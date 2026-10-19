@@ -1646,104 +1646,690 @@ window.CURRICULUM = {
     },
     {
       "id": "ropa",
+      "revision": "ilustrada-v2",
       "title": "La ropa",
       "kind": "vocabulary",
       "icon": "ropa",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Doce prendas y accesorios para descubrir. Cada actividad propone una forma diferente de practicar.",
+      "formats": [
+        "picturechoice",
+        "wordsearch",
+        "flashcards",
+        "context",
+        "memory"
+      ],
       "items": [
         {
-          "clue": "Una sola prenda con la parte de arriba y una falda unidas.",
-          "answer": "vestido",
-          "prompt": "Lleva un ___: es una prenda entera que termina en falda.",
-          "aliases": [],
-          "memoryClue": "Tiene la falda unida a la parte de arriba.",
-          "asset": "ropa/1",
-          "searchClue": "Prenda entera con falda.",
-          "flashClue": "Puede tener mangas, pero siempre tiene falda."
+          "key": "abrigo",
+          "asset": "ropa/abrigo",
+          "answer": "chaqueta",
+          "aliases": [
+            "abrigo",
+            "cazadora",
+            "chamarra",
+            "campera",
+            "casaca"
+          ],
+          "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+          "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+          "flashClue": "Una prenda exterior que abriga el cuerpo.",
+          "searchClue": "Prenda exterior de manga larga para abrigarse.",
+          "prompt": ""
         },
         {
-          "clue": "Ropa que cubre las dos piernas por separado.",
-          "answer": "pantalones",
-          "prompt": "Me pongo unos ___, una pierna en cada lado.",
-          "aliases": [],
-          "memoryClue": "Una parte para cada pierna.",
-          "asset": "ropa/2",
-          "searchClue": "Prenda para ambas piernas.",
-          "flashClue": "Tienen dos partes largas, una para cada pierna."
+          "key": "bufanda",
+          "asset": "ropa/bufanda",
+          "answer": "bufanda",
+          "aliases": [
+            "chalina"
+          ],
+          "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+          "memoryClue": "Abriga el cuello y puede tener flecos.",
+          "flashClue": "Abriga el cuello y puede tener flecos.",
+          "searchClue": "Accesorio largo que rodea el cuello.",
+          "prompt": "Para abrigar el cuello, me pongo esta ___ azul."
         },
         {
-          "clue": "Ropa para el cuerpo, de manga corta y sin botones.",
+          "key": "calcetines",
+          "asset": "ropa/calcetines",
+          "answer": "calcetines",
+          "aliases": [
+            "calcetín",
+            "medias"
+          ],
+          "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+          "memoryClue": "Se llevan entre el pie y el calzado.",
+          "flashClue": "Se llevan entre el pie y el calzado.",
+          "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+          "prompt": ""
+        },
+        {
+          "key": "camiseta",
+          "asset": "ropa/camiseta",
           "answer": "camiseta",
-          "prompt": "Llevo una ___ de manga corta y sin botones.",
           "aliases": [
             "remera",
-            "playera"
+            "playera",
+            "polera",
+            "franela"
           ],
-          "memoryClue": "Manga corta, sin botones.",
-          "asset": "ropa/3",
-          "searchClue": "Prenda de manga corta para la parte de arriba.",
-          "flashClue": "Se parece a una camisa, pero no lleva botones y es de manga corta."
+          "clue": "Prenda azul de manga corta, sin botones.",
+          "memoryClue": "Parte de arriba de manga corta, sin botones.",
+          "flashClue": "Parte de arriba de manga corta, sin botones.",
+          "searchClue": "Prenda de manga corta que no lleva botones.",
+          "prompt": "Esta ___ azul tiene mangas cortas y no tiene botones."
         },
         {
-          "clue": "Zapatos para correr y hacer deporte.",
-          "answer": "zapatillas",
-          "prompt": "Para correr me ato los cordones de las ___.",
-          "aliases": [
-            "zapatillas deportivas",
-            "tenis",
-            "deportivas"
-          ],
-          "memoryClue": "Calzado para correr.",
-          "asset": "ropa/4",
-          "searchClue": "Calzado deportivo con cordones.",
-          "flashClue": "Los zapatos que te pones para entrenar."
-        },
-        {
-          "clue": "Ropa gruesa que te pones encima para salir en invierno.",
-          "answer": "abrigo",
-          "prompt": "Hace mucho frío: me pongo el ___ sobre el jersey.",
-          "aliases": [],
-          "memoryClue": "Encima del jersey cuando hace frío.",
-          "asset": "ropa/5",
-          "searchClue": "Prenda exterior que abriga en invierno.",
-          "flashClue": "Una prenda gruesa para salir cuando nieva."
-        }
-      ],
-      "formats": [
-        "identify",
-        "wordsearch",
-        "memory",
-        "context",
-        "flashcards"
-      ],
-      "memoryExtra": [
-        {
+          "key": "falda",
+          "asset": "ropa/falda",
           "answer": "falda",
-          "memoryClue": "Ropa que va de la cintura hacia abajo, sin dos partes para las piernas.",
-          "asset": "ropa/6"
+          "aliases": [
+            "pollera"
+          ],
+          "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+          "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+          "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+          "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+          "prompt": "Esta prenda naranja no es un vestido: solo cubre la parte de abajo. Es una ___."
         },
         {
-          "answer": "sombrero",
-          "memoryClue": "Se lleva en la cabeza y tiene ala.",
-          "asset": "ropa/7"
+          "key": "gorra",
+          "asset": "ropa/gorra",
+          "answer": "gorra",
+          "aliases": [],
+          "clue": "Accesorio verde para la cabeza, con visera.",
+          "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+          "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+          "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+          "prompt": "Para el sol, me pongo esta ___ verde en la cabeza."
         },
         {
-          "answer": "calcetines",
-          "memoryClue": "Ropa para los pies, dentro de los zapatos.",
-          "asset": "ropa/8"
-        },
-        {
-          "answer": "bufanda",
-          "memoryClue": "Una tira de tela que abriga el cuello.",
-          "asset": "ropa/9"
-        },
-        {
+          "key": "guantes",
+          "asset": "ropa/guantes",
           "answer": "guantes",
-          "memoryClue": "Abrigan las manos y cubren los dedos.",
-          "asset": "ropa/10"
+          "aliases": [
+            "guante"
+          ],
+          "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+          "memoryClue": "Abrigan las manos y los dedos.",
+          "flashClue": "Abrigan las manos y los dedos.",
+          "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+          "prompt": ""
+        },
+        {
+          "key": "pantalones",
+          "asset": "ropa/pantalones",
+          "answer": "pantalones",
+          "aliases": [
+            "pantalón"
+          ],
+          "clue": "Prenda azul que cubre las piernas por separado.",
+          "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+          "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+          "searchClue": "Ropa para las piernas, con una parte para cada una.",
+          "prompt": "Estos ___ azules cubren las dos piernas."
+        },
+        {
+          "key": "pijama",
+          "asset": "ropa/pijama",
+          "answer": "pijama",
+          "aliases": [
+            "piyama",
+            "pijamas",
+            "piyamas"
+          ],
+          "clue": "Conjunto naranja de dos piezas para dormir.",
+          "memoryClue": "Conjunto cómodo para irse a la cama.",
+          "flashClue": "Conjunto cómodo para irse a la cama.",
+          "searchClue": "Ropa que se usa para dormir por la noche.",
+          "prompt": ""
+        },
+        {
+          "key": "sombrero",
+          "asset": "ropa/sombrero",
+          "answer": "sombrero",
+          "aliases": [],
+          "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+          "memoryClue": "Tiene un ala que rodea la cabeza.",
+          "flashClue": "Tiene un ala que rodea la cabeza.",
+          "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+          "prompt": ""
+        },
+        {
+          "key": "vestido",
+          "asset": "ropa/vestido",
+          "answer": "vestido",
+          "aliases": [],
+          "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+          "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+          "flashClue": "La parte de arriba y la falda forman una sola prenda.",
+          "searchClue": "Prenda de una sola pieza con falda incorporada.",
+          "prompt": ""
+        },
+        {
+          "key": "zapatos",
+          "asset": "ropa/zapatos",
+          "answer": "botas",
+          "aliases": [
+            "bota",
+            "botines",
+            "botín",
+            "zapatos",
+            "zapato"
+          ],
+          "clue": "Calzado negro con cordones que cubre los tobillos.",
+          "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+          "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+          "searchClue": "Calzado alto, negro y con cordones.",
+          "prompt": "Calzado negro con cordones que llega hasta los tobillos: ___."
         }
-      ]
+      ],
+      "variants": {
+        "1": [
+          {
+            "key": "vestido",
+            "asset": "ropa/vestido",
+            "answer": "vestido",
+            "aliases": [],
+            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
+            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "prompt": ""
+          },
+          {
+            "key": "camiseta",
+            "asset": "ropa/camiseta",
+            "answer": "camiseta",
+            "aliases": [
+              "remera",
+              "playera",
+              "polera",
+              "franela"
+            ],
+            "clue": "Prenda azul de manga corta, sin botones.",
+            "memoryClue": "Parte de arriba de manga corta, sin botones.",
+            "flashClue": "Parte de arriba de manga corta, sin botones.",
+            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "prompt": "Esta ___ azul tiene mangas cortas y no tiene botones."
+          },
+          {
+            "key": "pantalones",
+            "asset": "ropa/pantalones",
+            "answer": "pantalones",
+            "aliases": [
+              "pantalón"
+            ],
+            "clue": "Prenda azul que cubre las piernas por separado.",
+            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "prompt": "Estos ___ azules cubren las dos piernas."
+          },
+          {
+            "key": "abrigo",
+            "asset": "ropa/abrigo",
+            "answer": "chaqueta",
+            "aliases": [
+              "abrigo",
+              "cazadora",
+              "chamarra",
+              "campera",
+              "casaca"
+            ],
+            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+            "flashClue": "Una prenda exterior que abriga el cuerpo.",
+            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "prompt": ""
+          },
+          {
+            "key": "gorra",
+            "asset": "ropa/gorra",
+            "answer": "gorra",
+            "aliases": [],
+            "clue": "Accesorio verde para la cabeza, con visera.",
+            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "prompt": "Para el sol, me pongo esta ___ verde en la cabeza."
+          },
+          {
+            "key": "zapatos",
+            "asset": "ropa/zapatos",
+            "answer": "botas",
+            "aliases": [
+              "bota",
+              "botines",
+              "botín",
+              "zapatos",
+              "zapato"
+            ],
+            "clue": "Calzado negro con cordones que cubre los tobillos.",
+            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "searchClue": "Calzado alto, negro y con cordones.",
+            "prompt": "Calzado negro con cordones que llega hasta los tobillos: ___."
+          }
+        ],
+        "2": [
+          {
+            "key": "bufanda",
+            "asset": "ropa/bufanda",
+            "answer": "bufanda",
+            "aliases": [
+              "chalina"
+            ],
+            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+            "memoryClue": "Abriga el cuello y puede tener flecos.",
+            "flashClue": "Abriga el cuello y puede tener flecos.",
+            "searchClue": "Accesorio largo que rodea el cuello.",
+            "prompt": "Para abrigar el cuello, me pongo esta ___ azul."
+          },
+          {
+            "key": "calcetines",
+            "asset": "ropa/calcetines",
+            "answer": "calcetines",
+            "aliases": [
+              "calcetín",
+              "medias"
+            ],
+            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+            "memoryClue": "Se llevan entre el pie y el calzado.",
+            "flashClue": "Se llevan entre el pie y el calzado.",
+            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "prompt": ""
+          },
+          {
+            "key": "falda",
+            "asset": "ropa/falda",
+            "answer": "falda",
+            "aliases": [
+              "pollera"
+            ],
+            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "prompt": "Esta prenda naranja no es un vestido: solo cubre la parte de abajo. Es una ___."
+          },
+          {
+            "key": "guantes",
+            "asset": "ropa/guantes",
+            "answer": "guantes",
+            "aliases": [
+              "guante"
+            ],
+            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+            "memoryClue": "Abrigan las manos y los dedos.",
+            "flashClue": "Abrigan las manos y los dedos.",
+            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "prompt": ""
+          },
+          {
+            "key": "pijama",
+            "asset": "ropa/pijama",
+            "answer": "pijama",
+            "aliases": [
+              "piyama",
+              "pijamas",
+              "piyamas"
+            ],
+            "clue": "Conjunto naranja de dos piezas para dormir.",
+            "memoryClue": "Conjunto cómodo para irse a la cama.",
+            "flashClue": "Conjunto cómodo para irse a la cama.",
+            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "prompt": ""
+          },
+          {
+            "key": "sombrero",
+            "asset": "ropa/sombrero",
+            "answer": "sombrero",
+            "aliases": [],
+            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+            "memoryClue": "Tiene un ala que rodea la cabeza.",
+            "flashClue": "Tiene un ala que rodea la cabeza.",
+            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "prompt": ""
+          }
+        ],
+        "3": [
+          {
+            "key": "pijama",
+            "asset": "ropa/pijama",
+            "answer": "pijama",
+            "aliases": [
+              "piyama",
+              "pijamas",
+              "piyamas"
+            ],
+            "clue": "Conjunto naranja de dos piezas para dormir.",
+            "memoryClue": "Conjunto cómodo para irse a la cama.",
+            "flashClue": "Un conjunto de dos piezas para acostarse y dormir.",
+            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "prompt": ""
+          },
+          {
+            "key": "vestido",
+            "asset": "ropa/vestido",
+            "answer": "vestido",
+            "aliases": [],
+            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+            "flashClue": "Una sola pieza verde con la parte de arriba unida a una falda.",
+            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "prompt": ""
+          },
+          {
+            "key": "guantes",
+            "asset": "ropa/guantes",
+            "answer": "guantes",
+            "aliases": [
+              "guante"
+            ],
+            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+            "memoryClue": "Abrigan las manos y los dedos.",
+            "flashClue": "Te los pones en las manos para abrigar cada dedo.",
+            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "prompt": ""
+          },
+          {
+            "key": "abrigo",
+            "asset": "ropa/abrigo",
+            "answer": "chaqueta",
+            "aliases": [
+              "abrigo",
+              "cazadora",
+              "chamarra",
+              "campera",
+              "casaca"
+            ],
+            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+            "flashClue": "La prenda verde que te pones sobre la camiseta para abrigarte.",
+            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "prompt": ""
+          },
+          {
+            "key": "calcetines",
+            "asset": "ropa/calcetines",
+            "answer": "calcetines",
+            "aliases": [
+              "calcetín",
+              "medias"
+            ],
+            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+            "memoryClue": "Se llevan entre el pie y el calzado.",
+            "flashClue": "Cubren los pies y van por dentro del calzado.",
+            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "prompt": ""
+          },
+          {
+            "key": "sombrero",
+            "asset": "ropa/sombrero",
+            "answer": "sombrero",
+            "aliases": [],
+            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+            "memoryClue": "Tiene un ala que rodea la cabeza.",
+            "flashClue": "El accesorio azul oscuro que se lleva en la cabeza.",
+            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "prompt": ""
+          }
+        ],
+        "4": [
+          {
+            "key": "bufanda",
+            "asset": "ropa/bufanda",
+            "answer": "bufanda",
+            "aliases": [
+              "chalina"
+            ],
+            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+            "memoryClue": "Abriga el cuello y puede tener flecos.",
+            "flashClue": "Abriga el cuello y puede tener flecos.",
+            "searchClue": "Accesorio largo que rodea el cuello.",
+            "prompt": "Para abrigar el cuello, me pongo esta ___ azul."
+          },
+          {
+            "key": "falda",
+            "asset": "ropa/falda",
+            "answer": "falda",
+            "aliases": [
+              "pollera"
+            ],
+            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "prompt": "Esta prenda naranja no es un vestido: solo cubre la parte de abajo. Es una ___."
+          },
+          {
+            "key": "gorra",
+            "asset": "ropa/gorra",
+            "answer": "gorra",
+            "aliases": [],
+            "clue": "Accesorio verde para la cabeza, con visera.",
+            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "prompt": "Para el sol, me pongo esta ___ verde en la cabeza."
+          },
+          {
+            "key": "camiseta",
+            "asset": "ropa/camiseta",
+            "answer": "camiseta",
+            "aliases": [
+              "remera",
+              "playera",
+              "polera",
+              "franela"
+            ],
+            "clue": "Prenda azul de manga corta, sin botones.",
+            "memoryClue": "Parte de arriba de manga corta, sin botones.",
+            "flashClue": "Parte de arriba de manga corta, sin botones.",
+            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "prompt": "Esta ___ azul tiene mangas cortas y no tiene botones."
+          },
+          {
+            "key": "pantalones",
+            "asset": "ropa/pantalones",
+            "answer": "pantalones",
+            "aliases": [
+              "pantalón"
+            ],
+            "clue": "Prenda azul que cubre las piernas por separado.",
+            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "prompt": "Estos ___ azules cubren las dos piernas."
+          },
+          {
+            "key": "zapatos",
+            "asset": "ropa/zapatos",
+            "answer": "botas",
+            "aliases": [
+              "bota",
+              "botines",
+              "botín",
+              "zapatos",
+              "zapato"
+            ],
+            "clue": "Calzado negro con cordones que cubre los tobillos.",
+            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "searchClue": "Calzado alto, negro y con cordones.",
+            "prompt": "Calzado negro con cordones que llega hasta los tobillos: ___."
+          }
+        ],
+        "5": [
+          {
+            "key": "abrigo",
+            "asset": "ropa/abrigo",
+            "answer": "chaqueta",
+            "aliases": [
+              "abrigo",
+              "cazadora",
+              "chamarra",
+              "campera",
+              "casaca"
+            ],
+            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+            "flashClue": "Una prenda exterior que abriga el cuerpo.",
+            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "prompt": ""
+          },
+          {
+            "key": "bufanda",
+            "asset": "ropa/bufanda",
+            "answer": "bufanda",
+            "aliases": [
+              "chalina"
+            ],
+            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+            "memoryClue": "Abriga el cuello y puede tener flecos.",
+            "flashClue": "Abriga el cuello y puede tener flecos.",
+            "searchClue": "Accesorio largo que rodea el cuello.",
+            "prompt": "Para abrigar el cuello, me pongo esta ___ azul."
+          },
+          {
+            "key": "calcetines",
+            "asset": "ropa/calcetines",
+            "answer": "calcetines",
+            "aliases": [
+              "calcetín",
+              "medias"
+            ],
+            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+            "memoryClue": "Se llevan entre el pie y el calzado.",
+            "flashClue": "Se llevan entre el pie y el calzado.",
+            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "prompt": ""
+          },
+          {
+            "key": "camiseta",
+            "asset": "ropa/camiseta",
+            "answer": "camiseta",
+            "aliases": [
+              "remera",
+              "playera",
+              "polera",
+              "franela"
+            ],
+            "clue": "Prenda azul de manga corta, sin botones.",
+            "memoryClue": "Parte de arriba de manga corta, sin botones.",
+            "flashClue": "Parte de arriba de manga corta, sin botones.",
+            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "prompt": "Esta ___ azul tiene mangas cortas y no tiene botones."
+          },
+          {
+            "key": "falda",
+            "asset": "ropa/falda",
+            "answer": "falda",
+            "aliases": [
+              "pollera"
+            ],
+            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "prompt": "Esta prenda naranja no es un vestido: solo cubre la parte de abajo. Es una ___."
+          },
+          {
+            "key": "gorra",
+            "asset": "ropa/gorra",
+            "answer": "gorra",
+            "aliases": [],
+            "clue": "Accesorio verde para la cabeza, con visera.",
+            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "prompt": "Para el sol, me pongo esta ___ verde en la cabeza."
+          },
+          {
+            "key": "guantes",
+            "asset": "ropa/guantes",
+            "answer": "guantes",
+            "aliases": [
+              "guante"
+            ],
+            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+            "memoryClue": "Abrigan las manos y los dedos.",
+            "flashClue": "Abrigan las manos y los dedos.",
+            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "prompt": ""
+          },
+          {
+            "key": "pantalones",
+            "asset": "ropa/pantalones",
+            "answer": "pantalones",
+            "aliases": [
+              "pantalón"
+            ],
+            "clue": "Prenda azul que cubre las piernas por separado.",
+            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "prompt": "Estos ___ azules cubren las dos piernas."
+          },
+          {
+            "key": "pijama",
+            "asset": "ropa/pijama",
+            "answer": "pijama",
+            "aliases": [
+              "piyama",
+              "pijamas",
+              "piyamas"
+            ],
+            "clue": "Conjunto naranja de dos piezas para dormir.",
+            "memoryClue": "Conjunto cómodo para irse a la cama.",
+            "flashClue": "Conjunto cómodo para irse a la cama.",
+            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "prompt": ""
+          },
+          {
+            "key": "sombrero",
+            "asset": "ropa/sombrero",
+            "answer": "sombrero",
+            "aliases": [],
+            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+            "memoryClue": "Tiene un ala que rodea la cabeza.",
+            "flashClue": "Tiene un ala que rodea la cabeza.",
+            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "prompt": ""
+          },
+          {
+            "key": "vestido",
+            "asset": "ropa/vestido",
+            "answer": "vestido",
+            "aliases": [],
+            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
+            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "prompt": ""
+          },
+          {
+            "key": "zapatos",
+            "asset": "ropa/zapatos",
+            "answer": "botas",
+            "aliases": [
+              "bota",
+              "botines",
+              "botín",
+              "zapatos",
+              "zapato"
+            ],
+            "clue": "Calzado negro con cordones que cubre los tobillos.",
+            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "searchClue": "Calzado alto, negro y con cordones.",
+            "prompt": "Calzado negro con cordones que llega hasta los tobillos: ___."
+          }
+        ]
+      },
+      "memoryExtra": []
     },
     {
       "id": "rutina",
@@ -4002,105 +4588,658 @@ window.CURRICULUM = {
     },
     {
       "id": "ropa",
+      "revision": "ilustrada-v2",
       "title": "La ropa",
       "kind": "vocabulary",
       "icon": "ropa",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Doce prendas y accesorios para descubrir. Cada actividad propone una forma diferente de practicar.",
+      "formats": [
+        "picturechoice",
+        "wordsearch",
+        "flashcards",
+        "context",
+        "memory"
+      ],
       "items": [
         {
-          "clue": "Una sola prenda con la parte de arriba y una falda unidas.",
-          "answer": "dress",
-          "prompt": "She wears a ___: one piece with a top and a skirt.",
-          "aliases": [],
-          "memoryClue": "Tiene la falda unida a la parte de arriba.",
-          "asset": "ropa/1",
-          "searchClue": "Prenda entera con falda.",
-          "flashClue": "Puede tener mangas, pero siempre tiene falda."
+          "key": "abrigo",
+          "asset": "ropa/abrigo",
+          "answer": "jacket",
+          "aliases": [
+            "coat"
+          ],
+          "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+          "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+          "flashClue": "Una prenda exterior que abriga el cuerpo.",
+          "searchClue": "Prenda exterior de manga larga para abrigarse.",
+          "prompt": ""
         },
         {
-          "clue": "Ropa que cubre las dos piernas por separado.",
+          "key": "bufanda",
+          "asset": "ropa/bufanda",
+          "answer": "scarf",
+          "aliases": [
+            "muffler"
+          ],
+          "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+          "memoryClue": "Abriga el cuello y puede tener flecos.",
+          "flashClue": "Abriga el cuello y puede tener flecos.",
+          "searchClue": "Accesorio largo que rodea el cuello.",
+          "prompt": "I wrap this blue ___ around my neck."
+        },
+        {
+          "key": "calcetines",
+          "asset": "ropa/calcetines",
+          "answer": "socks",
+          "aliases": [
+            "sock"
+          ],
+          "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+          "memoryClue": "Se llevan entre el pie y el calzado.",
+          "flashClue": "Se llevan entre el pie y el calzado.",
+          "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+          "prompt": ""
+        },
+        {
+          "key": "camiseta",
+          "asset": "ropa/camiseta",
+          "answer": "T-shirt",
+          "aliases": [
+            "t shirt",
+            "tshirt",
+            "tee shirt",
+            "tee"
+          ],
+          "clue": "Prenda azul de manga corta, sin botones.",
+          "memoryClue": "Parte de arriba de manga corta, sin botones.",
+          "flashClue": "Parte de arriba de manga corta, sin botones.",
+          "searchClue": "Prenda de manga corta que no lleva botones.",
+          "prompt": "This blue ___ has short sleeves and no buttons."
+        },
+        {
+          "key": "falda",
+          "asset": "ropa/falda",
+          "answer": "skirt",
+          "aliases": [],
+          "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+          "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+          "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+          "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+          "prompt": "This orange ___ covers the lower part of the body and has no separate legs."
+        },
+        {
+          "key": "gorra",
+          "asset": "ropa/gorra",
+          "answer": "cap",
+          "aliases": [
+            "baseball cap"
+          ],
+          "clue": "Accesorio verde para la cabeza, con visera.",
+          "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+          "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+          "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+          "prompt": "I wear this green ___ on my head to keep the sun out of my eyes."
+        },
+        {
+          "key": "guantes",
+          "asset": "ropa/guantes",
+          "answer": "gloves",
+          "aliases": [
+            "glove"
+          ],
+          "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+          "memoryClue": "Abrigan las manos y los dedos.",
+          "flashClue": "Abrigan las manos y los dedos.",
+          "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+          "prompt": ""
+        },
+        {
+          "key": "pantalones",
+          "asset": "ropa/pantalones",
           "answer": "trousers",
-          "prompt": "He puts on his ___, one leg at a time.",
           "aliases": [
             "pants"
           ],
-          "memoryClue": "Una parte para cada pierna.",
-          "asset": "ropa/2",
-          "searchClue": "Prenda para ambas piernas.",
-          "flashClue": "Tienen dos partes largas, una para cada pierna."
+          "clue": "Prenda azul que cubre las piernas por separado.",
+          "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+          "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+          "searchClue": "Ropa para las piernas, con una parte para cada una.",
+          "prompt": "These blue ___ cover both legs separately."
         },
         {
-          "clue": "Ropa para el cuerpo, de manga corta y sin botones.",
-          "answer": "T-shirt",
-          "prompt": "My ___ has short sleeves and no buttons.",
+          "key": "pijama",
+          "asset": "ropa/pijama",
+          "answer": "pyjamas",
           "aliases": [
-            "t shirt",
-            "tshirt"
+            "pajamas",
+            "pajama",
+            "pyjama"
           ],
-          "memoryClue": "Manga corta, sin botones.",
-          "asset": "ropa/3",
-          "searchClue": "Prenda de manga corta para la parte de arriba.",
-          "flashClue": "Se parece a una camisa, pero no lleva botones y es de manga corta."
+          "clue": "Conjunto naranja de dos piezas para dormir.",
+          "memoryClue": "Conjunto cómodo para irse a la cama.",
+          "flashClue": "Conjunto cómodo para irse a la cama.",
+          "searchClue": "Ropa que se usa para dormir por la noche.",
+          "prompt": ""
         },
         {
-          "clue": "Zapatos para correr y hacer deporte.",
-          "answer": "trainers",
-          "prompt": "I tie my ___ before I go running.",
-          "aliases": [
-            "sneakers",
-            "running shoes"
-          ],
-          "memoryClue": "Calzado para correr.",
-          "asset": "ropa/4",
-          "searchClue": "Calzado deportivo con cordones.",
-          "flashClue": "Los zapatos que te pones para entrenar."
-        },
-        {
-          "clue": "Ropa gruesa que te pones encima para salir en invierno.",
-          "answer": "coat",
-          "prompt": "I wear a thick ___ over my jumper in winter.",
-          "aliases": [],
-          "memoryClue": "Encima del jersey cuando hace frío.",
-          "asset": "ropa/5",
-          "searchClue": "Prenda exterior que abriga en invierno.",
-          "flashClue": "Una prenda gruesa para salir cuando nieva."
-        }
-      ],
-      "formats": [
-        "identify",
-        "wordsearch",
-        "memory",
-        "context",
-        "flashcards"
-      ],
-      "memoryExtra": [
-        {
-          "answer": "skirt",
-          "memoryClue": "Ropa que va de la cintura hacia abajo, sin dos partes para las piernas.",
-          "asset": "ropa/6"
-        },
-        {
+          "key": "sombrero",
+          "asset": "ropa/sombrero",
           "answer": "hat",
-          "memoryClue": "Se lleva en la cabeza y tiene ala.",
-          "asset": "ropa/7"
+          "aliases": [],
+          "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+          "memoryClue": "Tiene un ala que rodea la cabeza.",
+          "flashClue": "Tiene un ala que rodea la cabeza.",
+          "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+          "prompt": ""
         },
         {
-          "answer": "socks",
-          "memoryClue": "Ropa para los pies, dentro de los zapatos.",
-          "asset": "ropa/8"
+          "key": "vestido",
+          "asset": "ropa/vestido",
+          "answer": "dress",
+          "aliases": [],
+          "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+          "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+          "flashClue": "La parte de arriba y la falda forman una sola prenda.",
+          "searchClue": "Prenda de una sola pieza con falda incorporada.",
+          "prompt": ""
         },
         {
-          "answer": "scarf",
-          "memoryClue": "Una tira de tela que abriga el cuello.",
-          "asset": "ropa/9"
-        },
-        {
-          "answer": "gloves",
-          "memoryClue": "Abrigan las manos y cubren los dedos.",
-          "asset": "ropa/10"
+          "key": "zapatos",
+          "asset": "ropa/zapatos",
+          "answer": "boots",
+          "aliases": [
+            "ankle boots",
+            "shoes"
+          ],
+          "clue": "Calzado negro con cordones que cubre los tobillos.",
+          "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+          "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+          "searchClue": "Calzado alto, negro y con cordones.",
+          "prompt": "These black ___ have laces and cover my ankles."
         }
-      ]
+      ],
+      "variants": {
+        "1": [
+          {
+            "key": "vestido",
+            "asset": "ropa/vestido",
+            "answer": "dress",
+            "aliases": [],
+            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
+            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "prompt": ""
+          },
+          {
+            "key": "camiseta",
+            "asset": "ropa/camiseta",
+            "answer": "T-shirt",
+            "aliases": [
+              "t shirt",
+              "tshirt",
+              "tee shirt",
+              "tee"
+            ],
+            "clue": "Prenda azul de manga corta, sin botones.",
+            "memoryClue": "Parte de arriba de manga corta, sin botones.",
+            "flashClue": "Parte de arriba de manga corta, sin botones.",
+            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "prompt": "This blue ___ has short sleeves and no buttons."
+          },
+          {
+            "key": "pantalones",
+            "asset": "ropa/pantalones",
+            "answer": "trousers",
+            "aliases": [
+              "pants"
+            ],
+            "clue": "Prenda azul que cubre las piernas por separado.",
+            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "prompt": "These blue ___ cover both legs separately."
+          },
+          {
+            "key": "abrigo",
+            "asset": "ropa/abrigo",
+            "answer": "jacket",
+            "aliases": [
+              "coat"
+            ],
+            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+            "flashClue": "Una prenda exterior que abriga el cuerpo.",
+            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "prompt": ""
+          },
+          {
+            "key": "gorra",
+            "asset": "ropa/gorra",
+            "answer": "cap",
+            "aliases": [
+              "baseball cap"
+            ],
+            "clue": "Accesorio verde para la cabeza, con visera.",
+            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "prompt": "I wear this green ___ on my head to keep the sun out of my eyes."
+          },
+          {
+            "key": "zapatos",
+            "asset": "ropa/zapatos",
+            "answer": "boots",
+            "aliases": [
+              "ankle boots",
+              "shoes"
+            ],
+            "clue": "Calzado negro con cordones que cubre los tobillos.",
+            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "searchClue": "Calzado alto, negro y con cordones.",
+            "prompt": "These black ___ have laces and cover my ankles."
+          }
+        ],
+        "2": [
+          {
+            "key": "bufanda",
+            "asset": "ropa/bufanda",
+            "answer": "scarf",
+            "aliases": [
+              "muffler"
+            ],
+            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+            "memoryClue": "Abriga el cuello y puede tener flecos.",
+            "flashClue": "Abriga el cuello y puede tener flecos.",
+            "searchClue": "Accesorio largo que rodea el cuello.",
+            "prompt": "I wrap this blue ___ around my neck."
+          },
+          {
+            "key": "calcetines",
+            "asset": "ropa/calcetines",
+            "answer": "socks",
+            "aliases": [
+              "sock"
+            ],
+            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+            "memoryClue": "Se llevan entre el pie y el calzado.",
+            "flashClue": "Se llevan entre el pie y el calzado.",
+            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "prompt": ""
+          },
+          {
+            "key": "falda",
+            "asset": "ropa/falda",
+            "answer": "skirt",
+            "aliases": [],
+            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "prompt": "This orange ___ covers the lower part of the body and has no separate legs."
+          },
+          {
+            "key": "guantes",
+            "asset": "ropa/guantes",
+            "answer": "gloves",
+            "aliases": [
+              "glove"
+            ],
+            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+            "memoryClue": "Abrigan las manos y los dedos.",
+            "flashClue": "Abrigan las manos y los dedos.",
+            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "prompt": ""
+          },
+          {
+            "key": "pijama",
+            "asset": "ropa/pijama",
+            "answer": "pyjamas",
+            "aliases": [
+              "pajamas",
+              "pajama",
+              "pyjama"
+            ],
+            "clue": "Conjunto naranja de dos piezas para dormir.",
+            "memoryClue": "Conjunto cómodo para irse a la cama.",
+            "flashClue": "Conjunto cómodo para irse a la cama.",
+            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "prompt": ""
+          },
+          {
+            "key": "sombrero",
+            "asset": "ropa/sombrero",
+            "answer": "hat",
+            "aliases": [],
+            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+            "memoryClue": "Tiene un ala que rodea la cabeza.",
+            "flashClue": "Tiene un ala que rodea la cabeza.",
+            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "prompt": ""
+          }
+        ],
+        "3": [
+          {
+            "key": "pijama",
+            "asset": "ropa/pijama",
+            "answer": "pyjamas",
+            "aliases": [
+              "pajamas",
+              "pajama",
+              "pyjama"
+            ],
+            "clue": "Conjunto naranja de dos piezas para dormir.",
+            "memoryClue": "Conjunto cómodo para irse a la cama.",
+            "flashClue": "Un conjunto de dos piezas para acostarse y dormir.",
+            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "prompt": ""
+          },
+          {
+            "key": "vestido",
+            "asset": "ropa/vestido",
+            "answer": "dress",
+            "aliases": [],
+            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+            "flashClue": "Una sola pieza verde con la parte de arriba unida a una falda.",
+            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "prompt": ""
+          },
+          {
+            "key": "guantes",
+            "asset": "ropa/guantes",
+            "answer": "gloves",
+            "aliases": [
+              "glove"
+            ],
+            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+            "memoryClue": "Abrigan las manos y los dedos.",
+            "flashClue": "Te los pones en las manos para abrigar cada dedo.",
+            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "prompt": ""
+          },
+          {
+            "key": "abrigo",
+            "asset": "ropa/abrigo",
+            "answer": "jacket",
+            "aliases": [
+              "coat"
+            ],
+            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+            "flashClue": "La prenda verde que te pones sobre la camiseta para abrigarte.",
+            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "prompt": ""
+          },
+          {
+            "key": "calcetines",
+            "asset": "ropa/calcetines",
+            "answer": "socks",
+            "aliases": [
+              "sock"
+            ],
+            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+            "memoryClue": "Se llevan entre el pie y el calzado.",
+            "flashClue": "Cubren los pies y van por dentro del calzado.",
+            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "prompt": ""
+          },
+          {
+            "key": "sombrero",
+            "asset": "ropa/sombrero",
+            "answer": "hat",
+            "aliases": [],
+            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+            "memoryClue": "Tiene un ala que rodea la cabeza.",
+            "flashClue": "El accesorio azul oscuro que se lleva en la cabeza.",
+            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "prompt": ""
+          }
+        ],
+        "4": [
+          {
+            "key": "bufanda",
+            "asset": "ropa/bufanda",
+            "answer": "scarf",
+            "aliases": [
+              "muffler"
+            ],
+            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+            "memoryClue": "Abriga el cuello y puede tener flecos.",
+            "flashClue": "Abriga el cuello y puede tener flecos.",
+            "searchClue": "Accesorio largo que rodea el cuello.",
+            "prompt": "I wrap this blue ___ around my neck."
+          },
+          {
+            "key": "falda",
+            "asset": "ropa/falda",
+            "answer": "skirt",
+            "aliases": [],
+            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "prompt": "This orange ___ covers the lower part of the body and has no separate legs."
+          },
+          {
+            "key": "gorra",
+            "asset": "ropa/gorra",
+            "answer": "cap",
+            "aliases": [
+              "baseball cap"
+            ],
+            "clue": "Accesorio verde para la cabeza, con visera.",
+            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "prompt": "I wear this green ___ on my head to keep the sun out of my eyes."
+          },
+          {
+            "key": "camiseta",
+            "asset": "ropa/camiseta",
+            "answer": "T-shirt",
+            "aliases": [
+              "t shirt",
+              "tshirt",
+              "tee shirt",
+              "tee"
+            ],
+            "clue": "Prenda azul de manga corta, sin botones.",
+            "memoryClue": "Parte de arriba de manga corta, sin botones.",
+            "flashClue": "Parte de arriba de manga corta, sin botones.",
+            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "prompt": "This blue ___ has short sleeves and no buttons."
+          },
+          {
+            "key": "pantalones",
+            "asset": "ropa/pantalones",
+            "answer": "trousers",
+            "aliases": [
+              "pants"
+            ],
+            "clue": "Prenda azul que cubre las piernas por separado.",
+            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "prompt": "These blue ___ cover both legs separately."
+          },
+          {
+            "key": "zapatos",
+            "asset": "ropa/zapatos",
+            "answer": "boots",
+            "aliases": [
+              "ankle boots",
+              "shoes"
+            ],
+            "clue": "Calzado negro con cordones que cubre los tobillos.",
+            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "searchClue": "Calzado alto, negro y con cordones.",
+            "prompt": "These black ___ have laces and cover my ankles."
+          }
+        ],
+        "5": [
+          {
+            "key": "abrigo",
+            "asset": "ropa/abrigo",
+            "answer": "jacket",
+            "aliases": [
+              "coat"
+            ],
+            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+            "flashClue": "Una prenda exterior que abriga el cuerpo.",
+            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "prompt": ""
+          },
+          {
+            "key": "bufanda",
+            "asset": "ropa/bufanda",
+            "answer": "scarf",
+            "aliases": [
+              "muffler"
+            ],
+            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+            "memoryClue": "Abriga el cuello y puede tener flecos.",
+            "flashClue": "Abriga el cuello y puede tener flecos.",
+            "searchClue": "Accesorio largo que rodea el cuello.",
+            "prompt": "I wrap this blue ___ around my neck."
+          },
+          {
+            "key": "calcetines",
+            "asset": "ropa/calcetines",
+            "answer": "socks",
+            "aliases": [
+              "sock"
+            ],
+            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+            "memoryClue": "Se llevan entre el pie y el calzado.",
+            "flashClue": "Se llevan entre el pie y el calzado.",
+            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "prompt": ""
+          },
+          {
+            "key": "camiseta",
+            "asset": "ropa/camiseta",
+            "answer": "T-shirt",
+            "aliases": [
+              "t shirt",
+              "tshirt",
+              "tee shirt",
+              "tee"
+            ],
+            "clue": "Prenda azul de manga corta, sin botones.",
+            "memoryClue": "Parte de arriba de manga corta, sin botones.",
+            "flashClue": "Parte de arriba de manga corta, sin botones.",
+            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "prompt": "This blue ___ has short sleeves and no buttons."
+          },
+          {
+            "key": "falda",
+            "asset": "ropa/falda",
+            "answer": "skirt",
+            "aliases": [],
+            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "prompt": "This orange ___ covers the lower part of the body and has no separate legs."
+          },
+          {
+            "key": "gorra",
+            "asset": "ropa/gorra",
+            "answer": "cap",
+            "aliases": [
+              "baseball cap"
+            ],
+            "clue": "Accesorio verde para la cabeza, con visera.",
+            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "prompt": "I wear this green ___ on my head to keep the sun out of my eyes."
+          },
+          {
+            "key": "guantes",
+            "asset": "ropa/guantes",
+            "answer": "gloves",
+            "aliases": [
+              "glove"
+            ],
+            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+            "memoryClue": "Abrigan las manos y los dedos.",
+            "flashClue": "Abrigan las manos y los dedos.",
+            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "prompt": ""
+          },
+          {
+            "key": "pantalones",
+            "asset": "ropa/pantalones",
+            "answer": "trousers",
+            "aliases": [
+              "pants"
+            ],
+            "clue": "Prenda azul que cubre las piernas por separado.",
+            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "prompt": "These blue ___ cover both legs separately."
+          },
+          {
+            "key": "pijama",
+            "asset": "ropa/pijama",
+            "answer": "pyjamas",
+            "aliases": [
+              "pajamas",
+              "pajama",
+              "pyjama"
+            ],
+            "clue": "Conjunto naranja de dos piezas para dormir.",
+            "memoryClue": "Conjunto cómodo para irse a la cama.",
+            "flashClue": "Conjunto cómodo para irse a la cama.",
+            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "prompt": ""
+          },
+          {
+            "key": "sombrero",
+            "asset": "ropa/sombrero",
+            "answer": "hat",
+            "aliases": [],
+            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+            "memoryClue": "Tiene un ala que rodea la cabeza.",
+            "flashClue": "Tiene un ala que rodea la cabeza.",
+            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "prompt": ""
+          },
+          {
+            "key": "vestido",
+            "asset": "ropa/vestido",
+            "answer": "dress",
+            "aliases": [],
+            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
+            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "prompt": ""
+          },
+          {
+            "key": "zapatos",
+            "asset": "ropa/zapatos",
+            "answer": "boots",
+            "aliases": [
+              "ankle boots",
+              "shoes"
+            ],
+            "clue": "Calzado negro con cordones que cubre los tobillos.",
+            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "searchClue": "Calzado alto, negro y con cordones.",
+            "prompt": "These black ___ have laces and cover my ankles."
+          }
+        ]
+      },
+      "memoryExtra": []
     },
     {
       "id": "rutina",
@@ -6342,97 +7481,598 @@ window.CURRICULUM = {
     },
     {
       "id": "ropa",
+      "revision": "ilustrada-v2",
       "title": "La ropa",
       "kind": "vocabulary",
       "icon": "ropa",
       "level": "A1",
-      "tip": "Lee con calma y practica a tu ritmo. Puedes volver a intentarlo antes de abrir una solución.",
+      "tip": "Doce prendas y accesorios para descubrir. Cada actividad propone una forma diferente de practicar.",
+      "formats": [
+        "picturechoice",
+        "wordsearch",
+        "flashcards",
+        "context",
+        "memory"
+      ],
       "items": [
         {
-          "clue": "Una sola prenda con la parte de arriba y una falda unidas.",
-          "answer": "платье",
-          "prompt": "Одежда с верхом и юбкой в одной вещи — это ___.",
+          "key": "abrigo",
+          "asset": "ropa/abrigo",
+          "answer": "куртка",
           "aliases": [],
-          "memoryClue": "Tiene la falda unida a la parte de arriba.",
-          "asset": "ropa/1",
-          "searchClue": "Prenda entera con falda.",
-          "flashClue": "Puede tener mangas, pero siempre tiene falda."
+          "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+          "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+          "flashClue": "Una prenda exterior que abriga el cuerpo.",
+          "searchClue": "Prenda exterior de manga larga para abrigarse.",
+          "prompt": ""
         },
         {
-          "clue": "Ropa que cubre las dos piernas por separado.",
-          "answer": "брюки",
-          "prompt": "Одежда с двумя отдельными частями для ног — это ___.",
-          "aliases": [],
-          "memoryClue": "Una parte para cada pierna.",
-          "asset": "ropa/2",
-          "searchClue": "Prenda para ambas piernas.",
-          "flashClue": "Tienen dos partes largas, una para cada pierna."
-        },
-        {
-          "clue": "Ropa para el cuerpo, de manga corta y sin botones.",
-          "answer": "футболка",
-          "prompt": "Одежда с короткими рукавами без пуговиц — это ___.",
-          "aliases": [],
-          "memoryClue": "Manga corta, sin botones.",
-          "asset": "ropa/3",
-          "searchClue": "Prenda de manga corta para la parte de arriba.",
-          "flashClue": "Se parece a una camisa, pero no lleva botones y es de manga corta."
-        },
-        {
-          "clue": "Zapatos para correr y hacer deporte.",
-          "answer": "кроссовки",
-          "prompt": "Обувь для бега и спорта — это ___.",
-          "aliases": [],
-          "memoryClue": "Calzado para correr.",
-          "asset": "ropa/4",
-          "searchClue": "Calzado deportivo con cordones.",
-          "flashClue": "Los zapatos que te pones para entrenar."
-        },
-        {
-          "clue": "Ropa gruesa que te pones encima para salir en invierno.",
-          "answer": "пальто",
-          "prompt": "Тёплая верхняя одежда для зимы — это ___.",
-          "aliases": [],
-          "memoryClue": "Encima del jersey cuando hace frío.",
-          "asset": "ropa/5",
-          "searchClue": "Prenda exterior que abriga en invierno.",
-          "flashClue": "Una prenda gruesa para salir cuando nieva."
-        }
-      ],
-      "formats": [
-        "identify",
-        "wordsearch",
-        "memory",
-        "context",
-        "flashcards"
-      ],
-      "memoryExtra": [
-        {
-          "answer": "юбка",
-          "memoryClue": "Ropa que va de la cintura hacia abajo, sin dos partes para las piernas.",
-          "asset": "ropa/6"
-        },
-        {
-          "answer": "шляпа",
-          "memoryClue": "Se lleva en la cabeza y tiene ala.",
-          "asset": "ropa/7"
-        },
-        {
-          "answer": "носки",
-          "memoryClue": "Ropa para los pies, dentro de los zapatos.",
-          "asset": "ropa/8"
-        },
-        {
+          "key": "bufanda",
+          "asset": "ropa/bufanda",
           "answer": "шарф",
-          "memoryClue": "Una tira de tela que abriga el cuello.",
-          "asset": "ropa/9"
+          "aliases": [
+            "шарфик"
+          ],
+          "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+          "memoryClue": "Abriga el cuello y puede tener flecos.",
+          "flashClue": "Abriga el cuello y puede tener flecos.",
+          "searchClue": "Accesorio largo que rodea el cuello.",
+          "prompt": "Вокруг шеи я ношу этот синий ___."
         },
         {
+          "key": "calcetines",
+          "asset": "ropa/calcetines",
+          "answer": "носки",
+          "aliases": [],
+          "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+          "memoryClue": "Se llevan entre el pie y el calzado.",
+          "flashClue": "Se llevan entre el pie y el calzado.",
+          "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+          "prompt": ""
+        },
+        {
+          "key": "camiseta",
+          "asset": "ropa/camiseta",
+          "answer": "футболка",
+          "aliases": [],
+          "clue": "Prenda azul de manga corta, sin botones.",
+          "memoryClue": "Parte de arriba de manga corta, sin botones.",
+          "flashClue": "Parte de arriba de manga corta, sin botones.",
+          "searchClue": "Prenda de manga corta que no lleva botones.",
+          "prompt": "Синяя одежда с короткими рукавами и без пуговиц — это ___."
+        },
+        {
+          "key": "falda",
+          "asset": "ropa/falda",
+          "answer": "юбка",
+          "aliases": [],
+          "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+          "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+          "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+          "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+          "prompt": "Эта оранжевая одежда начинается на талии и не разделяется на две штанины. Это ___."
+        },
+        {
+          "key": "gorra",
+          "asset": "ropa/gorra",
+          "answer": "кепка",
+          "aliases": [
+            "бейсболка"
+          ],
+          "clue": "Accesorio verde para la cabeza, con visera.",
+          "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+          "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+          "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+          "prompt": "На голове у меня зелёная ___ с козырьком."
+        },
+        {
+          "key": "guantes",
+          "asset": "ropa/guantes",
           "answer": "перчатки",
-          "memoryClue": "Abrigan las manos y cubren los dedos.",
-          "asset": "ropa/10"
+          "aliases": [],
+          "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+          "memoryClue": "Abrigan las manos y los dedos.",
+          "flashClue": "Abrigan las manos y los dedos.",
+          "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+          "prompt": ""
+        },
+        {
+          "key": "pantalones",
+          "asset": "ropa/pantalones",
+          "answer": "брюки",
+          "aliases": [
+            "штаны"
+          ],
+          "clue": "Prenda azul que cubre las piernas por separado.",
+          "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+          "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+          "searchClue": "Ropa para las piernas, con una parte para cada una.",
+          "prompt": "Эта голубая одежда закрывает обе ноги по отдельности. Это ___."
+        },
+        {
+          "key": "pijama",
+          "asset": "ropa/pijama",
+          "answer": "пижама",
+          "aliases": [],
+          "clue": "Conjunto naranja de dos piezas para dormir.",
+          "memoryClue": "Conjunto cómodo para irse a la cama.",
+          "flashClue": "Conjunto cómodo para irse a la cama.",
+          "searchClue": "Ropa que se usa para dormir por la noche.",
+          "prompt": ""
+        },
+        {
+          "key": "sombrero",
+          "asset": "ropa/sombrero",
+          "answer": "шляпа",
+          "aliases": [],
+          "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+          "memoryClue": "Tiene un ala que rodea la cabeza.",
+          "flashClue": "Tiene un ala que rodea la cabeza.",
+          "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+          "prompt": ""
+        },
+        {
+          "key": "vestido",
+          "asset": "ropa/vestido",
+          "answer": "платье",
+          "aliases": [],
+          "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+          "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+          "flashClue": "La parte de arriba y la falda forman una sola prenda.",
+          "searchClue": "Prenda de una sola pieza con falda incorporada.",
+          "prompt": ""
+        },
+        {
+          "key": "zapatos",
+          "asset": "ropa/zapatos",
+          "answer": "ботинки",
+          "aliases": [
+            "ботинок",
+            "обувь"
+          ],
+          "clue": "Calzado negro con cordones que cubre los tobillos.",
+          "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+          "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+          "searchClue": "Calzado alto, negro y con cordones.",
+          "prompt": "Чёрная обувь со шнурками, которая закрывает щиколотки, — это ___."
         }
-      ]
+      ],
+      "variants": {
+        "1": [
+          {
+            "key": "vestido",
+            "asset": "ropa/vestido",
+            "answer": "платье",
+            "aliases": [],
+            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
+            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "prompt": ""
+          },
+          {
+            "key": "camiseta",
+            "asset": "ropa/camiseta",
+            "answer": "футболка",
+            "aliases": [],
+            "clue": "Prenda azul de manga corta, sin botones.",
+            "memoryClue": "Parte de arriba de manga corta, sin botones.",
+            "flashClue": "Parte de arriba de manga corta, sin botones.",
+            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "prompt": "Синяя одежда с короткими рукавами и без пуговиц — это ___."
+          },
+          {
+            "key": "pantalones",
+            "asset": "ropa/pantalones",
+            "answer": "брюки",
+            "aliases": [
+              "штаны"
+            ],
+            "clue": "Prenda azul que cubre las piernas por separado.",
+            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "prompt": "Эта голубая одежда закрывает обе ноги по отдельности. Это ___."
+          },
+          {
+            "key": "abrigo",
+            "asset": "ropa/abrigo",
+            "answer": "куртка",
+            "aliases": [],
+            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+            "flashClue": "Una prenda exterior que abriga el cuerpo.",
+            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "prompt": ""
+          },
+          {
+            "key": "gorra",
+            "asset": "ropa/gorra",
+            "answer": "кепка",
+            "aliases": [
+              "бейсболка"
+            ],
+            "clue": "Accesorio verde para la cabeza, con visera.",
+            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "prompt": "На голове у меня зелёная ___ с козырьком."
+          },
+          {
+            "key": "zapatos",
+            "asset": "ropa/zapatos",
+            "answer": "ботинки",
+            "aliases": [
+              "ботинок",
+              "обувь"
+            ],
+            "clue": "Calzado negro con cordones que cubre los tobillos.",
+            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "searchClue": "Calzado alto, negro y con cordones.",
+            "prompt": "Чёрная обувь со шнурками, которая закрывает щиколотки, — это ___."
+          }
+        ],
+        "2": [
+          {
+            "key": "bufanda",
+            "asset": "ropa/bufanda",
+            "answer": "шарф",
+            "aliases": [
+              "шарфик"
+            ],
+            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+            "memoryClue": "Abriga el cuello y puede tener flecos.",
+            "flashClue": "Abriga el cuello y puede tener flecos.",
+            "searchClue": "Accesorio largo que rodea el cuello.",
+            "prompt": "Вокруг шеи я ношу этот синий ___."
+          },
+          {
+            "key": "calcetines",
+            "asset": "ropa/calcetines",
+            "answer": "носки",
+            "aliases": [],
+            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+            "memoryClue": "Se llevan entre el pie y el calzado.",
+            "flashClue": "Se llevan entre el pie y el calzado.",
+            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "prompt": ""
+          },
+          {
+            "key": "falda",
+            "asset": "ropa/falda",
+            "answer": "юбка",
+            "aliases": [],
+            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "prompt": "Эта оранжевая одежда начинается на талии и не разделяется на две штанины. Это ___."
+          },
+          {
+            "key": "guantes",
+            "asset": "ropa/guantes",
+            "answer": "перчатки",
+            "aliases": [],
+            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+            "memoryClue": "Abrigan las manos y los dedos.",
+            "flashClue": "Abrigan las manos y los dedos.",
+            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "prompt": ""
+          },
+          {
+            "key": "pijama",
+            "asset": "ropa/pijama",
+            "answer": "пижама",
+            "aliases": [],
+            "clue": "Conjunto naranja de dos piezas para dormir.",
+            "memoryClue": "Conjunto cómodo para irse a la cama.",
+            "flashClue": "Conjunto cómodo para irse a la cama.",
+            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "prompt": ""
+          },
+          {
+            "key": "sombrero",
+            "asset": "ropa/sombrero",
+            "answer": "шляпа",
+            "aliases": [],
+            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+            "memoryClue": "Tiene un ala que rodea la cabeza.",
+            "flashClue": "Tiene un ala que rodea la cabeza.",
+            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "prompt": ""
+          }
+        ],
+        "3": [
+          {
+            "key": "pijama",
+            "asset": "ropa/pijama",
+            "answer": "пижама",
+            "aliases": [],
+            "clue": "Conjunto naranja de dos piezas para dormir.",
+            "memoryClue": "Conjunto cómodo para irse a la cama.",
+            "flashClue": "Un conjunto de dos piezas para acostarse y dormir.",
+            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "prompt": ""
+          },
+          {
+            "key": "vestido",
+            "asset": "ropa/vestido",
+            "answer": "платье",
+            "aliases": [],
+            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+            "flashClue": "Una sola pieza verde con la parte de arriba unida a una falda.",
+            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "prompt": ""
+          },
+          {
+            "key": "guantes",
+            "asset": "ropa/guantes",
+            "answer": "перчатки",
+            "aliases": [],
+            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+            "memoryClue": "Abrigan las manos y los dedos.",
+            "flashClue": "Te los pones en las manos para abrigar cada dedo.",
+            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "prompt": ""
+          },
+          {
+            "key": "abrigo",
+            "asset": "ropa/abrigo",
+            "answer": "куртка",
+            "aliases": [],
+            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+            "flashClue": "La prenda verde que te pones sobre la camiseta para abrigarte.",
+            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "prompt": ""
+          },
+          {
+            "key": "calcetines",
+            "asset": "ropa/calcetines",
+            "answer": "носки",
+            "aliases": [],
+            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+            "memoryClue": "Se llevan entre el pie y el calzado.",
+            "flashClue": "Cubren los pies y van por dentro del calzado.",
+            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "prompt": ""
+          },
+          {
+            "key": "sombrero",
+            "asset": "ropa/sombrero",
+            "answer": "шляпа",
+            "aliases": [],
+            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+            "memoryClue": "Tiene un ala que rodea la cabeza.",
+            "flashClue": "El accesorio azul oscuro que se lleva en la cabeza.",
+            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "prompt": ""
+          }
+        ],
+        "4": [
+          {
+            "key": "bufanda",
+            "asset": "ropa/bufanda",
+            "answer": "шарф",
+            "aliases": [
+              "шарфик"
+            ],
+            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+            "memoryClue": "Abriga el cuello y puede tener flecos.",
+            "flashClue": "Abriga el cuello y puede tener flecos.",
+            "searchClue": "Accesorio largo que rodea el cuello.",
+            "prompt": "Вокруг шеи я ношу этот синий ___."
+          },
+          {
+            "key": "falda",
+            "asset": "ropa/falda",
+            "answer": "юбка",
+            "aliases": [],
+            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "prompt": "Эта оранжевая одежда начинается на талии и не разделяется на две штанины. Это ___."
+          },
+          {
+            "key": "gorra",
+            "asset": "ropa/gorra",
+            "answer": "кепка",
+            "aliases": [
+              "бейсболка"
+            ],
+            "clue": "Accesorio verde para la cabeza, con visera.",
+            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "prompt": "На голове у меня зелёная ___ с козырьком."
+          },
+          {
+            "key": "camiseta",
+            "asset": "ropa/camiseta",
+            "answer": "футболка",
+            "aliases": [],
+            "clue": "Prenda azul de manga corta, sin botones.",
+            "memoryClue": "Parte de arriba de manga corta, sin botones.",
+            "flashClue": "Parte de arriba de manga corta, sin botones.",
+            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "prompt": "Синяя одежда с короткими рукавами и без пуговиц — это ___."
+          },
+          {
+            "key": "pantalones",
+            "asset": "ropa/pantalones",
+            "answer": "брюки",
+            "aliases": [
+              "штаны"
+            ],
+            "clue": "Prenda azul que cubre las piernas por separado.",
+            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "prompt": "Эта голубая одежда закрывает обе ноги по отдельности. Это ___."
+          },
+          {
+            "key": "zapatos",
+            "asset": "ropa/zapatos",
+            "answer": "ботинки",
+            "aliases": [
+              "ботинок",
+              "обувь"
+            ],
+            "clue": "Calzado negro con cordones que cubre los tobillos.",
+            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "searchClue": "Calzado alto, negro y con cordones.",
+            "prompt": "Чёрная обувь со шнурками, которая закрывает щиколотки, — это ___."
+          }
+        ],
+        "5": [
+          {
+            "key": "abrigo",
+            "asset": "ropa/abrigo",
+            "answer": "куртка",
+            "aliases": [],
+            "clue": "Prenda verde de manga larga que se lleva sobre la ropa.",
+            "memoryClue": "Una prenda exterior que abriga el cuerpo.",
+            "flashClue": "Una prenda exterior que abriga el cuerpo.",
+            "searchClue": "Prenda exterior de manga larga para abrigarse.",
+            "prompt": ""
+          },
+          {
+            "key": "bufanda",
+            "asset": "ropa/bufanda",
+            "answer": "шарф",
+            "aliases": [
+              "шарфик"
+            ],
+            "clue": "Tira de tela azul que se lleva alrededor del cuello.",
+            "memoryClue": "Abriga el cuello y puede tener flecos.",
+            "flashClue": "Abriga el cuello y puede tener flecos.",
+            "searchClue": "Accesorio largo que rodea el cuello.",
+            "prompt": "Вокруг шеи я ношу этот синий ___."
+          },
+          {
+            "key": "calcetines",
+            "asset": "ropa/calcetines",
+            "answer": "носки",
+            "aliases": [],
+            "clue": "Dos prendas naranjas para los pies, dentro de los zapatos.",
+            "memoryClue": "Se llevan entre el pie y el calzado.",
+            "flashClue": "Se llevan entre el pie y el calzado.",
+            "searchClue": "Ropa para los pies que se pone dentro de los zapatos.",
+            "prompt": ""
+          },
+          {
+            "key": "camiseta",
+            "asset": "ropa/camiseta",
+            "answer": "футболка",
+            "aliases": [],
+            "clue": "Prenda azul de manga corta, sin botones.",
+            "memoryClue": "Parte de arriba de manga corta, sin botones.",
+            "flashClue": "Parte de arriba de manga corta, sin botones.",
+            "searchClue": "Prenda de manga corta que no lleva botones.",
+            "prompt": "Синяя одежда с короткими рукавами и без пуговиц — это ___."
+          },
+          {
+            "key": "falda",
+            "asset": "ropa/falda",
+            "answer": "юбка",
+            "aliases": [],
+            "clue": "Prenda naranja que va de la cintura hacia abajo, sin dos partes para las piernas.",
+            "memoryClue": "No es un vestido: solo cubre la parte de abajo.",
+            "flashClue": "No es un vestido: solo cubre la parte de abajo.",
+            "searchClue": "Prenda que empieza en la cintura y no separa las piernas.",
+            "prompt": "Эта оранжевая одежда начинается на талии и не разделяется на две штанины. Это ___."
+          },
+          {
+            "key": "gorra",
+            "asset": "ropa/gorra",
+            "answer": "кепка",
+            "aliases": [
+              "бейсболка"
+            ],
+            "clue": "Accesorio verde para la cabeza, con visera.",
+            "memoryClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "flashClue": "Protege del sol y tiene una parte que da sombra a los ojos.",
+            "searchClue": "Accesorio para la cabeza con visera en la parte delantera.",
+            "prompt": "На голове у меня зелёная ___ с козырьком."
+          },
+          {
+            "key": "guantes",
+            "asset": "ropa/guantes",
+            "answer": "перчатки",
+            "aliases": [],
+            "clue": "Dos prendas azules para las manos, con un espacio para cada dedo.",
+            "memoryClue": "Abrigan las manos y los dedos.",
+            "flashClue": "Abrigan las manos y los dedos.",
+            "searchClue": "Prendas para las manos, con cinco dedos cada una.",
+            "prompt": ""
+          },
+          {
+            "key": "pantalones",
+            "asset": "ropa/pantalones",
+            "answer": "брюки",
+            "aliases": [
+              "штаны"
+            ],
+            "clue": "Prenda azul que cubre las piernas por separado.",
+            "memoryClue": "Cubre cada pierna por separado, desde la cintura.",
+            "flashClue": "Cubre cada pierna por separado, desde la cintura.",
+            "searchClue": "Ropa para las piernas, con una parte para cada una.",
+            "prompt": "Эта голубая одежда закрывает обе ноги по отдельности. Это ___."
+          },
+          {
+            "key": "pijama",
+            "asset": "ropa/pijama",
+            "answer": "пижама",
+            "aliases": [],
+            "clue": "Conjunto naranja de dos piezas para dormir.",
+            "memoryClue": "Conjunto cómodo para irse a la cama.",
+            "flashClue": "Conjunto cómodo para irse a la cama.",
+            "searchClue": "Ropa que se usa para dormir por la noche.",
+            "prompt": ""
+          },
+          {
+            "key": "sombrero",
+            "asset": "ropa/sombrero",
+            "answer": "шляпа",
+            "aliases": [],
+            "clue": "Accesorio azul oscuro para la cabeza, con ala alrededor.",
+            "memoryClue": "Tiene un ala que rodea la cabeza.",
+            "flashClue": "Tiene un ala que rodea la cabeza.",
+            "searchClue": "Accesorio para la cabeza con ala en todo su contorno.",
+            "prompt": ""
+          },
+          {
+            "key": "vestido",
+            "asset": "ropa/vestido",
+            "answer": "платье",
+            "aliases": [],
+            "clue": "Prenda verde de una pieza, con la parte de arriba unida a una falda.",
+            "memoryClue": "La parte de arriba y la falda forman una sola prenda.",
+            "flashClue": "La parte de arriba y la falda forman una sola prenda.",
+            "searchClue": "Prenda de una sola pieza con falda incorporada.",
+            "prompt": ""
+          },
+          {
+            "key": "zapatos",
+            "asset": "ropa/zapatos",
+            "answer": "ботинки",
+            "aliases": [
+              "ботинок",
+              "обувь"
+            ],
+            "clue": "Calzado negro con cordones que cubre los tobillos.",
+            "memoryClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "flashClue": "Calzado que llega hasta el tobillo y se ata con cordones.",
+            "searchClue": "Calzado alto, negro y con cordones.",
+            "prompt": "Чёрная обувь со шнурками, которая закрывает щиколотки, — это ___."
+          }
+        ]
+      },
+      "memoryExtra": []
     },
     {
       "id": "rutina",

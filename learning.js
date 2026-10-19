@@ -1,4 +1,5 @@
 const FORMAT_INFO = {
+  picturechoice: ['Elige el nombre', 'Mira la ilustración y elige su nombre entre las tres opciones.'],
   fruitletters: ['Completa las letras', 'Mira la fruta, completa mentalmente las letras que faltan y escribe el nombre entero.'],
   basket: ['Prepara la cesta', 'Elige una tarjeta y pulsa el pedido con la misma fruta, o arrastra la tarjeta hasta él. Coloca cada fruta en su sitio.'],
   choice: ['Elige la forma correcta', 'Elige la opción que completa cada frase.'],
@@ -19,12 +20,12 @@ const FORMAT_INFO = {
 };
 let completed = {};
 try { const saved = JSON.parse(localStorage.getItem('chavebooks-progress-v1') || '{}'); if(saved && typeof saved === 'object' && !Array.isArray(saved)) completed=saved; } catch {}
-function activityKey(id,topic,mode) { return `${id}/${topic}/${mode}`; }
+function activityKey(id,topic,mode) { const revision=window.CURRICULUM?.[id]?.find(t=>t.id===topic)?.revision;return revision?`${id}/${topic}/${revision}/${mode}`:`${id}/${topic}/${mode}`; }
 function isDone(id,topic,mode) { return completed[activityKey(id,topic,mode)]===true; }
 function topicDone(id,topic) { return [1,2,3,4,5].filter(m=>isDone(id,topic,m)).length; }
 function topicPath(id,topic) { return `#/${id}/actividades/${topic}`; }
 function shuffled(values,seed=0) { const out=[...values];let state=seed+163;for(let i=out.length-1;i>0;i--){state=(Math.imul(state,1664525)+1013904223)>>>0;const j=state%(i+1);[out[i],out[j]]=[out[j],out[i]];}return out; }
-function normalizeAnswer(value) { return String(value).normalize('NFC').toLocaleLowerCase().replace(/ё/g,'е').replace(/[.,!?¡¿;:«»“”"]/g,'').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim(); }
+function normalizeAnswer(value) { return String(value).normalize('NFC').toLocaleLowerCase().replace(/ё/g,'е').replace(/[.,!?¡¿;:«»“”"]/g,'').replace(/[’‘]/g,"'").replace(/[‐‑‒–—−]/g,'-').replace(/\s+/g,' ').trim(); }
 function puzzleWord(value) { return normalizeAnswer(value).replace(/[áàäâ]/g,'a').replace(/[éèëê]/g,'e').replace(/[íìïî]/g,'i').replace(/[óòöô]/g,'o').replace(/[úùüû]/g,'u').replace(/[^\p{L}]/gu,'').toUpperCase(); }
 function fullSentence(item) { return item.prompt.replace('___',item.answer); }
 function activityItems(topic,mode) { return topic.variants ? topic.variants[String(mode)] : topic.items; }
@@ -99,7 +100,9 @@ function renderStandard(id,topic,mode) {
   const sequenceHours=['07:00','07:15','07:45','09:00','22:00'];
   const questions=items.map((source,i)=>{
     const item={...source};let prompt=item.prompt,control='',answers=expectedAnswers(topic,mode,item);
-    if(format==='fruitletters'){
+    if(format==='picturechoice'){
+      prompt='¿Qué ves en la imagen?';control=imageFor(item);
+    }else if(format==='fruitletters'){
       prompt='Escribe el nombre completo de esta fruta.';
       control=`${imageFor(item)}<p class="scrambled" lang="${lang}" aria-label="Nombre con letras que faltan">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'_'))}</p>`;
     }else if(format==='basket'){
@@ -116,9 +119,10 @@ function renderStandard(id,topic,mode) {
     }else if(format==='sequence'){prompt=`${sequenceHours[i]} · ${['Al salir de la cama','En la ducha, con agua y jabón','La primera comida del día','Con el libro para aprender','Con las luces apagadas para descansar'][i]}`;}
     else if(format==='detective')prompt=escapeHTML(item.prompt).replace('___',`<mark>${escapeHTML(item.wrong)}</mark>`);
     else if(['choice','write','text','letters'].includes(format))prompt=`${escapeHTML(item.prompt)} (${escapeHTML(item.hint)})`;
+    if(format==='context'&&topic.id==='ropa')control=imageFor(item)+control;
     if(format==='letters')control+=`<p class="scrambled" lang="${lang}">${escapeHTML(item.answer.replace(/[aeiouáéíóúаеёиоуыэюя]/gi,'_'))}</p>`;
-    if(format==='choice'||format==='truefalse'){
-      const options=format==='truefalse'?[['true',vocabulary?'Verdadero':'Correcta'],['false',vocabulary?'Falso':'Incorrecta']]:shuffled([item.answer,item.wrong],i+mode).map(s=>[s,s]);
+    if(format==='choice'||format==='truefalse'||format==='picturechoice'){
+      const options=format==='truefalse'?[['true',vocabulary?'Verdadero':'Correcta'],['false',vocabulary?'Falso':'Incorrecta']]:format==='picturechoice'?shuffled([item.answer,...shuffled(topic.items.filter(other=>other.key!==item.key),i+31).slice(0,2).map(other=>other.answer)],i+mode).map(option=>[option,option]):shuffled([item.answer,item.wrong],i+mode).map(option=>[option,option]);
       control+=`<div class="answers">${options.map(([value,text])=>`<label><input type="radio" name="q${i}" value="${escapeHTML(value)}" required><span>${escapeHTML(text)}</span></label>`).join('')}</div>`;
     }else if(format==='match'||format==='sequence')control+=`<select id="answer-${i}" name="q${i}" required aria-labelledby="question-${i}" lang="${lang}"><option value="">Elige una opción</option>${shuffled(items.map(x=>x.answer),i+mode).map(a=>`<option value="${escapeHTML(a)}">${escapeHTML(a)}</option>`).join('')}</select>`;
     else if(format==='order'){

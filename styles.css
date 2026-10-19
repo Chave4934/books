@@ -244,3 +244,8 @@ main:focus { outline: none; }
   .basket-bank { position: sticky; top: 20px; }
 }
 @media(max-width:999px) { .basket-bank { margin-bottom: 20px; } }
+
+/* Ropa: los originales se muestran completos y sin ampliación innecesaria. */
+.activity-image[src*="assets/ropa/"] { width: min(160px,100%); height: 155px; margin-bottom: 14px; }
+.memory-card .activity-image[src*="assets/ropa/"] { width: 100%; height: 85px; margin: 0; }
+.puzzle-clue .activity-image[src*="assets/ropa/"] { width: 100%; height: 100px; margin: 0; }

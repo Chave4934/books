@@ -115,3 +115,15 @@ Las pruebas específicas verifican también las variantes regionales, la carga d
 ```sh
 NODE_PATH=/tmp/chavebooks-check/node_modules node tests/fruits.cjs
 ```
+
+## La ropa con doce ilustraciones
+
+Los doce originales de `Ropa.rar` están en `assets/ropa/`, con nombres, variantes y distribución documentados en `assets/ropa/README.md`. Las cinco actividades son elegir entre tres nombres, sopa de letras, tarjetas que se voltean, frases con imágenes y un memory de 24 tarjetas. Esta secuencia es diferente de las de los demás temas de vocabulario.
+
+La ropa ilustrada tiene su propia revisión de progreso: completar los ejercicios antiguos no marca automáticamente como hechas estas actividades nuevas. Los registros previos y el progreso de los demás temas se conservan.
+
+Para verificar las imágenes, las tres opciones del nuevo ejercicio, las variantes regionales, el reinicio, el progreso y la vista móvil:
+
+```sh
+NODE_PATH=/tmp/chavebooks-check/node_modules node tests/clothes.cjs
+```
